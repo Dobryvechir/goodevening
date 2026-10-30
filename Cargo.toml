@@ -1,0 +1,110 @@
+[workspace]
+resolver = "3"
+members = [
+    "crates/gm-app",
+    "crates/gm-core",
+    "crates/gm-term",
+    "crates/gm-ui",
+    "crates/gm-text",
+    "crates/gm-vfs",
+    "crates/gm-fs",
+    "crates/gm-platform",
+    "crates/gm-panels",
+    "crates/gm-viewer",
+    "crates/gm-editor",
+    "crates/gm-search",
+    "crates/gm-config",
+    "crates/gm-i18n",
+    "crates/gm-help",
+    "crates/modules/mod-archive",
+    "crates/modules/mod-temp-panel",
+    "crates/modules/mod-process-panel",
+    "crates/modules/mod-network-panel",
+    "crates/modules/mod-compare",
+    "crates/modules/mod-cmd-prefixes",
+    "crates/modules/mod-editor-tools",
+    "crates/modules/mod-panel-tools",
+    "crates/modules/mod-shell-menu",
+    "tools/lng-convert",
+    "tools/hlf-convert",
+    "tools/palette-convert",
+]
+default-members = ["crates/gm-app"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.90"
+license = "BSD-3-Clause"
+authors = ["Goodevening Manager contributors", "Far Group", "Eugene Roshal"]
+repository = "https://github.com/Dobryvechir/goodevening"
+
+[workspace.dependencies]
+gm-core = { path = "crates/gm-core" }
+gm-term = { path = "crates/gm-term" }
+gm-ui = { path = "crates/gm-ui" }
+gm-text = { path = "crates/gm-text" }
+gm-vfs = { path = "crates/gm-vfs" }
+gm-fs = { path = "crates/gm-fs" }
+gm-platform = { path = "crates/gm-platform" }
+gm-panels = { path = "crates/gm-panels" }
+gm-viewer = { path = "crates/gm-viewer" }
+gm-editor = { path = "crates/gm-editor" }
+gm-search = { path = "crates/gm-search" }
+gm-config = { path = "crates/gm-config" }
+gm-i18n = { path = "crates/gm-i18n" }
+gm-help = { path = "crates/gm-help" }
+mod-archive = { path = "crates/modules/mod-archive" }
+mod-temp-panel = { path = "crates/modules/mod-temp-panel" }
+mod-process-panel = { path = "crates/modules/mod-process-panel" }
+mod-network-panel = { path = "crates/modules/mod-network-panel" }
+mod-compare = { path = "crates/modules/mod-compare" }
+mod-cmd-prefixes = { path = "crates/modules/mod-cmd-prefixes" }
+mod-editor-tools = { path = "crates/modules/mod-editor-tools" }
+mod-panel-tools = { path = "crates/modules/mod-panel-tools" }
+mod-shell-menu = { path = "crates/modules/mod-shell-menu" }
+
+crossterm = "0.28"
+ratatui = { version = "0.29", default-features = false, features = ["crossterm"] }
+unicode-width = "0.2"
+unicode-segmentation = "1"
+encoding_rs = "0.8"
+chardetng = "0.1"
+oem_cp = "2"
+regex = "1"
+walkdir = "2"
+notify = "6"
+trash = "5"
+arboard = { version = "3", default-features = false }
+sysinfo = { version = "0.33", default-features = false, features = ["system"] }
+memmap2 = "0.9"
+ropey = { version = "1.6", default-features = false, features = ["cr_lines", "simd"] }
+serde = { version = "1", features = ["derive"] }
+toml = "0.8"
+rusqlite = { version = "0.32", features = ["bundled"] }
+directories = "5"
+jiff = "0.1"
+crossbeam-channel = "0.5"
+thiserror = "2"
+anyhow = "1"
+zip = { version = "2.2", default-features = false, features = ["deflate"] }
+tar = "0.4"
+flate2 = "1"
+bzip2 = "0.4"
+xz2 = "0.1"
+tempfile = "3"
+windows-sys = "0.59"
+rustix = { version = "0.38", features = ["fs", "process"] }
+log = "0.4"
+
+[profile.release]
+lto = "thin"
+codegen-units = 4
+strip = true
+
+[workspace.lints.clippy]
+# Dialog/render helpers take many layout arguments by design.
+too_many_arguments = "allow"
+field_reassign_with_default = "allow"
+vec_init_then_push = "allow"
+needless_range_loop = "allow"

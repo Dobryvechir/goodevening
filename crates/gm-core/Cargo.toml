@@ -1,0 +1,32 @@
+[package]
+name = "gm-core"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish = false
+
+[dependencies]
+gm-term = { workspace = true }
+gm-ui = { workspace = true }
+gm-text = { workspace = true }
+gm-vfs = { workspace = true }
+gm-fs = { workspace = true }
+gm-platform = { workspace = true }
+gm-panels = { workspace = true }
+gm-viewer = { workspace = true }
+gm-editor = { workspace = true }
+gm-search = { workspace = true }
+gm-config = { workspace = true }
+gm-i18n = { workspace = true }
+gm-help = { workspace = true }
+notify = { workspace = true }
+crossbeam-channel = { workspace = true }
+jiff = { workspace = true }
+toml = { workspace = true }
+
+[dev-dependencies]
+mod-archive = { workspace = true }
+
+[lints]
+workspace = true

@@ -1,0 +1,30 @@
+[package]
+name = "gm-platform"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish = false
+
+[dependencies]
+gm-text = { workspace = true }
+memmap2 = { workspace = true }
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { workspace = true, features = [
+    "Win32_Foundation",
+    "Win32_Storage_FileSystem",
+    "Win32_System_SystemInformation",
+    "Win32_System_WindowsProgramming",
+    "Win32_UI_Shell",
+    "Win32_UI_WindowsAndMessaging",
+    "Win32_NetworkManagement_WNet",
+    "Win32_Security",
+    "Win32_System_Registry",
+] }
+
+[target.'cfg(unix)'.dependencies]
+rustix = { workspace = true }
+
+[lints]
+workspace = true

@@ -1,0 +1,15 @@
+[package]
+name = "gm-fs"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish = false
+
+[dependencies]
+gm-vfs = { workspace = true }
+gm-platform = { workspace = true }
+trash = { workspace = true }
+
+[lints]
+workspace = true

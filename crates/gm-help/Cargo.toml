@@ -1,0 +1,16 @@
+[package]
+name = "gm-help"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish = false
+
+[dependencies]
+gm-ui = { workspace = true }
+gm-term = { workspace = true }
+gm-i18n = { workspace = true }
+gm-text = { workspace = true }
+
+[lints]
+workspace = true

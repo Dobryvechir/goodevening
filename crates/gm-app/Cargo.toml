@@ -1,0 +1,54 @@
+[package]
+name = "gm-app"
+description = "Goodevening Manager (gm): a cross-platform two-panel file manager, a Rust port of Far Manager"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish = false
+
+[[bin]]
+name = "gm"
+path = "src/main.rs"
+
+[features]
+default = [
+    "archive",
+    "temp_panel",
+    "process_panel",
+    "compare",
+    "cmd_prefixes",
+    "editor_tools",
+    "panel_tools",
+    "network_panel",
+    "shell_menu",
+]
+archive = ["dep:mod-archive"]
+temp_panel = ["dep:mod-temp-panel"]
+process_panel = ["dep:mod-process-panel"]
+compare = ["dep:mod-compare"]
+cmd_prefixes = ["dep:mod-cmd-prefixes"]
+editor_tools = ["dep:mod-editor-tools"]
+panel_tools = ["dep:mod-panel-tools"]
+network_panel = ["dep:mod-network-panel"]
+shell_menu = ["dep:mod-shell-menu"]
+
+[dependencies]
+gm-core = { workspace = true }
+gm-term = { workspace = true }
+gm-ui = { workspace = true }
+gm-config = { workspace = true }
+gm-i18n = { workspace = true }
+gm-help = { workspace = true }
+mod-archive = { workspace = true, optional = true }
+mod-temp-panel = { workspace = true, optional = true }
+mod-process-panel = { workspace = true, optional = true }
+mod-compare = { workspace = true, optional = true }
+mod-cmd-prefixes = { workspace = true, optional = true }
+mod-editor-tools = { workspace = true, optional = true }
+mod-panel-tools = { workspace = true, optional = true }
+mod-network-panel = { workspace = true, optional = true }
+mod-shell-menu = { workspace = true, optional = true }
+
+[lints]
+workspace = true

@@ -1,0 +1,18 @@
+[package]
+name = "gm-text"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish = false
+
+[dependencies]
+unicode-width = { workspace = true }
+unicode-segmentation = { workspace = true }
+encoding_rs = { workspace = true }
+chardetng = { workspace = true }
+oem_cp = { workspace = true }
+regex = { workspace = true }
+
+[lints]
+workspace = true

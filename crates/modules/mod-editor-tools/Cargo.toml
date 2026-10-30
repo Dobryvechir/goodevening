@@ -1,0 +1,14 @@
+[package]
+name = "mod-editor-tools"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish = false
+
+[dependencies]
+gm-core = { workspace = true }
+gm-editor = { workspace = true }
+
+[lints]
+workspace = true
