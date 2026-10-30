@@ -1,0 +1,114 @@
+Goodevening Manager (gm) - installation on another Windows 11 computer
+=====================================================================
+
+1. Files to copy from ./target
+------------------------------
+
+Only ONE file is required:
+
+    target\release\gm.exe
+
+Everything else the program needs is built into gm.exe:
+  * interface languages (assets\lang\*.lng) - embedded at compile time;
+  * help files (assets\help\*.hlf)          - embedded at compile time;
+  * all modules (archive, temp panel, process panel, network panel,
+    compare, command prefixes, editor/panel tools, shell menu) - compiled in;
+  * SQLite (used for state.db) - statically linked ("bundled").
+
+Do NOT copy anything else from target\release:
+  * gm.pdb      - debug symbols, only useful for debugging crashes (optional);
+  * gm.d        - Cargo dependency list, build-only;
+  * build\, deps\, examples\, incremental\, .fingerprint\, .cargo-lock
+                - intermediate build files, not needed at runtime.
+
+The assets\ folder of the source tree is NOT needed at runtime either.
+
+Place gm.exe in any folder, for example:
+
+    C:\Program Files\gm\gm.exe        (system-wide, needs administrator rights)
+    %LOCALAPPDATA%\Programs\gm\gm.exe (current user only)
+    D:\Tools\gm\gm.exe                (portable use, see section 4)
+
+
+2. Required action before the first run: Visual C++ Runtime
+-----------------------------------------------------------
+
+gm.exe is built with the MSVC toolchain (x86_64-pc-windows-msvc) and imports
+VCRUNTIME140.dll. This DLL is NOT part of a clean Windows 11 installation.
+
+Install the "Microsoft Visual C++ Redistributable for Visual Studio
+2015-2022" (x64) on the target computer:
+
+    https://aka.ms/vs/17/release/vc_redist.x64.exe
+
+or, from an administrator command prompt / PowerShell:
+
+    winget install Microsoft.VCRedist.2015+.x64
+
+If it is missing, Windows shows the error
+"The code execution cannot proceed because VCRUNTIME140.dll was not found."
+
+Many computers already have it (it comes with many applications and games);
+installing it again is harmless.
+
+All other DLLs used by gm.exe are standard parts of Windows 11 and need no
+action: kernel32, user32, shell32, advapi32, ole32, oleaut32, combase,
+ntdll, mpr, pdh, powrprof, psapi, bcryptprimitives and the Universal C
+Runtime (api-ms-win-crt-*.dll).
+
+Alternative (no redistributable needed): build gm.exe with the C runtime
+linked statically, then only gm.exe has to be copied:
+
+    set RUSTFLAGS=-C target-feature=+crt-static
+    cargo build --release
+
+(in PowerShell: $env:RUSTFLAGS = "-C target-feature=+crt-static")
+
+
+3. Optional: run gm from any folder
+-----------------------------------
+
+Add the folder that contains gm.exe to the PATH environment variable:
+Settings -> System -> About -> Advanced system settings ->
+Environment Variables -> Path -> Edit -> New -> (folder of gm.exe).
+Open a new terminal window afterwards and type:
+
+    gm
+
+gm is a console program. Start it from Windows Terminal (the default
+terminal of Windows 11, recommended - true colour is detected
+automatically), from cmd.exe or from PowerShell. Double-clicking gm.exe
+in Explorer also works and opens it in a console window.
+
+
+4. Settings and data (created automatically)
+--------------------------------------------
+
+Nothing has to be created by hand. On the first start gm creates its
+profile folder:
+
+    %APPDATA%\gm\        (e.g. C:\Users\<name>\AppData\Roaming\gm)
+
+with settings.toml, state.db, and optionally keymap.toml and GmMenu.ini.
+
+To move your existing settings to the new computer, copy that folder from
+the old computer to the same location on the new one.
+
+Portable mode (e.g. on a USB stick): start gm with
+
+    gm -p          (or gm --portable)
+
+and the settings are kept in a gm-profile folder next to gm.exe. In this
+case gm.exe must be in a folder where the user has write permission
+(not C:\Program Files). Another folder can be chosen with
+gm --profile <dir>.
+
+
+5. Summary
+----------
+
+  1. Copy target\release\gm.exe to the target computer.
+  2. Install the Visual C++ Redistributable x64 (unless gm.exe was built
+     with +crt-static).
+  3. (Optional) Add the folder of gm.exe to PATH.
+  4. Run gm in Windows Terminal.
