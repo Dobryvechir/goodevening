@@ -1,8 +1,8 @@
 # Goodevening Manager (gm)
 
 A two-panel console file manager for **Windows, Linux and macOS**, written in
-Rust. It was inspired by Midnight Commander and Far Manager 3. It has taken the best from both
-Midnight Commander and Far Manager, and added new features and can run on Windows, Linux and MacOS.
+Rust. It was inspired by Midnight Commander and Far Manager. It has taken the best from both
+Midnight Commander and Far Manager, and added new features, and can run on Windows, Linux and MacOS.
 
 ```
 ╔n═════════════════════ C:\demo ══════════════════════╗
@@ -16,7 +16,14 @@ Midnight Commander and Far Manager, and added new features and can run on Window
 ╚══════════ Bytes: 39, files: 2, folders: 1 ══════════╝
 ```
 
+## Downloading ready application for Windows, WSL, Linux.
+ 
+   You can choose between building the application by yourself or downloading ready builds at
+   our site https://movna-hatka.com/software/
+
 ## Building
+
+Before building you must install the Rust toolchain.
 
 ```sh
 cargo build --release          # the binary is target/release/gm (gm.exe on Windows)
