@@ -4292,7 +4292,7 @@ $ #Color themes#
  Set the colors to default values, expressed as colors in RGB space, normally used for the corresponding console palette indices.
  Unlike the indices in the console palette, the RGB values are device-independent and will look the same in any terminal.
  For example, the default #index# value of panels background is #1#, which is usually, but not necessarily, mapped to some unspecified shade of blue.
- The default #RGB# value of panels background, on the contrary, is always exactly #000080#.
+ The default #RGB# value of panels background, on the contrary, is always exactly #000153#.
 
  #Note#: RGB colors require Virtual Terminal-based rendering, which can be enabled in ~Interface settings~@InterfSettings@.
 If it is not enabled or if your terminal does not support RGB colors, they will be approximated to the closest console palette indices.

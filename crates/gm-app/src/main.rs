@@ -46,6 +46,8 @@ struct Args {
     lang: Option<String>,
     colors: Option<String>,
     pos: Option<WindowPos>,
+    lpath: Option<PathBuf>,
+    rpath: Option<PathBuf>,
     dirs: Vec<PathBuf>,
 }
 
@@ -63,6 +65,9 @@ Options:
   --pos <where>      place the console window: f (full screen), n (normal),
                      l, r, t, b (left/right/top/bottom half),
                      lt, rt, lb, rb (a quarter; tl, tr, bl, br also work)
+  --lpath <dir>      current folder of the left panel
+  --rpath <dir>      current folder of the right panel
+                     (both override left_folder/right_folder and saved settings)
   --keytest          show how key presses are decoded (for bug reports)
   -h, --help         this help
   --version          print the version
@@ -90,6 +95,8 @@ fn parse_args() -> Result<Args, String> {
                 let v = it.next().ok_or("--pos needs a position")?;
                 a.pos = Some(WindowPos::parse(&v).ok_or(format!("unknown --pos value: {v}"))?);
             }
+            "--lpath" => a.lpath = Some(dir_arg(it.next(), "--lpath")?),
+            "--rpath" => a.rpath = Some(dir_arg(it.next(), "--rpath")?),
             "-v" => a.view = Some(PathBuf::from(it.next().ok_or("-v needs a file")?)),
             e if e.starts_with("-e") => {
                 let line = e[2..].parse::<usize>().ok().map(|l| l.saturating_sub(1));
@@ -100,6 +107,13 @@ fn parse_args() -> Result<Args, String> {
         }
     }
     Ok(a)
+}
+
+/// Checks the folder value of `--lpath`/`--rpath`.
+fn dir_arg(v: Option<String>, opt: &str) -> Result<PathBuf, String> {
+    let v = v.ok_or(format!("{opt} needs a folder"))?;
+    let p = abs(PathBuf::from(&v));
+    if p.is_dir() { Ok(p) } else { Err(format!("{opt}: not a folder: {v}")) }
 }
 
 /// `gm --keytest`: prints each decoded key chord (Esc twice exits).
@@ -197,7 +211,10 @@ fn main() -> ExitCode {
 
     let mut ui = Ui::new(term, Box::new(DbHistory(db.clone())));
     ui.help = Some(gm_help::show);
-    let start = (args.dirs.first().cloned().map(abs), args.dirs.get(1).cloned().map(abs));
+    let start = (
+        args.lpath.clone().or_else(|| args.dirs.first().cloned().map(abs)),
+        args.rpath.clone().or_else(|| args.dirs.get(1).cloned().map(abs)),
+    );
     let mut app = App::new(ui, settings, settings_path, db, modules(), keymap, start);
     if let Some(e) = settings_error {
         app.pending_messages.push(("settings.toml".into(), e));

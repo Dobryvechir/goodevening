@@ -48,10 +48,29 @@ pub const NAMES: [(&str, C16); 17] = [
     ("Default", C16::Default),
 ];
 
+/// The application's main background (panels, viewer, editor): #000153.
+/// Rendered as exact RGB in every color mode so it does not depend on the terminal theme.
+pub const APP_BLUE: (u8, u8, u8) = (0x00, 0x01, 0x53);
+
+/// The viewer's background: a barely lighter shade of [`APP_BLUE`] (#000260),
+/// just enough to tell the viewer apart from the panels and the editor.
+pub const VIEWER_BLUE: (u8, u8, u8) = (0x00, 0x02, 0x60);
+
+fn is_viewer(id: PaletteId) -> bool {
+    matches!(
+        id,
+        PaletteId::ViewerText
+            | PaletteId::ViewerTextSelected
+            | PaletteId::ViewerStatus
+            | PaletteId::ViewerArrows
+            | PaletteId::ViewerScrollbar
+    )
+}
+
 /// Classic Windows console RGB values (Far's default RGB palette).
 const RGB: [(u8, u8, u8); 16] = [
     (0, 0, 0),
-    (0, 0, 128),
+    APP_BLUE,
     (0, 128, 0),
     (0, 128, 128),
     (128, 0, 0),
@@ -91,13 +110,13 @@ impl C16 {
 
     pub fn to_color(self, mode: ColorMode) -> Color {
         let Some(i) = self.index() else { return Color::Reset };
-        if mode == ColorMode::TrueColor {
+        if mode == ColorMode::TrueColor || self == C16::Blue {
             let (r, g, b) = RGB[i];
             return Color::Rgb(r, g, b);
         }
         match self {
             C16::Black => Color::Black,
-            C16::Blue => Color::Blue,
+            C16::Blue => unreachable!(),
             C16::Green => Color::Green,
             C16::Cyan => Color::Cyan,
             C16::Red => Color::Red,
@@ -134,7 +153,13 @@ pub fn style(id: PaletteId) -> Style {
     STATE.with(|s| {
         let s = s.borrow();
         let (f, b) = s.colors[id as usize];
-        Style::default().fg(f.to_color(s.mode)).bg(b.to_color(s.mode))
+        let bg = if b == C16::Blue && is_viewer(id) {
+            let (r, g, bl) = VIEWER_BLUE;
+            Color::Rgb(r, g, bl)
+        } else {
+            b.to_color(s.mode)
+        };
+        Style::default().fg(f.to_color(s.mode)).bg(bg)
     })
 }
 

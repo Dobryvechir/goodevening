@@ -44,7 +44,25 @@ gm [options] [left_folder [right_folder]]
   --lang <name>      interface language (English, Russian, Ukrainian, …)
   --colors <mode>    auto, 16 or truecolor
   --pos <where>      move and resize the console window (see below)
+  --lpath <dir>      current folder of the left panel (see below)
+  --rpath <dir>      current folder of the right panel (see below)
   --keytest          show how key presses are decoded (for bug reports)
+```
+
+### Panel folders (`--lpath`, `--rpath`)
+
+By default each panel opens the folder it showed when gm was last closed
+(saved in the settings), or the current folder if that one no longer exists.
+`--lpath <dir>` sets the current folder of the left panel and
+`--rpath <dir>` the one of the right panel, overriding the saved settings.
+Either can be given alone; the other panel then starts as usual.
+They also take priority over the positional `left_folder`/`right_folder`.
+Relative paths are resolved against the current folder; gm exits with an
+error if the path is not an existing folder.
+
+```
+gm --lpath C:\Projects --rpath D:\Backup
+gm --rpath ../other        # left panel as usual, right panel in ../other
 ```
 
 ### Console window position (`--pos`)
