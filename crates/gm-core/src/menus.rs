@@ -76,6 +76,7 @@ pub fn bar(app: &App) -> MenuBar {
         item(app, MsgId::MMenuSwapPanels, Command::SwapPanels),
         item(app, MsgId::MMenuTogglePanels, Command::UserScreen),
         MenuItem::new(msg(MsgId::MMenuTerminalPosition)),
+        MenuItem::new(msg(MsgId::MMenuMultipleTerminals)),
         item(app, MsgId::MMenuCompareFolders, Command::CompareFolders),
         MenuItem::separator(),
         MenuItem::new(msg(MsgId::MMenuUserMenu)),
@@ -130,9 +131,60 @@ pub fn terminal_position(app: &mut App) {
     let MenuResult::Selected(i) = m.run(&mut app.ui) else { return };
     if let Some(pos) = ITEMS.get(i).and_then(|(_, code)| gm_platform::window::WindowPos::parse(code)) {
         gm_platform::window::place_console(pos);
-        // The terminal reports the new size as a resize event; redraw fully.
+        // Windows Terminal does not report this resize as an event; adopt
+        // the new size now and redraw fully.
+        app.ui.term.sync_size();
         app.ui.term.invalidate();
     }
+}
+
+/// F9 → Commands → Multiple terminals: moves this console window to the
+/// first part of the screen (as Terminal position does) and starts one more
+/// independent gm for every other part, each in a new terminal window with
+/// `--pos <part> --lpath <left folder> --rpath <right folder>`.
+pub fn multiple_terminals(app: &mut App) {
+    const ITEMS: [(MsgId, &[&str]); 3] = [
+        (MsgId::MMultiTermLeftRight, &["l", "r"]),
+        (MsgId::MMultiTermTopBottom, &["t", "b"]),
+        (MsgId::MMultiTermFour, &["lt", "rt", "lb", "rb"]),
+    ];
+    let items = ITEMS.iter().map(|(name, _)| MenuItem::new(msg(*name))).collect();
+    let mut m = VMenu::new(plain(MsgId::MMenuMultipleTerminals), items);
+    let MenuResult::Selected(i) = m.run(&mut app.ui) else { return };
+    let Some((_, parts)) = ITEMS.get(i) else { return };
+    if let Some(pos) = gm_platform::window::WindowPos::parse(parts[0]) {
+        gm_platform::window::place_console(pos);
+        // Windows Terminal does not report this resize as an event; adopt
+        // the new size now and redraw fully.
+        app.ui.term.sync_size();
+        app.ui.term.invalidate();
+    }
+    let mut common: Vec<std::ffi::OsString> = Vec::new();
+    // Panels that show no local folder (e.g. a network panel) are left to
+    // the new gm's saved settings.
+    for (opt, dir) in [("--lpath", app.left.files.base_dir()), ("--rpath", app.right.files.base_dir())] {
+        if dir.is_absolute() && dir.is_dir() {
+            common.extend([opt.into(), dir.into_os_string()]);
+        }
+    }
+    // The same settings and language as this gm.
+    common.extend(["--profile".into(), gm_config::profile_dir().as_os_str().to_owned()]);
+    common.extend(["--lang".into(), gm_i18n::current_language().into()]);
+    for (n, part) in parts[1..].iter().enumerate() {
+        if n > 0 {
+            // Let the previous terminal open its window first: where gm finds
+            // its window as the active one, the starts must not overlap.
+            std::thread::sleep(std::time::Duration::from_millis(300));
+        }
+        let mut args: Vec<std::ffi::OsString> = vec!["--pos".into(), (*part).into()];
+        args.extend(common.iter().cloned());
+        if let Err(e) = gm_platform::instance::open_in_new_terminal(&args) {
+            message(&mut app.ui, &plain(MsgId::MMenuMultipleTerminals), &format!("{}
+{e}", msg(MsgId::MMultiTermError)), &[msg(MsgId::MOk)]);
+            break;
+        }
+    }
+    app.ui.term.invalidate();
 }
 
 pub fn main_menu(app: &mut App) {
@@ -210,14 +262,15 @@ pub fn main_menu(app: &mut App) {
             6 => crate::commands::run(app, Command::SwapPanels),
             7 => app.user_screen(),
             8 => terminal_position(app),
-            9 => crate::commands::run(app, Command::CompareFolders),
-            11 => crate::usermenu::edit_menu_file(app),
-            12 => crate::options::associations(app),
-            13 => shortcuts_menu(app),
-            14 => crate::commands::run(app, Command::Filter),
-            16 => module_commands(app),
-            17 => screens(app),
-            18 => crate::exec::execute_line(app, "proc:"),
+            9 => multiple_terminals(app),
+            10 => crate::commands::run(app, Command::CompareFolders),
+            12 => crate::usermenu::edit_menu_file(app),
+            13 => crate::options::associations(app),
+            14 => shortcuts_menu(app),
+            15 => crate::commands::run(app, Command::Filter),
+            17 => module_commands(app),
+            18 => screens(app),
+            19 => crate::exec::execute_line(app, "proc:"),
             _ => {}
         },
         3 => match it {

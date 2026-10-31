@@ -69,13 +69,18 @@ pub fn place_console(pos: WindowPos) {
     }
 }
 
+#[cfg(unix)]
+pub(crate) use imp::is_wsl;
+
 #[cfg(windows)]
 mod imp {
     use super::{WindowPos, part_rect};
     use windows_sys::Win32::Foundation::{HWND, RECT};
     use windows_sys::Win32::Graphics::Dwm::{DWMWA_EXTENDED_FRAME_BOUNDS, DwmGetWindowAttribute};
     use windows_sys::Win32::Graphics::Gdi::{GetMonitorInfoW, MONITOR_DEFAULTTONEAREST, MONITORINFO, MonitorFromWindow};
-    use windows_sys::Win32::System::Console::GetConsoleWindow;
+    use windows_sys::Win32::System::Console::{
+        CONSOLE_SCREEN_BUFFER_INFO, GetConsoleScreenBufferInfo, GetConsoleWindow, GetStdHandle, STD_OUTPUT_HANDLE,
+    };
     use windows_sys::Win32::UI::HiDpi::{DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2, SetThreadDpiAwarenessContext};
     use windows_sys::Win32::UI::WindowsAndMessaging::{
         GA_ROOTOWNER, GetAncestor, GetForegroundWindow, GetWindowRect, IsWindowVisible, IsZoomed, SW_MAXIMIZE, SW_RESTORE, SWP_NOACTIVATE,
@@ -135,11 +140,54 @@ mod imp {
             {
                 (l, t, r, b) = (fr.left - wr.left, fr.top - wr.top, wr.right - fr.right, wr.bottom - fr.bottom);
             }
+            let before = console_size();
             SetWindowPos(hwnd, std::ptr::null_mut(), x - l, y - t, cx + l + r, cy + t + b, SWP_NOZORDER | SWP_NOACTIVATE);
             // Windows Terminal may ignore a maximize request while it starts,
             // so `Full` first fills the work area and then also maximizes.
             if pos == WindowPos::Full {
                 ShowWindow(hwnd, SW_MAXIMIZE);
+            }
+            wait_for_resize(before);
+        }
+    }
+
+    /// The visible console size in cells (columns, rows).
+    fn console_size() -> Option<(i16, i16)> {
+        // SAFETY: the out-pointer refers to a local of the right type.
+        unsafe {
+            let mut info: CONSOLE_SCREEN_BUFFER_INFO = std::mem::zeroed();
+            if GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &mut info) == 0 {
+                return None;
+            }
+            let w = info.srWindow;
+            Some((w.Right - w.Left + 1, w.Bottom - w.Top + 1))
+        }
+    }
+
+    /// Windows Terminal resizes its pseudo-console asynchronously, after
+    /// `SetWindowPos` returns. Drawing before that happens makes the
+    /// terminal re-wrap the first frame into the new width (garbled text),
+    /// so wait until the console size has changed and stopped changing.
+    fn wait_for_resize(before: Option<(i16, i16)>) {
+        use std::time::{Duration, Instant};
+        let Some(mut last) = before else { return };
+        let start = Instant::now();
+        let mut changed = false;
+        let mut stable_since = start;
+        loop {
+            std::thread::sleep(Duration::from_millis(15));
+            let now = Instant::now();
+            let Some(size) = console_size() else { return };
+            if size != last {
+                (last, changed, stable_since) = (size, true, now);
+            }
+            let waited = now - start;
+            let stable = now - stable_since;
+            // Done: the size changed and then held for a while; or it never
+            // changed (classic console already resized, or nothing to do);
+            // or the overall limit.
+            if (changed && stable >= Duration::from_millis(150)) || (!changed && waited >= Duration::from_millis(600)) || waited >= Duration::from_secs(2) {
+                return;
             }
         }
     }
@@ -177,7 +225,7 @@ mod imp {
         output(cmd, args).is_some()
     }
 
-    fn is_wsl() -> bool {
+    pub(crate) fn is_wsl() -> bool {
         std::env::var_os("WSL_DISTRO_NAME").is_some()
             || std::env::var_os("WSL_INTEROP").is_some()
             || std::fs::read_to_string("/proc/sys/kernel/osrelease").is_ok_and(|s| s.to_ascii_lowercase().contains("microsoft"))

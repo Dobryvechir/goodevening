@@ -4512,3 +4512,13 @@
 "Правая ве&рхняя четверть"
 //[MTermPosRightBottom]
 "Правая нижн&яя четверть"
+//[MMenuMultipleTerminals]
+"Н&есколько терминалов"
+//[MMultiTermLeftRight]
+"&Левый и правый терминалы"
+//[MMultiTermTopBottom]
+"&Верхний и нижний терминалы"
+//[MMultiTermFour]
+"&4 терминала"
+//[MMultiTermError]
+"Не удалось открыть новое окно терминала"

@@ -217,11 +217,16 @@ impl Term {
                 None => Some(Event::Key(KeyChord::plain(KeyCode::Esc))),
             });
         }
+        // A resize the terminal did not report (callers wait at most about
+        // a second between calls, so the screen is repaired soon).
+        if let Some(e) = self.sync_size() {
+            return Ok(Some(e));
+        }
         let deadline = Instant::now() + timeout;
         loop {
             let left = deadline.saturating_duration_since(Instant::now());
             if !event::poll(left)? {
-                return Ok(None);
+                return Ok(self.sync_size());
             }
             if let Some(e) = self.translate(event::read()?) {
                 if self.alt_keymap
@@ -251,17 +256,45 @@ impl Term {
         match ev {
             event::Event::Key(k) => KeyChord::from_event(&k).map(Event::Key),
             event::Event::Mouse(m) => Some(Event::Mouse(m)),
-            event::Event::Resize(w, h) => {
-                if let Some(t) = self.terminal.as_mut() {
-                    let _ = t.autoresize();
-                }
-                self.last = Buffer::empty(Rect::new(0, 0, w, h));
-                Some(Event::Resize(w, h))
-            }
+            event::Event::Resize(w, h) => Some(self.resized(w, h)),
             event::Event::Paste(s) => Some(Event::Paste(s)),
             event::Event::FocusGained => Some(Event::Focus(true)),
             event::Event::FocusLost => Some(Event::Focus(false)),
         }
+    }
+
+    /// Adopts a new terminal size: `(w, h)` from a resize event, replaced by
+    /// the real visible size when it can be read.
+    fn resized(&mut self, mut w: u16, mut h: u16) -> Event {
+        if let Some(t) = self.terminal.as_mut() {
+            let _ = t.autoresize();
+            // The terminal may have reflowed (re-wrapped) what was on screen,
+            // or output written for the old size may have landed after the
+            // resize (Windows Terminal resizes asynchronously). The previous
+            // frame no longer matches the screen, so repaint everything, not
+            // only the diff.
+            let _ = t.clear();
+            // Windows reports the buffer size in the event; the visible
+            // window is what is drawn.
+            if let Ok(s) = t.size() {
+                (w, h) = (s.width, s.height);
+            }
+        }
+        self.last = Buffer::empty(Rect::new(0, 0, w, h));
+        Event::Resize(w, h)
+    }
+
+    /// Compares the real terminal size with the size of the last frame and,
+    /// when they differ, adopts the new size as a resize event would.
+    /// Terminals do not always report a resize: Windows Terminal loses it
+    /// when gm moves its own window (F9 → Commands → Terminal position /
+    /// Multiple terminals). Call it after changing the window size.
+    pub fn sync_size(&mut self) -> Option<Event> {
+        let s = self.terminal.as_ref()?.size().ok()?;
+        if (s.width, s.height) == self.size() || s.width == 0 || s.height == 0 {
+            return None;
+        }
+        Some(self.resized(s.width, s.height))
     }
 
     /// Leaves the alternate screen and raw mode (to run a command or show

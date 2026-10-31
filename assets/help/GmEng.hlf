@@ -1354,6 +1354,18 @@ $ #Menus: commands menu#
                       as the #--pos# command line option. If the
                       system does not allow it, nothing happens.
 
+ #Multiple terminals#
+                      Split the screen between several independent
+                      copies of the manager: #Left and right terminals#,
+                      #Top and bottom terminals# or #4 terminals#. This
+                      window moves to the left half, the top half or
+                      the left top quarter (as with #Terminal position#),
+                      and for every other part the same program is
+                      started in a new terminal window with #--pos#,
+                      #--lpath# and #--rpath#, so it shows the same
+                      left and right folders. If no terminal window can
+                      be opened, an error message is shown.
+
  #Compare folders#      Compare contents of folders.
                       See ~Compare folders~@CompFolders@ for the
                       detailed description.

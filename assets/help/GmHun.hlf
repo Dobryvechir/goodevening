@@ -1388,6 +1388,18 @@ kiválasztás után a lista aljára kerülnek. Ezt elkerülhetjük, ha Enter hel
                         mint a #--pos# parancssori kapcsoló. Ha a
                         rendszer ezt nem engedi, nem történik semmi.
 
+ #Több terminál#        A képernyő felosztása a kezelő több független
+                        példánya között: #Bal és jobb terminál#,
+                        #Felső és alsó terminál# vagy #4 terminál#.
+                        Ez az ablak a bal felére, a felső felére vagy
+                        a bal felső negyedbe kerül (mint a #Terminál#
+                        #pozíció# esetén), a többi részre pedig
+                        ugyanaz a program indul új terminálablakban
+                        a #--pos#, #--lpath# és #--rpath# kapcsolókkal,
+                        így ugyanazokat a bal és jobb mappákat
+                        mutatja. Ha nem nyitható terminálablak,
+                        hibaüzenet jelenik meg.
+
  #Mappák#               Összeveti a mappák tartalmát.
  #összehasonlítása#     ^<wrap>A ~mappák összehasonlítása~@CompFolders@
 témakör részletezi a funkciót.

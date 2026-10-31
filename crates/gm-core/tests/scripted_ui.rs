@@ -223,6 +223,22 @@ fn terminal_position_menu() {
 }
 
 #[test]
+fn multiple_terminals_menu() {
+    let mut f = fixture("multiterm", vec![]);
+    f.app.ui.term.recorded = Some(Vec::new());
+    // F9 → Right, Right (Commands) → E (Multiple terminals); Esc closes the
+    // submenu without moving the window or starting anything.
+    let script = vec![plain(KeyCode::Right), plain(KeyCode::Right), plain(KeyCode::Char('e')), Event::Resize(110, 32), plain(KeyCode::Esc)];
+    f.run(plain(KeyCode::F(9)), script);
+    let frames = f.app.ui.term.recorded.replace(Vec::new()).unwrap_or_default();
+    let menu = frames.iter().find(|fr| fr.contains("Multiple terminals") && fr.contains("4 terminals"));
+    let menu = menu.unwrap_or_else(|| panic!("no Multiple terminals menu in {} frames", frames.len()));
+    for item in ["Left and right terminals", "Top and bottom terminals"] {
+        assert!(menu.contains(item), "{item} missing:\n{menu}");
+    }
+}
+
+#[test]
 fn find_file_goto() {
     let mut f = fixture("find", vec![]);
     std::fs::write(f.left().join("sub/needle.txt"), "hay").unwrap();

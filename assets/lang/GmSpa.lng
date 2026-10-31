@@ -4512,3 +4512,13 @@
 "Arriba a la de&recha"
 //[MTermPosRightBottom]
 "Abajo a la derec&ha"
+//[MMenuMultipleTerminals]
+"Múltiples te&rminales"
+//[MMultiTermLeftRight]
+"Terminales &izquierdo y derecho"
+//[MMultiTermTopBottom]
+"Terminales &superior e inferior"
+//[MMultiTermFour]
+"&4 terminales"
+//[MMultiTermError]
+"No se puede abrir una nueva ventana de terminal"

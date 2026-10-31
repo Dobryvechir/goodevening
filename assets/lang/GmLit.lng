@@ -4512,3 +4512,13 @@
 "Viršuje deši&nėje"
 //[MTermPosRightBottom]
 "Apačioje dešin&ėje"
+//[MMenuMultipleTerminals]
+"Keli terminalų lan&gai"
+//[MMultiTermLeftRight]
+"&Kairysis ir dešinysis terminalai"
+//[MMultiTermTopBottom]
+"&Viršutinis ir apatinis terminalai"
+//[MMultiTermFour]
+"&4 terminalai"
+//[MMultiTermError]
+"Nepavyko atidaryti naujo terminalo lango"

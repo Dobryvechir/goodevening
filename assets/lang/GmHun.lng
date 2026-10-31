@@ -4512,3 +4512,13 @@
 "Jobb f&első negyed"
 //[MTermPosRightBottom]
 "Jobb als&ó negyed"
+//[MMenuMultipleTerminals]
+"T&öbb terminál"
+//[MMultiTermLeftRight]
+"&Bal és jobb terminál"
+//[MMultiTermTopBottom]
+"&Felső és alsó terminál"
+//[MMultiTermFour]
+"&4 terminál"
+//[MMultiTermError]
+"Nem sikerült új terminálablakot nyitni"

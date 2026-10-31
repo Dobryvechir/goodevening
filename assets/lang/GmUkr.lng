@@ -4512,3 +4512,13 @@
 "Права верхн&я чверть"
 //[MTermPosRightBottom]
 "Права нижня чвер&ть"
+//[MMenuMultipleTerminals]
+"Кілька те&рміналів"
+//[MMultiTermLeftRight]
+"&Лівий і правий термінали"
+//[MMultiTermTopBottom]
+"&Верхній і нижній термінали"
+//[MMultiTermFour]
+"&4 термінали"
+//[MMultiTermError]
+"Не вдалося відкрити нове вікно терміналу"

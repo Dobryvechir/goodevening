@@ -124,6 +124,46 @@ matching `--pos` value does at startup, and the panels are redrawn for the
 new size. Where the system does not allow it (see the list above), nothing
 happens.
 
+#### Several gm windows side by side
+
+**F9 → Commands → Multiple terminals** splits the screen between several
+independent gm instances. It opens a menu in the middle of the screen:
+
+| Item | This gm moves to | New gm instances |
+|---|---|---|
+| Left and right terminals | `--pos l` | one at `--pos r` |
+| Top and bottom terminals | `--pos t` | one at `--pos b` |
+| 4 terminals | `--pos lt` | three at `--pos rt`, `--pos lb`, `--pos rb` |
+
+The running gm moves exactly as with **Terminal position**. Each new gm is
+the same executable started in a new terminal window, as an independent
+application, with
+
+    gm --pos <part> --lpath <left folder> --rpath <right folder> --profile <profile> --lang <language>
+
+so it opens with the same left and right folders, the same settings and the
+same interface language. (A panel that shows no local folder, e.g. a network
+panel, is not passed; the new gm then uses its saved folder.) Closing one gm
+does not affect the others.
+
+The new terminal window is opened with:
+
+* **Windows**: a new console window, which is a new Windows Terminal window
+  when Windows Terminal is the default terminal application.
+* **WSL**: a new Windows console (or Windows Terminal) window running the same
+  distribution (`cmd.exe /c start wsl.exe -d <distro> -e gm …`).
+* **macOS**: a new iTerm2 window when gm runs in iTerm2, otherwise a new
+  Terminal window.
+* **Linux and other Unix desktops**: `$TERMINAL -e`, else the terminal gm runs
+  in (kitty, Alacritty, WezTerm, Ghostty, Konsole, GNOME Terminal, foot), else
+  the first one installed of `x-terminal-emulator`, `gnome-terminal`,
+  `konsole`, `xfce4-terminal`, `mate-terminal`, `kitty`, `alacritty`,
+  `wezterm`, `ghostty`, `foot`, `xterm`. Without a graphical session (no
+  `DISPLAY` or `WAYLAND_DISPLAY`) no window can be opened.
+
+If no terminal window can be opened, gm shows an error message. How well the
+new windows are placed depends on the same system support as `--pos`.
+
 Settings live in `%APPDATA%\gm`, `~/.config/gm` or
 `~/Library/Application Support/gm`:
 

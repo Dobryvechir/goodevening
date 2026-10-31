@@ -4512,3 +4512,13 @@
 "Prawa gó&rna ćwiartka"
 //[MTermPosRightBottom]
 "Prawa dolna ćwiar&tka"
+//[MMenuMultipleTerminals]
+"Wi&ele terminali"
+//[MMultiTermLeftRight]
+"&Lewy i prawy terminal"
+//[MMultiTermTopBottom]
+"&Górny i dolny terminal"
+//[MMultiTermFour]
+"&4 terminale"
+//[MMultiTermError]
+"Nie można otworzyć nowego okna terminala"

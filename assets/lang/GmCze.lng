@@ -4512,3 +4512,13 @@
 "Pravá ho&rní čtvrtina"
 //[MTermPosRightBottom]
 "Pravá dolní č&tvrtina"
+//[MMenuMultipleTerminals]
+"&Více terminálů"
+//[MMultiTermLeftRight]
+"&Levý a pravý terminál"
+//[MMultiTermTopBottom]
+"&Horní a dolní terminál"
+//[MMultiTermFour]
+"&4 terminály"
+//[MMultiTermError]
+"Nelze otevřít nové okno terminálu"

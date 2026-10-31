@@ -1354,6 +1354,18 @@ $ #Menu: menu polecenia#
                         jak opcja wiersza poleceń #--pos#. Jeśli
                         system na to nie pozwala, nic się nie dzieje.
 
+ #Wiele terminali#      Dzieli ekran między kilka niezależnych kopii
+                        menedżera: #Lewy i prawy terminal#, #Górny#
+                        #i dolny terminal# lub #4 terminale#. To okno
+                        przenosi się do lewej połowy, górnej połowy
+                        lub lewej górnej ćwiartki (jak w #Pozycji#
+                        #terminala#), a dla każdej pozostałej części
+                        ten sam program jest uruchamiany w nowym
+                        oknie terminala z opcjami #--pos#, #--lpath#
+                        i #--rpath#, więc pokazuje te same lewy
+                        i prawy folder. Jeśli nie można otworzyć okna
+                        terminala, pojawia się komunikat o błędzie.
+
  #Porównaj foldery#     Porównuje zawartość folderów.
                       Więcej informacji: ~Porównaj foldery~@CompFolders@.
 

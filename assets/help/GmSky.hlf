@@ -1349,6 +1349,18 @@ $ #Commands menu#
                         #--pos#. Ak to systém neumožňuje, nič sa
                         nestane.
 
+ #Viac terminálov#      Rozdelí obrazovku medzi niekoľko nezávislých
+                        kópií správcu: #Ľavý a pravý terminál#,
+                        #Horný a dolný terminál# alebo #4 terminály#.
+                        Toto okno sa presunie do ľavej polovice,
+                        hornej polovice alebo ľavej hornej štvrtiny
+                        (ako pri #Pozícii terminálu#) a pre každú
+                        ďalšiu časť sa ten istý program spustí
+                        v novom okne terminálu s parametrami #--pos#,
+                        #--lpath# a #--rpath#, takže zobrazí rovnaké
+                        ľavé a pravé adresáre. Ak nie je možné okno
+                        terminálu otvoriť, zobrazí sa chybové hlásenie.
+
  #Porovnaj adresáre#    Porovná obsahy adresárov.
                       Viď ~Porovnaj adresáre~@CompFolders@.
 

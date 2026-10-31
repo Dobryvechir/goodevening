@@ -2255,3 +2255,8 @@ MTermPosLeftTop
 MTermPosLeftBottom
 MTermPosRightTop
 MTermPosRightBottom
+MMenuMultipleTerminals
+MMultiTermLeftRight
+MMultiTermTopBottom
+MMultiTermFour
+MMultiTermError

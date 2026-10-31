@@ -4512,3 +4512,13 @@
 "Правая верхн&яя чвэрць"
 //[MTermPosRightBottom]
 "Правая ніжняя чвэр&ць"
+//[MMenuMultipleTerminals]
+"Н&екалькі тэрміналаў"
+//[MMultiTermLeftRight]
+"&Левы і правы тэрміналы"
+//[MMultiTermTopBottom]
+"&Верхні і ніжні тэрміналы"
+//[MMultiTermFour]
+"&4 тэрміналы"
+//[MMultiTermError]
+"Не ўдалося адкрыць новае акно тэрмінала"

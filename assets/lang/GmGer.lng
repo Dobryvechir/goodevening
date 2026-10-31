@@ -4512,3 +4512,13 @@
 "Rechts ob&en"
 //[MTermPosRightBottom]
 "Rech&ts unten"
+//[MMenuMultipleTerminals]
+"Mehrere Termin&als"
+//[MMultiTermLeftRight]
+"&Linkes und rechtes Terminal"
+//[MMultiTermTopBottom]
+"&Oberes und unteres Terminal"
+//[MMultiTermFour]
+"&4 Terminals"
+//[MMultiTermError]
+"Ein neues Terminalfenster kann nicht geöffnet werden"

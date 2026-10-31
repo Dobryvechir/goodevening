@@ -4512,3 +4512,13 @@
 "Superior di&reita"
 //[MTermPosRightBottom]
 "Inferior direi&ta"
+//[MMenuMultipleTerminals]
+"Múltiplos termi&nais"
+//[MMultiTermLeftRight]
+"Terminais à &esquerda e à direita"
+//[MMultiTermTopBottom]
+"Terminais em &cima e em baixo"
+//[MMultiTermFour]
+"&4 terminais"
+//[MMultiTermError]
+"Não foi possível abrir uma nova janela de terminal"

@@ -1388,6 +1388,20 @@ $ #Menü Befehle#
                         Befehlszeilenoption #--pos#. Wenn das System
                         es nicht erlaubt, passiert nichts.
 
+ #Mehrere Terminals#    Teilt den Bildschirm zwischen mehreren
+                        unabhängigen Kopien des Managers auf:
+                        #Linkes und rechtes Terminal#, #Oberes und#
+                        #unteres Terminal# oder #4 Terminals#. Dieses
+                        Fenster wird in die linke Hälfte, die obere
+                        Hälfte oder das linke obere Viertel
+                        verschoben (wie bei #Terminalposition#), und
+                        für jeden anderen Teil wird dasselbe Programm
+                        in einem neuen Terminalfenster mit #--pos#,
+                        #--lpath# und #--rpath# gestartet, sodass es
+                        dieselben linken und rechten Ordner zeigt.
+                        Kann kein Terminalfenster geöffnet werden,
+                        erscheint eine Fehlermeldung.
+
  #Verzeichnisse#        Vergleicht Inhalte von Verzeuchnissen.
  #vergleichen#          Detaillierte Informationen dazu finden Sie
                       unter "Verzeichnisse vergleichen~@CompFolders@.

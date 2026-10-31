@@ -4512,3 +4512,13 @@
 "Øverst til hø&yre"
 //[MTermPosRightBottom]
 "Nederst til høy&re"
+//[MMenuMultipleTerminals]
+"Fl&ere terminaler"
+//[MMultiTermLeftRight]
+"&Venstre og høyre terminal"
+//[MMultiTermTopBottom]
+"&Øvre og nedre terminal"
+//[MMultiTermFour]
+"&4 terminaler"
+//[MMultiTermError]
+"Kan ikke åpne et nytt terminalvindu"

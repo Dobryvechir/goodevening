@@ -1375,6 +1375,19 @@ $ #Menyer: Kommandoer-menyen#
                             på kommandolinjen. Hvis systemet ikke
                             tillater det, skjer ingenting.
 
+ #Flere terminaler#         Del skjermen mellom flere uavhengige
+                            kopier av programmet: #Venstre og høyre#
+                            #terminal#, #Øvre og nedre terminal# eller
+                            #4 terminaler#. Dette vinduet flyttes til
+                            venstre halvdel, øvre halvdel eller
+                            fjerdedelen øverst til venstre (som med
+                            #Terminalposisjon#), og for hver av de andre
+                            delene startes det samme programmet i et nytt
+                            terminalvindu med #--pos#, #--lpath# og
+                            #--rpath#, slik at det viser de samme venstre
+                            og høyre mappene. Hvis et terminalvindu ikke
+                            kan åpnes, vises en feilmelding.
+
  #Sammenlign mapper#          Sammenlign innholdet i mapper.
                             Se ~Sammenlign mapper~@CompFolders@ for en
                             detaljert beskrivelse.

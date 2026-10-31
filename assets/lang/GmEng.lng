@@ -4512,3 +4512,13 @@
 "Ri&ght top"
 //[MTermPosRightBottom]
 "Right botto&m"
+//[MMenuMultipleTerminals]
+"Multipl&e terminals"
+//[MMultiTermLeftRight]
+"&Left and right terminals"
+//[MMultiTermTopBottom]
+"&Top and bottom terminals"
+//[MMultiTermFour]
+"&4 terminals"
+//[MMultiTermError]
+"Cannot open a new terminal window"
