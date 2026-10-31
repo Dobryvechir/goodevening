@@ -205,9 +205,57 @@ pub fn execute_line(app: &mut App, line: &str) {
     run_external(app, line);
 }
 
+/// Server execution mode (`gm --client=<file>`): adds `line` to the queue
+/// file instead of running it, like `gm --client-push=<file> <line>`.
+/// Returns false (and does nothing) when the mode is off.
+pub fn queue_instead(app: &mut App, line: &str) -> bool {
+    let Some(path) = app.server_queue.clone() else { return false };
+    if let Err(e) = crate::queue::push(&path, line) {
+        gm_ui::message::error(&mut app.ui, msg(MsgId::MError), &format!("{}\n{line}\n{e}", path.display()));
+    }
+    true
+}
+
+/// The shell command line that opens `path` with the associated
+/// application (what `open_with_system` does), for the queue.
+pub fn open_line(path: &Path) -> String {
+    let p = gm_platform::shell::quote(&path.display().to_string());
+    if cfg!(windows) {
+        // `start` takes the first quoted argument as the window title.
+        format!("start \"\" \"{}\"", path.display())
+    } else if cfg!(target_os = "macos") {
+        format!("open {p}")
+    } else {
+        format!("xdg-open {p}")
+    }
+}
+
+/// Opens `path` with the associated application, or queues the command
+/// for it in server execution mode.
+pub fn open_with_system(app: &mut App, path: &Path) -> std::io::Result<()> {
+    if queue_instead(app, &open_line(path)) {
+        return Ok(());
+    }
+    gm_platform::shell::open_with_system(path)
+}
+
+/// `line` prefixed with a `cd` to `dir`, so the server (which runs commands
+/// in its own folder) runs it where gm would have.
+pub fn in_dir_line(dir: &Path, line: &str) -> String {
+    if cfg!(windows) {
+        // "/d" also switches the drive.
+        format!("cd /d \"{}\" && {line}", dir.display())
+    } else {
+        format!("cd {} && {line}", gm_platform::shell::quote(&dir.display().to_string()))
+    }
+}
+
 /// Runs a program through the shell on the user screen.
 pub fn run_external(app: &mut App, line: &str) {
     let dir = app.work_dir();
+    if app.server_queue.is_some() && queue_instead(app, &in_dir_line(&dir, line)) {
+        return;
+    }
     if app.ui.term.suspend().is_err() {
         return;
     }
@@ -245,5 +293,26 @@ mod tests {
             assert_eq!(expand_env("$NO_SUCH_VAR_GM/x"), "/x");
         }
         assert_eq!(unquote("\"a b\""), "a b");
+    }
+
+    #[test]
+    fn in_dir_line_for_queue() {
+        if cfg!(windows) {
+            assert_eq!(in_dir_line(Path::new(r"D:\My Projects\a"), "cargo build"), r#"cd /d "D:\My Projects\a" && cargo build"#);
+        } else {
+            assert_eq!(in_dir_line(Path::new("/home/u/my dir"), "make"), "cd '/home/u/my dir' && make");
+            assert_eq!(in_dir_line(Path::new("/tmp"), "./run"), "cd /tmp && ./run");
+        }
+    }
+
+    #[test]
+    fn open_line_for_queue() {
+        if cfg!(windows) {
+            assert_eq!(open_line(Path::new(r"C:\My Docs\a.txt")), r#"start "" "C:\My Docs\a.txt""#);
+        } else if cfg!(target_os = "macos") {
+            assert_eq!(open_line(Path::new("/tmp/my file.txt")), "open '/tmp/my file.txt'");
+        } else {
+            assert_eq!(open_line(Path::new("/tmp/my file.txt")), "xdg-open '/tmp/my file.txt'");
+        }
     }
 }

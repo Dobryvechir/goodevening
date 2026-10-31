@@ -43,6 +43,7 @@ Step-by-step guides for installing the toolchain, building and distributing:
 
 ```
 gm [options] [left_folder [right_folder]]
+gm [options] --client=<file> [left_folder [right_folder]]
 gm [options] --client-push=<file> <command line>
 gm [options] --server=<file>
 
@@ -55,13 +56,14 @@ gm [options] --server=<file>
   --pos <where>      move and resize the console window (see below)
   --lpath <dir>      current folder of the left panel (see below)
   --rpath <dir>      current folder of the right panel (see below)
+  --client=<file>    send commands to the queue <file> instead of running them
   --client-push=<file>
                      add a command to the queue <file> (see below)
   --server=<file>    run commands from the queue <file> (see below)
   --keytest          show how key presses are decoded (for bug reports)
 ```
 
-### Command queue (`--client-push`, `--server`)
+### Command queue (`--client`, `--client-push`, `--server`)
 
 One gm can run commands that other gm calls send to it, through a queue
 file. `<file>` is a file name in the settings folder, the folder that holds
@@ -76,6 +78,22 @@ file and exits. Everything after `--client-push=<file>` is the command line, so
 put the other options (`--profile`, `-p`) **before** it. Quote the command
 when it contains shell operators (`&`, `|`, `>`, …), otherwise the calling
 shell takes them. Line breaks in the command become spaces.
+
+**`gm --client=<file>`** starts the file manager as usual, with all its
+functions, but in *server execution mode*: whatever gm would run through the
+shell is not run but added to the queue file, exactly like
+`gm --client-push=<file> <command line>` does. This covers commands entered
+on the command line at the bottom and files started from the left or right
+panel (Enter or a double click); file associations and the user menu queue
+their expanded command lines. Each such command is queued with a `cd` to the
+folder of the active panel in front of it, so the server runs it where gm
+would have: typing `cargo build` in `D:\Projects\demo` queues
+`cd /d "D:\Projects\demo" && cargo build` (`cd '<folder>' && …` on Linux and
+macOS). A file that is not executable is queued as the command that opens it
+with the associated program (`start "" "<path>"` on Windows, `open` on macOS,
+`xdg-open` elsewhere). Commands that gm handles itself still work normally:
+`cd`, `pushd`/`popd`, drive changes, `exit`, module prefixes such as `proc:`,
+the viewer and the editor.
 
 **`gm --server=<file>`** does not show the panels or any window of gm; it
 uses the console as a plain screen. It creates the queue file if needed and
@@ -92,6 +110,7 @@ server runs until it is stopped with Ctrl+C or by closing the console.
 gm --server=jobs.txt                           # in one console
 gm --client-push=jobs.txt cargo build          # in any other console
 gm --client-push=jobs.txt "dir /b & echo done" # quoted: & goes to the server
+gm --client=jobs.txt                           # panels; Enter sends to the server
 ```
 
 ```
@@ -228,7 +247,7 @@ Settings live in `%APPDATA%\gm`, `~/.config/gm` or
 | `state.db` | command/folder/view histories, file positions, folder shortcuts (SQLite, safe for several instances) |
 | `keymap.toml` | key overrides, e.g. `[panels]` `"Alt+Q" = "Quit"` |
 | `GmMenu.ini` | the global user menu (F2); a `GmMenu.ini` in a folder is its local menu |
-| `<file>` of `--client-push`/`--server` | the command queue, one command per line |
+| `<file>` of `--client`/`--client-push`/`--server` | the command queue, one command per line |
 
 ## What works
 

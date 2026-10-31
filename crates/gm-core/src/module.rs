@@ -37,6 +37,9 @@ pub enum Action {
     Edit(PathBuf),
     /// Runs a command line as if typed by the user.
     Execute(String),
+    /// Opens a file with the associated application (queued in server
+    /// execution mode).
+    Open(PathBuf),
     /// Sets the active panel to a local folder.
     Cd(PathBuf),
     Message {

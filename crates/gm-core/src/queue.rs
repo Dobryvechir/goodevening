@@ -1,4 +1,5 @@
-//! Command queue shared by `gm --client-push=<file>` and `gm --server=<file>`.
+//! Command queue shared by `gm --client-push=<file>`, `gm --client=<file>`
+//! (server execution mode) and `gm --server=<file>`.
 //!
 //! The queue is a plain text file in the profile folder (next to
 //! `settings.toml`), one command line per line. Every access takes an

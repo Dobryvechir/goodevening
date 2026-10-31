@@ -184,7 +184,7 @@ pub fn run(app: &mut App, c: Command) {
         LeftWider => app.settings.panels.left_width_percent = (app.settings.panels.left_width_percent + 2).min(90),
         OpenWithSystem => {
             if let Some(p) = app.active().files.current_path()
-                && let Err(e) = gm_platform::shell::open_with_system(&p)
+                && let Err(e) = crate::exec::open_with_system(app, &p)
             {
                 gm_ui::message::error(&mut app.ui, msg(MsgId::MError), &e.to_string());
             }
@@ -261,6 +261,11 @@ pub fn apply_actions(app: &mut App, actions: Vec<Action>) {
             Action::ViewText { title, text } => app.view_text(&title, text.into_bytes()),
             Action::Edit(p) => app.open_editor(&p, None),
             Action::Execute(line) => crate::exec::execute_line(app, &line),
+            Action::Open(p) => {
+                if let Err(e) = crate::exec::open_with_system(app, &p) {
+                    gm_ui::message::error(&mut app.ui, msg(MsgId::MCannotExecute), &format!("{}\n{e}", p.display()));
+                }
+            }
             Action::Cd(p) => go_to_dir(app, &p),
             Action::Message { title, text } => {
                 message(&mut app.ui, &title, &text, &[msg(MsgId::MOk)]);
@@ -341,7 +346,7 @@ pub fn enter(app: &mut App, in_place: bool) {
             let q = gm_platform::shell::quote(&if is_local { name.clone() } else { path.display().to_string() });
             let line = if cfg!(windows) || !is_local { q } else { format!("./{q}") };
             crate::exec::execute_line(app, &line);
-        } else if let Err(err) = gm_platform::shell::open_with_system(&path) {
+        } else if let Err(err) = crate::exec::open_with_system(app, &path) {
             gm_ui::message::error(&mut app.ui, msg(MsgId::MCannotExecute), &format!("{}\n{err}", path.display()));
         }
     }

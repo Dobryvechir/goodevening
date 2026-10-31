@@ -1,10 +1,9 @@
 //! `gm` — Goodevening Manager.
 #![forbid(unsafe_code)]
 
-mod queue;
 
 use gm_config::{Settings, StateDb};
-use gm_core::{App, DbHistory, Keymap, Module};
+use gm_core::{App, DbHistory, Keymap, Module, queue};
 use gm_platform::window::WindowPos;
 use gm_term::{Event, KeyCode, Term, palette};
 use gm_ui::Ui;
@@ -53,6 +52,8 @@ struct Args {
     dirs: Vec<PathBuf>,
     /// `--client-push=<file>`: the queue file and the command to add to it.
     client_push: Option<(String, String)>,
+    /// `--client=<file>`: server execution mode, commands go to the queue file.
+    client: Option<String>,
     /// `--server=<file>`: the queue file to run commands from.
     server: Option<String>,
 }
@@ -60,6 +61,7 @@ struct Args {
 const USAGE: &str = "Goodevening Manager (gm) — a two-panel file manager
 
 Usage: gm [options] [left_folder [right_folder]]
+       gm [options] --client=<file> [left_folder [right_folder]]
        gm [options] --client-push=<file> <command line>
        gm [options] --server=<file>
 
@@ -76,6 +78,9 @@ Options:
   --lpath <dir>      current folder of the left panel
   --rpath <dir>      current folder of the right panel
                      (both override left_folder/right_folder and saved settings)
+  --client=<file>    start gm in server execution mode: commands typed on the
+                     command line and files started from the panels are not
+                     run but added to the queue <file> in the settings folder
   --client-push=<file>
                      do not start gm: add the rest of the command line as one
                      command to the queue <file> in the settings folder
@@ -119,6 +124,7 @@ fn parse_args() -> Result<Args, String> {
                 }
                 a.client_push = Some((file, cmd));
             }
+            o if o.starts_with("--client=") => a.client = Some(queue_name(&o["--client=".len()..], "--client")?),
             o if o.starts_with("--server=") => a.server = Some(queue_name(&o["--server=".len()..], "--server")?),
             "-v" => a.view = Some(PathBuf::from(it.next().ok_or("-v needs a file")?)),
             e if e.starts_with("-e") => {
@@ -129,13 +135,15 @@ fn parse_args() -> Result<Args, String> {
             d => a.dirs.push(PathBuf::from(d)),
         }
     }
-    if a.client_push.is_some() && a.server.is_some() {
-        return Err("--client-push and --server cannot be used together".into());
+    let modes = [("--client", a.client.is_some()), ("--client-push", a.client_push.is_some()), ("--server", a.server.is_some())];
+    let used: Vec<&str> = modes.iter().filter(|m| m.1).map(|m| m.0).collect();
+    if used.len() > 1 {
+        return Err(format!("{} cannot be used together", used.join(" and ")));
     }
     Ok(a)
 }
 
-/// Checks the file name of `--client-push=`/`--server=`.
+/// Checks the file name of `--client=`/`--client-push=`/`--server=`.
 fn queue_name(v: &str, opt: &str) -> Result<String, String> {
     if v.trim().is_empty() { Err(format!("{opt} needs a file name: {opt}=<file>")) } else { Ok(v.to_string()) }
 }
@@ -265,6 +273,7 @@ fn main() -> ExitCode {
         args.rpath.clone().or_else(|| args.dirs.get(1).cloned().map(abs)),
     );
     let mut app = App::new(ui, settings, settings_path, db, modules(), keymap, start);
+    app.server_queue = args.client.as_deref().map(queue::queue_path);
     if let Some(e) = settings_error {
         app.pending_messages.push(("settings.toml".into(), e));
     }

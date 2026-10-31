@@ -71,6 +71,9 @@ pub struct App {
     last_click: Option<(Instant, u16, u16)>,
     pub(crate) find_params: gm_search::FindParams,
     pub pending_messages: Vec<(String, String)>,
+    /// Server execution mode (`gm --client=<file>`): the queue file that
+    /// receives the command lines gm would otherwise run itself.
+    pub server_queue: Option<PathBuf>,
     labels: KeyBarLabels,
     cmd_rect: Rect,
 }
@@ -218,6 +221,7 @@ impl App {
             last_click: None,
             find_params: gm_search::FindParams::default(),
             pending_messages: Vec::new(),
+            server_queue: None,
             labels: panel_labels(),
             cmd_rect: Rect::default(),
         };
