@@ -47,8 +47,8 @@
 @Contents
 $^#Fájl- és archívumkezelő program#
 $^#Goodevening Manager 0.1.0#
-$^#Copyright © 1996-2000 Eugene Roshal#
-$^#Copyright © 2000-2026 Far Group#
+$^#Copyright © 2026 Movna Hatka#
+$^#Copyright © 2026 Danyil Dobryvechir#
  ~A súgó betűrendes tartalomjegyzéke~@Index@
  ~A súgó használata~@Help@
 
@@ -144,7 +144,7 @@ lenyomása az előző méretre állítja vissza a súgó ablakát.
 
 @About
 $ #gm: a programról#
- A #gm# szövegmódú fájl- és tömörítettkezelő program Windows. Kezeli a #hosszú fájlneveket#,
+ A #gm# szövegmódú fájl- és tömörítettkezelő program Windows, Linux, MacOS. Kezeli a #hosszú fájlneveket#,
 valamint a fájlokon és mappákon elvégezhető műveletek széles skáláját kínálja.
 
  A #gm# #ingyenes# és #nyílt forráskódú# program, terjesztése
@@ -160,8 +160,8 @@ alakítja át.
 
 @License
 $ #gm: License#
- Copyright © 1996 Eugene Roshal
- Copyright © 2000 Far Group
+ Copyright © 2026 Movna Hatka
+ Copyright © 2026 Danyil Dobryvechir
  All rights reserved.
 
  Redistribution and use in source and binary forms, with or without
@@ -194,13 +194,13 @@ $ #gm: a gm parancssori kapcsolói#
  #-e[<sor>[:<pozíció>]] <fájlnév>#  A megadott fájlt szerkesztésre
 nyitja meg. A -e után megadható, hogy melyik sor hányadik karakterhelyére
 álljon a kurzor.
- Például: far -e70:2 readme.
+ Például: gm -e70:2 readme.
 
  #-p[<path>]#
  A "fő" plugineket a <path>-ben megadott elérési út
 mappáiban keresi. Több keresési útvonal is megadható, ";"-vel elválasztva.
 
- Példa: #far -p%USERPROFILE%\\gm\\Plugins#
+ Példa: #gm -p%USERPROFILE%\\gm\\Plugins#
 
  #-co#
  A gm pluginjei csak a gyorsítótárból töltődhetnek be.
@@ -234,7 +234,7 @@ user profile folder (#%APPDATA%\\Goodevening Manager\\Profile# by default).
 
  #-u <felhasználónév>#
  Lehetővé teszi, hogy a felhasználóknak saját gm beállításaik legyenek.
- Például: far -u guest
+ Például: gm -u guest
 
  A Goodevening Manager a "FARUSER" ~környezeti változónak~@FAREnv@
 a <felhasználónév> értéket adja.
@@ -243,7 +243,7 @@ a <felhasználónév> értéket adja.
  Megnézi a megadott fájlt. Ha a <fájlnév> `#-#', akkor az
 stdin adatát olvassa ki.
 
- Például a "dir|far -v -" a dir parancs kimenetét fogja
+ Például a "dir|gm -v -" a dir parancs kimenetét fogja
 kiolvasni.
 
  Ha a bemenő adatfolyam üres, amikor a fájlnév "-" (ha
@@ -292,7 +292,7 @@ a fájl található és ráállítja a kurzort (ha a fájl létezik).
  - ^<wrap>when prefixes specified (simultaneous use with common paths allowed)
 passive command executes first (passive panel activates temporary).
 Single letter prefixes A-Z or conflicted with disk letter will be ignored.
- Example: far arc:c:\\Far20.7z "lua:msgbox('Goodevening Manager','Successfully started')"
+ Example: gm arc:c:\\Gm20.7z "lua:msgbox('Goodevening Manager','Successfully started')"
 
 
 @KeyRef
@@ -1382,6 +1382,12 @@ kiválasztás után a lista aljára kerülnek. Ezt elkerülhetjük, ha Enter hel
 
  #Panelek be/ki#        Megjeleníti/elrejti mindkét panelt.
 
+ #Terminál pozíció#     A konzolablak áthelyezése és átméretezése:
+                        teljes képernyő, a képernyő fele (bal, jobb,
+                        felső, alsó) vagy negyede. Ugyanúgy működik,
+                        mint a #--pos# parancssori kapcsoló. Ha a
+                        rendszer ezt nem engedi, nem történik semmi.
+
  #Mappák#               Összeveti a mappák tartalmát.
  #összehasonlítása#     ^<wrap>A ~mappák összehasonlítása~@CompFolders@
 témakör részletezi a funkciót.
@@ -2219,7 +2225,7 @@ $ #Különleges szimbólumok#
 egy felhasználói beviteli ablak jelenik meg. A <név> a beviteli mező neve, az
 <alapérték> pedig a szerkesztőmezőbe eredetileg kerülő karaktersor.
  Több ilyen szimbólum lehet egy sorban, például:
- grep !?Keresés:?! !?Maszk:?*.*!|c:\\far\\gm -v -
+ grep !?Keresés:?! !?Maszk:?*.*!|c:\\gm\\gm -v -
 
  A <név> mező kiegészülhet az <alapérték> sztringre vonatkozó előzménnyel (az <előzmény> változó nevével).
 Ebben az esetben a parancssor formátuma: #!?$<előzmény>$<név>?<alapérték>!#. Példa:
@@ -3207,7 +3213,7 @@ entire string is treated as a single token. For example:
  ├──────────────────────┼──────────────────────┼──────────────┤
  │ testMe               │ test Me              │              │
  │ WhatIsIt             │ What Is It           │              │
- │ far-manager          │ far manager          │              │
+ │ goodevening-manager  │ goodevening manager  │              │
  │ Contact.Address.Type │ Contact Address Type │              │
  │ USER_FIRST_NAME      │ USER FIRST NAME      │              │
  ├──────────────────────┼──────────────────────┼──────────────┤
@@ -5153,7 +5159,7 @@ $ #Version information#
 
 @CustomizingUI
 $ #Customizing UI elements#
- All gm user interface elements are defined in #.lng# files (e.g., #FarEng.lng#).
+ All gm user interface elements are defined in #.lng# files (e.g., #GmEng.lng#).
 You can customize these elements to your needs. For example, you can
 change hotkeys or labels on a certain gm dialog. To override
 UI elements, create a file with the name #gm<Lng>.lng.custom#
@@ -5161,7 +5167,7 @@ in #%FARHOME%# or #%FARPROFILE%# directory and provide new values for
 the UI IDs you want to customize.
 
  For example, to make file system link types on gm panels look like
-in the listing of DIR DOS command, you can create file #FarEng.lng.custom#
+in the listing of DIR DOS command, you can create file #GmEng.lng.custom#
 in the #%FARPROFILE%# directory with the following content:
 
 @-

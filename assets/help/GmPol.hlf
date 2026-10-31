@@ -47,8 +47,8 @@
 @Contents
 $^#Menedżer plików i archiwów#
 $^#Goodevening Manager 0.1.0#
-$^#Copyright © 1996-2000 Eugene Roshal#
-$^#Copyright © 2000-2026 Far Group#
+$^#Copyright © 2026 Movna Hatka#
+$^#Copyright © 2026 Danyil Dobryvechir#
  ~Indeks pomocy~@Index@
  ~Jak używać pomocy~@Help@
 
@@ -161,8 +161,8 @@ polecenia na odpowiednie funkcje zewnętrznego archiwizera.
 
 @License
 $ #gm: licencja (po angielsku)#
- Copyright © 1996 Eugene Roshal
- Copyright © 2000 Far Group
+ Copyright © 2026 Movna Hatka
+ Copyright © 2026 Danyil Dobryvechir
  All rights reserved.
 
  Redistribution and use in source and binary forms, with or without
@@ -195,13 +195,13 @@ $ #gm: przełączniki wiersza poleceń#
  #-e[<linia>[:<poz>]] <nazwa_pliku>#
  Edytuj wskazany plik. Po -e można opcjonalnie podać numer linii i pozycję w linii
 od której edytor ma rozpocząć pracę.
- Przykład: far -e70:2 czytaj_to.
+ Przykład: gm -e70:2 czytaj_to.
 
  #-p[<ścieżka>]#
  Szuka "głównego" folderu wtyczek w ścieżce podanej w parametrze
  Można podać kilka ścieżek, rozdzielając je średnikami ‘;’.
 
- Przykład: #far -p%USERPROFILE%\\gm\\Plugins#
+ Przykład: #gm -p%USERPROFILE%\\gm\\Plugins#
 
  #-co#
  Wymusza na programie gm wczytanie wtyczek z folderu pamięci podręcznej (cache).
@@ -234,7 +234,7 @@ ustawienia z pliku ini).
  #-u <użytkownik>#
  Pozwala rozdzielić ustawienia rejestru dla różnych użytkowników.
  Działa tylko dla wtyczek gm 1.x.
- Przykład: far -u gosc
+ Przykład: gm -u gosc
 
  Goodevening Manager może ustawić ~zmienną systemową~@FAREnv@ "FARUSER" na wartość <użytkownik>.
 
@@ -242,7 +242,7 @@ ustawienia z pliku ini).
  Włącza podgląd podanego pliku. Jeżeli <nazwa_pliku> to ‘#-#’, program odczytuje
 dane ze strumienia stdin.
 
- Przykład: "dir|far -v -" wyświetli wyjście polecenia dir.
+ Przykład: "dir|gm -v -" wyświetli wyjście polecenia dir.
 
  Jeżeli przy użyciu ‘-’ strumień wejściowy jest pusty (np. kiedy nie podano polecenia
 dir, jak w przykładzie),
@@ -287,7 +287,7 @@ i podświetli plik, jeżeli ten istnieje;
  - ^<wrap>jeżeli podano przedrostek (dozwolone jest korzystanie ze wspólnych ścieżek)
 polecenie z pasywnego okna zostanie wykonane pierwsze (tymczasowa aktywacja panelu pasywnego).
 Pojedyncze litery przedrostków A-Z lub błędy liter dysków będą ignorowane.
- Przykład: far arc:c:\\Far20.7z "lua:msgbox('Goodevening Manager','Pomyślnie uruchomiony')"
+ Przykład: gm arc:c:\\Gm20.7z "lua:msgbox('Goodevening Manager','Pomyślnie uruchomiony')"
 
 
 @KeyRef
@@ -1348,6 +1348,12 @@ $ #Menu: menu polecenia#
 
  #Włącz/wyłącz panele#  Pokazuje/ukrywa oba panele.
 
+ #Pozycja terminala#    Przenosi okno konsoli i zmienia jego rozmiar:
+                        pełny ekran, połowa (lewa, prawa, górna,
+                        dolna) lub ćwiartka ekranu. Działa tak samo
+                        jak opcja wiersza poleceń #--pos#. Jeśli
+                        system na to nie pozwala, nic się nie dzieje.
+
  #Porównaj foldery#     Porównuje zawartość folderów.
                       Więcej informacji: ~Porównaj foldery~@CompFolders@.
 
@@ -2150,7 +2156,7 @@ $ #Symbole specjalne#
 gdy wykonywane jest polecenie.
  <tytuł> i <wejście> - tytuł danego pola i inicjalny tekst pola edycji.
  Można wprowadzić kilka takich łańcuchów w tej samej linii, np.:
- grep !?Szukaj tekstu:?! !?W plikach:?*.*!|c:\\far\\gm -v -
+ grep !?Szukaj tekstu:?! !?W plikach:?*.*!|c:\\gm\\gm -v -
 
  Poprzednia wartość pola <wejście> (z historii) może być użyta w polu <tytuł>. W takim
 przypadku polecenie ma następujący format: #!?$<historia>$<tytuł>?<wejście>!#, np.:
@@ -3137,7 +3143,7 @@ jest traktowany jako pojedynczy token, np.:
  ├──────────────────────┼──────────────────────┼──────────────┤
  │ testujMnie           │ testuj Mnie          │              │
  │ CoToJest             │ Co To Jest           │              │
- │ far-manager          │ far manager          │              │
+ │ goodevening-manager  │ goodevening manager  │              │
  │ Typ.Adresu.Kontaktu  │ Typ Adresu Kontaktu  │              │
  │ PIERWSZ_IMIE_OSOBY   │ PIERWSZE IMIE OSOBY  │              │
  ├──────────────────────┼──────────────────────┼──────────────┤
@@ -5052,15 +5058,15 @@ $ #Informacja o wersji#
 @CustomizingUI
 $ #Dostosowywanie elementów interfejsu#
  Wszystkie elementy interfejsu użytkownika zdefiniowane są w plikach #.lng#
-(np. #FarPol.lng#). Możesz dostosować te elementy do własnych upodobań.
+(np. #GmPol.lng#). Możesz dostosować te elementy do własnych upodobań.
 Np. możesz zmienić skróty klawiszowe lub etykiety w określonych oknach
 dialogowych. Aby zastąpić elementy interfejsu należy utworzyć plik o nazwie
-#gm<Jęz>.lng.custom# (np. #FarPol.lng.custom#) w folderze #%FARHOME%#
+#gm<Jęz>.lng.custom# (np. #GmPol.lng.custom#) w folderze #%FARHOME%#
 lub #%FARPROFILE%# i utworzyć nowe wartości dla tych identyfikatorów
 interfejsu użytkownika, które chcesz zmienić.
 
  Dla przykładu, aby typy odnośników do systemu plików w panelu gm
-wyglądały tak jak w poleceniu DIR, należy utworzyć plik #FarPol.lng.custom#
+wyglądały tak jak w poleceniu DIR, należy utworzyć plik #GmPol.lng.custom#
 w folderze #%FARPROFILE%# z następującą zawartością:
 
 @-

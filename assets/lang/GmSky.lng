@@ -3207,7 +3207,7 @@
 //[MMacroSettingsEnableOutput]
 "Povoliť &výstup na obrazovku, kým sa vykonáva makro"
 //[MMacroSettingsRunAfterStart]
-"&Spustiť po spustení Faru"
+"&Spustiť po spustení Gm"
 //[MMacroSettingsActivePanel]
 "&Aktívny panel"
 //[MMacroSettingsPassivePanel]
@@ -3275,11 +3275,11 @@
 //[MReadFolderError]
 "Nemôžem načítať obsah priečinka"
 //[MPlgBadVers]
-"Tento modul si vyžaduje vyššiu verziu Faru"
+"Tento modul si vyžaduje vyššiu verziu Gm"
 //[MPlgRequired]
-"Požadovaná verzia Faru je {0},"
+"Požadovaná verzia Gm je {0},"
 //[MPlgRequired2]
-"terajšia verzia Faru je {0}."
+"terajšia verzia Gm je {0}."
 //[MPlgLoadPluginError]
 "Chyba pri nahrávaní zásuvného modulu"
 //[MHelpTitle]
@@ -4490,3 +4490,25 @@
 ""
 //[MNewFileName]
 "Nový_súbor_{0:04}-{1:02}-{2:02}_{3:02}.{4:02}.{5:02}.{6:03}.txt"
+//[MMenuTerminalPosition]
+"Pozícia &terminálu"
+//[MMenuModuleCommands]
+"Príkazy mod&ulov"
+//[MTermPosFull]
+"&Celá obrazovka"
+//[MTermPosLeft]
+"&Ľavá polovica"
+//[MTermPosRight]
+"&Pravá polovica"
+//[MTermPosTop]
+"&Horná polovica"
+//[MTermPosBottom]
+"&Dolná polovica"
+//[MTermPosLeftTop]
+"Ľavá h&orná štvrtina"
+//[MTermPosLeftBottom]
+"Ľavá dol&ná štvrtina"
+//[MTermPosRightTop]
+"Pravá ho&rná štvrtina"
+//[MTermPosRightBottom]
+"Pravá dolná š&tvrtina"

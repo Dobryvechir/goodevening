@@ -36,7 +36,7 @@ version = "0.1.0"
 edition = "2024"
 rust-version = "1.90"
 license = "BSD-3-Clause"
-authors = ["Goodevening Manager contributors", "Far Group", "Eugene Roshal"]
+authors = ["Goodevening Manager contributors", "Danyil Dobryvechir"]
 repository = "https://github.com/Dobryvechir/goodevening"
 
 [workspace.dependencies]

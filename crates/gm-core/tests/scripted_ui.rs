@@ -206,6 +206,23 @@ fn menus_and_panels() {
 }
 
 #[test]
+fn terminal_position_menu() {
+    let mut f = fixture("termpos", vec![]);
+    f.app.ui.term.recorded = Some(Vec::new());
+    // F9 → Right, Right (Commands) → T (Terminal position); Esc closes the
+    // submenu without moving the window. The resize forces a frame inside it.
+    let script = vec![plain(KeyCode::Right), plain(KeyCode::Right), plain(KeyCode::Char('t')), Event::Resize(110, 32), plain(KeyCode::Esc)];
+    f.run(plain(KeyCode::F(9)), script);
+    let frames = f.app.ui.term.recorded.replace(Vec::new()).unwrap_or_default();
+    let menu = frames.iter().find(|fr| fr.contains("Terminal position") && fr.contains("Right bottom"));
+    let menu = menu.unwrap_or_else(|| panic!("no Terminal position menu in {} frames", frames.len()));
+    for item in ["Full screen", "Left half", "Right half", "Top half", "Bottom half", "Left top", "Left bottom", "Right top"] {
+        assert!(menu.contains(item), "{item} missing:
+{menu}");
+    }
+}
+
+#[test]
 fn find_file_goto() {
     let mut f = fixture("find", vec![]);
     std::fs::write(f.left().join("sub/needle.txt"), "hay").unwrap();

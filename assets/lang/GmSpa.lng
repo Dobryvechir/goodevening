@@ -4490,3 +4490,25 @@
 ""
 //[MNewFileName]
 "Nuevo_Archivo_{0:04}-{1:02}-{2:02}_{3:02}.{4:02}.{5:02}.{6:03}.txt"
+//[MMenuTerminalPosition]
+"P&osición del terminal"
+//[MMenuModuleCommands]
+"Comandos de mód&ulos"
+//[MTermPosFull]
+"Pantalla &completa"
+//[MTermPosLeft]
+"Mitad &izquierda"
+//[MTermPosRight]
+"Mitad &derecha"
+//[MTermPosTop]
+"Mitad &superior"
+//[MTermPosBottom]
+"Mitad i&nferior"
+//[MTermPosLeftTop]
+"Arriba a la i&zquierda"
+//[MTermPosLeftBottom]
+"Abajo a la iz&quierda"
+//[MTermPosRightTop]
+"Arriba a la de&recha"
+//[MTermPosRightBottom]
+"Abajo a la derec&ha"

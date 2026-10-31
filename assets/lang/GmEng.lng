@@ -4490,3 +4490,25 @@
 ""
 //[MNewFileName]
 "New_File_{0:04}-{1:02}-{2:02}_{3:02}.{4:02}.{5:02}.{6:03}.txt"
+//[MMenuTerminalPosition]
+"&Terminal position"
+//[MMenuModuleCommands]
+"Mod&ule commands"
+//[MTermPosFull]
+"&Full screen"
+//[MTermPosLeft]
+"&Left half"
+//[MTermPosRight]
+"&Right half"
+//[MTermPosTop]
+"&Top half"
+//[MTermPosBottom]
+"&Bottom half"
+//[MTermPosLeftTop]
+"Left to&p"
+//[MTermPosLeftBottom]
+"Left b&ottom"
+//[MTermPosRightTop]
+"Ri&ght top"
+//[MTermPosRightBottom]
+"Right botto&m"

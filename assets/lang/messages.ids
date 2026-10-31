@@ -2244,3 +2244,14 @@ MKeyCtrl
 MKeyRAlt
 MKeyAlt
 MNewFileName
+MMenuTerminalPosition
+MMenuModuleCommands
+MTermPosFull
+MTermPosLeft
+MTermPosRight
+MTermPosTop
+MTermPosBottom
+MTermPosLeftTop
+MTermPosLeftBottom
+MTermPosRightTop
+MTermPosRightBottom

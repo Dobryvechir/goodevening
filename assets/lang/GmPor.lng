@@ -4490,3 +4490,25 @@
 ""
 //[MNewFileName]
 "New_File_{0:04}-{1:02}-{2:02}_{3:02}.{4:02}.{5:02}.{6:03}.txt"
+//[MMenuTerminalPosition]
+"Posição do ter&minal"
+//[MMenuModuleCommands]
+"C&omandos dos módulos"
+//[MTermPosFull]
+"Tela &cheia"
+//[MTermPosLeft]
+"Metade &esquerda"
+//[MTermPosRight]
+"Metade &direita"
+//[MTermPosTop]
+"Metade &superior"
+//[MTermPosBottom]
+"Metade &inferior"
+//[MTermPosLeftTop]
+"Superior es&querda"
+//[MTermPosLeftBottom]
+"Inferior esq&uerda"
+//[MTermPosRightTop]
+"Superior di&reita"
+//[MTermPosRightBottom]
+"Inferior direi&ta"

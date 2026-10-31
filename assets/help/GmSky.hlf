@@ -47,8 +47,8 @@
 @Contents
 $^#Manažér súborov a archívov#
 $^#Goodevening Manager 0.1.0#
-$^#Copyright © 1996-2000 Eugene Roshal#
-$^#Copyright © 2000-2026 Far Group#
+$^#Copyright © 2026 Movna Hatka#
+$^#Copyright © 2026 Danyil Dobryvechir#
  ~Help file index~@Index@
  ~Ako používať nápovedu~@Help@
 
@@ -144,7 +144,7 @@ previous size.
 
 @About
 $ #O programe gm#
- #gm# je manažér súborov a archívov pre Windows, pracujúci v textovom móde.
+ #gm# je manažér súborov a archívov pre Windows, Linux a MacOS, pracujúci v textovom móde.
 Podporuje #dlhé mená súborov# a ponúka širokú paletu operácií so súbormi a adresármi.
 
  #gm# is #freeware# and #open source# software distributed under the
@@ -159,8 +159,8 @@ vaše príkazy do zodpovedajúcich volaní externých archivačných programov.
 
 @License
 $ #gm: License#
- Copyright © 1996 Eugene Roshal
- Copyright © 2000 Far Group
+ Copyright © 2026 Movna Hatka
+ Copyright © 2026 Danyil Dobryvechir
  All rights reserved.
 
  Redistribution and use in source and binary forms, with or without
@@ -193,13 +193,13 @@ $ #Prepínače použiteľné z príkazového riadku#
  #-e[<riadok>[:<pozícia>]] <názov súboru>#
  Edituj určený súbor. Po /e môžete voliteľne určiť na ktorom riadku
 a stĺpci má editor umiestniť kurzor.
- Napríklad: far -e70:2 citaj.ma
+ Napríklad: gm -e70:2 citaj.ma
 
  #-p[<path>]#
  Search for "main" plugins in the folder given in <path>.
  Several search paths can be specified, separated by ‘;’.
 
- Example: #far -p%USERPROFILE%\\gm\\Plugins#
+ Example: #gm -p%USERPROFILE%\\gm\\Plugins#
 
  #-co#
  Forces gm to load plugins from cache only. Plugins are loaded faster this way,
@@ -229,14 +229,14 @@ user profile folder (#%APPDATA%\\Goodevening Manager\\Profile# by default).
  #-u <názov užívateľa>#
  Dovoľuje mať oddelené nastavenia pre rôznych užívateľov.
  Affects only 1.x Goodevening Manager plugins
- Napríklad: far -u guest
+ Napríklad: gm -u guest
 
  Goodevening Manager will set the ~environment variable~@FAREnv@ "FARUSER" to the value <username>.
 
  #-v <názov súboru>#
  Načíta do prezerača špecifikovaný súbor. Ak je <názov súboru> `#-#', dáta sú načítané zo štandardného vstupu (stdin).
 
- Napríklad, "dir|far -v -" načíta do prezerača výstup príkazu dir.
+ Napríklad, "dir|gm -v -" načíta do prezerača výstup príkazu dir.
 
  If the input stream is empty when using ‘-’ (for example, you have not specified
 the "dir" command in the provided example), gm will wait for the end of data
@@ -282,7 +282,7 @@ resides and place the cursor on the file, if it exists;
  - ^<wrap>when prefixes specified (simultaneous use with common paths allowed)
 passive command executes first (passive panel activates temporary).
 Single letter prefixes A-Z or conflicted with disk letter will be ignored.
- Example: far arc:c:\\Far20.7z "lua:msgbox('Goodevening Manager','Successfully started')"
+ Example: gm arc:c:\\Gm20.7z "lua:msgbox('Goodevening Manager','Successfully started')"
 
 
 @KeyRef
@@ -1342,6 +1342,13 @@ $ #Commands menu#
 
  #Panely Zap/Vyp#       Zobrazí/skryje oba panely.
 
+ #Pozícia terminálu#    Presunie okno konzoly a zmení jeho veľkosť:
+                        celá obrazovka, polovica (ľavá, pravá, horná,
+                        dolná) alebo štvrtina obrazovky. Funguje
+                        rovnako ako parameter príkazového riadka
+                        #--pos#. Ak to systém neumožňuje, nič sa
+                        nestane.
+
  #Porovnaj adresáre#    Porovná obsahy adresárov.
                       Viď ~Porovnaj adresáre~@CompFolders@.
 
@@ -1450,7 +1457,7 @@ operácií:
  - removal of USB storage devices from the Disks menu;
  - ~reloading~@EditorReload@ a file in the editor;
  - clearing the view/edit, folder and command history lists;
- - ukončenie Faru.
+ - ukončenie Gm.
 
 
 @MaskGroupsSettings
@@ -1826,7 +1833,7 @@ checkboxes. The #Reset# button will clear all of the filter conditions.
 
 @History
 $ #História#
- Tento príkaz zobrazí zoznam príkazov, spustených s príkazového riadka Faru.
+ Tento príkaz zobrazí zoznam príkazov, spustených s príkazového riadka Goodevening Managera.
 Besides the cursor control keys, the following keyboard shortcuts are
 available:
 
@@ -2132,7 +2139,7 @@ $ #Special symbols#
  Tento symbol je pri spustení príkazu nahradnený
 užívateľských vstupom. <title> a <init> - hlavička a počiatočný text vstupného poľa dialógového okna.
  Dovolené je použiť aj niekoľko takýchto symbolov v jednom riadku, napríklad:
- grep !?Hľadaj:?! !?V súboroch:?*.*!|c:\\far\\gm -v -
+ grep !?Hľadaj:?! !?V súboroch:?*.*!|c:\\gm\\gm -v -
 
  A history name for the <init> string can be supplied in the <title>. In such case the command has the following format:
 #!?$<history>$<title>?<init>!#, for example:
@@ -2242,19 +2249,19 @@ byť nebezpečný, ak sa súbor modifikuje súčasne s tým ako sa kopíruje.
 determining the total file size in the sub-folders.
 
  #Ukladať históriu príkazov#
- Ak je táto možnosť zapnutá, ~história príkazov~@History@ sa bude ukladať pri ukončení a opätovne načítavať pri spustení Faru.
+ Ak je táto možnosť zapnutá, ~história príkazov~@History@ sa bude ukladať pri ukončení a opätovne načítavať pri spustení Goodevening Managera.
 
  #Ukladať históriu adresárov#
- Spôsobí uloženie ~histórie adresárov~@HistoryFolders@ pred ukončením a jej načítanie pri spustení Faru.
+ Spôsobí uloženie ~histórie adresárov~@HistoryFolders@ pred ukončením a jej načítanie pri spustení Goodevening Managera.
 Históriu adresárov možno vyvolať stlačením #Alt+F12#.
 
  #Ukladať históriuzobrazovania a editovania#
- Spôsobí uloženie ~histórie prezeraných a editovaných súborov~@HistoryViews@ pred ukončením a jej načítanie pri spustení Faru.
+ Spôsobí uloženie ~histórie prezeraných a editovaných súborov~@HistoryViews@ pred ukončením a jej načítanie pri spustení Goodevening Managera.
 Históriu prezeraných a editovaných súborov možno vyvolať stlačením #Alt+F11#.
 
  #Použiť registrované typy Windows#
  Ak je táto možnosť zapnutá, potom stlačenie klávesu Enter na súbore, ktorého typ je známy pre
-Windows a nenachádza sa vo Fare nastavených ~typoch súborv~@FileAssoc@, spustí sa program,
+Windows a nenachádza sa v Goodevening Manageri nastavených ~typoch súborv~@FileAssoc@, spustí sa program,
 ktorý je vo Windows nastavený pre tento typ súboru.
 
  #Automatic update of environment variables#
@@ -3117,7 +3124,7 @@ entire string is treated as a single token. For example:
  ├──────────────────────┼──────────────────────┼──────────────┤
  │ testMe               │ test Me              │              │
  │ WhatIsIt             │ What Is It           │              │
- │ far-manager          │ far manager          │              │
+ │ goodevening-manager  │ goodevening manager  │              │
  │ Contact.Address.Type │ Contact Address Type │              │
  │ USER_FIRST_NAME      │ USER FIRST NAME      │              │
  ├──────────────────────┼──────────────────────┼──────────────┤
@@ -3483,7 +3490,7 @@ display modes, press twice to see);
  #Ctrl+8# - ^<wrap>zobrazovanie parametrov CD;
  #Ctrl+9# - ^<wrap>network parameters.
 
- #Zmena jednotky# nastavenia sa ukladajú do konfigurácie Faru.
+ #Zmena jednotky# nastavenia sa ukladajú do konfigurácie Goodevening Managera.
 
  #F9# shows the ~dialog~@ChangeDriveMode@ to control displaying
 of this information.
@@ -4346,7 +4353,7 @@ umiestnené nižšie, ako tie, ktoré nepatria do žiadnej skupiny.
 
 @FileMasks
 $ #Masky súborov#
- Masky sú často použivané v príkazoch Faru na označenie jednotlivých
+ Masky sú často použivané v príkazoch Goodevening Managera na označenie jednotlivých
 súborov a adresárov alebo ich skupín. Masky môžu obsahovať zvyčajné
 symboly v menách súborov, náhradné znaky ('*' a '?') a špeciálne výrazy:
 
@@ -4361,7 +4368,7 @@ symboly v menách súborov, náhradné znaky ('*' a '?') a špeciálne výrazy:
 f*.ex?, maska *co* označí tak color.ini ako i edit.com, maskou [c-ft]*.txt
 možno označiť config.txt, demo.txt, faq.txt a tips.txt.
 
- Mnohé príkazy Faru dovoľujú zadať niekoľko masiek oddelených čiarkami.
+ Mnohé príkazy Goodevening Managera dovoľujú zadať niekoľko masiek oddelených čiarkami.
 Napr. na označenie všetkých dokumentov môžete zadať *.doc, *.txt, *.wri
 v príkaze "Označiť skupinu".
 
@@ -5031,7 +5038,7 @@ $ #Version information#
 
 @CustomizingUI
 $ #Customizing UI elements#
- All gm user interface elements are defined in #.lng# files (e.g., #FarEng.lng#).
+ All gm user interface elements are defined in #.lng# files (e.g., #GmEng.lng#).
 You can customize these elements to your needs. For example, you can
 change hotkeys or labels on a certain gm dialog. To override
 UI elements, create a file with the name #gm<Lng>.lng.custom#
@@ -5039,7 +5046,7 @@ in #%FARHOME%# or #%FARPROFILE%# directory and provide new values for
 the UI IDs you want to customize.
 
  For example, to make file system link types on gm panels look like
-in the listing of DIR DOS command, you can create file #FarEng.lng.custom#
+in the listing of DIR DOS command, you can create file #GmEng.lng.custom#
 in the #%FARPROFILE%# directory with the following content:
 
 @-

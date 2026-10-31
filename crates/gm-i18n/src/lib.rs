@@ -125,9 +125,12 @@ pub fn format_with(template: &str, args: &[&dyn Display]) -> String {
     out
 }
 
-/// Available languages as (name, native description).
+/// Available languages as (name, native description), sorted by the native
+/// description in UTF-8 byte order (the order of the language menu).
 pub fn languages() -> Vec<(&'static str, &'static str)> {
-    LANGS.iter().map(|l| (l.0, l.1)).collect()
+    let mut v: Vec<_> = LANGS.iter().map(|l| (l.0, l.1)).collect();
+    v.sort_by(|a, b| a.1.as_bytes().cmp(b.1.as_bytes()));
+    v
 }
 
 /// Switches the UI language by English name ("Russian", "Ukrainian"…).
@@ -162,6 +165,15 @@ mod tests {
     fn placeholders() {
         assert_eq!(format_with("Copy {0} {1}:", &[&"3", &"files"]), "Copy 3 files:");
         assert_eq!(strip_hotkey("&Save && exit"), "Save & exit");
+    }
+
+    #[test]
+    fn languages_sorted_by_native_name() {
+        let names: Vec<&str> = languages().iter().map(|l| l.1).collect();
+        let mut sorted = names.clone();
+        sorted.sort_by(|a, b| a.as_bytes().cmp(b.as_bytes()));
+        assert_eq!(names, sorted);
+        assert!(names.contains(&"Norsk"));
     }
 
     #[test]

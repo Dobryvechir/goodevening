@@ -21,6 +21,7 @@ static FILES: &[(&str, &str)] = &[
     ("Hungarian", include_str!("../../../assets/help/GmHun.hlf")),
     ("Polish", include_str!("../../../assets/help/GmPol.hlf")),
     ("Slovak", include_str!("../../../assets/help/GmSky.hlf")),
+    ("Norwegian", include_str!("../../../assets/help/GmNor.hlf")),
 ];
 
 #[derive(Clone, Debug, PartialEq, Eq)]
@@ -498,5 +499,14 @@ mod tests {
         assert!(f.resolve("Viewer").is_some() || f.resolve("ViewerCmd").is_some());
         assert!(!f.topics.keys().any(|k| k.starts_with("Plugin")));
         assert!(f.index().body.len() > 100);
+    }
+
+    #[test]
+    fn norwegian_file_matches_english_topics() {
+        let eng = HelpFile::parse(FILES[0].1);
+        let (_, text) = FILES.iter().find(|(n, _)| *n == "Norwegian").unwrap();
+        let nor = HelpFile::parse(text);
+        assert_eq!(eng.order, nor.order);
+        assert!(nor.resolve("Interface.CursorSize1").is_some());
     }
 }

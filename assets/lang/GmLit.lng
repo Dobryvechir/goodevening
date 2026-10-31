@@ -4490,3 +4490,25 @@
 ""
 //[MNewFileName]
 "New_File_{0:04}-{1:02}-{2:02}_{3:02}.{4:02}.{5:02}.{6:03}.txt"
+//[MMenuTerminalPosition]
+"T&erminalo padėtis"
+//[MMenuModuleCommands]
+"Modulių koma&ndos"
+//[MTermPosFull]
+"&Visas ekranas"
+//[MTermPosLeft]
+"&Kairė pusė"
+//[MTermPosRight]
+"&Dešinė pusė"
+//[MTermPosTop]
+"Vir&šutinė pusė"
+//[MTermPosBottom]
+"&Apatinė pusė"
+//[MTermPosLeftTop]
+"Viršuje ka&irėje"
+//[MTermPosLeftBottom]
+"Apačioje kai&rėje"
+//[MTermPosRightTop]
+"Viršuje deši&nėje"
+//[MTermPosRightBottom]
+"Apačioje dešin&ėje"

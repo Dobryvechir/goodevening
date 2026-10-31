@@ -4490,3 +4490,25 @@
 ""
 //[MNewFileName]
 "Новий_файл_{0:04}-{1:02}-{2:02}_{3:02}.{4:02}.{5:02}.{6:03}.txt"
+//[MMenuTerminalPosition]
+"Поло&ження терміналу"
+//[MMenuModuleCommands]
+"Коман&ди модулів"
+//[MTermPosFull]
+"На весь &екран"
+//[MTermPosLeft]
+"&Ліва половина"
+//[MTermPosRight]
+"&Права половина"
+//[MTermPosTop]
+"&Верхня половина"
+//[MTermPosBottom]
+"&Нижня половина"
+//[MTermPosLeftTop]
+"Ліва ве&рхня чверть"
+//[MTermPosLeftBottom]
+"Ліва н&ижня чверть"
+//[MTermPosRightTop]
+"Права верхн&я чверть"
+//[MTermPosRightBottom]
+"Права нижня чвер&ть"

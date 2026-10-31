@@ -47,8 +47,8 @@
 @Contents
 $^#Datei- und Archiv-Manager.#
 $^#Goodevening Manager 0.1.0#
-$^#Copyright © 1996-2000 Eugene Roshal#
-$^#Copyright © 2000-2026 Far Group#
+$^#Copyright © 2026 Movna Hatka#
+$^#Copyright © 2026 Danyil Dobryvechir#
  ~Help file index~@Index@
  ~Hilfe über Hilfe~@Help@
 
@@ -148,7 +148,7 @@ will be displayed as links to relevant topics.
 
 @About
 $ #Über gm#
- #gm# ist Datei- und Archiv-Manager im Textmodus für Windows.
+ #gm# ist Datei- und Archiv-Manager im Textmodus für Windows, Linux und MacOS.
 Er unterstützt #lange Dateinamen# und bietet eine
 große Zahl an Datei- und Verzeichnisoperationen an.
 
@@ -164,8 +164,8 @@ wandelt gm Ihre Befehle in die entsprechenden externen Packer-Befehle um.
 
 @License
 $ #gm: License#
- Copyright © 1996 Eugene Roshal
- Copyright © 2000 Far Group
+ Copyright © 2026 Movna Hatka
+ Copyright © 2026 Danyil Dobryvechir
  All rights reserved.
 
  Redistribution and use in source and binary forms, with or without
@@ -198,13 +198,13 @@ $ #Kommandozeilenschalter#
  #-e[<Zeile>[:<Position>]] <Dateiname>#
  Angegebene Datei bearbeiten. Nach /e kann optional die Startzeile
 und Zeilenposition angegeben werden.
- Beispiel: far -e70:2 readme.
+ Beispiel: gm -e70:2 readme.
 
  #-p[<path>]#
  Search for "main" plugins in the folder given in <path>.
  Several search paths can be specified, separated by ‘;’.
 
- Example: #far -p%USERPROFILE%\\gm\\Plugins#
+ Example: #gm -p%USERPROFILE%\\gm\\Plugins#
 
  #-co#
  Forces gm to load plugins from cache only. Plugins are loaded faster this way,
@@ -234,14 +234,14 @@ user profile folder (#%APPDATA%\\Goodevening Manager\\Profile# by default).
  -u <Benutzername>
  Ermöglicht die Benutzung separate Einstellungen für unterschiedliche Benutzer.
  Affects only 1.x Goodevening Manager plugins
- Beispiel: far -u gast
+ Beispiel: gm -u gast
 
  Goodevening Manager will set the ~environment variable~@FAREnv@ "FARUSER" to the value <username>.
 
  -v <Dateiname>
  Zeigt die angegebene Datei im Betrachter an. Gibt man als Dateiname `#-#' an, wird vom Standardeingabegerät (stdin) eingelesen.
 
- Beispiel, "dir|far -v -" zeigt z.B. die Ausgabe des dir-Befehls an.
+ Beispiel, "dir|gm -v -" zeigt z.B. die Ausgabe des dir-Befehls an.
 
  If the input stream is empty when using ‘-’ (for example, you have not specified
 the "dir" command in the provided example), gm will wait for the end of data
@@ -287,7 +287,7 @@ resides and place the cursor on the file, if it exists;
  - ^<wrap>when prefixes specified (simultaneous use with common paths allowed)
 passive command executes first (passive panel activates temporary).
 Single letter prefixes A-Z or conflicted with disk letter will be ignored.
- Example: far arc:c:\\Far20.7z "lua:msgbox('Goodevening Manager','Successfully started')"
+ Example: gm arc:c:\\Gm20.7z "lua:msgbox('Goodevening Manager','Successfully started')"
 
 
 @KeyRef
@@ -1381,6 +1381,13 @@ $ #Menü Befehle#
 
  #Fenster An/Aus#       Zeigt/verbirgt beide Fenster.
 
+ #Terminalposition#     Verschiebt das Konsolenfenster und ändert
+                        seine Größe: Vollbild, eine Hälfte (links,
+                        rechts, oben, unten) oder ein Viertel des
+                        Bildschirms. Funktioniert wie die
+                        Befehlszeilenoption #--pos#. Wenn das System
+                        es nicht erlaubt, passiert nichts.
+
  #Verzeichnisse#        Vergleicht Inhalte von Verzeuchnissen.
  #vergleichen#          Detaillierte Informationen dazu finden Sie
                       unter "Verzeichnisse vergleichen~@CompFolders@.
@@ -2208,7 +2215,7 @@ $ #Special symbols#
  Dieses Symbol wird beim Ausführen des Befehls durch die Benutzereingabe ersetzt.
 <Titel> und <Init> - Titel und Initialwert des Eingabefeldes.
  Es sind mehrere solcher Symbole in der gleichen Zeile erlaubt, z.B.:
- grep !?Search for:?! !?In:?*.*!|c:\\far\\gm -v -
+ grep !?Search for:?! !?In:?*.*!|c:\\gm\\gm -v -
 
  A history name for the <init> string can be supplied in the <title>. In such case the command has the following format:
 #!?$<history>$<title>?<init>!#, for example:
@@ -3193,7 +3200,7 @@ entire string is treated as a single token. For example:
  ├──────────────────────┼──────────────────────┼──────────────┤
  │ testMe               │ test Me              │              │
  │ WhatIsIt             │ What Is It           │              │
- │ far-manager          │ far manager          │              │
+ │ goodevening-manager  │ goodevening manager  │              │
  │ Contact.Address.Type │ Contact Address Type │              │
  │ USER_FIRST_NAME      │ USER FIRST NAME      │              │
  ├──────────────────────┼──────────────────────┼──────────────┤
@@ -5125,7 +5132,7 @@ $ #Version information#
 
 @CustomizingUI
 $ #Customizing UI elements#
- All gm user interface elements are defined in #.lng# files (e.g., #FarEng.lng#).
+ All gm user interface elements are defined in #.lng# files (e.g., #GmEng.lng#).
 You can customize these elements to your needs. For example, you can
 change hotkeys or labels on a certain gm dialog. To override
 UI elements, create a file with the name #gm<Lng>.lng.custom#
@@ -5133,7 +5140,7 @@ in #%FARHOME%# or #%FARPROFILE%# directory and provide new values for
 the UI IDs you want to customize.
 
  For example, to make file system link types on gm panels look like
-in the listing of DIR DOS command, you can create file #FarEng.lng.custom#
+in the listing of DIR DOS command, you can create file #GmEng.lng.custom#
 in the #%FARPROFILE%# directory with the following content:
 
 @-

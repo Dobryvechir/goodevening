@@ -75,6 +75,7 @@ pub fn bar(app: &App) -> MenuBar {
         MenuItem::separator(),
         item(app, MsgId::MMenuSwapPanels, Command::SwapPanels),
         item(app, MsgId::MMenuTogglePanels, Command::UserScreen),
+        MenuItem::new(msg(MsgId::MMenuTerminalPosition)),
         item(app, MsgId::MMenuCompareFolders, Command::CompareFolders),
         MenuItem::separator(),
         MenuItem::new(msg(MsgId::MMenuUserMenu)),
@@ -82,7 +83,7 @@ pub fn bar(app: &App) -> MenuBar {
         item(app, MsgId::MMenuFolderShortcuts, Command::ShortcutsMenu),
         item(app, MsgId::MMenuFilter, Command::Filter),
         MenuItem::separator(),
-        MenuItem::with_hint("Mod&ule commands", "F11"),
+        MenuItem::with_hint(msg(MsgId::MMenuModuleCommands), "F11"),
         item(app, MsgId::MMenuWindowsList, Command::Screens),
         MenuItem::new(msg(MsgId::MMenuProcessList)),
     ];
@@ -108,6 +109,30 @@ pub fn bar(app: &App) -> MenuBar {
         (msg(MsgId::MMenuOptionsTitle).to_string(), options),
         (msg(MsgId::MMenuRightTitle).to_string(), panel_menu(app, false)),
     ])
+}
+
+/// F9 → Commands → Terminal position: moves and resizes the console window
+/// like `gm --pos`. Does nothing where the system does not allow it.
+pub fn terminal_position(app: &mut App) {
+    const ITEMS: [(MsgId, &str); 9] = [
+        (MsgId::MTermPosFull, "f"),
+        (MsgId::MTermPosLeft, "l"),
+        (MsgId::MTermPosRight, "r"),
+        (MsgId::MTermPosTop, "t"),
+        (MsgId::MTermPosBottom, "b"),
+        (MsgId::MTermPosLeftTop, "lt"),
+        (MsgId::MTermPosLeftBottom, "lb"),
+        (MsgId::MTermPosRightTop, "rt"),
+        (MsgId::MTermPosRightBottom, "rb"),
+    ];
+    let items = ITEMS.iter().map(|(name, _)| MenuItem::new(msg(*name))).collect();
+    let mut m = VMenu::new(plain(MsgId::MMenuTerminalPosition), items);
+    let MenuResult::Selected(i) = m.run(&mut app.ui) else { return };
+    if let Some(pos) = ITEMS.get(i).and_then(|(_, code)| gm_platform::window::WindowPos::parse(code)) {
+        gm_platform::window::place_console(pos);
+        // The terminal reports the new size as a resize event; redraw fully.
+        app.ui.term.invalidate();
+    }
 }
 
 pub fn main_menu(app: &mut App) {
@@ -184,14 +209,15 @@ pub fn main_menu(app: &mut App) {
             4 => folder_history(app),
             6 => crate::commands::run(app, Command::SwapPanels),
             7 => app.user_screen(),
-            8 => crate::commands::run(app, Command::CompareFolders),
-            10 => crate::usermenu::edit_menu_file(app),
-            11 => crate::options::associations(app),
-            12 => shortcuts_menu(app),
-            13 => crate::commands::run(app, Command::Filter),
-            15 => module_commands(app),
-            16 => screens(app),
-            17 => crate::exec::execute_line(app, "proc:"),
+            8 => terminal_position(app),
+            9 => crate::commands::run(app, Command::CompareFolders),
+            11 => crate::usermenu::edit_menu_file(app),
+            12 => crate::options::associations(app),
+            13 => shortcuts_menu(app),
+            14 => crate::commands::run(app, Command::Filter),
+            16 => module_commands(app),
+            17 => screens(app),
+            18 => crate::exec::execute_line(app, "proc:"),
             _ => {}
         },
         3 => match it {
@@ -504,7 +530,7 @@ pub fn find_file(app: &mut App, folders_only: bool) {
 pub fn about(app: &mut App) {
     let modules: Vec<String> = app.modules.iter().map(|m| m.title()).collect();
     let text = format!(
-        "Goodevening Manager {}\nA Rust port of Far Manager for {}\n\nBased on Far Manager 3\nCopyright © 1996-2000 Eugene Roshal\nCopyright © 2000-2026 Far Group\n\nModules: {}",
+        "Goodevening Manager {}\nA Rust-based cross-platform app for {}\n inspired by Midnight Commander and Far Manager\nCopyright © 2026 Danyil Dobryvechir\n\nModules: {}",
         env!("CARGO_PKG_VERSION"),
         gm_platform::os_name(),
         if modules.is_empty() { "-".into() } else { modules.join(", ") }

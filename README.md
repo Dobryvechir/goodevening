@@ -101,6 +101,29 @@ effort; where the system does not allow it, the option is silently ignored:
   allow applications to place windows, so there only terminals that accept
   xterm window sequences react.
 
+#### Moving the window while gm runs
+
+The same positions are available at any time from the menu:
+**F9 → Commands → Terminal position**. It opens a menu in the middle of the
+screen with these items:
+
+| Item | Same as |
+|---|---|
+| Full screen | `--pos f` |
+| Left half | `--pos l` |
+| Right half | `--pos r` |
+| Top half | `--pos t` |
+| Bottom half | `--pos b` |
+| Left top | `--pos lt` |
+| Left bottom | `--pos lb` |
+| Right top | `--pos rt` |
+| Right bottom | `--pos rb` |
+
+Choosing an item moves and resizes the console window exactly as the
+matching `--pos` value does at startup, and the panels are redrawn for the
+new size. Where the system does not allow it (see the list above), nothing
+happens.
+
 Settings live in `%APPDATA%\gm`, `~/.config/gm` or
 `~/Library/Application Support/gm`:
 
@@ -141,7 +164,7 @@ Settings live in `%APPDATA%\gm`, `~/.config/gm` or
 * **Menus and options**: F9 menu bar, F2 user menu with Far metasymbols
   (`!.!`, `!\`, `!?prompt?default!`, …), file associations, folder shortcuts,
   histories, screens list (F12, Ctrl+Tab), settings dialogs, colors,
-  languages (all 13 of Far's translations), help (F1, from Far's help files).
+  languages (all 13 of Far's translations plus Norwegian), help (F1, from Far's help files, plus a Norwegian translation).
 
 ### Built-in modules (Far plugins, compiled in)
 
