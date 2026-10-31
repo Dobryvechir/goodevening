@@ -476,6 +476,7 @@ dependencies = [
  "gm-core",
  "gm-help",
  "gm-i18n",
+ "gm-platform",
  "gm-term",
  "gm-ui",
  "mod-archive",

@@ -7,6 +7,7 @@ pub mod attrs;
 pub mod drives;
 pub mod shell;
 pub mod users;
+pub mod window;
 
 pub use attrs::Attrs;
 pub use drives::{DriveInfo, DriveKind};

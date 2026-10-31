@@ -27,6 +27,11 @@ The Rust toolchain is pinned in `rust-toolchain.toml`; `rustup` installs it
 automatically. A C compiler is needed for the bundled SQLite and the
 bzip2/xz decoders (MSVC on Windows, `cc` on Linux/macOS).
 
+Step-by-step guides for installing the toolchain, building and distributing:
+[Windows](docs/build/WindowsBuild.md),
+[Ubuntu / WSL](docs/build/WSLUbuntuBuild.md),
+[macOS](docs/build/MacOSBuild.md).
+
 ## Running
 
 ```
@@ -38,8 +43,45 @@ gm [options] [left_folder [right_folder]]
   --profile <dir>    use <dir> for settings and state
   --lang <name>      interface language (English, Russian, Ukrainian, …)
   --colors <mode>    auto, 16 or truecolor
+  --pos <where>      move and resize the console window (see below)
   --keytest          show how key presses are decoded (for bug reports)
 ```
+
+### Console window position (`--pos`)
+
+`--pos` moves and resizes the console window when gm starts:
+
+| Value | Window |
+|---|---|
+| `f` | full size (maximized) |
+| `n` | normal: as the system opened it (same as no `--pos`) |
+| `l` | left half of the screen |
+| `r` | right half of the screen |
+| `t` | top half of the screen |
+| `b` | bottom half of the screen |
+| `lt` or `tl` | left top quarter of the screen |
+| `lb` or `bl` | left bottom quarter of the screen |
+| `rt` or `tr` | right top quarter of the screen |
+| `rb` or `br` | right bottom quarter of the screen |
+
+Example: `gm --pos l` in one console and `gm --pos r` in another.
+
+Halves and quarters are taken from the work area of the screen that holds
+the window (the taskbar, Dock or panels are excluded). Positioning is best
+effort; where the system does not allow it, the option is silently ignored:
+
+* **Windows**: the classic console window and Windows Terminal (the whole
+  Terminal window moves, with all its tabs).
+* **WSL**: the Windows console or Windows Terminal window, through
+  `powershell.exe` (the window moves a second or two after gm starts).
+* **macOS**: Terminal and iTerm2 through AppleScript; other terminals through
+  System Events (needs the Accessibility permission), then xterm window
+  sequences.
+* **Linux on X11**: `wmctrl`, or `xdotool` (with `xprop`, `xwininfo` and
+  `xrandr` for the work area and monitor) when installed; otherwise xterm
+  window sequences (xterm, and terminals that support them). Wayland does not
+  allow applications to place windows, so there only terminals that accept
+  xterm window sequences react.
 
 Settings live in `%APPDATA%\gm`, `~/.config/gm` or
 `~/Library/Application Support/gm`:

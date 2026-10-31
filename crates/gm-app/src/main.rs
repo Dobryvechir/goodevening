@@ -3,6 +3,7 @@
 
 use gm_config::{Settings, StateDb};
 use gm_core::{App, DbHistory, Keymap, Module};
+use gm_platform::window::WindowPos;
 use gm_term::{Event, KeyCode, Term, palette};
 use gm_ui::Ui;
 use std::path::PathBuf;
@@ -44,6 +45,7 @@ struct Args {
     keytest: bool,
     lang: Option<String>,
     colors: Option<String>,
+    pos: Option<WindowPos>,
     dirs: Vec<PathBuf>,
 }
 
@@ -58,6 +60,9 @@ Options:
   --profile <dir>    use <dir> for settings and state
   --lang <name>      interface language (English, Russian, Ukrainian, …)
   --colors <mode>    auto, 16 or truecolor
+  --pos <where>      place the console window: f (full screen), n (normal),
+                     l, r, t, b (left/right/top/bottom half),
+                     lt, rt, lb, rb (a quarter; tl, tr, bl, br also work)
   --keytest          show how key presses are decoded (for bug reports)
   -h, --help         this help
   --version          print the version
@@ -81,6 +86,10 @@ fn parse_args() -> Result<Args, String> {
             "--keytest" => a.keytest = true,
             "--lang" => a.lang = Some(it.next().ok_or("--lang needs a language name")?),
             "--colors" => a.colors = Some(it.next().ok_or("--colors needs a mode")?),
+            "--pos" => {
+                let v = it.next().ok_or("--pos needs a position")?;
+                a.pos = Some(WindowPos::parse(&v).ok_or(format!("unknown --pos value: {v}"))?);
+            }
             "-v" => a.view = Some(PathBuf::from(it.next().ok_or("-v needs a file")?)),
             e if e.starts_with("-e") => {
                 let line = e[2..].parse::<usize>().ok().map(|l| l.saturating_sub(1));
@@ -152,6 +161,9 @@ fn main() -> ExitCode {
             return ExitCode::from(2);
         }
     };
+    if let Some(pos) = args.pos {
+        gm_platform::window::place_console(pos);
+    }
     let profile = gm_config::init_profile(args.portable, args.profile.clone()).to_path_buf();
     gm_term::term::install_panic_hook(profile.clone());
 
