@@ -3057,6 +3057,7 @@ kan endres i dialogen ~Redigeringsinnstillinger~@EditorSettings@.
  #F8#                        Bytt mellom tegntabellene OEM/ANSI
  #Shift+F8#                  Velg tegntabell
  #Alt+F8#                    ~Gå til~@EditorGotoPos@ angitt linje og kolonne
+ #Ctrl+F8#                   Velg ~linjeskift~@EditorLineEndings@ (CR + LF eller LF)
  #Alt+F9#                    Maksimer eller gjenopprett størrelsen på konsollvinduet til gm; se også ~Interface.AltF9~@Interface.AltF9@
  #Alt+Shift+F9#              Åpne dialogen ~Redigeringsinnstillinger~@EditorSettings@
  #F10, F4, Esc#              Avslutt
@@ -3354,6 +3355,19 @@ gjenkjenne tegntabellen.
 
  #Mac-format (CR)#
  Linjeskift lagres som ett tegn - vognretur (CR), slik som i Mac OS.
+
+
+@EditorLineEndings
+$ #Redigering: linjeskift#
+ Når en fil åpnes, finner redigeringsprogrammet det første linjeskiftet og bruker
+det samme (#CR + LF# eller #LF#) for alle nye linjer. Er filen ny, tom eller uten
+linjeskift, brukes linjeskiftet til gjeldende system: #CR + LF# på Windows, #LF#
+på andre systemer.
+
+ #Ctrl+F8# viser menyen #Line endings# med valgene #CR + LF# og #LF#. Det valgte
+linjeskiftet brukes på hele filen (alle linjeskift konverteres) og deretter for
+nye linjer. Konverteringen kan angres med #Ctrl+Z#; filen på disken endres først
+når den lagres.
 
 
 @EditorGotoPos

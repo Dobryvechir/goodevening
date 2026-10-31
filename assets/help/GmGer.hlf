@@ -3112,6 +3112,7 @@ behavior can be changed in the ~Editor settings~@EditorSettings@ dialog.
  #F8#                      Zwischen OEM/ANSI Textansicht wechseln
  #Strg+F8#                 Benutzerdefinierte Zeichensatztabelle auswählen
  #Alt+F8#                  ~Gehe nach~@EditorGotoPos@ angegeben Zeile Und Spalte
+ #Ctrl+F8#                 ~Zeilenenden~@EditorLineEndings@ wählen (CR + LF oder LF)
  #Alt+F9#                  Maximize or restore the size of the gm console window; see also ~Interface.AltF9~@Interface.AltF9@
  #Alt+Shift+F9#            Call ~Editor settings~@EditorSettings@ dialog
  #F10, F4, Esc#            Beenden
@@ -3418,6 +3419,19 @@ Feed (LF), as used in Unix.
  #Mac format (CR)#
  Line breaks will be represented as a single character - Carriage
 Return (CR), as used in Mac OS.
+
+
+@EditorLineEndings
+$ #Editor: Zeilenenden#
+ Beim Öffnen einer Datei sucht der Editor das erste Zeilenende und verwendet
+dasselbe (#CR + LF# oder #LF#) für alle neuen Zeilen. Ist die Datei neu, leer oder
+ohne Zeilenende, wird das Zeilenende des aktuellen Systems verwendet: #CR + LF#
+unter Windows, #LF# auf anderen Systemen.
+
+ #Ctrl+F8# zeigt das Menü #Line endings# mit den Einträgen #CR + LF# und #LF#. Das
+gewählte Zeilenende wird auf die ganze Datei angewendet (alle Zeilenenden werden
+umgewandelt) und danach für neue Zeilen verwendet. Die Umwandlung kann mit
+#Ctrl+Z# rückgängig gemacht werden; die Datei ändert sich erst beim Speichern.
 
 
 @EditorGotoPos

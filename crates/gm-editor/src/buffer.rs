@@ -60,7 +60,8 @@ impl TextBuffer {
             None => (default_cp, 0, false),
         };
         let text = cp.decode(&bytes[skip..]);
-        let mut b = TextBuffer::from_str(&text, Eol::detect(&text));
+        // New lines follow the first line ending of the file (native if none).
+        let mut b = TextBuffer::from_str(&text, Eol::detect_first(&text));
         b.cp = cp;
         b.bom = bom;
         b
@@ -87,10 +88,7 @@ impl TextBuffer {
     pub fn encode(&self, convert_eol: Option<Eol>) -> (Vec<u8>, bool) {
         let mut text = self.rope.to_string();
         if let Some(e) = convert_eol {
-            text = text.replace("\r\n", "\n").replace('\r', "\n");
-            if e != Eol::Lf {
-                text = text.replace('\n', e.as_str());
-            }
+            text = e.convert(&text);
         }
         let mut out = Vec::with_capacity(text.len() + 4);
         if self.bom {
@@ -115,14 +113,28 @@ impl TextBuffer {
         r?;
         if let Some(e) = convert_eol {
             self.eol = e;
-            let s = self.rope.to_string().replace("\r\n", "\n").replace('\r', "\n");
-            let s = if e == Eol::Lf { s } else { s.replace('\n', e.as_str()) };
-            self.rope = Rope::from_str(&s);
+            self.rope = Rope::from_str(&e.convert(&self.rope.to_string()));
             self.undo.clear();
             self.redo.clear();
         }
         self.mark_saved();
         Ok(())
+    }
+
+    /// Converts all line breaks to `eol` (one undoable change) and uses it
+    /// for new lines. Returns true if the text changed.
+    pub fn convert_eol(&mut self, eol: Eol, cursor: (usize, usize)) -> bool {
+        self.eol = eol;
+        let old = self.rope.to_string();
+        let new = eol.convert(&old);
+        if new == old {
+            return false;
+        }
+        self.new_group();
+        let n = self.rope.len_chars();
+        self.replace(0, n, &new, cursor);
+        self.new_group();
+        true
     }
 
     pub fn mark_saved(&mut self) {
@@ -274,5 +286,21 @@ mod tests {
         assert!(!lossy);
         let (unix, _) = b.encode(Some(Eol::Lf));
         assert_eq!(Codepage::Utf16Le.decode(&unix[2..]), "a\nb");
+    }
+
+    #[test]
+    fn first_eol_and_conversion() {
+        let b = TextBuffer::from_bytes(b"a\nb\r\nc\r\nd\r\n", false, Codepage::Utf8);
+        assert_eq!(b.eol, Eol::Lf);
+        let b = TextBuffer::from_bytes(b"single line", false, Codepage::Utf8);
+        assert_eq!(b.eol, Eol::native());
+        let mut b = TextBuffer::from_str("a\nb\r\nc", Eol::Lf);
+        assert!(b.convert_eol(Eol::CrLf, (0, 0)));
+        assert_eq!(b.rope.to_string(), "a\r\nb\r\nc");
+        assert_eq!(b.eol, Eol::CrLf);
+        assert!(b.modified());
+        assert!(!b.convert_eol(Eol::CrLf, (0, 0)));
+        b.undo();
+        assert_eq!(b.rope.to_string(), "a\nb\r\nc");
     }
 }

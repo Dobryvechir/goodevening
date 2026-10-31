@@ -3042,6 +3042,7 @@ behavior can be changed in the ~Editor settings~@EditorSettings@ dialog.
  #F8#                      Toggle OEM/ANSI code page
  #Shift+F8#                Select code page
  #Alt+F8#                  ~Go to~@EditorGotoPos@ specified line and column
+ #Ctrl+F8#                 Select ~line endings~@EditorLineEndings@ (CR + LF or LF)
  #Alt+F9#                  Maximize or restore the size of the gm console window; see also ~Interface.AltF9~@Interface.AltF9@
  #Alt+Shift+F9#            Call ~Editor settings~@EditorSettings@ dialog
  #F10, F4, Esc#            Quit
@@ -3348,6 +3349,19 @@ Feed (LF), as used in Unix.
  #Mac format (CR)#
  Line breaks will be represented as a single character - Carriage
 Return (CR), as used in Mac OS.
+
+
+@EditorLineEndings
+$ #Editor: line endings#
+ When a file is opened, the editor finds the first line ending in it and uses
+the same ending (#CR + LF# or #LF#) for all new lines. If the file is new, empty or
+has no line endings, the ending of the current system is used: #CR + LF# on
+Windows, #LF# on other systems.
+
+ #Ctrl+F8# shows the #Line endings# menu with the items #CR + LF# and #LF#. The
+chosen ending is applied to the whole file (all existing line endings are
+converted) and is used for new lines from then on. The conversion can be undone
+with #Ctrl+Z#; the file is changed on disk only when it is saved.
 
 
 @EditorGotoPos

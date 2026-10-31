@@ -3124,6 +3124,7 @@ kódlapját kapja, de ez az opció a ~szerkesztő beállítások~@EditorSettings
  #F8#                      OEM/ANSI kódlap váltó
  #Shift+F8#                Kódlap kiválasztása
  #Alt+F8#                  ~Ugrás~@EditorGotoPos@ megadott sorra és oszlopra
+ #Ctrl+F8#                 ~Sorvégek~@EditorLineEndings@ kiválasztása (CR + LF vagy LF)
  #Alt+F9#                  A gm konzolablak méretének átváltása; see also ~Interface.AltF9~@Interface.AltF9@
  #Alt+Shift+F9#            A ~szerkesztő beállítások~@EditorSettings@ párbeszédablakot jeleníti meg
  #F10, Esc#                Kilépés
@@ -3432,6 +3433,19 @@ formátumnak megfelelően.
  #Mac formátum (CR)#
  A sortöréseket Carriage Return (CR) karakterré konvertálja, a
 Mac OS formátumnak megfelelően.
+
+
+@EditorLineEndings
+$ #Szerkesztő: sorvégek#
+ Fájl megnyitásakor a szerkesztő megkeresi az első sorvéget, és ugyanazt
+(#CR + LF# vagy #LF#) használja minden új sorhoz. Ha a fájl új, üres vagy nincs
+benne sorvég, az aktuális rendszer sorvége lesz használva: Windowson #CR + LF#,
+más rendszereken #LF#.
+
+ A #Ctrl+F8# megjeleníti a #Line endings# menüt a #CR + LF# és #LF# elemekkel. A
+választott sorvég az egész fájlra érvényes lesz (minden sorvég átalakul), és
+ezután az új sorokhoz is ezt használja. Az átalakítás a #Ctrl+Z#-vel
+visszavonható; a fájl a lemezen csak mentéskor változik.
 
 
 @EditorGotoPos

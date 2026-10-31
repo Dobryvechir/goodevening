@@ -3091,6 +3091,7 @@ behavior can be changed in the ~Editor settings~@EditorSettings@ dialog.
  #F8#                      Toggle OEM/ANSI code page
  #Shift+F8#                Select code page
  #Alt+F8#                  ~Перейти~@EditorGotoPos@ до вказаного рядка й позиції
+ #Ctrl+F8#                 Вибір ~кінців рядків~@EditorLineEndings@ (CR + LF або LF)
  #Alt+F9#                  Зміна розмірів вікна Goodevening Manager; дивись також ~Interface.AltF9~@Interface.AltF9@
  #Alt+Shift+F9#            Виклик діалогу ~конфігурації редактора~@EditorSettings@
  #F10, F4, Esc#            Вихід
@@ -3397,6 +3398,19 @@ helps applications to identify the code page of this file.
  #У форматі Mac (CR)#
  У якості послідовності переведення рядка буде використовуватися
 символ повернення каретки (CR), прийнятий у Mac.
+
+
+@EditorLineEndings
+$ #Редактор: кінці рядків#
+ Під час відкриття файлу редактор знаходить перший кінець рядка й використовує
+такий самий (#CR + LF# або #LF#) для всіх нових рядків. Якщо файл новий, порожній
+або не містить кінців рядків, використовується кінець рядка поточної системи:
+#CR + LF# у Windows, #LF# в інших системах.
+
+ #Ctrl+F8# показує меню #Line endings# з пунктами #CR + LF# та #LF#. Вибраний
+кінець рядка застосовується до всього файлу (усі кінці рядків перетворюються) і
+надалі використовується для нових рядків. Перетворення можна скасувати клавішами
+#Ctrl+Z#; файл на диску змінюється лише під час збереження.
 
 
 @EditorGotoPos

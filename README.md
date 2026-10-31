@@ -36,6 +36,8 @@ Step-by-step guides for installing the toolchain, building and distributing:
 
 ```
 gm [options] [left_folder [right_folder]]
+gm [options] --client=<file> <command line>
+gm [options] --server=<file>
 
   -v <file>          open the file in the viewer
   -e[line] <file>    open the file in the editor
@@ -46,8 +48,53 @@ gm [options] [left_folder [right_folder]]
   --pos <where>      move and resize the console window (see below)
   --lpath <dir>      current folder of the left panel (see below)
   --rpath <dir>      current folder of the right panel (see below)
+  --client=<file>    add a command to the queue <file> (see below)
+  --server=<file>    run commands from the queue <file> (see below)
   --keytest          show how key presses are decoded (for bug reports)
 ```
+
+### Command queue (`--client`, `--server`)
+
+One gm can run commands that other gm calls send to it, through a queue
+file. `<file>` is a file name in the settings folder, the folder that holds
+`settings.toml` (see the end of this section; `--profile` and `--portable`
+change it). Both sides lock the file for each access, so any number of
+clients and a server can use the same queue at the same time.
+
+**`gm --client=<file> <command line>`** does not start the file manager and
+does not run anything itself. It locks the queue file (creating it if
+needed), reads it, appends the command line as a new last line, unlocks the
+file and exits. Everything after `--client=<file>` is the command line, so
+put the other options (`--profile`, `-p`) **before** it. Quote the command
+when it contains shell operators (`&`, `|`, `>`, …), otherwise the calling
+shell takes them. Line breaks in the command become spaces.
+
+**`gm --server=<file>`** does not show the panels or any window of gm; it
+uses the console as a plain screen. It creates the queue file if needed and
+waits until the file is not empty (it checks every 0.2 s). Then it locks the
+file, reads the first line, removes it from the file and unlocks it, and runs
+the line through the user's shell (`%ComSpec%` / `cmd.exe` on Windows,
+`$SHELL` / `/bin/sh` elsewhere) in the folder the server was started in. The
+console shows the command itself, as `<folder>> <command>`, followed by all
+its output; a non-zero exit code is shown as `[exit code N]`. Commands run one
+after another, in the order they were queued; empty lines are skipped. The
+server runs until it is stopped with Ctrl+C or by closing the console.
+
+```
+gm --server=jobs.txt                       # in one console
+gm --client=jobs.txt cargo build           # in any other console
+gm --client=jobs.txt "dir /b & echo done"  # quoted: & goes to the server
+```
+
+```
+C:\Projects\demo> cargo build
+   Compiling demo v0.1.0 (C:\Projects\demo)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.52s
+```
+
+The queue is a plain text file with one command per line, so it can also be
+filled by other programs, as long as they lock it the same way (or write it
+in one go).
 
 ### Panel folders (`--lpath`, `--rpath`)
 
@@ -173,6 +220,7 @@ Settings live in `%APPDATA%\gm`, `~/.config/gm` or
 | `state.db` | command/folder/view histories, file positions, folder shortcuts (SQLite, safe for several instances) |
 | `keymap.toml` | key overrides, e.g. `[panels]` `"Alt+Q" = "Quit"` |
 | `GmMenu.ini` | the global user menu (F2); a `GmMenu.ini` in a folder is its local menu |
+| `<file>` of `--client`/`--server` | the command queue, one command per line |
 
 ## What works
 
@@ -196,6 +244,11 @@ Settings live in `%APPDATA%\gm`, `~/.config/gm` or
   clipboard, search and replace (regex), go to line, code pages, line ending
   preservation and conversion (Shift+F2), read-only warning, external change
   detection, remembered positions, line numbers, F11 tools.
+  Line endings: new lines follow the first line ending found in the file
+  (CR+LF or LF); a new file, or one without line endings, uses the system
+  default (CR+LF on Windows, LF elsewhere). **Ctrl+F8** opens the *Line
+  endings* menu (`CR + LF` / `LF`): the whole file is converted to the chosen
+  ending (undoable with Ctrl+Z) and new lines use it from then on.
 * **Find File** (Alt+F7): masks, text/hex/regex content in all standard code
   pages, search areas, streaming results with Go to / View / Edit / Panel.
 * **Command line**: shell execution on the user screen (Ctrl+O), `cd`,

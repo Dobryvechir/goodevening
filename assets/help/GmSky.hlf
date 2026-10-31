@@ -3034,6 +3034,7 @@ behavior can be changed in the ~Editor settings~@EditorSettings@ dialog.
  #F8#                      Prepínanie medzi DOS/Windows módom
  #Shift+F8#                Výber užívateľskej tabuľky znakov (pozri poznámky nižšie)
  #Alt+F8#                  ~Presun na~@EditorGotoPos@ zadaný riadok a stĺpec
+ #Ctrl+F8#                 Výber ~koncov riadkov~@EditorLineEndings@ (CR + LF alebo LF)
  #Alt+F9#                  Maximize or restore the size of the gm console window; see also ~Interface.AltF9~@Interface.AltF9@
  #Alt+Shift+F9#            Call ~Editor settings~@EditorSettings@ dialog
  #F10, F4, Esc#            Koniec
@@ -3340,6 +3341,19 @@ Feed (LF), as used in Unix.
  #Mac format (CR)#
  Line breaks will be represented as a single character - Carriage
 Return (CR), as used in Mac OS.
+
+
+@EditorLineEndings
+$ #Editor: konce riadkov#
+ Pri otvorení súboru editor nájde prvý koniec riadku a rovnaký koniec (#CR + LF#
+alebo #LF#) používa pre všetky nové riadky. Ak je súbor nový, prázdny alebo bez
+koncov riadkov, použije sa koniec aktuálneho systému: #CR + LF# vo Windows, #LF#
+v ostatných systémoch.
+
+ #Ctrl+F8# zobrazí ponuku #Line endings# s položkami #CR + LF# a #LF#. Zvolený
+koniec sa použije na celý súbor (všetky konce riadkov sa prevedú) a ďalej aj pre
+nové riadky. Prevod sa dá vrátiť klávesom #Ctrl+Z#; súbor na disku sa zmení až
+po uložení.
 
 
 @EditorGotoPos

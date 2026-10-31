@@ -126,6 +126,7 @@ fn labels() -> KeyBarLabels {
         MsgId::MEditAltF12,
     ]);
     l.alt[8] = String::new();
+    l.ctrl[7] = msg(MsgId::MEditCtrlF8).to_string();
     l
 }
 
@@ -761,6 +762,28 @@ impl Editor {
         }
     }
 
+    /// Ctrl+F8: chooses the line ending; the whole text is converted to it
+    /// and new lines use it from now on.
+    fn eol_menu(&mut self, ui: &mut Ui) {
+        let list = [(Eol::CrLf, "CR + LF"), (Eol::Lf, "LF")];
+        let items = list.iter().map(|(e, n)| MenuItem::new(*n).checked(*e == self.buf.eol)).collect();
+        let mut m = VMenu::new("Line endings", items);
+        if let Some(p) = list.iter().position(|(e, _)| *e == self.buf.eol) {
+            m.select(p);
+        }
+        if let MenuResult::Selected(i) = m.run(ui) {
+            self.set_eol(list[i].0);
+        }
+    }
+
+    /// Converts all line endings to `eol` and uses it for new lines.
+    pub fn set_eol(&mut self, eol: Eol) {
+        let cursor = (self.line, self.col);
+        self.anchor = None;
+        self.buf.convert_eol(eol, cursor);
+        self.set_cursor(cursor.0, cursor.1);
+    }
+
     fn tools_menu(&mut self, ui: &mut Ui) {
         if self.tools.is_empty() {
             return;
@@ -1132,6 +1155,7 @@ impl Window for Editor {
             }
             (KeyCode::F(8), Mods::SHIFT) => self.codepage_menu(ui),
             (KeyCode::F(8), Mods::ALT) => self.goto_dialog(ui),
+            (KeyCode::F(8), Mods::CTRL) if !self.readonly => self.eol_menu(ui),
             (KeyCode::F(3), Mods::CTRL) => self.opts.line_numbers = !self.opts.line_numbers,
             (KeyCode::F(11), Mods::NONE) => self.tools_menu(ui),
             (KeyCode::F(12), Mods::NONE) => return WinAction::ScreensList,
@@ -1312,6 +1336,19 @@ mod tests {
         assert!(e.find(false).unwrap());
         assert_eq!(e.cursor(), (1, 7));
         let _ = KeyChord::plain(KeyCode::Null);
+        let _ = std::fs::remove_file(&e.path);
+    }
+
+    #[test]
+    fn eol_follows_first_and_converts() {
+        let mut e = ed("ab\ncd\r\nef\r\n");
+        assert_eq!(e.buf.eol, Eol::Lf);
+        e.set_cursor(1, 1);
+        e.set_eol(Eol::CrLf);
+        assert_eq!(e.buf.rope.to_string(), "ab\r\ncd\r\nef\r\n");
+        assert_eq!(e.cursor(), (1, 1));
+        e.newline();
+        assert_eq!(e.buf.rope.to_string(), "ab\r\nc\r\nd\r\nef\r\n");
         let _ = std::fs::remove_file(&e.path);
     }
 }

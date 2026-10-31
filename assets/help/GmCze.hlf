@@ -3071,6 +3071,7 @@ behavior can be changed in the ~Editor settings~@EditorSettings@ dialog.
  #F8#                      Přepíná mezi DOS/Windows textovým režimem
  #Shift+F8#                Výběr OEM/ANSI code page
  #Alt+F8#                  ~Jdi na~@EditorGotoPos@ určený řádek a sloupec
+ #Ctrl+F8#                 Výběr ~konců řádků~@EditorLineEndings@ (CR + LF nebo LF)
  #Alt+F9#                  Přepíná velikost konzolového okna Gm; see also ~Interface.AltF9~@Interface.AltF9@
  #Alt+Shift+F9#            Zobrazí dialog ~Nastavení Editoru~@EditorSettings@
  #F10, F4, Esc#            Konec
@@ -3377,6 +3378,19 @@ Feed (LF), tak jak se používá pod Unixem.
  #Mac format (CR)#
  Line breaks will be represented as a single character - Carriage
 Return (CR), as used in Mac OS.
+
+
+@EditorLineEndings
+$ #Editor: konce řádků#
+ Při otevření souboru editor najde první konec řádku a stejný konec (#CR + LF#
+nebo #LF#) používá pro všechny nové řádky. Je-li soubor nový, prázdný nebo bez
+konců řádků, použije se konec aktuálního systému: #CR + LF# ve Windows, #LF#
+v ostatních systémech.
+
+ #Ctrl+F8# zobrazí nabídku #Line endings# s položkami #CR + LF# a #LF#. Zvolený
+konec se použije na celý soubor (všechny konce řádků se převedou) a dále i pro
+nové řádky. Převod lze vrátit klávesou #Ctrl+Z#; soubor na disku se změní až
+po uložení.
 
 
 @EditorGotoPos

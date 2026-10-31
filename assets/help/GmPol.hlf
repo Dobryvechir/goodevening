@@ -3051,6 +3051,7 @@ kodowa ANSI, ale można zmienić to ustawienie w oknie ~Ustawień edytora~@Edito
  #F8#                      Przełącza strony kodowe OEM/ANSI
  #Shift+F8#                Wybiera stronę kodową
  #Alt+F8#                  ~Przechodzi do~@EditorGotoPos@ podanej linii i kolumny
+ #Ctrl+F8#                 Wybór ~końców linii~@EditorLineEndings@ (CR + LF lub LF)
  #Alt+F9#                  Maksymalizuje lub przywraca wielkość okna konsoli gm; zobacz także ~Interface.AltF9~@Interface.AltF9@
  #Alt+Shift+F9#            Wywołuje okno ~Ustawień edytora~@EditorSettings@
  #F10, F4, Esc#            Wyjście z programu
@@ -3360,6 +3361,19 @@ linii (LF), tak jak w systemach UNIX.
  #Format MAC (CR)#
  Koniec linii będzie oznaczony pojedynczym znakiem - powrotem karetki
 (CR), używanym w systemach Mac OS.
+
+
+@EditorLineEndings
+$ #Edytor: końce linii#
+ Przy otwieraniu pliku edytor znajduje pierwszy koniec linii i używa takiego
+samego (#CR + LF# lub #LF#) dla wszystkich nowych linii. Jeśli plik jest nowy,
+pusty lub nie ma końców linii, używany jest koniec linii bieżącego systemu:
+#CR + LF# w Windows, #LF# w innych systemach.
+
+ #Ctrl+F8# pokazuje menu #Line endings# z pozycjami #CR + LF# i #LF#. Wybrany
+koniec linii jest stosowany do całego pliku (wszystkie końce linii są
+konwertowane) i dalej do nowych linii. Konwersję można cofnąć klawiszem
+#Ctrl+Z#; plik na dysku zmienia się dopiero po zapisaniu.
 
 
 @EditorGotoPos
