@@ -43,7 +43,7 @@ Step-by-step guides for installing the toolchain, building and distributing:
 
 ```
 gm [options] [left_folder [right_folder]]
-gm [options] --client=<file> <command line>
+gm [options] --client-push=<file> <command line>
 gm [options] --server=<file>
 
   -v <file>          open the file in the viewer
@@ -55,12 +55,13 @@ gm [options] --server=<file>
   --pos <where>      move and resize the console window (see below)
   --lpath <dir>      current folder of the left panel (see below)
   --rpath <dir>      current folder of the right panel (see below)
-  --client=<file>    add a command to the queue <file> (see below)
+  --client-push=<file>
+                     add a command to the queue <file> (see below)
   --server=<file>    run commands from the queue <file> (see below)
   --keytest          show how key presses are decoded (for bug reports)
 ```
 
-### Command queue (`--client`, `--server`)
+### Command queue (`--client-push`, `--server`)
 
 One gm can run commands that other gm calls send to it, through a queue
 file. `<file>` is a file name in the settings folder, the folder that holds
@@ -68,10 +69,10 @@ file. `<file>` is a file name in the settings folder, the folder that holds
 change it). Both sides lock the file for each access, so any number of
 clients and a server can use the same queue at the same time.
 
-**`gm --client=<file> <command line>`** does not start the file manager and
+**`gm --client-push=<file> <command line>`** does not start the file manager and
 does not run anything itself. It locks the queue file (creating it if
 needed), reads it, appends the command line as a new last line, unlocks the
-file and exits. Everything after `--client=<file>` is the command line, so
+file and exits. Everything after `--client-push=<file>` is the command line, so
 put the other options (`--profile`, `-p`) **before** it. Quote the command
 when it contains shell operators (`&`, `|`, `>`, …), otherwise the calling
 shell takes them. Line breaks in the command become spaces.
@@ -88,9 +89,9 @@ after another, in the order they were queued; empty lines are skipped. The
 server runs until it is stopped with Ctrl+C or by closing the console.
 
 ```
-gm --server=jobs.txt                       # in one console
-gm --client=jobs.txt cargo build           # in any other console
-gm --client=jobs.txt "dir /b & echo done"  # quoted: & goes to the server
+gm --server=jobs.txt                           # in one console
+gm --client-push=jobs.txt cargo build          # in any other console
+gm --client-push=jobs.txt "dir /b & echo done" # quoted: & goes to the server
 ```
 
 ```
@@ -227,7 +228,7 @@ Settings live in `%APPDATA%\gm`, `~/.config/gm` or
 | `state.db` | command/folder/view histories, file positions, folder shortcuts (SQLite, safe for several instances) |
 | `keymap.toml` | key overrides, e.g. `[panels]` `"Alt+Q" = "Quit"` |
 | `GmMenu.ini` | the global user menu (F2); a `GmMenu.ini` in a folder is its local menu |
-| `<file>` of `--client`/`--server` | the command queue, one command per line |
+| `<file>` of `--client-push`/`--server` | the command queue, one command per line |
 
 ## What works
 

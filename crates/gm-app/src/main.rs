@@ -51,8 +51,8 @@ struct Args {
     lpath: Option<PathBuf>,
     rpath: Option<PathBuf>,
     dirs: Vec<PathBuf>,
-    /// `--client=<file>`: the queue file and the command to add to it.
-    client: Option<(String, String)>,
+    /// `--client-push=<file>`: the queue file and the command to add to it.
+    client_push: Option<(String, String)>,
     /// `--server=<file>`: the queue file to run commands from.
     server: Option<String>,
 }
@@ -60,7 +60,7 @@ struct Args {
 const USAGE: &str = "Goodevening Manager (gm) — a two-panel file manager
 
 Usage: gm [options] [left_folder [right_folder]]
-       gm [options] --client=<file> <command line>
+       gm [options] --client-push=<file> <command line>
        gm [options] --server=<file>
 
 Options:
@@ -76,7 +76,8 @@ Options:
   --lpath <dir>      current folder of the left panel
   --rpath <dir>      current folder of the right panel
                      (both override left_folder/right_folder and saved settings)
-  --client=<file>    do not start gm: add the rest of the command line as one
+  --client-push=<file>
+                     do not start gm: add the rest of the command line as one
                      command to the queue <file> in the settings folder
   --server=<file>    do not show panels: wait for commands in the queue <file>
                      in the settings folder and run them in this console
@@ -109,14 +110,14 @@ fn parse_args() -> Result<Args, String> {
             }
             "--lpath" => a.lpath = Some(dir_arg(it.next(), "--lpath")?),
             "--rpath" => a.rpath = Some(dir_arg(it.next(), "--rpath")?),
-            o if o.starts_with("--client=") => {
-                let file = queue_name(&o["--client=".len()..], "--client")?;
-                // Everything after --client=<file> is the command line.
+            o if o.starts_with("--client-push=") => {
+                let file = queue_name(&o["--client-push=".len()..], "--client-push")?;
+                // Everything after --client-push=<file> is the command line.
                 let cmd = it.by_ref().collect::<Vec<_>>().join(" ");
                 if cmd.trim().is_empty() {
-                    return Err("--client needs a command line after the file name".into());
+                    return Err("--client-push needs a command line after the file name".into());
                 }
-                a.client = Some((file, cmd));
+                a.client_push = Some((file, cmd));
             }
             o if o.starts_with("--server=") => a.server = Some(queue_name(&o["--server=".len()..], "--server")?),
             "-v" => a.view = Some(PathBuf::from(it.next().ok_or("-v needs a file")?)),
@@ -128,13 +129,13 @@ fn parse_args() -> Result<Args, String> {
             d => a.dirs.push(PathBuf::from(d)),
         }
     }
-    if a.client.is_some() && a.server.is_some() {
-        return Err("--client and --server cannot be used together".into());
+    if a.client_push.is_some() && a.server.is_some() {
+        return Err("--client-push and --server cannot be used together".into());
     }
     Ok(a)
 }
 
-/// Checks the file name of `--client=`/`--server=`.
+/// Checks the file name of `--client-push=`/`--server=`.
 fn queue_name(v: &str, opt: &str) -> Result<String, String> {
     if v.trim().is_empty() { Err(format!("{opt} needs a file name: {opt}=<file>")) } else { Ok(v.to_string()) }
 }
@@ -211,7 +212,7 @@ fn main() -> ExitCode {
     let profile = gm_config::init_profile(args.portable, args.profile.clone()).to_path_buf();
     gm_term::term::install_panic_hook(profile.clone());
 
-    if let Some((file, cmd)) = &args.client {
+    if let Some((file, cmd)) = &args.client_push {
         let path = queue::queue_path(file);
         return match queue::push(&path, cmd) {
             Ok(()) => ExitCode::SUCCESS,

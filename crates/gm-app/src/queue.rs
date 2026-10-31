@@ -1,4 +1,4 @@
-//! Command queue shared by `gm --client=<file>` and `gm --server=<file>`.
+//! Command queue shared by `gm --client-push=<file>` and `gm --server=<file>`.
 //!
 //! The queue is a plain text file in the profile folder (next to
 //! `settings.toml`), one command line per line. Every access takes an
@@ -26,7 +26,7 @@ fn open_locked(path: &Path) -> std::io::Result<File> {
     Ok(f)
 }
 
-/// Appends one command line to the queue (the `--client` side).
+/// Appends one command line to the queue (the `--client-push` side).
 pub fn push(path: &Path, line: &str) -> std::io::Result<()> {
     // A queued command is one line: line breaks inside it become spaces.
     let line: String = line.chars().map(|c| if c == '\r' || c == '\n' { ' ' } else { c }).collect();
