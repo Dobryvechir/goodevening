@@ -1400,6 +1400,28 @@ kiválasztás után a lista aljára kerülnek. Ezt elkerülhetjük, ha Enter hel
                         mutatja. Ha nem nyitható terminálablak,
                         hibaüzenet jelenik meg.
 
+ #Végrehajtás másik terminálban#
+                        Parancsok futtatása egy második terminálban.
+                        Válassza a #Terminál balra#, #Terminál jobbra#,
+                        #Terminál alul# vagy #Terminál felül# pontot:
+                        ez az ablak az ellenkező félre kerül (mint a
+                        #Terminál pozíció# esetén), a beállítások
+                        mappájában egyedi nevű új sorfájl jön létre,
+                        és ugyanaz a program új terminálablakban
+                        indul a választott félen a #--pos#, #--lpath#
+                        (az aktív panel mappája) és #--server=#<sor>
+                        kapcsolókkal. Ettől kezdve a kezelő úgy
+                        működik, mintha #--client=#<sor> kapcsolóval
+                        indult volna: a parancssor parancsai és a
+                        panelekről indított fájlok a másik terminálban
+                        futnak. Ha a kezelő már egy másik terminálba
+                        küldi a parancsokat, a menüben csak a #Másik#
+                        #terminál leválasztása# pont van: ezután a
+                        kezelő ismét maga futtatja a parancsokat, és
+                        a sorba teszi az #exit_gm_server# parancsot:
+                        a másik terminál lefuttatja a korábban sorba
+                        tett parancsokat, törli a sorfájlt és bezárul.
+
  #Mappák#               Összeveti a mappák tartalmát.
  #összehasonlítása#     ^<wrap>A ~mappák összehasonlítása~@CompFolders@
 témakör részletezi a funkciót.

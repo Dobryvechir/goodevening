@@ -63,7 +63,7 @@ const USAGE: &str = "Goodevening Manager (gm) — a two-panel file manager
 Usage: gm [options] [left_folder [right_folder]]
        gm [options] --client=<file> [left_folder [right_folder]]
        gm [options] --client-push=<file> <command line>
-       gm [options] --server=<file>
+       gm [options] --server=<file> [folder]
 
 Options:
   -v <file>          open the file in the viewer
@@ -86,6 +86,9 @@ Options:
                      command to the queue <file> in the settings folder
   --server=<file>    do not show panels: wait for commands in the queue <file>
                      in the settings folder and run them in this console
+                     (in the --lpath or left_folder folder when given);
+                     the queued command exit_gm_server deletes the queue
+                     file and stops the server
   --keytest          show how key presses are decoded (for bug reports)
   -h, --help         this help
   --version          print the version
@@ -231,11 +234,22 @@ fn main() -> ExitCode {
         };
     }
     if let Some(file) = &args.server {
-        let path = queue::queue_path(file);
-        if let Err(e) = queue::serve(&path) {
-            eprintln!("gm: server stopped: {}: {e}", path.display());
+        // The server runs commands in its current folder: --lpath (or
+        // left_folder) sets it, as F9 → Commands → Execute in other terminal does.
+        if let Some(dir) = args.lpath.clone().or_else(|| args.dirs.first().cloned().map(abs))
+            && let Err(e) = std::env::set_current_dir(&dir)
+        {
+            eprintln!("gm: cannot change to {}: {e}", dir.display());
         }
-        return ExitCode::FAILURE;
+        let path = queue::queue_path(file);
+        return match queue::serve(&path) {
+            // exit_gm_server was queued: the queue file is deleted.
+            Ok(()) => ExitCode::SUCCESS,
+            Err(e) => {
+                eprintln!("gm: server stopped: {}: {e}", path.display());
+                ExitCode::FAILURE
+            }
+        };
     }
 
     let settings_path = gm_config::settings_path();

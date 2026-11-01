@@ -239,6 +239,39 @@ fn multiple_terminals_menu() {
 }
 
 #[test]
+fn execute_in_other_terminal_menu() {
+    let mut f = fixture("exectermmenu", vec![]);
+    f.app.ui.term.recorded = Some(Vec::new());
+    // F9 → Right, Right (Commands) → X (Execute in other terminal); Esc
+    // closes the submenu without starting anything.
+    let script = vec![plain(KeyCode::Right), plain(KeyCode::Right), plain(KeyCode::Char('x')), Event::Resize(110, 32), plain(KeyCode::Esc)];
+    f.run(plain(KeyCode::F(9)), script);
+    let frames = f.app.ui.term.recorded.replace(Vec::new()).unwrap_or_default();
+    let menu = frames.iter().find(|fr| fr.contains("Execute in other terminal") && fr.contains("Terminal at left"));
+    let menu = menu.unwrap_or_else(|| panic!("no Execute in other terminal menu in {} frames", frames.len()));
+    for item in ["Terminal at right", "Terminal at bottom", "Terminal at top"] {
+        assert!(menu.contains(item), "{item} missing:\n{menu}");
+    }
+    assert!(f.app.server_queue.is_none());
+}
+
+#[test]
+fn execute_in_other_terminal_disconnect() {
+    let mut f = fixture("exectermdisc", vec![]);
+    let queue = std::env::temp_dir().join(format!("gm-test-queue-{}.txt", std::process::id()));
+    std::fs::write(&queue, "echo before\n").unwrap();
+    f.app.server_queue = Some(queue.clone());
+    // F9 → Commands → X; the only item is "Disconnect other terminal",
+    // Enter chooses it: it queues exit_gm_server for the server and leaves
+    // server execution mode.
+    let script = vec![plain(KeyCode::Right), plain(KeyCode::Right), plain(KeyCode::Char('x')), plain(KeyCode::Enter)];
+    f.run(plain(KeyCode::F(9)), script);
+    assert!(f.app.server_queue.is_none());
+    assert_eq!(std::fs::read_to_string(&queue).unwrap(), "echo before\nexit_gm_server\n");
+    let _ = std::fs::remove_file(&queue);
+}
+
+#[test]
 fn find_file_goto() {
     let mut f = fixture("find", vec![]);
     std::fs::write(f.left().join("sub/needle.txt"), "hay").unwrap();

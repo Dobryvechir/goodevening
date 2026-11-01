@@ -14,9 +14,36 @@ use std::time::Duration;
 /// How often the server checks the queue file.
 const POLL: Duration = Duration::from_millis(200);
 
+/// The queued command that makes `gm --server=<file>` delete the queue file
+/// and exit (F9 → Commands → Execute in other terminal → Disconnect).
+pub const EXIT_COMMAND: &str = "exit_gm_server";
+
 /// The queue file `name` inside the profile folder.
 pub fn queue_path(name: &str) -> PathBuf {
     gm_config::profile_dir().join(name)
+}
+
+/// Creates a new, empty queue file in the profile folder under a name that
+/// no other file there has, and returns that name (F9 → Commands → Execute
+/// in other terminal).
+pub fn create_unique() -> std::io::Result<String> {
+    create_unique_in(gm_config::profile_dir())
+}
+
+/// `create_unique` in `dir`. The file is created with `create_new`, so two
+/// gm instances never get the same name even when they ask at once.
+fn create_unique_in(dir: &Path) -> std::io::Result<String> {
+    std::fs::create_dir_all(dir)?;
+    let pid = std::process::id();
+    for n in 1..=9999u32 {
+        let name = format!("gm-queue-{pid}-{n}.txt");
+        match OpenOptions::new().write(true).create_new(true).open(dir.join(&name)) {
+            Ok(_) => return Ok(name),
+            Err(e) if e.kind() == std::io::ErrorKind::AlreadyExists => continue,
+            Err(e) => return Err(e),
+        }
+    }
+    Err(std::io::Error::new(std::io::ErrorKind::AlreadyExists, "no free queue file name"))
 }
 
 /// Opens the queue for reading and writing (creating it) and locks it.
@@ -71,7 +98,9 @@ pub fn pop(path: &Path) -> std::io::Result<Option<String>> {
 }
 
 /// `gm --server=<file>`: waits for commands in the queue and runs them in
-/// this console, showing each command and its output. Runs until killed.
+/// this console, showing each command and its output. Runs until killed,
+/// or until it takes `EXIT_COMMAND` from the queue: then it deletes the
+/// queue file and returns `Ok`.
 pub fn serve(path: &Path) -> std::io::Result<()> {
     // Make sure the file exists so clients and the user can find it.
     drop(OpenOptions::new().append(true).create(true).open(path)?);
@@ -90,6 +119,11 @@ pub fn serve(path: &Path) -> std::io::Result<()> {
             Some(l) if !l.trim().is_empty() => l,
             _ => continue,
         };
+        if line.trim() == EXIT_COMMAND {
+            println!();
+            println!("gm server: {EXIT_COMMAND} received, stopping");
+            return std::fs::remove_file(path);
+        }
         run(&line);
     }
 }
@@ -132,6 +166,29 @@ mod tests {
         assert_eq!(std::fs::metadata(&p).unwrap().len(), 0);
         assert_eq!(pop(&p).unwrap(), None);
         let _ = std::fs::remove_file(&p);
+    }
+
+    #[test]
+    fn server_exits_on_exit_command() {
+        let p = temp_file("exit");
+        push(&p, "").unwrap();
+        push(&p, EXIT_COMMAND).unwrap();
+        push(&p, "echo never run").unwrap();
+        // Returns instead of waiting forever, and the queue file is gone.
+        serve(&p).unwrap();
+        assert!(!p.exists());
+    }
+
+    #[test]
+    fn unique_names() {
+        let dir = std::env::temp_dir().join(format!("gm-queue-test-unique-{}", std::process::id()));
+        let _ = std::fs::remove_dir_all(&dir);
+        let a = create_unique_in(&dir).unwrap();
+        let b = create_unique_in(&dir).unwrap();
+        assert_ne!(a, b);
+        assert!(dir.join(&a).is_file() && dir.join(&b).is_file());
+        assert_eq!(std::fs::metadata(dir.join(&a)).unwrap().len(), 0);
+        let _ = std::fs::remove_dir_all(&dir);
     }
 
     #[test]

@@ -2260,3 +2260,9 @@ MMultiTermLeftRight
 MMultiTermTopBottom
 MMultiTermFour
 MMultiTermError
+MMenuExecOtherTerminal
+MExecTermLeft
+MExecTermRight
+MExecTermBottom
+MExecTermTop
+MExecTermDisconnect

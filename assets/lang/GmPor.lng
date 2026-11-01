@@ -4522,3 +4522,15 @@
 "&4 terminais"
 //[MMultiTermError]
 "Não foi possível abrir uma nova janela de terminal"
+//[MMenuExecOtherTerminal]
+"E&xecutar em outro terminal"
+//[MExecTermLeft]
+"Terminal à &esquerda"
+//[MExecTermRight]
+"Terminal à &direita"
+//[MExecTermBottom]
+"Terminal em &baixo"
+//[MExecTermTop]
+"Terminal em &cima"
+//[MExecTermDisconnect]
+"Desconectar &outro terminal"

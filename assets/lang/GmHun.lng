@@ -4522,3 +4522,15 @@
 "&4 terminál"
 //[MMultiTermError]
 "Nem sikerült új terminálablakot nyitni"
+//[MMenuExecOtherTerminal]
+"&Végrehajtás másik terminálban"
+//[MExecTermLeft]
+"Terminál &balra"
+//[MExecTermRight]
+"Terminál &jobbra"
+//[MExecTermBottom]
+"Terminál &alul"
+//[MExecTermTop]
+"Terminál &felül"
+//[MExecTermDisconnect]
+"Másik terminál &leválasztása"

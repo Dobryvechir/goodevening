@@ -1386,6 +1386,28 @@ $ #Menu Příkazy#
                         a pravé adresáře. Pokud nelze okno terminálu
                         otevřít, zobrazí se chybová zpráva.
 
+ #Spustit v jiném terminálu#
+                        Spouští příkazy ve druhém terminálu. Zvolte
+                        #Terminál vlevo#, #Terminál vpravo#, #Terminál#
+                        #dole# nebo #Terminál nahoře#: toto okno se
+                        přesune do opačné poloviny (jako u #Pozice#
+                        #terminálu#), ve složce nastavení se vytvoří
+                        nový soubor fronty s jedinečným názvem a
+                        stejný program se spustí v novém okně
+                        terminálu ve zvolené polovině s parametry
+                        #--pos#, #--lpath# (adresář aktivního panelu)
+                        a #--server=#<fronta>. Od té chvíle správce
+                        pracuje, jako by byl spuštěn s
+                        #--client=#<fronta>: příkazy z příkazového
+                        řádku a soubory spuštěné z panelů se spouštějí
+                        v jiném terminálu. Pokud správce již posílá
+                        příkazy do jiného terminálu, nabídka obsahuje
+                        jen #Odpojit jiný terminál#: správce pak opět
+                        spouští příkazy sám a zařadí do fronty
+                        #exit_gm_server#: druhý terminál provede
+                        dříve zařazené příkazy, smaže soubor fronty
+                        a zavře se.
+
  #Porovnat adresáře#    Porovnává obsahy adresářů.
                       Pro více informací se podívejte na
                       ~Porovnat adresáře~@CompFolders@.

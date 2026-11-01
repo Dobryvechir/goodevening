@@ -4522,3 +4522,15 @@
 "&4 terminals"
 //[MMultiTermError]
 "Cannot open a new terminal window"
+//[MMenuExecOtherTerminal]
+"E&xecute in other terminal"
+//[MExecTermLeft]
+"Terminal at &left"
+//[MExecTermRight]
+"Terminal at &right"
+//[MExecTermBottom]
+"Terminal at &bottom"
+//[MExecTermTop]
+"Terminal at &top"
+//[MExecTermDisconnect]
+"&Disconnect other terminal"

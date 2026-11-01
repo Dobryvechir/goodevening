@@ -1366,6 +1366,27 @@ $ #Menus: commands menu#
                       left and right folders. If no terminal window can
                       be opened, an error message is shown.
 
+ #Execute in other terminal#
+                      Run commands in a second terminal. Choose
+                      #Terminal at left#, #Terminal at right#,
+                      #Terminal at bottom# or #Terminal at top#: this
+                      window moves to the opposite half (as with
+                      #Terminal position#), a new queue file with a
+                      unique name is created in the settings folder,
+                      and the same program is started in a new
+                      terminal window at the chosen half with #--pos#,
+                      #--lpath# (the folder of the active panel) and
+                      #--server=#<queue>. From then on this manager
+                      works as if started with #--client=#<queue>:
+                      commands from the command line and files started
+                      from the panels are run in the other terminal.
+                      When this manager already sends commands to
+                      another terminal, the menu has only #Disconnect#
+                      #other terminal#, which makes it run commands
+                      itself again, and queues #exit_gm_server#: the
+                      other terminal runs the commands queued before
+                      it, deletes the queue file and closes.
+
  #Compare folders#      Compare contents of folders.
                       See ~Compare folders~@CompFolders@ for the
                       detailed description.

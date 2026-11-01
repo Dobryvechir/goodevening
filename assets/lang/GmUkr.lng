@@ -4522,3 +4522,15 @@
 "&4 термінали"
 //[MMultiTermError]
 "Не вдалося відкрити нове вікно терміналу"
+//[MMenuExecOtherTerminal]
+"В&иконати в іншому терміналі"
+//[MExecTermLeft]
+"Термінал &ліворуч"
+//[MExecTermRight]
+"Термінал &праворуч"
+//[MExecTermBottom]
+"Термінал &знизу"
+//[MExecTermTop]
+"Термінал з&верху"
+//[MExecTermDisconnect]
+"&Від'єднати інший термінал"

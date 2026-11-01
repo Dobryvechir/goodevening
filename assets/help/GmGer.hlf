@@ -1402,6 +1402,30 @@ $ #Menü Befehle#
                         Kann kein Terminalfenster geöffnet werden,
                         erscheint eine Fehlermeldung.
 
+ #In zweitem Terminal ausführen#
+                        Führt Befehle in einem zweiten Terminal aus.
+                        Wählen Sie #Terminal links#, #Terminal rechts#,
+                        #Terminal unten# oder #Terminal oben#: Dieses
+                        Fenster wird in die gegenüberliegende Hälfte
+                        verschoben (wie bei #Terminalposition#), im
+                        Einstellungsordner wird eine neue Warteschlan-
+                        gendatei mit eindeutigem Namen angelegt, und
+                        dasselbe Programm wird in einem neuen
+                        Terminalfenster in der gewählten Hälfte mit
+                        #--pos#, #--lpath# (Ordner des aktiven Panels)
+                        und #--server=#<Datei> gestartet. Danach
+                        arbeitet dieser Manager wie mit
+                        #--client=#<Datei> gestartet: Befehle der
+                        Befehlszeile und aus den Panels gestartete
+                        Dateien laufen im anderen Terminal. Sendet der
+                        Manager bereits Befehle an ein anderes
+                        Terminal, enthält das Menü nur #Anderes#
+                        #Terminal trennen#: Der Manager führt Befehle
+                        dann wieder selbst aus und stellt
+                        #exit_gm_server# in die Warteschlange: Das
+                        andere Terminal führt die vorher eingereihten
+                        Befehle aus, löscht die Datei und schließt sich.
+
  #Verzeichnisse#        Vergleicht Inhalte von Verzeuchnissen.
  #vergleichen#          Detaillierte Informationen dazu finden Sie
                       unter "Verzeichnisse vergleichen~@CompFolders@.

@@ -1388,6 +1388,27 @@ $ #Menyer: Kommandoer-menyen#
                             og høyre mappene. Hvis et terminalvindu ikke
                             kan åpnes, vises en feilmelding.
 
+ #Kjør i annen terminal#    Kjør kommandoer i en annen terminal. Velg
+                            #Terminal til venstre#, #Terminal til høyre#,
+                            #Terminal nederst# eller #Terminal øverst#:
+                            dette vinduet flyttes til den motsatte
+                            halvdelen (som med #Terminalposisjon#), en ny
+                            køfil med et unikt navn opprettes i
+                            innstillingsmappen, og det samme programmet
+                            startes i et nytt terminalvindu i den valgte
+                            halvdelen med #--pos#, #--lpath# (mappen til
+                            det aktive panelet) og #--server=#<kø>. Fra da
+                            av virker programmet som om det ble startet
+                            med #--client=#<kø>: kommandoer fra
+                            kommandolinjen og filer startet fra panelene
+                            kjøres i den andre terminalen. Når programmet
+                            allerede sender kommandoer til en annen
+                            terminal, har menyen bare #Koble fra annen#
+                            #terminal#: programmet kjører da kommandoer
+                            selv igjen og legger #exit_gm_server# i køen:
+                            den andre terminalen kjører kommandoene som ble
+                            lagt i køen før, sletter køfilen og lukkes.
+
  #Sammenlign mapper#          Sammenlign innholdet i mapper.
                             Se ~Sammenlign mapper~@CompFolders@ for en
                             detaljert beskrivelse.

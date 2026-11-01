@@ -4522,3 +4522,15 @@
 "&4 terminaler"
 //[MMultiTermError]
 "Kan ikke åpne et nytt terminalvindu"
+//[MMenuExecOtherTerminal]
+"Kjør i a&nnen terminal"
+//[MExecTermLeft]
+"Terminal til &venstre"
+//[MExecTermRight]
+"Terminal til &høyre"
+//[MExecTermBottom]
+"Terminal &nederst"
+//[MExecTermTop]
+"Terminal &øverst"
+//[MExecTermDisconnect]
+"&Koble fra annen terminal"

@@ -4522,3 +4522,15 @@
 "&4 terminale"
 //[MMultiTermError]
 "Nie można otworzyć nowego okna terminala"
+//[MMenuExecOtherTerminal]
+"Wy&konaj w innym terminalu"
+//[MExecTermLeft]
+"Terminal po &lewej"
+//[MExecTermRight]
+"Terminal po &prawej"
+//[MExecTermBottom]
+"Terminal na &dole"
+//[MExecTermTop]
+"Terminal na &górze"
+//[MExecTermDisconnect]
+"&Odłącz inny terminal"

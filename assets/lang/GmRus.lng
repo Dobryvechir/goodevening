@@ -4522,3 +4522,15 @@
 "&4 терминала"
 //[MMultiTermError]
 "Не удалось открыть новое окно терминала"
+//[MMenuExecOtherTerminal]
+"В&ыполнить в другом терминале"
+//[MExecTermLeft]
+"Терминал &слева"
+//[MExecTermRight]
+"Терминал с&права"
+//[MExecTermBottom]
+"Терминал с&низу"
+//[MExecTermTop]
+"Терминал с&верху"
+//[MExecTermDisconnect]
+"&Отключить другой терминал"

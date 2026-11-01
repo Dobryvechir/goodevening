@@ -77,6 +77,7 @@ pub fn bar(app: &App) -> MenuBar {
         item(app, MsgId::MMenuTogglePanels, Command::UserScreen),
         MenuItem::new(msg(MsgId::MMenuTerminalPosition)),
         MenuItem::new(msg(MsgId::MMenuMultipleTerminals)),
+        MenuItem::new(msg(MsgId::MMenuExecOtherTerminal)),
         item(app, MsgId::MMenuCompareFolders, Command::CompareFolders),
         MenuItem::separator(),
         MenuItem::new(msg(MsgId::MMenuUserMenu)),
@@ -129,13 +130,95 @@ pub fn terminal_position(app: &mut App) {
     let items = ITEMS.iter().map(|(name, _)| MenuItem::new(msg(*name))).collect();
     let mut m = VMenu::new(plain(MsgId::MMenuTerminalPosition), items);
     let MenuResult::Selected(i) = m.run(&mut app.ui) else { return };
-    if let Some(pos) = ITEMS.get(i).and_then(|(_, code)| gm_platform::window::WindowPos::parse(code)) {
+    if let Some((_, code)) = ITEMS.get(i) {
+        move_console(app, code);
+    }
+}
+
+/// Moves and resizes this console window like `gm --pos <code>`.
+fn move_console(app: &mut App, code: &str) {
+    if let Some(pos) = gm_platform::window::WindowPos::parse(code) {
         gm_platform::window::place_console(pos);
         // Windows Terminal does not report this resize as an event; adopt
         // the new size now and redraw fully.
         app.ui.term.sync_size();
         app.ui.term.invalidate();
     }
+}
+
+/// The `--profile` and `--lang` arguments that give a new gm the same
+/// settings and interface language as this one.
+fn same_profile_args() -> Vec<std::ffi::OsString> {
+    vec![
+        "--profile".into(),
+        gm_config::profile_dir().as_os_str().to_owned(),
+        "--lang".into(),
+        gm_i18n::current_language().into(),
+    ]
+}
+
+/// F9 → Commands → Execute in other terminal.
+///
+/// In server execution mode (`gm --client=<file>`, or started from here
+/// before) the menu only offers to disconnect: gm then runs commands itself
+/// again. Otherwise it offers a terminal at the left, right, bottom or top:
+/// gm creates a new queue file with a unique name in the settings folder,
+/// moves this window to the opposite half, starts
+/// `gm --pos <side> --lpath <folder> --server=<queue>` in a new terminal
+/// window and switches itself to server execution mode with that queue,
+/// as `--client=<queue>` would.
+pub fn execute_in_other_terminal(app: &mut App) {
+    let title = plain(MsgId::MMenuExecOtherTerminal);
+    if app.server_queue.is_some() {
+        let mut m = VMenu::new(title.clone(), vec![MenuItem::new(msg(MsgId::MExecTermDisconnect))]);
+        if let MenuResult::Selected(0) = m.run(&mut app.ui)
+            && let Some(path) = app.server_queue.take()
+            // The server runs what is queued before it, then deletes the
+            // queue file and exits.
+            && let Err(e) = crate::queue::push(&path, crate::queue::EXIT_COMMAND)
+        {
+            message(&mut app.ui, &title, &format!("{}\n{e}", path.display()), &[msg(MsgId::MOk)]);
+        }
+        return;
+    }
+    // (item, where the new terminal goes, where this gm moves)
+    const ITEMS: [(MsgId, &str, &str); 4] = [
+        (MsgId::MExecTermLeft, "l", "r"),
+        (MsgId::MExecTermRight, "r", "l"),
+        (MsgId::MExecTermBottom, "b", "t"),
+        (MsgId::MExecTermTop, "t", "b"),
+    ];
+    let items = ITEMS.iter().map(|(name, _, _)| MenuItem::new(msg(*name))).collect();
+    let mut m = VMenu::new(title.clone(), items);
+    let MenuResult::Selected(i) = m.run(&mut app.ui) else { return };
+    let Some((_, other, this)) = ITEMS.get(i) else { return };
+    let dir = app.work_dir();
+    let name = match crate::queue::create_unique() {
+        Ok(n) => n,
+        Err(e) => {
+            message(&mut app.ui, &title, &format!("{}\n{e}", gm_config::profile_dir().display()), &[msg(MsgId::MOk)]);
+            return;
+        }
+    };
+    let path = crate::queue::queue_path(&name);
+    // Move this window first: where gm finds its window as the active one,
+    // the new gm must not see this one while placing itself.
+    move_console(app, this);
+    let mut args: Vec<std::ffi::OsString> = vec!["--pos".into(), (*other).into()];
+    // A panel that shows no local folder leaves the server in its own folder.
+    if dir.is_absolute() && dir.is_dir() {
+        args.extend(["--lpath".into(), dir.into_os_string()]);
+    }
+    args.extend(same_profile_args());
+    args.push(format!("--server={name}").into());
+    match gm_platform::instance::open_in_new_terminal(&args) {
+        Ok(()) => app.server_queue = Some(path),
+        Err(e) => {
+            let _ = std::fs::remove_file(&path);
+            message(&mut app.ui, &title, &format!("{}\n{e}", msg(MsgId::MMultiTermError)), &[msg(MsgId::MOk)]);
+        }
+    }
+    app.ui.term.invalidate();
 }
 
 /// F9 → Commands → Multiple terminals: moves this console window to the
@@ -152,13 +235,7 @@ pub fn multiple_terminals(app: &mut App) {
     let mut m = VMenu::new(plain(MsgId::MMenuMultipleTerminals), items);
     let MenuResult::Selected(i) = m.run(&mut app.ui) else { return };
     let Some((_, parts)) = ITEMS.get(i) else { return };
-    if let Some(pos) = gm_platform::window::WindowPos::parse(parts[0]) {
-        gm_platform::window::place_console(pos);
-        // Windows Terminal does not report this resize as an event; adopt
-        // the new size now and redraw fully.
-        app.ui.term.sync_size();
-        app.ui.term.invalidate();
-    }
+    move_console(app, parts[0]);
     let mut common: Vec<std::ffi::OsString> = Vec::new();
     // Panels that show no local folder (e.g. a network panel) are left to
     // the new gm's saved settings.
@@ -168,8 +245,7 @@ pub fn multiple_terminals(app: &mut App) {
         }
     }
     // The same settings and language as this gm.
-    common.extend(["--profile".into(), gm_config::profile_dir().as_os_str().to_owned()]);
-    common.extend(["--lang".into(), gm_i18n::current_language().into()]);
+    common.extend(same_profile_args());
     for (n, part) in parts[1..].iter().enumerate() {
         if n > 0 {
             // Let the previous terminal open its window first: where gm finds
@@ -263,14 +339,15 @@ pub fn main_menu(app: &mut App) {
             7 => app.user_screen(),
             8 => terminal_position(app),
             9 => multiple_terminals(app),
-            10 => crate::commands::run(app, Command::CompareFolders),
-            12 => crate::usermenu::edit_menu_file(app),
-            13 => crate::options::associations(app),
-            14 => shortcuts_menu(app),
-            15 => crate::commands::run(app, Command::Filter),
-            17 => module_commands(app),
-            18 => screens(app),
-            19 => crate::exec::execute_line(app, "proc:"),
+            10 => execute_in_other_terminal(app),
+            11 => crate::commands::run(app, Command::CompareFolders),
+            13 => crate::usermenu::edit_menu_file(app),
+            14 => crate::options::associations(app),
+            15 => shortcuts_menu(app),
+            16 => crate::commands::run(app, Command::Filter),
+            18 => module_commands(app),
+            19 => screens(app),
+            20 => crate::exec::execute_line(app, "proc:"),
             _ => {}
         },
         3 => match it {

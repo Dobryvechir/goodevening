@@ -1366,6 +1366,29 @@ $ #Menu: menu polecenia#
                         i prawy folder. Jeśli nie można otworzyć okna
                         terminala, pojawia się komunikat o błędzie.
 
+ #Wykonaj w innym terminalu#
+                        Uruchamia polecenia w drugim terminalu.
+                        Wybierz #Terminal po lewej#, #Terminal po#
+                        #prawej#, #Terminal na dole# lub #Terminal na#
+                        #górze#: to okno przenosi się do przeciwnej
+                        połowy (jak w #Pozycji terminala#), w folderze
+                        ustawień tworzony jest nowy plik kolejki
+                        o unikalnej nazwie, a ten sam program jest
+                        uruchamiany w nowym oknie terminala w wybranej
+                        połowie z opcjami #--pos#, #--lpath# (folder
+                        aktywnego panelu) i #--server=#<kolejka>.
+                        Od tej chwili menedżer działa tak, jakby
+                        uruchomiono go z #--client=#<kolejka>:
+                        polecenia z wiersza poleceń i pliki
+                        uruchamiane z paneli wykonują się w drugim
+                        terminalu. Gdy menedżer już wysyła polecenia
+                        do innego terminala, menu zawiera tylko
+                        #Odłącz inny terminal#: menedżer znów sam
+                        wykonuje polecenia i dodaje do kolejki
+                        #exit_gm_server#: drugi terminal wykonuje
+                        wcześniej dodane polecenia, usuwa plik kolejki
+                        i zamyka się.
+
  #Porównaj foldery#     Porównuje zawartość folderów.
                       Więcej informacji: ~Porównaj foldery~@CompFolders@.
 

@@ -4522,3 +4522,15 @@
 "&4 terminály"
 //[MMultiTermError]
 "Nie je možné otvoriť nové okno terminálu"
+//[MMenuExecOtherTerminal]
+"&Spustiť v inom termináli"
+//[MExecTermLeft]
+"Terminál v&ľavo"
+//[MExecTermRight]
+"Terminál v&pravo"
+//[MExecTermBottom]
+"Terminál &dole"
+//[MExecTermTop]
+"Terminál &hore"
+//[MExecTermDisconnect]
+"&Odpojiť iný terminál"

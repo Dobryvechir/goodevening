@@ -45,7 +45,7 @@ Step-by-step guides for installing the toolchain, building and distributing:
 gm [options] [left_folder [right_folder]]
 gm [options] --client=<file> [left_folder [right_folder]]
 gm [options] --client-push=<file> <command line>
-gm [options] --server=<file>
+gm [options] --server=<file> [folder]
 
   -v <file>          open the file in the viewer
   -e[line] <file>    open the file in the editor
@@ -100,11 +100,15 @@ uses the console as a plain screen. It creates the queue file if needed and
 waits until the file is not empty (it checks every 0.2 s). Then it locks the
 file, reads the first line, removes it from the file and unlocks it, and runs
 the line through the user's shell (`%ComSpec%` / `cmd.exe` on Windows,
-`$SHELL` / `/bin/sh` elsewhere) in the folder the server was started in. The
+`$SHELL` / `/bin/sh` elsewhere) in the folder the server was started in, or
+in the folder given with `--lpath <dir>` (or as `folder`) when there is one. The
 console shows the command itself, as `<folder>> <command>`, followed by all
 its output; a non-zero exit code is shown as `[exit code N]`. Commands run one
 after another, in the order they were queued; empty lines are skipped. The
-server runs until it is stopped with Ctrl+C or by closing the console.
+server runs until it takes the command `exit_gm_server` from the queue (then
+it deletes the queue file and exits; commands queued after it are lost with
+the file), or until it is stopped with Ctrl+C or by closing the console.
+`gm --client-push=<file> exit_gm_server` stops a server from any console.
 
 ```
 gm --server=jobs.txt                           # in one console
@@ -112,6 +116,10 @@ gm --client-push=jobs.txt cargo build          # in any other console
 gm --client-push=jobs.txt "dir /b & echo done" # quoted: & goes to the server
 gm --client=jobs.txt                           # panels; Enter sends to the server
 ```
+
+**F9 → Commands → Execute in other terminal** sets up a server and a
+client in one step (see
+[Running commands in a second terminal](#running-commands-in-a-second-terminal)).
 
 ```
 C:\Projects\demo> cargo build
@@ -238,6 +246,58 @@ The new terminal window is opened with:
 If no terminal window can be opened, gm shows an error message. How well the
 new windows are placed depends on the same system support as `--pos`.
 
+#### Running commands in a second terminal
+
+**F9 → Commands → Execute in other terminal** (just below **Multiple
+terminals**) gives gm a second terminal for the programs it starts, using
+the [command queue](#command-queue---client---client-push---server). It
+opens a menu in the middle of the screen. What the menu shows depends on
+whether gm is already in server execution mode (started with
+`--client=<file>`, or connected earlier from this menu).
+
+**Not connected.** The menu has four items:
+
+| Item | This gm moves to | New gm (`--server`) at |
+|---|---|---|
+| Terminal at left | `--pos r` | `--pos l` |
+| Terminal at right | `--pos l` | `--pos r` |
+| Terminal at bottom | `--pos t` | `--pos b` |
+| Terminal at top | `--pos b` | `--pos t` |
+
+Choosing one of them:
+
+1. Creates a new, empty queue file in the settings folder, with a name that
+   no other file there has: `gm-queue-<process id>-<n>.txt`. The file is
+   created with an exclusive "create new" call, so two gm instances never
+   get the same name.
+2. Moves this gm to the opposite half, exactly as **Terminal position**
+   does.
+3. Starts the same executable in a new terminal window (opened the same way
+   as for **Multiple terminals**) with
+
+       gm --pos <side> --lpath <folder> --profile <profile> --lang <language> --server=<queue>
+
+   where `<folder>` is the folder of the active panel. A `--server` gm uses
+   `--lpath` (or `left_folder`) as its current folder, so its prompt and the
+   commands it runs start there.
+4. Switches this gm to server execution mode with that queue, as if it had
+   been started with `--client=<queue>`: commands typed on the command line,
+   files started from the panels, file associations and the user menu are
+   now run in the other terminal (each with a `cd` to the folder of the
+   active panel in front of it).
+
+If the new terminal window cannot be opened, gm shows an error message,
+deletes the queue file it created and keeps running commands itself.
+
+**Connected.** The menu has a single item, **Disconnect other terminal**.
+Choosing it adds the command `exit_gm_server` to the queue file and leaves
+server execution mode: gm runs commands itself again. The server first runs
+the commands queued before `exit_gm_server`, then deletes the queue file and
+exits (see `--server` above). This also applies when gm was started with
+`--client=<file>`: the server of that queue stops. Choosing **Execute in
+other terminal** again then offers the four positions and creates a new
+queue.
+
 Settings live in `%APPDATA%\gm`, `~/.config/gm` or
 `~/Library/Application Support/gm`:
 
@@ -248,6 +308,7 @@ Settings live in `%APPDATA%\gm`, `~/.config/gm` or
 | `keymap.toml` | key overrides, e.g. `[panels]` `"Alt+Q" = "Quit"` |
 | `GmMenu.ini` | the global user menu (F2); a `GmMenu.ini` in a folder is its local menu |
 | `<file>` of `--client`/`--client-push`/`--server` | the command queue, one command per line |
+| `gm-queue-<pid>-<n>.txt` | queues created by F9 → Commands → Execute in other terminal (deleted by the server on Disconnect) |
 
 ## What works
 

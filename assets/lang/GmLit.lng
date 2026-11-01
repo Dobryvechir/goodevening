@@ -4522,3 +4522,15 @@
 "&4 terminalai"
 //[MMultiTermError]
 "Nepavyko atidaryti naujo terminalo lango"
+//[MMenuExecOtherTerminal]
+"&Vykdyti kitame terminale"
+//[MExecTermLeft]
+"Terminalas &kairėje"
+//[MExecTermRight]
+"Terminalas &dešinėje"
+//[MExecTermBottom]
+"Terminalas &apačioje"
+//[MExecTermTop]
+"Terminalas &viršuje"
+//[MExecTermDisconnect]
+"Atjungti kitą &terminalą"
