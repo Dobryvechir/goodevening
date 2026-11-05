@@ -472,6 +472,7 @@ dependencies = [
 name = "gm-app"
 version = "0.1.0"
 dependencies = [
+ "crossterm",
  "gm-config",
  "gm-core",
  "gm-help",

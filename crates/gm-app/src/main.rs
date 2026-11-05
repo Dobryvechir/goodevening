@@ -1,6 +1,7 @@
 //! `gm` — Goodevening Manager.
 #![forbid(unsafe_code)]
 
+mod codec;
 
 use gm_config::{Settings, StateDb};
 use gm_core::{App, DbHistory, Keymap, Module, queue};
@@ -64,6 +65,7 @@ Usage: gm [options] [left_folder [right_folder]]
        gm [options] --client=<file> [left_folder [right_folder]]
        gm [options] --client-push=<file> <command line>
        gm [options] --server=<file> [folder]
+       gm --e|--d|--pe|--pd <key_file> <input_file> <output_file>
 
 Options:
   -v <file>          open the file in the viewer
@@ -89,6 +91,13 @@ Options:
                      (in the --lpath or left_folder folder when given);
                      the queued command exit_gm_server deletes the queue
                      file and stops the server
+  --e, --d <key_file> <input_file> <output_file>
+                     do not start gm: encode (--e) or decode (--d) the input
+                     file into the output file with the operations of the key
+                     file (* permute, + add, ^ xor, followed by hex codes)
+  --pe, --pd <key_file> <input_file> <output_file>
+                     the same, but first ask for a password that unmasks the
+                     key file (key[i] ^= password[i % len])
   --keytest          show how key presses are decoded (for bug reports)
   -h, --help         this help
   --version          print the version
@@ -210,6 +219,12 @@ fn keytest(term: &mut Term) -> std::io::Result<()> {
 }
 
 fn main() -> ExitCode {
+    // `gm --e|--d|--pe|--pd key_file input_file output_file`: a command line
+    // utility only (no profile, terminal or panels).
+    let raw: Vec<String> = std::env::args().skip(1).collect();
+    if raw.first().is_some_and(|a| codec::flag(a).is_some()) {
+        return codec::main(&raw);
+    }
     let args = match parse_args() {
         Ok(a) => a,
         Err(e) => {

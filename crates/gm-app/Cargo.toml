@@ -41,6 +41,7 @@ gm-config = { workspace = true }
 gm-i18n = { workspace = true }
 gm-help = { workspace = true }
 gm-platform = { workspace = true }
+crossterm = { workspace = true }
 mod-archive = { workspace = true, optional = true }
 mod-temp-panel = { workspace = true, optional = true }
 mod-process-panel = { workspace = true, optional = true }
