@@ -679,8 +679,6 @@ målmappen før flyttingen, avslutter du navnet med en omvendt skråstrek.
 
  Avslutt gm                                                     #F10#
 
- Vis kommandoer for #moduler#                                     #F11#
-
  Bytt gjeldende stasjon for venstre panel                    #Alt+F1#
 
  Bytt gjeldende stasjon for høyre panel                      #Alt+F2#
@@ -1431,8 +1429,6 @@ $ #Menyer: Kommandoer-menyen#
 
  #Kodede arkiver#      Vis listen over ~kodede arkiver~@EncodedArchives@;
                       #Ins# legger til, #Enter# endrer, #Del# sletter.
-
- #Modulkommandoer#            Vis listen over #modulkommandoer#.
 
  #Skjermliste#                Vis ~listen over åpne skjermer~@ScrSwitch@.
 
@@ -2770,7 +2766,6 @@ se også ~Interface.AltF9~@Interface.AltF9@
  #Alt+Shift+F9#         Åpne dialogen ~Visningsinnstillinger~@ViewerSettings@
  #Numpad5,F3,F10,Esc#   Avslutt visningen
  #Ctrl+F10#             Gå til gjeldende fil i det aktive filpanelet
- #F11#                  Åpne menyen #Modulkommandoer#
  #Alt+F11#              Vis ~historikken for visning og redigering~@HistoryViews@
  #Gray +#               Vis neste fil i det aktive filpanelet
  #Gray -#               Vis forrige fil i det aktive filpanelet
@@ -3087,7 +3082,7 @@ kan endres i dialogen ~Redigeringsinnstillinger~@EditorSettings@.
  #F10, F4, Esc#              Avslutt
  #Shift+F10#                 Lagre og avslutt
  #Ctrl+F10#                  Gå til gjeldende fil
- #F11#                       Åpne menyen "#Modulkommandoer#"
+ #F11#                       Åpne menyen "#Tools#" (verktøy)
  #Alt+F11#                   Vis ~historikken for visning og redigering~@HistoryViews@
  #Alt+BS, Ctrl+Z#            Angre
  #Ctrl+Shift+Z#              Gjør om

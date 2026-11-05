@@ -677,8 +677,6 @@ Sie den Namen mit einem umgekehrten Schrägstrich ab.
 
  gm beenden                                                    #F10#
 
- #Plugin#-Befehle anzeigen                                        #F11#
-
  Laufwerk im linken Fenster wechseln                         #Alt+F1#
 
  Laufwerk im rechten Fenster wechseln                        #Alt+F2#
@@ -1452,8 +1450,6 @@ $ #Menü Befehle#
 
  #Kodierte Archive#    Zeigt die Liste der ~kodierten Archive~@EncodedArchives@;
                       #Einfg# fügt hinzu, #Enter# ändert, #Entf# löscht.
-
- #Plugin commands#      Show #plugin commands# list.
 
  #Bildschirmliste#      Zeigt Liste geöffneter ~Bildschirme~@ScrSwitch@.
 
@@ -2816,7 +2812,6 @@ see also ~Interface.AltF9~@Interface.AltF9@
  #Alt+Shift+F9#       Open ~Viewer settings~@ViewerSettings@ dialog
  #Numpad5,F3,F10,Esc# Beenden
  #Ctrl+F10#           Jump to the current file on the active file panel
- #F11#                #"Plugin-Befehle"#-Menü aufrufen
  #Alt+F11#            Display ~file view and edit history~@HistoryViews@
  #Grau +#             Gehe zur nächsten Datei
  #Grau -#             Gehe zur vorherigen Datei
@@ -3145,7 +3140,7 @@ behavior can be changed in the ~Editor settings~@EditorSettings@ dialog.
  #F10, F4, Esc#            Beenden
  #Umsch+F10#               Sichern und Beenden
  #Ctrl+F10#                Position to the current file
- #F11#                     Menü "#Plugin-Kommandos#" aufrufen
+ #F11#                     Menü "#Tools#" (Werkzeuge) aufrufen
  #Alt+F11#                 Display ~file view and edit history~@HistoryViews@
  #Alt+BS, Strg+Z#          Operation rückgängig machen
  #Ctrl+Shift+Z#            Redo

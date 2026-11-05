@@ -661,8 +661,6 @@ adresár pred presúvaním, pridajte k jeho menu spätné lomítko.
 
  Ukončiť gm                                                    #F10#
 
- Zobraz príkazy #prídavných modulov (plugins)# commands           #F11#
-
  Zmeň aktuálnu jednotku v ľavom paneli                       #Alt+F1#
 
  Zmeň aktuálnu jednotku v pravom panely                      #Alt+F2#
@@ -1403,8 +1401,6 @@ $ #Commands menu#
 
  #Kódované archívy#    Zobrazí zoznam ~kódovaných archívov~@EncodedArchives@;
                       #Ins# pridá, #Enter# zmení, #Del# zmaže.
-
- #Plugin commands#      Show #plugin commands# list.
 
  #Zoznam obrazoviek#    Zobrazí ~zoznam obrazoviek~@ScrSwitch@.
 
@@ -2735,7 +2731,6 @@ see also ~Interface.AltF9~@Interface.AltF9@
  #Alt+Shift+F9#       Open ~Viewer settings~@ViewerSettings@ dialog
  #NumKlav5,F3,F10,Esc# Koniec (opustenie prezerača)
  #Ctrl+F10#           Jump to the current file on the active file panel
- #F11#                Zobrazí menu #Príkazy prídavných modulov#
  #Alt+F11#            Display ~file view and edit history~@HistoryViews@
  #+#                  Choď na nasledujúci súbor
  #-#                  Choď na predošlý súbor
@@ -3064,7 +3059,7 @@ behavior can be changed in the ~Editor settings~@EditorSettings@ dialog.
  #F10, F4, Esc#            Koniec
  #Shift+F10#               Uložiť súbor a koniec
  #Ctrl+F10#                Position to the current file
- #F11#                     Zobrazí menu "#Príkazy prídavných modulov#"
+ #F11#                     Zobrazí menu "#Tools#" (nástroje)
  #Alt+F11#                 Display ~file view and edit history~@HistoryViews@
  #Alt+BS, Ctrl+Z#          Odvolanie poslednej operácie
  #Ctrl+Shift+Z#            Redo

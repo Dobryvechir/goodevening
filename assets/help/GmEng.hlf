@@ -664,8 +664,6 @@ folder before moving, terminate the name with a backslash.
 
  Quit gm                                                       #F10#
 
- Show #plugin# commands                                           #F11#
-
  Change the current drive for left panel                     #Alt+F1#
 
  Change the current drive for right panel                    #Alt+F2#
@@ -1410,8 +1408,6 @@ $ #Menus: commands menu#
  #Encoded archives#     Show the list of ~encoded archive~@EncodedArchives@
                       configurations and add (#Ins# or the last item),
                       change (#Enter#) or delete (#Del#) them.
-
- #Plugin commands#      Show #plugin commands# list.
 
  #Screens list#         Show open ~screens list~@ScrSwitch@.
 
@@ -2744,7 +2740,6 @@ see also ~Interface.AltF9~@Interface.AltF9@
  #Alt+Shift+F9#       Open ~Viewer settings~@ViewerSettings@ dialog
  #Numpad5,F3,F10,Esc# Quit viewer
  #Ctrl+F10#           Jump to the current file on the active file panel
- #F11#                Open #Plugin commands# menu
  #Alt+F11#            Display ~file view and edit history~@HistoryViews@
  #Gray +#             View the next file on the active file panel
  #Gray -#             View the previous file on the active file panel
@@ -3073,7 +3068,7 @@ behavior can be changed in the ~Editor settings~@EditorSettings@ dialog.
  #F10, F4, Esc#            Quit
  #Shift+F10#               Save and quit
  #Ctrl+F10#                Position to the current file
- #F11#                     Call "#Plugin commands#" menu
+ #F11#                     Open the #Tools# menu
  #Alt+F11#                 Display ~file view and edit history~@HistoryViews@
  #Alt+BS, Ctrl+Z#          Undo
  #Ctrl+Shift+Z#            Redo

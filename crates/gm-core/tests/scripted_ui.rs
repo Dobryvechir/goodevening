@@ -420,11 +420,11 @@ fn encoded_archives_menu_adds_configuration() {
     script.push(plain(KeyCode::Esc));
     f.run(plain(KeyCode::F(9)), script);
     let frames = f.app.ui.term.recorded.replace(Vec::new()).unwrap_or_default();
-    // The item is right above "Module commands".
-    let menu = frames.iter().find(|fr| fr.contains("Encoded archives") && fr.contains("Module commands")).expect("no Commands menu");
+    // The item is right above "Screens list".
+    let menu = frames.iter().find(|fr| fr.contains("Encoded archives") && fr.contains("Screens list")).expect("no Commands menu");
     let lines: Vec<&str> = menu.lines().collect();
     let enc = lines.iter().position(|l| l.contains("Encoded archives")).unwrap();
-    assert!(lines[enc + 1].contains("Module commands"), "{menu}");
+    assert!(lines[enc + 1].contains("Screens list"), "{menu}");
     // The list shows the new configuration.
     assert!(frames.iter().any(|fr| fr.contains("*.zipx") && fr.contains("*.zip ") && fr.contains("Password protected")), "list not shown");
     assert_eq!(

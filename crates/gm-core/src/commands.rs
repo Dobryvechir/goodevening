@@ -48,7 +48,6 @@ pub fn run(app: &mut App, c: Command) {
                 app.quit = true;
             }
         }
-        ModuleCommands => crate::menus::module_commands(app),
         Screens => crate::menus::screens(app),
         DriveLeft => crate::menus::drive_menu(app, true),
         DriveRight => crate::menus::drive_menu(app, false),

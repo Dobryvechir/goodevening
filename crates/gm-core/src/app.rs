@@ -102,7 +102,7 @@ fn panel_labels() -> KeyBarLabels {
         MsgId::MF11,
         MsgId::MF12,
     ]);
-    l.normal[10] = "Module".into();
+    l.normal[10] = String::new();
     l.shift = row([
         MsgId::MShiftF1,
         MsgId::MShiftF2,

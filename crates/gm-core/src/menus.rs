@@ -86,7 +86,6 @@ pub fn bar(app: &App) -> MenuBar {
         item(app, MsgId::MMenuFilter, Command::Filter),
         MenuItem::separator(),
         MenuItem::new(msg(MsgId::MMenuEncodedArchives)),
-        MenuItem::with_hint(msg(MsgId::MMenuModuleCommands), "F11"),
         item(app, MsgId::MMenuWindowsList, Command::Screens),
         MenuItem::new(msg(MsgId::MMenuProcessList)),
     ];
@@ -347,9 +346,8 @@ pub fn main_menu(app: &mut App) {
             15 => shortcuts_menu(app),
             16 => crate::commands::run(app, Command::Filter),
             18 => crate::encoded::configure(app),
-            19 => module_commands(app),
-            20 => screens(app),
-            21 => crate::exec::execute_line(app, "proc:"),
+            19 => screens(app),
+            20 => crate::exec::execute_line(app, "proc:"),
             _ => {}
         },
         3 => match it {
@@ -397,25 +395,6 @@ pub fn screens(app: &mut App) {
             }
         }
         _ => {}
-    }
-}
-
-/// F11: commands of the built-in modules.
-pub fn module_commands(app: &mut App) {
-    let mut entries = Vec::new();
-    for (mi, m) in app.modules.iter().enumerate() {
-        for c in m.commands() {
-            entries.push((mi, c.id, c.title));
-        }
-    }
-    if entries.is_empty() {
-        return;
-    }
-    let items = entries.iter().map(|(_, _, t)| MenuItem::new(t.clone())).collect();
-    let mut m = VMenu::new("Modules", items);
-    if let MenuResult::Selected(i) = m.run(&mut app.ui) {
-        let (mi, id, _) = entries[i].clone();
-        crate::commands::run_module(app, mi, id);
     }
 }
 

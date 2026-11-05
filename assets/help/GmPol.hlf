@@ -664,8 +664,6 @@ docelowy przed przeniesieniem, zakończ nazwę pliku znakiem backslash.
 
  Wyjdź z programu                                               #F10#
 
- Pokaż polecenia #wtyczek#                                        #F11#
-
  Zmień bieżący dysk dla lewego panelu                        #Alt+F1#
 
  Zmień bieżący dysk dla prawego panelu                       #Alt+F2#
@@ -1410,8 +1408,6 @@ $ #Menu: menu polecenia#
 
  #Zakodowane archiwa#  Pokazuje listę ~zakodowanych archiwów~@EncodedArchives@;
                       #Ins# dodaje, #Enter# zmienia, #Del# usuwa.
-
- #Wtyczki#              Pokazuje listę #wtyczek do programu#.
 
  #Lista ekranów#        Pokazuje listę ~otwartych okien~@ScrSwitch@.
 
@@ -2750,7 +2746,6 @@ zobacz także ~Interface.AltF9~@Interface.AltF9@
  #Alt+Shift+F9#       Otwiera okno ~Ustawień podglądu~@ViewerSettings@
  #Numpad5,F3,F10,Esc# Zamyka podgląd
  #Ctrl+F10#           Przechodzi do bieżącego pliku w aktywnym panelu plików
- #F11#                Otwiera menu #Wtyczek#
  #Alt+F11#            Wyświetla ~Historię podglądu i edycji plików~@HistoryViews@
  #Szary +#            Włącza podgląd następnego pliku w aktywnym panelu plików
  #Szary -#            Włącza podgląd poprzedniego pliku w aktywnym panelu plików
@@ -3083,7 +3078,7 @@ kodowa ANSI, ale można zmienić to ustawienie w oknie ~Ustawień edytora~@Edito
  #F10, F4, Esc#            Wyjście z programu
  #Shift+F10#               Zapisanie i wyjście
  #Ctrl+F10#                Przeskakuje w oknie plików do bieżącego (edytowanego) pliku
- #F11#                     Wywołuje menu "#Wtyczek#"
+ #F11#                     Wywołuje menu "#Tools#" (narzędzia)
  #Alt+F11#                 Pokazuje ~Historię podglądu i edycji plików~@HistoryViews@
  #Alt+BS, Ctrl+Z#          Cofnięcie
  #Ctrl+Shift+Z#            Ponowienie

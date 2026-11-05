@@ -683,8 +683,6 @@ szeretnénk létrehozni a célmappát, a név végére tegyünk lezáró \\-jele
 
  Kilépés a gm-ból                                              #F10#
 
- #Plugin parancsok# megjelenítése                                 #F11#
-
  Bal panel meghajtóváltás                                    #Alt+F1#
 
  Jobb panel meghajtóváltás                                   #Alt+F2#
@@ -1446,8 +1444,6 @@ részletezi a lehetőségeit.
 
  #Kódolt archívumok#   A ~kódolt archívumok~@EncodedArchives@ listája;
                       #Ins# hozzáad, #Enter# módosít, #Del# töröl.
-
- #Plugin parancsok#     A #plugin parancsok# listája.
 
  #Képernyők#            A megnyitott ~képernyők listája~@ScrSwitch@.
 
@@ -2825,7 +2821,6 @@ see also ~Interface.AltF9~@Interface.AltF9@
  #Alt+Shift+F9#       Meghívja a ~nézőke beállítások~@ViewerSettings@ párbeszédablakot
  #Numpad5,F3,F10,Esc# Kilépés
  #Ctrl+F10#           Megállapítja a megnézett fájl helyét (a konzolablak fejlécének szövegét - "X fájl megnézése" - a "(meghajtó+elérési út)" információra cseréli, tehát megmutatja a fájl helyét a fastruktúrán - a ford.)
- #F11#                Meghívja a #plugin parancsok# menüt
  #Alt+F11#            Megjeleníti a ~fájl előzményeket~@HistoryViews@
  #+#                  A mappa következő fájlját nyitja meg
  #-#                  A mappa előző fájlját nyitja meg
@@ -3155,7 +3150,7 @@ kódlapját kapja, de ez az opció a ~szerkesztő beállítások~@EditorSettings
  #F10, Esc#                Kilépés
  #Shift+F10#               Mentés és kilépés
  #Ctrl+F10#                A szerkesztett fájl helyzete a fán
- #F11#                     A #plugin parancsok# menü (a szerkesztőhöz tervezett pluginekkel)
+ #F11#                     Meghívja a #Tools# (eszközök) menüt
  #Alt+F11#                 ~Szerkesztő előzmények~@HistoryViews@ megjelenítése
  #Alt+BackSpace, Ctrl+Z#   Utolsó művelet visszavonása
  #Ctrl+L#                  A szerkesztett szöveg módosítását tiltja

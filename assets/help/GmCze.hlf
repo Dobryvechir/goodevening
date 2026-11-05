@@ -671,8 +671,6 @@ přesunutím vytvořit cílový adresář, ukončete název zpětným lomítkem.
 
  Konec Gm                                                       #F10#
 
- Ukázat příkazy #pluginů#                                         #F11#
-
  Změni aktuální jednotku pro levý panel                      #Alt+F1#
 
  Změní aktuální jednotku pro pravý panel                     #Alt+F2#
@@ -1432,8 +1430,6 @@ $ #Menu Příkazy#
 
  #Kódované archivy#    Zobrazí seznam ~kódovaných archivů~@EncodedArchives@;
                       #Ins# přidá, #Enter# změní, #Del# smaže.
-
- #Příkazy pluginů#      Zobrazí seznam #příkazů pluginů#.
 
  #Seznam obrazovek#     Zobrazí seznam otevřených ~obrazovek~@ScrSwitch@
 
@@ -2773,7 +2769,6 @@ see also ~Interface.AltF9~@Interface.AltF9@
  #Alt+Shift+F9#       Zobrazí dialog ~Nastavení Prohlížeče~@ViewerSettings@
  #Numpad5,F3,F10,Esc# Konec
  #Ctrl+F10#           Zaznamenat pozici do aktuálního souboru.
- #F11#                Zobrazí menu "#Příkazy pluginů#"
  #Alt+F11#            Display ~file view and edit history~@HistoryViews@
  #Num +#              Jdi do dalšího souboru
  #Num -#              Jdi do předchozího souboru
@@ -3102,7 +3097,7 @@ behavior can be changed in the ~Editor settings~@EditorSettings@ dialog.
  #F10, F4, Esc#            Konec
  #Shift+F10#               Ulož a konec
  #Ctrl+F10#                Zaznamenat pozici do aktuálního souboru
- #F11#                     Zobrazí menu "#Příkazy pluginů#"
+ #F11#                     Zobrazí menu "#Tools#" (nástroje)
  #Alt+F11#                 Display ~file view and edit history~@HistoryViews@
  #Alt+BackSpace, Ctrl+Z#   Vrátit změnu
  #Ctrl+Shift+Z#            Redo
