@@ -417,6 +417,7 @@ Each module is a crate behind a Cargo feature of `gm-app` (all on by default):
 | `process_panel` | proclist | process list (`proc:`), F8 terminates, F3 details |
 | `network_panel` | network | network drives/mounts (`net:`, drive menu) |
 | `ssh_panel` | NetBox | SSH + SFTP: saved connections in the drive menu (`ssh:`), see below |
+| `db_panel` | — | Databases: MariaDB and PostgreSQL tables and views as a panel, see below |
 | `compare` | compare | compare folders (selects differing files) |
 | `cmd_prefixes` | farcmds | `view:` `edit:` `goto:` `clip:` `run:` `whereis:` `link:` |
 | `editor_tools` | editcase, brackets, autowrap, align, drawline | change case, matching bracket, wrap, align, frame |
@@ -451,6 +452,35 @@ panel's folder, in a pseudo-terminal (like `ssh -t host 'cd folder && command'`)
 shown in a red box. `ssh:[user@]host[/folder]` on the command line connects
 directly.
 
+#### Databases
+
+Alt+F1/Alt+F2 → **Databases** lists the saved configurations (stored in
+`db.toml` in the gm profile): Enter opens, Ins adds, F4 edits, Del deletes. A
+configuration has a *host* (`host[:port]`, default ports 3306 and 5432), a *Db
+name*, a *user*, an optional *password* (stored base64-encoded, which is not
+encryption) and a *driver*: **MariaDB (>= 10.0)** or **PostgreSQL**. If the
+server refuses the connection because the password is missing or wrong, a
+password dialog opens. Other connection errors are shown in a message box.
+Connections are not encrypted (no TLS).
+
+When connected, the panel lists the user tables and views (PostgreSQL: of all
+non-system schemas, `schema.name` outside `public`), sorted like files, with
+*Type* and *Rows* columns. The output files below go to a private temporary
+folder; editing and saving them never changes the database.
+
+| Action | What happens |
+|---|---|
+| F3, Enter | columns, primary key, indexes, foreign keys (both directions) of a table, or the script of a view, in the viewer |
+| F4 | `SELECT * … LIMIT 100` in the editor |
+| Click | `SELECT count(*)`; the result goes to the *Rows* column |
+| Ctrl+F, Ctrl+Enter | inserts the table name (quoted if needed) into the command line |
+| Command line | runs the SQL (several statements separated by `;`); all results open in the editor |
+| F5, F6 out | writes the first 100 rows to `<table>.txt` in the destination; F6 does not drop anything |
+| F5, F6 in | text files under 1 MB run as SQL scripts, statement by statement; results and the first error (which stops the run) open in the editor. The script file is kept |
+| F8 | always asks for confirmation, then `DROP TABLE` / `DROP VIEW` |
+
+The connection is checked before every operation and opened again if the
+server has closed it. Leaving the panel closes it.
 ## Not included (by design)
 
 Lua macros, the plugin API and DLL loading, Far 1.x/2.x compatibility,

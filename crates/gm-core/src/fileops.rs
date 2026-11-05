@@ -258,14 +258,19 @@ pub fn copy_move(app: &mut App, mv: bool, in_place: bool) {
             // Local → provider (add to archive / temp panel / upload).
             let paths: Vec<PathBuf> = names.iter().map(|n| src_dir.join(n)).collect();
             let bg = app.ui.term.last_frame().clone();
-            let r = {
+            let (r, result, keep) = {
                 let ui = &mut app.ui;
                 let files = if app.active_left { &mut app.right.files } else { &mut app.left.files };
-                files.provider_mut().put_files(&paths, &mut transfer_progress(ui, &bg, &title))
+                let r = files.provider_mut().put_files(&paths, &mut transfer_progress(ui, &bg, &title));
+                (r, files.provider_mut().take_result_file(), !files.provider().delete_after_move())
             };
+            // Scripts run in a database: their output.
+            if let Some(f) = result {
+                crate::remote::open(app, f, true);
+            }
             match r {
                 Ok(()) => {
-                    if mv {
+                    if mv && !keep {
                         let res = {
                             let mut pui = ProgressUi::new(&mut app.ui, msg(MsgId::MDeletingTitle), msg(MsgId::MDeleting), confirm_interrupt);
                             gm_fs::delete(&paths, DeleteMode::Permanent, &mut pui)
@@ -319,9 +324,14 @@ pub fn copy_move(app: &mut App, mv: bool, in_place: bool) {
             ));
             let r = transfer_between_providers(app, &names, &tmp, &title);
             let _ = std::fs::remove_dir_all(&tmp);
+            let result = app.passive().files.provider_mut().take_result_file();
+            if let Some(f) = result {
+                crate::remote::open(app, f, true);
+            }
+            let keep = !app.active().files.provider().delete_after_move() || !app.passive().files.provider().delete_after_move();
             match r {
                 Ok(()) => {
-                    if mv && let Err(e) = app.active().files.provider_mut().delete(&names) {
+                    if mv && !keep && let Err(e) = app.active().files.provider_mut().delete(&names) {
                         gm_ui::message::error(&mut app.ui, &title, &e.to_string());
                     }
                     app.active().files.clear_selection();
@@ -342,9 +352,10 @@ pub fn copy_move(app: &mut App, mv: bool, in_place: bool) {
                 let files = if app.active_left { &mut app.left.files } else { &mut app.right.files };
                 files.provider_mut().get_files(&names, &dp, &mut transfer_progress(ui, &bg, &title))
             };
+            let keep = !app.active().files.provider().delete_after_move();
             match r {
                 Ok(()) => {
-                    if mv && let Err(e) = app.active().files.provider_mut().delete(&names) {
+                    if mv && !keep && let Err(e) = app.active().files.provider_mut().delete(&names) {
                         gm_ui::message::error(&mut app.ui, &title, &e.to_string());
                     }
                     app.active().files.clear_selection();
@@ -413,7 +424,13 @@ pub fn delete(app: &mut App, mut mode: DeleteMode) {
         DeleteMode::Permanent => (msg(MsgId::MDeleteTitle), fmt(MsgId::MAskDelete, &[&what]), msg(MsgId::MDeleteFileDelete)),
         DeleteMode::Wipe => (msg(MsgId::MDeleteWipeTitle), fmt(MsgId::MAskWipe, &[&what]), msg(MsgId::MDeleteWipe)),
     };
-    if app.settings.confirm.delete && message_warn(&mut app.ui, title, &q, &[btn, msg(MsgId::MCancel)]) != Some(0) {
+    // Some providers always ask, in their own words (dropping database tables).
+    let forced = if app.active().files.is_local() { None } else { app.active().files.provider().delete_question(&names) };
+    if let Some(q) = forced {
+        if message_warn(&mut app.ui, title, &q, &[btn, msg(MsgId::MCancel)]) != Some(0) {
+            return;
+        }
+    } else if app.settings.confirm.delete && message_warn(&mut app.ui, title, &q, &[btn, msg(MsgId::MCancel)]) != Some(0) {
         return;
     }
     let Some(dir) = app.active().files.local_dir() else {

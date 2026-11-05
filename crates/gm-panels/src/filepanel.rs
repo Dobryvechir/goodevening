@@ -176,7 +176,7 @@ impl FilePanel {
             }
             Err(e) => {
                 self.error = Some(e.to_string());
-                self.fresh_error = self.provider().can_execute();
+                self.fresh_error = self.provider().report_errors();
                 Vec::new()
             }
         };

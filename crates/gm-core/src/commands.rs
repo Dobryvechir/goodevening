@@ -127,6 +127,7 @@ pub fn run(app: &mut App, c: Command) {
         UnselectAll => app.active().files.clear_selection(),
         SelectSameExt => app.active().files.select_same(true, true),
         UnselectSameExt => app.active().files.select_same(true, false),
+        InsertName | InsertPath if insert_provider_name(app) => {}
         InsertName => {
             if let Some(n) = app.active().files.current_name() {
                 let n = if n == ".." { n } else { gm_platform::shell::quote(&n) };
@@ -300,6 +301,19 @@ fn find_association<'a>(app: &'a App, name: &str) -> Option<&'a gm_config::Assoc
 }
 
 /// Enter (or Ctrl+PgDn with `in_place`) on the panel item.
+/// Ctrl+F / Ctrl+Enter on an item of a provider that names its items
+/// itself (a database table). Returns false if it does not.
+fn insert_provider_name(app: &mut App) -> bool {
+    let files = &app.active().files;
+    if files.is_local() {
+        return false;
+    }
+    let Some(n) = files.current_name().filter(|n| n != "..") else { return false };
+    let Some(text) = files.provider().command_line_name(&n) else { return false };
+    app.cmdline.insert_str(&format!("{text} "));
+    true
+}
+
 pub fn enter(app: &mut App, in_place: bool) {
     let Some(e) = app.active().files.current().cloned() else { return };
     if e.is_dir {
@@ -320,6 +334,11 @@ pub fn enter(app: &mut App, in_place: bool) {
         }
         if let Some(t) = app.active().files.provider_mut().describe(&e.name) {
             app.view_text(&e.name, t.into_bytes());
+            return;
+        }
+        // Generated text (a database table): like F3.
+        if let Some(f) = app.active().files.provider_mut().item_file(&e.name, false) {
+            crate::remote::open(app, f, false);
             return;
         }
         // Nested archives: extract to a temp folder and open as a panel.
@@ -409,9 +428,10 @@ fn view_or_edit(app: &mut App, edit: bool, alt: bool) {
         return;
     }
     if !app.active().files.is_local() && app.active().files.current_path().is_none() {
-        // Remote files (SFTP): a local copy, uploaded back when the editor saves it.
+        // Remote files (SFTP): a local copy, uploaded back when the editor
+        // saves it; generated text (database panel): a temporary file.
         if !e.is_dir
-            && let Some(f) = app.active().files.provider_mut().remote_file(&e.name)
+            && let Some(f) = app.active().files.provider_mut().item_file(&e.name, edit)
         {
             crate::remote::open(app, f, edit);
             return;

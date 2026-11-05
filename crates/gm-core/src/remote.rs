@@ -96,7 +96,8 @@ pub fn open(app: &mut App, mut file: Box<dyn RemoteFile>, edit: bool) {
     let label = file.label();
     let title = if edit { msg(MsgId::MEditTitle).to_string() } else { msg(MsgId::MViewerTitle).to_string() };
     // Already open: show the same copy again (it may hold unsaved work).
-    if let Some(s) = app.remote.list.iter().find(|s| s.label == label) {
+    // Generated text (database output) is produced afresh every time.
+    if let Some(s) = app.remote.list.iter().find(|s| s.label == label && s.file.write_back()) {
         let p = s.local.clone();
         if edit {
             app.open_editor(&p, None)
@@ -115,7 +116,8 @@ pub fn open(app: &mut App, mut file: Box<dyn RemoteFile>, edit: bool) {
     let name = file.name();
     let name = if name.is_empty() || name.contains(['/', '\\']) { "file".to_string() } else { name };
     let local = dir.join(&name);
-    busy(app, &title, format!("Downloading {label}"));
+    let verb = if file.write_back() { "Downloading" } else { "Reading" };
+    busy(app, &title, format!("{verb} {label}"));
     if let Err(e) = file.download(&local) {
         let _ = std::fs::remove_dir_all(&dir);
         gm_ui::message::error(&mut app.ui, &title, &format!("Cannot download\n{label}\n{e}"));
@@ -138,8 +140,14 @@ pub fn sync(app: &mut App) {
         return;
     }
     let mut errors = Vec::new();
-    let changed: Vec<usize> =
-        app.remote.list.iter().enumerate().filter(|(_, s)| stamp(&s.local).is_some_and(|now| Some(now) != s.stamp)).map(|(i, _)| i).collect();
+    let changed: Vec<usize> = app
+        .remote
+        .list
+        .iter()
+        .enumerate()
+        .filter(|(_, s)| s.file.write_back() && stamp(&s.local).is_some_and(|now| Some(now) != s.stamp))
+        .map(|(i, _)| i)
+        .collect();
     for i in changed {
         let label = app.remote.list[i].label.clone();
         busy(app, msg(MsgId::MEditTitle), format!("Uploading {label}"));

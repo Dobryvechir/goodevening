@@ -35,6 +35,8 @@ fn modules() -> Vec<Box<dyn Module>> {
     v.push(Box::new(mod_network_panel::NetworkPanel));
     #[cfg(feature = "ssh_panel")]
     v.push(Box::new(mod_ssh_panel::SshPanel));
+    #[cfg(feature = "db_panel")]
+    v.push(Box::new(mod_db_panel::DbPanel));
     #[cfg(feature = "shell_menu")]
     v.push(Box::new(mod_shell_menu::ShellMenu));
     v

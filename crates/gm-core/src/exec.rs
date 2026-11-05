@@ -163,6 +163,22 @@ pub fn execute_line(app: &mut App, line: &str) {
             }
         }
     }
+    // A database panel: the line is SQL, its output opens in the editor.
+    if !app.active().files.is_local() {
+        let bg = app.ui.term.last_frame().clone();
+        let title = app.active().files.provider().title();
+        gm_ui::message::draw_box(&mut app.ui, &bg, &title, &[gm_text::truncate_left(line, 60)]);
+        let r = app.active().files.provider_mut().execute_to_file(line);
+        if let Some(r) = r {
+            match r {
+                Ok(f) => crate::remote::open(app, f, true),
+                Err(e) => gm_ui::message::error(&mut app.ui, &title, &format!("{line}
+{e}")),
+            }
+            app.refresh_panels();
+            return;
+        }
+    }
     // A remote panel (SSH): commands run on the remote machine.
     if app.active().files.provider().can_execute() {
         run_remote(app, line);

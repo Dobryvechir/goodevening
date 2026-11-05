@@ -950,10 +950,31 @@ impl App {
                     if double && btn == MouseButton::Left {
                         self.last_click = None;
                         crate::commands::enter(self, false);
+                    } else if btn == MouseButton::Left {
+                        self.provider_click(in_left, idx);
                     }
                 }
             }
             _ => {}
+        }
+    }
+
+    /// A single left click on an item of a provider panel (a database
+    /// table counts its rows).
+    fn provider_click(&mut self, left: bool, idx: usize) {
+        let slot = if left { &mut self.left } else { &mut self.right };
+        if slot.files.is_local() {
+            return;
+        }
+        let Some(name) = slot.files.entries.get(idx).filter(|e| !e.is_dotdot()).map(|e| e.name.clone()) else { return };
+        match slot.files.provider_mut().clicked(&name) {
+            Ok(true) => slot.files.reload(),
+            Ok(false) => {}
+            Err(e) => {
+                let title = slot.files.provider().title();
+                gm_ui::message::error(&mut self.ui, &title, &format!("{name}
+{e}"));
+            }
         }
     }
 

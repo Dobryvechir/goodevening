@@ -23,6 +23,7 @@ default = [
     "network_panel",
     "shell_menu",
     "ssh_panel",
+    "db_panel",
 ]
 archive = ["dep:mod-archive"]
 temp_panel = ["dep:mod-temp-panel"]
@@ -34,6 +35,7 @@ panel_tools = ["dep:mod-panel-tools"]
 network_panel = ["dep:mod-network-panel"]
 shell_menu = ["dep:mod-shell-menu"]
 ssh_panel = ["dep:mod-ssh-panel"]
+db_panel = ["dep:mod-db-panel"]
 
 [dependencies]
 gm-core = { workspace = true }
@@ -54,6 +56,7 @@ mod-panel-tools = { workspace = true, optional = true }
 mod-network-panel = { workspace = true, optional = true }
 mod-shell-menu = { workspace = true, optional = true }
 mod-ssh-panel = { workspace = true, optional = true }
+mod-db-panel = { workspace = true, optional = true }
 
 [lints]
 workspace = true

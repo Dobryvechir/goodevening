@@ -26,6 +26,7 @@ members = [
     "crates/modules/mod-panel-tools",
     "crates/modules/mod-shell-menu",
     "crates/modules/mod-ssh-panel",
+    "crates/modules/mod-db-panel",
     "tools/lng-convert",
     "tools/hlf-convert",
     "tools/palette-convert",
@@ -65,6 +66,7 @@ mod-editor-tools = { path = "crates/modules/mod-editor-tools" }
 mod-panel-tools = { path = "crates/modules/mod-panel-tools" }
 mod-shell-menu = { path = "crates/modules/mod-shell-menu" }
 mod-ssh-panel = { path = "crates/modules/mod-ssh-panel" }
+mod-db-panel = { path = "crates/modules/mod-db-panel" }
 
 crossterm = "0.28"
 ratatui = { version = "0.29", default-features = false, features = ["crossterm"] }
@@ -103,6 +105,9 @@ tokio = { version = "1", features = ["rt-multi-thread", "net", "time", "io-util"
 russh = { version = "0.65", default-features = false, features = ["ring", "rsa", "flate2"] }
 russh-sftp = "3"
 data-encoding = "2"
+# Databases panel: pure-Rust clients (no C libraries needed).
+mysql = { version = "28", default-features = false, features = ["minimal-rust", "client_ed25519"] }
+postgres = "0.19"
 
 [profile.release]
 lto = "thin"

@@ -1,0 +1,21 @@
+[package]
+name = "mod-db-panel"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish = false
+
+[dependencies]
+gm-core = { workspace = true }
+gm-config = { workspace = true }
+crossterm = { workspace = true }
+serde = { workspace = true }
+toml = { workspace = true }
+data-encoding = { workspace = true }
+unicode-width = { workspace = true }
+mysql = { workspace = true }
+postgres = { workspace = true }
+
+[lints]
+workspace = true

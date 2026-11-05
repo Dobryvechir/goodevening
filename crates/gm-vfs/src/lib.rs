@@ -188,6 +188,49 @@ pub trait VfsProvider: Send {
     fn remote_file(&mut self, _name: &str) -> Option<Box<dyn RemoteFile>> {
         None
     }
+    /// F3 (`edit` false) / F4 (`edit` true) and Enter on an item: the file
+    /// whose local copy is opened. Defaults to [`VfsProvider::remote_file`];
+    /// a database panel gives different generated text for F3 and F4.
+    fn item_file(&mut self, name: &str, _edit: bool) -> Option<Box<dyn RemoteFile>> {
+        self.remote_file(name)
+    }
+    /// A command line typed while this provider is shown, whose output is
+    /// a file to open in the editor (SQL in a database panel). `None`: the
+    /// provider does not take command lines this way.
+    fn execute_to_file(&mut self, _line: &str) -> Option<io::Result<Box<dyn RemoteFile>>> {
+        None
+    }
+    /// After [`VfsProvider::put_files`] (even a failed one): a file with the
+    /// results to open in the editor (scripts run by a database panel).
+    fn take_result_file(&mut self) -> Option<Box<dyn RemoteFile>> {
+        None
+    }
+    /// A single left click on an item. Returns true if the listing changed
+    /// and the panel should read it again.
+    fn clicked(&mut self, _name: &str) -> io::Result<bool> {
+        Ok(false)
+    }
+    /// The text Ctrl+F / Ctrl+Enter insert into the command line for an
+    /// item that is not a real file. `None`: nothing.
+    fn command_line_name(&self, _name: &str) -> Option<String> {
+        None
+    }
+    /// False when F6 (move) out of or into this provider must only copy:
+    /// the source is never deleted (a database panel: moving does not drop
+    /// the table, and a script run in the database stays on the disk).
+    fn delete_after_move(&self) -> bool {
+        true
+    }
+    /// A question that F8 always asks before [`VfsProvider::delete`], even
+    /// when delete confirmations are switched off.
+    fn delete_question(&self, _names: &[String]) -> Option<String> {
+        None
+    }
+    /// True when listing errors should pop up in a message box (remote
+    /// panels: lost connection…).
+    fn report_errors(&self) -> bool {
+        self.can_execute()
+    }
     /// True when command lines typed while this provider is shown run in
     /// its current directory through [`VfsProvider::execute`] (SSH).
     fn can_execute(&self) -> bool {
@@ -215,6 +258,11 @@ pub trait RemoteFile: Send {
     fn download(&mut self, dest: &Path) -> io::Result<()>;
     /// Copies the local file `src` over the remote file.
     fn upload(&mut self, src: &Path) -> io::Result<()>;
+    /// False for generated text (database output): saving the local copy
+    /// changes nothing anywhere else, `upload` is never called.
+    fn write_back(&self) -> bool {
+        true
+    }
 }
 
 pub fn unsupported() -> io::Error {
