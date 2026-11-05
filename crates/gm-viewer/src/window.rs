@@ -1,6 +1,8 @@
 //! The viewer as a manager window: status line, key bar and key handling.
 
+use crate::colorview::ColorView;
 use crate::core::{Mode, ViewerCore};
+use crate::syntax::{Lang, lang_for};
 use gm_i18n::{MsgId, msg};
 use gm_term::{Buffer, Event, KeyChord, KeyCode, Mods, MouseEventKind, PaletteId, Rect, style};
 use gm_text::Codepage;
@@ -42,7 +44,14 @@ pub struct ViewerWindow {
     /// The file is a temporary copy (archive member) removed on close.
     pub temp_file: bool,
     pub title_override: Option<String>,
+    /// Language of the file for the "Colors" mode (F5), if supported.
+    lang: Option<Lang>,
+    /// The syntax-colored view while "Colors" mode is on.
+    colors: Option<ColorView>,
 }
+
+/// Files larger than this are not shown in "Colors" mode.
+const MAX_COLORS_SIZE: u64 = 32 << 20;
 
 fn labels() -> KeyBarLabels {
     let mut l = KeyBarLabels::default();
@@ -114,11 +123,61 @@ impl ViewerWindow {
         core.word_wrap = opts.word_wrap;
         core.tab = opts.tab_size.max(1);
         core.hex_upper = opts.hex_upper;
-        ViewerWindow { core, opts, labels: labels(), temp_file: false, title_override: None }
+        let lang = lang_for(&core.path);
+        ViewerWindow { core, opts, labels: labels(), temp_file: false, title_override: None, lang, colors: None }
+    }
+
+    /// Turns the syntax-colored "Colors" mode (F5) on or off, keeping the
+    /// top line. Does nothing for unsupported file types.
+    pub fn set_colors(&mut self, on: bool) {
+        if on {
+            let Some(lang) = self.lang else { return };
+            if self.colors.is_some() || self.core.len() > MAX_COLORS_SIZE {
+                return;
+            }
+            let text = self.core.decoded_text();
+            let line = self.core.line_of_offset(self.core.top);
+            self.colors = Some(ColorView::new(&text, lang, self.core.tab, line, self.core.wrap));
+        } else if let Some(cv) = self.colors.take() {
+            self.sync_from(&cv);
+        }
+    }
+
+    /// Moves the plain view to the colored view's position.
+    fn sync_from(&mut self, cv: &ColorView) {
+        let off = self.core.offset_of_line(cv.top_line());
+        self.core.goto_offset(off);
+        self.core.left = cv.left;
+    }
+
+    /// Keys of the "Colors" mode; returns true if handled.
+    fn handle_colors(&mut self, code: KeyCode, mods: Mods) -> bool {
+        let Some(cv) = self.colors.as_mut() else { return false };
+        match (code, mods) {
+            (KeyCode::Down, Mods::NONE) => cv.down(1),
+            (KeyCode::Up, Mods::NONE) => cv.up(1),
+            (KeyCode::PageDown, Mods::NONE) | (KeyCode::Char(' '), Mods::NONE) => cv.page_down(),
+            (KeyCode::PageUp, Mods::NONE) => cv.page_up(),
+            (KeyCode::Home, _) | (KeyCode::PageUp, Mods::CTRL) => cv.go_home(),
+            (KeyCode::End, _) | (KeyCode::PageDown, Mods::CTRL) => cv.go_end(),
+            (KeyCode::Right, Mods::NONE) if !cv.wrap => cv.left += 1,
+            (KeyCode::Left, Mods::NONE) if !cv.wrap => cv.left = cv.left.saturating_sub(1),
+            (KeyCode::Right, Mods::CTRL) if !cv.wrap => cv.left += 20,
+            (KeyCode::Left, Mods::CTRL) if !cv.wrap => cv.left = cv.left.saturating_sub(20),
+            (KeyCode::F(2), Mods::NONE) => {
+                let w = !cv.wrap;
+                cv.set_wrap(w);
+                self.core.wrap = w;
+                self.core.left = 0;
+            }
+            _ => return false,
+        }
+        true
     }
 
     fn update_labels(&mut self) {
         self.labels.normal[1] = msg(if self.core.wrap { MsgId::MViewF2Unwrap } else { MsgId::MViewF2 }).to_string();
+        self.labels.normal[4] = if self.lang.is_some() { "Colors".to_string() } else { String::new() };
         self.labels.normal[3] = msg(if self.core.mode == Mode::Hex { MsgId::MViewF4Text } else { MsgId::MViewF4 }).to_string();
         self.labels.normal[7] = match self.core.cp {
             Codepage::Oem(_) => msg(MsgId::MViewF8).to_string(),
@@ -213,12 +272,16 @@ impl Window for ViewerWindow {
         self.update_labels();
         let status = style(PaletteId::ViewerStatus);
         draw::fill(buf, Rect::new(area.x, area.y, area.width, 1), ' ', status);
+        let (mode, left, percent) = match &self.colors {
+            Some(cv) if cv.problems > 0 => (format!("Colors !{}  ", cv.problems), cv.left, cv.percent()),
+            Some(cv) => ("Colors  ".to_string(), cv.left, cv.percent()),
+            None => (String::new(), self.core.left, self.core.percent()),
+        };
         let info = format!(
-            "{}  {}  {}  {}%",
+            "{mode}{}  {}  {}  {percent}%",
             self.core.cp.name(),
-            if self.core.wrap { String::new() } else { format!("{} {}", msg(MsgId::MEditStatusCol), self.core.left) },
+            if self.core.wrap { String::new() } else { format!("{} {left}", msg(MsgId::MEditStatusCol)) },
             draw::group_digits(self.core.len()),
-            self.core.percent()
         );
         let info_w = gm_text::str_width(&info) + 9; // room for the clock
         let name_w = (area.width as usize).saturating_sub(info_w + 1);
@@ -227,7 +290,10 @@ impl Window for ViewerWindow {
         draw::put(buf, x, area.y, &info, status, info_w);
         let kb = u16::from(self.opts.keybar);
         let body = Rect::new(area.x, area.y + 1, area.width, area.height.saturating_sub(1 + kb));
-        self.core.render(buf, body, self.opts.show_arrows);
+        match &mut self.colors {
+            Some(cv) => cv.render(buf, body, self.opts.show_arrows),
+            None => self.core.render(buf, body, self.opts.show_arrows),
+        }
         if self.opts.keybar {
             KeyBar::render(buf, area.bottom() - 1, area.width, self.labels.for_mods(Mods::NONE));
         }
@@ -238,15 +304,41 @@ impl Window for ViewerWindow {
         let k = match ev {
             Event::Key(k) => *k,
             Event::Mouse(m) => {
-                match m.kind {
-                    MouseEventKind::ScrollDown => self.core.down(3),
-                    MouseEventKind::ScrollUp => self.core.up(3),
+                match (m.kind, &mut self.colors) {
+                    (MouseEventKind::ScrollDown, Some(cv)) => cv.down(3),
+                    (MouseEventKind::ScrollUp, Some(cv)) => cv.up(3),
+                    (MouseEventKind::ScrollDown, None) => self.core.down(3),
+                    (MouseEventKind::ScrollUp, None) => self.core.up(3),
                     _ => {}
                 }
                 return WinAction::Redraw;
             }
             _ => return WinAction::None,
         };
+        if (k.code, k.mods) == (KeyCode::F(5), Mods::NONE) {
+            if self.lang.is_some() {
+                let on = self.colors.is_none();
+                self.set_colors(on);
+            }
+            return WinAction::Redraw;
+        }
+        if self.colors.is_some() {
+            if self.handle_colors(k.code, k.mods) {
+                return WinAction::Redraw;
+            }
+            match (k.code, k.mods) {
+                // Hex, search, code pages and tail mode work on the plain view.
+                (KeyCode::F(4) | KeyCode::F(7) | KeyCode::F(8), _) | (KeyCode::Char('f'), Mods::CTRL) => self.set_colors(false),
+                // Window commands: keep the plain position in sync (saved on close).
+                (KeyCode::Esc, _) | (KeyCode::F(1 | 3 | 6 | 10 | 12), Mods::NONE) | (KeyCode::Tab, _) | (KeyCode::Char('o'), Mods::CTRL) => {
+                    if let Some(cv) = self.colors.take() {
+                        self.sync_from(&cv);
+                        self.colors = Some(cv);
+                    }
+                }
+                _ => return WinAction::None,
+            }
+        }
         let c = &mut self.core;
         match (k.code, k.mods) {
             (KeyCode::Esc, _) | (KeyCode::F(10), Mods::NONE) | (KeyCode::F(3), Mods::NONE) => return WinAction::Close,
@@ -315,6 +407,12 @@ impl Window for ViewerWindow {
     }
 
     fn tick(&mut self, _ui: &mut Ui) -> bool {
-        self.core.refresh()
+        let changed = self.core.refresh();
+        if changed && let Some(cv) = self.colors.take() {
+            // Re-color the new content at the same place.
+            self.sync_from(&cv);
+            self.set_colors(true);
+        }
+        changed
     }
 }

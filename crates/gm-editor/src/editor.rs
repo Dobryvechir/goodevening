@@ -7,7 +7,9 @@ use gm_text::width::char_width;
 use gm_text::{Codepage, Eol};
 use gm_ui::dialog::DialogBuilder;
 use gm_ui::search::{SearchAction, SearchState, search_dialog};
-use gm_ui::{KeyBar, KeyBarLabels, MenuItem, MenuResult, OpenRequest, Ui, VMenu, WinAction, Window, WindowKind, clipboard, draw, message};
+use gm_ui::{
+    KeyBar, KeyBarLabels, MenuItem, MenuResult, OpenRequest, Ui, VMenu, WinAction, Window, WindowKind, clipboard, colors_supported, draw, message,
+};
 use std::path::{Path, PathBuf};
 use std::rc::Rc;
 use std::time::SystemTime;
@@ -943,6 +945,7 @@ impl Window for Editor {
                 Codepage::Oem(_) => msg(MsgId::MEditF8).to_string(),
                 _ => msg(MsgId::MEditF8DOS).to_string(),
             };
+            self.labels.normal[4] = if colors_supported(&self.path) { "Colors".to_string() } else { String::new() };
             self.labels.ctrl[2] = msg(if self.opts.line_numbers { MsgId::MEditCtrlF3Hide } else { MsgId::MEditCtrlF3 }).to_string();
             KeyBar::render(buf, area.bottom() - 1, area.width, self.labels.for_mods(Mods::NONE));
         }
@@ -1122,6 +1125,11 @@ impl Window for Editor {
             (KeyCode::F(6), Mods::NONE) => {
                 if self.confirm_close(ui) {
                     return WinAction::Replace(OpenRequest::View(self.path.clone()));
+                }
+            }
+            (KeyCode::F(5), Mods::NONE) if colors_supported(&self.path) => {
+                if self.confirm_close(ui) {
+                    return WinAction::Replace(OpenRequest::ViewColors(self.path.clone()));
                 }
             }
             (KeyCode::F(7), Mods::NONE) => {

@@ -693,6 +693,40 @@ impl ViewerCore {
         }
     }
 
+    /// The whole content decoded with the current code page (BOM excluded).
+    pub fn decoded_text(&self) -> String {
+        let b = self.data.bytes();
+        self.cp.decode(&b[(self.bom as usize).min(b.len())..]).into_owned()
+    }
+
+    /// 0-based number of the line containing byte `off` (counted by LFs).
+    pub fn line_of_offset(&self, off: u64) -> usize {
+        let u = self.unit();
+        let mut n = 0;
+        let mut p = self.bom;
+        while p < off.min(self.len()) {
+            if self.is_lf(p) {
+                n += 1;
+            }
+            p += u;
+        }
+        n
+    }
+
+    /// Byte offset of the start of 0-based line `line`.
+    pub fn offset_of_line(&self, line: usize) -> u64 {
+        let u = self.unit();
+        let mut n = 0;
+        let mut p = self.bom;
+        while n < line && p < self.len() {
+            if self.is_lf(p) {
+                n += 1;
+            }
+            p += u;
+        }
+        p.min(self.len())
+    }
+
     /// Bytes of the whole content (for "view as text" of providers).
     pub fn bytes(&self) -> &[u8] {
         self.data.bytes()
@@ -789,6 +823,18 @@ mod tests {
         v.found = None;
         assert!(v.find(false, false).unwrap());
         assert_eq!(v.found, Some((12, 14)));
+    }
+
+    #[test]
+    fn line_offsets() {
+        let v = core("ab\ncd\r\nef\n");
+        assert_eq!(v.line_of_offset(0), 0);
+        assert_eq!(v.line_of_offset(3), 1);
+        assert_eq!(v.line_of_offset(7), 2);
+        assert_eq!(v.offset_of_line(1), 3);
+        assert_eq!(v.offset_of_line(2), 7);
+        assert_eq!(v.offset_of_line(9), 10);
+        assert_eq!(v.decoded_text().lines().count(), 3);
     }
 
     #[test]

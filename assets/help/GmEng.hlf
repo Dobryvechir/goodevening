@@ -2728,6 +2728,12 @@ moving the first character (byte) of a row to the last position of the previous 
  #Shift+F2#           Toggle wrap type (characters or words) in #text# ~view mode~@ViewerMode@
  #F4#                 Toggle ~view mode~@ViewerMode@ to #hex# and back
  #Shift+F4#           Select ~view mode~@ViewerMode@: #text#, #hex#, or #dump#
+ #F5#                 Colors: show source files (html, cs, js, ts, tsx, php,
+                      java, py, py3, json, xml, go, dart, rs) with syntax colors
+                      on a black background; unbalanced brackets, quotes and
+                      tags are marked with a red #!#. For #md# files HTML tags are
+                      hidden and text takes the color of their style="color:…".
+                      Press #F5# again to return to the plain view
  #F6#                 Switch to ~editor~@Editor@
  #F7#                 ~Search~@ViewerSearch@
  #Shift+F7, Space#    Continue searching forward
@@ -3054,6 +3060,7 @@ behavior can be changed in the ~Editor settings~@EditorSettings@ dialog.
  #F2#                      Save file
  #Shift+F2#                ~Save file as…~@FileSaveAs@
  #Shift+F4#                Edit ~new file~@FileOpenCreate@
+ #F5#                      Open the ~viewer~@Viewer@ in #Colors# mode (source and md files)
  #F6#                      Switch to ~viewer~@Viewer@
  #F7#                      ~Search~@EditorSearch@
  #Ctrl+F7#                 ~Replace~@EditorSearch@

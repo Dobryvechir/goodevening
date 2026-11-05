@@ -5,7 +5,9 @@
 //! positions are byte offsets, so code pages with any unit size work.
 #![forbid(unsafe_code)]
 
+mod colorview;
 mod core;
+pub mod syntax;
 mod window;
 
 pub use core::{Mode, ViewerCore};

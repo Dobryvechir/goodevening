@@ -2,7 +2,7 @@
 
 use crate::ui::Ui;
 use gm_term::{Buffer, Event, Rect};
-use std::path::PathBuf;
+use std::path::{Path, PathBuf};
 
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum WindowKind {
@@ -16,6 +16,8 @@ pub enum WindowKind {
 #[derive(Clone, Debug)]
 pub enum OpenRequest {
     View(PathBuf),
+    /// The viewer with syntax colors turned on (F5 "Colors" in the editor).
+    ViewColors(PathBuf),
     Edit {
         path: PathBuf,
         line: Option<usize>,
@@ -68,4 +70,12 @@ pub trait Window {
     fn help_topic(&self) -> &str {
         "Contents"
     }
+}
+
+/// File extensions the viewer can show in "Colors" mode (F5).
+pub const COLOR_EXTENSIONS: &[&str] = &["html", "htm", "cs", "js", "ts", "tsx", "php", "java", "py", "py3", "json", "xml", "go", "dart", "rs", "md"];
+
+/// Whether `path` has an extension supported by the viewer's "Colors" mode.
+pub fn colors_supported(path: &Path) -> bool {
+    path.extension().and_then(|e| e.to_str()).is_some_and(|e| COLOR_EXTENSIONS.iter().any(|x| x.eq_ignore_ascii_case(e)))
 }

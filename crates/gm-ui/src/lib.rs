@@ -23,6 +23,6 @@ pub use menubar::{MenuBar, MenuBarResult};
 pub use message::{message, message_warn};
 pub use ui::{Flow, HistoryStore, Modal, NoHistory, Ui};
 pub use vmenu::{MenuItem, MenuResult, VMenu};
-pub use window::{OpenRequest, WinAction, Window, WindowKind};
+pub use window::{OpenRequest, WinAction, Window, WindowKind, colors_supported};
 
 pub use gm_i18n::{MsgId, msg, plain};
