@@ -46,6 +46,7 @@ gm [options] [left_folder [right_folder]]
 gm [options] --client=<file> [left_folder [right_folder]]
 gm [options] --client-push=<file> <command line>
 gm [options] --server=<file> [folder]
+gm --e|--d|--pe|--pd <key_file> <input_file> <output_file>
 
   -v <file>          open the file in the viewer
   -e[line] <file>    open the file in the editor
@@ -61,7 +62,62 @@ gm [options] --server=<file> [folder]
                      add a command to the queue <file> (see below)
   --server=<file>    run commands from the queue <file> (see below)
   --keytest          show how key presses are decoded (for bug reports)
+  --e, --d, --pe, --pd
+                     encode / decode a file with a key file (see below)
 ```
+
+### Encoding files (`--e`, `--d`, `--pe`, `--pd`)
+
+`gm --e key_file input_file output_file` encodes `input_file` into
+`output_file`, `gm --d` decodes it back. gm then only runs as this command
+line utility (no panels). The result is byte for byte the same as
+`python codec.py e|d key_file input_file output_file`.
+
+The key file is scanned for `*`, `+` and `^`, each followed by hex digits;
+the operations are applied in key order when encoding and undone in reverse
+order when decoding:
+
+| Op | Meaning |
+|---|---|
+| `^<hex>` | `data[i] ^= code[i % len]` (absolute file position) |
+| `+<hex>` | `data[i] = data[i] + code[i % len]` (mod 256) |
+| `*<hex>` | big-endian 2-byte numbers forming a permutation of 0..N-1; every full block of N bytes becomes `new[j] = old[code[j]]` |
+
+`--pe` / `--pd` first ask for a password (hidden; read as one line when stdin
+is redirected) and unmask the key file with it: `key[i] ^= password[i % len]`.
+
+#### Encoded archives in the panels
+
+**F9 → Commands → Encoded archives** (just above **Module commands**) lists
+the configured encoded archives and adds (Ins or *Add new configuration…*),
+changes (Enter) or deletes (Del) them. They are saved in `settings.toml`
+right away:
+
+```toml
+[[encoded_archives]]
+newExtension = "zipx"       # up to 7 characters
+originalExtension = "zip"   # up to 7 characters
+passwordProtected = true    # --pd / --pe
+keyFile = "zipx.key"        # relative to the settings folder, or absolute
+```
+
+F3, F4 and Enter on a file named exactly `*.<newExtension>` decode it (as
+`gm --d`, or `gm --pd` after asking for the password) into a private
+temporary folder as `*.<originalExtension>` and open that copy in the viewer,
+the editor, or (Enter) as an archive panel / with the system's program.
+Whenever the copy is saved (F2 in the editor, files added to or deleted from
+the archive panel, or another program writing it), gm encodes it back over
+the original (as `gm --e` / `gm --pe`). The password is asked once per file
+and kept in memory only, until the decoded copy is deleted.
+
+A decoded copy is deleted (with its folder) as soon as gm no longer uses
+it: when its viewer or editor is closed, or when its archive panel is left
+(after the last change was encoded back). A copy opened with another
+program is first left alone for 10 seconds, since that program starts in the
+background; after that, gm tries to delete it after every key press and every
+idle second. A copy that is locked (still open in a program) is silently kept
+and tried again later. A copy whose encoding failed is never deleted, so the
+changes are not lost. Anything left is deleted when gm exits.
 
 ### Command queue (`--client`, `--client-push`, `--server`)
 
@@ -309,6 +365,9 @@ Settings live in `%APPDATA%\gm`, `~/.config/gm` or
 | `GmMenu.ini` | the global user menu (F2); a `GmMenu.ini` in a folder is its local menu |
 | `<file>` of `--client`/`--client-push`/`--server` | the command queue, one command per line |
 | `gm-queue-<pid>-<n>.txt` | queues created by F9 → Commands → Execute in other terminal (deleted by the server on Disconnect) |
+
+Decoded copies of encoded archives live in `<temp>/gm-encoded-<pid>/` while
+gm runs.
 
 ## What works
 

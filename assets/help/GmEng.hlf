@@ -1407,6 +1407,10 @@ $ #Menus: commands menu#
                       See ~filters menu~@FiltersMenu@ for the detailed
                       description.
 
+ #Encoded archives#     Show the list of ~encoded archive~@EncodedArchives@
+                      configurations and add (#Ins# or the last item),
+                      change (#Enter#) or delete (#Del#) them.
+
  #Plugin commands#      Show #plugin commands# list.
 
  #Screens list#         Show open ~screens list~@ScrSwitch@.
@@ -3978,6 +3982,43 @@ values. Available only when the dialog is invoked for a single file object.
 
  The #System properties# button invoke the system properties dialog for
 selected objects.
+
+
+@EncodedArchives
+$ #Encoded archives#
+ #F9# → #Commands# → #Encoded archives# shows the configured encoded
+archives. Each configuration has:
+
+ #New extension#        The extension of the encoded files, up to 7
+                      characters, without the dot (for example #zipx#).
+
+ #Original extension#   The extension of the decoded file, up to 7
+                      characters (for example #zip#).
+
+ #Key file#             The file with the encoding operations (#*#, #+#
+                      and #^# followed by hex codes), as for #gm --e#.
+                      A relative path is taken from the settings folder.
+
+ #Password protected#   Ask for a password that unmasks the key file, as
+                      #gm --pe# and #gm --pd# do.
+
+ The configurations are saved in #settings.toml# right away.
+
+ #F3#, #F4# and #Enter# on a file whose name ends with exactly
+#.#<new extension> decode it, as #gm --d# (or #gm --pd#) does, into a
+private temporary folder as <name>#.#<original extension> and view or edit
+that copy; #Enter# opens it as an archive panel when it is an archive, or
+with the program the system uses for its extension. A password is asked
+only once for each file and is kept in memory only, never written to a file.
+
+ Every time the decoded copy is saved (in the editor, or when files are
+added to or deleted from the archive panel), it is encoded back over the
+original file, as #gm --e# (or #gm --pe#, with the same password) does.
+ A decoded copy is deleted as soon as the manager no longer uses it: when
+its viewer or editor is closed, or when its archive panel is left. A copy
+opened with another program is left alone for 10 seconds first; a copy that
+is still locked by a program is silently kept and deleted later. Anything
+left is deleted when the manager exits.
 
 
 @FolderShortcuts

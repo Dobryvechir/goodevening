@@ -76,6 +76,10 @@ pub struct App {
     pub server_queue: Option<PathBuf>,
     labels: KeyBarLabels,
     cmd_rect: Rect,
+    /// Decoded copies of encoded files (F9 → Commands → Encoded archives).
+    /// Last, so it is dropped after the windows and panels that use them:
+    /// changes are encoded back and the copies deleted.
+    pub encoded: crate::encoded::Sessions,
 }
 
 fn panel_labels() -> KeyBarLabels {
@@ -224,6 +228,7 @@ impl App {
             server_queue: None,
             labels: panel_labels(),
             cmd_rect: Rect::default(),
+            encoded: Default::default(),
         };
         // A panel can only be a tree/info/quick view if the other one is a file list.
         if app.left.kind != PanelKind::Files && app.right.kind != PanelKind::Files {
@@ -373,6 +378,10 @@ impl App {
         {
             w.tick(&mut self.ui);
         }
+        // Decoded copies written by other programs, and copies other
+        // programs have released.
+        crate::encoded::sync(self);
+        crate::encoded::release_unused(self);
     }
 
     pub fn render(&mut self) -> std::io::Result<()> {
@@ -469,6 +478,15 @@ impl App {
     }
 
     fn dispatch(&mut self, ev: Event) {
+        self.dispatch_event(ev);
+        // A decoded copy saved by the editor or rewritten by an archive
+        // panel is encoded back over its original; copies that are no longer
+        // shown (window closed, archive left) are deleted.
+        crate::encoded::sync(self);
+        crate::encoded::release_unused(self);
+    }
+
+    fn dispatch_event(&mut self, ev: Event) {
         if let Some(i) = self.current {
             // Global window switching keys first.
             if let Event::Key(k) = &ev

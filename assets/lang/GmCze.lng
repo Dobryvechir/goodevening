@@ -4534,3 +4534,29 @@
 "Terminál na&hoře"
 //[MExecTermDisconnect]
 "&Odpojit jiný terminál"
+//[MMenuEncodedArchives]
+"Kódované archi&vy"
+//[MEncArcTitle]
+"Kódované archivy"
+//[MEncArcAddNew]
+"&Přidat novou konfiguraci…"
+//[MEncArcNewExt]
+"&Nová přípona (až 7 znaků):"
+//[MEncArcOrigExt]
+"&Původní přípona (až 7 znaků):"
+//[MEncArcKeyFile]
+"Soubor &klíče:"
+//[MEncArcPasswordProtected]
+"Chráněno &heslem"
+//[MEncArcBadExtension]
+"Nová přípona musí mít 1 až 7 znaků a původní přípona nejvýše 7 znaků, bez \"/\" a \"\\\""
+//[MEncArcDuplicate]
+"Tato nová přípona je již nastavena"
+//[MEncArcNoKeyFile]
+"Soubor klíče nebyl nalezen"
+//[MEncArcPasswordFor]
+"Heslo pro"
+//[MEncArcCannotDecode]
+"Soubor nelze dekódovat"
+//[MEncArcCannotEncode]
+"Soubor nelze znovu zakódovat"

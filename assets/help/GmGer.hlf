@@ -1450,6 +1450,9 @@ $ #Menü Befehle#
                         Detaillierte Informationen dazu finden Sie
                       unter ~Dateifensterfilter~@FiltersMenu@.
 
+ #Kodierte Archive#    Zeigt die Liste der ~kodierten Archive~@EncodedArchives@;
+                      #Einfg# fügt hinzu, #Enter# ändert, #Entf# löscht.
+
  #Plugin commands#      Show #plugin commands# list.
 
  #Bildschirmliste#      Zeigt Liste geöffneter ~Bildschirme~@ScrSwitch@.
@@ -4055,6 +4058,30 @@ values. Available only when the dialog is invoked for a single file object.
 
  The #System properties# button invoke the system properties dialog for
 selected objects.
+
+
+@EncodedArchives
+$ #Kodierte Archive#
+ #F9# → #Befehle# → #Kodierte Archive# zeigt die konfigurierten kodierten
+Archive. Jede Konfiguration hat eine #neue Erweiterung# (bis zu 7 Zeichen,
+ohne Punkt, z. B. #zipx#), eine #ursprüngliche Erweiterung# (bis zu 7
+Zeichen, z. B. #zip#), eine #Schlüsseldatei# (die Operationen #*#, #+# und
+#^# mit Hex-Codes, wie für #gm --e#; ein relativer Pfad bezieht sich auf
+den Einstellungsordner) und #Passwortgeschützt# (wie #gm --pe# und
+#gm --pd#). Die Konfigurationen werden sofort in #settings.toml#
+gespeichert.
+
+ #F3#, #F4# und #Enter# auf einer Datei, deren Name genau auf
+#.#<neue Erweiterung> endet, dekodieren sie (wie #gm --d# oder #gm --pd#)
+in einen privaten temporären Ordner als <Name>#.#<ursprüngliche#
+#Erweiterung># und öffnen diese Kopie; #Enter# öffnet ein Archiv als
+Panel. Das Passwort wird pro Datei nur einmal abgefragt und nur im
+Speicher gehalten.
+
+ Jedes Mal, wenn die dekodierte Kopie gespeichert wird (im Editor oder
+nach Änderungen im Archivpanel), wird sie wieder über das Original
+kodiert (wie #gm --e# oder #gm --pe# mit demselben Passwort). Die
+dekodierten Kopien werden beim Beenden gelöscht.
 
 
 @FolderShortcuts

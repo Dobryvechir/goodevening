@@ -4534,3 +4534,29 @@
 "Terminal at &top"
 //[MExecTermDisconnect]
 "&Disconnect other terminal"
+//[MMenuEncodedArchives]
+"Encoded archi&ves"
+//[MEncArcTitle]
+"Encoded archives"
+//[MEncArcAddNew]
+"&Add new configuration…"
+//[MEncArcNewExt]
+"&New extension (up to 7 characters):"
+//[MEncArcOrigExt]
+"&Original extension (up to 7 characters):"
+//[MEncArcKeyFile]
+"&Key file:"
+//[MEncArcPasswordProtected]
+"&Password protected"
+//[MEncArcBadExtension]
+"The new extension must have 1 to 7 characters and the original extension up to 7 characters, without \"/\" and \"\\\""
+//[MEncArcDuplicate]
+"This new extension is already configured"
+//[MEncArcNoKeyFile]
+"The key file is not found"
+//[MEncArcPasswordFor]
+"Password for"
+//[MEncArcCannotDecode]
+"Cannot decode the file"
+//[MEncArcCannotEncode]
+"Cannot encode the file back"

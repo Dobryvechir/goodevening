@@ -1401,6 +1401,9 @@ $ #Commands menu#
  #Filter zobr.súborov#  Umožní nastavenie obsahu súborového
                       panelu. Viď ~Filter zobrazených súborov~@FiltersMenu@.
 
+ #Kódované archívy#    Zobrazí zoznam ~kódovaných archívov~@EncodedArchives@;
+                      #Ins# pridá, #Enter# zmení, #Del# zmaže.
+
  #Plugin commands#      Show #plugin commands# list.
 
  #Zoznam obrazoviek#    Zobrazí ~zoznam obrazoviek~@ScrSwitch@.
@@ -3970,6 +3973,27 @@ values. Available only when the dialog is invoked for a single file object.
 
  The #System properties# button invoke the system properties dialog for
 selected objects.
+
+
+@EncodedArchives
+$ #Kódované archívy#
+ #F9# → #Príkazy# → #Kódované archívy# zobrazí nastavené kódované
+archívy. Každá konfigurácia má #novú príponu# (najviac 7 znakov, bez
+bodky, napr. #zipx#), #pôvodnú príponu# (najviac 7 znakov, napr. #zip#),
+#súbor kľúča# (operácie #*#, #+# a #^# so šestnástkovými kódmi, ako pre
+#gm --e#; relatívna cesta sa berie z priečinka nastavení) a voľbu
+#Chránené heslom# (ako #gm --pe# a #gm --pd#). Konfigurácie sa hneď
+uložia do #settings.toml#.
+
+ #F3#, #F4# a #Enter# na súbore, ktorého meno končí presne na
+#.#<nová prípona>, ho dekódujú (ako #gm --d# alebo #gm --pd#) do
+súkromného dočasného priečinka ako <meno>#.#<pôvodná prípona> a otvoria
+túto kópiu; #Enter# otvorí archív ako panel. Heslo sa pre každý súbor
+zadáva len raz a drží sa iba v pamäti.
+
+ Vždy, keď sa dekódovaná kópia uloží (v editore alebo po zmenách v paneli
+archívu), znova sa zakóduje cez originál (ako #gm --e# alebo #gm --pe# s
+rovnakým heslom). Dekódované kópie sa pri ukončení zmažú.
 
 
 @FolderShortcuts

@@ -4534,3 +4534,29 @@
 "Терминал с&верху"
 //[MExecTermDisconnect]
 "&Отключить другой терминал"
+//[MMenuEncodedArchives]
+"Закодированные архи&вы"
+//[MEncArcTitle]
+"Закодированные архивы"
+//[MEncArcAddNew]
+"&Добавить новую конфигурацию…"
+//[MEncArcNewExt]
+"&Новое расширение (до 7 символов):"
+//[MEncArcOrigExt]
+"&Оригинальное расширение (до 7 символов):"
+//[MEncArcKeyFile]
+"Файл &ключа:"
+//[MEncArcPasswordProtected]
+"Защищено &паролем"
+//[MEncArcBadExtension]
+"Новое расширение должно иметь от 1 до 7 символов, а оригинальное — до 7 символов, без \"/\" и \"\\\""
+//[MEncArcDuplicate]
+"Это новое расширение уже настроено"
+//[MEncArcNoKeyFile]
+"Файл ключа не найден"
+//[MEncArcPasswordFor]
+"Пароль для"
+//[MEncArcCannotDecode]
+"Не удалось декодировать файл"
+//[MEncArcCannotEncode]
+"Не удалось закодировать файл обратно"

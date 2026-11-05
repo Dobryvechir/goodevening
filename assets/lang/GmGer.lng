@@ -4534,3 +4534,29 @@
 "Terminal &oben"
 //[MExecTermDisconnect]
 "Anderes Terminal &trennen"
+//[MMenuEncodedArchives]
+"Kodierte Archi&ve"
+//[MEncArcTitle]
+"Kodierte Archive"
+//[MEncArcAddNew]
+"Neue Konfiguration &hinzufügen…"
+//[MEncArcNewExt]
+"&Neue Erweiterung (bis zu 7 Zeichen):"
+//[MEncArcOrigExt]
+"&Ursprüngliche Erweiterung (bis zu 7 Zeichen):"
+//[MEncArcKeyFile]
+"&Schlüsseldatei:"
+//[MEncArcPasswordProtected]
+"&Passwortgeschützt"
+//[MEncArcBadExtension]
+"Die neue Erweiterung muss 1 bis 7 Zeichen haben und die ursprüngliche höchstens 7 Zeichen, ohne \"/\" und \"\\\""
+//[MEncArcDuplicate]
+"Diese neue Erweiterung ist bereits konfiguriert"
+//[MEncArcNoKeyFile]
+"Die Schlüsseldatei wurde nicht gefunden"
+//[MEncArcPasswordFor]
+"Passwort für"
+//[MEncArcCannotDecode]
+"Die Datei kann nicht dekodiert werden"
+//[MEncArcCannotEncode]
+"Die Datei kann nicht wieder kodiert werden"

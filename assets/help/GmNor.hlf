@@ -1429,6 +1429,9 @@ $ #Menyer: Kommandoer-menyen#
                             Se ~filtermenyen~@FiltersMenu@ for en detaljert
                             beskrivelse.
 
+ #Kodede arkiver#      Vis listen over ~kodede arkiver~@EncodedArchives@;
+                      #Ins# legger til, #Enter# endrer, #Del# sletter.
+
  #Modulkommandoer#            Vis listen over #modulkommandoer#.
 
  #Skjermliste#                Vis ~listen over åpne skjermer~@ScrSwitch@.
@@ -3984,6 +3987,28 @@ verdiene. Bare tilgjengelig når dialogen åpnes for ett enkelt filobjekt.
 
  Knappen #Systemegenskaper# åpner systemets egenskapsdialog for de valgte
 objektene.
+
+
+@EncodedArchives
+$ #Kodede arkiver#
+ #F9# → #Kommandoer# → #Kodede arkiver# viser de konfigurerte kodede
+arkivene. Hver konfigurasjon har en #ny filtype# (opptil 7 tegn, uten
+punktum, for eksempel #zipx#), en #opprinnelig filtype# (opptil 7 tegn,
+for eksempel #zip#), en #nøkkelfil# (operasjonene #*#, #+# og #^# med
+heksadesimale koder, som for #gm --e#; en relativ sti tas fra
+innstillingsmappen) og #Passordbeskyttet# (som #gm --pe# og #gm --pd#).
+Konfigurasjonene lagres i #settings.toml# med en gang.
+
+ #F3#, #F4# og #Enter# på en fil som slutter nøyaktig på #.#<ny filtype>
+dekoder den (som #gm --d# eller #gm --pd#) til en privat midlertidig
+mappe som <navn>#.#<opprinnelig filtype> og åpner kopien; #Enter# åpner
+et arkiv som panel. Passordet spørres bare én gang per fil og holdes kun
+i minnet.
+
+ Hver gang den dekodede kopien lagres (i redigeringsprogrammet eller etter
+endringer i arkivpanelet), kodes den tilbake over originalen (som
+#gm --e# eller #gm --pe# med samme passord). De dekodede kopiene slettes
+når programmet avsluttes.
 
 
 @FolderShortcuts

@@ -4534,3 +4534,29 @@
 "Terminal a&rriba"
 //[MExecTermDisconnect]
 "Des&conectar el otro terminal"
+//[MMenuEncodedArchives]
+"Archi&vos codificados"
+//[MEncArcTitle]
+"Archivos codificados"
+//[MEncArcAddNew]
+"&Añadir nueva configuración…"
+//[MEncArcNewExt]
+"&Nueva extensión (hasta 7 caracteres):"
+//[MEncArcOrigExt]
+"Extensión &original (hasta 7 caracteres):"
+//[MEncArcKeyFile]
+"Archivo de &clave:"
+//[MEncArcPasswordProtected]
+"Protegido con &contraseña"
+//[MEncArcBadExtension]
+"La nueva extensión debe tener de 1 a 7 caracteres y la original hasta 7 caracteres, sin \"/\" ni \"\\\""
+//[MEncArcDuplicate]
+"Esta nueva extensión ya está configurada"
+//[MEncArcNoKeyFile]
+"No se encuentra el archivo de clave"
+//[MEncArcPasswordFor]
+"Contraseña para"
+//[MEncArcCannotDecode]
+"No se puede decodificar el archivo"
+//[MEncArcCannotEncode]
+"No se puede volver a codificar el archivo"

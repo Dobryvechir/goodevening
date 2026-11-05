@@ -1408,6 +1408,9 @@ $ #Menu: menu polecenia#
  #Filtr panelu plików#  Pozwana na kontrolę zawartości panelu plików.
                       Więcej informacji: ~menu filtrów~@FiltersMenu@.
 
+ #Zakodowane archiwa#  Pokazuje listę ~zakodowanych archiwów~@EncodedArchives@;
+                      #Ins# dodaje, #Enter# zmienia, #Del# usuwa.
+
  #Wtyczki#              Pokazuje listę #wtyczek do programu#.
 
  #Lista ekranów#        Pokazuje listę ~otwartych okien~@ScrSwitch@.
@@ -3991,6 +3994,28 @@ tylko wtedy, gdy funkcja zmiany daty/czasu została wywołana dla pojedynczego p
  Możesz także nacisnąć #*# w polu daty i czasu, aby skopiować ich wartości do pozostałych pól daty i czasu.
 
  Przycisk #Właściwości systemu# wywołuje systemowe okno właściwości systemu dla wybranego obiektu.
+
+
+@EncodedArchives
+$ #Zakodowane archiwa#
+ #F9# → #Polecenia# → #Zakodowane archiwa# pokazuje skonfigurowane
+zakodowane archiwa. Każda konfiguracja ma #nowe rozszerzenie# (do 7
+znaków, bez kropki, np. #zipx#), #oryginalne rozszerzenie# (do 7 znaków,
+np. #zip#), #plik klucza# (operacje #*#, #+# i #^# z kodami szesnastkowymi,
+jak dla #gm --e#; ścieżka względna jest liczona od folderu ustawień) oraz
+opcję #Chronione hasłem# (jak #gm --pe# i #gm --pd#). Konfiguracje są od
+razu zapisywane w #settings.toml#.
+
+ #F3#, #F4# i #Enter# na pliku, którego nazwa kończy się dokładnie na
+#.#<nowe rozszerzenie>, dekodują go (jak #gm --d# lub #gm --pd#) do
+prywatnego folderu tymczasowego jako <nazwa>#.#<oryginalne rozszerzenie>
+i otwierają tę kopię; #Enter# otwiera archiwum jako panel. Hasło jest
+pytane tylko raz dla każdego pliku i trzymane wyłącznie w pamięci.
+
+ Za każdym razem, gdy zdekodowana kopia zostanie zapisana (w edytorze lub
+po zmianach w panelu archiwum), jest ponownie kodowana na miejsce
+oryginału (jak #gm --e# lub #gm --pe# z tym samym hasłem). Zdekodowane
+kopie są usuwane przy wyjściu.
 
 
 @FolderShortcuts

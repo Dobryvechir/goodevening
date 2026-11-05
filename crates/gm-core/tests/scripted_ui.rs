@@ -352,3 +352,332 @@ fn gallery() {
     f.app.handle_event(key(KeyCode::Char('3'), Mods::CTRL));
     println!("===== Ctrl+3 full =====\n{}", f.screen());
 }
+
+// ----- F9 → Commands → Encoded archives -----
+
+/// A key file with all three operations, as `codec.py` reads it.
+const ENC_KEY: &str = "hjhiyuy798797*0003000000010002hjhljhlh jhkjjhj+abcdef45hjhjkhkhkjk$#@!%^456577979ab4jkjljk ipipp+5678adgjggjg";
+
+fn codec_file(mode: gm_core::codec::Mode, key: &Path, password: Option<&str>, input: &Path, output: &Path) {
+    let ops = gm_core::codec::load_key(key, password.map(str::as_bytes)).unwrap();
+    gm_core::codec::transform_file(mode, &ops, input, output).unwrap();
+}
+
+/// Writes `plain` encoded as `gm --e` / `gm --pe` would into `out`.
+fn encode_bytes(f: &Fixture, key: &Path, password: Option<&str>, plain: &[u8], out: &Path) {
+    let tmp = f.root.join("plain.tmp");
+    std::fs::write(&tmp, plain).unwrap();
+    codec_file(gm_core::codec::Mode::Encode, key, password, &tmp, out);
+    std::fs::remove_file(&tmp).unwrap();
+}
+
+/// Decodes `file` as `gm --d` / `gm --pd` would.
+fn decode_bytes(f: &Fixture, key: &Path, password: Option<&str>, file: &Path) -> Vec<u8> {
+    let tmp = f.root.join("decoded.tmp");
+    codec_file(gm_core::codec::Mode::Decode, key, password, file, &tmp);
+    let v = std::fs::read(&tmp).unwrap();
+    std::fs::remove_file(&tmp).unwrap();
+    v
+}
+
+/// Adds an encoded archive configuration with a plain key file (or one
+/// masked with `password`, as `--pe`/`--pd` expect).
+fn add_config(f: &mut Fixture, new_ext: &str, orig_ext: &str, password: Option<&str>) -> PathBuf {
+    let key = f.root.join(format!("{new_ext}.key"));
+    let mut bytes = ENC_KEY.as_bytes().to_vec();
+    if let Some(p) = password {
+        gm_core::codec::unmask_key(&mut bytes, p.as_bytes());
+    }
+    std::fs::write(&key, bytes).unwrap();
+    f.app.settings.encoded_archives.push(gm_config::EncodedArchive {
+        new_extension: new_ext.into(),
+        original_extension: orig_ext.into(),
+        password_protected: password.is_some(),
+        key_file: key.display().to_string(),
+    });
+    key
+}
+
+#[test]
+fn encoded_archives_menu_adds_configuration() {
+    let mut f = fixture("encmenu", vec![]);
+    let key = f.root.join("my.key");
+    std::fs::write(&key, ENC_KEY).unwrap();
+    f.app.ui.term.recorded = Some(Vec::new());
+    // F9 → Commands → V (Encoded archives) → Ins: new extension, original
+    // extension, key file, Space on "Password protected", Enter = OK; Esc
+    // closes the list.
+    let mut script = vec![plain(KeyCode::Right), plain(KeyCode::Right), plain(KeyCode::Char('v')), plain(KeyCode::Insert)];
+    script.extend(text(".zipx"));
+    script.push(plain(KeyCode::Tab));
+    script.extend(text("zip"));
+    script.push(plain(KeyCode::Tab));
+    script.extend(text(&key.display().to_string()));
+    script.push(plain(KeyCode::Tab));
+    script.push(plain(KeyCode::Char(' ')));
+    script.push(plain(KeyCode::Enter));
+    script.push(Event::Resize(110, 32));
+    script.push(plain(KeyCode::Esc));
+    f.run(plain(KeyCode::F(9)), script);
+    let frames = f.app.ui.term.recorded.replace(Vec::new()).unwrap_or_default();
+    // The item is right above "Module commands".
+    let menu = frames.iter().find(|fr| fr.contains("Encoded archives") && fr.contains("Module commands")).expect("no Commands menu");
+    let lines: Vec<&str> = menu.lines().collect();
+    let enc = lines.iter().position(|l| l.contains("Encoded archives")).unwrap();
+    assert!(lines[enc + 1].contains("Module commands"), "{menu}");
+    // The list shows the new configuration.
+    assert!(frames.iter().any(|fr| fr.contains("*.zipx") && fr.contains("*.zip ") && fr.contains("Password protected")), "list not shown");
+    assert_eq!(
+        f.app.settings.encoded_archives,
+        vec![gm_config::EncodedArchive {
+            new_extension: "zipx".into(),
+            original_extension: "zip".into(),
+            password_protected: true,
+            key_file: key.display().to_string(),
+        }]
+    );
+    // Stored in settings.toml right away.
+    let saved = std::fs::read_to_string(f.root.join("settings.toml")).unwrap();
+    assert!(saved.contains("[[encoded_archives]]") && saved.contains("newExtension = \"zipx\""), "{saved}");
+    assert!(saved.contains("originalExtension = \"zip\"") && saved.contains("passwordProtected = true"), "{saved}");
+}
+
+#[test]
+fn encoded_archives_rejects_long_extension() {
+    let mut f = fixture("enclong", vec![]);
+    let key = f.root.join("my.key");
+    std::fs::write(&key, ENC_KEY).unwrap();
+    f.app.ui.term.recorded = Some(Vec::new());
+    let mut script = vec![plain(KeyCode::Right), plain(KeyCode::Right), plain(KeyCode::Char('v')), plain(KeyCode::Insert)];
+    script.extend(text("toolong12"));
+    script.push(plain(KeyCode::Tab));
+    script.extend(text("txt"));
+    script.push(plain(KeyCode::Tab));
+    script.extend(text(&key.display().to_string()));
+    script.push(plain(KeyCode::Enter));
+    // The error message, then the dialog again: cancel it and the list.
+    script.extend([plain(KeyCode::Enter), plain(KeyCode::Esc), plain(KeyCode::Esc)]);
+    f.run(plain(KeyCode::F(9)), script);
+    let frames = f.app.ui.term.recorded.replace(Vec::new()).unwrap_or_default();
+    assert!(frames.iter().any(|fr| fr.contains("1 to 7 characters")), "no error shown");
+    assert!(f.app.settings.encoded_archives.is_empty());
+}
+
+#[test]
+fn encoded_file_edit_and_save_encodes_back() {
+    let mut f = fixture("encedit", vec![]);
+    let key = add_config(&mut f, "enc", "txt", None);
+    let file = f.left().join("notes.enc");
+    encode_bytes(&f, &key, None, b"secret line\n", &file);
+    f.app.left.files.reload();
+    f.cursor_to("notes.enc");
+    // F3 shows the decoded text; closing the viewer deletes the decoded copy.
+    f.app.handle_event(plain(KeyCode::F(3)));
+    assert!(f.screen().contains("secret line"));
+    let viewed = f.app.encoded.decoded_files();
+    assert_eq!(viewed.len(), 1);
+    assert!(viewed[0].is_file());
+    f.app.handle_event(plain(KeyCode::Esc));
+    assert!(!viewed[0].exists(), "decoded copy left after the viewer");
+    assert!(!viewed[0].parent().unwrap().exists(), "decoded folder left after the viewer");
+    assert!(f.app.encoded.decoded_files().is_empty());
+    // F4 edits the decoded copy notes.txt; F2 saves: notes.enc is encoded again.
+    f.app.handle_event(plain(KeyCode::F(4)));
+    let decoded = f.app.encoded.decoded_files();
+    assert_eq!(decoded.len(), 1);
+    assert_eq!(decoded[0].file_name().unwrap(), "notes.txt");
+    for e in text(">> ") {
+        f.app.handle_event(e);
+    }
+    f.app.handle_event(plain(KeyCode::F(2)));
+    assert_eq!(decode_bytes(&f, &key, None, &file), b">> secret line\n");
+    assert_ne!(std::fs::read(&file).unwrap(), b">> secret line\n", "stored encoded");
+    assert!(decoded[0].is_file(), "deleted while the editor is open");
+    // Closing the editor deletes the decoded copy right away.
+    f.app.handle_event(plain(KeyCode::Esc));
+    assert!(f.app.current.is_none());
+    assert!(!decoded[0].exists(), "decoded copy left after the editor");
+    assert!(f.app.encoded.decoded_files().is_empty());
+    assert_eq!(decode_bytes(&f, &key, None, &file), b">> secret line\n");
+}
+
+#[test]
+fn encoded_file_unsaved_editor_changes_are_encoded_on_exit() {
+    let mut f = fixture("encexit", vec![]);
+    let key = add_config(&mut f, "enc", "txt", None);
+    let file = f.left().join("todo.enc");
+    encode_bytes(&f, &key, None, b"one\n", &file);
+    f.app.left.files.reload();
+    f.cursor_to("todo.enc");
+    f.app.handle_event(plain(KeyCode::F(4)));
+    for e in text("zero ") {
+        f.app.handle_event(e);
+    }
+    // Esc on a modified file asks; Enter = Save: encoded, then deleted.
+    f.run(plain(KeyCode::Esc), vec![plain(KeyCode::Enter)]);
+    assert!(f.app.current.is_none());
+    assert!(f.app.encoded.decoded_files().is_empty());
+    assert_eq!(decode_bytes(&f, &key, None, &file), b"zero one\n");
+}
+
+/// Opens a file so that nobody else may delete it, like a program that
+/// keeps it open (Windows; elsewhere an open file can always be deleted).
+/// Others may still read it (the viewer has it open).
+#[cfg(windows)]
+fn lock(p: &Path) -> std::fs::File {
+    use std::os::windows::fs::OpenOptionsExt;
+    const FILE_SHARE_READ: u32 = 1;
+    std::fs::OpenOptions::new().read(true).share_mode(FILE_SHARE_READ).open(p).unwrap()
+}
+
+#[cfg(windows)]
+#[test]
+fn encoded_file_locked_copy_is_kept_silently() {
+    let mut f = fixture("enclock", vec![]);
+    let key = add_config(&mut f, "enc", "txt", None);
+    encode_bytes(&f, &key, None, b"locked\n", &f.left().join("l.enc"));
+    f.app.left.files.reload();
+    f.cursor_to("l.enc");
+    f.app.handle_event(plain(KeyCode::F(3)));
+    let decoded = f.app.encoded.decoded_files();
+    // Closing the viewer while another program holds the copy: nothing is
+    // shown, the copy stays.
+    let held = lock(&decoded[0]);
+    f.app.ui.term.recorded = Some(Vec::new());
+    f.app.handle_event(plain(KeyCode::Esc));
+    let frames = f.app.ui.term.recorded.replace(Vec::new()).unwrap_or_default();
+    assert!(f.app.current.is_none());
+    assert!(frames.iter().all(|fr| !fr.contains("Error") && !fr.contains("Encoded archives")), "a message was shown");
+    assert!(decoded[0].is_file(), "locked copy deleted");
+    assert_eq!(f.app.encoded.decoded_files(), decoded);
+    // Once the program lets it go, the next event deletes it.
+    drop(held);
+    f.app.handle_event(Event::Resize(110, 32));
+    assert!(!decoded[0].exists(), "copy left after the lock was released");
+    assert!(f.app.encoded.decoded_files().is_empty());
+}
+
+#[test]
+fn encoded_file_opened_externally_waits_for_grace_period() {
+    let mut f = fixture("encext", vec![]);
+    let key = add_config(&mut f, "enc", "txt", None);
+    encode_bytes(&f, &key, None, b"ext\n", &f.left().join("x.enc"));
+    f.app.left.files.reload();
+    f.cursor_to("x.enc");
+    // Decode it (F3), then mark it as handed to another program, as Enter
+    // does for a file that is not an archive (without starting one here).
+    f.app.handle_event(plain(KeyCode::F(3)));
+    let decoded = f.app.encoded.decoded_files();
+    gm_core::encoded::opened_externally(&mut f.app, &decoded[0]);
+    f.app.handle_event(plain(KeyCode::Esc));
+    assert!(decoded[0].is_file(), "deleted before the program could open it");
+    // After the grace period it goes on the next event.
+    f.app.encoded.external_grace = std::time::Duration::ZERO;
+    f.app.handle_event(Event::Resize(110, 32));
+    assert!(!decoded[0].exists());
+}
+
+#[test]
+fn encoded_file_with_password_asks_once() {
+    let mut f = fixture("encpw", vec![]);
+    let key = add_config(&mut f, "penc", "txt", Some("пароль"));
+    let file = f.left().join("diary.penc");
+    encode_bytes(&f, &key, Some("пароль"), b"dear diary\n", &file);
+    f.app.left.files.reload();
+    f.cursor_to("diary.penc");
+    f.app.ui.term.recorded = Some(Vec::new());
+    // F3: the password dialog (input hidden), then the viewer.
+    let mut script = text("пароль");
+    script.push(Event::Resize(110, 32));
+    script.push(plain(KeyCode::Enter));
+    f.run(plain(KeyCode::F(3)), script);
+    let frames = f.app.ui.term.recorded.replace(Vec::new()).unwrap_or_default();
+    let dlg = frames.iter().find(|fr| fr.contains("Password for diary.penc")).expect("no password dialog");
+    assert!(!dlg.contains("пароль"), "password shown:\n{dlg}");
+    assert!(f.screen().contains("dear diary"));
+    // Closing the viewer deletes the copy and forgets the password.
+    f.app.handle_event(plain(KeyCode::Esc));
+    assert!(f.app.encoded.decoded_files().is_empty());
+    // F4 asks again (a new copy); saving then encodes with that password
+    // without asking.
+    let mut script = text("пароль");
+    script.push(plain(KeyCode::Enter));
+    f.run(plain(KeyCode::F(4)), script);
+    assert!(f.screen().contains("dear diary"), "editor expected");
+    for e in text("my ") {
+        f.app.handle_event(e);
+    }
+    f.app.ui.term.recorded = Some(Vec::new());
+    f.app.handle_event(plain(KeyCode::F(2)));
+    let frames = f.app.ui.term.recorded.replace(Vec::new()).unwrap_or_default();
+    assert!(frames.iter().all(|fr| !fr.contains("Password for")), "asked again when saving");
+    assert_eq!(decode_bytes(&f, &key, Some("пароль"), &file), b"my dear diary\n");
+    f.app.handle_event(plain(KeyCode::Esc));
+    assert!(f.app.encoded.decoded_files().is_empty());
+    // Nothing about the password is stored in the settings.
+    let state = format!("{:?}", f.app.settings);
+    assert!(!state.contains("пароль"));
+}
+
+#[test]
+fn encoded_file_cancelled_password_opens_nothing() {
+    let mut f = fixture("encpwcancel", vec![]);
+    let key = add_config(&mut f, "penc", "txt", Some("pw"));
+    encode_bytes(&f, &key, Some("pw"), b"x", &f.left().join("a.penc"));
+    f.app.left.files.reload();
+    f.cursor_to("a.penc");
+    f.run(plain(KeyCode::F(4)), vec![plain(KeyCode::Esc)]);
+    assert!(f.app.current.is_none());
+    assert!(f.app.encoded.decoded_files().is_empty());
+}
+
+#[test]
+fn encoded_zip_enter_and_add_file_encodes_back() {
+    let mut f = fixture("enczip", vec![Box::new(mod_archive::Archive)]);
+    let key_file = add_config(&mut f, "zipx", "zip", None);
+    // Make alpha.zip (Shift+F1), encode it into alpha.zipx.
+    f.cursor_to("alpha.txt");
+    f.run(key(KeyCode::F(1), Mods::SHIFT), vec![plain(KeyCode::Enter)]);
+    let zip = f.left().join("alpha.zip");
+    let zipx = f.left().join("alpha.zipx");
+    codec_file(gm_core::codec::Mode::Encode, &key_file, None, &zip, &zipx);
+    std::fs::remove_file(&zip).unwrap();
+    f.app.left.files.reload();
+    // Enter opens the decoded alpha.zip as an archive panel.
+    f.cursor_to("alpha.zipx");
+    f.app.handle_event(plain(KeyCode::Enter));
+    assert!(f.screen().contains("zip:"));
+    assert!(f.app.left.files.entries.iter().any(|e| e.name == "alpha.txt"));
+    // F5 from the right panel copies gamma.txt into the archive: the
+    // rewritten zip is encoded back into alpha.zipx.
+    std::fs::write(f.right().join("gamma.txt"), "gamma").unwrap();
+    f.app.handle_event(plain(KeyCode::Tab));
+    f.app.right.files.reload();
+    assert!(f.app.right.files.set_cursor_name("gamma.txt"));
+    f.run(plain(KeyCode::F(5)), vec![plain(KeyCode::Enter)]);
+    let decoded = decode_bytes(&f, &key_file, None, &zipx);
+    assert!(decoded.starts_with(b"PK"), "not a zip after decoding");
+    let has = |name: &[u8]| decoded.windows(name.len()).any(|w| w == name);
+    assert!(has(b"gamma.txt") && has(b"alpha.txt"), "zip members missing");
+    assert!(!f.left().join("alpha.zip").exists(), "no plain copy next to the original");
+    // While the archive panel is open, its decoded zip stays.
+    let copies = f.app.encoded.decoded_files();
+    assert_eq!(copies.len(), 1);
+    assert!(copies[0].is_file());
+    // ".." leaves the archive: the decoded zip and its folder are deleted.
+    f.app.handle_event(plain(KeyCode::Tab));
+    f.app.left.files.home();
+    f.app.handle_event(plain(KeyCode::Enter));
+    assert!(f.app.left.files.is_local());
+    assert_eq!(f.app.left.files.current_name().as_deref(), Some("alpha.zipx"));
+    assert!(!copies[0].exists(), "decoded zip left after leaving the archive");
+    assert!(!copies[0].parent().unwrap().exists(), "decoded folder left");
+    assert!(f.app.encoded.decoded_files().is_empty());
+    // The saved archive is still complete.
+    let decoded = decode_bytes(&f, &key_file, None, &zipx);
+    let has = |name: &[u8]| decoded.windows(name.len()).any(|w| w == name);
+    assert!(has(b"gamma.txt") && has(b"alpha.txt"), "zip members missing after leaving");
+    // Opening it again works (a fresh copy).
+    f.app.handle_event(plain(KeyCode::Enter));
+    assert!(f.app.left.files.entries.iter().any(|e| e.name == "gamma.txt"));
+}

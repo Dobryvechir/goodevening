@@ -328,6 +328,16 @@ pub fn enter(app: &mut App, in_place: bool) {
         return;
     }
     let Some(path) = app.active().files.current_path() else { return };
+    // An encoded file: open its decoded copy instead (an archive panel or
+    // the system's default program).
+    match crate::encoded::decode_for_open(app, &path) {
+        crate::encoded::Decoded::NotEncoded => {}
+        crate::encoded::Decoded::Failed => return,
+        crate::encoded::Decoded::Ready(decoded) => {
+            open_decoded(app, &decoded, &e.name);
+            return;
+        }
+    }
     if open_as_panel(app, &path) {
         return;
     }
@@ -352,14 +362,35 @@ pub fn enter(app: &mut App, in_place: bool) {
     }
 }
 
+/// Enter on the encoded file `encoded_name`, after decoding it into `decoded`.
+/// The archive panel remembers `encoded_name`, so leaving it puts the cursor
+/// back on the encoded file.
+fn open_decoded(app: &mut App, decoded: &Path, encoded_name: &str) {
+    if open_as_panel_named(app, decoded, encoded_name.to_string()) {
+        return;
+    }
+    // Not an archive: the system's default program for the original extension.
+    match crate::exec::open_with_system(app, decoded) {
+        // It starts asynchronously: give it time to open the copy before
+        // gm tries to delete it.
+        Ok(()) => crate::encoded::opened_externally(app, decoded),
+        Err(err) => gm_ui::message::error(&mut app.ui, msg(MsgId::MCannotExecute), &format!("{}\n{err}", decoded.display())),
+    }
+}
+
 /// Asks the modules to open a file as a panel (archives). Returns true if one did.
 pub fn open_as_panel(app: &mut App, path: &Path) -> bool {
+    let name = path.file_name().map(|n| n.to_string_lossy().into_owned()).unwrap_or_default();
+    open_as_panel_named(app, path, name)
+}
+
+/// `open_as_panel`, with `name` as the panel's name for the file.
+fn open_as_panel_named(app: &mut App, path: &Path, name: String) -> bool {
     let mut head = vec![0u8; 512];
     let n = std::fs::File::open(path).and_then(|mut f| std::io::Read::read(&mut f, &mut head)).unwrap_or(0);
     head.truncate(n);
     for m in &app.modules {
         if let Some(p) = m.open_file(path, &head) {
-            let name = path.file_name().map(|n| n.to_string_lossy().into_owned()).unwrap_or_default();
             app.active().files.push_provider(p, name);
             return true;
         }
@@ -406,6 +437,22 @@ fn view_or_edit(app: &mut App, edit: bool, alt: bool) {
             crate::fileops::folder_size(app, &path);
         }
         return;
+    }
+    // F3/F4 on an encoded file: view or edit its decoded copy; saving it
+    // encodes the original again.
+    if !alt {
+        match crate::encoded::decode_for_open(app, &path) {
+            crate::encoded::Decoded::NotEncoded => {}
+            crate::encoded::Decoded::Failed => return,
+            crate::encoded::Decoded::Ready(decoded) => {
+                if edit {
+                    app.open_editor(&decoded, None)
+                } else {
+                    app.open_viewer(&decoded)
+                }
+                return;
+            }
+        }
     }
     // External viewer/editor from file associations (Alt+F3/Alt+F4 use the "alt" commands).
     let cmd = find_association(app, &e.name).map(|a| match (edit, alt) {

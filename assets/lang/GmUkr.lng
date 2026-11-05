@@ -4534,3 +4534,29 @@
 "Термінал з&верху"
 //[MExecTermDisconnect]
 "&Від'єднати інший термінал"
+//[MMenuEncodedArchives]
+"Закодовані архі&ви"
+//[MEncArcTitle]
+"Закодовані архіви"
+//[MEncArcAddNew]
+"&Додати нову конфігурацію…"
+//[MEncArcNewExt]
+"&Нове розширення (до 7 символів):"
+//[MEncArcOrigExt]
+"&Оригінальне розширення (до 7 символів):"
+//[MEncArcKeyFile]
+"Файл &ключа:"
+//[MEncArcPasswordProtected]
+"Захищено &паролем"
+//[MEncArcBadExtension]
+"Нове розширення повинно мати від 1 до 7 символів, а оригінальне — до 7 символів, без \"/\" і \"\\\""
+//[MEncArcDuplicate]
+"Це нове розширення вже налаштовано"
+//[MEncArcNoKeyFile]
+"Файл ключа не знайдено"
+//[MEncArcPasswordFor]
+"Пароль для"
+//[MEncArcCannotDecode]
+"Не вдалося декодувати файл"
+//[MEncArcCannotEncode]
+"Не вдалося закодувати файл назад"

@@ -3,7 +3,9 @@
 #![forbid(unsafe_code)]
 
 pub mod app;
+pub mod codec;
 pub mod commands;
+pub mod encoded;
 pub mod exec;
 pub mod fileops;
 pub mod keymap;

@@ -4534,3 +4534,29 @@
 "Terminale in &alto"
 //[MExecTermDisconnect]
 "Scollega l'altro &terminale"
+//[MMenuEncodedArchives]
+"Archi&vi codificati"
+//[MEncArcTitle]
+"Archivi codificati"
+//[MEncArcAddNew]
+"&Aggiungi nuova configurazione…"
+//[MEncArcNewExt]
+"&Nuova estensione (fino a 7 caratteri):"
+//[MEncArcOrigExt]
+"Estensione &originale (fino a 7 caratteri):"
+//[MEncArcKeyFile]
+"File &chiave:"
+//[MEncArcPasswordProtected]
+"Protetto da &password"
+//[MEncArcBadExtension]
+"La nuova estensione deve avere da 1 a 7 caratteri e quella originale fino a 7 caratteri, senza \"/\" e \"\\\""
+//[MEncArcDuplicate]
+"Questa nuova estensione è già configurata"
+//[MEncArcNoKeyFile]
+"File chiave non trovato"
+//[MEncArcPasswordFor]
+"Password per"
+//[MEncArcCannotDecode]
+"Impossibile decodificare il file"
+//[MEncArcCannotEncode]
+"Impossibile ricodificare il file"

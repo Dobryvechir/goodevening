@@ -4534,3 +4534,29 @@
 "Terminal na &górze"
 //[MExecTermDisconnect]
 "&Odłącz inny terminal"
+//[MMenuEncodedArchives]
+"Zakodowane archi&wa"
+//[MEncArcTitle]
+"Zakodowane archiwa"
+//[MEncArcAddNew]
+"&Dodaj nową konfigurację…"
+//[MEncArcNewExt]
+"&Nowe rozszerzenie (do 7 znaków):"
+//[MEncArcOrigExt]
+"&Oryginalne rozszerzenie (do 7 znaków):"
+//[MEncArcKeyFile]
+"Plik &klucza:"
+//[MEncArcPasswordProtected]
+"Chronione &hasłem"
+//[MEncArcBadExtension]
+"Nowe rozszerzenie musi mieć od 1 do 7 znaków, a oryginalne do 7 znaków, bez \"/\" i \"\\\""
+//[MEncArcDuplicate]
+"To nowe rozszerzenie jest już skonfigurowane"
+//[MEncArcNoKeyFile]
+"Nie znaleziono pliku klucza"
+//[MEncArcPasswordFor]
+"Hasło do"
+//[MEncArcCannotDecode]
+"Nie można zdekodować pliku"
+//[MEncArcCannotEncode]
+"Nie można ponownie zakodować pliku"

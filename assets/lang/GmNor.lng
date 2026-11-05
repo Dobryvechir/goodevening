@@ -4534,3 +4534,29 @@
 "Terminal &øverst"
 //[MExecTermDisconnect]
 "&Koble fra annen terminal"
+//[MMenuEncodedArchives]
+"Kodede arki&ver"
+//[MEncArcTitle]
+"Kodede arkiver"
+//[MEncArcAddNew]
+"&Legg til ny konfigurasjon…"
+//[MEncArcNewExt]
+"&Ny filtype (opptil 7 tegn):"
+//[MEncArcOrigExt]
+"&Opprinnelig filtype (opptil 7 tegn):"
+//[MEncArcKeyFile]
+"&Nøkkelfil:"
+//[MEncArcPasswordProtected]
+"&Passordbeskyttet"
+//[MEncArcBadExtension]
+"Den nye filtypen må ha 1 til 7 tegn og den opprinnelige opptil 7 tegn, uten \"/\" og \"\\\""
+//[MEncArcDuplicate]
+"Denne nye filtypen er allerede konfigurert"
+//[MEncArcNoKeyFile]
+"Fant ikke nøkkelfilen"
+//[MEncArcPasswordFor]
+"Passord for"
+//[MEncArcCannotDecode]
+"Kan ikke dekode filen"
+//[MEncArcCannotEncode]
+"Kan ikke kode filen tilbake"

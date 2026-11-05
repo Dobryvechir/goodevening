@@ -4534,3 +4534,29 @@
 "Тэрмінал зв&ерху"
 //[MExecTermDisconnect]
 "&Адлучыць іншы тэрмінал"
+//[MMenuEncodedArchives]
+"Закадаваныя архі&вы"
+//[MEncArcTitle]
+"Закадаваныя архівы"
+//[MEncArcAddNew]
+"&Дадаць новую канфігурацыю…"
+//[MEncArcNewExt]
+"&Новае пашырэнне (да 7 сімвалаў):"
+//[MEncArcOrigExt]
+"&Арыгінальнае пашырэнне (да 7 сімвалаў):"
+//[MEncArcKeyFile]
+"Файл &ключа:"
+//[MEncArcPasswordProtected]
+"Абаронена &паролем"
+//[MEncArcBadExtension]
+"Новае пашырэнне павінна мець ад 1 да 7 сімвалаў, а арыгінальнае — да 7 сімвалаў, без \"/\" і \"\\\""
+//[MEncArcDuplicate]
+"Гэта новае пашырэнне ўжо наладжана"
+//[MEncArcNoKeyFile]
+"Файл ключа не знойдзены"
+//[MEncArcPasswordFor]
+"Пароль для"
+//[MEncArcCannotDecode]
+"Не ўдалося дэкадаваць файл"
+//[MEncArcCannotEncode]
+"Не ўдалося закадаваць файл назад"

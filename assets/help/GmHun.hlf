@@ -1444,6 +1444,9 @@ pedig szerkeszthetjük a fájlok társításait.
                       ^<wrap>A ~Szűrők menü~@FiltersMenu@ témakör
 részletezi a lehetőségeit.
 
+ #Kódolt archívumok#   A ~kódolt archívumok~@EncodedArchives@ listája;
+                      #Ins# hozzáad, #Enter# módosít, #Del# töröl.
+
  #Plugin parancsok#     A #plugin parancsok# listája.
 
  #Képernyők#            A megnyitott ~képernyők listája~@ScrSwitch@.
@@ -4078,6 +4081,29 @@ csoportra nem.
 
  The #System properties# button invoke the system properties dialog for
 selected objects.
+
+
+@EncodedArchives
+$ #Kódolt archívumok#
+ #F9# → #Parancsok# → #Kódolt archívumok# megmutatja a beállított kódolt
+archívumokat. Minden konfigurációnak van #új kiterjesztése# (legfeljebb 7
+karakter, pont nélkül, pl. #zipx#), #eredeti kiterjesztése# (legfeljebb 7
+karakter, pl. #zip#), #kulcsfájlja# (a #*#, #+# és #^# műveletek
+hexadecimális kódokkal, mint a #gm --e# esetén; a relatív útvonal a
+beállítások mappájából számít) és #Jelszóval védett# jelzője (mint a
+#gm --pe# és #gm --pd#). A konfigurációk azonnal a #settings.toml#
+fájlba kerülnek.
+
+ Az #F3#, #F4# és #Enter# egy pontosan #.#<új kiterjesztés> végű fájlon
+dekódolja azt (mint a #gm --d# vagy #gm --pd#) egy saját ideiglenes
+mappába <név>#.#<eredeti kiterjesztés> néven, és ezt a másolatot nyitja
+meg; az #Enter# az archívumot panelként nyitja meg. A jelszót fájlonként
+csak egyszer kérdezi, és csak a memóriában tartja.
+
+ Valahányszor a dekódolt másolat mentésre kerül (a szerkesztőben vagy az
+archívum panel módosításai után), újra kódolva felülírja az eredetit
+(mint a #gm --e# vagy #gm --pe# ugyanazzal a jelszóval). A dekódolt
+másolatok kilépéskor törlődnek.
 
 
 @FolderShortcuts

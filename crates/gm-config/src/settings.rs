@@ -19,6 +19,8 @@ pub struct Settings {
     /// Mask groups usable as `<name>` in masks.
     pub mask_groups: BTreeMap<String, String>,
     pub associations: Vec<Association>,
+    /// F9 → Commands → Encoded archives.
+    pub encoded_archives: Vec<EncodedArchive>,
     pub highlight: Vec<HighlightRule>,
     /// Palette overrides: `"Panel.Text" = "LightCyan on Blue"`.
     pub colors: BTreeMap<String, String>,
@@ -159,6 +161,29 @@ pub struct Association {
     pub alt_edit: String,
 }
 
+/// Encoded archive configuration (F9 → Commands → Encoded archives): files
+/// named `*.<newExtension>` are decoded (`gm --d`, or `gm --pd` with a
+/// password) into `*.<originalExtension>` when opened with F3, F4 or Enter,
+/// and encoded back (`gm --e` / `gm --pe`) when the decoded copy is saved.
+#[derive(Clone, Debug, Serialize, Deserialize, PartialEq, Default)]
+#[serde(default, rename_all = "camelCase")]
+pub struct EncodedArchive {
+    /// Extension of the encoded files, without the dot (up to 7 characters).
+    pub new_extension: String,
+    /// Extension of the decoded file, without the dot (up to 7 characters).
+    pub original_extension: String,
+    /// Ask for a password that unmasks the key file (`--pd` / `--pe`).
+    pub password_protected: bool,
+    /// The key file with the operations; relative paths are taken from the
+    /// settings folder.
+    pub key_file: String,
+}
+
+impl EncodedArchive {
+    /// Maximum length of `new_extension` / `original_extension`.
+    pub const MAX_EXTENSION: usize = 7;
+}
+
 /// File highlighting rule (F9 → Options → Files highlighting).
 #[derive(Clone, Debug, Serialize, Deserialize, PartialEq, Default)]
 #[serde(default)]
@@ -190,6 +215,7 @@ impl Default for Settings {
             editor: EditorSettings::default(),
             mask_groups: gm_default_groups(),
             associations: Vec::new(),
+            encoded_archives: Vec::new(),
             highlight: default_highlight(),
             colors: BTreeMap::new(),
         }
@@ -429,5 +455,23 @@ mod tests {
         assert!(!s.panels.show_hidden);
         assert!(s.flatten().iter().any(|(k, _)| k == "viewer.wrap"));
         assert!(s.set_flat("editor.tab_size", "abc").is_err());
+    }
+
+    #[test]
+    fn encoded_archives_roundtrip() {
+        let mut s = Settings::default();
+        s.encoded_archives.push(EncodedArchive {
+            new_extension: "zipx".into(),
+            original_extension: "zip".into(),
+            password_protected: true,
+            key_file: "key.txt".into(),
+        });
+        let text = toml::to_string_pretty(&s).unwrap();
+        assert!(text.contains("[[encoded_archives]]"), "{text}");
+        assert!(text.contains("newExtension = \"zipx\""), "{text}");
+        assert!(text.contains("originalExtension = \"zip\""), "{text}");
+        assert!(text.contains("passwordProtected = true"), "{text}");
+        let back: Settings = toml::from_str(&text).unwrap();
+        assert_eq!(back, s);
     }
 }

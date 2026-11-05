@@ -85,6 +85,7 @@ pub fn bar(app: &App) -> MenuBar {
         item(app, MsgId::MMenuFolderShortcuts, Command::ShortcutsMenu),
         item(app, MsgId::MMenuFilter, Command::Filter),
         MenuItem::separator(),
+        MenuItem::new(msg(MsgId::MMenuEncodedArchives)),
         MenuItem::with_hint(msg(MsgId::MMenuModuleCommands), "F11"),
         item(app, MsgId::MMenuWindowsList, Command::Screens),
         MenuItem::new(msg(MsgId::MMenuProcessList)),
@@ -345,9 +346,10 @@ pub fn main_menu(app: &mut App) {
             14 => crate::options::associations(app),
             15 => shortcuts_menu(app),
             16 => crate::commands::run(app, Command::Filter),
-            18 => module_commands(app),
-            19 => screens(app),
-            20 => crate::exec::execute_line(app, "proc:"),
+            18 => crate::encoded::configure(app),
+            19 => module_commands(app),
+            20 => screens(app),
+            21 => crate::exec::execute_line(app, "proc:"),
             _ => {}
         },
         3 => match it {

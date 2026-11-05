@@ -137,6 +137,10 @@ pub trait VfsProvider: Send {
     fn local_dir(&self) -> Option<PathBuf> {
         None
     }
+    /// The file on disk this provider shows the contents of (an archive).
+    fn source_file(&self) -> Option<PathBuf> {
+        None
+    }
     /// Short format id ("zip", "tmp", "proc") for the panel title prefix.
     fn format(&self) -> &str {
         ""

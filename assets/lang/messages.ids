@@ -2266,3 +2266,16 @@ MExecTermRight
 MExecTermBottom
 MExecTermTop
 MExecTermDisconnect
+MMenuEncodedArchives
+MEncArcTitle
+MEncArcAddNew
+MEncArcNewExt
+MEncArcOrigExt
+MEncArcKeyFile
+MEncArcPasswordProtected
+MEncArcBadExtension
+MEncArcDuplicate
+MEncArcNoKeyFile
+MEncArcPasswordFor
+MEncArcCannotDecode
+MEncArcCannotEncode

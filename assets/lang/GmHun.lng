@@ -4534,3 +4534,29 @@
 "Terminál &felül"
 //[MExecTermDisconnect]
 "Másik terminál &leválasztása"
+//[MMenuEncodedArchives]
+"Kódolt archí&vumok"
+//[MEncArcTitle]
+"Kódolt archívumok"
+//[MEncArcAddNew]
+"Új konfiguráció &hozzáadása…"
+//[MEncArcNewExt]
+"Ú&j kiterjesztés (legfeljebb 7 karakter):"
+//[MEncArcOrigExt]
+"&Eredeti kiterjesztés (legfeljebb 7 karakter):"
+//[MEncArcKeyFile]
+"&Kulcsfájl:"
+//[MEncArcPasswordProtected]
+"&Jelszóval védett"
+//[MEncArcBadExtension]
+"Az új kiterjesztés 1–7 karakteres, az eredeti legfeljebb 7 karakteres lehet, \"/\" és \"\\\" nélkül"
+//[MEncArcDuplicate]
+"Ez az új kiterjesztés már be van állítva"
+//[MEncArcNoKeyFile]
+"A kulcsfájl nem található"
+//[MEncArcPasswordFor]
+"Jelszó ehhez:"
+//[MEncArcCannotDecode]
+"A fájl nem dekódolható"
+//[MEncArcCannotEncode]
+"A fájl nem kódolható vissza"

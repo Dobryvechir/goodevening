@@ -4534,3 +4534,29 @@
 "Terminalas &viršuje"
 //[MExecTermDisconnect]
 "Atjungti kitą &terminalą"
+//[MMenuEncodedArchives]
+"Užkoduoti archy&vai"
+//[MEncArcTitle]
+"Užkoduoti archyvai"
+//[MEncArcAddNew]
+"&Pridėti naują konfigūraciją…"
+//[MEncArcNewExt]
+"&Naujas plėtinys (iki 7 simbolių):"
+//[MEncArcOrigExt]
+"&Originalus plėtinys (iki 7 simbolių):"
+//[MEncArcKeyFile]
+"&Rakto failas:"
+//[MEncArcPasswordProtected]
+"Apsaugota &slaptažodžiu"
+//[MEncArcBadExtension]
+"Naujas plėtinys turi turėti nuo 1 iki 7 simbolių, o originalus – iki 7 simbolių, be \"/\" ir \"\\\""
+//[MEncArcDuplicate]
+"Šis naujas plėtinys jau sukonfigūruotas"
+//[MEncArcNoKeyFile]
+"Rakto failas nerastas"
+//[MEncArcPasswordFor]
+"Slaptažodis failui"
+//[MEncArcCannotDecode]
+"Nepavyko iškoduoti failo"
+//[MEncArcCannotEncode]
+"Nepavyko vėl užkoduoti failo"

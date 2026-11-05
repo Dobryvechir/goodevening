@@ -321,6 +321,10 @@ impl VfsProvider for ArchiveProvider {
         format!("{}:{}/{}", self.kind.name(), self.file.display(), self.cur)
     }
 
+    fn source_file(&self) -> Option<PathBuf> {
+        Some(self.file.clone())
+    }
+
     fn current_dir(&self) -> String {
         format!("/{}", self.cur)
     }
