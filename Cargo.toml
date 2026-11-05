@@ -25,6 +25,7 @@ members = [
     "crates/modules/mod-editor-tools",
     "crates/modules/mod-panel-tools",
     "crates/modules/mod-shell-menu",
+    "crates/modules/mod-ssh-panel",
     "tools/lng-convert",
     "tools/hlf-convert",
     "tools/palette-convert",
@@ -63,6 +64,7 @@ mod-cmd-prefixes = { path = "crates/modules/mod-cmd-prefixes" }
 mod-editor-tools = { path = "crates/modules/mod-editor-tools" }
 mod-panel-tools = { path = "crates/modules/mod-panel-tools" }
 mod-shell-menu = { path = "crates/modules/mod-shell-menu" }
+mod-ssh-panel = { path = "crates/modules/mod-ssh-panel" }
 
 crossterm = "0.28"
 ratatui = { version = "0.29", default-features = false, features = ["crossterm"] }
@@ -96,6 +98,11 @@ tempfile = "3"
 windows-sys = "0.59"
 rustix = { version = "0.38", features = ["fs", "process"] }
 log = "0.4"
+tokio = { version = "1", features = ["rt-multi-thread", "net", "time", "io-util", "macros", "sync"] }
+# SSH + SFTP panel: pure Rust, "ring" crypto (no CMake/NASM needed).
+russh = { version = "0.65", default-features = false, features = ["ring", "rsa", "flate2"] }
+russh-sftp = "3"
+data-encoding = "2"
 
 [profile.release]
 lto = "thin"

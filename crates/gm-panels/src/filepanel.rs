@@ -45,6 +45,9 @@ pub struct FilePanel {
     pub fast_find: Option<String>,
     prev_selection: Vec<String>,
     pub error: Option<String>,
+    /// `error` was set by the last listing of a remote provider and has not
+    /// been reported in a message box yet.
+    fresh_error: bool,
     pub free: Option<(u64, u64)>,
     pub(crate) geom: Geometry,
     /// Archive names of the provider stack, for titles.
@@ -69,6 +72,7 @@ impl FilePanel {
             fast_find: None,
             prev_selection: Vec::new(),
             error: None,
+            fresh_error: false,
             free: None,
             geom: Geometry::default(),
             stack_names: Vec::new(),
@@ -172,6 +176,7 @@ impl FilePanel {
             }
             Err(e) => {
                 self.error = Some(e.to_string());
+                self.fresh_error = self.provider().can_execute();
                 Vec::new()
             }
         };
@@ -204,6 +209,14 @@ impl FilePanel {
         if self.cursor >= self.entries.len() {
             self.cursor = self.entries.len().saturating_sub(1);
         }
+    }
+
+    /// The listing error of a remote provider, once (for a message box).
+    pub fn take_fresh_error(&mut self) -> Option<String> {
+        if !std::mem::take(&mut self.fresh_error) {
+            return None;
+        }
+        self.error.clone()
     }
 
     pub fn current(&self) -> Option<&Entry> {

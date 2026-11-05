@@ -80,6 +80,9 @@ pub struct App {
     /// Last, so it is dropped after the windows and panels that use them:
     /// changes are encoded back and the copies deleted.
     pub encoded: crate::encoded::Sessions,
+    /// Local copies of remote (SFTP) files opened with F3/F4; dropped last
+    /// for the same reason.
+    pub remote: crate::remote::RemoteFiles,
 }
 
 fn panel_labels() -> KeyBarLabels {
@@ -229,6 +232,7 @@ impl App {
             labels: panel_labels(),
             cmd_rect: Rect::default(),
             encoded: Default::default(),
+            remote: Default::default(),
         };
         // A panel can only be a tree/info/quick view if the other one is a file list.
         if app.left.kind != PanelKind::Files && app.right.kind != PanelKind::Files {
@@ -382,6 +386,8 @@ impl App {
         // programs have released.
         crate::encoded::sync(self);
         crate::encoded::release_unused(self);
+        crate::remote::sync(self);
+        crate::remote::release_unused(self);
     }
 
     pub fn render(&mut self) -> std::io::Result<()> {
@@ -484,6 +490,21 @@ impl App {
         // shown (window closed, archive left) are deleted.
         crate::encoded::sync(self);
         crate::encoded::release_unused(self);
+        // Local copies of remote files: saves are uploaded, closed ones deleted.
+        crate::remote::sync(self);
+        crate::remote::release_unused(self);
+        // Errors of remote panels (lost connection…) pop up in a red box.
+        self.report_panel_errors();
+    }
+
+    fn report_panel_errors(&mut self) {
+        for left in [true, false] {
+            let slot = if left { &mut self.left } else { &mut self.right };
+            if let Some(e) = slot.files.take_fresh_error() {
+                let title = slot.files.provider().title();
+                gm_ui::message::error(&mut self.ui, &title, &e);
+            }
+        }
     }
 
     fn dispatch_event(&mut self, ev: Event) {

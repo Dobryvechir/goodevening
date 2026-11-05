@@ -313,6 +313,12 @@ pub fn enter(app: &mut App, in_place: bool) {
     }
     // Inside a provider without real files: view the member.
     if !app.active().files.is_local() && app.active().files.current_path().is_none() {
+        // A remote shell (SSH): run the file there.
+        let line = app.active().files.provider().run_line(&e.name);
+        if let Some(line) = line {
+            crate::exec::execute_line(app, &line);
+            return;
+        }
         if let Some(t) = app.active().files.provider_mut().describe(&e.name) {
             app.view_text(&e.name, t.into_bytes());
             return;
@@ -404,6 +410,13 @@ fn view_or_edit(app: &mut App, edit: bool, alt: bool) {
         return;
     }
     if !app.active().files.is_local() && app.active().files.current_path().is_none() {
+        // Remote files (SFTP): a local copy, uploaded back when the editor saves it.
+        if !e.is_dir
+            && let Some(f) = app.active().files.provider_mut().remote_file(&e.name)
+        {
+            crate::remote::open(app, f, edit);
+            return;
+        }
         // Provider items: describe() text, or the member's content.
         if let Some(t) = app.active().files.provider_mut().describe(&e.name) {
             app.view_text(&e.name, t.into_bytes());

@@ -416,6 +416,7 @@ Each module is a crate behind a Cargo feature of `gm-app` (all on by default):
 | `temp_panel` | tmppanel | temporary panel (`tmp:`), Find File → Panel |
 | `process_panel` | proclist | process list (`proc:`), F8 terminates, F3 details |
 | `network_panel` | network | network drives/mounts (`net:`, drive menu) |
+| `ssh_panel` | NetBox | SSH + SFTP: saved connections in the drive menu (`ssh:`), see below |
 | `compare` | compare | compare folders (selects differing files) |
 | `cmd_prefixes` | farcmds | `view:` `edit:` `goto:` `clip:` `run:` `whereis:` `link:` |
 | `editor_tools` | editcase, brackets, autowrap, align, drawline | change case, matching bracket, wrap, align, frame |
@@ -423,6 +424,32 @@ Each module is a crate behind a Cargo feature of `gm-app` (all on by default):
 | `shell_menu` | emenu | open with the system handler; Properties on Windows |
 
 Build without modules: `cargo build -p gm-app --no-default-features`.
+
+#### SSH + SFTP
+
+Alt+F1/Alt+F2 → **SSH + SFTP** lists the saved connections (stored in
+`ssh.toml` in the gm profile): Enter connects, Ins adds, F4 edits, Del
+deletes. A connection has a *machine name*
+(`[user@]host[:port][/remote/folder]`, or `host:folder` relative to the
+remote home), an optional *user* and an optional *password*. The password is
+stored base64-encoded, which is not encryption; leave it empty to use keys.
+
+Connecting follows the rules of the `ssh` program: `~/.ssh/config` (`Host`,
+`HostName`, `User`, `Port`, `IdentityFile`), the local user name when no user
+is given, `known_hosts` (an unknown host is confirmed and added, a changed
+host key refuses the connection). With no password set, the ssh-agent
+(OpenSSH agent or Pageant on Windows) and the key files in `~/.ssh` are tried.
+If a key file is encrypted, gm asks for its passphrase. If nothing works, or
+the password is wrong, a password dialog opens.
+
+When connected, the panel works like a local one: F5/F6 copy and move through
+SFTP (also between two remote panels), Shift+F6 renames, F7/F8 create and
+delete. F3/F4 download the file to a private temporary folder; each save in
+the editor uploads it again. Command lines run on the remote machine in the
+panel's folder, in a pseudo-terminal (like `ssh -t host 'cd folder && command'`).
+`cd` changes the panel's folder. Enter on a file runs it remotely. Errors are
+shown in a red box. `ssh:[user@]host[/folder]` on the command line connects
+directly.
 
 ## Not included (by design)
 

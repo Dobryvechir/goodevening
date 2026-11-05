@@ -163,6 +163,11 @@ pub fn execute_line(app: &mut App, line: &str) {
             }
         }
     }
+    // A remote panel (SSH): commands run on the remote machine.
+    if app.active().files.provider().can_execute() {
+        run_remote(app, line);
+        return;
+    }
     // Internal commands.
     let (word, rest) = gm_platform::shell::split_program(line);
     let w = word.to_lowercase();
@@ -267,6 +272,40 @@ pub fn run_external(app: &mut App, line: &str) {
     let _ = app.ui.term.resume();
     if let Err(e) = r {
         gm_ui::message::error(&mut app.ui, msg(MsgId::MError), &format!("{}\n{line}\n{e}", msg(MsgId::MCannotExecute)));
+    }
+    app.refresh_panels();
+}
+
+/// Runs a command line on the machine of the active remote panel (SSH),
+/// in the panel's folder. `cd` changes the panel's folder instead.
+pub fn run_remote(app: &mut App, line: &str) {
+    let (word, rest) = gm_platform::shell::split_program(line);
+    if word == "cd" && !rest.contains([';', '&', '|', '`', '$', '>', '<']) {
+        let arg = rest.trim();
+        let unq = |q: char| arg.strip_prefix(q).and_then(|a| a.strip_suffix(q));
+        let arg = unq('"').or_else(|| unq('\'')).unwrap_or(arg);
+        let arg = if arg.is_empty() { "~" } else { arg };
+        let r = app.active().files.cd(arg);
+        if let Err(e) = r {
+            let title = app.active().files.provider().title();
+            gm_ui::message::error(&mut app.ui, &title, &format!("{arg}\n{e}"));
+        }
+        app.dir_changed();
+        return;
+    }
+    let prompt = app.active().files.display_dir();
+    if app.ui.term.suspend().is_err() {
+        return;
+    }
+    let mut out = std::io::stdout();
+    let _ = writeln!(out, "{prompt}>{line}");
+    let _ = out.flush();
+    let r = app.active().files.provider_mut().execute(line);
+    let _ = out.flush();
+    let _ = app.ui.term.resume();
+    if let Err(e) = r {
+        let title = app.active().files.provider().title();
+        gm_ui::message::error(&mut app.ui, &title, &format!("{}\n{line}\n{e}", msg(MsgId::MCannotExecute)));
     }
     app.refresh_panels();
 }

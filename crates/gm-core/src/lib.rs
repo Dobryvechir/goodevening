@@ -13,6 +13,7 @@ pub mod menus;
 pub mod module;
 pub mod options;
 pub mod queue;
+pub mod remote;
 pub mod usermenu;
 
 pub use app::{App, DbHistory};

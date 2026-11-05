@@ -249,13 +249,34 @@ pub fn copy_move(app: &mut App, mv: bool, in_place: bool) {
     let confirm_interrupt = app.settings.confirm.interrupt;
     let title = if mv { plain(MsgId::MMoveDlgTitle) } else { plain(MsgId::MCopyDlgTitle) };
 
+    // The destination is the passive panel's provider (archive, temporary
+    // panel, remote machine…) rather than a local folder.
+    let to_provider = !in_place && dest_s == app.passive().files.display_dir() && app.passive().files.local_dir().is_none();
+
     match (src_local, dst_local) {
-        (Some(src_dir), _) if !in_place && dest_s == app.passive().files.display_dir() && app.passive().files.local_dir().is_none() => {
-            // Local → provider (add to archive / temp panel).
+        (Some(src_dir), _) if to_provider => {
+            // Local → provider (add to archive / temp panel / upload).
             let paths: Vec<PathBuf> = names.iter().map(|n| src_dir.join(n)).collect();
-            let r = app.passive().files.provider_mut().put_files(&paths, &mut |_, _| true);
-            if let Err(e) = r {
-                gm_ui::message::error(&mut app.ui, &title, &e.to_string());
+            let bg = app.ui.term.last_frame().clone();
+            let r = {
+                let ui = &mut app.ui;
+                let files = if app.active_left { &mut app.right.files } else { &mut app.left.files };
+                files.provider_mut().put_files(&paths, &mut transfer_progress(ui, &bg, &title))
+            };
+            match r {
+                Ok(()) => {
+                    if mv {
+                        let res = {
+                            let mut pui = ProgressUi::new(&mut app.ui, msg(MsgId::MDeletingTitle), msg(MsgId::MDeleting), confirm_interrupt);
+                            gm_fs::delete(&paths, DeleteMode::Permanent, &mut pui)
+                        };
+                        if let Err(e) = res {
+                            gm_ui::message::error(&mut app.ui, &title, &e.to_string());
+                        }
+                    }
+                    app.active().files.clear_selection();
+                }
+                Err(e) => gm_ui::message::error(&mut app.ui, &title, &e.to_string()),
             }
         }
         (Some(src_dir), _) => {
@@ -272,30 +293,59 @@ pub fn copy_move(app: &mut App, mv: bool, in_place: bool) {
                 Err(e) => gm_ui::message::error(&mut app.ui, &title, &e.to_string()),
             }
         }
+        (None, _) if in_place => {
+            // Shift+F6 inside a provider: rename / move there.
+            if !mv {
+                gm_ui::message::error(&mut app.ui, &title, &gm_vfs::unsupported().to_string());
+                return;
+            }
+            let dest = dest_s.trim();
+            for n in &names {
+                let to = if names.len() == 1 { dest.to_string() } else { format!("{}/{n}", dest.trim_end_matches('/')) };
+                if let Err(e) = app.active().files.provider_mut().rename(n, &to) {
+                    gm_ui::message::error(&mut app.ui, &title, &format!("{n}\n{e}"));
+                    break;
+                }
+            }
+            app.active().files.clear_selection();
+        }
+        (None, _) if to_provider => {
+            // Provider → provider (e.g. between two remote machines) through
+            // a temporary local folder.
+            let tmp = std::env::temp_dir().join(format!(
+                "gm-transfer-{}-{}",
+                std::process::id(),
+                SystemTime::now().duration_since(SystemTime::UNIX_EPOCH).map(|d| d.as_nanos()).unwrap_or(0)
+            ));
+            let r = transfer_between_providers(app, &names, &tmp, &title);
+            let _ = std::fs::remove_dir_all(&tmp);
+            match r {
+                Ok(()) => {
+                    if mv && let Err(e) = app.active().files.provider_mut().delete(&names) {
+                        gm_ui::message::error(&mut app.ui, &title, &e.to_string());
+                    }
+                    app.active().files.clear_selection();
+                }
+                Err(e) => gm_ui::message::error(&mut app.ui, &title, &e.to_string()),
+            }
+        }
         (None, _) => {
-            // Provider → local (extract).
+            // Provider → local (extract / download).
             let dp = PathBuf::from(dest_s.trim());
             if let Err(e) = std::fs::create_dir_all(&dp) {
-                gm_ui::message::error(&mut app.ui, &title, &e.to_string());
+                gm_ui::message::error(&mut app.ui, &title, &format!("{}\n{e}", dp.display()));
                 return;
             }
             let bg = app.ui.term.last_frame().clone();
-            let mut count = 0u64;
             let r = {
                 let ui = &mut app.ui;
                 let files = if app.active_left { &mut app.left.files } else { &mut app.right.files };
-                files.provider_mut().get_files(&names, &dp, &mut |n, _| {
-                    count += 1;
-                    if count % 16 == 1 {
-                        draw_box(ui, &bg, &title, &[n.to_string()]);
-                    }
-                    !matches!(ui.poll_key(), Some(k) if k.code == KeyCode::Esc)
-                })
+                files.provider_mut().get_files(&names, &dp, &mut transfer_progress(ui, &bg, &title))
             };
             match r {
                 Ok(()) => {
-                    if mv {
-                        let _ = app.active().files.provider_mut().delete(&names);
+                    if mv && let Err(e) = app.active().files.provider_mut().delete(&names) {
+                        gm_ui::message::error(&mut app.ui, &title, &e.to_string());
                     }
                     app.active().files.clear_selection();
                 }
@@ -308,6 +358,38 @@ pub fn copy_move(app: &mut App, mv: bool, in_place: bool) {
         let n = Path::new(dest_s.trim()).file_name().map(|n| n.to_string_lossy().into_owned()).unwrap_or_default();
         app.active().files.set_cursor_name(&n);
     }
+}
+
+/// Progress of a provider transfer: the current item and its bytes, in a
+/// box redrawn at most every 100 ms. Esc stops the transfer.
+fn transfer_progress<'a>(ui: &'a mut Ui, bg: &'a gm_term::Buffer, title: &'a str) -> impl FnMut(&str, u64) -> bool + 'a {
+    let mut last: Option<Instant> = None;
+    let mut last_name = String::new();
+    move |name, bytes| {
+        if name != last_name || last.is_none_or(|l| l.elapsed().as_millis() >= 100) {
+            last = Some(Instant::now());
+            last_name = name.to_string();
+            let mut lines = vec![gm_text::truncate_left(name, 50)];
+            if bytes > 0 {
+                lines.push(format!("{} {}", draw::group_digits(bytes), msg(MsgId::MQuickViewBytes)));
+            }
+            draw_box(ui, bg, title, &lines);
+            return !matches!(ui.poll_key(), Some(k) if k.code == KeyCode::Esc);
+        }
+        true
+    }
+}
+
+/// Copies `names` from the active panel's provider into the passive one's,
+/// through the local folder `tmp`.
+fn transfer_between_providers(app: &mut App, names: &[String], tmp: &Path, title: &str) -> io::Result<()> {
+    std::fs::create_dir_all(tmp)?;
+    let bg = app.ui.term.last_frame().clone();
+    let ui = &mut app.ui;
+    let (src, dst) = if app.active_left { (&mut app.left.files, &mut app.right.files) } else { (&mut app.right.files, &mut app.left.files) };
+    src.provider_mut().get_files(names, tmp, &mut transfer_progress(ui, &bg, title))?;
+    let paths: Vec<PathBuf> = names.iter().map(|n| tmp.join(n)).collect();
+    dst.provider_mut().put_files(&paths, &mut transfer_progress(ui, &bg, title))
 }
 
 /// F8 / Shift+Del / Alt+Del.

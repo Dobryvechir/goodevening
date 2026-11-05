@@ -178,7 +178,43 @@ pub trait VfsProvider: Send {
     fn real_path(&self, _name: &str) -> Option<PathBuf> {
         None
     }
+    /// Renames (moves) an item inside the provider; `to` is a name in the
+    /// current directory or a provider path.
+    fn rename(&mut self, _from: &str, _to: &str) -> io::Result<()> {
+        Err(unsupported())
+    }
+    /// A file that lives on another machine (SFTP): F3/F4 work on a local
+    /// copy, and the editor's saves are uploaded back.
+    fn remote_file(&mut self, _name: &str) -> Option<Box<dyn RemoteFile>> {
+        None
+    }
+    /// True when command lines typed while this provider is shown run in
+    /// its current directory through [`VfsProvider::execute`] (SSH).
+    fn can_execute(&self) -> bool {
+        false
+    }
+    /// Runs `line` in the provider's current directory, interactively on
+    /// the user screen (the caller has suspended the full-screen UI).
+    fn execute(&mut self, _line: &str) -> io::Result<()> {
+        Err(unsupported())
+    }
+    /// The command line that runs the item `name` (Enter on a file).
+    fn run_line(&self, _name: &str) -> Option<String> {
+        None
+    }
     fn as_any(&mut self) -> &mut dyn Any;
+}
+
+/// A file on another machine, edited through a local copy.
+pub trait RemoteFile: Send {
+    /// Shown in messages and window titles (`user@host:/path/file`).
+    fn label(&self) -> String;
+    /// The file name (for the local copy).
+    fn name(&self) -> String;
+    /// Copies the remote file to the local file `dest`.
+    fn download(&mut self, dest: &Path) -> io::Result<()>;
+    /// Copies the local file `src` over the remote file.
+    fn upload(&mut self, src: &Path) -> io::Result<()>;
 }
 
 pub fn unsupported() -> io::Error {
