@@ -74,6 +74,8 @@ pub struct App {
     /// Server execution mode (`gm --client=<file>`): the queue file that
     /// receives the command lines gm would otherwise run itself.
     pub server_queue: Option<PathBuf>,
+    /// Set while F11 / Shift+F11 runs a program: its output is logged.
+    pub(crate) log_mode: Option<crate::exec::LogMode>,
     labels: KeyBarLabels,
     cmd_rect: Rect,
     /// Decoded copies of encoded files (F9 → Commands → Encoded archives).
@@ -102,7 +104,7 @@ fn panel_labels() -> KeyBarLabels {
         MsgId::MF11,
         MsgId::MF12,
     ]);
-    l.normal[10] = String::new();
+    l.normal[10] = msg(MsgId::MLogKey).to_string();
     l.shift = row([
         MsgId::MShiftF1,
         MsgId::MShiftF2,
@@ -117,6 +119,7 @@ fn panel_labels() -> KeyBarLabels {
         MsgId::MShiftF11,
         MsgId::MShiftF12,
     ]);
+    l.shift[10] = msg(MsgId::MLogQuietKey).to_string();
     l.alt = row([
         MsgId::MAltF1,
         MsgId::MAltF2,
@@ -229,6 +232,7 @@ impl App {
             find_params: gm_search::FindParams::default(),
             pending_messages: Vec::new(),
             server_queue: None,
+            log_mode: None,
             labels: panel_labels(),
             cmd_rect: Rect::default(),
             encoded: Default::default(),
@@ -726,6 +730,14 @@ impl App {
         }
     }
 
+    /// Enter with text in the command line: runs it.
+    pub(crate) fn run_cmdline(&mut self) {
+        let line = self.cmdline.text();
+        self.cmdline.set_text("");
+        self.cmd_hist_pos = None;
+        crate::exec::execute_line(self, &line);
+    }
+
     fn panels_key(&mut self, k: KeyChord) {
         // Fast find (Alt+letters) mode.
         if self.active().kind == PanelKind::Files && self.active().files.fast_find.is_some() {
@@ -765,10 +777,7 @@ impl App {
         // Command-line editing keys.
         match (k.code, k.mods) {
             (KeyCode::Enter, Mods::NONE) if !cmd_empty => {
-                let line = self.cmdline.text();
-                self.cmdline.set_text("");
-                self.cmd_hist_pos = None;
-                crate::exec::execute_line(self, &line);
+                self.run_cmdline();
                 return;
             }
             (KeyCode::Esc, _) if !cmd_empty => {

@@ -57,6 +57,8 @@ pub fn run(app: &mut App, c: Command) {
         ViewHistory => crate::menus::view_history(app),
         FolderHistory => crate::menus::folder_history(app),
         History => crate::menus::command_history(app),
+        Log => crate::exec::enter_logged(app, crate::exec::LogMode::Show),
+        LogQuiet => crate::exec::enter_logged(app, crate::exec::LogMode::Quiet),
         SwitchPanel => {
             let other_kind = app.passive().kind;
             if app.passive().visible && other_kind != PanelKind::Info && other_kind != PanelKind::QuickView {

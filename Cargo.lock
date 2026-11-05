@@ -1299,6 +1299,7 @@ dependencies = [
 name = "gm-platform"
 version = "0.1.0"
 dependencies = [
+ "encoding_rs",
  "gm-text",
  "memmap2",
  "rustix 0.38.44",

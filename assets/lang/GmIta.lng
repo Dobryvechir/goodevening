@@ -4560,3 +4560,9 @@
 "Impossibile decodificare il file"
 //[MEncArcCannotEncode]
 "Impossibile ricodificare il file"
+//[MLogKey]
+"Log"
+//[MLogQuietKey]
+"LogSil"
+//[MLogStarted]
+"The output is logged to"

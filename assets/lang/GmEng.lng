@@ -4560,3 +4560,9 @@
 "Cannot decode the file"
 //[MEncArcCannotEncode]
 "Cannot encode the file back"
+//[MLogKey]
+"Log"
+//[MLogQuietKey]
+"LogSil"
+//[MLogStarted]
+"The output is logged to"

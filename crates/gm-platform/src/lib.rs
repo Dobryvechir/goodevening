@@ -4,6 +4,7 @@
 //! This is the only gm crate allowed to contain `unsafe` code (Win32 calls).
 
 pub mod attrs;
+pub mod capture;
 pub mod drives;
 pub mod shell;
 pub mod users;

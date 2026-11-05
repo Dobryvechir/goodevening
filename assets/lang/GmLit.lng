@@ -4560,3 +4560,9 @@
 "Nepavyko iškoduoti failo"
 //[MEncArcCannotEncode]
 "Nepavyko vėl užkoduoti failo"
+//[MLogKey]
+"Log"
+//[MLogQuietKey]
+"LogSil"
+//[MLogStarted]
+"The output is logged to"

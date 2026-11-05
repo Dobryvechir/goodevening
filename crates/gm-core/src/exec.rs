@@ -271,6 +271,48 @@ pub fn in_dir_line(dir: &Path, line: &str) -> String {
     }
 }
 
+/// How F11 (show and log) / Shift+F11 (log, show only errors) run programs.
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+pub enum LogMode {
+    Show,
+    Quiet,
+}
+
+/// F11 / Shift+F11: the same as Enter (runs the command line, or the item
+/// under the cursor), but a program started by it has its output logged.
+pub fn enter_logged(app: &mut App, mode: LogMode) {
+    app.log_mode = Some(mode);
+    if app.cmdline.is_empty() {
+        crate::commands::enter(app, false);
+    } else {
+        app.run_cmdline();
+    }
+    app.log_mode = None;
+}
+
+/// A new log file in the temporary folder.
+fn log_file_path() -> PathBuf {
+    let stamp = jiff::Zoned::now().strftime("%Y%m%d-%H%M%S").to_string();
+    let dir = std::env::temp_dir();
+    let mut path = dir.join(format!("gm-log-{stamp}.md"));
+    let mut n = 1;
+    while path.exists() {
+        n += 1;
+        path = dir.join(format!("gm-log-{stamp}-{n}.md"));
+    }
+    path
+}
+
+/// Runs `line` with its output logged; tells the user where the log is.
+fn run_logged(line: &str, dir: &Path, prompt: &str, mode: LogMode) -> std::io::Result<()> {
+    let path = log_file_path();
+    let file = std::fs::File::create(&path)?;
+    let mut out = std::io::stdout();
+    let _ = writeln!(out, "{} {}", msg(MsgId::MLogStarted), path.display());
+    let _ = out.flush();
+    gm_platform::capture::run_logged(line, dir, file, prompt, mode == LogMode::Quiet).map(|_| ())
+}
+
 /// Runs a program through the shell on the user screen.
 pub fn run_external(app: &mut App, line: &str) {
     let dir = app.work_dir();
@@ -281,9 +323,13 @@ pub fn run_external(app: &mut App, line: &str) {
         return;
     }
     let mut out = std::io::stdout();
-    let _ = writeln!(out, "{}>{line}", dir.display());
+    let prompt = format!("{}>{line}", dir.display());
+    let _ = writeln!(out, "{prompt}");
     let _ = out.flush();
-    let r = gm_platform::shell::run_in_shell(line, &dir);
+    let r = match app.log_mode.take() {
+        Some(mode) => run_logged(line, &dir, &prompt, mode),
+        None => gm_platform::shell::run_in_shell(line, &dir).map(|_| ()),
+    };
     let _ = out.flush();
     let _ = app.ui.term.resume();
     if let Err(e) = r {

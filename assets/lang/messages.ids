@@ -2279,3 +2279,6 @@ MEncArcNoKeyFile
 MEncArcPasswordFor
 MEncArcCannotDecode
 MEncArcCannotEncode
+MLogKey
+MLogQuietKey
+MLogStarted

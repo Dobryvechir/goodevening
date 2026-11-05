@@ -4560,3 +4560,9 @@
 "Не ўдалося дэкадаваць файл"
 //[MEncArcCannotEncode]
 "Не ўдалося закадаваць файл назад"
+//[MLogKey]
+"Log"
+//[MLogQuietKey]
+"LogSil"
+//[MLogStarted]
+"The output is logged to"

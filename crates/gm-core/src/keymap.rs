@@ -91,6 +91,10 @@ pub enum Command {
     ApplyCommand,
     CompareFolders,
     History,
+    /// F11: like Enter, with the program's output logged to a file.
+    Log,
+    /// Shift+F11: like Log, but only errors are shown on the screen.
+    LogQuiet,
 }
 
 /// Names used in `keymap.toml`.
@@ -170,6 +174,8 @@ pub fn command_names() -> Vec<(String, Command)> {
         ("ApplyCommand", ApplyCommand),
         ("CompareFolders", CompareFolders),
         ("History", History),
+        ("Log", Log),
+        ("LogQuiet", LogQuiet),
     ]
     .into_iter()
     .map(|(n, c)| (n.to_string(), c))
@@ -264,6 +270,8 @@ fn defaults() -> Vec<(&'static str, Command)> {
         ("Shift+F9", SaveSetup),
         ("Ctrl+G", ApplyCommand),
         ("Alt+F9", History),
+        ("F11", Log),
+        ("Shift+F11", LogQuiet),
     ];
     for m in SortMode::ALL {
         let k: &'static str = Box::leak(format!("Ctrl+F{}", m.fkey()).into_boxed_str());
