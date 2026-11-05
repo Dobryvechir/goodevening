@@ -1,9 +1,13 @@
 //! SSH + SFTP panel: Alt+F1/Alt+F2 → "SSH + SFTP" lists the saved
 //! connections (Enter opens, Ins adds, F4 edits, Del deletes). Each has a
 //! machine name (`[user@]host[:port][/remote/folder]`), an optional user
-//! and an optional password.
+//! and an optional password, and optionally an SSH tunnel (jump hosts,
+//! like `ssh -J`) with its own user and password.
 //!
-//! Connecting follows the rules of the `ssh` program: `~/.ssh/config`,
+//! Connecting follows the rules of the `ssh` program: `~/.ssh/config`
+//! (including `ProxyJump`: chains of jump hosts, each resolved by its own
+//! config; the tunnel field replaces it like `-J` does; and `ProxyCommand`:
+//! the connection runs over the stdin/stdout of a local command),
 //! the local user name when none is given, `known_hosts` (an unknown host
 //! is confirmed by the user, a changed key refuses the connection), and
 //! without a password the ssh-agent and the key files in `~/.ssh`. When
@@ -90,7 +94,8 @@ fn connections_menu(ctx: &mut Ctx) {
             .map(|c| {
                 let user = if c.user.is_empty() { String::new() } else { c.user.clone() };
                 let pw = if c.password.is_empty() { "" } else { " ●" };
-                MenuItem::with_hint(c.machine.replace('&', "&&"), format!("{user}{pw}").replace('&', "&&"))
+                let via = if c.tunnel_machine.is_empty() { String::new() } else { format!(" via {}", c.tunnel_machine) };
+                MenuItem::with_hint(c.machine.replace('&', "&&"), format!("{user}{pw}{via}").replace('&', "&&"))
             })
             .collect();
         if !items.is_empty() {
@@ -164,6 +169,14 @@ fn edit_dialog(ui: &mut Ui, init: &SavedConn) -> Option<SavedConn> {
         b.text("&Password (optional; empty: SSH keys, then ask)");
         let pw = b.password(&cur.password);
         b.separator();
+        b.text("&Tunnel, jump hosts like ssh -J: [user@]host[:port],…");
+        b.text("  (empty: ProxyJump of ~/.ssh/config; none: no tunnel)");
+        let tmachine = b.edit(&cur.tunnel_machine, Some("SshTunnelMachine"));
+        b.text("Tunnel u&ser (optional)");
+        let tuser = b.edit(&cur.tunnel_user, Some("SshTunnelUser"));
+        b.text("Tunnel pass&word (optional)");
+        let tpw = b.password(&cur.tunnel_password);
+        b.separator();
         b.ok_cancel();
         let mut d = b.build();
         let cancel = d.items.len() - 1;
@@ -171,9 +184,17 @@ fn edit_dialog(ui: &mut Ui, init: &SavedConn) -> Option<SavedConn> {
         if r == cancel {
             return None;
         }
-        cur = SavedConn { machine: d.text(machine).trim().to_string(), user: d.text(user).trim().to_string(), password: d.text(pw) };
-        match config::parse_machine(&cur.machine) {
-            Ok(_) => return Some(cur),
+        cur = SavedConn {
+            machine: d.text(machine).trim().to_string(),
+            user: d.text(user).trim().to_string(),
+            password: d.text(pw),
+            tunnel_machine: d.text(tmachine).trim().to_string(),
+            tunnel_user: d.text(tuser).trim().to_string(),
+            tunnel_password: d.text(tpw),
+        };
+        let tunnel_ok = config::parse_jumps(&cur.tunnel_machine).map(drop).map_err(|e| format!("Tunnel: {e}"));
+        match config::parse_machine(&cur.machine).map(drop).and(tunnel_ok) {
+            Ok(()) => return Some(cur),
             Err(e) => error(ui, TITLE, &e),
         }
     }
@@ -197,25 +218,64 @@ fn ask_secret(ui: &mut Ui, title: &str, prompt: &str, retry: Option<&str>) -> Op
     Some(d.text(e))
 }
 
-/// Connects, authenticates and shows the remote folder in the active panel.
-/// Returns false if it did not happen (cancelled or failed; the reason was shown).
+/// Connects, authenticates and shows the remote folder in the active panel
+/// (through the jump hosts first, each one inside the previous, when there
+/// are any). Returns false if it did not happen (cancelled or failed; the
+/// reason was shown).
 fn open(ctx: &mut Ctx, c: &SavedConn) -> bool {
-    let target = match config::resolve(c) {
-        Ok(t) => t,
+    let route = match config::route(c) {
+        Ok(r) => r,
         Err(e) => {
             error(ctx.ui, TITLE, &e);
             return false;
         }
     };
+    let Some((last, jumps)) = route.split_last() else { return false };
+    // Each connection keeps a reference to the tunnel it goes through.
+    let mut tunnel: Option<Arc<conn::Tunnel>> = None;
+    for hop in jumps {
+        let Some(p) = login(ctx.ui, &hop.target, &hop.password, tunnel.as_ref()) else { return false };
+        tunnel = Some(p.into_tunnel(hop.target.label()));
+    }
+    let target = last.target.clone();
+    let Some(p) = login(ctx.ui, &target, &last.password, tunnel.as_ref()) else { return false };
+    drop(tunnel);
     let label = target.label();
     let fail = |ui: &mut Ui, what: &str, e: &dyn std::fmt::Display| {
         error(ui, TITLE, &format!("{what} {label}\n{e}"));
         false
     };
-    busy(ctx.ui, format!("Connecting to {label}…"));
-    let mut p = match conn::connect(&target) {
+    busy(ctx.ui, format!("Starting SFTP on {label}…"));
+    let conn = match p.finish(target) {
+        Ok(c) => Arc::new(c),
+        Err(e) => return fail(ctx.ui, "Cannot start SFTP on", &e),
+    };
+    let provider = match provider::SshProvider::new(conn) {
         Ok(p) => p,
-        Err(e) => return fail(ctx.ui, "Cannot connect to", &e),
+        Err(e) => return fail(ctx.ui, "Cannot open the folder on", &e),
+    };
+    ctx.active.push_provider(Box::new(provider), format!("{label}:"));
+    true
+}
+
+/// Connects to `target` (through `tunnel` when given), checks the host key
+/// and authenticates like `ssh`: the password if set, otherwise the agent
+/// and the key files, then the password dialog until it works or is
+/// cancelled. None if it did not happen (the reason was shown).
+fn login(ui: &mut Ui, target: &config::Target, password: &str, tunnel: Option<&Arc<conn::Tunnel>>) -> Option<conn::Pending> {
+    let label = match tunnel {
+        Some(t) => format!("{} (via {})", target.label(), t.label()),
+        None if target.proxy_command.is_some() => format!("{} (via ProxyCommand)", target.label()),
+        None => target.label(),
+    };
+    let fail = |ui: &mut Ui, what: &str, e: &dyn std::fmt::Display| {
+        error(ui, TITLE, &format!("{what} {label}\n{e}"));
+        None
+    };
+    busy(ui, format!("Connecting to {label}…"));
+    let mut p = match conn::connect(target, tunnel) {
+        Ok(p) => p,
+        Err(e) => return fail(ui, "Cannot connect to", &e),
     };
     // An unknown server: ask like ssh does before sending any credentials.
     if let HostKey::Unknown(key) = &p.host_key {
@@ -224,23 +284,23 @@ fn open(ctx: &mut Ctx, c: &SavedConn) -> bool {
             "The authenticity of host '{who}' can't be established.\nKey fingerprint: {}\nAre you sure you want to continue connecting?",
             conn::fingerprint(key)
         );
-        if message(ctx.ui, TITLE, &q, &["Yes", "No"]) != Some(0) {
+        if message(ui, TITLE, &q, &["Yes", "No"]) != Some(0) {
             p.disconnect();
-            return false;
+            return None;
         }
         if let Err(e) = conn::learn_host_key(&target.host, target.port, key) {
-            error(ctx.ui, TITLE, &format!("Cannot add the host to known_hosts\n{e}"));
+            error(ui, TITLE, &format!("Cannot add the host to known_hosts\n{e}"));
         }
     }
     let user = target.user.clone();
-    busy(ctx.ui, format!("Authenticating as {label}…"));
+    busy(ui, format!("Authenticating as {label}…"));
     let mut ok = false;
     let mut retry_text: Option<&str> = None;
-    if !c.password.is_empty() {
-        match p.try_password(&user, &c.password) {
+    if !password.is_empty() {
+        match p.try_password(&user, password) {
             Ok(true) => ok = true,
             Ok(false) => retry_text = Some("Permission denied, please try again."),
-            Err(e) if !p.is_closed() => return fail(ctx.ui, "Cannot log in to", &e),
+            Err(e) if !p.is_closed() => return fail(ui, "Cannot log in to", &e),
             Err(_) => {}
         }
     } else {
@@ -260,12 +320,12 @@ fn open(ctx: &mut Ctx, c: &SavedConn) -> bool {
                     KeyResult::Encrypted => {
                         let prompt = format!("Enter passphrase for key '{}':", f.display());
                         let retry = if wrong { Some("Wrong passphrase, please try again.") } else { None };
-                        match ask_secret(ctx.ui, TITLE, &prompt, retry) {
+                        match ask_secret(ui, TITLE, &prompt, retry) {
                             Some(s) => passphrase = Some(s),
                             None => break,
                         }
                         wrong = true;
-                        busy(ctx.ui, format!("Authenticating as {label}…"));
+                        busy(ui, format!("Authenticating as {label}…"));
                     }
                     KeyResult::Rejected | KeyResult::Missing | KeyResult::Unusable => break,
                 }
@@ -276,35 +336,25 @@ fn open(ctx: &mut Ctx, c: &SavedConn) -> bool {
     while !ok {
         if p.is_closed() {
             // Too many failed attempts close the connection: connect again.
-            busy(ctx.ui, format!("Connecting to {label}…"));
-            p = match conn::connect(&target) {
+            busy(ui, format!("Connecting to {label}…"));
+            p = match conn::connect(target, tunnel) {
                 Ok(p) => p,
-                Err(e) => return fail(ctx.ui, "Cannot connect to", &e),
+                Err(e) => return fail(ui, "Cannot connect to", &e),
             };
         }
-        let Some(pw) = ask_secret(ctx.ui, TITLE, &format!("{label}'s password:"), retry_text) else {
+        let Some(pw) = ask_secret(ui, TITLE, &format!("{}'s password:", target.label()), retry_text) else {
             p.disconnect();
-            return false;
+            return None;
         };
-        busy(ctx.ui, format!("Authenticating as {label}…"));
+        busy(ui, format!("Authenticating as {label}…"));
         match p.try_password(&user, &pw) {
             Ok(true) => ok = true,
             Ok(false) => retry_text = Some("Permission denied, please try again."),
-            Err(e) if !p.is_closed() => return fail(ctx.ui, "Cannot log in to", &e),
+            Err(e) if !p.is_closed() => return fail(ui, "Cannot log in to", &e),
             Err(_) => retry_text = Some("The server closed the connection, please try again."),
         }
     }
-    busy(ctx.ui, format!("Starting SFTP on {label}…"));
-    let conn = match p.finish(target) {
-        Ok(c) => Arc::new(c),
-        Err(e) => return fail(ctx.ui, "Cannot start SFTP on", &e),
-    };
-    let provider = match provider::SshProvider::new(conn) {
-        Ok(p) => p,
-        Err(e) => return fail(ctx.ui, "Cannot open the folder on", &e),
-    };
-    ctx.active.push_provider(Box::new(provider), format!("{label}:"));
-    true
+    Some(p)
 }
 
 /// End-to-end test against a real server. Runs only when `GM_SSH_TEST` is
@@ -319,17 +369,17 @@ mod e2e {
         let Ok(spec) = std::env::var("GM_SSH_TEST") else { return };
         let mut parts = spec.splitn(4, ':');
         let (host, port, user, key) = (parts.next().unwrap(), parts.next().unwrap(), parts.next().unwrap(), parts.next().unwrap());
-        let c = SavedConn { machine: format!("{host}:{port}"), user: user.into(), password: String::new() };
+        let c = SavedConn { machine: format!("{host}:{port}"), user: user.into(), ..Default::default() };
         let t = config::resolve(&c).unwrap();
         assert_eq!((t.host.as_str(), t.port, t.user.as_str()), (host, port.parse().unwrap(), user));
 
-        let mut p = conn::connect(&t).unwrap();
+        let mut p = conn::connect(&t, None).unwrap();
         assert!(!matches!(p.host_key, HostKey::Changed { .. }));
         // A missing key file is skipped; a wrong password is refused.
         assert!(matches!(p.try_key_file(user, std::path::Path::new("Z:/no/such/key"), None), KeyResult::Missing));
         assert!(matches!(p.try_password(user, "wrong"), Ok(false) | Err(_)));
         if p.is_closed() {
-            p = conn::connect(&t).unwrap();
+            p = conn::connect(&t, None).unwrap();
         }
         assert!(matches!(p.try_key_file(user, std::path::Path::new(key), None), KeyResult::Accepted));
         let conn = Arc::new(p.finish(t).unwrap());

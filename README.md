@@ -435,6 +435,40 @@ deletes. A connection has a *machine name*
 remote home), an optional *user* and an optional *password*. The password is
 stored base64-encoded, which is not encryption; leave it empty to use keys.
 
+Jump hosts are fully supported, as with `ProxyJump` / `ssh -J`. Without
+anything set in gm, the `ProxyJump` of the machine in `~/.ssh/config` is
+used: `ProxyJump a,bob@b:2200` (also `ssh://user@host:port`) connects to
+`a`, then to `b` through `a`, then to the machine through `b`. Each jump
+host is resolved by its own `Host` block (`HostName`, `User`, `Port`,
+`IdentityFile`), and the first one also by its own `ProxyJump`, so chains
+defined in the config work. `ProxyJump none` turns it off. A loop in the
+config stops with an error after 16 jump hosts.
+
+`ProxyCommand` is supported too: gm starts the command (through `$SHELL -c
+"exec …"` on Unix, `cmd /c` on Windows) and runs the SSH connection over its
+stdin/stdout, for example `ProxyCommand ssh -W %h:%p bastion` or
+`ProxyCommand nc -X 5 -x socks:1080 %h %p`. The tokens `%h` (host name after
+`HostName`), `%n` (name as typed), `%p`, `%r` (remote user), `%u` (local
+user), `%d` (home folder), `%l` (local machine name) and `%%` are expanded
+(also in `IdentityFile`); `ProxyCommand none` turns it off. The command's
+stderr is shown if the connection fails, and the command is stopped when the
+connection closes. It cannot ask questions (its console is not available while
+gm runs), so it must log in with keys or the agent. As in `ssh`, only the
+first of `ProxyJump` and `ProxyCommand` for a host counts, and a `ProxyCommand`
+of the first jump host is used to reach it.
+
+A saved connection can also set an *SSH tunnel* (stored as
+`tunnel_machine`, `tunnel_user` and `tunnel_password`): the tunnel field
+takes the same value as `ssh -J` (jump hosts separated by commas, or
+`none`) and replaces the `ProxyJump` and `ProxyCommand` from the config
+for the machine. The tunnel user is
+used for jump hosts written without `user@`; the tunnel password is tried
+first on each of them. Every jump host is logged in to with the same rules
+as the machine (`known_hosts`, agent, keys, passphrase and password
+dialogs), and each connection runs inside the previous one (a
+`direct-tcpip` channel), so a machine only has to be reachable from the jump
+host before it.
+
 Connecting follows the rules of the `ssh` program: `~/.ssh/config` (`Host`,
 `HostName`, `User`, `Port`, `IdentityFile`), the local user name when no user
 is given, `known_hosts` (an unknown host is confirmed and added, a changed

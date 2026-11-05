@@ -121,10 +121,111 @@ impl client::Handler for Client {
     }
 }
 
+/// The local command of `ProxyCommand`: the SSH connection runs over its
+/// stdin/stdout. It is killed when the connection is dropped.
+pub struct Proxy {
+    child: Option<tokio::process::Child>,
+    /// The end of what the command wrote to stderr (shown on errors).
+    stderr: Arc<Mutex<Vec<u8>>>,
+}
+
+impl Proxy {
+    /// Starts `command` through the shell, like ssh does: `$SHELL -c "exec …"`
+    /// on Unix, `cmd /c` on Windows. Must run inside the runtime.
+    fn spawn(command: &str) -> io::Result<(Proxy, impl tokio::io::AsyncRead + tokio::io::AsyncWrite + Unpin + Send + 'static)> {
+        #[cfg(windows)]
+        let mut cmd = {
+            let mut c = tokio::process::Command::new(std::env::var_os("ComSpec").unwrap_or_else(|| "cmd.exe".into()));
+            // /S: everything between the outer quotes is the command, as typed.
+            c.raw_arg(format!("/D /S /C \"{command}\""));
+            c
+        };
+        #[cfg(not(windows))]
+        let mut cmd = {
+            let shell = std::env::var_os("SHELL").filter(|s| !s.is_empty()).unwrap_or_else(|| "/bin/sh".into());
+            let mut c = tokio::process::Command::new(shell);
+            c.arg("-c").arg(format!("exec {command}"));
+            c
+        };
+        cmd.stdin(std::process::Stdio::piped()).stdout(std::process::Stdio::piped()).stderr(std::process::Stdio::piped()).kill_on_drop(true);
+        let mut child = cmd.spawn().map_err(|e| err(format!("Cannot start the ProxyCommand\n{command}\n{e}")))?;
+        let (Some(stdin), Some(stdout), Some(mut stderr)) = (child.stdin.take(), child.stdout.take(), child.stderr.take()) else {
+            return Err(err("The ProxyCommand has no stdin/stdout"));
+        };
+        let buf = Arc::new(Mutex::new(Vec::new()));
+        let sink = buf.clone();
+        tokio::spawn(async move {
+            let mut chunk = [0u8; 1024];
+            while let Ok(n @ 1..) = tokio::io::AsyncReadExt::read(&mut stderr, &mut chunk).await {
+                let mut b = sink.lock().unwrap_or_else(|e| e.into_inner());
+                b.extend_from_slice(&chunk[..n]);
+                let excess = b.len().saturating_sub(4096);
+                b.drain(..excess);
+            }
+        });
+        Ok((Proxy { child: Some(child), stderr: buf }, tokio::io::join(stdout, stdin)))
+    }
+
+    fn stderr_text(&self) -> String {
+        String::from_utf8_lossy(&self.stderr.lock().unwrap_or_else(|e| e.into_inner())).trim().to_string()
+    }
+}
+
+impl Drop for Proxy {
+    fn drop(&mut self) {
+        if let Some(mut c) = self.child.take() {
+            // Killing and reaping the process needs the runtime.
+            let _g = rt().enter();
+            let _ = c.start_kill();
+            drop(c);
+        }
+    }
+}
+
+/// An authenticated connection to a jump host (`ProxyJump`): the next
+/// connection runs inside it through a `direct-tcpip` channel. A jump
+/// host can itself be reached through another one (`via`).
+pub struct Tunnel {
+    handle: Handle<Client>,
+    label: String,
+    /// The tunnel this one goes through; closed after it (fields drop
+    /// after `Drop::drop`).
+    via: Option<Arc<Tunnel>>,
+    /// The ProxyCommand this one goes through (first jump host only).
+    _proxy: Option<Proxy>,
+}
+
+impl Tunnel {
+    /// The jump hosts in connection order: `a, b, c`.
+    pub fn label(&self) -> String {
+        match &self.via {
+            Some(v) => format!("{}, {}", v.label(), self.label),
+            None => self.label.clone(),
+        }
+    }
+
+    /// True if this connection or any one it goes through is closed.
+    pub fn is_closed(&self) -> bool {
+        self.handle.is_closed() || self.via.as_ref().is_some_and(|v| v.is_closed())
+    }
+}
+
+impl Drop for Tunnel {
+    fn drop(&mut self) {
+        let _ = rt().block_on(async {
+            tokio::time::timeout(Duration::from_secs(2), self.handle.disconnect(russh::Disconnect::ByApplication, "", "en")).await
+        });
+    }
+}
+
 /// A connection that is not authenticated yet.
 pub struct Pending {
     pub handle: Handle<Client>,
     pub host_key: HostKey,
+    /// The tunnel this connection goes through (kept open while it lives).
+    tunnel: Option<Arc<Tunnel>>,
+    /// The ProxyCommand the connection runs over.
+    proxy: Option<Proxy>,
 }
 
 /// The result of one key file.
@@ -139,21 +240,57 @@ pub enum KeyResult {
     Unusable,
 }
 
-pub fn connect(t: &Target) -> io::Result<Pending> {
+/// Connects to `t` through `tunnel` when given, otherwise over its
+/// ProxyCommand if it has one, otherwise directly.
+pub fn connect(t: &Target, tunnel: Option<&Arc<Tunnel>>) -> io::Result<Pending> {
     let seen = Arc::new(Mutex::new(None));
     let handler = Client { host: t.host.clone(), port: t.port, seen: seen.clone() };
     let config =
         Arc::new(client::Config { keepalive_interval: Some(Duration::from_secs(30)), keepalive_max: 4, nodelay: true, ..Default::default() });
     let addr = (t.host.clone(), t.port);
+    let jump = tunnel;
+    let mut proxy: Option<Proxy> = None;
+    let proxy_slot = &mut proxy;
     let r = rt().block_on(async move {
-        let tcp = tokio::time::timeout(Duration::from_secs(20), tokio::net::TcpStream::connect(addr))
-            .await
-            .map_err(|_| io::Error::new(io::ErrorKind::TimedOut, "Connection timed out"))??;
-        let _ = tcp.set_nodelay(true);
-        tokio::time::timeout(Duration::from_secs(30), client::connect_stream(config, tcp, handler))
-            .await
-            .map_err(|_| io::Error::new(io::ErrorKind::TimedOut, "The server does not answer"))?
-            .map_err(err)
+        let handshake = |r: Result<Result<Handle<Client>, russh::Error>, _>| {
+            r.map_err(|_| io::Error::new(io::ErrorKind::TimedOut, "The server does not answer"))?.map_err(err)
+        };
+        match jump {
+            None if t.proxy_command.is_some() => {
+                let command = t.proxy_command.as_deref().unwrap_or_default();
+                let (p, stream) = Proxy::spawn(command)?;
+                let p = proxy_slot.insert(p);
+                let r = handshake(tokio::time::timeout(Duration::from_secs(30), client::connect_stream(config, stream, handler)).await);
+                if let Err(e) = r {
+                    // Let the command finish writing why it failed.
+                    tokio::time::sleep(Duration::from_millis(300)).await;
+                    let why = p.stderr_text();
+                    let why = if why.is_empty() { String::new() } else { format!("\n{why}") };
+                    return Err(err(format!("{e}\nProxyCommand: {command}{why}")));
+                }
+                r
+            }
+            None => {
+                let tcp = tokio::time::timeout(Duration::from_secs(20), tokio::net::TcpStream::connect(addr))
+                    .await
+                    .map_err(|_| io::Error::new(io::ErrorKind::TimedOut, "Connection timed out"))??;
+                let _ = tcp.set_nodelay(true);
+                handshake(tokio::time::timeout(Duration::from_secs(30), client::connect_stream(config, tcp, handler)).await)
+            }
+            Some(j) => {
+                if j.is_closed() {
+                    return Err(io::Error::new(io::ErrorKind::NotConnected, format!("The tunnel {} is closed", j.label())));
+                }
+                let ch = tokio::time::timeout(
+                    Duration::from_secs(20),
+                    j.handle.channel_open_direct_tcpip(addr.0.clone(), u32::from(addr.1), "127.0.0.1", 0),
+                )
+                .await
+                .map_err(|_| io::Error::new(io::ErrorKind::TimedOut, "Connection through the tunnel timed out"))?
+                .map_err(|e| err(format!("The jump host {} cannot reach {}:{}: {e}", j.label, addr.0, addr.1)))?;
+                handshake(tokio::time::timeout(Duration::from_secs(30), client::connect_stream(config, ch.into_stream(), handler)).await)
+            }
+        }
     });
     let state = seen.lock().unwrap_or_else(|e| e.into_inner()).clone();
     match (r, state) {
@@ -162,7 +299,7 @@ pub fn connect(t: &Target) -> io::Result<Pending> {
             fingerprint(&key),
             file.display()
         ))),
-        (Ok(handle), Some(host_key)) => Ok(Pending { handle, host_key }),
+        (Ok(handle), Some(host_key)) => Ok(Pending { handle, host_key, tunnel: tunnel.cloned(), proxy }),
         (Ok(_), None) => Err(err("The server key was not checked")),
         (Err(e), _) => Err(e),
     }
@@ -259,16 +396,24 @@ impl Pending {
         })
     }
 
+    /// Turns the authenticated connection into a tunnel for the next one.
+    pub fn into_tunnel(self, label: String) -> Arc<Tunnel> {
+        Arc::new(Tunnel { handle: self.handle, label, via: self.tunnel, _proxy: self.proxy })
+    }
+
     /// Opens the SFTP subsystem on the authenticated connection.
     pub fn finish(self, target: Target) -> io::Result<Conn> {
-        let handle = self.handle;
-        rt().block_on(async move {
+        let Pending { handle, tunnel, proxy, .. } = self;
+        // The tunnel stays out of the async block: dropping it there would
+        // call block_on inside the runtime.
+        let (sftp, home) = rt().block_on(async {
             let ch = handle.channel_open_session().await.map_err(err)?;
             ch.request_subsystem(true, "sftp").await.map_err(err)?;
             let sftp = SftpSession::new(ch.into_stream()).await.map_err(err)?;
             let home = sftp.canonicalize(".").await.map_err(err)?;
-            Ok(Conn { handle, sftp, target, home })
-        })
+            Ok::<_, io::Error>((sftp, home))
+        })?;
+        Ok(Conn { handle, sftp, target, home, tunnel, _proxy: proxy })
     }
 }
 
@@ -279,11 +424,16 @@ pub struct Conn {
     pub target: Target,
     /// The remote home folder (where `ssh` starts).
     pub home: String,
+    /// The tunnel the connection goes through; closed after it (fields
+    /// drop after `Drop::drop`).
+    tunnel: Option<Arc<Tunnel>>,
+    /// The ProxyCommand the connection runs over; killed after it.
+    _proxy: Option<Proxy>,
 }
 
 impl Conn {
     pub fn is_closed(&self) -> bool {
-        self.handle.is_closed()
+        self.handle.is_closed() || self.tunnel.as_ref().is_some_and(|t| t.is_closed())
     }
 }
 
@@ -297,5 +447,37 @@ impl Drop for Conn {
             })
             .await
         });
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    fn target(proxy_command: &str) -> Target {
+        Target {
+            alias: "h".into(),
+            host: "h".into(),
+            port: 22,
+            user: "u".into(),
+            dir: String::new(),
+            identity_files: Vec::new(),
+            proxy_command: Some(proxy_command.into()),
+        }
+    }
+
+    #[test]
+    fn proxy_command_failure_is_reported() {
+        // The command runs through the shell (quotes kept); what it writes
+        // to stderr is shown when the handshake fails.
+        let e = connect(&target("echo \"proxy said no\" 1>&2 && exit 3"), None).err().expect("no SSH server behind echo");
+        let e = e.to_string();
+        assert!(e.contains("proxy said no") && e.contains("ProxyCommand: echo"), "{e}");
+    }
+
+    #[test]
+    fn proxy_command_that_is_not_ssh() {
+        let e = connect(&target("echo not-ssh"), None).err().expect("not an SSH server").to_string();
+        assert!(e.contains("ProxyCommand: echo not-ssh"), "{e}");
     }
 }
