@@ -2760,7 +2760,8 @@ see also ~Interface.AltF9~@Interface.AltF9@
  #Ctrl+Shift+0…9#     Set bookmark 0…9 at the current position
  #LeftCtrl+0…9#       Go to bookmark 0…9
  #Ctrl+Ins, Ctrl+C#   Copy the selected text to the clipboard.
-The text can be selected manually or as the result of a ~search~@ViewerSearch@.
+The text can be selected with the mouse (press the left button and drag;
+dragging above or below the text scrolls it) or as the result of a ~search~@ViewerSearch@.
  #Ctrl+U#             Unselect the text
  #Shift+Mouse click#  Select text manually. The first mouse click indicates the
 beginning of the selected area; the second click indicates the end.

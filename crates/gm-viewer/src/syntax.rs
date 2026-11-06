@@ -80,6 +80,8 @@ pub struct Cell {
     pub ch: char,
     pub fg: Color,
     pub mark: bool,
+    /// Tab expansion: 1 = first cell of a tab, 2 = a following cell.
+    pub tab: u8,
 }
 
 pub struct Colored {
@@ -206,13 +208,13 @@ impl Hl {
                 _ if self.hidden[i] && !mark => {}
                 '\t' => {
                     let n = tab - width % tab;
-                    for _ in 0..n {
-                        line.push(Cell { ch: ' ', fg: self.fg[i], mark });
+                    for k in 0..n {
+                        line.push(Cell { ch: ' ', fg: self.fg[i], mark, tab: if k == 0 { 1 } else { 2 } });
                     }
                     width += n;
                 }
                 _ => {
-                    line.push(Cell { ch: c, fg: self.fg[i], mark });
+                    line.push(Cell { ch: c, fg: self.fg[i], mark, tab: 0 });
                     width += char_width(c).max(1);
                 }
             }

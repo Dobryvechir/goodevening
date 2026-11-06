@@ -56,6 +56,10 @@ pub struct ViewerCore {
     pub word_wrap: bool,
     pub tab: usize,
     pub found: Option<(u64, u64)>,
+    /// Mouse selection: (anchor, caret) byte offsets.
+    pub sel: Option<(u64, u64)>,
+    /// Where the content was last rendered (for mouse hit-testing).
+    view: Rect,
     pub search: SearchState,
     pub bookmarks: [Option<u64>; 10],
     pub at_end: bool,
@@ -100,6 +104,8 @@ impl ViewerCore {
             word_wrap: false,
             tab: 8,
             found: None,
+            sel: None,
+            view: Rect::new(0, 0, 0, 0),
             search: SearchState::default(),
             bookmarks: [None; 10],
             at_end: false,
@@ -423,6 +429,7 @@ impl ViewerCore {
     pub fn render(&mut self, buf: &mut Buffer, r: Rect, show_arrows: bool) {
         self.height = r.height as usize;
         self.width = r.width as usize;
+        self.view = r;
         let text = style(PaletteId::ViewerText);
         let sel = style(PaletteId::ViewerTextSelected);
         let arrows = style(PaletteId::ViewerArrows);
@@ -436,7 +443,71 @@ impl ViewerCore {
     }
 
     fn in_found(&self, off: u64) -> bool {
-        self.found.is_some_and(|(a, b)| off >= a && off < b)
+        self.found.is_some_and(|(a, b)| off >= a && off < b) || self.selection().is_some_and(|(a, b)| off >= a && off < b)
+    }
+
+    // ----- mouse selection -----
+
+    /// The selected byte range `a..b`, if not empty.
+    pub fn selection(&self) -> Option<(u64, u64)> {
+        let (a, b) = self.sel?;
+        let (a, b) = (a.min(b), a.max(b).min(self.len()));
+        (a < b).then_some((a, b))
+    }
+
+    /// The selected text (the mouse selection, else the search result),
+    /// decoded with the current code page.
+    pub fn selected_text(&self) -> Option<String> {
+        let (a, b) = self.selection().or(self.found.filter(|&(a, b)| a < b && b <= self.len()))?;
+        Some(self.cp.decode(&self.data.bytes()[a as usize..b as usize]).into_owned())
+    }
+
+    /// Whether screen cell (x, y) is in the rendered content area.
+    pub fn inside(&self, x: u16, y: u16) -> bool {
+        let r = self.view;
+        x >= r.x && x < r.right() && y >= r.y && y < r.bottom()
+    }
+
+    /// Rendered content area (for mouse handling).
+    pub fn view(&self) -> Rect {
+        self.view
+    }
+
+    /// Byte offset of the character at screen cell (x, y) in text mode
+    /// (past the end of a row: the end of its text). `y` outside the
+    /// content area is clamped to the first/last row. Only the visible
+    /// rows are laid out, as for rendering.
+    pub fn offset_at(&self, x: u16, y: u16) -> Option<u64> {
+        let r = self.view;
+        if self.mode != Mode::Text || r.width == 0 || r.height == 0 {
+            return None;
+        }
+        let row = y.clamp(r.y, r.bottom() - 1) - r.y;
+        let target = if self.wrap { 0 } else { self.left } + x.saturating_sub(r.x) as usize;
+        let len = self.len();
+        let mut off = self.top;
+        for _ in 0..row {
+            let next = self.row_at(off, self.width).end;
+            if off >= len || next <= off {
+                return Some(len);
+            }
+            off = next;
+        }
+        if off >= len {
+            return Some(len);
+        }
+        let rr = self.row_at(off, self.width);
+        let mut col = 0;
+        for &(c, o) in &rr.chars {
+            col += char_width(c).max(1);
+            if target < col {
+                return Some(o);
+            }
+        }
+        Some(match rr.chars.last() {
+            Some(&(_, o)) => o + self.char_at(o).map_or(1, |(_, n)| n),
+            None => off,
+        })
     }
 
     fn render_text(&self, buf: &mut Buffer, r: Rect, text: Style, sel: Style, arrows: Style, show_arrows: bool) {
@@ -781,6 +852,21 @@ mod tests {
         v.height = 3;
         v.width = 10;
         v
+    }
+
+    #[test]
+    fn mouse_selection() {
+        let mut v = core("abc\ndefgh\n\tx\n");
+        v.view = Rect::new(2, 1, 10, 3);
+        assert_eq!(v.offset_at(2, 1), Some(0));
+        assert_eq!(v.offset_at(4, 2), Some(6)); // 'f'
+        assert_eq!(v.offset_at(9, 1), Some(3)); // past "abc": its end
+        assert_eq!(v.offset_at(5, 3), Some(10)); // inside the tab
+        assert_eq!(v.offset_at(0, 0), Some(0)); // clamped to the first row
+        v.sel = Some((6, 1));
+        assert_eq!(v.selected_text().as_deref(), Some("bc\nde"));
+        v.sel = Some((3, 3));
+        assert_eq!(v.selected_text(), None);
     }
 
     #[test]

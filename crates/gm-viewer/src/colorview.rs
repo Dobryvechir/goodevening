@@ -17,13 +17,23 @@ pub struct ColorView {
     pub wrap: bool,
     height: usize,
     width: usize,
+    /// Mouse selection: (anchor, caret) as (line, cell index).
+    pub sel: Option<(Pos, Pos)>,
+    /// Where the content was last rendered (for mouse hit-testing).
+    view: Rect,
 }
+
+/// A position between cells: (line, cell index).
+pub type Pos = (usize, usize);
+
+/// Background of selected text.
+const SELECTION: gm_term::Color = gm_term::Color::Rgb(0x26, 0x4F, 0x78);
 
 impl ColorView {
     pub fn new(text: &str, lang: Lang, tab: usize, top_line: usize, wrap: bool) -> ColorView {
         let c = syntax::colorize(text, lang, tab);
         let top = top_line.min(c.lines.len().saturating_sub(1));
-        ColorView { lines: c.lines, problems: c.problems, top, sub: 0, left: 0, wrap, height: 20, width: 80 }
+        ColorView { lines: c.lines, problems: c.problems, top, sub: 0, left: 0, wrap, height: 20, width: 80, sel: None, view: Rect::new(0, 0, 0, 0) }
     }
 
     /// The first visible line (0-based).
@@ -134,9 +144,82 @@ impl ColorView {
         if self.lines.len() <= 1 || self.end_visible() { 100 } else { (self.top * 100 / self.lines.len()) as u64 }
     }
 
+    /// The selection as ordered positions, if not empty.
+    fn selection(&self) -> Option<(Pos, Pos)> {
+        let (a, b) = self.sel?;
+        let (a, b) = (a.min(b), a.max(b));
+        (a < b).then_some((a, b))
+    }
+
+    /// The selected text as shown (tabs restored, hidden Markdown tags left out).
+    pub fn selected_text(&self) -> Option<String> {
+        let ((l1, i1), (l2, i2)) = self.selection()?;
+        let eol = if cfg!(windows) { "\r\n" } else { "\n" };
+        let mut out = String::new();
+        for l in l1..=l2.min(self.lines.len() - 1) {
+            let cells = &self.lines[l];
+            let a = if l == l1 { i1.min(cells.len()) } else { 0 };
+            let b = if l == l2 { i2.min(cells.len()) } else { cells.len() };
+            for c in &cells[a..b.max(a)] {
+                match c.tab {
+                    0 => out.push(c.ch),
+                    1 => out.push('\t'),
+                    _ => {}
+                }
+            }
+            if l < l2 {
+                out.push_str(eol);
+            }
+        }
+        Some(out)
+    }
+
+    /// Whether screen cell (x, y) is in the rendered content area.
+    pub fn inside(&self, x: u16, y: u16) -> bool {
+        let r = self.view;
+        x >= r.x && x < r.right() && y >= r.y && y < r.bottom()
+    }
+
+    /// Rendered content area (for mouse handling).
+    pub fn view(&self) -> Rect {
+        self.view
+    }
+
+    /// The position of screen cell (x, y) (past the end of a row: its end);
+    /// `y` outside the content area is clamped to the first/last row.
+    pub fn pos_at(&self, x: u16, y: u16) -> Pos {
+        let r = self.view;
+        let row = y.clamp(r.y, r.bottom().max(r.y + 1) - 1) - r.y;
+        let target = if self.wrap { 0 } else { self.left } + x.saturating_sub(r.x) as usize;
+        let mut p = (self.top, self.sub.min(self.rows(self.top) - 1));
+        for _ in 0..row {
+            match self.next(p) {
+                Some(n) => p = n,
+                None => {
+                    let l = self.lines.len() - 1;
+                    return (l, self.lines[l].len());
+                }
+            }
+        }
+        let (l, s) = p;
+        let starts = self.row_starts(l);
+        let cells = &self.lines[l];
+        let (a, b) = (starts[s], starts.get(s + 1).copied().unwrap_or(cells.len()));
+        let mut col = 0;
+        for (i, c) in cells[a..b].iter().enumerate() {
+            col += char_width(c.ch).max(1);
+            if target < col {
+                return (l, a + i);
+            }
+        }
+        (l, b)
+    }
+
     pub fn render(&mut self, buf: &mut Buffer, r: Rect, show_arrows: bool) {
         self.height = r.height as usize;
         self.width = r.width as usize;
+        self.view = r;
+        let sel = self.selection();
         self.sub = self.sub.min(self.rows(self.top) - 1);
         let base = Style::default().fg(TEXT).bg(BACKGROUND);
         let arrows = Style::default().fg(syntax::TEXT).bg(BACKGROUND).add_modifier(Modifier::BOLD);
@@ -150,7 +233,8 @@ impl ColorView {
             let y = r.y + row;
             let skip = if self.wrap { 0 } else { self.left };
             let (mut col, mut x) = (0usize, 0usize);
-            for cell in &cells[a..b] {
+            for (i, cell) in cells[a..b].iter().enumerate() {
+                let selected = sel.is_some_and(|(p, q)| (l, a + i) >= p && (l, a + i) < q);
                 let w = char_width(cell.ch).max(1);
                 if col < skip {
                     col += w;
@@ -159,7 +243,9 @@ impl ColorView {
                 if x + w > r.width as usize {
                     break;
                 }
-                let st = if cell.mark {
+                let st = if selected {
+                    Style::default().fg(cell.fg).bg(SELECTION)
+                } else if cell.mark {
                     Style::default().fg(syntax::MARK_TEXT).bg(MARK).add_modifier(Modifier::BOLD)
                 } else {
                     Style::default().fg(cell.fg).bg(BACKGROUND)
@@ -203,6 +289,22 @@ mod tests {
         v.go_home();
         v.up(1);
         assert_eq!(v.top_line(), 0);
+    }
+
+    #[test]
+    fn mouse_selection() {
+        let mut v = ColorView::new("ab	c
+xyz
+", Lang::Python, 4, 0, false);
+        v.view = Rect::new(0, 1, 20, 5);
+        v.height = 5;
+        assert_eq!(v.pos_at(1, 1), (0, 1));
+        assert_eq!(v.pos_at(15, 1), (0, 5)); // past the end of "ab<tab>c"
+        assert_eq!(v.pos_at(1, 2), (1, 1));
+        assert_eq!(v.pos_at(1, 9), (2, 0)); // below the text
+        v.sel = Some(((1, 2), (0, 1)));
+        let eol = if cfg!(windows) { "\r\n" } else { "\n" };
+        assert_eq!(v.selected_text(), Some(format!("b\tc{eol}xy")));
     }
 
     #[test]

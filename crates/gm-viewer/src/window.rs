@@ -4,11 +4,11 @@ use crate::colorview::ColorView;
 use crate::core::{Mode, ViewerCore};
 use crate::syntax::{Lang, lang_for};
 use gm_i18n::{MsgId, msg};
-use gm_term::{Buffer, Event, KeyChord, KeyCode, Mods, MouseEventKind, PaletteId, Rect, style};
+use gm_term::{Buffer, Event, KeyChord, KeyCode, Mods, MouseButton, MouseEvent, MouseEventKind, PaletteId, Rect, style};
 use gm_text::Codepage;
 use gm_ui::dialog::DialogBuilder;
 use gm_ui::search::{SearchAction, search_dialog};
-use gm_ui::{KeyBar, KeyBarLabels, MenuItem, MenuResult, OpenRequest, Ui, VMenu, WinAction, Window, WindowKind, draw, message};
+use gm_ui::{KeyBar, KeyBarLabels, MenuItem, MenuResult, OpenRequest, Ui, VMenu, WinAction, Window, WindowKind, clipboard, draw, message};
 
 #[derive(Clone, Debug)]
 pub struct ViewerOptions {
@@ -48,6 +48,8 @@ pub struct ViewerWindow {
     lang: Option<Lang>,
     /// The syntax-colored view while "Colors" mode is on.
     colors: Option<ColorView>,
+    /// A mouse selection is being dragged.
+    dragging: bool,
 }
 
 /// Files larger than this are not shown in "Colors" mode.
@@ -124,7 +126,7 @@ impl ViewerWindow {
         core.tab = opts.tab_size.max(1);
         core.hex_upper = opts.hex_upper;
         let lang = lang_for(&core.path);
-        ViewerWindow { core, opts, labels: labels(), temp_file: false, title_override: None, lang, colors: None }
+        ViewerWindow { core, opts, labels: labels(), temp_file: false, title_override: None, lang, colors: None, dragging: false }
     }
 
     /// Turns the syntax-colored "Colors" mode (F5) on or off, keeping the
@@ -140,6 +142,84 @@ impl ViewerWindow {
             self.colors = Some(ColorView::new(&text, lang, self.core.tab, line, self.core.wrap));
         } else if let Some(cv) = self.colors.take() {
             self.sync_from(&cv);
+        }
+    }
+
+    /// Mouse: wheel scrolls; left button press and drag select text.
+    fn handle_mouse(&mut self, m: &MouseEvent) {
+        let (x, y) = (m.column, m.row);
+        match m.kind {
+            MouseEventKind::ScrollDown => match &mut self.colors {
+                Some(cv) => cv.down(3),
+                None => self.core.down(3),
+            },
+            MouseEventKind::ScrollUp => match &mut self.colors {
+                Some(cv) => cv.up(3),
+                None => self.core.up(3),
+            },
+            MouseEventKind::Down(MouseButton::Left) => {
+                self.dragging = false;
+                match &mut self.colors {
+                    Some(cv) => {
+                        cv.sel = None;
+                        if cv.inside(x, y) {
+                            let p = cv.pos_at(x, y);
+                            cv.sel = Some((p, p));
+                            self.dragging = true;
+                        }
+                    }
+                    None => {
+                        let c = &mut self.core;
+                        c.sel = None;
+                        if c.inside(x, y)
+                            && let Some(o) = c.offset_at(x, y)
+                        {
+                            c.sel = Some((o, o));
+                            self.dragging = true;
+                        }
+                    }
+                }
+            }
+            MouseEventKind::Drag(MouseButton::Left) if self.dragging => match &mut self.colors {
+                // Dragging above or below the text scrolls it.
+                Some(cv) => {
+                    let v = cv.view();
+                    if y < v.y {
+                        cv.up(1);
+                    } else if y >= v.bottom() {
+                        cv.down(1);
+                    }
+                    let p = cv.pos_at(x, y);
+                    if let Some((a, _)) = cv.sel {
+                        cv.sel = Some((a, p));
+                    }
+                }
+                None => {
+                    let c = &mut self.core;
+                    let v = c.view();
+                    if y < v.y {
+                        c.up(1);
+                    } else if y >= v.bottom() {
+                        c.down(1);
+                    }
+                    if let (Some((a, _)), Some(o)) = (c.sel, c.offset_at(x, y)) {
+                        c.sel = Some((a, o));
+                    }
+                }
+            },
+            MouseEventKind::Up(MouseButton::Left) => self.dragging = false,
+            _ => {}
+        }
+    }
+
+    /// Copies the mouse selection to the clipboard.
+    fn copy(&self) {
+        let text = match &self.colors {
+            Some(cv) => cv.selected_text(),
+            None => self.core.selected_text(),
+        };
+        if let Some(t) = text {
+            clipboard::set(&t);
         }
     }
 
@@ -304,17 +384,23 @@ impl Window for ViewerWindow {
         let k = match ev {
             Event::Key(k) => *k,
             Event::Mouse(m) => {
-                match (m.kind, &mut self.colors) {
-                    (MouseEventKind::ScrollDown, Some(cv)) => cv.down(3),
-                    (MouseEventKind::ScrollUp, Some(cv)) => cv.up(3),
-                    (MouseEventKind::ScrollDown, None) => self.core.down(3),
-                    (MouseEventKind::ScrollUp, None) => self.core.up(3),
-                    _ => {}
-                }
+                self.handle_mouse(m);
                 return WinAction::Redraw;
             }
             _ => return WinAction::None,
         };
+        if matches!((k.code, k.mods), (KeyCode::Char('c'), Mods::CTRL) | (KeyCode::Insert, Mods::CTRL)) {
+            self.copy();
+            return WinAction::None;
+        }
+        if (k.code, k.mods) == (KeyCode::Char('u'), Mods::CTRL) {
+            self.core.sel = None;
+            self.core.found = None;
+            if let Some(cv) = self.colors.as_mut() {
+                cv.sel = None;
+            }
+            return WinAction::Redraw;
+        }
         if (k.code, k.mods) == (KeyCode::F(5), Mods::NONE) {
             if self.lang.is_some() {
                 let on = self.colors.is_none();
