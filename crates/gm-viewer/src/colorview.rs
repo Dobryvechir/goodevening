@@ -1,7 +1,7 @@
 //! The viewer's "Colors" mode (F5): syntax-colored text on a black
 //! background, scrolled by lines (and wrapped rows within a line).
 
-use crate::syntax::{self, BACKGROUND, Cell, Lang, MARK, TEXT};
+use crate::syntax::{self, BACKGROUND, Cell, Lang, MARK, SELECTION, TEXT};
 use gm_term::{Buffer, Modifier, Rect, Style};
 use gm_text::width::char_width;
 use gm_ui::draw;
@@ -25,9 +25,6 @@ pub struct ColorView {
 
 /// A position between cells: (line, cell index).
 pub type Pos = (usize, usize);
-
-/// Background of selected text.
-const SELECTION: gm_term::Color = gm_term::Color::Rgb(0x26, 0x4F, 0x78);
 
 impl ColorView {
     pub fn new(text: &str, lang: Lang, tab: usize, top_line: usize, wrap: bool) -> ColorView {

@@ -1,14 +1,16 @@
 //! The editor window.
 
 use crate::buffer::TextBuffer;
+use crate::colors::{MAX_CHARS, SyntaxColors};
 use gm_i18n::{MsgId, msg};
-use gm_term::{Buffer, Event, KeyCode, Mods, MouseButton, MouseEventKind, PaletteId, Rect, style};
+use gm_term::{Buffer, Event, KeyCode, Modifier, Mods, MouseButton, MouseEventKind, PaletteId, Rect, Style, style};
+use gm_viewer::syntax::{self, lang_for};
 use gm_text::width::char_width;
 use gm_text::{Codepage, Eol};
 use gm_ui::dialog::DialogBuilder;
 use gm_ui::search::{SearchAction, SearchState, search_dialog};
 use gm_ui::{
-    KeyBar, KeyBarLabels, MenuItem, MenuResult, OpenRequest, Ui, VMenu, WinAction, Window, WindowKind, clipboard, colors_supported, draw, message,
+    KeyBar, KeyBarLabels, MenuItem, MenuResult, OpenRequest, Ui, VMenu, WinAction, Window, WindowKind, clipboard, draw, message,
 };
 use std::path::{Path, PathBuf};
 use std::rc::Rc;
@@ -79,6 +81,8 @@ pub struct Editor {
     body: Rect,
     gutter: u16,
     pub readonly: bool,
+    /// Syntax colors while the "Colors" mode (F5) is on.
+    colors: Option<SyntaxColors>,
 }
 
 fn labels() -> KeyBarLabels {
@@ -171,7 +175,41 @@ impl Editor {
             body: Rect::default(),
             gutter: 0,
             readonly,
+            colors: None,
         })
+    }
+
+    /// Turns the syntax-colored "Colors" mode (F5) on or off. Does nothing
+    /// for unsupported file types and very big texts.
+    pub fn set_colors(&mut self, on: bool) {
+        self.colors = None;
+        if on
+            && let Some(lang) = lang_for(&self.path)
+            && self.buf.rope.len_chars() <= MAX_CHARS
+        {
+            self.colors = Some(SyntaxColors::new(lang, &mut self.buf));
+        }
+    }
+
+    pub fn colors_on(&self) -> bool {
+        self.colors.is_some()
+    }
+
+    /// Updates the syntax colors to the current text (and file name, which
+    /// "Save as" may change).
+    fn update_colors(&mut self, idle: bool) -> bool {
+        let Some(c) = &mut self.colors else { return false };
+        match lang_for(&self.path) {
+            Some(lang) if lang == c.lang => c.update(&mut self.buf, idle),
+            Some(lang) => {
+                *c = SyntaxColors::new(lang, &mut self.buf);
+                true
+            }
+            None => {
+                self.colors = None;
+                true
+            }
+        }
     }
 
     // ----- API used by editor tools -----
@@ -835,9 +873,14 @@ impl Editor {
     }
 
     fn render_body(&mut self, buf: &mut Buffer, r: Rect) {
-        let text = style(PaletteId::EditorText);
-        let sel = style(PaletteId::EditorTextSelected);
-        let nums = style(PaletteId::EditorLineNumbers);
+        let colors = self.colors.is_some();
+        let (text, sel, nums) = if colors {
+            // The viewer's "Colors" look: black background.
+            let base = Style::default().bg(syntax::BACKGROUND);
+            (base.fg(syntax::TEXT), base.bg(syntax::SELECTION), base.fg(syntax::LINE_NUMBER))
+        } else {
+            (style(PaletteId::EditorText), style(PaletteId::EditorTextSelected), style(PaletteId::EditorLineNumbers))
+        };
         draw::fill(buf, r, ' ', text);
         let total = self.buf.line_count();
         self.gutter = if self.opts.line_numbers { (total.to_string().len() + 1) as u16 } else { 0 };
@@ -867,7 +910,20 @@ impl Editor {
                     (_, Some((l1, l2, v1, v2))) => ln >= l1 && ln <= l2 && vis >= v1 && vis < v2,
                     _ => false,
                 };
-                let st = if selected { sel } else { text };
+                let st = match &self.colors {
+                    Some(sc) => {
+                        let (fg, problem) = sc.at(line_start + ci);
+                        if selected {
+                            sel.fg(fg)
+                        } else if problem {
+                            Style::default().fg(syntax::MARK_TEXT).bg(syntax::MARK).add_modifier(Modifier::BOLD)
+                        } else {
+                            text.fg(fg)
+                        }
+                    }
+                    None if selected => sel,
+                    None => text,
+                };
                 if vis + w > self.left && vis < self.left + tw {
                     let x = tx + (vis.saturating_sub(self.left)) as u16;
                     if c == '\t' {
@@ -920,8 +976,15 @@ impl Window for Editor {
         let status = style(PaletteId::EditorStatus);
         draw::fill(buf, Rect::new(area.x, area.y, area.width, 1), ' ', status);
         let ch = self.buf.line_text(self.line).chars().nth(self.col).map(|c| c as u32).unwrap_or(0);
+        self.update_colors(false);
+        // As in the viewer's status line.
+        let mode = match &self.colors {
+            Some(c) if c.problems > 0 => format!("Colors !{}  ", c.problems),
+            Some(_) => "Colors  ".to_string(),
+            None => String::new(),
+        };
         let info = format!(
-            "{}{} {} {} {}/{} {} {} {} {}",
+            "{mode}{}{} {} {} {}/{} {} {} {} {}",
             if self.buf.modified() { '*' } else { ' ' },
             if self.readonly { "-" } else { " " },
             self.buf.cp.name(),
@@ -945,7 +1008,7 @@ impl Window for Editor {
                 Codepage::Oem(_) => msg(MsgId::MEditF8).to_string(),
                 _ => msg(MsgId::MEditF8DOS).to_string(),
             };
-            self.labels.normal[4] = if colors_supported(&self.path) { "Colors".to_string() } else { String::new() };
+            self.labels.normal[4] = if lang_for(&self.path).is_some() { "Colors".to_string() } else { String::new() };
             self.labels.ctrl[2] = msg(if self.opts.line_numbers { MsgId::MEditCtrlF3Hide } else { MsgId::MEditCtrlF3 }).to_string();
             KeyBar::render(buf, area.bottom() - 1, area.width, self.labels.for_mods(Mods::NONE));
         }
@@ -1127,10 +1190,9 @@ impl Window for Editor {
                     return WinAction::Replace(OpenRequest::View(self.path.clone()));
                 }
             }
-            (KeyCode::F(5), Mods::NONE) if colors_supported(&self.path) => {
-                if self.confirm_close(ui) {
-                    return WinAction::Replace(OpenRequest::ViewColors(self.path.clone()));
-                }
+            (KeyCode::F(5), Mods::NONE) => {
+                let on = self.colors.is_none();
+                self.set_colors(on);
             }
             (KeyCode::F(7), Mods::NONE) => {
                 let mut st = self.search.clone();
@@ -1272,6 +1334,10 @@ impl Window for Editor {
     }
 
     fn tick(&mut self, ui: &mut Ui) -> bool {
+        // Idle: finish recoloring a big text.
+        if self.update_colors(true) {
+            return true;
+        }
         if self.external_asked || self.is_new {
             return false;
         }

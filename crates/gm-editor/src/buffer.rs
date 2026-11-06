@@ -28,6 +28,19 @@ pub struct TextBuffer {
     saved_group: Option<u64>,
     /// Some characters could not be represented in the code page.
     pub lossy: bool,
+    /// Changes every time the text changes (unique across buffers).
+    version: u64,
+    /// Text changes since the last `take_changes`: (char index, removed
+    /// chars, inserted chars); `None` if the whole text was replaced.
+    changes: Option<Vec<(usize, usize, usize)>>,
+}
+
+/// Most changes kept for `take_changes` before giving up on them.
+const MAX_CHANGES: usize = 10_000;
+
+fn next_version() -> u64 {
+    static NEXT: std::sync::atomic::AtomicU64 = std::sync::atomic::AtomicU64::new(1);
+    NEXT.fetch_add(1, std::sync::atomic::Ordering::Relaxed)
 }
 
 impl Default for TextBuffer {
@@ -49,7 +62,36 @@ impl TextBuffer {
             saved_at: 0,
             saved_group: None,
             lossy: false,
+            version: next_version(),
+            changes: Some(Vec::new()),
         }
+    }
+
+    /// Changes whenever the text changes.
+    pub fn version(&self) -> u64 {
+        self.version
+    }
+
+    /// Text changes since the previous call: (char index, removed chars,
+    /// inserted chars) in order; `None` if the whole text was replaced.
+    pub fn take_changes(&mut self) -> Option<Vec<(usize, usize, usize)>> {
+        self.changes.replace(Vec::new())
+    }
+
+    fn changed(&mut self, at: usize, removed: usize, inserted: usize) {
+        self.version = next_version();
+        if let Some(c) = &mut self.changes {
+            if c.len() < MAX_CHANGES {
+                c.push((at, removed, inserted));
+            } else {
+                self.changes = None;
+            }
+        }
+    }
+
+    fn changed_all(&mut self) {
+        self.version = next_version();
+        self.changes = None;
     }
 
     /// Loads bytes, detecting BOM, code page and line endings.
@@ -77,6 +119,7 @@ impl TextBuffer {
         let skip = if self.bom { codepage::detect_bom(bytes).map(|b| b.1).unwrap_or(0) } else { 0 };
         let text = cp.decode(&bytes[skip..]);
         self.rope = Rope::from_str(&text);
+        self.changed_all();
         self.cp = cp;
         self.undo.clear();
         self.redo.clear();
@@ -114,6 +157,7 @@ impl TextBuffer {
         if let Some(e) = convert_eol {
             self.eol = e;
             self.rope = Rope::from_str(&e.convert(&self.rope.to_string()));
+            self.changed_all();
             self.undo.clear();
             self.redo.clear();
         }
@@ -199,6 +243,7 @@ impl TextBuffer {
         let removed = self.rope.slice(from..to).to_string();
         self.rope.remove(from..to);
         self.rope.insert(from, text);
+        self.changed(from, to - from, text.chars().count());
         let after = self.pos_of(from + text.chars().count());
         // Merge consecutive single-char typing into one change.
         if let Some(last) = self.undo.last_mut()
@@ -225,6 +270,7 @@ impl TextBuffer {
             let n = c.inserted.chars().count();
             self.rope.remove(c.at..c.at + n);
             self.rope.insert(c.at, &c.removed);
+            self.changed(c.at, n, c.removed.chars().count());
             cursor = Some(c.before);
             self.redo.push(c);
         }
@@ -240,6 +286,7 @@ impl TextBuffer {
             let n = c.removed.chars().count();
             self.rope.remove(c.at..c.at + n);
             self.rope.insert(c.at, &c.inserted);
+            self.changed(c.at, n, c.inserted.chars().count());
             cursor = Some(c.after);
             self.undo.push(c);
         }

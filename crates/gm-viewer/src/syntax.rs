@@ -21,6 +21,10 @@ pub const BACKGROUND: Color = rgb(0, 0, 0);
 pub const MARK: Color = rgb(200, 0, 0);
 pub const MARK_TEXT: Color = rgb(255, 255, 255);
 pub const TEXT: Color = rgb(0xD4, 0xD4, 0xD4);
+/// Background of selected text.
+pub const SELECTION: Color = rgb(0x26, 0x4F, 0x78);
+/// Line numbers (editor).
+pub const LINE_NUMBER: Color = rgb(0x85, 0x85, 0x85);
 const KEYWORD: Color = rgb(0x56, 0x9C, 0xD6);
 const CONTROL: Color = rgb(0xC5, 0x86, 0xC0);
 const STRING: Color = rgb(0xCE, 0x91, 0x78);
@@ -90,8 +94,37 @@ pub struct Colored {
     pub problems: usize,
 }
 
+/// Colors of each char of a text, for the editor: indexed like
+/// `text.chars()`, nothing hidden (Markdown tags get the punctuation color).
+pub struct CharColors {
+    pub fg: Vec<Color>,
+    /// Chars that are part of a problem (red background).
+    pub mark: Vec<bool>,
+    pub problems: usize,
+}
+
+/// Colors `text` char by char (see [`CharColors`]).
+pub fn colorize_chars(text: &str, lang: Lang) -> CharColors {
+    let mut h = lex(text, lang);
+    for (fg, &hidden) in h.fg.iter_mut().zip(&h.hidden) {
+        if hidden {
+            *fg = PUNCT;
+        }
+    }
+    let (marks, problems) = h.problem_ranges();
+    let mut mark = vec![false; h.s.len()];
+    for (a, b) in marks {
+        mark[a..b].fill(true);
+    }
+    CharColors { fg: h.fg, mark, problems }
+}
+
 /// Colors `text`; tabs are expanded to `tab` columns.
 pub fn colorize(text: &str, lang: Lang, tab: usize) -> Colored {
+    lex(text, lang).finish(tab.max(1))
+}
+
+fn lex(text: &str, lang: Lang) -> Hl {
     let mut h = Hl::new(text);
     let end = h.s.len();
     match lang {
@@ -109,7 +142,7 @@ pub fn colorize(text: &str, lang: Lang, tab: usize) -> Colored {
         Lang::Python => lex_code(&mut h, 0, end, &PYTHON),
         Lang::Json => lex_code(&mut h, 0, end, &JSON),
     }
-    h.finish(tab.max(1))
+    h
 }
 
 // ----- highlighter state -----
@@ -184,11 +217,17 @@ impl Hl {
         (from..end).map(|i| self.s[i]).find(|c| !c.is_whitespace()).unwrap_or('\0')
     }
 
-    fn finish(self, tab: usize) -> Colored {
-        let mut marks = self.marks;
+    /// Problem ranges (one per start position) and their number.
+    fn problem_ranges(&mut self) -> (Vec<(usize, usize)>, usize) {
+        let mut marks = std::mem::take(&mut self.marks);
         marks.sort_unstable();
         marks.dedup_by_key(|m| m.0);
-        let problems = marks.len();
+        let n = marks.len();
+        (marks, n)
+    }
+
+    fn finish(mut self, tab: usize) -> Colored {
+        let (marks, problems) = self.problem_ranges();
         let mut bad = vec![false; self.s.len()];
         for &(a, b) in &marks {
             bad[a..b].fill(true);
@@ -1444,6 +1483,23 @@ mod tests {
         assert_eq!(c.problems, 0);
         assert_eq!(text_of(&c)[2], "    gm <part> --x");
         assert_eq!(text_of(&c)[5], "<b>");
+    }
+
+    #[test]
+    fn editor_colors_match_viewer() {
+        // No tabs or hidden text: viewer cells and editor chars line up 1:1.
+        let src = "fn main() {\n    let s = \"x\"; // c\n    f(1 + [2);\n}\n";
+        let view = colorize(src, Lang::Rust, 4);
+        let ed = colorize_chars(src, Lang::Rust);
+        assert_eq!(ed.problems, view.problems);
+        let cells: Vec<Cell> = view.lines.iter().flat_map(|l| l.iter().copied().chain([Cell { ch: '\n', fg: TEXT, mark: false, tab: 0 }])).collect();
+        for (i, c) in src.chars().enumerate().filter(|&(_, c)| c != '\n') {
+            assert_eq!((cells[i].ch, cells[i].fg, cells[i].mark), (c, ed.fg[i], ed.mark[i]), "char {i}");
+        }
+        // Markdown: tags stay visible in the editor, in the punctuation color.
+        let md = colorize_chars("a <b>x</b>\n", Lang::Markdown);
+        assert_eq!(md.fg[2], PUNCT);
+        assert_eq!(md.problems, 0);
     }
 
     #[test]

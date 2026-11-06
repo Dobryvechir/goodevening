@@ -11,6 +11,7 @@ gm-ui = { workspace = true }
 gm-term = { workspace = true }
 gm-text = { workspace = true }
 gm-i18n = { workspace = true }
+gm-viewer = { workspace = true }
 ropey = { workspace = true }
 regex = { workspace = true }
 gm-platform = { workspace = true }

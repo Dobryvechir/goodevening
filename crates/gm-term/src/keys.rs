@@ -34,6 +34,41 @@ impl std::ops::BitOr for Mods {
     }
 }
 
+/// Maps a letter of a Cyrillic layout (Ukrainian, Russian, Belarusian) to the
+/// Latin letter on the same physical key, so that Ctrl/Alt shortcuts such as
+/// Ctrl+C or Ctrl+V keep working when a non-Latin layout is active.
+fn latin_key(c: char) -> Option<char> {
+    Some(match c {
+        'й' => 'q',
+        'ц' => 'w',
+        'у' => 'e',
+        'к' => 'r',
+        'е' => 't',
+        'н' => 'y',
+        'г' | 'ґ' => 'u',
+        'ш' => 'i',
+        'щ' | 'ў' => 'o',
+        'з' => 'p',
+        'ф' => 'a',
+        'і' | 'ы' => 's',
+        'в' => 'd',
+        'а' => 'f',
+        'п' => 'g',
+        'р' => 'h',
+        'о' => 'j',
+        'л' => 'k',
+        'д' => 'l',
+        'я' => 'z',
+        'ч' => 'x',
+        'с' => 'c',
+        'м' => 'v',
+        'и' => 'b',
+        'т' => 'n',
+        'ь' => 'm',
+        _ => return None,
+    })
+}
+
 #[derive(Clone, Copy, Debug, PartialEq, Eq, Hash)]
 pub struct KeyChord {
     pub code: KeyCode,
@@ -99,7 +134,8 @@ impl KeyChord {
                     if c.is_uppercase() {
                         mods = mods | Mods::SHIFT;
                     }
-                    KeyCode::Char(c.to_lowercase().next().unwrap_or(c))
+                    let lc = c.to_lowercase().next().unwrap_or(c);
+                    KeyCode::Char(latin_key(lc).unwrap_or(lc))
                 } else {
                     mods = Mods::NONE;
                     KeyCode::Char(c)
@@ -215,6 +251,19 @@ mod tests {
 
     fn ev(code: KeyCode, m: KeyModifiers) -> KeyEvent {
         KeyEvent { code, modifiers: m, kind: KeyEventKind::Press, state: KeyEventState::NONE }
+    }
+
+    #[test]
+    fn cyrillic_layout_shortcuts() {
+        let k = KeyChord::from_event(&ev(KeyCode::Char('с'), KeyModifiers::CONTROL)).unwrap();
+        assert_eq!(k, KeyChord::ctrl(KeyCode::Char('c')));
+        let k = KeyChord::from_event(&ev(KeyCode::Char('М'), KeyModifiers::CONTROL | KeyModifiers::SHIFT)).unwrap();
+        assert_eq!(k, KeyChord::new(KeyCode::Char('v'), Mods::CTRL_SHIFT));
+        let k = KeyChord::from_event(&ev(KeyCode::Char('ч'), KeyModifiers::ALT)).unwrap();
+        assert_eq!(k, KeyChord::alt(KeyCode::Char('x')));
+        // Plain typing is untouched.
+        let k = KeyChord::from_event(&ev(KeyCode::Char('с'), KeyModifiers::NONE)).unwrap();
+        assert_eq!(k, KeyChord::plain(KeyCode::Char('с')));
     }
 
     #[test]

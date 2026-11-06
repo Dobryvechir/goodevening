@@ -3061,7 +3061,11 @@ behavior can be changed in the ~Editor settings~@EditorSettings@ dialog.
  #F2#                      Save file
  #Shift+F2#                ~Save file as…~@FileSaveAs@
  #Shift+F4#                Edit ~new file~@FileOpenCreate@
- #F5#                      Open the ~viewer~@Viewer@ in #Colors# mode (source and md files)
+ #F5#                      #Colors#: syntax colors as in the ~viewer~@Viewer@
+                           (source and md files), updated while you edit;
+                           problems are shown on a red background. Markdown
+                           tags stay visible (gray). Press #F5# again to turn
+                           the colors off
  #F6#                      Switch to ~viewer~@Viewer@
  #F7#                      ~Search~@EditorSearch@
  #Ctrl+F7#                 ~Replace~@EditorSearch@

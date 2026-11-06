@@ -580,7 +580,6 @@ impl App {
     pub fn open(&mut self, req: OpenRequest) {
         match req {
             OpenRequest::View(p) => self.open_viewer(&p),
-            OpenRequest::ViewColors(p) => self.open_viewer_with(&p, true),
             OpenRequest::Edit { path, line } => self.open_editor(&path, line),
             OpenRequest::Help(t) => gm_help::show(&mut self.ui, &t),
             OpenRequest::UserScreen => self.user_screen(),
@@ -629,11 +628,6 @@ impl App {
     }
 
     pub fn open_viewer(&mut self, path: &Path) {
-        self.open_viewer_with(path, false);
-    }
-
-    /// Opens a viewer; `colors` starts it in the syntax-colored mode (F5).
-    pub fn open_viewer_with(&mut self, path: &Path, colors: bool) {
         if let Some(i) = self.existing_window(path, WindowKind::Viewer) {
             self.current = Some(i);
             return;
@@ -654,10 +648,7 @@ impl App {
                 if self.settings.system.save_view_history {
                     self.db.add_history("view", &path.display().to_string(), "v");
                 }
-                let mut vw = ViewerWindow::new(core, opts);
-                if colors {
-                    vw.set_colors(true);
-                }
+                let vw = ViewerWindow::new(core, opts);
                 let w = PositionSaver::Viewer(vw, self.db.clone(), key, self.settings.viewer.save_position);
                 self.windows.push(Box::new(w));
                 self.current = Some(self.windows.len() - 1);

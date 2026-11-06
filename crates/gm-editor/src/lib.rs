@@ -4,6 +4,7 @@
 #![forbid(unsafe_code)]
 
 pub mod buffer;
+mod colors;
 mod editor;
 
 pub use buffer::TextBuffer;
