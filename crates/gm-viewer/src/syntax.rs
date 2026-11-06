@@ -2,11 +2,11 @@
 //!
 //! Source code gets the usual code-editor colors (close to VS Code's
 //! "Dark+" theme) and a simple structure check: unbalanced brackets,
-//! unterminated strings/comments and mismatched tags get a red `!`.
+//! unterminated strings/comments and mismatched tags get a red background.
 //!
 //! Markdown is shown with its inline HTML tags hidden; the text inside a
 //! tag takes the color from the tag's `style="color: …"` (or the `color`
-//! attribute of `<font>`), and mismatched tags get a red `!`.
+//! attribute of `<font>`), and mismatched tags are shown on a red background.
 
 use gm_term::Color;
 use gm_text::width::char_width;
@@ -17,7 +17,9 @@ const fn rgb(r: u8, g: u8, b: u8) -> Color {
 }
 
 pub const BACKGROUND: Color = rgb(0, 0, 0);
-pub const MARK: Color = rgb(255, 40, 40);
+/// Background of problem text, and the text color on it.
+pub const MARK: Color = rgb(200, 0, 0);
+pub const MARK_TEXT: Color = rgb(255, 255, 255);
 pub const TEXT: Color = rgb(0xD4, 0xD4, 0xD4);
 const KEYWORD: Color = rgb(0x56, 0x9C, 0xD6);
 const CONTROL: Color = rgb(0xC5, 0x86, 0xC0);
@@ -71,7 +73,8 @@ pub fn lang_for(path: &Path) -> Option<Lang> {
     })
 }
 
-/// One screen cell of colored text. `mark` cells are the inserted red `!`.
+/// One screen cell of colored text. `mark` cells are part of a problem
+/// (shown on a red background).
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub struct Cell {
     pub ch: char,
@@ -113,8 +116,8 @@ struct Hl {
     s: Vec<char>,
     fg: Vec<Color>,
     hidden: Vec<bool>,
-    /// Positions before which a red `!` is inserted (`s.len()` = at the end).
-    marks: Vec<usize>,
+    /// Problem ranges `a..b`, shown with a red background.
+    marks: Vec<(usize, usize)>,
 }
 
 impl Hl {
@@ -142,8 +145,14 @@ impl Hl {
         }
     }
 
-    fn mark(&mut self, i: usize) {
-        self.marks.push(i);
+    /// Marks `a..b` (at least one character) as a problem: red background.
+    fn mark(&mut self, a: usize, b: usize) {
+        let n = self.s.len();
+        if n == 0 {
+            return;
+        }
+        let a = a.min(n - 1);
+        self.marks.push((a, b.clamp(a + 1, n)));
     }
 
     fn starts(&self, i: usize, pat: &str) -> bool {
@@ -176,36 +185,34 @@ impl Hl {
     fn finish(self, tab: usize) -> Colored {
         let mut marks = self.marks;
         marks.sort_unstable();
-        marks.dedup();
+        marks.dedup_by_key(|m| m.0);
         let problems = marks.len();
-        let mark = Cell { ch: '!', fg: MARK, mark: true };
+        let mut bad = vec![false; self.s.len()];
+        for &(a, b) in &marks {
+            bad[a..b].fill(true);
+        }
         let mut lines: Vec<Vec<Cell>> = vec![Vec::new()];
         let mut width = 0usize;
-        let mut mi = 0;
-        for i in 0..=self.s.len() {
-            if mi < marks.len() && marks[mi] == i {
-                lines.last_mut().expect("at least one line").push(mark);
-                width += 1;
-                mi += 1;
-            }
-            let Some(&c) = self.s.get(i) else { break };
+        for (i, &c) in self.s.iter().enumerate() {
             let line = lines.last_mut().expect("at least one line");
+            let mark = bad[i];
             match c {
                 '\n' => {
                     lines.push(Vec::new());
                     width = 0;
                 }
                 '\r' => {}
-                _ if self.hidden[i] => {}
+                // Hidden text (Markdown tags) is shown when it is the problem.
+                _ if self.hidden[i] && !mark => {}
                 '\t' => {
                     let n = tab - width % tab;
                     for _ in 0..n {
-                        line.push(Cell { ch: ' ', fg: self.fg[i], mark: false });
+                        line.push(Cell { ch: ' ', fg: self.fg[i], mark });
                     }
                     width += n;
                 }
                 _ => {
-                    line.push(Cell { ch: c, fg: self.fg[i], mark: false });
+                    line.push(Cell { ch: c, fg: self.fg[i], mark });
                     width += char_width(c).max(1);
                 }
             }
@@ -486,7 +493,7 @@ fn scan_string(h: &mut Hl, open: usize, from: usize, end: usize, close: &str, es
     let mut j = from;
     let result = loop {
         if j >= end || (!multiline && h.s[j] == '\n') {
-            h.mark(open);
+            h.mark(open, from);
             break j.min(end);
         }
         if escapes && h.s[j] == '\\' {
@@ -547,7 +554,7 @@ fn lex_code(h: &mut Hl, start: usize, end: usize, sp: &Spec) {
             let e = match h.find(i + 2, end, "*/") {
                 Some(p) => p + 2,
                 None => {
-                    h.mark(i);
+                    h.mark(i, i + 2);
                     end
                 }
             };
@@ -762,12 +769,12 @@ fn lex_code(h: &mut Hl, start: usize, end: usize, sp: &Spec) {
             ')' | ']' | '}' => {
                 if let Some(pos) = stack.iter().rposition(|&(o, _)| closing_of(o) == c) {
                     for &(_, p) in &stack[pos + 1..] {
-                        h.mark(p);
+                        h.mark(p, p + 1);
                     }
                     stack.truncate(pos);
                     h.paint(i, i + 1, BRACKETS[pos % 3]);
                 } else {
-                    h.mark(i);
+                    h.mark(i, i + 1);
                 }
                 prev = Prev::Value;
             }
@@ -776,7 +783,7 @@ fn lex_code(h: &mut Hl, start: usize, end: usize, sp: &Spec) {
         i += 1;
     }
     for &(_, p) in &stack {
-        h.mark(p);
+        h.mark(p, p + 1);
     }
 }
 
@@ -798,23 +805,24 @@ fn is_name_char(c: char) -> bool {
 
 /// Pops `name` from the open-tag stack; marks tags left unclosed in
 /// between, or the closing tag `at` if nothing matches.
-fn close_tag<T>(h: &mut Hl, stack: &mut Vec<(String, usize, T)>, name: &str, at: usize, html: bool) {
+/// Stack entries are `(name, (tag start, tag end), extra)`.
+fn close_tag<T>(h: &mut Hl, stack: &mut Vec<(String, (usize, usize), T)>, name: &str, at: (usize, usize), html: bool) {
     if let Some(pos) = stack.iter().rposition(|(n, ..)| n == name) {
-        for (n, p, _) in stack.drain(pos + 1..) {
+        for (n, (a, b), _) in stack.drain(pos + 1..) {
             if !(html && OPTIONAL_END.contains(&n.as_str())) {
-                h.mark(p);
+                h.mark(a, b);
             }
         }
         stack.pop();
     } else {
-        h.mark(at);
+        h.mark(at.0, at.1);
     }
 }
 
-fn mark_unclosed<T>(h: &mut Hl, stack: &[(String, usize, T)], html: bool) {
-    for (n, p, _) in stack {
+fn mark_unclosed<T>(h: &mut Hl, stack: &[(String, (usize, usize), T)], html: bool) {
+    for (n, (a, b), _) in stack {
         if !(html && OPTIONAL_END.contains(&n.as_str())) {
-            h.mark(*p);
+            h.mark(*a, *b);
         }
     }
 }
@@ -842,7 +850,7 @@ fn php_block(h: &mut Hl, i: usize, end: usize) -> usize {
 
 fn lex_markup(h: &mut Hl, html: bool, php: bool) {
     let end = h.s.len();
-    let mut stack: Vec<(String, usize, ())> = Vec::new();
+    let mut stack: Vec<(String, (usize, usize), ())> = Vec::new();
     let mut i = 0;
     while i < end {
         if php && h.starts(i, "<?") {
@@ -853,7 +861,7 @@ fn lex_markup(h: &mut Hl, html: bool, php: bool) {
             let e = match h.find(i + 4, end, "-->") {
                 Some(p) => p + 3,
                 None => {
-                    h.mark(i);
+                    h.mark(i, i + 4);
                     end
                 }
             };
@@ -869,7 +877,7 @@ fn lex_markup(h: &mut Hl, html: bool, php: bool) {
                     p + 3
                 }
                 None => {
-                    h.mark(i);
+                    h.mark(i, i + 9);
                     end
                 }
             };
@@ -879,7 +887,7 @@ fn lex_markup(h: &mut Hl, html: bool, php: bool) {
             let e = match h.find(i + 2, end, ">") {
                 Some(p) => p + 1,
                 None => {
-                    h.mark(i);
+                    h.mark(i, i + 2);
                     end
                 }
             };
@@ -904,10 +912,10 @@ fn lex_markup(h: &mut Hl, html: bool, php: bool) {
                 h.paint(j, j + 1, PUNCT);
                 j += 1;
             } else {
-                h.mark(ts);
+                h.mark(ts, j);
             }
             let name = if html { name.to_ascii_lowercase() } else { name };
-            close_tag(h, &mut stack, &name, ts, html);
+            close_tag(h, &mut stack, &name, (ts, j), html);
             i = j;
             continue;
         }
@@ -918,6 +926,7 @@ fn lex_markup(h: &mut Hl, html: bool, php: bool) {
                 j += 1;
             }
             let name: String = h.s[i + 1..j].iter().collect();
+            let name_end = j;
             h.paint(i, i + 1, PUNCT);
             h.paint(i + 1, j, KEYWORD);
             let mut self_close = false;
@@ -955,7 +964,7 @@ fn lex_markup(h: &mut Hl, html: bool, php: bool) {
                             j = k + 1;
                         }
                         None => {
-                            h.mark(j);
+                            h.mark(j, j + 1);
                             h.paint(j, end, STRING);
                             j = end;
                         }
@@ -982,7 +991,7 @@ fn lex_markup(h: &mut Hl, html: bool, php: bool) {
                 h.paint(k, j, VARIABLE);
             }
             if !closed {
-                h.mark(ts);
+                h.mark(ts, name_end);
                 i = j;
                 continue;
             }
@@ -992,11 +1001,11 @@ fn lex_markup(h: &mut Hl, html: bool, php: bool) {
                 if html && (lname == "script" || lname == "style") {
                     let stop = h.find_ci(j, end, &format!("</{lname}")).unwrap_or(end);
                     lex_code(h, j, stop, if lname == "script" { &JS } else { &CSS });
-                    stack.push((lname, ts, ()));
+                    stack.push((lname, (ts, j), ()));
                     i = stop;
                     continue;
                 }
-                stack.push((lname, ts, ()));
+                stack.push((lname, (ts, j), ()));
             }
             i = j;
             continue;
@@ -1119,7 +1128,7 @@ fn tag_color(attrs: &str) -> Option<Color> {
 
 fn lex_markdown(h: &mut Hl) {
     let end = h.s.len();
-    let mut stack: Vec<(String, usize, Option<Color>)> = Vec::new();
+    let mut stack: Vec<(String, (usize, usize), Option<Color>)> = Vec::new();
     let mut fence: Option<char> = None;
     let mut cur = TEXT;
     let mut bol = true;
@@ -1190,7 +1199,7 @@ fn lex_markdown(h: &mut Hl) {
             let e = match h.find(i + 4, end, "-->") {
                 Some(p) => p + 3,
                 None => {
-                    h.mark(i);
+                    h.mark(i, i + 4);
                     end
                 }
             };
@@ -1203,10 +1212,10 @@ fn lex_markdown(h: &mut Hl) {
         {
             h.hide(i, t.end);
             if t.closing {
-                close_tag(h, &mut stack, &t.name, i, true);
+                close_tag(h, &mut stack, &t.name, (i, t.end), true);
             } else if !t.self_close && !VOID_TAGS.contains(&t.name.as_str()) {
                 let color = tag_color(&t.attrs);
-                stack.push((t.name, i, color));
+                stack.push((t.name, (i, t.end), color));
             }
             cur = stack.iter().rev().find_map(|&(_, _, c)| c).unwrap_or(TEXT);
             i = t.end;
@@ -1336,6 +1345,10 @@ mod tests {
         c.lines.iter().map(|l| l.iter().map(|c| c.ch).collect()).collect()
     }
 
+    fn marked(c: &Colored, line: usize) -> String {
+        c.lines[line].iter().filter(|x| x.mark).map(|x| x.ch).collect()
+    }
+
     fn color_of(c: &Colored, line: usize, ch: char) -> Color {
         c.lines[line].iter().find(|x| x.ch == ch && !x.mark).unwrap().fg
     }
@@ -1352,10 +1365,12 @@ mod tests {
     fn unbalanced_brackets_and_strings_are_marked() {
         let c = colorize("function f() {\n  return (1 + 2;\n}\n", Lang::JavaScript, 4);
         assert_eq!(c.problems, 1);
-        assert_eq!(text_of(&c)[1], "  return !(1 + 2;");
+        assert_eq!(text_of(&c)[1], "  return (1 + 2;");
+        assert_eq!(marked(&c, 1), "(");
         let c = colorize("x = \"abc\ny = 1\n", Lang::Python, 4);
         assert_eq!(c.problems, 1);
-        assert_eq!(text_of(&c)[0], "x = !\"abc");
+        assert_eq!(text_of(&c)[0], "x = \"abc");
+        assert_eq!(marked(&c, 0), "\"");
         let c = colorize("a = [1, 2)]\n", Lang::Python, 4);
         assert!(c.problems >= 1);
     }
@@ -1387,7 +1402,8 @@ mod tests {
         assert_eq!(ok.problems, 0);
         let bad = colorize("<div><span>text</div>", Lang::Html, 4);
         assert_eq!(bad.problems, 1);
-        assert_eq!(text_of(&bad)[0], "<div>!<span>text</div>");
+        assert_eq!(text_of(&bad)[0], "<div><span>text</div>");
+        assert_eq!(marked(&bad, 0), "<span>");
         let script = colorize("<script>if (a < b) { x(); }</script>", Lang::Html, 4);
         assert_eq!(script.problems, 0);
         let xml = colorize("<?xml version=\"1.0\"?><a><B></b></a>", Lang::Xml, 4);
@@ -1414,7 +1430,8 @@ mod tests {
         assert_eq!(color_of(&c, 0, 'g'), rgb(0, 255, 0));
         let c = colorize("<div>unclosed\n", Lang::Markdown, 4);
         assert_eq!(c.problems, 1);
-        assert_eq!(text_of(&c)[0], "!unclosed");
+        assert_eq!(text_of(&c)[0], "<div>unclosed");
+        assert_eq!(marked(&c, 0), "<div>");
     }
 
     #[test]

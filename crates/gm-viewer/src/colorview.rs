@@ -8,7 +8,7 @@ use gm_ui::draw;
 
 pub struct ColorView {
     lines: Vec<Vec<Cell>>,
-    /// Number of problems marked with a red `!`.
+    /// Number of problems shown on a red background.
     pub problems: usize,
     top: usize,
     /// Wrapped row of the top line shown first.
@@ -160,7 +160,7 @@ impl ColorView {
                     break;
                 }
                 let st = if cell.mark {
-                    Style::default().fg(MARK).bg(BACKGROUND).add_modifier(Modifier::BOLD)
+                    Style::default().fg(syntax::MARK_TEXT).bg(MARK).add_modifier(Modifier::BOLD)
                 } else {
                     Style::default().fg(cell.fg).bg(BACKGROUND)
                 };

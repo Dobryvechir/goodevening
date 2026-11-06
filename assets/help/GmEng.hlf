@@ -2731,7 +2731,7 @@ moving the first character (byte) of a row to the last position of the previous 
  #F5#                 Colors: show source files (html, cs, js, ts, tsx, php,
                       java, py, py3, json, xml, go, dart, rs) with syntax colors
                       on a black background; unbalanced brackets, quotes and
-                      tags are marked with a red #!#. For #md# files HTML tags are
+                      tags are shown on a red background. For #md# files HTML tags are
                       hidden and text takes the color of their style="color:…".
                       Press #F5# again to return to the plain view
  #F6#                 Switch to ~editor~@Editor@
