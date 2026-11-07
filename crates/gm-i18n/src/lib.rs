@@ -173,7 +173,9 @@ mod tests {
         let mut sorted = names.clone();
         sorted.sort_by(|a, b| a.as_bytes().cmp(b.as_bytes()));
         assert_eq!(names, sorted);
-        assert!(names.contains(&"Norsk"));
+        for n in ["Norsk", "Norsk nynorsk", "Dansk", "Svenska", "Français", "Ελληνικά", "עברית", "Български"] {
+            assert!(names.contains(&n), "{n}");
+        }
     }
 
     #[test]

@@ -15,7 +15,7 @@
 //[MCancel]
 "Cancelar"
 //[MReset]
-"&Reset"
+"R&edefinir"
 //[MRetry]
 "Repetir"
 //[MSkip]
@@ -23,7 +23,7 @@
 //[MAbort]
 "Apagar"
 //[MIgnore]
-"Ignore"
+"Ignorar"
 //[MDelete]
 "Dividir"
 //[MHCancel]
@@ -33,17 +33,17 @@
 //[MHSkip]
 "&Pular"
 //[MHSkipAll]
-"S&kip all"
+"Ignorar &todos"
 //[MHAbort]
 "&Apagar"
 //[MHIgnore]
-"&Ignore"
+"&Ignorar"
 //[MHDelete]
 "&Dividir"
 //[MHRemove]
-"R&emove"
+"R&emover"
 //[MHSplit]
-"Sp&lit"
+"Di&vidir"
 //[MWarning]
 "Alerta"
 //[MError]
@@ -117,7 +117,7 @@
 //[MAltF8]
 "Histór"
 //[MAltF9]
-"Video"
+"Vídeo"
 //[MAltF10]
 "Árvore"
 //[MAltF11]
@@ -137,7 +137,7 @@
 //[MCtrlF6]
 "Tam."
 //[MCtrlF7]
-"Unsort"
+"SemOrd"
 //[MCtrlF8]
 "Data"
 //[MCtrlF9]
@@ -177,9 +177,9 @@
 //[MCtrlShiftF2]
 ""
 //[MCtrlShiftF3]
-"View"
+"Ver"
 //[MCtrlShiftF4]
-"Edit"
+"Editar"
 //[MCtrlShiftF5]
 ""
 //[MCtrlShiftF6]
@@ -247,15 +247,15 @@
 //[MHistoryTitle]
 "Histórico"
 //[MHistoryInfoTitle]
-"Information"
+"Informações"
 //[MHistoryInfoFolder]
-"Folder:"
+"Diretório:"
 //[MFolderHistoryTitle]
 "Histórico de diretórios"
 //[MViewHistoryTitle]
 "Histórico da visual. arquivos"
 //[MViewHistoryIsCreate]
-"Create the file?"
+"Criar o arquivo?"
 //[MHistoryView]
 "Ver"
 //[MHistoryEdit]
@@ -263,9 +263,9 @@
 //[MHistoryExt]
 "Ext."
 //[MHistoryClear]
-"All records in the history will be deleted. Continue?"
+"Todos os registros do histórico serão apagados. Continuar?"
 //[MClear]
-"&Clear history"
+"&Limpar histórico"
 //[MConfigSystemTitle]
 "Configurações do sistema"
 //[MConfigRecycleBin]
@@ -275,9 +275,9 @@
 //[MConfigCopySharing]
 "Copiar arquivos abertos para &gravação"
 //[MConfigScanJunction]
-"Scan s&ymbolic links"
+"Verificar links &simbólicos"
 //[MConfigSmartFolderMonitor]
-"&Update panels only when gm is active"
+"Atualizar painéis somente &quando o gm estiver ativo"
 //[MConfigSaveHistory]
 "Salvar &histórico de comandos"
 //[MConfigSaveFoldersHistory]
@@ -287,53 +287,53 @@
 //[MConfigRegisteredTypes]
 "Usar tipos &registrados do Windows"
 //[MConfigUpdateEnvironment]
-"Automatic update of &environment variables"
+"A&tualização automática das variáveis de ambiente"
 //[MConfigElevation]
-"Request administrator rights:"
+"Solicitar direitos de administrador:"
 //[MConfigElevationModify]
-"For &modification"
+"Para mod&ificação"
 //[MConfigElevationRead]
-"For &reading"
+"Para &leitura"
 //[MConfigElevationUsePrivileges]
-"Use additional &privileges"
+"Usar &privilégios adicionais"
 //[MConfigSortingCollation]
-"Sorti&ng collation:"
+"&Ordem de classificação:"
 //[MConfigSortingOrdinal]
 "ordinal"
 //[MConfigSortingInvariant]
-"invariant"
+"invariante"
 //[MConfigSortingLinguistic]
-"linguistic"
+"linguística"
 //[MConfigSortingDigitsAsNumbers]
-"Treat digits &as numbers"
+"Tratar dígitos como &números"
 //[MConfigSortingCase]
-"&Case sensitive"
+"&Diferenciar maiúsculas"
 //[MConfigAutoSave]
 "&Salvar a configuração automaticamente"
 //[MConfigTreeTitle]
-"Tree settings"
+"Configurações da árvore"
 //[MConfigTreeAutoChange]
 "&Alterar automaticamente para o diretório"
 //[MConfigTreeLabelMinFolder]
-"&Minimum number of folders:"
+"Número &mínimo de diretórios:"
 //[MConfigTreeLabel1]
-"Store a file with folder structure for:"
+"Armazenar um arquivo com a estrutura de diretórios para:"
 //[MConfigTreeLabelLocalDisk]
-"local drives"
+"unidades locais"
 //[MConfigTreeLabelNetDisk]
-"network drives"
+"unidades de rede"
 //[MConfigTreeLabelNetPath]
-"network paths"
+"caminhos de rede"
 //[MConfigTreeLabelRemovableDisk]
-"removable drives"
+"unidades removíveis"
 //[MConfigTreeLabelCDDisk]
-"optical drives"
+"unidades ópticas"
 //[MConfigTreeLabelExceptPath]
-"Don't create the file for following drives and paths:"
+"Não criar o arquivo para as seguintes unidades e caminhos:"
 //[MConfigTreeLabelSaveLocalPath]
-"Path for local, removale and optical drives:"
+"Caminho para unidades locais, removíveis e ópticas:"
 //[MConfigTreeLabelSaveNetPath]
-"Path for network drives and paths:"
+"Caminho para unidades e caminhos de rede:"
 //[MConfigPanelTitle]
 "Configurações do Painel"
 //[MConfigHidden]
@@ -343,23 +343,23 @@
 //[MConfigSelectFolders]
 "Selecionar di&retórios"
 //[MConfigRightClickSelect]
-"Right clic&k selects files"
+"Clique com o botão direito seleciona &arquivos"
 //[MConfigSortFolderExt]
-"Sort folder names by e&xtension"
+"Ordenar nomes de diretórios por e&xtensão"
 //[MConfigAllowReverseSort]
 "Inverter c&lassificação"
 //[MConfigAutoUpdateLimit]
-"&Disable automatic panel update"
+"Desa&tivar atualização automática do painel"
 //[MConfigAutoUpdateLimit2]
-"if ob&ject count exceeds"
+"se o número de ob&jetos exceder"
 //[MConfigAutoUpdateRemoteDrive]
-"Network drives autor&efresh"
+"Atualização automática de unidades de r&ede"
 //[MConfigShowColumns]
 "Mostrar titulos das &colunas"
 //[MConfigShowStatus]
 "Mostrar linha de &status"
 //[MConfigDetailedJunction]
-"Detect volume mount &points"
+"Detectar pontos de &montagem de volume"
 //[MConfigShowTotal]
 "Mostrar &informações totais dos arquivos"
 //[MConfigShowFree]
@@ -371,13 +371,13 @@
 //[MConfigShowSortMode]
 "Mostrar letra do modo de classi&ficação"
 //[MConfigShowDotsInRoot]
-"Show \"&..\" in root folders"
+"Mostrar \"&..\" nos diretórios raiz"
 //[MConfigInterfaceTitle]
 "Configurações da Interface"
 //[MConfigClock]
 "&Relógio"
 //[MConfigMouse]
-"&Mouse"
+"M&ouse"
 //[MConfigKeyBar]
 "Mostrar barra de &botões"
 //[MConfigMenuBar]
@@ -385,149 +385,149 @@
 //[MConfigSaver]
 "&Proteção de tela"
 //[MConfigSaverMinutes]
-"minutos"
+"minu&tos"
 //[MConfigCopyTotal]
 "Mostrar &indic. de progresso total da cópia"
 //[MConfigCopyTimeRule]
-"Show cop&ying time information"
+"Mostrar informações de tempo de c&ópia"
 //[MConfigDeleteTotal]
-"Show total &delete progress indicator"
+"&Mostrar indicador de progresso total da exclusão"
 //[MConfigPgUpChangeDisk]
-"Use Ctrl+Pg&Up to change drive"
+"Usar Ctrl+Pg&Up para trocar de unidade"
 //[MConfigUseVirtualTerminalForRendering]
-"Use &Virtual Terminal for rendering"
+"Usar Terminal &Virtual para renderização"
 //[MConfigFullWidthAwareRendering]
-"Fullwidth-aware rendering"
+"Renderização com suporte a largura total"
 //[MConfigFullWidthAwareRenderingGraphemeClustersDected1]
-"It appears that your terminal supports Unicode grapheme clusters."
+"Parece que seu terminal suporta clusters de grafemas Unicode."
 //[MConfigFullWidthAwareRenderingGraphemeClustersDected2]
-"Unfortunately, gm does not support them yet."
+"Infelizmente, o gm ainda não os suporta."
 //[MConfigFullWidthAwareRenderingGraphemeClustersDected3]
-"For best experience it is recommended to switch to codepoint-based rendering."
+"Para uma melhor experiência, recomenda-se mudar para a renderização baseada em pontos de código."
 //[MConfigFullWidthAwareRenderingGraphemeClustersDected4]
-"Consult the documentation of your terminal for advice on how to do this."
+"Consulte a documentação do seu terminal para saber como fazer isso."
 //[MConfigClearType]
-"Cl&earType-friendly redraw (can be slow)"
+"&Redesenho compatível com ClearType (pode ser lento)"
 //[MConfigSetConsoleIcon]
-"Console &icon:"
+"&Ícone do console:"
 //[MConfigSetAdminConsoleIcon]
-"Alternate for &Administrator"
+"A&lternativo para Administrador"
 //[MConfigTitleAddons]
-"gm &window title addons:"
+"Complementos do título da &janela do gm:"
 //[MConfigDlgSetsTitle]
-"Dialog settings"
+"Configurações de diálogos"
 //[MConfigDialogsEditHistory]
 "&Histórico nos dial. de controle de edição"
 //[MConfigDialogsEditBlock]
-"&Persistent blocks in edit controls"
+"Blocos &persistentes nos campos de edição"
 //[MConfigDialogsDelRemovesBlocks]
-"&Del removes blocks in edit controls"
+"Del remove blocos &nos campos de edição"
 //[MConfigDialogsAutoComplete]
-"&AutoComplete in edit controls"
+"&Autocompletar nos campos de edição"
 //[MConfigDialogsEULBsClear]
-"&Backspace deletes unchanged text"
+"&Backspace apaga texto não alterado"
 //[MConfigDialogsMouseButton]
-"Mouse click &outside a dialog closes it"
+"Clique &fora de um diálogo o fecha"
 //[MConfigVMenuTitle]
-"Menu settings"
+"Configurações de menu"
 //[MConfigVMenuLBtnClick]
-"&Left mouse click outside a menu"
+"Clique com botão &esquerdo fora de um menu"
 //[MConfigVMenuRBtnClick]
-"&Right mouse click outside a menu"
+"&Clique com botão direito fora de um menu"
 //[MConfigVMenuMBtnClick]
-"&Middle mouse click outside a menu"
+"Clique com botão do meio fora de &um menu"
 //[MConfigVMenuClickCancel]
-"Cancel menu"
+"Cancelar menu"
 //[MConfigVMenuClickApply]
-"Execute selected item"
+"Executar item selecionado"
 //[MConfigVMenuClickIgnore]
-"Do nothing"
+"Não fazer nada"
 //[MConfigCmdlineTitle]
-"Command line settings"
+"Configurações da linha de comando"
 //[MConfigCmdlineEditBlock]
-"&Persistent blocks"
+"B&locos persistentes"
 //[MConfigCmdlineDelRemovesBlocks]
-"&Del removes blocks"
+"&Del remove blocos"
 //[MConfigCmdlineAutoComplete]
-"&AutoComplete"
+"Au&tocompletar"
 //[MConfigCmdlineUsePromptFormat]
 "Ajustar o formato do &aviso de comando"
 //[MConfigCmdlineUseHomeDir]
-"Use &home dir"
+"Usar diretório &pessoal"
 //[MConfigCmdlinePromptFormatAdmin]
-"Administrator"
+"Administrador"
 //[MConfigAutoCompleteTitle]
-"AutoComplete settings"
+"Configurações de autocompletar"
 //[MConfigAutoCompleteShowList]
-"&Show a list"
+"&Mostrar uma lista"
 //[MConfigAutoCompleteModalList]
-"&Modal mode"
+"Modo m&odal"
 //[MConfigAutoCompleteAutoAppend]
-"&Append the first matched item"
+"Acrescentar o primeiro &item correspondente"
 //[MConfigInfoPanelTitle]
-"InfoPanel settings"
+"Configurações do painel de informações"
 //[MConfigInfoPanelCNTitle]
-"Computer &name format"
+"Formato do &nome do computador"
 //[MConfigInfoPanelCNPhysicalNetBIOS]
-"Physical NetBIOS"
+"NetBIOS físico"
 //[MConfigInfoPanelCNPhysicalDnsHostname]
-"Physical DNS hostname"
+"Nome de host DNS físico"
 //[MConfigInfoPanelCNPhysicalDnsDomain]
-"Physical DNS domain"
+"Domínio DNS físico"
 //[MConfigInfoPanelCNPhysicalDnsFullyQualified]
-"Physical DNS fully-qualified (FQDN)"
+"Nome DNS totalmente qualificado físico (FQDN)"
 //[MConfigInfoPanelCNNetBIOS]
 "NetBIOS"
 //[MConfigInfoPanelCNDnsHostname]
-"DNS hostname"
+"Nome de host DNS"
 //[MConfigInfoPanelCNDnsDomain]
-"DNS domain"
+"Domínio DNS"
 //[MConfigInfoPanelCNDnsFullyQualified]
-"DNS fully-qualified (FQDN)"
+"Nome DNS totalmente qualificado (FQDN)"
 //[MConfigInfoPanelUNTitle]
-"&User name format"
+"Formato do nome de &usuário"
 //[MConfigInfoPanelUNLogon]
-"Logon name"
+"Nome de logon"
 //[MConfigInfoPanelUNFullyQualifiedDN]
-"Fully Qualified Domain Name (FQDN)"
+"Nome de domínio totalmente qualificado (FQDN)"
 //[MConfigInfoPanelUNSamCompatible]
-"Sam Compatible"
+"Compatível com SAM"
 //[MConfigInfoPanelUNDisplay]
-"Display Name"
+"Nome de exibição"
 //[MConfigInfoPanelUNUniqueId]
-"Unique Id"
+"ID exclusivo"
 //[MConfigInfoPanelUNCanonical]
-"Canonical Name"
+"Nome canônico"
 //[MConfigInfoPanelUNUserPrincipal]
-"User Principial Name"
+"Nome principal do usuário"
 //[MConfigInfoPanelUNServicePrincipal]
-"Service Principal"
+"Nome principal do serviço"
 //[MConfigInfoPanelUNDnsDomain]
-"DNS domain"
+"Domínio DNS"
 //[MConfigInfoPanelUNGivenName]
-"Given name"
+"Nome próprio"
 //[MConfigInfoPanelUNSurname]
-"Surname"
+"Sobrenome"
 //[MConfigInfoPanelShowPowerStatus]
-"Show &power status"
+"M&ostrar estado da energia"
 //[MConfigInfoPanelShowCDInfo]
-"Show &CD drive parameters"
+"Mostrar &parâmetros da unidade de CD"
 //[MMenuInfoShowModeTitle]
-"Show Info"
+"Mostrar informações"
 //[MMenuInfoShowModeDisk]
-"&Disk"
+"D&isco"
 //[MMenuInfoShowModeMemory]
-"&Memory"
+"Mem&ória"
 //[MMenuInfoShowModeDirDiz]
-"&Description"
+"&Descrição"
 //[MMenuInfoShowModePluginDiz]
-"Plu&gin panel"
+"Pai&nel do plugin"
 //[MMenuInfoShowModePower]
-"&Power status"
+"Estado da &energia"
 //[MViewConfigTitle]
 "Visualizador"
 //[MViewConfigExternalF3]
-"Uso Visualizador Externo para F3 instead of Alt+F3"
+"Uso &Visualizador Externo para F3 instead of Alt+F3"
 //[MViewConfigExternalCommand]
 "&Comando de visualização:"
 //[MViewConfigInternal]
@@ -535,35 +535,35 @@
 //[MViewConfigSavePos]
 "&Salvar posição do arquivo"
 //[MViewConfigSaveShortPos]
-"Save &bookmarks"
+"Salvar &marcadores"
 //[MViewConfigSaveCodepage]
-"Save file &code page"
+"Sa&lvar página de código do arquivo"
 //[MViewConfigSaveWrapMode]
-"Save w&rap mode"
+"Salvar modo de &quebra de linha"
 //[MViewConfigSaveViewMode]
-"Save vi&ew mode"
+"Salvar modo de v&isualização"
 //[MViewConfigDetectDumpMode]
-"Detect d&ump view mode"
+"Detectar modo de visualização de d&ump"
 //[MViewAutoDetectCodePage]
 "&Auto-detectar code page"
 //[MViewConfigTabSize]
 "&Tamanho da tabulação"
 //[MViewConfigScrollbar]
-"Show scro&llbar"
+"Mostrar barra de &rolagem"
 //[MViewConfigArrows]
-"Show scrolling arro&ws"
+"Mostrar setas de rola&gem"
 //[MViewConfigPersistentSelection]
-"&Persistent selection"
+"Seleção &persistente"
 //[MViewConfigDefaultCodePage]
-"&Default code page:"
+"P&ágina de código padrão:"
 //[MViewConfigMaxLineSize]
-"&Maximum line width"
+"Largura má&xima da linha"
 //[MViewConfigVisible0x00]
-"Visible '\\&0'"
+"Visível '\\&0'"
 //[MEditConfigTitle]
 "Editor"
 //[MEditConfigEditorF4]
-"Uso Editor Externo para F4 instead of Alt+F4"
+"Uso Editor Externo para F4 instead &of Alt+F4"
 //[MEditConfigEditorCommand]
 "&Comando do Editor:"
 //[MEditConfigInternal]
@@ -571,7 +571,7 @@
 //[MEditConfigExpandTabsTitle]
 "Expandir &tabulações para espaços"
 //[MEditConfigDoNotExpandTabs]
-"Do not expand tabs"
+"Não expandir tabulações"
 //[MEditConfigExpandTabs]
 "Expand newly entered tabs to espaços"
 //[MEditConfigConvertAllTabsToSpaces]
@@ -585,49 +585,49 @@
 //[MEditConfigSavePos]
 "&Salvar posição do arquivo"
 //[MEditConfigSaveShortPos]
-"Save &bookmarks"
+"Sal&var marcadores"
 //[MEditCursorBeyondEnd]
 "Cursor além do &fim da linha"
 //[MEditAutoDetectCodePage]
 "&Auto-detectar code page"
 //[MEditShareWrite]
-"Allow editing files ope&ned for writing"
+"Permitir editar arquivos ab&ertos para escrita"
 //[MEditLockROFileModification]
-"Lock editing of read-only &files"
+"Bl&oquear edição de arquivos somente leitura"
 //[MEditWarningBeforeOpenROFile]
-"&Warn when opening read-only files"
+"Avisar ao abrir ar&quivos somente leitura"
 //[MEditConfigTabSize]
 "Ta&manho da tabulação"
 //[MEditConfigScrollbar]
-"S&how scrollbar"
+"Mostrar barra de rolagem (&h)"
 //[MEditConfigLineNumbers]
 "Mo&strar números de linha"
 //[MEditShowWhiteSpace]
-"Sh&ow white space"
+"Mostrar espaços em &branco"
 //[MEditConfigSelFound]
-"Se&lect found"
+"Se&lecionar encontrado"
 //[MEditConfigCursorAtEnd]
-"Cu&rsor at the end"
+"Cu&rsor no final"
 //[MEditConfigDefaultCodePage]
-"Default code pa&ge:"
+"Página de código padrão (&g):"
 //[MConfigEditor]
-"Configuration editor"
+"Editor de configuração"
 //[MConfigEditorBoolean]
-"boolean"
+"booleano"
 //[MConfigEditorTriState]
-"3-state"
+"3 estados"
 //[MConfigEditorInteger]
-"integer"
+"inteiro"
 //[MConfigEditorString]
-"string"
+"texto"
 //[MConfigEditorIntegerSigned]
-"Signed:"
+"Com sinal:"
 //[MConfigEditorIntegerUnsigned]
-"Unsigned:"
+"Sem sinal:"
 //[MConfigEditorIntegerHexadecimal]
 "Hexadecimal:"
 //[MConfigEditorIntegerBinary]
-"Binary:"
+"Binário:"
 //[MSaveSetupTitle]
 "Salvar configuração"
 //[MSaveSetupAsk1]
@@ -645,37 +645,37 @@
 //[MCopySecurity]
 "Direitos de &acesso:"
 //[MCopySecurityDefault]
-"Defau&lt"
+"&Padrão"
 //[MCopySecurityCopy]
-"Copia"
+"&Copia"
 //[MCopySecurityInherit]
-"&Inherit"
+"&Herdar"
 //[MCopyIfFileExist]
-"Already e&xisting files:"
+"Arquivos já e&xistentes:"
 //[MCopyAsk]
 "&Ask"
 //[MCopyAskRO]
-"Also ask on &R/O files"
+"Perguntar também sobre arquivos somente &leitura"
 //[MCopyOnlyNewerFiles]
-"Only ne&wer file(s)"
+"S&omente arquivos mais novos"
 //[MLinkType]
-"Link t&ype:"
+"&Tipo de link:"
 //[MLinkTypeJunction]
-"directory &junction"
+"&junção de diretório"
 //[MLinkTypeHardlink]
-"&hard link"
+"lin&k físico"
 //[MLinkTypeSymlink]
-"&symbolic link"
+"link &simbólico"
 //[MLinkTypeSymlinkFile]
-"symbolic link (&file)"
+"link sim&bólico (arquivo)"
 //[MLinkTypeSymlinkDirectory]
-"symbolic link (fol&der)"
+"link simbólico (&diretório)"
 //[MCopyPreserveAllTimestamps]
-"Preserve all timestamps"
+"Preservar todas as marcas de tempo"
 //[MCopySymLinkContents]
-"Cop&y contents of symbolic links"
+"Cop&iar conteúdo de links simbólicos"
 //[MCopyMultiActions]
-"Process &multiple destinations"
+"Processar &múltiplos destinos"
 //[MCopyDlgCopy]
 "&Copia"
 //[MCopyDlgTree]
@@ -689,11 +689,11 @@
 //[MCopyDlgTotal]
 "Total"
 //[MCopyPrepareSecury]
-"Applying access rights…"
+"Aplicando direitos de acesso…"
 //[MCopyUseFilter]
-"&Use filter"
+"&Usar filtro"
 //[MCopySetFilter]
-"Filt&er"
+"Fil&tro"
 //[MCopyFile]
 "Copiando {0} {1}:"
 //[MMoveFile]
@@ -717,7 +717,7 @@
 //[MCMLItemsS]
 "s"
 //[MCopyIncorrectTargetList]
-"Incorrect target list"
+"Lista de destinos incorreta"
 //[MCopyCopyingTitle]
 "Copiando"
 //[MCopyMovingTitle]
@@ -733,9 +733,9 @@
 //[MCopyCannotRenameFolder]
 "Não foi possivel rename o diretório"
 //[MCopyIgnore]
-"&Ignore"
+"I&gnorar"
 //[MCopyIgnoreAll]
-"Ignore &All"
+"&Ignorar todos"
 //[MCopyRetry]
 "&Repetir"
 //[MCopySkip]
@@ -745,59 +745,59 @@
 //[MCopyCancel]
 "&Cancelar"
 //[MCopyDecrypt]
-"&Decrypt"
+"&Descriptografar"
 //[MCopyDecryptAll]
-"Decrypt &all"
+"Descriptografar &todos"
 //[MCopyCannotCreateLink]
-"Cannot create the link"
+"Não é possível criar o link"
 //[MCopyFolderNotEmpty]
-"Target folder must be empty"
+"O diretório de destino deve estar vazio"
 //[MCopyCannotCreateJunctionToFile]
-"Cannot create junction. The file already exists:"
+"Não é possível criar a junção. O arquivo já existe:"
 //[MCopyCannotCreateVolMount]
-"Volume mount points error"
+"Erro nos pontos de montagem de volume"
 //[MCopyMountVolFailed]
-"Attempt to volume mount '{0}'"
+"Tentativa de montar o volume '{0}'"
 //[MCopyMountVolFailed2]
-"at '{0}' failed"
+"em '{0}' falhou"
 //[MCopyMountName]
-"Disk_"
+"Disco_"
 //[MCannotCopyFileToItself1]
 "Não foi possivel copiar o arquivo"
 //[MCannotCopyFileToItself2]
 "nele mesmo"
 //[MCopyStream1]
-"The source file contains more than one data stream,"
+"O arquivo de origem contém mais de um fluxo de dados,"
 //[MCopyStream2]
-"but you're not using the system copy routine."
+"mas você não está usando a rotina de cópia do sistema."
 //[MCopyStream3]
-"but the destination volume does not support this feature."
+"mas o volume de destino não suporta este recurso."
 //[MCopyStream4]
-"Some data will not be preserved."
+"Alguns dados não serão preservados."
 //[MCopyDirectoryOrFile]
-"Does it specify a folder name or file name?"
+"Isto especifica um nome de diretório ou de arquivo?"
 //[MCopyDirectoryOrFileDirectory]
-"Folder"
+"Diretório"
 //[MCopyDirectoryOrFileFile]
-"File"
+"Arquivo"
 //[MCopyFileExist]
 "O arquivo já existe"
 //[MCopySource]
-"Origem"
+"&Origem"
 //[MCopyDest]
-"Destino"
+"&Destino"
 //[MCopyOverwrite]
 "&Substituir"
 //[MCopyAppend]
 "&Acrescentar"
 //[MCopyRename]
-"R&ename"
+"R&enomear"
 //[MCopyRememberChoice]
-"&Remember choice"
+"&Lembrar a escolha"
 //[MCopyRenameTitle]
-"Rename"
+"Renomear"
 //[MCopyRenameText]
-"&New name:"
+"&Novo nome:"
 //[MCopyFileRO]
 "O arquivo é somente para leitura"
 //[MCopyAskDelete]
@@ -815,15 +815,15 @@
 //[MCannotCopyTo]
 "para"
 //[MCopyEncryptWarn1]
-"The file"
+"O arquivo"
 //[MCopyEncryptWarn2]
-"cannot be copied or moved without losing its encryption."
+"não pode ser copiado ou movido sem perder a criptografia."
 //[MCopyReadError]
 "Não foi possivel ler os dados de"
 //[MCopyWriteError]
 "Não foi possivel gravar os dados para"
 //[MCopyCannotReserveSpace]
-"Error reserving disk space"
+"Erro ao reservar espaço em disco"
 //[MCopyFilesTotalInfo]
 "Arquivos:"
 //[MCopyBytesTotalInfo]
@@ -839,7 +839,7 @@
 //[MAskDelete]
 "Deseja apagar {0}?"
 //[MAskDeleteRecycle]
-"Deseja apagar o diretório para a lixeira"
+"Deseja mover {0} para a lixeira?"
 //[MDeleteWipeTitle]
 "Limpar"
 //[MAskWipe]
@@ -849,11 +849,11 @@
 //[MAskDeleteFile]
 "o arquivo"
 //[MAskDeleteObjects]
-"the objects"
+"os objetos"
 //[MAskDeleteLink]
-"a link to"
+"um link para"
 //[MAskDeleteAndMore]
-"…and {0} more"
+"…e mais {0}"
 //[MDeleteFolderTitle]
 "Apagar diretório"
 //[MWipeFolderTitle]
@@ -865,21 +865,21 @@
 //[MDeleteFolderConfirm]
 "O seguinte diretório será apagado:"
 //[MWipeFolderConfirm]
-"The following folder will be wiped:"
+"O seguinte diretório será eliminado definitivamente:"
 //[MRecycleFolderConfirm]
-"The following folder will be moved to the Recycle Bin:"
+"O seguinte diretório será movido para a Lixeira:"
 //[MRecycleFolderConfirmDeleteLink1]
-"Folder contains symbolic links."
+"O diretório contém links simbólicos."
 //[MRecycleFolderConfirmDeleteLink2]
-"To prevent the loss of their content when clearing Recyle Bin"
+"Para evitar a perda do seu conteúdo ao esvaziar a Lixeira,"
 //[MRecycleFolderConfirmDeleteLink3]
-"those links will be broken now."
+"esses links serão desfeitos agora."
 //[MRecycleFolderConfirmDeleteLink4]
-"It would be impossible to restore them later."
+"Será impossível restaurá-los depois."
 //[MDeleteWipe]
 "Limpar"
 //[MDeleteRecycle]
-"Move"
+"Mover"
 //[MDeleteFileDelete]
 "&Apagar"
 //[MDeleteFileWipe]
@@ -897,25 +897,25 @@
 //[MDeleting]
 "Apagando o arquivo ou diretório"
 //[MDeletingWiping]
-"Wiping the file or folder"
+"Eliminando definitivamente o arquivo ou diretório"
 //[MDeleteRO]
 "O arquivo é somente para leitura"
 //[MAskDeleteRO]
 "Deseja apaga-lo?"
 //[MAskWipeRO]
-"Do you wish to wipe it?"
+"Deseja eliminá-lo definitivamente?"
 //[MDeleteHardLink1]
-"Several hard links link to this file."
+"Vários links físicos apontam para este arquivo."
 //[MDeleteHardLink2]
-"Wiping this file will void all files linking to it."
+"Eliminar este arquivo esvaziará todos os arquivos vinculados a ele."
 //[MDeleteHardLink3]
-"Do you wish to wipe this file?"
+"Deseja eliminar este arquivo definitivamente?"
 //[MCannotDeleteFile]
 "Não foi possível apagar o arquivo"
 //[MCannotDeleteFolder]
 "Não foi possível apagar o diretório"
 //[MDeleteRetry]
-"&Retry"
+"Tentar &novamente"
 //[MDeleteSkip]
 "&Pular"
 //[MDeleteSkipAll]
@@ -923,11 +923,11 @@
 //[MDeleteCancel]
 "&Cancelar"
 //[MCannotRecycleFile]
-"Cannot move file to the Recycle Bin"
+"Não é possível mover o arquivo para a Lixeira"
 //[MCannotRecycleFolder]
-"Cannot move folder to the Recycle Bin"
+"Não é possível mover o diretório para a Lixeira"
 //[MTryToDeletePermanently]
-"Try to delete it permanently?"
+"Tentar apagá-lo permanentemente?"
 //[MCannotGetSecurity]
 "Não foi possivel obter os direitos de acesso do arquivo para"
 //[MCannotSetSecurity]
@@ -941,9 +941,9 @@
 //[MSearchReplaceHex]
 "&Hex"
 //[MSearchReplacePickWord]
-"W&ord"
+"Palavr&a"
 //[MSearchReplacePickSelection]
-"Se&lection"
+"Se&leção"
 //[MSearchReplaceSearchFor]
 "&Procurar por"
 //[MSearchReplaceReplaceWith]
@@ -951,13 +951,13 @@
 //[MSearchReplaceCase]
 "&Distinguir maiúsc./minúsc."
 //[MSearchReplaceWholeWords]
-"&Whole words"
+"Palav&ras inteiras"
 //[MSearchReplaceFuzzy]
-"Fu&zzy search"
+"Busca apro&ximada"
 //[MSearchReplaceRegexp]
-"R&egular expressions"
+"Expre&ssões regulares"
 //[MSearchReplacePreserveStyle]
-"&Preserve style"
+"Preservar &estilo"
 //[MSearchReplaceFind]
 "Procura"
 //[MSearchReplaceFindNext]
@@ -983,7 +983,7 @@
 //[MReload]
 "&Recarregar"
 //[MNewOpen]
-"&New instance"
+"&Nova instância"
 //[MEditCannotOpen]
 "Não foi possivel abrir o arquivo"
 //[MEditReading]
@@ -993,7 +993,7 @@
 //[MEditAskSaveExt]
 "The file was changed by an external program. Salvar?"
 //[MEditBtnSaveAs]
-"Save &as…"
+"Salvar &como…"
 //[MEditRO]
 "arquivo somente para leitura"
 //[MEditExists]
@@ -1009,21 +1009,21 @@
 //[MEditStatusChar]
 "Ch"
 //[MEditRSH]
-"is a read-only file"
+"é um arquivo somente leitura"
 //[MEditFileGetSizeError]
-"File size could not be determined."
+"Não foi possível determinar o tamanho do arquivo."
 //[MEditFileLong]
-"has the size of {0},"
+"tem o tamanho de {0},"
 //[MEditFileLong2]
-"which exceeds the configured maximum size of {0}."
+"que excede o tamanho máximo configurado de {0}."
 //[MEditROOpen]
-"Do you wish to edit it?"
+"Deseja editá-lo?"
 //[MEditCanNotEditDirectory]
-"It is impossible to edit the folder"
+"Não é possível editar o diretório"
 //[MEditSearchingFor]
 "Procurando por {0}"
 //[MEditSearchStatistics]
-"Occurrences: {0}, lines: {1}"
+"Ocorrências: {0}, linhas: {1}"
 //[MEditSearchAllFileNameFormat]
 "{0}{1}.Filtered.txt"
 //[MEditSearchAllFileNameFormatAlt]
@@ -1041,17 +1041,17 @@
 //[MEditSkip]
 "&Pular"
 //[MEditCancel]
-"&Cancel"
+"&Cancelar"
 //[MEditOpenCreateLabel]
-"&Open/create file:"
+"&Abrir/criar arquivo:"
 //[MEditOpenAutoDetect]
-"Automatic detection"
+"Detecção automática"
 //[MDefaultCP]
-"Default"
+"Padrão"
 //[MGoTo]
 "Ir para"
 //[MGoToHex]
-"&Hex value"
+"Valor &hexadecimal"
 //[MFolderShortcutsTitle]
 "Atalhos do Diretório"
 //[MShortcutNone]
@@ -1059,17 +1059,17 @@
 //[MShortcutPlugin]
 "<plugin>"
 //[MFSShortcutName]
-"Title:"
+"Título:"
 //[MFSShortcutPath]
-"Path:"
+"Caminho:"
 //[MFSShortcutPluginFile]
-"File:"
+"Arquivo:"
 //[MFSShortcutPluginData]
-"Data:"
+"Dados:"
 //[MNeedNearPath]
-"Jump to the nearest existing folder?"
+"Ir para o diretório existente mais próximo?"
 //[MSaveThisShortcut]
-"Save this shortcut?"
+"Salvar este atalho?"
 //[MEditF1]
 "Ajuda"
 //[MEditF2]
@@ -1077,7 +1077,7 @@
 //[MEditF3]
 ""
 //[MEditF4]
-"Quit"
+"Sair"
 //[MEditF5]
 ""
 //[MEditF6]
@@ -1101,7 +1101,7 @@
 //[MEditShiftF3]
 ""
 //[MEditShiftF4]
-"Edit…"
+"Editar…"
 //[MEditShiftF5]
 ""
 //[MEditShiftF6]
@@ -1109,7 +1109,7 @@
 //[MEditShiftF7]
 "Próx."
 //[MEditShiftF8]
-"CodePg"
+"PágCód"
 //[MEditShiftF9]
 ""
 //[MEditShiftF10]
@@ -1131,15 +1131,15 @@
 //[MEditAltF6]
 ""
 //[MEditAltF7]
-"Prev"
+"Ant."
 //[MEditAltF8]
-"Goto"
+"IrPara"
 //[MEditAltF9]
-"Video"
+"Vídeo"
 //[MEditAltF10]
 ""
 //[MEditAltF11]
-"ViewHs"
+"VerHs"
 //[MEditAltF12]
 ""
 //[MEditCtrlF1]
@@ -1161,7 +1161,7 @@
 //[MEditCtrlF9]
 ""
 //[MEditCtrlF10]
-"GoFile"
+"IrArq"
 //[MEditCtrlF11]
 ""
 //[MEditCtrlF12]
@@ -1267,53 +1267,53 @@
 //[MEditCtrlF3Hide]
 "OcultN"
 //[MEditSaveAs]
-"Salvar arquivo como"
+"Salvar &arquivo como"
 //[MEditCodePage]
-"&Code page:"
+"&Página de código:"
 //[MEditAddSignature]
-"Add &signature (BOM)"
+"Adicionar assinatura (&BOM)"
 //[MEditSaveAsFormatTitle]
-"Change line breaks to:"
+"Alterar quebras de linha para:"
 //[MEditSaveOriginal]
-"Do n&ot change"
+"&Não alterar"
 //[MEditSaveDOS]
-"&Dos/Windows format (CR LF)"
+"Formato &Dos/Windows (CR LF)"
 //[MEditSaveUnix]
-"&Unix format (LF)"
+"Formato &Unix (LF)"
 //[MEditSaveMac]
-"&Mac format (CR)"
+"Formato &Mac (CR)"
 //[MEditCannotSave]
 "Não foi possivel salvar o arquivo"
 //[MEditSavedChangedNonFile]
-"The file is changed but the file or the folder containing"
+"O arquivo foi alterado, mas o arquivo ou o diretório que contém"
 //[MEditSavedChangedNonFile1]
-"The file or the folder containing"
+"O arquivo ou o diretório que contém"
 //[MEditSavedChangedNonFile2]
-"this file was moved or deleted. Save?"
+"este arquivo foi movido ou apagado. Salvar?"
 //[MEditNewPath1]
-"The path to the edited file does not exist,"
+"O caminho para o arquivo editado não existe,"
 //[MEditNewPath2]
-"but will be created when the file is saved."
+"mas será criado quando o arquivo for salvo."
 //[MEditNewPath3]
-"Continue?"
+"Continuar?"
 //[MEditNewPlugin1]
-"The name of the file to edit cannot be empty"
+"O nome do arquivo a editar não pode ser vazio"
 //[MEditorReloadCPWarnLost1]
-"The file has to be reloaded to change the code page."
+"O arquivo precisa ser recarregado para alterar a página de código."
 //[MEditorReloadCPWarnLost2]
-"All unsaved changes will be lost."
+"Todas as alterações não salvas serão perdidas."
 //[MEditorSwitchCPConfirm]
-"Continue?"
+"Continuar?"
 //[MEditDataLostWarn]
-"During the file editing some data was lost."
+"Durante a edição do arquivo alguns dados foram perdidos."
 //[MEditorSaveNotRecommended]
-"It is not recommended to save this file."
+"Não é recomendado salvar este arquivo."
 //[MEditorSave]
-"Save"
+"Salvar"
 //[MEditorSaveCPWarnShow]
-"Show"
+"Mostrar"
 //[MEditorCPNotSupported]
-"Code page {0} is not supported in your system"
+"A página de código {0} não é suportada pelo seu sistema"
 //[MColumnName]
 "Nome"
 //[MColumnExtension]
@@ -1321,7 +1321,7 @@
 //[MColumnSize]
 "Compactado"
 //[MColumnAlocatedSize]
-"Allocated"
+"Alocado"
 //[MColumnDate]
 "Data"
 //[MColumnTime]
@@ -1333,7 +1333,7 @@
 //[MColumnAccessed]
 "Acessado"
 //[MColumnChanged]
-"Change"
+"Alteração"
 //[MColumnAttr]
 "Attributo"
 //[MColumnDescription]
@@ -1345,7 +1345,7 @@
 //[MColumnNumStreams]
 "NmS"
 //[MColumnStreamsSize]
-"StrmSz"
+"TamFlx"
 //[MColumnUnknown]
 "???"
 //[MListUp]
@@ -1353,13 +1353,13 @@
 //[MListFolder]
 "Diret"
 //[MListSymlink]
-"Symlink"
+"Link"
 //[MListJunction]
-"Junction"
+"Junção"
 //[MListVolMount]
 "Volume"
 //[MListUnknownReparsePoint]
-"?Symlink?"
+"?Link?"
 //[MListBrackets]
 "<>"
 //[MListBytes]
@@ -1377,7 +1377,7 @@
 //[MListEb]
 "E"
 //[MListFileSize]
-"Bytes: {0}, files: {1}, folders: {2}"
+"Bytes: {0}, arquivos: {1}, diretórios: {2}"
 //[MListFileSizeStatus]
 "{0} ({1}/{2}) {3} {4}"
 //[MListFreeSize]
@@ -1391,7 +1391,7 @@
 //[MSelectTitle]
 "Selecionar"
 //[MSelectFilter]
-"&Filter"
+"&Filtro"
 //[MCompareTitle]
 "Comparar"
 //[MCompareFilePanelsRequired1]
@@ -1417,7 +1417,7 @@
 //[MFileAssocExec]
 "E&xecutar comando (usado por Enter):"
 //[MFileAssocAltExec]
-"Executar comando (usado por Ctrl+PgDn):"
+"Executar &comando (usado por Ctrl+PgDn):"
 //[MFileAssocView]
 "Comando de &visualização (usado por F3):"
 //[MFileAssocAltView]
@@ -1453,11 +1453,11 @@
 //[MViewShiftF1]
 ""
 //[MViewShiftF2]
-"WWrap"
+"QbPal"
 //[MViewShiftF3]
 ""
 //[MViewShiftF4]
-"Mode"
+"Modo"
 //[MViewShiftF5]
 ""
 //[MViewShiftF6]
@@ -1465,7 +1465,7 @@
 //[MViewShiftF7]
 "Próx."
 //[MViewShiftF8]
-"CodePg"
+"PágCód"
 //[MViewShiftF9]
 ""
 //[MViewShiftF10]
@@ -1487,15 +1487,15 @@
 //[MViewAltF6]
 ""
 //[MViewAltF7]
-"Prev"
+"Ant."
 //[MViewAltF8]
-"Goto"
+"IrPara"
 //[MViewAltF9]
-"Video"
+"Vídeo"
 //[MViewAltF10]
 ""
 //[MViewAltF11]
-"ViewHs"
+"VerHs"
 //[MViewAltF12]
 ""
 //[MViewCtrlF1]
@@ -1517,7 +1517,7 @@
 //[MViewCtrlF9]
 ""
 //[MViewCtrlF10]
-"GoFile"
+"IrArq"
 //[MViewCtrlF11]
 ""
 //[MViewCtrlF12]
@@ -1623,11 +1623,11 @@
 //[MViewF4Text]
 "Texto"
 //[MViewF4Dump]
-"Dump"
+"Bruto"
 //[MViewF8DOS]
 "OEM"
 //[MViewMode]
-"View mode"
+"Modo de visualização"
 //[MInViewer]
 "ver"
 //[MInEditor]
@@ -1637,7 +1637,7 @@
 //[MPanelFileType]
 "Painel de tipos de arquivo"
 //[MFolderFileType]
-"Folders"
+"Diretórios"
 //[MCanEditCustomFilterOnly]
 "Somente filtros personalizados podem ser editados"
 //[MAskDeleteFilter]
@@ -1655,37 +1655,37 @@
 //[MFindFileHex]
 "&Hex"
 //[MFindFileCodePage]
-"Using code pa&ge:"
+"Usando página de códi&go:"
 //[MFindFileAllCodePages]
-"All standard code pages"
+"Todas as páginas de código padrão"
 //[MFindFileSelectedCodePages]
-"Selected code pages"
+"Páginas de código selecionadas"
 //[MFindFileCase]
 "&Distinguir maiúsc./minúsc."
 //[MFindFileWholeWords]
-"&Whole words"
+"Palavras &inteiras"
 //[MFindFileFuzzy]
-"Fu&zzy search"
+"Busca apro&ximada"
 //[MFindFileNotContaining]
-"&Not containing"
+"&Não contendo"
 //[MFindFileArchives]
 "Procurar em ar&quivos"
 //[MFindFileFolders]
-"Search for f&olders"
+"Pr&ocurar diretórios"
 //[MFindFileSymLinks]
-"Search in symbolic lin&ks"
+"Procurar em lin&ks simbólicos"
 //[MFindFileAlternateStreams]
-"Search in a&lternate streams"
+"Procurar em &fluxos alternativos"
 //[MFindFileSearchArea]
-"Select search &area:"
+"Selecione a &área de busca:"
 //[MFindFileSearchAllDisks]
 "Procurar em &todos os discos não-removiveis"
 //[MFindFileSearchAllButNetwork]
-"In all &local drives"
+"Em todas as unidades &locais"
 //[MFindFileSearchInPATH]
-"In &PATH folders"
+"Nos diretórios do &PATH"
 //[MFindFileSearchFromRootOfDrive]
-"From the &root of"
+"A partir da rai&z de"
 //[MFindFileSearchFromRootFolder]
 "Procurar no diretório &raíz"
 //[MFindFileSearchFromCurrent]
@@ -1695,17 +1695,17 @@
 //[MFindFileSearchInSelected]
 "Procurar nas pastas &selecionadas"
 //[MFindFileUseFilter]
-"&Use filter"
+"&Usar filtro"
 //[MFindFileUsingFilter]
-"using filter"
+"usando filtro"
 //[MFindFileFind]
-"Pr&ocurar"
+"Procurar"
 //[MFindFileDrive]
 "Dri&ve"
 //[MFindFileSetFilter]
-"Filt&er"
+"&Filtro"
 //[MFindFileAdvanced]
-"Advance&d"
+"Avança&do"
 //[MFindFileSearchingIn]
 "Procurando {0} em"
 //[MFindFileNewSearch]
@@ -1723,53 +1723,53 @@
 //[MFindFileCancel]
 "&Cancelar"
 //[MFindFileFound]
-"Files: {0}, folders: {1}"
+"Arquivos: {0}, diretórios: {1}"
 //[MFindFileAdvancedTitle]
-"Find file advanced options"
+"Opções avançadas de busca de arquivos"
 //[MFindFileSearchFirst]
-"Search only in the &first:"
+"Pr&ocurar somente nos primeiros:"
 //[MFindFileSearchOutputFormat]
-"&Output format:"
+"Formato de &saída:"
 //[MFindAlternateModeTypes]
-"Column &types"
+"&Tipos de colunas"
 //[MFindAlternateModeWidths]
-"Column &widths"
+"&Larguras de colunas"
 //[MFoldTreeSearch]
 "Procurar:"
 //[MGetCodePageTitle]
-"Code pages"
+"Páginas de código"
 //[MGetCodePageSystem]
-"System"
+"Sistema"
 //[MGetCodePageUnicode]
 "Unicode"
 //[MGetCodePageFavorites]
-"Favorites"
+"Favoritas"
 //[MGetCodePageOther]
-"Other"
+"Outras"
 //[MGetCodePageEditCodePageName]
-"Rename the code page"
+"Renomear a página de código"
 //[MGetCodePageResetCodePageName]
-"&Reset"
+"&Redefinir"
 //[MHighlightTitle]
 "Destacar arquivos"
 //[MHighlightUpperSortGroup]
-"Upper sort group"
+"Grupo de classificação superior"
 //[MHighlightLowerSortGroup]
-"Lower sort group"
+"Grupo de classificação inferior"
 //[MHighlightLastGroup]
-"Lowest priority highlighting group"
+"Grupo de destaque de menor prioridade"
 //[MHighlightAskDel]
 "Deseja apagar o destaque de"
 //[MHighlightWarning]
-"You will lose all changes"
+"Você perderá todas as alterações"
 //[MHighlightAskRestore]
-"Do you wish to restore default highlighting?"
+"Deseja restaurar o destaque padrão?"
 //[MHighlightEditTitle]
 "Editar arquivos destacados"
 //[MHighlightMark]
-"Markin&g,"
+"&Marcação,"
 //[MHighlightInheritMark]
-"In&herit"
+"&Herdar"
 //[MHighlightColors]
 "Cores dos arquivos (preto em preto - cor padrão)"
 //[MHighlightFileName1]
@@ -1781,45 +1781,45 @@
 //[MHighlightFileName4]
 "&7. Selec. sobre o cursor"
 //[MHighlightMarking1]
-"&2. Marking"
+"&2. Marcação"
 //[MHighlightMarking2]
-"&4. Marking"
+"&4. Marcação"
 //[MHighlightMarking3]
-"&6. Marking"
+"&6. Marcação"
 //[MHighlightMarking4]
-"&8. Marking"
+"&8. Marcação"
 //[MHighlightExample]
-"filename.ext"
+"nomedoarquivo.ext"
 //[MHighlightContinueProcessing]
-"C&ontinue processing"
+"C&ontinuar processamento"
 //[MInfoTitle]
 "Informações"
 //[MInfoCompName]
 "Nome do Computador"
 //[MInfoCompDescription]
-"Computer description"
+"Descrição do computador"
 //[MInfoUserName]
 "Nome do Usuário"
 //[MInfoUserDescription]
-"User description"
+"Descrição do usuário"
 //[MInfoUserAccessLevel]
-"Access level"
+"Nível de acesso"
 //[MInfoUserAccessLevelGuest]
-"Guest"
+"Convidado"
 //[MInfoUserAccessLevelUser]
-"User"
+"Usuário"
 //[MInfoUserAccessLevelAdministrator]
-"Administrator"
+"Administrador"
 //[MInfoUserAccessLevelUnknown]
-"Unknown"
+"Desconhecido"
 //[MInfoUserAccessElevated]
-"Elevated"
+"Elevado"
 //[MInfoUserAccessElevationTypeFull]
-"Full"
+"Completo"
 //[MInfoUserAccessElevationTypeLimited]
-"Limited"
+"Limitado"
 //[MInfoDiskTitle]
-"Disk"
+"Disco"
 //[MInfoRemovable]
 "Removivel"
 //[MInfoFixed]
@@ -1863,17 +1863,17 @@
 //[MInfoVirtual]
 "Virtual"
 //[MInfoUnknown]
-"Unknown"
+"Desconhecido"
 //[MInfoMetricTotal]
 "totais"
 //[MInfoMetricAvailable]
 "livre"
 //[MInfoMetricUsed]
-"used"
+"usado"
 //[MInfoDisk]
 "disco"
 //[MInfoDiskSpace]
-"Space"
+"Espaço"
 //[MInfoDiskLabel]
 "Nome de Volume"
 //[MInfoDiskNumber]
@@ -1881,83 +1881,83 @@
 //[MInfoMemory]
 "Memória"
 //[MInfoMemoryCommittable]
-"Committable"
+"Alocável"
 //[MInfoMemoryAddressable]
-"Addressable"
+"Endereçável"
 //[MInfoMemoryPhysical]
-"Physical"
+"Física"
 //[MInfoMetricMemoryInstalled]
-"installed"
+"instalada"
 //[MInfoDescription]
-"Description"
+"Descrição"
 //[MInfoDizAbsent]
 "Faltando o diretório de descrição do arquivo"
 //[MInfoPlugin]
 "Plugin"
 //[MInfoPowerStatus]
-"Power Status"
+"Estado da energia"
 //[MInfoPowerStatusAC]
-"AC power status"
+"Estado da alimentação CA"
 //[MInfoPowerStatusACOffline]
-"Offline"
+"Desconectado"
 //[MInfoPowerStatusACOnline]
-"Online"
+"Conectado"
 //[MInfoPowerStatusACBackUp]
-"Backup power"
+"Energia de reserva"
 //[MInfoPowerStatusACUnknown]
-"Unknown"
+"Desconhecido"
 //[MInfoPowerStatusBCLifePercentUnknown]
-"unknown"
+"desconhecido"
 //[MInfoPowerStatusBC]
-"Battery charge status"
+"Estado de carga da bateria"
 //[MInfoPowerStatusBCHigh]
-"High"
+"Alto"
 //[MInfoPowerStatusBCMedium]
-"Medium"
+"Médio"
 //[MInfoPowerStatusBCLow]
 "Low"
 //[MInfoPowerStatusBCCritical]
-"Critical"
+"Crítico"
 //[MInfoPowerStatusBCCharging]
-"charging"
+"carregando"
 //[MInfoPowerStatusBCNoSysBat]
-"No system battery"
+"Sem bateria no sistema"
 //[MInfoPowerStatusBCUnknown]
-"Unknown"
+"Desconhecido"
 //[MInfoPowerStatusBCTimeRem]
-"Battery life time"
+"Tempo restante da bateria"
 //[MInfoPowerStatusBCFullTimeRem]
-"Battery full time"
+"Duração total da bateria"
 //[MInfoPowerStatusUnknown]
-"Unknown"
+"Desconhecido"
 //[MAccessDenied]
 "Acesso negado"
 //[MCannotExecute]
 "Não foi possivel executar"
 //[MCannotInvokeComspec]
-"Cannot invoke command interpreter"
+"Não é possível iniciar o interpretador de comandos"
 //[MCheckComspecVar]
-"Check COMSPEC environment variable"
+"Verifique a variável de ambiente COMSPEC"
 //[MScanningFolder]
 "Lendo o diretório"
 //[MMakeFolderTitle]
 "Criar diretório"
 //[MCreateFolder]
-"Criar o diretório"
+"Criar o &diretório"
 //[MMakeFolderLinkType]
-"&Link type:"
+"&Tipo de link:"
 //[MMakeFolderLinkNone]
-"&none"
+"&nenhum"
 //[MMakeFolderLinkJunction]
-"directory &junction"
+"&junção de diretório"
 //[MMakeFolderLinkSymlink]
-"symbolic &link"
+"l&ink simbólico"
 //[MMakeFolderLinkTarget]
-"&Target:"
+"D&estino:"
 //[MMultiMakeDir]
-"Process &multiple names"
+"&Processar múltiplos nomes"
 //[MIncorrectDirList]
-"Incorrect folders list"
+"Lista de diretórios incorreta"
 //[MCannotCreateFolder]
 "Não foi possivel criar o diretório"
 //[MMenuBriefView]
@@ -2011,7 +2011,7 @@
 //[MMenuDelete]
 "&Apagar"
 //[MMenuWipe]
-"&Wipe"
+"&Eliminar"
 //[MMenuAdd]
 "Adic. ao ar&quivo"
 //[MMenuExtract]
@@ -2061,17 +2061,17 @@
 //[MMenuPluginCommands]
 "Comandos de Pl&ugin"
 //[MMenuWindowsList]
-"Lista de telas"
+"&Lista de telas"
 //[MMenuProcessList]
-"Lista de tarefas"
+"&Lista de tarefas"
 //[MMenuHotPlugList]
-"Ho&tplug devices list"
+"Lista de dispositivos remo&víveis"
 //[MMenuSystemSettings]
 "Configurações do &sistema"
 //[MMenuPanelSettings]
 "Configurações do &painel"
 //[MMenuTreeSettings]
-"&Tree settings"
+"Confi&gurações da árvore"
 //[MMenuInterface]
 "Configurações da &interface"
 //[MMenuLanguages]
@@ -2079,19 +2079,19 @@
 //[MMenuPluginsConfig]
 "Configuração de Pl&ugins"
 //[MMenuPluginsManagerSettings]
-"Plugins manage&r settings"
+"Configurações do gerenciado&r de plugins"
 //[MMenuDialogSettings]
-"Di&alog settings"
+"Configurações de di&álogos"
 //[MMenuVMenuSettings]
-"Menu settings"
+"Configurações de menu"
 //[MMenuCmdlineSettings]
-"&Command line settings"
+"Con&figurações da linha de comando"
 //[MMenuAutoCompleteSettings]
-"Au&toComplete settings"
+"Configurações de &autocompletar"
 //[MMenuInfoPanelSettings]
-"Inf&oPanel settings"
+"Configura&ções do painel de informações"
 //[MMenuMaskGroups]
-"Groups of file mas&ks"
+"Grupos de más&caras de arquivos"
 //[MMenuConfirmation]
 "Co&nfirmação"
 //[MMenuFilePanelModes]
@@ -2105,11 +2105,11 @@
 //[MMenuEditor]
 "Configurações do edi&tor"
 //[MMenuCodePages]
-"Code pages"
+"Páginas de código"
 //[MMenuColors]
 "C&ores"
 //[MMenuFilesHighlighting]
-"Destaca&r e classificar &grupos"
+"Destaque de arquivos e &grupos de classificação"
 //[MMenuSaveSetup]
 "Salvar con&figuração"
 //[MMenuTogglePanelRight]
@@ -2143,39 +2143,39 @@
 //[MMenuSortByAccess]
 "Hora de &acesso"
 //[MMenuSortByChange]
-"Chan&ge time"
+"Hora da alteração (&g)"
 //[MMenuSortByDiz]
 "&Descrições"
 //[MMenuSortByOwner]
 "D&ono"
 //[MMenuSortByAllocatedSize]
-"Tamanho com&pactado"
+"Tamanho compactado"
 //[MMenuSortByNumLinks]
 "Número de &hard links"
 //[MMenuSortByNumStreams]
-"Number of st&reams"
+"Número de &fluxos"
 //[MMenuSortByStreamsSize]
-"Si&ze of streams"
+"Tamanho dos f&luxos"
 //[MMenuSortByNameOnly]
-"Name only"
+"Somente nome"
 //[MMenuSortUseGroups]
-"Usar &grupos classif."
+"Usar grupos classif."
 //[MMenuSortSelectedFirst]
 "Ver selec. prime&iro"
 //[MMenuSortDirectoriesFirst]
-"Show directories &first"
+"Mostrar diretórios &primeiro"
 //[MMaskGroupTitle]
-"Groups of file masks"
+"Grupos de máscaras de arquivos"
 //[MMaskGroupName]
-"&Name:"
+"&Nome:"
 //[MMaskGroupMasks]
-"A file &mask or several file masks:"
+"&Uma máscara de arquivo ou várias máscaras:"
 //[MMaskGroupAskDelete]
-"Do you wish to delete"
+"Deseja apagar"
 //[MMaskGroupRestore]
-"Do you wish to restore default mask sets?"
+"Deseja restaurar os conjuntos de máscaras padrão?"
 //[MMaskGroupFindMask]
-"&Mask:"
+"&Máscara:"
 //[MMaskGroupTotal]
 "Total: {0}"
 //[MChangeDriveTitle]
@@ -2187,7 +2187,7 @@
 //[MChangeDriveNetwork]
 "rede"
 //[MChangeDriveDisconnectedNetwork]
-"disconnected"
+"desconectada"
 //[MChangeDriveCDROM]
 "CD-ROM"
 //[MChangeDriveCDR]
@@ -2231,73 +2231,73 @@
 //[MChangeDriveCannotDisconnect]
 "Não foi possivel se desconectar"
 //[MChangeDriveCannotDelSubst]
-"Cannot delete a substituted disk"
+"Não é possível remover uma unidade substituída"
 //[MChangeDriveCannotDetach]
-"Cannot detach a virtual disk"
+"Não é possível desanexar um disco virtual"
 //[MChangeSUBSTDisconnectDriveTitle]
-"Substituted disk deletion"
+"Remoção de unidade substituída"
 //[MChangeSUBSTDisconnectDriveQuestion]
-"Delete SUBST-disk {0}?"
+"Remover a unidade SUBST {0}?"
 //[MChangeVHDDisconnectDriveTitle]
-"Virtual disk detaching"
+"Desanexação de disco virtual"
 //[MChangeVHDDisconnectDriveQuestion]
-"Detach virtual disk {0}?"
+"Desanexar o disco virtual {0}?"
 //[MChangeHotPlugDisconnectDriveTitle]
-"Device Removal"
+"Remoção de dispositivo"
 //[MChangeHotPlugDisconnectDriveQuestion]
-"Do you want to remove the device"
+"Deseja remover o dispositivo"
 //[MHotPlugDisks]
-"(disk(s): {0})"
+"(disco(s): {0})"
 //[MChangeCouldNotEjectHotPlugMedia]
-"Cannot remove a device for drive"
+"Não é possível remover o dispositivo da unidade"
 //[MChangeCouldNotEjectHotPlugMedia2]
-"Cannot remove a device:"
+"Não é possível remover o dispositivo:"
 //[MChangeHotPlugNotify1]
-"The device"
+"O dispositivo"
 //[MChangeHotPlugNotify2]
-"can now be safely removed"
+"agora pode ser removido com segurança"
 //[MHotPlugListTitle]
-"Hotplug devices list"
+"Lista de dispositivos removíveis"
 //[MChangeDriveDisconnectTitle]
-"Disconnect network drive"
+"Desconectar unidade de rede"
 //[MChangeDriveDisconnectQuestion]
-"Disconnect from the drive {0}?"
+"Desconectar da unidade {0}?"
 //[MChangeDriveDisconnectMapped]
-"The drive is mapped to:"
+"A unidade está mapeada para:"
 //[MChangeDriveDisconnectReconnect]
-"&Reconnect at logon"
+"Reconectar ao &fazer logon"
 //[MChangeWaitingLoadDisk]
-"Waiting for the disk to mount…"
+"Aguardando a montagem do disco…"
 //[MChangeCouldNotEjectMedia]
-"Could not eject media from drive"
+"Não foi possível ejetar a mídia da unidade"
 //[MChangeDriveConfigure]
-"Change Drive Menu Options"
+"Opções do menu de unidades"
 //[MChangeDriveShowDiskType]
-"Show disk &type"
+"Mostrar tipo &de disco"
 //[MChangeDriveShowPath]
-"Show &network name / SUBST path / VHD name"
+"Mostrar nome de rede / caminho &SUBST / nome do VHD"
 //[MChangeDriveShowLabel]
-"Show disk &label"
+"Mostrar &rótulo do disco"
 //[MChangeDriveShowLabelUseShell]
-"Use shell na&me"
+"Usar &nome do shell"
 //[MChangeDriveShowFileSystem]
-"Show &file system type"
+"M&ostrar tipo de sistema de arquivos"
 //[MChangeDriveShowSize]
-"Show &size"
+"Mostrar &tamanho"
 //[MChangeDriveShowSizeFloat]
-"Show si&ze as a decimal fraction"
+"Mostrar tamanho como fração deci&mal"
 //[MChangeDriveShowRemovableDrive]
-"Show &removable drive parameters"
+"Mostrar parâmetros de unidades remo&víveis"
 //[MChangeDriveShowPlugins]
-"Show &plugins"
+"Mostrar &plugins"
 //[MChangeDriveSortPluginsByHotkey]
-"Sort plugins by &hotkey"
+"Ordenar plugins por tecla de &atalho"
 //[MChangeDriveShowCD]
-"Show &CD drive parameters"
+"Mostrar parâmetros da unidade de &CD"
 //[MChangeDriveShowNetworkDrive]
-"Show n&etwork drive parameters"
+"Mostrar parâmetros de unidades d&e rede"
 //[MChangeDriveShowVirtualDisk]
-"Detect virtual disks"
+"Detectar discos virtuais"
 //[MChangeDriveVolumeLabel]
 "Etiqueta do volume"
 //[MSearchFileTitle]
@@ -2323,13 +2323,13 @@
 //[MCannotKillProcess]
 "Não foi possivel destruir a aplicação especificada"
 //[MCannotKillProcessPerm]
-"You have no permission to kill this process."
+"Você não tem permissão para encerrar este processo."
 //[MQuickViewTitle]
 "Visualização rápida"
 //[MQuickViewReparsePoint]
-"&Reparse point"
+"Ponto de &nova análise"
 //[MQuickViewUnknownReparsePoint]
-"Unknown reparse point"
+"Ponto de nova análise desconhecido"
 //[MQuickViewFolders]
 "Diretórios:"
 //[MQuickViewFiles]
@@ -2339,33 +2339,33 @@
 //[MQuickViewAllocated]
 "Tam. compactado:"
 //[MQuickViewCluster]
-"Cluster size:"
+"Tamanho do cluster:"
 //[MQuickViewSlack]
-"Files slack:"
+"Espaço ocioso dos arquivos:"
 //[MQuickViewMFTOverhead]
-"MFT overhead:"
+"Sobrecarga da MFT:"
 //[MSetAttrTitle]
 "Atributos"
 //[MSetAttrFor]
 "Alterar atributos do arquivo para"
 //[MSetAttrSelectedObjects]
-"selected objects"
+"objetos selecionados"
 //[MSetAttrHardLinks]
-"hard links"
+"links físicos"
 //[MSetAttrJunction]
-"&Junction:"
+"&Junção:"
 //[MSetAttrSymlink]
-"S&ymlink{}:"
+"&Link{}:"
 //[MSetAttrVolMount]
 "&Volume:"
 //[MSetAttrDfsTargets]
-"DFS Targets:"
+"Destinos DFS:"
 //[MSetAttrAppExecLink]
-"App Alias:"
+"Alias de aplicativo:"
 //[MSetAttrUnknownReparsePoint]
-"Unknown reparse point"
+"Ponto de nova análise desconhecido"
 //[MSetAttrDiskDevice]
-"Device:"
+"Dispositivo:"
 //[MSetAttrReadOnly]
 "Somente leitu&ra"
 //[MSetAttrArchive]
@@ -2377,41 +2377,41 @@
 //[MSetAttrCompressed]
 "&Compactado"
 //[MSetAttrEncrypted]
-"&Encrypted"
+"Cri&ptografado"
 //[MSetAttrNotIndexed]
-"Not &indexed"
+"N&ão indexado"
 //[MSetAttrSparse]
-"&Sparse"
+"&Esparso"
 //[MSetAttrTemporary]
-"&Temporary"
+"&Temporário"
 //[MSetAttrOffline]
-"&Offline"
+"Off&line"
 //[MSetAttrReparsePoint]
-"&Reparse point"
+"Ponto de nova an&álise"
 //[MSetAttrVirtual]
-"&Virtual"
+"Virt&ual"
 //[MSetAttrIntegrityStream]
-"&Integrity stream"
+"Fluxo de &integridade"
 //[MSetAttrNoScrubData]
-"&No scrub data"
+"Sem &verificação de dados"
 //[MSetAttrPinned]
-"&Pinned"
+"&Fixado"
 //[MSetAttrUnpinned]
-"&Unpinned"
+"&Não fixado"
 //[MSetAttrRecallOnOpen]
-"R&ecall on open"
+"&Recuperar ao abrir"
 //[MSetAttrRecallOnDataAccess]
-"Rec&all on data access"
+"Recuperar ao &acessar dados"
 //[MSetAttrStrictlySequential]
-"Strictly se&quential"
+"Estritamente se&quencial"
 //[MSetAttrDevice]
-"Device"
+"Dispositivo"
 //[MSetAttrMore]
-"&More"
+"Mai&s"
 //[MSetAttrSubfolders]
 "Processar sub-&diretórios"
 //[MSetAttrOwner]
-"Owner&:"
+"Proprietário&:"
 //[MSetAttrDate]
 "Data/hora:"
 //[MSetAttrWrite]
@@ -2421,11 +2421,11 @@
 //[MSetAttrAccess]
 "ú&ltimo acesso"
 //[MSetAttrChange]
-"chan&ge:"
+"alteraçã&o:"
 //[MSetAttrOriginal]
 "A&tual"
 //[MSetAttrCurrent]
-"Curre&nt"
+"At&ual"
 //[MSetAttrBlank]
 "&Limpar"
 //[MSetAttrSet]
@@ -2439,7 +2439,7 @@
 //[MSetAttrTimeTitle]
 "hh{0}mm{0}ss"
 //[MSetAttrSystemDialog]
-"System &properties"
+"Propriedades do &sistema"
 //[MSetAttrSetting]
 "Ajustando atributos dos arquivos para"
 //[MSetAttrCannotFor]
@@ -2447,15 +2447,15 @@
 //[MSetAttrCompressedCannotFor]
 "Não foi possivel ajustar atributos COMPACTADO para"
 //[MSetAttrEncryptedCannotFor]
-"Cannot set attribute ENCRYPTED for"
+"Não é possível definir o atributo CRIPTOGRAFADO para"
 //[MSetAttrSparseCannotFor]
-"Cannot set attribute SPARSE for"
+"Não é possível definir o atributo ESPARSO para"
 //[MSetAttrTimeCannotFor]
 "Não foi possivel ajustar a hora do arquivo para"
 //[MSetAttrOwnerCannotFor]
-"Cannot set owner for"
+"Não é possível definir o proprietário para"
 //[MSetAttrReparsePointCannotFor]
-"Cannot remove reparse point for"
+"Não é possível remover o ponto de nova análise de"
 //[MSetColorPanel]
 "&Painel"
 //[MSetColorDialog]
@@ -2493,7 +2493,7 @@
 //[MSetColorPanelHighlightedInfo]
 "Info destacado"
 //[MSetColorPanelDragging]
-"Dragging text"
+"Texto sendo arrastado"
 //[MSetColorPanelBox]
 "Borda"
 //[MSetColorPanelNormalCursor]
@@ -2519,7 +2519,7 @@
 //[MSetColorDialogHighlighted]
 "Texto destacado"
 //[MSetColorDialogDisabled]
-"Disabled text"
+"Texto desativado"
 //[MSetColorDialogBox]
 "Borda"
 //[MSetColorDialogBoxTitle]
@@ -2533,7 +2533,7 @@
 //[MSetColorDialogSelectedTextInput]
 "Entrada de texto selecionada"
 //[MSetColorDialogEditDisabled]
-"Disabled input line"
+"Linha de entrada desativada"
 //[MSetColorDialogButtons]
 "Botões"
 //[MSetColorDialogSelectedButtons]
@@ -2543,13 +2543,13 @@
 //[MSetColorDialogSelectedHighlightedButtons]
 "Botões destacados selecionados"
 //[MSetColorDialogDefaultButton]
-"Default button"
+"Botão padrão"
 //[MSetColorDialogSelectedDefaultButton]
-"Selected default button"
+"Botão padrão selecionado"
 //[MSetColorDialogHighlightedDefaultButton]
-"Highlighted default button"
+"Botão padrão destacado"
 //[MSetColorDialogSelectedHighlightedDefaultButton]
-"Selected highlighted default button"
+"Botão padrão selecionado destacado"
 //[MSetColorDialogListBoxControl]
 "Texto de lista"
 //[MSetColorDialogComboBoxControl]
@@ -2563,23 +2563,23 @@
 //[MSetColorDialogListSelectedHighLight]
 "Texto destacado selecionado"
 //[MSetColorDialogListDisabled]
-"Disabled item"
+"Item desativado"
 //[MSetColorDialogListBox]
 "Borda"
 //[MSetColorDialogListTitle]
 "Titulo"
 //[MSetColorDialogListGrayed]
-"Grayed list text"
+"Texto da lista esmaecido"
 //[MSetColorDialogSelectedListGrayed]
-"Selected grayed list text"
+"Texto da lista esmaecido selecionado"
 //[MSetColorDialogListScrollBar]
 "Barra de rolagem"
 //[MSetColorDialogListArrows]
-"Long string indicators"
+"Indicadores de linha longa"
 //[MSetColorDialogListArrowsSelected]
-"Selected long string indicators"
+"Indicadores de linha longa selecionados"
 //[MSetColorDialogListArrowsDisabled]
-"Disabled long string indicators"
+"Indicadores de linha longa desativados"
 //[MSetColorMenuNormal]
 "Texto normal"
 //[MSetColorMenuSelected]
@@ -2589,11 +2589,11 @@
 //[MSetColorMenuSelectedHighlighted]
 "Texto destacado selecionado"
 //[MSetColorMenuDisabled]
-"Disabled text"
+"Texto desativado"
 //[MSetColorMenuGrayed]
-"Grayed text"
+"Texto esmaecido"
 //[MSetColorMenuSelectedGrayed]
-"Selected grayed text"
+"Texto esmaecido selecionado"
 //[MSetColorMenuBox]
 "Borda"
 //[MSetColorMenuTitle]
@@ -2601,11 +2601,11 @@
 //[MSetColorMenuScrollBar]
 "Barra de rolagem"
 //[MSetColorMenuArrows]
-"Long string indicators"
+"Indicadores de linha longa"
 //[MSetColorMenuArrowsSelected]
-"Selected long string indicators"
+"Indicadores de linha longa selecionados"
 //[MSetColorMenuArrowsDisabled]
-"Disabled long string indicators"
+"Indicadores de linha longa desativados"
 //[MSetColorHMenuNormal]
 "Texto normal"
 //[MSetColorHMenuSelected]
@@ -2625,9 +2625,9 @@
 //[MSetColorCommandLineSelected]
 "Entrada de texto selecionada"
 //[MSetColorCommandLinePrefix]
-"Prefix text"
+"Texto do prefixo"
 //[MSetColorCommandLineUserScreen]
-"User screen"
+"Tela do usuário"
 //[MSetColorClockNormal]
 "Texto normal (Panel)"
 //[MSetColorClockNormalEditor]
@@ -2679,9 +2679,9 @@
 //[MSetColorBackground]
 "&Segundo Plano"
 //[MSetColorForegroundDefault]
-"Default"
+"Padrão"
 //[MSetColorBackgroundDefault]
-"Default"
+"Padrão"
 //[MSetColorForeIndex]
 "AA    ##"
 //[MSetColorForeAARRGGBB]
@@ -2703,59 +2703,59 @@
 //[MSetColorBackRGB]
 "R&GB…"
 //[MSetColorStyle]
-"Style:"
+"Estilo:"
 //[MSetColorStyleInherit]
-"&Inherit"
+"&Herdar"
 //[MSetColorStyleBold]
-"B&old"
+"&Negrito"
 //[MSetColorStyleItalic]
-"I&talic"
+"&Itálico"
 //[MSetColorStyleOverline]
-"O&verline"
+"Linha &superior"
 //[MSetColorStyleStrikeout]
-"&Strikeout"
+"&Tachado"
 //[MSetColorStyleFaint]
-"F&aint"
+"&Esmaecido"
 //[MSetColorStyleBlink]
-"B&link"
+"&Piscante"
 //[MSetColorStyleInverse]
-"Inverse"
+"Invertido"
 //[MSetColorStyleInvisible]
-"Invisible"
+"Invisível"
 //[MSetColorStyleUnderline]
-"&Underline:"
+"S&ublinhado:"
 //[MSetColorStyleUnderlineNone]
 "No"
 //[MSetColorStyleUnderlineSingle]
-"Single"
+"Simples"
 //[MSetColorStyleUnderlineDouble]
-"Double"
+"Duplo"
 //[MSetColorStyleUnderlineCurly]
-"Curly"
+"Ondulado"
 //[MSetColorStyleUnderlineDotted]
-"Dotted"
+"Pontilhado"
 //[MSetColorStyleUnderlineDashed]
-"Dashed"
+"Tracejado"
 //[MSetColorSample]
 "Texto Texto Texto Texto Texto Texto"
 //[MSetColorVTHintInfo]
-"Extended colors and styles require VT rendering."
+"Cores e estilos estendidos exigem renderização VT."
 //[MSetColorVTHintSupported]
-"Press \"Enable VT\" below to turn it on."
+"Pressione \"Ativar VT\" abaixo para ligá-la."
 //[MSetColorVTHintNotSupported]
-"Your system does not support it."
+"Seu sistema não a suporta."
 //[MSetColorSystemDialog]
-"System"
+"Sistema"
 //[MSetColorSet]
 "Set"
 //[MSetColorEnableVT]
-"Enable VT"
+"Ativar VT"
 //[MSetColorCancel]
-"Cancel"
+"Cancelar"
 //[MColorsPalette]
-"Palette"
+"Paleta"
 //[MColorsClassicPalette]
-"Classic palette"
+"Paleta clássica"
 //[MSetConfirmTitle]
 "Confirmações"
 //[MSetConfirmCopy]
@@ -2763,7 +2763,7 @@
 //[MSetConfirmMove]
 "&Mover"
 //[MSetConfirmRO]
-"&Overwrite and delete R/O files"
+"Substituir &e apagar arquivos somente leitura"
 //[MSetConfirmDrag]
 "&Arrastar e Soltar"
 //[MSetConfirmDelete]
@@ -2771,47 +2771,47 @@
 //[MSetConfirmDeleteFolders]
 "Deletar &diretórios não vazios"
 //[MSetConfirmEsc]
-"&Interrupt operation"
+"&Interromper operação"
 //[MSetConfirmRemoveConnection]
-"Disconnect &network drive"
+"Desconectar &unidade de rede"
 //[MSetConfirmRemoveSUBST]
-"Delete &SUBST-disk"
+"Remover u&nidade SUBST"
 //[MSetConfirmDetachVHD]
-"Detach &virtual disk"
+"Desanexar disco &virtual"
 //[MSetConfirmRemoveHotPlug]
-"Hot&Plug-device removal"
+"Remo&ção de dispositivo HotPlug"
 //[MSetConfirmAllowReedit]
-"&Reload edited file"
+"Recarre&gar arquivo editado"
 //[MSetConfirmHistoryClear]
-"Clear &history list"
+"Limpar lista do &histórico"
 //[MSetConfirmExit]
 "&Sair"
 //[MPluginsManagerSettingsTitle]
-"Plugins manager settings"
+"Configurações do gerenciador de plugins"
 //[MPluginsManagerOEMPluginsSupport]
-"&OEM plugins support"
+"Suporte a plugins &OEM"
 //[MPluginsManagerScanSymlinks]
-"Scan s&ymbolic links"
+"Verificar &links simbólicos"
 //[MPluginsManagerOFP]
-"&File processing"
+"Pro&cessamento de arquivos"
 //[MPluginsManagerStdAssoc]
-"Show standard &association item"
+"Mostrar item de &associação padrão"
 //[MPluginsManagerEvenOne]
-"&Even if only one plugin found"
+"Mesmo s&e só um plugin for encontrado"
 //[MPluginsManagerSFL]
-"Search &results (SetFindList)"
+"&Resultados da busca (SetFindList)"
 //[MPluginsManagerPF]
-"&Prefix processing"
+"Processamento de &prefixos"
 //[MPluginConfirmationTitle]
-"Plugin selection"
+"Seleção de plugin"
 //[MMenuPluginStdAssociation]
-"Standard association"
+"Associação padrão"
 //[MFindFolderTitle]
 "Procurar Diretório"
 //[MFolderTreeF1]
-"Help"
+"Ajuda"
 //[MFolderTreeF2]
-"Rescan"
+"Reler"
 //[MFolderTreeF3]
 ""
 //[MFolderTreeF4]
@@ -2827,7 +2827,7 @@
 //[MFolderTreeF9]
 ""
 //[MFolderTreeF10]
-"Quit"
+"Sair"
 //[MFolderTreeF11]
 ""
 //[MFolderTreeF12]
@@ -2873,7 +2873,7 @@
 //[MFolderTreeAltF8]
 ""
 //[MFolderTreeAltF9]
-"Video"
+"Vídeo"
 //[MFolderTreeAltF10]
 ""
 //[MFolderTreeAltF11]
@@ -3011,9 +3011,9 @@
 //[MChooseMenuType]
 "Escolha o tipo de menu do usuário para editar"
 //[MChooseMenuMain]
-"Principal"
+"&Principal"
 //[MChooseMenuLocal]
-"Local"
+"&Local"
 //[MMainMenuTitle]
 "Menu principal"
 //[MMainMenuUser]
@@ -3025,11 +3025,11 @@
 //[MAskDeleteMenuItem]
 "Deseja apagar o item de menu"
 //[MAskDeleteSubMenuItem]
-"Do you wish to delete the submenu"
+"Deseja apagar o submenu"
 //[MUserMenuInvalidInputLabel]
-"Invalid format for UserMenu Label"
+"Formato inválido para o rótulo do menu do usuário"
 //[MUserMenuInvalidInputHotKey]
-"Invalid format for Hot Key"
+"Formato inválido para a tecla de atalho"
 //[MEditMenuTitle]
 "Editar menu do usuário"
 //[MEditMenuHotKey]
@@ -3051,9 +3051,9 @@
 //[MEditSubmenuLabel]
 "&Volume:"
 //[MEditMenuConfirmation]
-"Save changes?"
+"Salvar alterações?"
 //[MEditMenuError]
-"Cannot update menu"
+"Não é possível atualizar o menu"
 //[MViewerTitle]
 "Visualizador"
 //[MViewerCannotOpenFile]
@@ -3063,23 +3063,23 @@
 //[MViewSearchingFor]
 "Procurar por"
 //[MViewSearchingHex]
-"&Procurar por bytes"
+"Procurar por bytes"
 //[MViewSearchCannotFind]
 "Não foi possivel localizar a string"
 //[MViewSearchCannotFindHex]
-"Could not find the bytes"
+"Não foi possível encontrar os bytes"
 //[MViewSearchEod]
-"End of the document reached"
+"Fim do documento alcançado"
 //[MViewSearchFromBegin]
-"Continue from the beginning of the document?"
+"Continuar a partir do início do documento?"
 //[MViewSearchBod]
-"Begin of the document reached"
+"Início do documento alcançado"
 //[MViewSearchFromEnd]
-"Continue from the end of the document?"
+"Continuar a partir do fim do documento?"
 //[MViewSearchCycle]
-"The whole document scanned"
+"Todo o documento foi verificado"
 //[MViewSearchRepeat]
-"Repeat the search in the document?"
+"Repetir a busca no documento?"
 //[MPrintTitle]
 "Imprimir"
 //[MPrintTo]
@@ -3089,7 +3089,7 @@
 //[MPrintingFile]
 "Imprimir {0}"
 //[MCannotEnumeratePrinters]
-"Cannot enumerate available printers list"
+"Não é possível obter a lista de impressoras disponíveis"
 //[MCannotOpenPrinter]
 "Não foi possivel abrir a impressora"
 //[MCannotPrint]
@@ -3109,7 +3109,7 @@
 //[MCfgDizSetHidden]
 "Ajustar o atributo \"&Oculto\" na a nova lista de descrições"
 //[MCfgDizROUpdate]
-"Update &read only description file"
+"Atualizar arquivo &de descrição somente leitura"
 //[MCfgDizStartPos]
 "&Posição das novas descrições na string"
 //[MCfgDizNotUpdate]
@@ -3119,11 +3119,11 @@
 //[MCfgDizAlwaysUpdate]
 "&Sempre atualizar"
 //[MCfgDizAnsiByDefault]
-"Use ANS&I code page by default"
+"&Usar página de código ANSI por padrão"
 //[MCfgDizSaveInUTF]
-"Save in UTF-&8"
+"Salvar em UTF-&8"
 //[MReadingTitleFiles]
-"Update of panels"
+"Atualização dos painéis"
 //[MReadingFiles]
 "Lendo: {0} arquivos"
 //[MOperationNotCompleted]
@@ -3131,7 +3131,7 @@
 //[MEditPanelModes]
 "Editar modos do painel"
 //[MEditPanelModeName]
-"&Name"
+"&Nome"
 //[MEditPanelModeTypes]
 "&Tipos das colunas"
 //[MEditPanelModeWidths]
@@ -3183,49 +3183,49 @@
 //[MDefineMacro]
 "Pressiona a tecla designada"
 //[MMacroReDefinedKey]
-"Macro key '{0}' already defined."
+"A tecla de macro '{0}' já está definida."
 //[MMacroDeleteKey]
-"Macro key '{0}' will be removed."
+"A tecla de macro '{0}' será removida."
 //[MMacroCommonReDefinedKey]
-"Common macro key '{0}' already defined."
+"A tecla de macro comum '{0}' já está definida."
 //[MMacroCommonDeleteKey]
-"Common macro key '{0}' will be removed."
+"A tecla de macro comum '{0}' será removida."
 //[MMacroSequence]
-"Sequence:"
+"Sequência:"
 //[MMacroReDefinedKey2]
-"Redefine?"
+"Redefinir?"
 //[MMacroDeleteKey2]
-"Delete?"
+"Apagar?"
 //[MMacroEditKey]
-"Chan&ge"
+"Al&terar"
 //[MMacroSettingsTitle]
 "Configurações de macro para {0}"
 //[MMacroSettingsSequence]
-"Se&quence:"
+"Se&quência:"
 //[MMacroSettingsDescription]
-"&Description:"
+"De&scrição:"
 //[MMacroSettingsEnableOutput]
 "&Desativar tela de saida durante a execução da macro"
 //[MMacroSettingsRunAfterStart]
 "&Executar após iniciar o gm"
 //[MMacroSettingsActivePanel]
-"&Active panel"
+"Painel &ativo"
 //[MMacroSettingsPassivePanel]
-"&Passive panel"
+"Painel &passivo"
 //[MMacroSettingsPluginPanel]
-"P&lugin panel"
+"Pa&inel de plugin"
 //[MMacroSettingsFolders]
-"Execute for &folders"
+"E&xecutar para diretórios"
 //[MMacroSettingsSelectionPresent]
-"Se&lection present"
+"Há se&leção"
 //[MMacroSettingsCommandLine]
-"Linha de comando estiver vazia"
+"Linha de &comando estiver vazia"
 //[MMacroSettingsSelectionBlockPresent]
-"Selection &block present"
+"Há &bloco selecionado"
 //[MMacroPluginLuamacroNotLoaded]
-"Plugin LuaMacro is not loaded"
+"O plugin LuaMacro não está carregado"
 //[MMacroRecordingIsDisabled]
-"Macro recording is disabled"
+"A gravação de macros está desativada"
 //[MCannotSaveFile]
 "Não foi possivel salvar o arquivo"
 //[MTextSavedToTemp]
@@ -3235,73 +3235,73 @@
 //[MPluginHotKey]
 "Tecla de atalho (letra ou número)"
 //[MPluginInformation]
-"Plugin information"
+"Informações do plugin"
 //[MPluginModuleTitle]
-"&Title:"
+"&Título:"
 //[MPluginDescription]
-"&Description:"
+"De&scrição:"
 //[MPluginAuthor]
-"&Author:"
+"&Autor:"
 //[MPluginVersion]
-"&Version:"
+"&Versão:"
 //[MPluginModulePath]
-"&Module path:"
+"Caminho do &módulo:"
 //[MPluginUUID]
-"Plugin &UUID:"
+"&UUID do plugin:"
 //[MPluginItemUUID]
-"Plugin &item UUID:"
+"UUID do &item do plugin:"
 //[MPluginPrefix]
-"Plugin &prefix:"
+"&Prefixo do plugin:"
 //[MExceptionDialogTitle]
-"Oops"
+"Ops"
 //[MExceptionDialogMessage1]
-"Something went wrong."
+"Algo deu errado."
 //[MExceptionDialogMessage2]
-"Please send the bug report to the developers:"
+"Envie o relatório de erro aos desenvolvedores:"
 //[MExceptionDialogClipboard]
-"Clipboard"
+"Área de transferência"
 //[MExcTerminate]
-"&Terminate gm"
+"&Encerrar o gm"
 //[MExcUnload]
-"&Unload plugin"
+"&Descarregar plugin"
 //[MExcContinue]
-"Continue"
+"Continuar"
 //[MExcFullDump]
-"Full dump"
+"Despejo completo"
 //[MNetUserName]
-"User name"
+"Nome de usuário"
 //[MNetUserPassword]
-"User password"
+"Senha do usuário"
 //[MReadFolderError]
 "Não foi possivel ler o conteúdo do diretório"
 //[MPlgBadVers]
-"This plugin requires more recent version of gm"
+"Este plugin requer uma versão mais recente do gm"
 //[MPlgRequired]
-"Required gm version is {0},"
+"A versão necessária do gm é {0},"
 //[MPlgRequired2]
-"current gm version is {0}."
+"a versão atual do gm é {0}."
 //[MPlgLoadPluginError]
-"Error loading plugin"
+"Erro ao carregar o plugin"
 //[MHelpTitle]
 "Ajuda"
 //[MHelpActivatorURL]
-"This reference starts an external application"
+"Esta referência inicia um aplicativo externo"
 //[MHelpActivatorFormat]
-"with parameter:"
+"com o parâmetro:"
 //[MHelpActivatorQ]
-"Do you wish to start it?"
+"Deseja iniciá-lo?"
 //[MCannotOpenHelp]
 "Não foi possivel abrir o arquivo"
 //[MHelpTopicNotFound]
 "Tópico de ajuda requisitado não encontrado"
 //[MPluginsHelpTitle]
-"Plugins help"
+"Ajuda dos plugins"
 //[MDocumentsHelpTitle]
-"Documents help"
+"Ajuda dos documentos"
 //[MHelpSearchCannotFind]
-"Could not find the string"
+"Não foi possível encontrar o texto"
 //[MHelpF1]
-"Help"
+"Ajuda"
 //[MHelpF2]
 ""
 //[MHelpF3]
@@ -3313,19 +3313,19 @@
 //[MHelpF6]
 ""
 //[MHelpF7]
-"Search"
+"Busca"
 //[MHelpF8]
 ""
 //[MHelpF9]
 ""
 //[MHelpF10]
-"Quit"
+"Sair"
 //[MHelpF11]
 ""
 //[MHelpF12]
 ""
 //[MHelpShiftF1]
-"Index"
+"Índice"
 //[MHelpShiftF2]
 "Plugin"
 //[MHelpShiftF3]
@@ -3349,7 +3349,7 @@
 //[MHelpShiftF12]
 ""
 //[MHelpAltF1]
-"Prev"
+"Ant."
 //[MHelpAltF2]
 ""
 //[MHelpAltF3]
@@ -3365,7 +3365,7 @@
 //[MHelpAltF8]
 ""
 //[MHelpAltF9]
-"Video"
+"Vídeo"
 //[MHelpAltF10]
 ""
 //[MHelpAltF11]
@@ -3493,9 +3493,9 @@
 //[MHelpCtrlAltShiftF12]
 ""
 //[MInfoF1]
-"Help"
+"Ajuda"
 //[MInfoF2]
-"Wrap"
+"Inv."
 //[MInfoF3]
 "VieDiz"
 //[MInfoF4]
@@ -3505,21 +3505,21 @@
 //[MInfoF6]
 ""
 //[MInfoF7]
-"Search"
+"Busca"
 //[MInfoF8]
 "ANSI"
 //[MInfoF9]
-"ConfMn"
+"Config"
 //[MInfoF10]
-"Quit"
+"Sair"
 //[MInfoF11]
 "Plugin"
 //[MInfoF12]
-"Screen"
+"Telas"
 //[MInfoShiftF1]
 ""
 //[MInfoShiftF2]
-"WWrap"
+"QbPal"
 //[MInfoShiftF3]
 ""
 //[MInfoShiftF4]
@@ -3529,21 +3529,21 @@
 //[MInfoShiftF6]
 ""
 //[MInfoShiftF7]
-"Next"
+"Próx."
 //[MInfoShiftF8]
-"CodePg"
+"PágCód"
 //[MInfoShiftF9]
-"Save"
+"Salvar"
 //[MInfoShiftF10]
-"Last"
+"Último"
 //[MInfoShiftF11]
 ""
 //[MInfoShiftF12]
 ""
 //[MInfoAltF1]
-"Left"
+"Esq."
 //[MInfoAltF2]
-"Right"
+"Dir."
 //[MInfoAltF3]
 ""
 //[MInfoAltF4]
@@ -3553,21 +3553,21 @@
 //[MInfoAltF6]
 ""
 //[MInfoAltF7]
-"Find"
+"Local."
 //[MInfoAltF8]
-"Goto"
+"IrPara"
 //[MInfoAltF9]
-"Video"
+"Vídeo"
 //[MInfoAltF10]
-"Tree"
+"Árvore"
 //[MInfoAltF11]
-"ViewHs"
+"VerHs"
 //[MInfoAltF12]
-"FoldHs"
+"Diret"
 //[MInfoCtrlF1]
-"Left"
+"Esq."
 //[MInfoCtrlF2]
-"Right"
+"Dir."
 //[MInfoCtrlF3]
 ""
 //[MInfoCtrlF4]
@@ -3587,7 +3587,7 @@
 //[MInfoCtrlF11]
 ""
 //[MInfoCtrlF12]
-"Mode"
+"Modo"
 //[MInfoAltShiftF1]
 ""
 //[MInfoAltShiftF2]
@@ -3685,11 +3685,11 @@
 //[MInfoCtrlAltShiftF12]
 ""
 //[MQViewF1]
-"Help"
+"Ajuda"
 //[MQViewF2]
-"Wrap"
+"Inv."
 //[MQViewF3]
-"View"
+"Ver"
 //[MQViewF4]
 "Hex"
 //[MQViewF5]
@@ -3697,21 +3697,21 @@
 //[MQViewF6]
 ""
 //[MQViewF7]
-"Search"
+"Busca"
 //[MQViewF8]
 "ANSI"
 //[MQViewF9]
-"ConfMn"
+"Config"
 //[MQViewF10]
-"Quit"
+"Sair"
 //[MQViewF11]
 "Plugin"
 //[MQViewF12]
-"Screen"
+"Telas"
 //[MQViewShiftF1]
 ""
 //[MQViewShiftF2]
-"WWrap"
+"QbPal"
 //[MQViewShiftF3]
 ""
 //[MQViewShiftF4]
@@ -3721,21 +3721,21 @@
 //[MQViewShiftF6]
 ""
 //[MQViewShiftF7]
-"Next"
+"Próx."
 //[MQViewShiftF8]
-"CodePg"
+"PágCód"
 //[MQViewShiftF9]
-"Save"
+"Salvar"
 //[MQViewShiftF10]
-"Last"
+"Último"
 //[MQViewShiftF11]
 ""
 //[MQViewShiftF12]
 ""
 //[MQViewAltF1]
-"Left"
+"Esq."
 //[MQViewAltF2]
-"Right"
+"Dir."
 //[MQViewAltF3]
 ""
 //[MQViewAltF4]
@@ -3745,21 +3745,21 @@
 //[MQViewAltF6]
 ""
 //[MQViewAltF7]
-"Find"
+"Local."
 //[MQViewAltF8]
-"Goto"
+"IrPara"
 //[MQViewAltF9]
-"Video"
+"Vídeo"
 //[MQViewAltF10]
-"Tree"
+"Árvore"
 //[MQViewAltF11]
-"ViewHs"
+"VerHs"
 //[MQViewAltF12]
-"FoldHs"
+"Diret"
 //[MQViewCtrlF1]
-"Left"
+"Esq."
 //[MQViewCtrlF2]
-"Right"
+"Dir."
 //[MQViewCtrlF3]
 ""
 //[MQViewCtrlF4]
@@ -3877,29 +3877,29 @@
 //[MQViewCtrlAltShiftF12]
 ""
 //[MKBTreeF1]
-"Help"
+"Ajuda"
 //[MKBTreeF2]
-"UserMn"
+"Menu"
 //[MKBTreeF3]
 ""
 //[MKBTreeF4]
-"Attr"
+"Atrib"
 //[MKBTreeF5]
-"Copy"
+"Copiar"
 //[MKBTreeF6]
 "RenMov"
 //[MKBTreeF7]
-"MkFold"
+"CrDir."
 //[MKBTreeF8]
-"Delete"
+"Apaga"
 //[MKBTreeF9]
-"ConfMn"
+"Config"
 //[MKBTreeF10]
-"Quit"
+"Sair"
 //[MKBTreeF11]
 "Plugin"
 //[MKBTreeF12]
-"Screen"
+"Telas"
 //[MKBTreeShiftF1]
 ""
 //[MKBTreeShiftF2]
@@ -3909,25 +3909,25 @@
 //[MKBTreeShiftF4]
 ""
 //[MKBTreeShiftF5]
-"Copy"
+"Copiar"
 //[MKBTreeShiftF6]
-"Rename"
+"Renom"
 //[MKBTreeShiftF7]
 ""
 //[MKBTreeShiftF8]
 ""
 //[MKBTreeShiftF9]
-"Save"
+"Salvar"
 //[MKBTreeShiftF10]
-"Last"
+"Último"
 //[MKBTreeShiftF11]
-"Group"
+"Grupo"
 //[MKBTreeShiftF12]
 "SelUp"
 //[MKBTreeAltF1]
-"Left"
+"Esq."
 //[MKBTreeAltF2]
-"Right"
+"Dir."
 //[MKBTreeAltF3]
 ""
 //[MKBTreeAltF4]
@@ -3937,21 +3937,21 @@
 //[MKBTreeAltF6]
 ""
 //[MKBTreeAltF7]
-"Find"
+"Local."
 //[MKBTreeAltF8]
-"Histry"
+"Hist."
 //[MKBTreeAltF9]
-"Video"
+"Vídeo"
 //[MKBTreeAltF10]
-"Tree"
+"Árvore"
 //[MKBTreeAltF11]
-"ViewHs"
+"VerHs"
 //[MKBTreeAltF12]
-"FoldHs"
+"Diret"
 //[MKBTreeCtrlF1]
-"Left"
+"Esq."
 //[MKBTreeCtrlF2]
-"Right"
+"Dir."
 //[MKBTreeCtrlF3]
 ""
 //[MKBTreeCtrlF4]
@@ -4069,41 +4069,41 @@
 //[MKBTreeCtrlAltShiftF12]
 ""
 //[MCopyTimeInfoElapsed]
-"Time:"
+"Tempo:"
 //[MCopyTimeInfoRemaining]
-"Remaining:"
+"Restante:"
 //[MCopyTimeInfoSpeed]
 "B/s"
 //[MKeyESCWasPressed]
-"Operation has been interrupted"
+"A operação foi interrompida"
 //[MDoYouWantToCancel]
-"Do you really want to cancel it?"
+"Deseja realmente cancelá-la?"
 //[MDoYouWantToContinue]
-"Continue work?"
+"Continuar o trabalho?"
 //[MCheckingFileInPlugin]
-"The file is being checked by the plugin"
+"O arquivo está sendo verificado pelo plugin"
 //[MDialogType]
-"Dialog"
+"Diálogo"
 //[MHelpType]
-"Help"
+"Ajuda"
 //[MFolderTreeType]
-"FolderTree"
+"ÁrvoreDir"
 //[MVMenuType]
 "Menu"
 //[MIncorrectMask]
-"File-mask string contains errors"
+"A máscara de arquivos contém erros"
 //[MPanelBracketsForLongName]
 "{}"
 //[MComspecNotFound]
-"Environment variable %COMSPEC% not defined"
+"A variável de ambiente %COMSPEC% não está definida"
 //[MFileFilterTitle]
-"Filter"
+"Filtro"
 //[MFileHilightTitle]
-"Files highlighting"
+"Destaque de arquivos"
 //[MFileFilterName]
-"&Name:"
+"&Nome:"
 //[MFileFilterMatchMask]
-"&Mask:"
+"&Máscara:"
 //[MFileFilterSize]
 "Si&ze:"
 //[MFileFilterSizeFromSign]
@@ -4111,159 +4111,159 @@
 //[MFileFilterSizeToSign]
 "&<="
 //[MFileHardLinksCount]
-"Has more than one hardlin&k"
+"Tem mais de um lin&k físico"
 //[MFileFilterDate]
-"Date&/Time:"
+"Data&/Hora:"
 //[MFileFilterWrite]
-"&write"
+"&escrita"
 //[MFileFilterCreation]
-"&creation"
+"&criação"
 //[MFileFilterAccess]
-"&access"
+"&acesso"
 //[MFileFilterChange]
-"c&hange"
+"al&teração"
 //[MFileFilterDateRelative]
-"Relat&ive"
+"&Relativo"
 //[MFileFilterDateAfterSign]
 ">="
 //[MFileFilterDateBeforeSign]
 "<="
 //[MFileFilterCurrent]
-"C&urrent"
+"At&ual"
 //[MFileFilterBlank]
-"B&lank"
+"Li&mpar"
 //[MFileFilterAttr]
-"Attri&butes"
+"Atri&butos"
 //[MFileFilterAttrChoose]
 "&..."
 //[MFileFilterAttrReadOnly]
-"&Read only"
+"Somente &leitura"
 //[MFileFilterAttrArcive]
-"&Archive"
+"Ar&quivo"
 //[MFileFilterAttrHidden]
-"&Hidden"
+"&Oculto"
 //[MFileFilterAttrSystem]
-"&System"
+"Sist&ema"
 //[MFileFilterAttrCompressed]
-"&Compressed"
+"&Compactado"
 //[MFileFilterAttrEncrypted]
-"&Encrypted"
+"Criptogr&afado"
 //[MFileFilterAttrDirectory]
-"&Directory"
+"&Diretório"
 //[MFileFilterAttrNotIndexed]
-"Not &indexed"
+"Não &indexado"
 //[MFileFilterAttrSparse]
-"S&parse"
+"Es&parso"
 //[MFileFilterAttrTemporary]
-"Temporar&y"
+"&Temporário"
 //[MFileFilterAttrReparse]
-"Reparse poin&t"
+"Ponto de nova análi&se"
 //[MFileFilterAttrOffline]
 "O&ffline"
 //[MFileFilterAttrVirtual]
 "&Virtual"
 //[MFileFilterAttrIntegrityStream]
-"Inte&grity stream"
+"Fluxo de inte&gridade"
 //[MFileFilterAttrNoScrubData]
-"No scru&b data"
+"Sem verificação de dados (&b)"
 //[MFileFilterAttrPinned]
-"Pi&nned"
+"Fi&xado"
 //[MFileFilterAttrUnpinned]
-"&Unpinned"
+"&Não fixado"
 //[MFileFilterAttrRecallOnOpen]
-"Recal&l on open"
+"Recuperar ao abrir (&l)"
 //[MFileFilterAttrRecallOnDataAccess]
-"Recall &on data access"
+"Recuperar ao acessar dad&os"
 //[MFileFilterAttrStrictlySequential]
-"Strictly se&quential"
+"Estritamente se&quencial"
 //[MFileFilterAttrDevice]
-"Device"
+"Dispositivo"
 //[MFileFilterReset]
-"&Reset"
+"&Redefinir"
 //[MFileFilterMakeTransparent]
-"Make &transparent"
+"Tornar &transparente"
 //[MFileFilterCancel]
-"Cancel"
+"Cancelar"
 //[MBadFileSizeFormat]
-"File size field is incorrectly filled"
+"O campo de tamanho de arquivo está preenchido incorretamente"
 //[MFarTitleAddonsAdmin]
-"Administrator"
+"Administrador"
 //[MElevationRequired]
-"You need to provide administrator permission"
+"Você precisa fornecer permissão de administrador"
 //[MElevationRequiredPrivileges]
-"Additional privileges required"
+"Privilégios adicionais necessários"
 //[MElevationRequiredProcess]
-"to process this object:"
+"para processar este objeto:"
 //[MElevationRequiredDelete]
-"to delete this object:"
+"para apagar este objeto:"
 //[MElevationRequiredCopy]
-"to copy this object:"
+"para copiar este objeto:"
 //[MElevationRequiredMove]
-"to move this object:"
+"para mover este objeto:"
 //[MElevationRequiredReplace]
-"to replace this object:"
+"para substituir este objeto:"
 //[MElevationRequiredGetAttributes]
-"to get attributes of this object:"
+"para obter os atributos deste objeto:"
 //[MElevationRequiredSetAttributes]
-"to set attributes of this object:"
+"para definir os atributos deste objeto:"
 //[MElevationRequiredHardLink]
-"to create this hard link:"
+"para criar este link físico:"
 //[MElevationRequiredSymLink]
-"to create this symbolic link:"
+"para criar este link simbólico:"
 //[MElevationRequiredRecycle]
-"to move this object to recycle bin:"
+"para mover este objeto para a Lixeira:"
 //[MElevationRequiredList]
-"to list this object:"
+"para listar o conteúdo deste objeto:"
 //[MElevationRequiredSetOwner]
-"to set owner of this object:"
+"para definir o proprietário deste objeto:"
 //[MElevationRequiredOpen]
-"to open this object:"
+"para abrir este objeto:"
 //[MElevationRequiredEncryptFile]
-"to encrypt this object:"
+"para criptografar este objeto:"
 //[MElevationRequiredDecryptFile]
-"to decrypt this object:"
+"para descriptografar este objeto:"
 //[MElevationRequiredSetVolumeLabel]
-"to set volume label:"
+"para definir o rótulo do volume:"
 //[MElevationDoForAll]
-"Do this for &all current objects"
+"Fazer isto para &todos os objetos atuais"
 //[MElevationDoNotAskAgainInTheCurrentSession]
-"Do not ask again in the current session"
+"Não perguntar novamente nesta sessão"
 //[MCompletionHistoryTitle]
-"History"
+"Histórico"
 //[MCompletionEnvironmentTitle]
-"Environment"
+"Ambiente"
 //[MCompletionFilesTitle]
-"Files"
+"Arquivos"
 //[MObjectLockedReason]
-"Object is being {0} in:"
+"O objeto está sendo {0} em:"
 //[MObjectLockedReasonPlayed]
-"played"
+"reproduzido"
 //[MObjectLockedReasonEdited]
-"edited"
+"editado"
 //[MObjectLockedReasonOpened]
-"opened"
+"aberto"
 //[MObjectLockedAndMore]
-"and {0} more processes."
+"e mais {0} processos."
 //[MObjectLockedSwitchTo]
-"Switch to"
+"Alternar para"
 //[MObjectLockedClose]
-"Close file"
+"Fechar arquivo"
 //[MObjectLockedReasonSessionMismatch]
-"One or more processes are running in another Terminal Services session."
+"Um ou mais processos estão em execução em outra sessão dos Serviços de Terminal."
 //[MObjectLockedReasonCriticalProcess]
-"One or more processes are critical processes."
+"Um ou mais processos são processos críticos."
 //[MObjectLockedReasonCriticalService]
-"One or more services are critical services."
+"Um ou mais serviços são serviços críticos."
 //[MObjectLockedReasonDetectedSelf]
-"The file is opened by the current process."
+"O arquivo está aberto pelo processo atual."
 //[MProblemDb]
-"Problem configuration DB"
+"Problema no banco de dados de configuração"
 //[MShowConfigFolders]
-"Show configuration folders"
+"Mostrar diretórios de configuração"
 //[MBadLanguageFile]
-"Incorrect language file"
+"Arquivo de idioma incorreto"
 //[MLanguageStringNotFound]
-"String {0} not found"
+"Texto {0} não encontrado"
 //[MUnsupportedCodePageSelectedCodepage]
 "A página de código selecionada"
 //[MUnsupportedCodePageDoesNotSupport]
@@ -4489,7 +4489,7 @@
 //[MKeyAlt]
 ""
 //[MNewFileName]
-"New_File_{0:04}-{1:02}-{2:02}_{3:02}.{4:02}.{5:02}.{6:03}.txt"
+"Novo_Arquivo_{0:04}-{1:02}-{2:02}_{3:02}.{4:02}.{5:02}.{6:03}.txt"
 //[MMenuTerminalPosition]
 "Posição do ter&minal"
 //[MMenuModuleCommands]
@@ -4565,4 +4565,4 @@
 //[MLogQuietKey]
 "LogSil"
 //[MLogStarted]
-"The output is logged to"
+"A saída está sendo registrada em"

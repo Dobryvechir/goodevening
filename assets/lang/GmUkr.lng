@@ -277,7 +277,7 @@
 //[MConfigScanJunction]
 "Ск&анувати символічні посилання"
 //[MConfigSmartFolderMonitor]
-"Оновлення панелей тільки якщо gm активний"
+"Оновлення &панелей тільки якщо gm активний"
 //[MConfigSaveHistory]
 "Зберігати &історію команд"
 //[MConfigSaveFoldersHistory]
@@ -297,7 +297,7 @@
 //[MConfigElevationUsePrivileges]
 "Вик&ористовувати додаткові привілеї"
 //[MConfigSortingCollation]
-"Сортувальне порівняння:"
+"&Сортувальне порівняння:"
 //[MConfigSortingOrdinal]
 "порядкове"
 //[MConfigSortingInvariant]
@@ -305,7 +305,7 @@
 //[MConfigSortingLinguistic]
 "лінгвістичне"
 //[MConfigSortingDigitsAsNumbers]
-"Трактувати цифри як числа"
+"Трактувати &цифри як числа"
 //[MConfigSortingCase]
 "&Враховувати регістр"
 //[MConfigAutoSave]
@@ -341,9 +341,9 @@
 //[MConfigHighlight]
 "&Розмальовка файлів"
 //[MConfigSelectFolders]
-"Помітка папок"
+"Пом&ітка папок"
 //[MConfigRightClickSelect]
-"Правий клац помічає файли"
+"Правий &клац помічає файли"
 //[MConfigSortFolderExt]
 "Сортувати імена папок за ти&пом"
 //[MConfigAllowReverseSort]
@@ -351,13 +351,13 @@
 //[MConfigAutoUpdateLimit]
 "Не автоо&новлювати панелі,"
 //[MConfigAutoUpdateLimit2]
-"якщо об'єктів більше ніж"
+"&якщо об'єктів більше ніж"
 //[MConfigAutoUpdateRemoteDrive]
 "Автооновлення м&ережевих дисків"
 //[MConfigShowColumns]
 "Показувати &заголовки колонок"
 //[MConfigShowStatus]
-"Показувати рядок статусу"
+"Показувати рядок &статусу"
 //[MConfigDetailedJunction]
 "Визначати точки монтування &диска"
 //[MConfigShowTotal]
@@ -365,13 +365,13 @@
 //[MConfigShowFree]
 "Показувати &вільне місце"
 //[MConfigShowScrollbar]
-"Показувати смужку прокручування"
+"Пок&азувати смужку прокручування"
 //[MConfigShowScreensNumber]
 "Показувати кількість &фонових екранів"
 //[MConfigShowSortMode]
 "Показувати букву режиму сор&тування"
 //[MConfigShowDotsInRoot]
-"Показувати \"..\" в кореневих каталогах"
+"&Показувати \"..\" в кореневих каталогах"
 //[MConfigInterfaceTitle]
 "Налаштування інтерфейсу"
 //[MConfigClock]
@@ -385,35 +385,35 @@
 //[MConfigSaver]
 "Екранна за&ставка"
 //[MConfigSaverMinutes]
-"хвилин"
+"&хвилин"
 //[MConfigCopyTotal]
 "Показувати &загальний індикатор копіювання"
 //[MConfigCopyTimeRule]
 "Показувати інформацію про час &копіювання"
 //[MConfigDeleteTotal]
-"Показувати загальний індикатор видалення"
+"Показувати загальний &індикатор видалення"
 //[MConfigPgUpChangeDisk]
-"Використовувати Ctrl+PgUp для вибору диска"
+"&Використовувати Ctrl+PgUp для вибору диска"
 //[MConfigUseVirtualTerminalForRendering]
-"Використовувати Virtual Terminal для рендерингу"
+"Використовувати &Virtual Terminal для рендерингу"
 //[MConfigFullWidthAwareRendering]
 "Рендерінг з урахуванням повної ширини"
 //[MConfigFullWidthAwareRenderingGraphemeClustersDected1]
-"It appears that your terminal supports Unicode grapheme clusters."
+"Схоже, ваш термінал підтримує кластери графем Unicode."
 //[MConfigFullWidthAwareRenderingGraphemeClustersDected2]
-"Unfortunately, gm does not support them yet."
+"На жаль, gm поки що їх не підтримує."
 //[MConfigFullWidthAwareRenderingGraphemeClustersDected3]
-"For best experience it is recommended to switch to codepoint-based rendering."
+"Для найкращого результату рекомендується перейти на відображення за кодовими точками."
 //[MConfigFullWidthAwareRenderingGraphemeClustersDected4]
-"Consult the documentation of your terminal for advice on how to do this."
+"Як це зробити, дивіться в документації вашого термінала."
 //[MConfigClearType]
-"Рендерінг з підтримкою ClearType (може бути повільною)"
+"&Рендерінг з підтримкою ClearType (може бути повільною)"
 //[MConfigSetConsoleIcon]
-"Іконка консолі:"
+"Ік&онка консолі:"
 //[MConfigSetAdminConsoleIcon]
-"Альтернативна для адміністратора"
+"Альтернативна &для адміністратора"
 //[MConfigTitleAddons]
-"Додаткова інформація для заголовка вікна:"
+"Додаткова інформація для &заголовка вікна:"
 //[MConfigDlgSetsTitle]
 "Налаштування діалогів"
 //[MConfigDialogsEditHistory]
@@ -427,15 +427,15 @@
 //[MConfigDialogsEULBsClear]
 "Backspace &видаляє незмінений текст"
 //[MConfigDialogsMouseButton]
-"Клік миші поза діалогом закриває діалог"
+"&Клік миші поза діалогом закриває діалог"
 //[MConfigVMenuTitle]
 "Налаштування меню"
 //[MConfigVMenuLBtnClick]
-"Клік лівої кнопки миші поза меню"
+"Клік лівої кнопки &миші поза меню"
 //[MConfigVMenuRBtnClick]
-"Клік правої кнопки миші поза меню"
+"Клік п&равої кнопки миші поза меню"
 //[MConfigVMenuMBtnClick]
-"Клік середньої кнопки миші поза меню"
+"Клік с&ередньої кнопки миші поза меню"
 //[MConfigVMenuClickCancel]
 "Скасувати та закрити"
 //[MConfigVMenuClickApply]
@@ -541,9 +541,9 @@
 //[MViewConfigSaveWrapMode]
 "Зберігати &режим переносу"
 //[MViewConfigSaveViewMode]
-"Зберігати режим перегляду"
+"Зб&ерігати режим перегляду"
 //[MViewConfigDetectDumpMode]
-"Автовизначення дамп-режиму перегляду"
+"Автовизначення дамп-режиму &перегляду"
 //[MViewAutoDetectCodePage]
 "&Автовизначення кодової сторінки"
 //[MViewConfigTabSize]
@@ -613,21 +613,21 @@
 //[MConfigEditor]
 "Редактор конфігурації"
 //[MConfigEditorBoolean]
-"boolean"
+"логічний"
 //[MConfigEditorTriState]
-"3-state"
+"3 стани"
 //[MConfigEditorInteger]
-"integer"
+"ціле"
 //[MConfigEditorString]
-"string"
+"рядок"
 //[MConfigEditorIntegerSigned]
-"Signed:"
+"Зі знаком:"
 //[MConfigEditorIntegerUnsigned]
-"Unsigned:"
+"Без знака:"
 //[MConfigEditorIntegerHexadecimal]
-"Hexadecimal:"
+"Шістнадцяткове:"
 //[MConfigEditorIntegerBinary]
-"Binary:"
+"Двійкове:"
 //[MSaveSetupTitle]
 "Конфігурація"
 //[MSaveSetupAsk1]
@@ -661,7 +661,7 @@
 //[MLinkType]
 "&Тип посилання:"
 //[MLinkTypeJunction]
-"з'єднання каталогів"
+"з'&єднання каталогів"
 //[MLinkTypeHardlink]
 "&жорстке посилання"
 //[MLinkTypeSymlink]
@@ -669,11 +669,11 @@
 //[MLinkTypeSymlinkFile]
 "символічне посилання (&файл)"
 //[MLinkTypeSymlinkDirectory]
-"символічне посилання (папка)"
+"сим&волічне посилання (папка)"
 //[MCopyPreserveAllTimestamps]
 "Зберігати всі позначки часу"
 //[MCopySymLinkContents]
-"Копіювати вміст символічних посилань"
+"Коп&іювати вміст символічних посилань"
 //[MCopyMultiActions]
 "Обр&обляти декілька імен файлів"
 //[MCopyDlgCopy]
@@ -681,7 +681,7 @@
 //[MCopyDlgTree]
 "F10-&Дерево"
 //[MCopyDlgCancel]
-"Скасувати"
+"Ск&асувати"
 //[MCopyDlgRename]
 "&Перейменувати"
 //[MCopyDlgLink]
@@ -691,7 +691,7 @@
 //[MCopyPrepareSecury]
 "Застосування прав доступу…"
 //[MCopyUseFilter]
-"Використовувати фільтр"
+"В&икористовувати фільтр"
 //[MCopySetFilter]
 "&Фільтр"
 //[MCopyFile]
@@ -761,7 +761,7 @@
 //[MCopyMountVolFailed2]
 "на '{0}'"
 //[MCopyMountName]
-"Disk_"
+"Диск_"
 //[MCannotCopyFileToItself1]
 "Не можна копіювати файл"
 //[MCannotCopyFileToItself2]
@@ -791,13 +791,13 @@
 //[MCopyAppend]
 "&Додати"
 //[MCopyRename]
-"Ім'я"
+"Ім'&я"
 //[MCopyRememberChoice]
 "&Запам'ятати вибір"
 //[MCopyRenameTitle]
 "Перейменування"
 //[MCopyRenameText]
-"Нове ім'я:"
+"Н&ове ім'я:"
 //[MCopyFileRO]
 "Файл має атрибут \"Лише для читання\""
 //[MCopyAskDelete]
@@ -961,13 +961,13 @@
 //[MSearchReplaceFind]
 "Шукати"
 //[MSearchReplaceFindNext]
-"Шукати &наступний"
+"Шукати наступний"
 //[MSearchReplaceFindPrev]
 "Шукати &попередній"
 //[MSearchReplaceReplace]
-"&Замінити"
+"Замінити"
 //[MSearchReplaceReplaceNext]
-"Замістити &наступний"
+"Замістити наступний"
 //[MSearchReplaceReplacePrev]
 "Замістити &попередній"
 //[MSearchReplaceAll]
@@ -1667,15 +1667,15 @@
 //[MFindFileFuzzy]
 "Нестроги&й пошук"
 //[MFindFileNotContaining]
-"Які не містять"
+"&Які не містять"
 //[MFindFileArchives]
 "Шукати в а&рхівах"
 //[MFindFileFolders]
-"Шукати папки"
+"&Шукати папки"
 //[MFindFileSymLinks]
 "Шукати в символі&чних посиланнях"
 //[MFindFileAlternateStreams]
-"Шукати в альтернативних потоках"
+"Шукати в &альтернативних потоках"
 //[MFindFileSearchArea]
 "Виберіть &область пошуку:"
 //[MFindFileSearchAllDisks]
@@ -1699,7 +1699,7 @@
 //[MFindFileUsingFilter]
 "використовуючи фильтр"
 //[MFindFileFind]
-"&Шукати"
+"Шукати"
 //[MFindFileDrive]
 "Дис&к"
 //[MFindFileSetFilter]
@@ -1721,7 +1721,7 @@
 //[MFindFileDone]
 "Пошук закінчено. Знайдено файлів: {0}, папок: {1}"
 //[MFindFileCancel]
-"Скасувати"
+"&Скасувати"
 //[MFindFileFound]
 "Файлів: {0}, папок: {1}"
 //[MFindFileAdvancedTitle]
@@ -1789,7 +1789,7 @@
 //[MHighlightMarking4]
 "&8. Помітка"
 //[MHighlightExample]
-"filename.ext"
+"назвафайлу.розш"
 //[MHighlightContinueProcessing]
 "Продовжити &обробку"
 //[MInfoTitle]
@@ -1813,11 +1813,11 @@
 //[MInfoUserAccessLevelUnknown]
 "Невідомо"
 //[MInfoUserAccessElevated]
-"Elevated"
+"Підвищений"
 //[MInfoUserAccessElevationTypeFull]
-"Full"
+"Повний"
 //[MInfoUserAccessElevationTypeLimited]
-"Limited"
+"Обмежений"
 //[MInfoDiskTitle]
 "Диск"
 //[MInfoRemovable]
@@ -1881,11 +1881,11 @@
 //[MInfoMemory]
 "Пам'ять"
 //[MInfoMemoryCommittable]
-"Committable"
+"Виділювана"
 //[MInfoMemoryAddressable]
-"Addressable"
+"Адресовна"
 //[MInfoMemoryPhysical]
-"Physical"
+"Фізична"
 //[MInfoMetricMemoryInstalled]
 "встановлено"
 //[MInfoDescription]
@@ -1943,17 +1943,17 @@
 //[MMakeFolderTitle]
 "Створення папки"
 //[MCreateFolder]
-"Створити папку:"
+"С&творити папку:"
 //[MMakeFolderLinkType]
-"Тип посилання:"
+"Тип п&осилання:"
 //[MMakeFolderLinkNone]
-"Нема"
+"&Нема"
 //[MMakeFolderLinkJunction]
-"З'єднання каталогів"
+"&З'єднання каталогів"
 //[MMakeFolderLinkSymlink]
-"Символічне посилання"
+"Си&мволічне посилання"
 //[MMakeFolderLinkTarget]
-"Призначення:"
+"П&ризначення:"
 //[MMultiMakeDir]
 "Оброблят&и декілька імен папок"
 //[MIncorrectDirList]
@@ -1977,7 +1977,7 @@
 //[MMenuOwnersView]
 "Вл&асники файлів"
 //[MMenuLinksView]
-"Посилання файлів"
+"Поси&лання файлів"
 //[MMenuAlternativeView]
 "Аль&тернативний повний"
 //[MMenuInfoPanel]
@@ -2065,7 +2065,7 @@
 //[MMenuProcessList]
 "Список &задач"
 //[MMenuHotPlugList]
-"Список Hotplug-пристроїв"
+"Список &Hotplug-пристроїв"
 //[MMenuSystemSettings]
 "Си&стемні параметри"
 //[MMenuPanelSettings]
@@ -2079,7 +2079,7 @@
 //[MMenuPluginsConfig]
 "Параметри плагіні&в"
 //[MMenuPluginsManagerSettings]
-"Параметри менеджера плагінів"
+"Параме&три менеджера плагінів"
 //[MMenuDialogSettings]
 "Налаштування &діалогів"
 //[MMenuVMenuSettings]
@@ -2091,7 +2091,7 @@
 //[MMenuInfoPanelSettings]
 "Налаштування &інформаційної панелі"
 //[MMenuMaskGroups]
-"Групи масок файлів"
+"Гр&упи масок файлів"
 //[MMenuConfirmation]
 "&Підтверждення"
 //[MMenuFilePanelModes]
@@ -2099,13 +2099,13 @@
 //[MMenuFileDescriptions]
 "&Описи файлів"
 //[MMenuFolderInfoFiles]
-"Файли опису папок"
+"Фа&йли опису папок"
 //[MMenuViewer]
 "Налаштування про&грами перегляду"
 //[MMenuEditor]
 "Налаштування &редактора"
 //[MMenuCodePages]
-"Кодові сто&рінки"
+"Кодові сторінки"
 //[MMenuColors]
 "&Кольори"
 //[MMenuFilesHighlighting]
@@ -2159,7 +2159,7 @@
 //[MMenuSortByNameOnly]
 "Тільки ім'я"
 //[MMenuSortUseGroups]
-"Використовувати &групи сортування"
+"Використовувати групи сортування"
 //[MMenuSortSelectedFirst]
 "Позначені &файли вперед"
 //[MMenuSortDirectoriesFirst]
@@ -2279,7 +2279,7 @@
 //[MChangeDriveShowLabel]
 "Показувати м&ітку диска"
 //[MChangeDriveShowLabelUseShell]
-"Використвувати ім'я оболонки"
+"Використвувати ім'&я оболонки"
 //[MChangeDriveShowFileSystem]
 "Показувати тип &файлової системи"
 //[MChangeDriveShowSize]
@@ -2291,11 +2291,11 @@
 //[MChangeDriveShowPlugins]
 "Показувати &плагіни"
 //[MChangeDriveSortPluginsByHotkey]
-"Сортувати плагіни по гарячій клавіші"
+"&Сортувати плагіни по гарячій клавіші"
 //[MChangeDriveShowCD]
 "Показувати параметри &компакт-дисків"
 //[MChangeDriveShowNetworkDrive]
-"Показувати параметри мережевих дисків"
+"Показувати параметри мережевих &дисків"
 //[MChangeDriveShowVirtualDisk]
 "Визначати віртуальні диски"
 //[MChangeDriveVolumeLabel]
@@ -2327,7 +2327,7 @@
 //[MQuickViewTitle]
 "Швидкий перегляд"
 //[MQuickViewReparsePoint]
-"Точка повторного аналізу"
+"&Точка повторного аналізу"
 //[MQuickViewUnknownReparsePoint]
 "Невідома точка повторного аналізу"
 //[MQuickViewFolders]
@@ -2353,11 +2353,11 @@
 //[MSetAttrHardLinks]
 "жорстких посилань"
 //[MSetAttrJunction]
-"З'єднання:"
+"&З'єднання:"
 //[MSetAttrSymlink]
-"Посилання{}:"
+"&Посилання{}:"
 //[MSetAttrVolMount]
-"Том:"
+"Т&ом:"
 //[MSetAttrDfsTargets]
 "DFS цілі:"
 //[MSetAttrAppExecLink]
@@ -2379,39 +2379,39 @@
 //[MSetAttrEncrypted]
 "&Шифрований"
 //[MSetAttrNotIndexed]
-"Неіндексований"
+"&Неіндексований"
 //[MSetAttrSparse]
-"Розріджений"
+"&Розріджений"
 //[MSetAttrTemporary]
-"Тимчасовий"
+"Ти&мчасовий"
 //[MSetAttrOffline]
-"Автономний"
+"Авт&ономний"
 //[MSetAttrReparsePoint]
-"Точка повторного аналізу"
+"Точка &повторного аналізу"
 //[MSetAttrVirtual]
-"Віртуальний"
+"В&іртуальний"
 //[MSetAttrIntegrityStream]
-"Потік цілісності"
+"Потік &цілісності"
 //[MSetAttrNoScrubData]
-"Нема даних очищення"
+"Нема &даних очищення"
 //[MSetAttrPinned]
-"Закріплений"
+"&Закріплений"
 //[MSetAttrUnpinned]
-"Відкріплений"
+"Від&кріплений"
 //[MSetAttrRecallOnOpen]
-"&Recall on open"
+"З&авантаження під час відкриття"
 //[MSetAttrRecallOnDataAccess]
-"Recall on data &access"
+"Завантаження під &час доступу до даних"
 //[MSetAttrStrictlySequential]
-"Strictly sequential"
+"&Суворо послідовний"
 //[MSetAttrDevice]
 "Пристрій"
 //[MSetAttrMore]
-"Ще"
+"&Ще"
 //[MSetAttrSubfolders]
 "Обробляти &вкладені папки"
 //[MSetAttrOwner]
-"Власник:"
+"В&ласник:"
 //[MSetAttrDate]
 "Дата/Час:"
 //[MSetAttrWrite]
@@ -2423,11 +2423,11 @@
 //[MSetAttrChange]
 "з&мінення:"
 //[MSetAttrOriginal]
-"Початковий"
+"П&очатковий"
 //[MSetAttrCurrent]
-"Поточний"
+"По&точний"
 //[MSetAttrBlank]
-"Скинути"
+"С&кинути"
 //[MSetAttrSet]
 "Установити"
 //[MSetAttrDateTitleMDY]
@@ -2705,25 +2705,25 @@
 //[MSetColorStyle]
 "Cтиль:"
 //[MSetColorStyleInherit]
-"Успадковувати"
+"&Успадковувати"
 //[MSetColorStyleBold]
-"Жирний"
+"&Жирний"
 //[MSetColorStyleItalic]
-"Курсив"
+"&Курсив"
 //[MSetColorStyleOverline]
-"Надкреслення"
+"&Надкреслення"
 //[MSetColorStyleStrikeout]
-"Закреслений"
+"&Закреслений"
 //[MSetColorStyleFaint]
-"Приглушений"
+"&Приглушений"
 //[MSetColorStyleBlink]
-"Миготіння"
+"&Миготіння"
 //[MSetColorStyleInverse]
 "Зворотний"
 //[MSetColorStyleInvisible]
 "Невидимий"
 //[MSetColorStyleUnderline]
-"Підкреслення:"
+"П&ідкреслення:"
 //[MSetColorStyleUnderlineNone]
 "Ні"
 //[MSetColorStyleUnderlineSingle]
@@ -2745,11 +2745,11 @@
 //[MSetColorVTHintNotSupported]
 "Ваша система не підтримує це."
 //[MSetColorSystemDialog]
-"System"
+"Система"
 //[MSetColorSet]
 "Встановити"
 //[MSetColorEnableVT]
-"Enable VT"
+"Увімкнути VT"
 //[MSetColorCancel]
 "Скасувати"
 //[MColorsPalette]
@@ -2775,15 +2775,15 @@
 //[MSetConfirmRemoveConnection]
 "В&ід'єднання мережевого диска"
 //[MSetConfirmRemoveSUBST]
-"Видалення SUBST-диска"
+"Видалення &SUBST-диска"
 //[MSetConfirmDetachVHD]
-"Від'єднання віртуального диска"
+"Від'&єднання віртуального диска"
 //[MSetConfirmRemoveHotPlug]
 "Відключення HotPlug-при&строю"
 //[MSetConfirmAllowReedit]
 "Повто&рне відкриття файлу в редакторі"
 //[MSetConfirmHistoryClear]
-"Очищення списку історії"
+"О&чищення списку історії"
 //[MSetConfirmExit]
 "Ви&хід"
 //[MPluginsManagerSettingsTitle]
@@ -3109,7 +3109,7 @@
 //[MCfgDizSetHidden]
 "Встановлювати &атрибут \"Прихований\" на нові списки описів"
 //[MCfgDizROUpdate]
-"Оновлювати файл описів з атрибутом \"Лише для читання\""
+"Оновлювати &файл описів з атрибутом \"Лише для читання\""
 //[MCfgDizStartPos]
 "&Позиція нових описів у рядку"
 //[MCfgDizNotUpdate]
@@ -3131,7 +3131,7 @@
 //[MEditPanelModes]
 "Режими панелі"
 //[MEditPanelModeName]
-"Им'я"
+"&Им'я"
 //[MEditPanelModeTypes]
 "&Типи стовпців"
 //[MEditPanelModeWidths]
@@ -3149,9 +3149,9 @@
 //[MEditPanelModeFoldersUpperCase]
 "Показувати папки &заголовними літерами"
 //[MEditPanelModeFilesLowerCase]
-"Показувати файли малими літерами"
+"&Показувати файли малими літерами"
 //[MEditPanelModeUpperToLowerCase]
-"Показувати имена файлів из заголовних літер малими літерами"
+"Показувати имена &файлів из заголовних літер малими літерами"
 //[MSetFolderInfoTitle]
 "Файли информації про папки"
 //[MSetFolderInfoNames]
@@ -3197,13 +3197,13 @@
 //[MMacroDeleteKey2]
 "Видалити?"
 //[MMacroEditKey]
-"Змінити"
+"&Змінити"
 //[MMacroSettingsTitle]
 "Параметри макрокоманди для '{0}'"
 //[MMacroSettingsSequence]
-"Послідовність:"
+"По&слідовність:"
 //[MMacroSettingsDescription]
-"Опис:"
+"&Опис:"
 //[MMacroSettingsEnableOutput]
 "Дозволити під час &виконання виведення на екран"
 //[MMacroSettingsRunAfterStart]
@@ -3215,11 +3215,11 @@
 //[MMacroSettingsPluginPanel]
 "На панелі пла&гіна"
 //[MMacroSettingsFolders]
-"Виконувати для папок"
+"Виконувати &для папок"
 //[MMacroSettingsSelectionPresent]
 "П&означені файли"
 //[MMacroSettingsCommandLine]
-"Порожній командний рядок"
+"Порожній &командний рядок"
 //[MMacroSettingsSelectionBlockPresent]
 "Позначено б&лок"
 //[MMacroPluginLuamacroNotLoaded]
@@ -3261,9 +3261,9 @@
 //[MExceptionDialogClipboard]
 "Буфер обміну"
 //[MExcTerminate]
-"Завершити gm"
+"&Завершити gm"
 //[MExcUnload]
-"Вивантажити плагін"
+"В&ивантажити плагін"
 //[MExcContinue]
 "Продовжити"
 //[MExcFullDump]
@@ -4111,7 +4111,7 @@
 //[MFileFilterSizeToSign]
 "&<="
 //[MFileHardLinksCount]
-"Понад одне жорстке посилання"
+"&Понад одне жорстке посилання"
 //[MFileFilterDate]
 "&Дата/Час:"
 //[MFileFilterWrite]
@@ -4157,31 +4157,31 @@
 //[MFileFilterAttrTemporary]
 "&Тимчасовий"
 //[MFileFilterAttrReparse]
-"Точка повторного аналізу"
+"Т&очка повторного аналізу"
 //[MFileFilterAttrOffline]
 "Автономни&й"
 //[MFileFilterAttrVirtual]
 "Вірт&уальний"
 //[MFileFilterAttrIntegrityStream]
-"Потік цілісності"
+"Потік &цілісності"
 //[MFileFilterAttrNoScrubData]
-"Нема даних очищення"
+"Нема &даних очищення"
 //[MFileFilterAttrPinned]
-"Закріплений"
+"З&акріплений"
 //[MFileFilterAttrUnpinned]
-"Відкріплений"
+"&Відкріплений"
 //[MFileFilterAttrRecallOnOpen]
-"Recall on open"
+"Завантаження під час в&ідкриття"
 //[MFileFilterAttrRecallOnDataAccess]
-"Recall on data access"
+"&Завантаження під час доступу до даних"
 //[MFileFilterAttrStrictlySequential]
-"Strictly sequential"
+"&Суворо послідовний"
 //[MFileFilterAttrDevice]
 "Пристрій"
 //[MFileFilterReset]
 "Очистит&и"
 //[MFileFilterMakeTransparent]
-"Виставити прозорість"
+"Виставити &прозорість"
 //[MFileFilterCancel]
 "Скасув."
 //[MBadFileSizeFormat]
@@ -4223,7 +4223,7 @@
 //[MElevationRequiredDecryptFile]
 "для розшифрування цього об'єкта:"
 //[MElevationRequiredSetVolumeLabel]
-"to set volume label:"
+"щоб встановити мітку тому:"
 //[MElevationDoForAll]
 "Виконати цю дію для &всіх поточних об'єктів"
 //[MElevationDoNotAskAgainInTheCurrentSession]

@@ -43,7 +43,7 @@
 //[MHRemove]
 "R&emover"
 //[MHSplit]
-"Dividir"
+"&Dividir"
 //[MWarning]
 "Advertencia"
 //[MError]
@@ -275,29 +275,29 @@
 //[MConfigCopySharing]
 "Copiar archivos abiertos para &escritura"
 //[MConfigScanJunction]
-"Explorar enlaces simbólicos"
+"Explorar enlaces &simbólicos"
 //[MConfigSmartFolderMonitor]
-"Actualizar paneles solo cuando gm está activo"
+"&Actualizar paneles solo cuando gm está activo"
 //[MConfigSaveHistory]
 "Guardar &historial de comandos"
 //[MConfigSaveFoldersHistory]
-"Guardar historial de directorios"
+"&Guardar historial de directorios"
 //[MConfigSaveViewHistory]
 "Guardar historial de &visor y editor"
 //[MConfigRegisteredTypes]
 "Usar extensiones &registradas de Windows"
 //[MConfigUpdateEnvironment]
-"Actualización automática de variables de entorno"
+"Actualización automática &de variables de entorno"
 //[MConfigElevation]
 "Requerir derechos de administrador:"
 //[MConfigElevationModify]
-"Para modificación"
+"Para m&odificación"
 //[MConfigElevationRead]
-"Para lectura"
+"Para &lectura"
 //[MConfigElevationUsePrivileges]
-"Usar privilegios adicionales"
+"&Usar privilegios adicionales"
 //[MConfigSortingCollation]
-"Ordenamiento de colación:"
+"Ordenamiento de &colación:"
 //[MConfigSortingOrdinal]
 "ordinal"
 //[MConfigSortingInvariant]
@@ -305,7 +305,7 @@
 //[MConfigSortingLinguistic]
 "lingüístico"
 //[MConfigSortingDigitsAsNumbers]
-"Tratar dígitos como números"
+"&Tratar dígitos como números"
 //[MConfigSortingCase]
 "Sensible minúsculas/ma&yúsculas"
 //[MConfigAutoSave]
@@ -337,21 +337,21 @@
 //[MConfigPanelTitle]
 "Configuración de paneles"
 //[MConfigHidden]
-"Mostrar archivos ocultos y de sistema"
+"Mostrar archivos &ocultos y de sistema"
 //[MConfigHighlight]
-"Resaltar archivos"
+"Resaltar &archivos"
 //[MConfigSelectFolders]
 "Seleccionar &directorios"
 //[MConfigRightClickSelect]
-"Clic derecho selecciona archivos"
+"C&lic derecho selecciona archivos"
 //[MConfigSortFolderExt]
-"Ordenar directorios por extensión"
+"Ordenar directorios por e&xtensión"
 //[MConfigAllowReverseSort]
 "Permitir modo de orden in&verso"
 //[MConfigAutoUpdateLimit]
 "Desactiva actuali&zación automát. de paneles"
 //[MConfigAutoUpdateLimit2]
-"si conteo de objetos es excedido"
+"si conteo de ob&jetos es excedido"
 //[MConfigAutoUpdateRemoteDrive]
 "Actualizar unidad&es de Red"
 //[MConfigShowColumns]
@@ -371,7 +371,7 @@
 //[MConfigShowSortMode]
 "Mostrar letra para &modo de orden"
 //[MConfigShowDotsInRoot]
-"Mostrar \"..\" en directorio raíz"
+"Mostrar \"..\" en &directorio raíz"
 //[MConfigInterfaceTitle]
 "Configuración de interfaz"
 //[MConfigClock]
@@ -385,35 +385,35 @@
 //[MConfigSaver]
 "&Salvapantallas"
 //[MConfigSaverMinutes]
-"minutos"
+"m&inutos"
 //[MConfigCopyTotal]
 "Mostrar indicador de progreso de copia &total"
 //[MConfigCopyTimeRule]
-"Mostrar información de tiempo de copiado"
+"Mostrar información de tiempo de &copiado"
 //[MConfigDeleteTotal]
-"Mostrar indicador de progreso de borrado total"
+"Mostrar indicador de &progreso de borrado total"
 //[MConfigPgUpChangeDisk]
 "Usar Ctrl+Pg&Up para cambiar unidad"
 //[MConfigUseVirtualTerminalForRendering]
-"Usar Terminal Virtual para renderizado"
+"Usar Terminal &Virtual para renderizado"
 //[MConfigFullWidthAwareRendering]
-"R&enderizar ancho completo"
+"Renderizar ancho completo"
 //[MConfigFullWidthAwareRenderingGraphemeClustersDected1]
-"It appears that your terminal supports Unicode grapheme clusters."
+"Parece que su terminal admite grupos de grafemas Unicode."
 //[MConfigFullWidthAwareRenderingGraphemeClustersDected2]
-"Unfortunately, gm does not support them yet."
+"Lamentablemente, gm todavía no los admite."
 //[MConfigFullWidthAwareRenderingGraphemeClustersDected3]
-"For best experience it is recommended to switch to codepoint-based rendering."
+"Para una mejor experiencia se recomienda cambiar a la representación por puntos de código."
 //[MConfigFullWidthAwareRenderingGraphemeClustersDected4]
-"Consult the documentation of your terminal for advice on how to do this."
+"Consulte la documentación de su terminal para saber cómo hacerlo."
 //[MConfigClearType]
-"Limpiar rediseño (puede ser lento)"
+"&Limpiar rediseño (puede ser lento)"
 //[MConfigSetConsoleIcon]
-"Icono de consola:"
+"Ic&ono de consola:"
 //[MConfigSetAdminConsoleIcon]
-"Alternar por Administrador"
+"&Alternar por Administrador"
 //[MConfigTitleAddons]
-"Título de ventana de gm:"
+"&Título de ventana de gm:"
 //[MConfigDlgSetsTitle]
 "Configuración de diálogo"
 //[MConfigDialogsEditHistory]
@@ -427,15 +427,15 @@
 //[MConfigDialogsEULBsClear]
 "&Backspace elimina texto no cambiado"
 //[MConfigDialogsMouseButton]
-"Clic de ratón fuera del diálogo, lo cierra"
+"&Clic de ratón fuera del diálogo, lo cierra"
 //[MConfigVMenuTitle]
 "Configuración de menú"
 //[MConfigVMenuLBtnClick]
-"Clic izquierdo de ratón fuera de menú"
+"Clic &izquierdo de ratón fuera de menú"
 //[MConfigVMenuRBtnClick]
-"Clic derecho de ratón fuera de menú"
+"Clic derecho de &ratón fuera de menú"
 //[MConfigVMenuMBtnClick]
-"Clic medio de ratón fuera de menú"
+"Clic &medio de ratón fuera de menú"
 //[MConfigVMenuClickCancel]
 "Cancelar menú"
 //[MConfigVMenuClickApply]
@@ -479,7 +479,7 @@
 //[MConfigInfoPanelCNNetBIOS]
 "NetBIOS"
 //[MConfigInfoPanelCNDnsHostname]
-"DNS hostname"
+"Nombre de host DNS"
 //[MConfigInfoPanelCNDnsDomain]
 "Dominio DNS"
 //[MConfigInfoPanelCNDnsFullyQualified]
@@ -521,7 +521,7 @@
 //[MMenuInfoShowModeDirDiz]
 "&Descripción"
 //[MMenuInfoShowModePluginDiz]
-"Panel de Complemento"
+"&Panel de Complemento"
 //[MMenuInfoShowModePower]
 "Estado &encendido"
 //[MViewConfigTitle]
@@ -539,11 +539,11 @@
 //[MViewConfigSaveCodepage]
 "Guardar página de &códigos de archivo"
 //[MViewConfigSaveWrapMode]
-"Guardar modo de ajuste de línea"
+"Gua&rdar modo de ajuste de línea"
 //[MViewConfigSaveViewMode]
-"Save view mode"
+"Guardar modo de vi&sta"
 //[MViewConfigDetectDumpMode]
-"Detect dump view mode"
+"Detectar modo de vista v&olcado"
 //[MViewAutoDetectCodePage]
 "&Autodetectar página de códigos"
 //[MViewConfigTabSize]
@@ -555,7 +555,7 @@
 //[MViewConfigPersistentSelection]
 "Selección &persistente"
 //[MViewConfigDefaultCodePage]
-"Página de códigos por defecto:"
+"Página &de códigos por defecto:"
 //[MViewConfigMaxLineSize]
 "Ancho máximo de &línea"
 //[MViewConfigVisible0x00]
@@ -607,27 +607,27 @@
 //[MEditConfigSelFound]
 "Se&leccionar lo encontrado"
 //[MEditConfigCursorAtEnd]
-"Cursor al final"
+"Cursor al &final"
 //[MEditConfigDefaultCodePage]
-"Página de códigos por defecto:"
+"&Página de códigos por defecto:"
 //[MConfigEditor]
-"Configuration editor"
+"Editor de configuración"
 //[MConfigEditorBoolean]
-"boolean"
+"booleano"
 //[MConfigEditorTriState]
-"3-state"
+"3 estados"
 //[MConfigEditorInteger]
-"integer"
+"entero"
 //[MConfigEditorString]
-"string"
+"cadena"
 //[MConfigEditorIntegerSigned]
-"Signed:"
+"Con signo:"
 //[MConfigEditorIntegerUnsigned]
-"Unsigned:"
+"Sin signo:"
 //[MConfigEditorIntegerHexadecimal]
 "Hexadecimal:"
 //[MConfigEditorIntegerBinary]
-"Binary:"
+"Binario:"
 //[MSaveSetupTitle]
 "Guardar configuración"
 //[MSaveSetupAsk1]
@@ -645,7 +645,7 @@
 //[MCopySecurity]
 "&Permisos de acceso:"
 //[MCopySecurityDefault]
-"Por defecto"
+"Por de&fecto"
 //[MCopySecurityCopy]
 "Cop&iar"
 //[MCopySecurityInherit]
@@ -661,11 +661,11 @@
 //[MLinkType]
 "Tipo de &enlace"
 //[MLinkTypeJunction]
-"empalme de directorio"
+"empalme de direc&torio"
 //[MLinkTypeHardlink]
-"enlace duro"
+"enlace d&uro"
 //[MLinkTypeSymlink]
-"enlace simbólico"
+"enlace &simbólico"
 //[MLinkTypeSymlinkFile]
 "enlace simbólico (&archivo)"
 //[MLinkTypeSymlinkDirectory]
@@ -709,7 +709,7 @@
 //[MCMLTargetTO]
 "&a"
 //[MCMLTargetIN]
-"en"
+"&en"
 //[MCMLItems0]
 ""
 //[MCMLItemsA]
@@ -941,9 +941,9 @@
 //[MSearchReplaceHex]
 "Cadena &hexadecimal"
 //[MSearchReplacePickWord]
-"Palabra"
+"P&alabra"
 //[MSearchReplacePickSelection]
-"Selección"
+"&Selección"
 //[MSearchReplaceSearchFor]
 "&Buscar por"
 //[MSearchReplaceReplaceWith]
@@ -965,7 +965,7 @@
 //[MSearchReplaceFindPrev]
 "Encontrar an&terior"
 //[MSearchReplaceReplace]
-"&Reemplazar"
+"Reemplazar"
 //[MSearchReplaceReplaceNext]
 "Reemplazar siguiente"
 //[MSearchReplaceReplacePrev]
@@ -993,7 +993,7 @@
 //[MEditAskSaveExt]
 "El archivo ha sido cambiado por un programa externo. Desea guardarlo?"
 //[MEditBtnSaveAs]
-"Guardar como…"
+"&Guardar como…"
 //[MEditRO]
 "es un archivo de sólo lectura"
 //[MEditExists]
@@ -1045,7 +1045,7 @@
 //[MEditOpenCreateLabel]
 "&Abrir/crear archivo:"
 //[MEditOpenAutoDetect]
-"Detección &automática"
+"Detección automática"
 //[MDefaultCP]
 "Por defecto"
 //[MGoTo]
@@ -1345,7 +1345,7 @@
 //[MColumnNumStreams]
 "NmS"
 //[MColumnStreamsSize]
-"StrmSz"
+"TamFl"
 //[MColumnUnknown]
 "???"
 //[MListUp]
@@ -1417,15 +1417,15 @@
 //[MFileAssocExec]
 "E&jecutar comando (usado por Enter):"
 //[MFileAssocAltExec]
-"Ejecutar comando (usado por Ctrl+PgDn):"
+"Ejecutar &comando (usado por Ctrl+PgDn):"
 //[MFileAssocView]
 "Comando de &visor (usado por F3):"
 //[MFileAssocAltView]
-"Comando de visor (usado por Alt+F3):"
+"Comando de visor (&usado por Alt+F3):"
 //[MFileAssocEdit]
 "Comando de &editor (usado por F4):"
 //[MFileAssocAltEdit]
-"Comando de editor (usado por Alt+F4):"
+"Comando de editor (usado &por Alt+F4):"
 //[MViewF1]
 "Ayuda"
 //[MViewF2]
@@ -1667,7 +1667,7 @@
 //[MFindFileFuzzy]
 "Búsqueda di&fusa"
 //[MFindFileNotContaining]
-"No conteniendo"
+"N&o conteniendo"
 //[MFindFileArchives]
 "Buscar en archivos &comprimidos"
 //[MFindFileFolders]
@@ -1675,9 +1675,9 @@
 //[MFindFileSymLinks]
 "Buscar en enlaces &simbólicos"
 //[MFindFileAlternateStreams]
-"Buscar en cadenas alternativas"
+"&Buscar en cadenas alternativas"
 //[MFindFileSearchArea]
-"Seleccionar área de búsqueda:"
+"Seleccionar &área de búsqueda:"
 //[MFindFileSearchAllDisks]
 "En todas las unidades &no-removibles"
 //[MFindFileSearchAllButNetwork]
@@ -1689,7 +1689,7 @@
 //[MFindFileSearchFromRootFolder]
 "Desde el directorio &raíz"
 //[MFindFileSearchFromCurrent]
-"Desde directorio actual"
+"D&esde directorio actual"
 //[MFindFileSearchInCurrent]
 "Sólo en directorio &actual"
 //[MFindFileSearchInSelected]
@@ -1699,7 +1699,7 @@
 //[MFindFileUsingFilter]
 "usando filtro"
 //[MFindFileFind]
-"&Encontrar"
+"Encontrar"
 //[MFindFileDrive]
 "&Unidad"
 //[MFindFileSetFilter]
@@ -1769,7 +1769,7 @@
 //[MHighlightMark]
 "Ma&rcado,"
 //[MHighlightInheritMark]
-"Heredar"
+"&Heredar"
 //[MHighlightColors]
 "Colores de archivos (\"negro en negro\" - color por defecto)"
 //[MHighlightFileName1]
@@ -1813,11 +1813,11 @@
 //[MInfoUserAccessLevelUnknown]
 "Desconocido"
 //[MInfoUserAccessElevated]
-"Elevated"
+"Elevado"
 //[MInfoUserAccessElevationTypeFull]
-"Full"
+"Completo"
 //[MInfoUserAccessElevationTypeLimited]
-"Limited"
+"Limitado"
 //[MInfoDiskTitle]
 "Disco"
 //[MInfoRemovable]
@@ -1869,7 +1869,7 @@
 //[MInfoMetricAvailable]
 "disponible"
 //[MInfoMetricUsed]
-"used"
+"usado"
 //[MInfoDisk]
 "disco"
 //[MInfoDiskSpace]
@@ -1881,7 +1881,7 @@
 //[MInfoMemory]
 "Memoria"
 //[MInfoMemoryCommittable]
-"Committable"
+"Asignable"
 //[MInfoMemoryAddressable]
 "Direccionable"
 //[MInfoMemoryPhysical]
@@ -1903,7 +1903,7 @@
 //[MInfoPowerStatusACOnline]
 "Online"
 //[MInfoPowerStatusACBackUp]
-"Backup power"
+"Alimentación de respaldo"
 //[MInfoPowerStatusACUnknown]
 "Desconocido"
 //[MInfoPowerStatusBCLifePercentUnknown]
@@ -1943,17 +1943,17 @@
 //[MMakeFolderTitle]
 "Crear directorio"
 //[MCreateFolder]
-"Nombre del directorio:"
+"&Nombre del directorio:"
 //[MMakeFolderLinkType]
-"Tipo de enlace:"
+"Tipo &de enlace:"
 //[MMakeFolderLinkNone]
-"Ninguno"
+"N&inguno"
 //[MMakeFolderLinkJunction]
-"empalme de directorio"
+"&empalme de directorio"
 //[MMakeFolderLinkSymlink]
-"enlace simbólico"
+"enlace &simbólico"
 //[MMakeFolderLinkTarget]
-"Destino:"
+"Destin&o:"
 //[MMultiMakeDir]
 "Procesar &múltiples nombres"
 //[MIncorrectDirList]
@@ -2037,7 +2037,7 @@
 //[MMenuHistory]
 "&Historial"
 //[MMenuVideoMode]
-"Modo de video"
+"&Modo de video"
 //[MMenuFindFolder]
 "&Buscar directorio"
 //[MMenuViewHistory]
@@ -2077,7 +2077,7 @@
 //[MMenuLanguages]
 "&Idiomas"
 //[MMenuPluginsConfig]
-"Configuración de complementos"
+"&Configuración de complementos"
 //[MMenuPluginsManagerSettings]
 "&Gestor de complementos"
 //[MMenuDialogSettings]
@@ -2085,13 +2085,13 @@
 //[MMenuVMenuSettings]
 "Menú"
 //[MMenuCmdlineSettings]
-"Línea de comando"
+"L&ínea de comando"
 //[MMenuAutoCompleteSettings]
 "A&utocompletar"
 //[MMenuInfoPanelSettings]
 "&Panel de información"
 //[MMenuMaskGroups]
-"Grupos de máscara de archivos"
+"Grupos de &máscara de archivos"
 //[MMenuConfirmation]
 "Co&nfirmaciones"
 //[MMenuFilePanelModes]
@@ -2149,21 +2149,21 @@
 //[MMenuSortByOwner]
 "Dueñ&o"
 //[MMenuSortByAllocatedSize]
-"Tamaño de com&presión"
+"Tamaño de compresión"
 //[MMenuSortByNumLinks]
 "Número de enlaces du&ros"
 //[MMenuSortByNumStreams]
-"Número de flujos"
+"Número de &flujos"
 //[MMenuSortByStreamsSize]
-"Tamaño de flujos"
+"Tama&ño de flujos"
 //[MMenuSortByNameOnly]
 "Solo nombre"
 //[MMenuSortUseGroups]
-"Usar orden/&grupo"
+"Usar orden/grupo"
 //[MMenuSortSelectedFirst]
-"Mostrar seleccionados primero"
+"Mostrar seleccionados &primero"
 //[MMenuSortDirectoriesFirst]
-"Mostrar directorios primero"
+"Mo&strar directorios primero"
 //[MMaskGroupTitle]
 "Grupos de máscara de archivos"
 //[MMaskGroupName]
@@ -2277,25 +2277,25 @@
 //[MChangeDriveShowPath]
 "Mostrar nombre / SUBST ruta / VHD de nombre de &red"
 //[MChangeDriveShowLabel]
-"Mostrar etiqueta de disco"
+"&Mostrar etiqueta de disco"
 //[MChangeDriveShowLabelUseShell]
-"Use shell name"
+"Usar &nombre del shell"
 //[MChangeDriveShowFileSystem]
-"Mostrar sistema de archivos"
+"Mostrar &sistema de archivos"
 //[MChangeDriveShowSize]
-"Mostrar tamaño"
+"M&ostrar tamaño"
 //[MChangeDriveShowSizeFloat]
-"Mostrar tamaño como fracción decimal"
+"Mostrar tamaño como &fracción decimal"
 //[MChangeDriveShowRemovableDrive]
-"Mostrar parámetros de unidad removible"
+"Mostrar parámetros &de unidad removible"
 //[MChangeDriveShowPlugins]
 "Mostrar com&plementos"
 //[MChangeDriveSortPluginsByHotkey]
-"Ordenar complementos por tecla de atajo"
+"Ordenar complementos por tecla de &atajo"
 //[MChangeDriveShowCD]
 "Mostrar parámetros unidad de &CD\DVD\BD"
 //[MChangeDriveShowNetworkDrive]
-"Mostrar parámetros unidades de red"
+"Mostrar parám&etros unidades de red"
 //[MChangeDriveShowVirtualDisk]
 "Detectar discos virtuales"
 //[MChangeDriveVolumeLabel]
@@ -2327,7 +2327,7 @@
 //[MQuickViewTitle]
 "Vista rápida"
 //[MQuickViewReparsePoint]
-"Punto de análisis"
+"&Punto de análisis"
 //[MQuickViewUnknownReparsePoint]
 "Punto de análisis desconocido"
 //[MQuickViewFolders]
@@ -2353,11 +2353,11 @@
 //[MSetAttrHardLinks]
 "Enlaces duros"
 //[MSetAttrJunction]
-"Empalmar:"
+"&Empalmar:"
 //[MSetAttrSymlink]
-"Enlace simbólico{}:"
+"E&nlace simbólico{}:"
 //[MSetAttrVolMount]
-"Volumen:"
+"&Volumen:"
 //[MSetAttrDfsTargets]
 "Destinos DFS:"
 //[MSetAttrAppExecLink]
@@ -2383,35 +2383,35 @@
 //[MSetAttrSparse]
 "Dis&perso"
 //[MSetAttrTemporary]
-"Temporal"
+"&Temporal"
 //[MSetAttrOffline]
-"Desconectado"
+"D&esconectado"
 //[MSetAttrReparsePoint]
-"Punto de análisis"
+"P&unto de análisis"
 //[MSetAttrVirtual]
-"Virtual"
+"&Virtual"
 //[MSetAttrIntegrityStream]
-"Cadena de integridad"
+"Cade&na de integridad"
 //[MSetAttrNoScrubData]
-"No hay datos depurados"
+"No &hay datos depurados"
 //[MSetAttrPinned]
-"Anclado"
+"Anc&lado"
 //[MSetAttrUnpinned]
-"Desanclado"
+"Desanclad&o"
 //[MSetAttrRecallOnOpen]
-"Requerir al abrir"
+"&Requerir al abrir"
 //[MSetAttrRecallOnDataAccess]
-"Requerir al acceder a datos"
+"Re&querir al acceder a datos"
 //[MSetAttrStrictlySequential]
-"Estrictamente secuencial"
+"Estrictamente &secuencial"
 //[MSetAttrDevice]
 "Dispositivo"
 //[MSetAttrMore]
-"Más"
+"&Más"
 //[MSetAttrSubfolders]
 "Procesar sub&directorios"
 //[MSetAttrOwner]
-"Dueño:"
+"Due&ño:"
 //[MSetAttrDate]
 "Fecha/Hora:"
 //[MSetAttrWrite]
@@ -2439,7 +2439,7 @@
 //[MSetAttrTimeTitle]
 "hh{0}mm{0}ss"
 //[MSetAttrSystemDialog]
-"Propiedades del sistema"
+"Propiedades del &sistema"
 //[MSetAttrSetting]
 "Poniendo atributos de archivo para"
 //[MSetAttrCannotFor]
@@ -2705,25 +2705,25 @@
 //[MSetColorStyle]
 "Estilo:"
 //[MSetColorStyleInherit]
-"Heredar"
+"&Heredar"
 //[MSetColorStyleBold]
-"Negrita"
+"&Negrita"
 //[MSetColorStyleItalic]
-"Cursiva"
+"&Cursiva"
 //[MSetColorStyleOverline]
-"Línea alta"
+"&Línea alta"
 //[MSetColorStyleStrikeout]
-"Tachado"
+"&Tachado"
 //[MSetColorStyleFaint]
-"Atenuado"
+"&Atenuado"
 //[MSetColorStyleBlink]
-"Intermitente"
+"&Intermitente"
 //[MSetColorStyleInverse]
 "Inverso"
 //[MSetColorStyleInvisible]
 "Invisible"
 //[MSetColorStyleUnderline]
-"Subrayado:"
+"&Subrayado:"
 //[MSetColorStyleUnderlineNone]
 "No"
 //[MSetColorStyleUnderlineSingle]
@@ -2753,7 +2753,7 @@
 //[MSetColorCancel]
 "Cancelar"
 //[MColorsPalette]
-"Pale&ta"
+"Paleta"
 //[MColorsClassicPalette]
 "Paleta clásica"
 //[MSetConfirmTitle]
@@ -2777,7 +2777,7 @@
 //[MSetConfirmRemoveSUBST]
 "Desconectar disco s&ustituido"
 //[MSetConfirmDetachVHD]
-"Desmontar disco virtual"
+"Desmontar disco &virtual"
 //[MSetConfirmRemoveHotPlug]
 "Remover dispositivo Hot&Plug"
 //[MSetConfirmAllowReedit]
@@ -2789,11 +2789,11 @@
 //[MPluginsManagerSettingsTitle]
 "Configuración de gestor de complementos"
 //[MPluginsManagerOEMPluginsSupport]
-"Soporte de complementos OEM"
+"Soporte de &complementos OEM"
 //[MPluginsManagerScanSymlinks]
-"Explorar enlaces simbólicos"
+"E&xplorar enlaces simbólicos"
 //[MPluginsManagerOFP]
-"Procesado de archivo"
+"Pr&ocesado de archivo"
 //[MPluginsManagerStdAssoc]
 "Mostrar &asociaciones normales de ítems"
 //[MPluginsManagerEvenOne]
@@ -3107,7 +3107,7 @@
 //[MCfgDizListNames]
 "Nombres de &listas de descripción delimitado con comas:"
 //[MCfgDizSetHidden]
-"Poner atributo \"Oculto\" en nuevas listas de descripción"
+"Poner atributo \"&Oculto\" en nuevas listas de descripción"
 //[MCfgDizROUpdate]
 "&Actualizar archivo descripción de sólo lectura"
 //[MCfgDizStartPos]
@@ -3131,7 +3131,7 @@
 //[MEditPanelModes]
 "Editar modo de paneles"
 //[MEditPanelModeName]
-"Nombre"
+"No&mbre"
 //[MEditPanelModeTypes]
 "&Tipos de columnas"
 //[MEditPanelModeWidths]
@@ -3197,13 +3197,13 @@
 //[MMacroDeleteKey2]
 "Borrar?"
 //[MMacroEditKey]
-"Cambiar?"
+"Ca&mbiar?"
 //[MMacroSettingsTitle]
 "Configurar macro para '{0}'"
 //[MMacroSettingsSequence]
-"Secuencia:"
+"&Secuencia:"
 //[MMacroSettingsDescription]
-"Descripción:"
+"D&escripción:"
 //[MMacroSettingsEnableOutput]
 "Permitir salida pantalla mientras se ejecut&an los macros"
 //[MMacroSettingsRunAfterStart]
@@ -3217,7 +3217,7 @@
 //[MMacroSettingsFolders]
 "Ejecutar para &directorios"
 //[MMacroSettingsSelectionPresent]
-"Selección presente"
+"Selecci&ón presente"
 //[MMacroSettingsCommandLine]
 "Vaciar línea de &comandos"
 //[MMacroSettingsSelectionBlockPresent]
@@ -3261,9 +3261,9 @@
 //[MExceptionDialogClipboard]
 "Portapapeles"
 //[MExcTerminate]
-"Terminar gm"
+"Terminar &gm"
 //[MExcUnload]
-"Descargar de memoria complemento"
+"Descargar de memoria &complemento"
 //[MExcContinue]
 "Continuar"
 //[MExcFullDump]
@@ -4111,11 +4111,11 @@
 //[MFileFilterSizeToSign]
 "&<="
 //[MFileHardLinksCount]
-"Tiene mas de un enlace duro"
+"Tiene mas &de un enlace duro"
 //[MFileFilterDate]
 "&Fecha/Hora:"
 //[MFileFilterWrite]
-"escritura"
+"&escritura"
 //[MFileFilterCreation]
 "&creación"
 //[MFileFilterAccess]
@@ -4159,29 +4159,29 @@
 //[MFileFilterAttrReparse]
 "&Enlace simbólico"
 //[MFileFilterAttrOffline]
-"Desconectado"
+"Desco&nectado"
 //[MFileFilterAttrVirtual]
 "&Virtual"
 //[MFileFilterAttrIntegrityStream]
-"Cadena de integridad"
+"Cadena de inte&gridad"
 //[MFileFilterAttrNoScrubData]
-"No hay datos depurados"
+"No &hay datos depurados"
 //[MFileFilterAttrPinned]
-"Anclado"
+"&Anclado"
 //[MFileFilterAttrUnpinned]
-"Desanclado"
+"De&sanclado"
 //[MFileFilterAttrRecallOnOpen]
-"Requerir al abrir"
+"&Requerir al abrir"
 //[MFileFilterAttrRecallOnDataAccess]
-"Requerir en acceso a datos"
+"Re&querir en acceso a datos"
 //[MFileFilterAttrStrictlySequential]
-"Estrictamente secuencial"
+"Es&trictamente secuencial"
 //[MFileFilterAttrDevice]
 "Dispositivo"
 //[MFileFilterReset]
-"Reinicio"
+"Re&inicio"
 //[MFileFilterMakeTransparent]
-"Hacer transparente"
+"Ha&cer transparente"
 //[MFileFilterCancel]
 "Cancelar"
 //[MBadFileSizeFormat]
@@ -4223,9 +4223,9 @@
 //[MElevationRequiredDecryptFile]
 "para descifrar este objeto:"
 //[MElevationRequiredSetVolumeLabel]
-"to set volume label:"
+"para establecer la etiqueta del volumen:"
 //[MElevationDoForAll]
-"Hacer esto para todos los objetos actuales"
+"&Hacer esto para todos los objetos actuales"
 //[MElevationDoNotAskAgainInTheCurrentSession]
 "No preguntar nuevamente en la sesión actual"
 //[MCompletionHistoryTitle]
@@ -4565,4 +4565,4 @@
 //[MLogQuietKey]
 "LogSil"
 //[MLogStarted]
-"The output is logged to"
+"La salida se registra en"

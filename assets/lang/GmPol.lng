@@ -15,7 +15,7 @@
 //[MCancel]
 "Anuluj"
 //[MReset]
-"&Reset"
+"&Resetuj"
 //[MRetry]
 "Ponów"
 //[MSkip]
@@ -351,7 +351,7 @@
 //[MConfigAutoUpdateLimit]
 "&Wyłącz automatyczną aktualizację paneli"
 //[MConfigAutoUpdateLimit2]
-"jeśli zawierają więcej obiektów niż"
+"&jeśli zawierają więcej obiektów niż"
 //[MConfigAutoUpdateRemoteDrive]
 "Autoodświeżanie dysków &sieciowych"
 //[MConfigShowColumns]
@@ -397,7 +397,7 @@
 //[MConfigUseVirtualTerminalForRendering]
 "Użyj &Terminalu Wirtualnego do renderowania"
 //[MConfigFullWidthAwareRendering]
-"R&enderowanie na pełnej szerokości"
+"Renderowanie na pełnej szerokości"
 //[MConfigFullWidthAwareRenderingGraphemeClustersDected1]
 "Wydaje się, że Twój terminal obsługuje klastry grapheme Unicode."
 //[MConfigFullWidthAwareRenderingGraphemeClustersDected2]
@@ -411,7 +411,7 @@
 //[MConfigSetConsoleIcon]
 "Iko&na konsoli:"
 //[MConfigSetAdminConsoleIcon]
-"Inna dla Administratora"
+"&Inna dla Administratora"
 //[MConfigTitleAddons]
 "Okno tytułowe &gm:"
 //[MConfigDlgSetsTitle]
@@ -431,11 +431,11 @@
 //[MConfigVMenuTitle]
 "Ustawienia menu"
 //[MConfigVMenuLBtnClick]
-"Kliknięcie lewym przyciskiem myszy poza menu"
+"Kliknięcie &lewym przyciskiem myszy poza menu"
 //[MConfigVMenuRBtnClick]
-"Kliknięcie prawym przyciskiem myszy poza menu"
+"Kliknięcie &prawym przyciskiem myszy poza menu"
 //[MConfigVMenuMBtnClick]
-"Kliknięcie środkowym przyciskiem myszy poza menu"
+"Kliknięcie &środkowym przyciskiem myszy poza menu"
 //[MConfigVMenuClickCancel]
 "Anuluj menu"
 //[MConfigVMenuClickApply]
@@ -549,7 +549,7 @@
 //[MViewConfigTabSize]
 "Rozmiar &tabulatora"
 //[MViewConfigScrollbar]
-"Wyświetl suwak"
+"Wyświet&l suwak"
 //[MViewConfigArrows]
 "Pokaż strzał&ki przewijania"
 //[MViewConfigPersistentSelection]
@@ -635,7 +635,7 @@
 //[MSaveSetupAsk2]
 "bieżące ustawienia?"
 //[MSaveSetup]
-"&Zapisz"
+"Zapisz"
 //[MCopyDlgTitle]
 "Kopiuj"
 //[MMoveDlgTitle]
@@ -643,7 +643,7 @@
 //[MLinkDlgTitle]
 "Dowiąż"
 //[MCopySecurity]
-"Prawa dostępu:"
+"Pr&awa dostępu:"
 //[MCopySecurityDefault]
 "Do&myślne"
 //[MCopySecurityCopy]
@@ -671,7 +671,7 @@
 //[MLinkTypeSymlinkDirectory]
 "Link symboliczny (do &folderu)"
 //[MCopyPreserveAllTimestamps]
-"Za&chowaj wszystkie oryg. czasy"
+"Zachowaj wszystkie oryg. czasy"
 //[MCopySymLinkContents]
 "Kopiuj zawartość &linków symbolicznych"
 //[MCopyMultiActions]
@@ -695,21 +695,21 @@
 //[MCopySetFilter]
 "Filt&r"
 //[MCopyFile]
-"&Skopiuj {0} {1}:"
+"Skopiuj {0} {1}:"
 //[MMoveFile]
-"Zmień &nazwę lub przenieś {0} {1}:"
+"Zmień nazwę lub przenieś {0} {1}:"
 //[MLinkFile]
-"Utwórz &link do {0} {1}:"
+"Utwórz link do {0} {1}:"
 //[MCopyFiles]
-"&Skopiuj {0} plik{1} {2}:"
+"Skopiuj {0} plik{1} {2}:"
 //[MMoveFiles]
-"Zmień &nazwę lub przenieś {0} plik{1} {2}:"
+"Zmień nazwę lub przenieś {0} plik{1} {2}:"
 //[MLinkFiles]
-"Utwórz &linki do {0} plik{1} {2}:"
+"Utwórz linki do {0} plik{1} {2}:"
 //[MCMLTargetTO]
-"do"
+"&do"
 //[MCMLTargetIN]
-"w"
+"&w"
 //[MCMLItems0]
 ""
 //[MCMLItemsA]
@@ -961,13 +961,13 @@
 //[MSearchReplaceFind]
 "Szukaj"
 //[MSearchReplaceFindNext]
-"Znajdź &następne"
+"Znajdź następne"
 //[MSearchReplaceFindPrev]
 "Znajdź &poprzednie"
 //[MSearchReplaceReplace]
 "Zamień"
 //[MSearchReplaceReplaceNext]
-"Zamień &następne"
+"Zamień następne"
 //[MSearchReplaceReplacePrev]
 "Zamień &poprzednie"
 //[MSearchReplaceAll]
@@ -1065,7 +1065,7 @@
 //[MFSShortcutPluginFile]
 "Plik:"
 //[MFSShortcutPluginData]
-"Data:"
+"Dane:"
 //[MNeedNearPath]
 "Przejść do najbliższego istniejącego folderu?"
 //[MSaveThisShortcut]
@@ -1135,7 +1135,7 @@
 //[MEditAltF8]
 "IdźDo"
 //[MEditAltF9]
-"Video"
+"Tryb"
 //[MEditAltF10]
 ""
 //[MEditAltF11]
@@ -1491,7 +1491,7 @@
 //[MViewAltF8]
 "IdźDo"
 //[MViewAltF9]
-"Video"
+"Tryb"
 //[MViewAltF10]
 ""
 //[MViewAltF11]
@@ -1699,7 +1699,7 @@
 //[MFindFileUsingFilter]
 "używając filtra"
 //[MFindFileFind]
-"Szuka&j"
+"Szukaj"
 //[MFindFileDrive]
 "&Dysk"
 //[MFindFileSetFilter]
@@ -1749,7 +1749,7 @@
 //[MGetCodePageEditCodePageName]
 "Zmień nazwę strony kodowej"
 //[MGetCodePageResetCodePageName]
-"&Reset"
+"&Resetuj"
 //[MHighlightTitle]
 "Wyróżnianie plików"
 //[MHighlightUpperSortGroup]
@@ -1945,13 +1945,13 @@
 //[MCreateFolder]
 "&Nazwa folderu:"
 //[MMakeFolderLinkType]
-"Typ linku:"
+"&Typ linku:"
 //[MMakeFolderLinkNone]
-"Brak"
+"&Brak"
 //[MMakeFolderLinkJunction]
-"Przyłączenie folderu"
+"Przyłączenie &folderu"
 //[MMakeFolderLinkSymlink]
-"Link symboliczny"
+"&Link symboliczny"
 //[MMakeFolderLinkTarget]
 "&Cel:"
 //[MMultiMakeDir]
@@ -2005,7 +2005,7 @@
 //[MMenuMove]
 "&Zmień nazwę lub przenieś"
 //[MMenuLink]
-"Link"
+"&Link"
 //[MMenuCreateFolder]
 "U&twórz folder"
 //[MMenuDelete]
@@ -2083,7 +2083,7 @@
 //[MMenuDialogSettings]
 "Ustawienia okien dialogowyc&h"
 //[MMenuVMenuSettings]
-"Ustawienia &menu"
+"Ustawienia menu"
 //[MMenuCmdlineSettings]
 "Us&tawienia wiersza poleceń"
 //[MMenuAutoCompleteSettings]
@@ -2105,7 +2105,7 @@
 //[MMenuEditor]
 "Ustawienia &edytora"
 //[MMenuCodePages]
-"Strony ko&dowe"
+"Strony kodowe"
 //[MMenuColors]
 "&Kolory"
 //[MMenuFilesHighlighting]
@@ -2149,7 +2149,7 @@
 //[MMenuSortByOwner]
 "&Właściciela"
 //[MMenuSortByAllocatedSize]
-"&Przydzielonego miejsca"
+"Przydzielonego miejsca"
 //[MMenuSortByNumLinks]
 "&Liczby dowiązań"
 //[MMenuSortByNumStreams]
@@ -2157,9 +2157,9 @@
 //[MMenuSortByStreamsSize]
 "Wi&elkości strumieni"
 //[MMenuSortByNameOnly]
-"T&ylko nazwa"
+"Tylko nazwa"
 //[MMenuSortUseGroups]
-"Użyj &grup sortowania"
+"Użyj grup sortowania"
 //[MMenuSortSelectedFirst]
 "Zazna&czone najpierw"
 //[MMenuSortDirectoriesFirst]
@@ -2297,7 +2297,7 @@
 //[MChangeDriveShowNetworkDrive]
 "Pokaż parametry &dysków sieciowych"
 //[MChangeDriveShowVirtualDisk]
-"W&ykrywaj dyski wirtualne"
+"Wykrywaj dyski wirtualne"
 //[MChangeDriveVolumeLabel]
 "Etykieta"
 //[MSearchFileTitle]
@@ -2353,11 +2353,11 @@
 //[MSetAttrHardLinks]
 "linków trwałych"
 //[MSetAttrJunction]
-"Dowiązanie:"
+"&Dowiązanie:"
 //[MSetAttrSymlink]
-"Link{}:"
+"&Link{}:"
 //[MSetAttrVolMount]
-"Wolumen:"
+"&Wolumen:"
 //[MSetAttrDfsTargets]
 "Cel DFS:"
 //[MSetAttrAppExecLink]
@@ -2421,7 +2421,7 @@
 //[MSetAttrAccess]
 "&dostępu:"
 //[MSetAttrChange]
-"zmiany:"
+"zm&iany:"
 //[MSetAttrOriginal]
 "Oryginal&ny"
 //[MSetAttrCurrent]
@@ -2429,7 +2429,7 @@
 //[MSetAttrBlank]
 "Wycz&yść"
 //[MSetAttrSet]
-"Usta&w"
+"Ustaw"
 //[MSetAttrDateTitleMDY]
 "MM{0}DD{0}RRRRR"
 //[MSetAttrDateTitleDMY]
@@ -2479,7 +2479,7 @@
 //[MSetColorHelp]
 "P&omoc"
 //[MColorThemes]
-"Mot&ywy"
+"Motywy"
 //[MDefaultTheme]
 "Domyślny"
 //[MDefaultThemeRGB]
@@ -2745,17 +2745,17 @@
 //[MSetColorVTHintNotSupported]
 "Twój system nie obsługuje tej opcji."
 //[MSetColorSystemDialog]
-"&System"
+"System"
 //[MSetColorSet]
-"&Ustaw"
+"Ustaw"
 //[MSetColorEnableVT]
-"Włącz &VT"
+"Włącz VT"
 //[MSetColorCancel]
-"&Anuluj"
+"Anuluj"
 //[MColorsPalette]
-"Pale&ta"
+"Paleta"
 //[MColorsClassicPalette]
-"&Klasyczna paleta"
+"Klasyczna paleta"
 //[MSetConfirmTitle]
 "Potwierdzenia"
 //[MSetConfirmCopy]
@@ -2873,7 +2873,7 @@
 //[MFolderTreeAltF8]
 ""
 //[MFolderTreeAltF9]
-"Video"
+"Tryb"
 //[MFolderTreeAltF10]
 ""
 //[MFolderTreeAltF11]
@@ -3011,9 +3011,9 @@
 //[MChooseMenuType]
 "Wybierz typ menu do edycji"
 //[MChooseMenuMain]
-"Główne"
+"&Główne"
 //[MChooseMenuLocal]
-"Lokalne"
+"&Lokalne"
 //[MMainMenuTitle]
 "Menu główne"
 //[MMainMenuUser]
@@ -3109,7 +3109,7 @@
 //[MCfgDizSetHidden]
 "Ustaw atrybut \"&Ukryty\" dla nowych plików z opisami"
 //[MCfgDizROUpdate]
-"Aktualizuj plik opisu tylko do odczytu"
+"Aktualizuj plik opisu tylko &do odczytu"
 //[MCfgDizStartPos]
 "Pozy&cja nowych opisów w linii"
 //[MCfgDizNotUpdate]
@@ -3197,7 +3197,7 @@
 //[MMacroDeleteKey2]
 "Usunąć?"
 //[MMacroEditKey]
-"Zmienić?"
+"Z&mienić?"
 //[MMacroSettingsTitle]
 "Ustawienia makra dla '{0}'"
 //[MMacroSettingsSequence]
@@ -3213,11 +3213,11 @@
 //[MMacroSettingsPassivePanel]
 "Panel &pasywny"
 //[MMacroSettingsPluginPanel]
-"Panel wtyczek"
+"Panel &wtyczek"
 //[MMacroSettingsFolders]
-"Wykonaj dla folderów"
+"Wykonaj &dla folderów"
 //[MMacroSettingsSelectionPresent]
-"Aktualne zaznaczenie"
+"A&ktualne zaznaczenie"
 //[MMacroSettingsCommandLine]
 "Pusta &linia poleceń"
 //[MMacroSettingsSelectionBlockPresent]
@@ -3261,9 +3261,9 @@
 //[MExceptionDialogClipboard]
 "Schowek"
 //[MExcTerminate]
-"Zamknięcie gm"
+"&Zamknięcie gm"
 //[MExcUnload]
-"Wyłącz wtyczkę"
+"W&yłącz wtyczkę"
 //[MExcContinue]
 "Kontynuować"
 //[MExcFullDump]
@@ -3755,7 +3755,7 @@
 //[MQViewAltF11]
 "HistPlik"
 //[MQViewAltF12]
-"FoldHs"
+"HisFol"
 //[MQViewCtrlF1]
 "Lewy"
 //[MQViewCtrlF2]
@@ -4153,37 +4153,37 @@
 //[MFileFilterAttrNotIndexed]
 "Nie z&indeksowany"
 //[MFileFilterAttrSparse]
-"Rzadki"
+"&Rzadki"
 //[MFileFilterAttrTemporary]
 "&Tymczasowy"
 //[MFileFilterAttrReparse]
-"Punkt analizy"
+"&Punkt analizy"
 //[MFileFilterAttrOffline]
 "O&ffline"
 //[MFileFilterAttrVirtual]
 "&Wirtualny"
 //[MFileFilterAttrIntegrityStream]
-"Strumień integralności"
+"Strumień inte&gralności"
 //[MFileFilterAttrNoScrubData]
-"Brak danych kontrolnych"
+"&Brak danych kontrolnych"
 //[MFileFilterAttrPinned]
-"Przypięty"
+"Prz&ypięty"
 //[MFileFilterAttrUnpinned]
-"Odpięty"
+"&Odpięty"
 //[MFileFilterAttrRecallOnOpen]
-"Odtwórz przy otwarciu"
+"O&dtwórz przy otwarciu"
 //[MFileFilterAttrRecallOnDataAccess]
-"Odtwórz przy dostępie danych"
+"Odtw&órz przy dostępie danych"
 //[MFileFilterAttrStrictlySequential]
-"Dokładnie sekwencyjnie"
+"Dokładnie &sekwencyjnie"
 //[MFileFilterAttrDevice]
 "Urządzenie"
 //[MFileFilterReset]
 "Wy&czyść"
 //[MFileFilterMakeTransparent]
-"Ustaw jako przezroczysty"
+"&Ustaw jako przezroczysty"
 //[MFileFilterCancel]
-"&Anuluj"
+"Anuluj"
 //[MBadFileSizeFormat]
 "Rozmiar pliku jest niepoprawny"
 //[MFarTitleAddonsAdmin]
@@ -4565,4 +4565,4 @@
 //[MLogQuietKey]
 "LogSil"
 //[MLogStarted]
-"The output is logged to"
+"Wyjście jest zapisywane do"

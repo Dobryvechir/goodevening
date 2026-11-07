@@ -277,7 +277,7 @@
 //[MConfigScanJunction]
 "Пр&аглядаць сімвалічныя спасылкі"
 //[MConfigSmartFolderMonitor]
-"Абнавіць панэлі толькі калі gm актыўны"
+"Абнавіць &панэлі толькі калі gm актыўны"
 //[MConfigSaveHistory]
 "Захоўваць г&історыю камандаў"
 //[MConfigSaveFoldersHistory]
@@ -297,7 +297,7 @@
 //[MConfigElevationUsePrivileges]
 "Ужываць дадатк&овыя прывілеі"
 //[MConfigSortingCollation]
-"Параўненне парадкавання:"
+"Параў&ненне парадкавання:"
 //[MConfigSortingOrdinal]
 "парадкавы"
 //[MConfigSortingInvariant]
@@ -305,7 +305,7 @@
 //[MConfigSortingLinguistic]
 "лінгвістычны"
 //[MConfigSortingDigitsAsNumbers]
-"Ужываць лічбы як лікі"
+"Ужываць лічбы &як лікі"
 //[MConfigSortingCase]
 "&Улічваць рэгістр"
 //[MConfigAutoSave]
@@ -343,7 +343,7 @@
 //[MConfigSelectFolders]
 "Адзнака ката&логаў"
 //[MConfigRightClickSelect]
-"Правы пстрык адзначае файлы"
+"&Правы пстрык адзначае файлы"
 //[MConfigSortFolderExt]
 "Парадкаваць імёны каталогаў па па&шырэнню"
 //[MConfigAllowReverseSort]
@@ -351,7 +351,7 @@
 //[MConfigAutoUpdateLimit]
 "Забараніць самааб&наўленне стужак"
 //[MConfigAutoUpdateLimit2]
-"калі аб'ектаў болей"
+"&калі аб'ектаў болей"
 //[MConfigAutoUpdateRemoteDrive]
 "Самаабнаўленне с&еткавых дыскаў"
 //[MConfigShowColumns]
@@ -371,7 +371,7 @@
 //[MConfigShowSortMode]
 "Адлюстроўваць літару стану пара&дкавання"
 //[MConfigShowDotsInRoot]
-"Адлюстроўваць \"..\" у каранёвым каталогу"
+"&Адлюстроўваць \"..\" у каранёвым каталогу"
 //[MConfigInterfaceTitle]
 "Налады знешняга выгляду"
 //[MConfigClock]
@@ -385,7 +385,7 @@
 //[MConfigSaver]
 "Ахоўнік &экрану"
 //[MConfigSaverMinutes]
-"хвілін"
+"&хвілін"
 //[MConfigCopyTotal]
 "Адлюстр&оўваць агульны індыкатар капіявання"
 //[MConfigCopyTimeRule]
@@ -395,23 +395,23 @@
 //[MConfigPgUpChangeDisk]
 "Ужываць Ctrl+PgUp для змены д&ыска"
 //[MConfigUseVirtualTerminalForRendering]
-"Ужываць Virtual Terminal для візуалізацыі"
+"Ужываць &Virtual Terminal для візуалізацыі"
 //[MConfigFullWidthAwareRendering]
 "Візуалізацыя з улікам поўнай шырыні"
 //[MConfigFullWidthAwareRenderingGraphemeClustersDected1]
-"It appears that your terminal supports Unicode grapheme clusters."
+"Падобна, ваш тэрмінал падтрымлівае кластары графем Unicode."
 //[MConfigFullWidthAwareRenderingGraphemeClustersDected2]
-"Unfortunately, gm does not support them yet."
+"На жаль, gm пакуль іх не падтрымлівае."
 //[MConfigFullWidthAwareRenderingGraphemeClustersDected3]
-"For best experience it is recommended to switch to codepoint-based rendering."
+"Для найлепшага выніку рэкамендуецца перайсці на адмалёўку па кодавых пунктах."
 //[MConfigFullWidthAwareRenderingGraphemeClustersDected4]
-"Consult the documentation of your terminal for advice on how to do this."
+"Як гэта зрабіць, глядзіце ў дакументацыі вашага тэрмінала."
 //[MConfigClearType]
-"Перамалёўка з падтрымкай ClearType (можа быць марудным)"
+"&Перамалёўка з падтрымкай ClearType (можа быць марудным)"
 //[MConfigSetConsoleIcon]
-"Гузік кансолі:"
+"&Гузік кансолі:"
 //[MConfigSetAdminConsoleIcon]
-"Дадаткова для Адміністратара"
+"&Дадаткова для Адміністратара"
 //[MConfigTitleAddons]
 "Дадатковая даведка для на&звы акна:"
 //[MConfigDlgSetsTitle]
@@ -427,15 +427,15 @@
 //[MConfigDialogsEULBsClear]
 "Backspace в&ыдаляе нязменны тэкст"
 //[MConfigDialogsMouseButton]
-"Пстрычка мышы за межамі гутаркі зачыне гутарку"
+"Пстрычка &мышы за межамі гутаркі зачыне гутарку"
 //[MConfigVMenuTitle]
 "Налады меню"
 //[MConfigVMenuLBtnClick]
-"Пстрычка левай кнопкі мышы за межамі меню"
+"Пстрычка левай &кнопкі мышы за межамі меню"
 //[MConfigVMenuRBtnClick]
-"Пстрычка правай кнопкі мышы за межамі меню"
+"&Пстрычка правай кнопкі мышы за межамі меню"
 //[MConfigVMenuMBtnClick]
-"Пстрычка сярэдняй кнопкі мышы за межамі меню"
+"Пс&трычка сярэдняй кнопкі мышы за межамі меню"
 //[MConfigVMenuClickCancel]
 "Закрыць з адменай"
 //[MConfigVMenuClickApply]
@@ -591,11 +591,11 @@
 //[MEditAutoDetectCodePage]
 "С&амавызначэнне кадыроўкі"
 //[MEditShareWrite]
-"Дазволіць змену файлаў, якія адчынены дла запісу"
+"Дазволіць змену &файлаў, якія адчынены дла запісу"
 //[MEditLockROFileModification]
-"Блакаваць змену файлаў, якія толькі для чытання"
+"&Блакаваць змену файлаў, якія толькі для чытання"
 //[MEditWarningBeforeOpenROFile]
-"Папярэджваць пры адкрыцці файлаў, якія толькі для чытання"
+"&Папярэджваць пры адкрыцці файлаў, якія толькі для чытання"
 //[MEditConfigTabSize]
 "Па&мер табуляцыі"
 //[MEditConfigScrollbar]
@@ -613,21 +613,21 @@
 //[MConfigEditor]
 "Рэдактар налад"
 //[MConfigEditorBoolean]
-"boolean"
+"лагічны"
 //[MConfigEditorTriState]
-"3-state"
+"3 станы"
 //[MConfigEditorInteger]
-"integer"
+"цэлы"
 //[MConfigEditorString]
-"string"
+"радок"
 //[MConfigEditorIntegerSigned]
-"Signed:"
+"Са знакам:"
 //[MConfigEditorIntegerUnsigned]
-"Unsigned:"
+"Без знака:"
 //[MConfigEditorIntegerHexadecimal]
-"Hexadecimal:"
+"Шаснаццатковае:"
 //[MConfigEditorIntegerBinary]
-"Binary:"
+"Двайковае:"
 //[MSaveSetupTitle]
 "Захаваць налады"
 //[MSaveSetupAsk1]
@@ -655,7 +655,7 @@
 //[MCopyAsk]
 "&Запыт"
 //[MCopyAskRO]
-"Запыт пацверджання файлаў толькі для чытання"
+"Зап&ыт пацверджання файлаў толькі для чытання"
 //[MCopyOnlyNewerFiles]
 "Толькі &новыя файлы"
 //[MLinkType]
@@ -961,15 +961,15 @@
 //[MSearchReplaceFind]
 "Шукаць"
 //[MSearchReplaceFindNext]
-"Find next"
+"Шукаць наступнае"
 //[MSearchReplaceFindPrev]
-"Find pre&vious"
+"Шукаць &папярэдняе"
 //[MSearchReplaceReplace]
-"&Змена"
+"Змена"
 //[MSearchReplaceReplaceNext]
-"Replace next"
+"Замяніць наступнае"
 //[MSearchReplaceReplacePrev]
-"Replace pre&vious"
+"Замяніць папяр&эдняе"
 //[MSearchReplaceAll]
 "Ус&ё"
 //[MSearchReplaceCancel]
@@ -1277,11 +1277,11 @@
 //[MEditSaveOriginal]
 "не м&яняць"
 //[MEditSaveDOS]
-"у разметцы DOS/Windows (CR LF)"
+"&у разметцы DOS/Windows (CR LF)"
 //[MEditSaveUnix]
-"у разметцы UNIX (LF)"
+"у &разметцы UNIX (LF)"
 //[MEditSaveMac]
-"у разметцы MAC (CR)"
+"у разметцы &MAC (CR)"
 //[MEditCannotSave]
 "Немагчыма захаваць файл"
 //[MEditSavedChangedNonFile]
@@ -1675,7 +1675,7 @@
 //[MFindFileSymLinks]
 "Шукаць у сімвалі&чных спасылках"
 //[MFindFileAlternateStreams]
-"Шукаць у струменях"
+"&Шукаць у струменях"
 //[MFindFileSearchArea]
 "В&обласць пошуку"
 //[MFindFileSearchAllDisks]
@@ -1699,7 +1699,7 @@
 //[MFindFileUsingFilter]
 "ужыць фільтр"
 //[MFindFileFind]
-"&Шукаць"
+"Шукаць"
 //[MFindFileDrive]
 "Дыс&к"
 //[MFindFileSetFilter]
@@ -1789,7 +1789,7 @@
 //[MHighlightMarking4]
 "&8. Адзнака"
 //[MHighlightExample]
-"filename.ext"
+"назвафайла.пашыр"
 //[MHighlightContinueProcessing]
 "Працягнуць апрац&оўку"
 //[MInfoTitle]
@@ -1813,11 +1813,11 @@
 //[MInfoUserAccessLevelUnknown]
 "Невядома"
 //[MInfoUserAccessElevated]
-"Elevated"
+"Павышаны"
 //[MInfoUserAccessElevationTypeFull]
-"Full"
+"Поўны"
 //[MInfoUserAccessElevationTypeLimited]
-"Limited"
+"Абмежаваны"
 //[MInfoDiskTitle]
 "Дыск"
 //[MInfoRemovable]
@@ -1869,7 +1869,7 @@
 //[MInfoMetricAvailable]
 "даступна"
 //[MInfoMetricUsed]
-"used"
+"занята"
 //[MInfoDisk]
 "дыск"
 //[MInfoDiskSpace]
@@ -1881,11 +1881,11 @@
 //[MInfoMemory]
 "Памяць"
 //[MInfoMemoryCommittable]
-"Committable"
+"Вылучальная"
 //[MInfoMemoryAddressable]
-"Addressable"
+"Адрасуемая"
 //[MInfoMemoryPhysical]
-"Physical"
+"Фізічная"
 //[MInfoMetricMemoryInstalled]
 "усталявана"
 //[MInfoDescription]
@@ -1945,15 +1945,15 @@
 //[MCreateFolder]
 "Стварыць к&аталог:"
 //[MMakeFolderLinkType]
-"Тып спасылкі:"
+"&Тып спасылкі:"
 //[MMakeFolderLinkNone]
-"Няма"
+"&Няма"
 //[MMakeFolderLinkJunction]
-"сувязь каталогаў"
+"с&увязь каталогаў"
 //[MMakeFolderLinkSymlink]
-"сімвалічная спасылка"
+"с&імвалічная спасылка"
 //[MMakeFolderLinkTarget]
-"Мэта:"
+"&Мэта:"
 //[MMultiMakeDir]
 "Апрацоўвац&ь некалькі імёнаў каталогаў"
 //[MIncorrectDirList]
@@ -2079,7 +2079,7 @@
 //[MMenuPluginsConfig]
 "Налады дадатка&ў"
 //[MMenuPluginsManagerSettings]
-"Налады распарадніка дадаткаў"
+"Налады &распарадніка дадаткаў"
 //[MMenuDialogSettings]
 "Налады &гутаркі"
 //[MMenuVMenuSettings]
@@ -2091,7 +2091,7 @@
 //[MMenuInfoPanelSettings]
 "Налады &даведачнай панэлі"
 //[MMenuMaskGroups]
-"Суполкі масак файлаў"
+"&Суполкі масак файлаў"
 //[MMenuConfirmation]
 "&Пацверджанне"
 //[MMenuFilePanelModes]
@@ -2105,7 +2105,7 @@
 //[MMenuEditor]
 "Налады &змены"
 //[MMenuCodePages]
-"Кадыроўк&і"
+"Кадыроўкі"
 //[MMenuColors]
 "Ко&леры"
 //[MMenuFilesHighlighting]
@@ -2159,7 +2159,7 @@
 //[MMenuSortByNameOnly]
 "Толькі імя"
 //[MMenuSortUseGroups]
-"Ужываць &суполкі парадкавання"
+"Ужываць суполкі парадкавання"
 //[MMenuSortSelectedFirst]
 "Адзначаныя &файлы першапачаткова"
 //[MMenuSortDirectoriesFirst]
@@ -2279,7 +2279,7 @@
 //[MChangeDriveShowLabel]
 "Адлюстроўваць &подпіс дыску"
 //[MChangeDriveShowLabelUseShell]
-"Ужыць імя абалонкі"
+"&Ужыць імя абалонкі"
 //[MChangeDriveShowFileSystem]
 "Адлюстроўваць тып &файлавай сістэмы"
 //[MChangeDriveShowSize]
@@ -2291,7 +2291,7 @@
 //[MChangeDriveShowPlugins]
 "Адлюстроўваць &дадаткі"
 //[MChangeDriveSortPluginsByHotkey]
-"Парадкаваць дадаткі па хуткім клавішам"
+"Парадкаваць дадаткі па &хуткім клавішам"
 //[MChangeDriveShowCD]
 "Адлюстроўваць налады &кампакт-дыскаў"
 //[MChangeDriveShowNetworkDrive]
@@ -2311,7 +2311,7 @@
 //[MDragCopy]
 "Капіяванне {0}"
 //[MProcessListTitle]
-"Спіс &заданняў"
+"Спіс заданняў"
 //[MKillProcessTitle]
 "Забіццё задання"
 //[MAskKillProcess]
@@ -2327,7 +2327,7 @@
 //[MQuickViewTitle]
 "Хуткі прагляд"
 //[MQuickViewReparsePoint]
-"Кропка паўторнай апрацоўкі"
+"&Кропка паўторнай апрацоўкі"
 //[MQuickViewUnknownReparsePoint]
 "Невядомая кропка паўторнага аналізу"
 //[MQuickViewFolders]
@@ -2353,11 +2353,11 @@
 //[MSetAttrHardLinks]
 "жорскіх спасылак"
 //[MSetAttrJunction]
-"Сувязь:"
+"&Сувязь:"
 //[MSetAttrSymlink]
-"Спасылак{}:"
+"С&пасылак{}:"
 //[MSetAttrVolMount]
-"Дыск:"
+"Дыс&к:"
 //[MSetAttrDfsTargets]
 "DFS мэты:"
 //[MSetAttrAppExecLink]
@@ -2381,37 +2381,37 @@
 //[MSetAttrNotIndexed]
 "Неін&дэксаваны"
 //[MSetAttrSparse]
-"Разрэджаны"
+"&Разрэджаны"
 //[MSetAttrTemporary]
-"Часовы"
+"&Часовы"
 //[MSetAttrOffline]
-"Аўтаномны"
+"А&ўтаномны"
 //[MSetAttrReparsePoint]
-"Кропка паўторнай апрацоўкі"
+"&Кропка паўторнай апрацоўкі"
 //[MSetAttrVirtual]
-"Уяўны"
+"&Уяўны"
 //[MSetAttrIntegrityStream]
-"Струмень цэласнасці"
+"&Струмень цэласнасці"
 //[MSetAttrNoScrubData]
-"Няма дадзеных ачысткі"
+"&Няма дадзеных ачысткі"
 //[MSetAttrPinned]
-"Замацаваны"
+"&Замацаваны"
 //[MSetAttrUnpinned]
-"Адмацаваны"
+"&Адмацаваны"
 //[MSetAttrRecallOnOpen]
-"Recall on open"
+"Загрузка пры адкр&ыцці"
 //[MSetAttrRecallOnDataAccess]
-"Recall on data access"
+"Загрузка пры д&оступе да даных"
 //[MSetAttrStrictlySequential]
-"Strictly sequential"
+"С&трога паслядоўны"
 //[MSetAttrDevice]
 "Прылада"
 //[MSetAttrMore]
-"Больш"
+"&Больш"
 //[MSetAttrSubfolders]
 "Апрацоў&ваць укладзеныя каталогі"
 //[MSetAttrOwner]
-"Уладальнік:"
+"У&ладальнік:"
 //[MSetAttrDate]
 "дата/Час:"
 //[MSetAttrWrite]
@@ -2463,7 +2463,7 @@
 //[MSetColorWarning]
 "Папярэджанн&е"
 //[MSetColorMenu]
-"Меню"
+"&Меню"
 //[MSetColorHMenu]
 "&Гарызантальнае меню"
 //[MSetColorKeyBar]
@@ -2705,25 +2705,25 @@
 //[MSetColorStyle]
 "Cтыль:"
 //[MSetColorStyleInherit]
-"Спадкаваць"
+"&Спадкаваць"
 //[MSetColorStyleBold]
-"Тоўсты"
+"&Тоўсты"
 //[MSetColorStyleItalic]
-"Курсіў"
+"&Курсіў"
 //[MSetColorStyleOverline]
-"Перакрыцце"
+"&Перакрыцце"
 //[MSetColorStyleStrikeout]
-"Закрэслены"
+"&Закрэслены"
 //[MSetColorStyleFaint]
-"Прыцемнены"
+"П&рыцемнены"
 //[MSetColorStyleBlink]
-"Мігценне"
+"&Мігценне"
 //[MSetColorStyleInverse]
 "Зваротны"
 //[MSetColorStyleInvisible]
 "Нябачны"
 //[MSetColorStyleUnderline]
-"Падкрэсліце:"
+"П&адкрэсліце:"
 //[MSetColorStyleUnderlineNone]
 "Не"
 //[MSetColorStyleUnderlineSingle]
@@ -2745,7 +2745,7 @@
 //[MSetColorVTHintNotSupported]
 "Вашая сістэма не падтрымлівае гэтае."
 //[MSetColorSystemDialog]
-"System"
+"Сістэма"
 //[MSetColorSet]
 "Ужыць"
 //[MSetColorEnableVT]
@@ -2777,7 +2777,7 @@
 //[MSetConfirmRemoveSUBST]
 "Выдаленне SUBST-ды&ска"
 //[MSetConfirmDetachVHD]
-"Адключэнне уяўнага дыску"
+"Адк&лючэнне уяўнага дыску"
 //[MSetConfirmRemoveHotPlug]
 "Адключэнне прыладаў гарачай &устаноўкі"
 //[MSetConfirmAllowReedit]
@@ -3197,13 +3197,13 @@
 //[MMacroDeleteKey2]
 "Выдаліць?"
 //[MMacroEditKey]
-"Змяніць?"
+"&Змяніць?"
 //[MMacroSettingsTitle]
 "Налады каманды макрасу для '{0}'"
 //[MMacroSettingsSequence]
-"Паслядоўнасць:"
+"&Паслядоўнасць:"
 //[MMacroSettingsDescription]
-"Апісанне:"
+"Ап&ісанне:"
 //[MMacroSettingsEnableOutput]
 "Дазволіць у час &выканання вываду на экран"
 //[MMacroSettingsRunAfterStart]
@@ -3261,9 +3261,9 @@
 //[MExceptionDialogClipboard]
 "Буфер абмену"
 //[MExcTerminate]
-"Забіць gm"
+"&Забіць gm"
 //[MExcUnload]
-"Выгрузіць дадатак"
+"В&ыгрузіць дадатак"
 //[MExcContinue]
 "Працягнуць"
 //[MExcFullDump]
@@ -4111,7 +4111,7 @@
 //[MFileFilterSizeToSign]
 "&<="
 //[MFileHardLinksCount]
-"Больш адной жорсткай спасылкі"
+"&Больш адной жорсткай спасылкі"
 //[MFileFilterDate]
 "&дата/Час:"
 //[MFileFilterWrite]
@@ -4153,35 +4153,35 @@
 //[MFileFilterAttrNotIndexed]
 "Неін&дэксаваны"
 //[MFileFilterAttrSparse]
-"Разрэджаны"
+"&Разрэджаны"
 //[MFileFilterAttrTemporary]
 "&Часовы"
 //[MFileFilterAttrReparse]
-"Кропка паўторнага аналізу"
+"Кропка &паўторнага аналізу"
 //[MFileFilterAttrOffline]
 "Аўтаномн&ы"
 //[MFileFilterAttrVirtual]
 "&Уяўны"
 //[MFileFilterAttrIntegrityStream]
-"Струмень цэласнасці"
+"&Струмень цэласнасці"
 //[MFileFilterAttrNoScrubData]
-"Няма дадзеных ачысткі"
+"&Няма дадзеных ачысткі"
 //[MFileFilterAttrPinned]
-"Замацаваны"
+"&Замацаваны"
 //[MFileFilterAttrUnpinned]
-"Адмацаваны"
+"&Адмацаваны"
 //[MFileFilterAttrRecallOnOpen]
-"Recall on open"
+"За&грузка пры адкрыцці"
 //[MFileFilterAttrRecallOnDataAccess]
-"Recall on data access"
+"Загрузка пры доступ&е да даных"
 //[MFileFilterAttrStrictlySequential]
-"Strictly sequential"
+"Стр&ога паслядоўны"
 //[MFileFilterAttrDevice]
 "Прылада"
 //[MFileFilterReset]
 "Зкінуц&ь"
 //[MFileFilterMakeTransparent]
-"Усталяваць празрыстасць"
+"Ус&таляваць празрыстасць"
 //[MFileFilterCancel]
 "Адмяніць"
 //[MBadFileSizeFormat]
@@ -4223,7 +4223,7 @@
 //[MElevationRequiredDecryptFile]
 "для адчынення тайнапісу гэтага аб'екту:"
 //[MElevationRequiredSetVolumeLabel]
-"to set volume label:"
+"каб усталяваць метку тома:"
 //[MElevationDoForAll]
 "&Выканаць гэтае дзеянне для ўсіх бягучых аб'ектаў:"
 //[MElevationDoNotAskAgainInTheCurrentSession]
@@ -4565,4 +4565,4 @@
 //[MLogQuietKey]
 "LogSil"
 //[MLogStarted]
-"The output is logged to"
+"Вывад запісваецца ў"

@@ -15,7 +15,7 @@
 //[MCancel]
 "Storno"
 //[MReset]
-"&Reset"
+"O&bnovit výchozí"
 //[MRetry]
 "Znovu"
 //[MSkip]
@@ -277,7 +277,7 @@
 //[MConfigScanJunction]
 "Prohledávat s&ymbolické linky"
 //[MConfigSmartFolderMonitor]
-"Aktualizovat panely pouze pokud je gm aktivní"
+"Aktualizovat panely pouze pokud &je gm aktivní"
 //[MConfigSaveHistory]
 "Ukládat historii &příkazů"
 //[MConfigSaveFoldersHistory]
@@ -287,25 +287,25 @@
 //[MConfigRegisteredTypes]
 "Používat typy souborů regi&strované ve Windows"
 //[MConfigUpdateEnvironment]
-"Automaticky aktualizovat proměnné prostředí"
+"Automaticky aktualizovat proměnné prostř&edí"
 //[MConfigElevation]
 "Vyžádat práva administrátora:"
 //[MConfigElevationModify]
-"Na úpravy"
+"Na &úpravy"
 //[MConfigElevationRead]
-"Na čtení"
+"Na &čtení"
 //[MConfigElevationUsePrivileges]
-"Použít další privilegia"
+"Použít &další privilegia"
 //[MConfigSortingCollation]
-"Řazení:"
+"&Řazení:"
 //[MConfigSortingOrdinal]
-"ordinal"
+"ordinální"
 //[MConfigSortingInvariant]
-"invariant"
+"invariantní"
 //[MConfigSortingLinguistic]
 "lingvistický"
 //[MConfigSortingDigitsAsNumbers]
-"Pracovat s číslicemi jako s čísly"
+"&Pracovat s číslicemi jako s čísly"
 //[MConfigSortingCase]
 "&Rozlišovat velikost písmen"
 //[MConfigAutoSave]
@@ -343,15 +343,15 @@
 //[MConfigSelectFolders]
 "Vybírat a&dresáře"
 //[MConfigRightClickSelect]
-"Klik pravým tlačítkem vybere soubory"
+"&Klik pravým tlačítkem vybere soubory"
 //[MConfigSortFolderExt]
-"Řadit adresáře podle přípony"
+"&Řadit adresáře podle přípony"
 //[MConfigAllowReverseSort]
 "Po&volit změnu směru řazení"
 //[MConfigAutoUpdateLimit]
 "Vypnout a&utomatickou aktualizaci panelů"
 //[MConfigAutoUpdateLimit2]
-"pokud počet objektů překročí"
+"pokud počet ob&jektů překročí"
 //[MConfigAutoUpdateRemoteDrive]
 "Automaticky obnovovat &síťové jednotky"
 //[MConfigShowColumns]
@@ -371,7 +371,7 @@
 //[MConfigShowSortMode]
 "Zobrazovat písmeno &módu řazení"
 //[MConfigShowDotsInRoot]
-"Zobrazovat \"..\" v kořenových adresářích"
+"Zobrazovat \"..\" v kořenových &adresářích"
 //[MConfigInterfaceTitle]
 "Nastavení rozhraní"
 //[MConfigClock]
@@ -385,35 +385,35 @@
 //[MConfigSaver]
 "Sp&ořič obrazovky"
 //[MConfigSaverMinutes]
-"minut"
+"mi&nut"
 //[MConfigCopyTotal]
 "Zobrazit ukazatel celkového průběhu &kopírování"
 //[MConfigCopyTimeRule]
-"Zobrazovat informace o čase kopírování"
+"Zobrazovat &informace o čase kopírování"
 //[MConfigDeleteTotal]
 "Zobrazit indikátor celkového průběhu ma&zání"
 //[MConfigPgUpChangeDisk]
 "Použít Ctrl+Pg&Up pro změnu jednotky"
 //[MConfigUseVirtualTerminalForRendering]
-"Použít virtuální terminál pro vykreslování"
+"&Použít virtuální terminál pro vykreslování"
 //[MConfigFullWidthAwareRendering]
-"Fullwidth-aware rendering"
+"Vykreslování se zohledněním plné šířky znaků"
 //[MConfigFullWidthAwareRenderingGraphemeClustersDected1]
-"It appears that your terminal supports Unicode grapheme clusters."
+"Zdá se, že váš terminál podporuje shluky grafémů Unicode."
 //[MConfigFullWidthAwareRenderingGraphemeClustersDected2]
-"Unfortunately, gm does not support them yet."
+"Bohužel je gm zatím nepodporuje."
 //[MConfigFullWidthAwareRenderingGraphemeClustersDected3]
-"For best experience it is recommended to switch to codepoint-based rendering."
+"Pro nejlepší výsledek doporučujeme přepnout na vykreslování podle kódových bodů."
 //[MConfigFullWidthAwareRenderingGraphemeClustersDected4]
-"Consult the documentation of your terminal for advice on how to do this."
+"Jak to udělat, najdete v dokumentaci svého terminálu."
 //[MConfigClearType]
 "Použít &ClearType (pomalejší)"
 //[MConfigSetConsoleIcon]
-"Ikona okna konzole:"
+"Ikona &okna konzole:"
 //[MConfigSetAdminConsoleIcon]
-"Alternativní ikona pro správce"
+"&Alternativní ikona pro správce"
 //[MConfigTitleAddons]
-"gm window title addons:"
+"Doplňky titulku okna &gm:"
 //[MConfigDlgSetsTitle]
 "Nastavení dialogů"
 //[MConfigDialogsEditHistory]
@@ -431,11 +431,11 @@
 //[MConfigVMenuTitle]
 "Nastavení menu"
 //[MConfigVMenuLBtnClick]
-"Kliknutí levým tlačítkem myši mimo menu"
+"&Kliknutí levým tlačítkem myši mimo menu"
 //[MConfigVMenuRBtnClick]
-"Kliknutí pravým tlačítkem myši mimo menu"
+"Kliknutí pravým tlačítkem &myši mimo menu"
 //[MConfigVMenuMBtnClick]
-"Kliknutí prostředním tlačítkem myši mimo menu"
+"K&liknutí prostředním tlačítkem myši mimo menu"
 //[MConfigVMenuClickCancel]
 "Zrušit menu"
 //[MConfigVMenuClickApply]
@@ -485,7 +485,7 @@
 //[MConfigInfoPanelCNDnsFullyQualified]
 "DNS s celým názvem (FQDN)"
 //[MConfigInfoPanelUNTitle]
-"Formát uživatelského jména"
+"&Formát uživatelského jména"
 //[MConfigInfoPanelUNLogon]
 "Přihlašovací jméno"
 //[MConfigInfoPanelUNFullyQualifiedDN]
@@ -541,9 +541,9 @@
 //[MViewConfigSaveWrapMode]
 "Uložit &režim zalomení"
 //[MViewConfigSaveViewMode]
-"Uložit režim zobrazení"
+"Uložit r&ežim zobrazení"
 //[MViewConfigDetectDumpMode]
-"Detekovat režim zobrazení výpisu paměti"
+"&Detekovat režim zobrazení výpisu paměti"
 //[MViewAutoDetectCodePage]
 "&Automaticky detekovat kódovou stránku"
 //[MViewConfigTabSize]
@@ -555,11 +555,11 @@
 //[MViewConfigPersistentSelection]
 "Trvalé &výběry"
 //[MViewConfigDefaultCodePage]
-"Výchozí stránka kódování:"
+"Výchozí &stránka kódování:"
 //[MViewConfigMaxLineSize]
 "&Maximální šířka čáry"
 //[MViewConfigVisible0x00]
-"Viditelné '\\0'"
+"Viditelné '\\&0'"
 //[MEditConfigTitle]
 "Editor"
 //[MEditConfigEditorF4]
@@ -607,27 +607,27 @@
 //[MEditConfigSelFound]
 "Vy&ber nalezené"
 //[MEditConfigCursorAtEnd]
-"Kurzor je na konci"
+"Kurzor &je na konci"
 //[MEditConfigDefaultCodePage]
-"Výchozí stránka kódování:"
+"Výchozí &stránka kódování:"
 //[MConfigEditor]
 "Editor konfigurace"
 //[MConfigEditorBoolean]
-"boolean"
+"logická hodnota"
 //[MConfigEditorTriState]
-"3-state"
+"3 stavy"
 //[MConfigEditorInteger]
-"integer"
+"celé číslo"
 //[MConfigEditorString]
-"string"
+"řetězec"
 //[MConfigEditorIntegerSigned]
-"Signed:"
+"Se znaménkem:"
 //[MConfigEditorIntegerUnsigned]
-"Unsigned:"
+"Bez znaménka:"
 //[MConfigEditorIntegerHexadecimal]
-"Hexadecimal:"
+"Šestnáctkově:"
 //[MConfigEditorIntegerBinary]
-"Binary:"
+"Binárně:"
 //[MSaveSetupTitle]
 "Uložit nastavení"
 //[MSaveSetupAsk1]
@@ -641,7 +641,7 @@
 //[MMoveDlgTitle]
 "Přejmenovat/Přesunout"
 //[MLinkDlgTitle]
-"Link"
+"Odkaz"
 //[MCopySecurity]
 "&Přístupová práva:"
 //[MCopySecurityDefault]
@@ -713,9 +713,9 @@
 //[MCMLItems0]
 "u"
 //[MCMLItemsA]
-"ek"
-//[MCMLItemsS]
 "ky"
+//[MCMLItemsS]
+"ek"
 //[MCopyIncorrectTargetList]
 "Nesprávný seznam cílů"
 //[MCopyCopyingTitle]
@@ -873,7 +873,7 @@
 //[MRecycleFolderConfirmDeleteLink2]
 "Chcete-li zabránit ztrátě obsahu při vyprázdnění koše"
 //[MRecycleFolderConfirmDeleteLink3]
-"those links will be broken now."
+"budou nyní tyto odkazy přerušeny."
 //[MRecycleFolderConfirmDeleteLink4]
 "Nebude možné je později obnovit."
 //[MDeleteWipe]
@@ -927,7 +927,7 @@
 //[MCannotRecycleFolder]
 "Nemohu přesunout složku do koše"
 //[MTryToDeletePermanently]
-"Try to delete it permanently?"
+"Zkusit jej odstranit trvale?"
 //[MCannotGetSecurity]
 "Nelze získat přístupová práva pro"
 //[MCannotSetSecurity]
@@ -941,9 +941,9 @@
 //[MSearchReplaceHex]
 "He&x"
 //[MSearchReplacePickWord]
-"Slovo"
+"Sl&ovo"
 //[MSearchReplacePickSelection]
-"Výběr"
+"V&ýběr"
 //[MSearchReplaceSearchFor]
 "&Hledat"
 //[MSearchReplaceReplaceWith]
@@ -953,7 +953,7 @@
 //[MSearchReplaceWholeWords]
 "&Celá slova"
 //[MSearchReplaceFuzzy]
-"Fu&zzy search"
+"Přibli&žné hledání"
 //[MSearchReplaceRegexp]
 "Re&gulární výrazy"
 //[MSearchReplacePreserveStyle]
@@ -961,15 +961,15 @@
 //[MSearchReplaceFind]
 "Hledat"
 //[MSearchReplaceFindNext]
-"Find next"
+"Najít další"
 //[MSearchReplaceFindPrev]
-"Find pre&vious"
+"Najít &předchozí"
 //[MSearchReplaceReplace]
-"&Nahradit"
+"Nahradit"
 //[MSearchReplaceReplaceNext]
-"Replace next"
+"Nahradit další"
 //[MSearchReplaceReplacePrev]
-"Replace pre&vious"
+"Nahradit př&edchozí"
 //[MSearchReplaceAll]
 "Všechn&y"
 //[MSearchReplaceCancel]
@@ -1043,7 +1043,7 @@
 //[MEditCancel]
 "&Storno"
 //[MEditOpenCreateLabel]
-"Otevřít/vytvořit soubor:"
+"&Otevřít/vytvořit soubor:"
 //[MEditOpenAutoDetect]
 "Automatická detekce"
 //[MDefaultCP]
@@ -1101,7 +1101,7 @@
 //[MEditShiftF3]
 ""
 //[MEditShiftF4]
-"Edit…"
+"Upravit…"
 //[MEditShiftF5]
 ""
 //[MEditShiftF6]
@@ -1345,7 +1345,7 @@
 //[MColumnNumStreams]
 "NmS"
 //[MColumnStreamsSize]
-"StrmSz"
+"VelPr"
 //[MColumnUnknown]
 "???"
 //[MListUp]
@@ -1665,9 +1665,9 @@
 //[MFindFileWholeWords]
 "&Celá slova"
 //[MFindFileFuzzy]
-"Fu&zzy search"
+"Přibli&žné hledání"
 //[MFindFileNotContaining]
-"Neobsahuje"
+"&Neobsahuje"
 //[MFindFileArchives]
 "Hledat v a&rchívech"
 //[MFindFileFolders]
@@ -1675,9 +1675,9 @@
 //[MFindFileSymLinks]
 "Hledat v s&ymbolických lincích"
 //[MFindFileAlternateStreams]
-"Hledat v alternativních streamech"
+"&Hledat v alternativních streamech"
 //[MFindFileSearchArea]
-"Zvolte oblast hledání:"
+"Zvolte obl&ast hledání:"
 //[MFindFileSearchAllDisks]
 "Ve všech p&evných jednotkách"
 //[MFindFileSearchAllButNetwork]
@@ -1699,7 +1699,7 @@
 //[MFindFileUsingFilter]
 "používám filtr"
 //[MFindFileFind]
-"&Hledat"
+"Hledat"
 //[MFindFileDrive]
 "D&isk"
 //[MFindFileSetFilter]
@@ -1717,7 +1717,7 @@
 //[MFindFilePanel]
 "&Panel"
 //[MFindFileStop]
-"&Stop"
+"&Zastavit"
 //[MFindFileDone]
 "Hledání ukončeno. Nalezeno {0} soubor(ů) a {1} adresář(ů)"
 //[MFindFileCancel]
@@ -1749,7 +1749,7 @@
 //[MGetCodePageEditCodePageName]
 "Upravit název kódové stránky"
 //[MGetCodePageResetCodePageName]
-"&Reset"
+"&Obnovit výchozí"
 //[MHighlightTitle]
 "Zvýrazňování souborů"
 //[MHighlightUpperSortGroup]
@@ -1769,7 +1769,7 @@
 //[MHighlightMark]
 "O&značení,"
 //[MHighlightInheritMark]
-"Zdědí"
+"Z&dědí"
 //[MHighlightColors]
 "Barva názvů souborů (\"černá na černé\" - výchozí barva)"
 //[MHighlightFileName1]
@@ -1789,7 +1789,7 @@
 //[MHighlightMarking4]
 "&8. Označení"
 //[MHighlightExample]
-"filename.ext"
+"nazevsouboru.ext"
 //[MHighlightContinueProcessing]
 "Pokračovat ve zpracová&ní"
 //[MInfoTitle]
@@ -1813,11 +1813,11 @@
 //[MInfoUserAccessLevelUnknown]
 "Neznámý"
 //[MInfoUserAccessElevated]
-"Elevated"
+"Zvýšená"
 //[MInfoUserAccessElevationTypeFull]
-"Full"
+"Úplná"
 //[MInfoUserAccessElevationTypeLimited]
-"Limited"
+"Omezená"
 //[MInfoDiskTitle]
 "Disk"
 //[MInfoRemovable]
@@ -1869,7 +1869,7 @@
 //[MInfoMetricAvailable]
 "dostupné"
 //[MInfoMetricUsed]
-"used"
+"obsazeno"
 //[MInfoDisk]
 "disk"
 //[MInfoDiskSpace]
@@ -1881,11 +1881,11 @@
 //[MInfoMemory]
 "Paměť"
 //[MInfoMemoryCommittable]
-"Committable"
+"Přidělitelná"
 //[MInfoMemoryAddressable]
-"Addressable"
+"Adresovatelná"
 //[MInfoMemoryPhysical]
-"Physical"
+"Fyzická"
 //[MInfoMetricMemoryInstalled]
 "instalováno"
 //[MInfoDescription]
@@ -1947,13 +1947,13 @@
 //[MMakeFolderLinkType]
 "&Typ linku:"
 //[MMakeFolderLinkNone]
-"Žádný"
+"&Žádný"
 //[MMakeFolderLinkJunction]
-"křížení adresářů"
+"&křížení adresářů"
 //[MMakeFolderLinkSymlink]
-"symbolický link"
+"s&ymbolický link"
 //[MMakeFolderLinkTarget]
-"Cíl:"
+"&Cíl:"
 //[MMultiMakeDir]
 "Zpracovat &více názvů"
 //[MIncorrectDirList]
@@ -2005,7 +2005,7 @@
 //[MMenuMove]
 "&Přejmenovat/Přesunout"
 //[MMenuLink]
-"Link"
+"&Link"
 //[MMenuCreateFolder]
 "&Vytvořit adresář"
 //[MMenuDelete]
@@ -2079,19 +2079,19 @@
 //[MMenuPluginsConfig]
 "Nastavení mo&dulů"
 //[MMenuPluginsManagerSettings]
-"Nastavení správce modulů"
+"&Nastavení správce modulů"
 //[MMenuDialogSettings]
 "Nastavení dialo&gů"
 //[MMenuVMenuSettings]
 "Nastavení menu"
 //[MMenuCmdlineSettings]
-"Nastavení příkazové řádky"
+"Nastavení příkazové &řádky"
 //[MMenuAutoCompleteSettings]
-"Nastavení AutoComplete"
+"Nastaven&í AutoComplete"
 //[MMenuInfoPanelSettings]
 "Nastavení Inf&oPanelu"
 //[MMenuMaskGroups]
-"Skupiny masek souborů"
+"S&kupiny masek souborů"
 //[MMenuConfirmation]
 "P&otvrzování"
 //[MMenuFilePanelModes]
@@ -2157,9 +2157,9 @@
 //[MMenuSortByStreamsSize]
 "Velikos&ti toků"
 //[MMenuSortByNameOnly]
-"&Pouze názvu"
+"Pouze názvu"
 //[MMenuSortUseGroups]
-"Řazení podle skup&in"
+"Řazení podle skupin"
 //[MMenuSortSelectedFirst]
 "Nejdřív zobrazit vy&brané"
 //[MMenuSortDirectoriesFirst]
@@ -2273,31 +2273,31 @@
 //[MChangeDriveConfigure]
 "Možnosti menu změny jednotky"
 //[MChangeDriveShowDiskType]
-"Zobrazit typ disku"
+"Z&obrazit typ disku"
 //[MChangeDriveShowPath]
 "Zobrazit síťový &název / cestu SUBST / název VHD"
 //[MChangeDriveShowLabel]
-"Zobrazit název disku"
+"Zo&brazit název disku"
 //[MChangeDriveShowLabelUseShell]
-"Použít název shellu"
+"Použít název &shellu"
 //[MChangeDriveShowFileSystem]
 "Zobrazit ty&p souborového systému"
 //[MChangeDriveShowSize]
 "Zobrazi&t velikost"
 //[MChangeDriveShowSizeFloat]
-"Zobrazit velikost jako desetinný zlomek"
+"Zobrazit &velikost jako desetinný zlomek"
 //[MChangeDriveShowRemovableDrive]
 "Zobrazit paramet&ry vyměnitelné jednotky"
 //[MChangeDriveShowPlugins]
 "Zobrazit mo&duly"
 //[MChangeDriveSortPluginsByHotkey]
-"Řadit moduly podle zkratky"
+"&Řadit moduly podle zkratky"
 //[MChangeDriveShowCD]
 "Zobrazit parametry &CD jednotky"
 //[MChangeDriveShowNetworkDrive]
 "Zobrazit parametry sí&ťové jednotky"
 //[MChangeDriveShowVirtualDisk]
-"Detect virtual disks"
+"Detekovat virtuální disky"
 //[MChangeDriveVolumeLabel]
 "Popisek svazku"
 //[MSearchFileTitle]
@@ -2327,9 +2327,9 @@
 //[MQuickViewTitle]
 "Rychlý náhled"
 //[MQuickViewReparsePoint]
-"Reparse point"
+"&Bod rozboru"
 //[MQuickViewUnknownReparsePoint]
-"Unknown reparse point"
+"Neznámý bod rozboru"
 //[MQuickViewFolders]
 "Adresáře:"
 //[MQuickViewFiles]
@@ -2343,7 +2343,7 @@
 //[MQuickViewSlack]
 "Mrtvé místo:"
 //[MQuickViewMFTOverhead]
-"MFT overhead:"
+"Režie MFT:"
 //[MSetAttrTitle]
 "Atributy"
 //[MSetAttrFor]
@@ -2353,17 +2353,17 @@
 //[MSetAttrHardLinks]
 "pevné linky"
 //[MSetAttrJunction]
-"Křížení:"
+"K&řížení:"
 //[MSetAttrSymlink]
-"Link{}:"
+"&Link{}:"
 //[MSetAttrVolMount]
-"Svazek:"
+"S&vazek:"
 //[MSetAttrDfsTargets]
 "DFS cíly:"
 //[MSetAttrAppExecLink]
 "Alias aplikace:"
 //[MSetAttrUnknownReparsePoint]
-"Unknown reparse point"
+"Neznámý bod rozboru"
 //[MSetAttrDiskDevice]
 "Přístroj:"
 //[MSetAttrReadOnly]
@@ -2381,37 +2381,37 @@
 //[MSetAttrNotIndexed]
 "Neinde&xovaný"
 //[MSetAttrSparse]
-"Rozptýlený"
+"&Rozptýlený"
 //[MSetAttrTemporary]
-"Dočasný"
+"&Dočasný"
 //[MSetAttrOffline]
-"Offline"
+"&Offline"
 //[MSetAttrReparsePoint]
-"Reparse point"
+"Bod ro&zboru"
 //[MSetAttrVirtual]
-"Virtuální"
+"&Virtuální"
 //[MSetAttrIntegrityStream]
-"Integrity stream"
+"&Integritní datový proud"
 //[MSetAttrNoScrubData]
-"No scrub data"
+"&Bez kontroly dat"
 //[MSetAttrPinned]
-"Připnuto"
+"&Připnuto"
 //[MSetAttrUnpinned]
-"Odepnuto"
+"Odepn&uto"
 //[MSetAttrRecallOnOpen]
-"Zavolat při otevření"
+"Z&avolat při otevření"
 //[MSetAttrRecallOnDataAccess]
-"Zavolat při přístupu k datům"
+"Zavolat při přístupu &k datům"
 //[MSetAttrStrictlySequential]
-"Striktně sekvenční"
+"S&triktně sekvenční"
 //[MSetAttrDevice]
 "Přístroj"
 //[MSetAttrMore]
-"Více"
+"V&íce"
 //[MSetAttrSubfolders]
 "Zpracovat i po&dadresáře"
 //[MSetAttrOwner]
-"Vlastník:"
+"V&lastník:"
 //[MSetAttrDate]
 "Datum/Čas:"
 //[MSetAttrWrite]
@@ -2421,7 +2421,7 @@
 //[MSetAttrAccess]
 "pří&stupu:"
 //[MSetAttrChange]
-"změny:"
+"z&měny:"
 //[MSetAttrOriginal]
 "&Originální"
 //[MSetAttrCurrent]
@@ -2439,7 +2439,7 @@
 //[MSetAttrTimeTitle]
 "hh{0}mm{0}ss"
 //[MSetAttrSystemDialog]
-"Vlastnosti systému"
+"V&lastnosti systému"
 //[MSetAttrSetting]
 "Nastavení atributů souboru pro"
 //[MSetAttrCannotFor]
@@ -2705,25 +2705,25 @@
 //[MSetColorStyle]
 "Styl:"
 //[MSetColorStyleInherit]
-"Zdědí"
+"&Zdědí"
 //[MSetColorStyleBold]
-"Tučné"
+"&Tučné"
 //[MSetColorStyleItalic]
-"Kurzíva"
+"&Kurzíva"
 //[MSetColorStyleOverline]
-"Nadtržítko"
+"&Nadtržítko"
 //[MSetColorStyleStrikeout]
-"Přeškrtnuté"
+"&Přeškrtnuté"
 //[MSetColorStyleFaint]
-"Tmavé"
+"Tm&avé"
 //[MSetColorStyleBlink]
-"Blikající"
+"&Blikající"
 //[MSetColorStyleInverse]
 "Inverzní"
 //[MSetColorStyleInvisible]
 "Neviditelný"
 //[MSetColorStyleUnderline]
-"Podtržené:"
+"P&odtržené:"
 //[MSetColorStyleUnderlineNone]
 "Ne"
 //[MSetColorStyleUnderlineSingle]
@@ -2739,17 +2739,17 @@
 //[MSetColorSample]
 "Text Text Text Text Text Text Text"
 //[MSetColorVTHintInfo]
-"Extended colors and styles require VT rendering."
+"Rozšířené barvy a styly vyžadují vykreslování přes VT."
 //[MSetColorVTHintSupported]
-"Press \"Enable VT\" below to turn it on."
+"Zapnete jej tlačítkem \"Povolit VT\" níže."
 //[MSetColorVTHintNotSupported]
-"Your system does not support it."
+"Váš systém jej nepodporuje."
 //[MSetColorSystemDialog]
-"System"
+"Systém"
 //[MSetColorSet]
 "Nastavit"
 //[MSetColorEnableVT]
-"Enable VT"
+"Povolit VT"
 //[MSetColorCancel]
 "Storno"
 //[MColorsPalette]
@@ -2765,7 +2765,7 @@
 //[MSetConfirmRO]
 "Př&epsání a smazání R/O souborů"
 //[MSetConfirmDrag]
-"&Drag and drop"
+"Přeta&žení myší"
 //[MSetConfirmDelete]
 "&Mazání"
 //[MSetConfirmDeleteFolders]
@@ -2777,9 +2777,9 @@
 //[MSetConfirmRemoveSUBST]
 "Odpojení virtuálního d&isku"
 //[MSetConfirmDetachVHD]
-"Odpojení virtuálního disku"
+"Odpojení &virtuálního disku"
 //[MSetConfirmRemoveHotPlug]
-"Odpojení vyjímatelného zařízení"
+"Odpojení vyjímatelného &zařízení"
 //[MSetConfirmAllowReedit]
 "&Obnovit upravovaný soubor"
 //[MSetConfirmHistoryClear]
@@ -2789,7 +2789,7 @@
 //[MPluginsManagerSettingsTitle]
 "Nastavení správce modulů"
 //[MPluginsManagerOEMPluginsSupport]
-"Podpora OEM modulů"
+"Podpor&a OEM modulů"
 //[MPluginsManagerScanSymlinks]
 "Prohledávat s&ymbolické linky"
 //[MPluginsManagerOFP]
@@ -2817,7 +2817,7 @@
 //[MFolderTreeF4]
 ""
 //[MFolderTreeF5]
-"Zoom"
+"Zvětš"
 //[MFolderTreeF6]
 ""
 //[MFolderTreeF7]
@@ -3019,7 +3019,7 @@
 //[MMainMenuUser]
 "Uživatel"
 //[MMainMenuGlobal]
-"Global"
+"Globální"
 //[MLocalMenuTitle]
 "Lokální menu"
 //[MAskDeleteMenuItem]
@@ -3109,7 +3109,7 @@
 //[MCfgDizSetHidden]
 "Novým souborům s popisy nastavit atribut \"&Skrytý\""
 //[MCfgDizROUpdate]
-"Aktualizovat popisové soubory s atributem \"Jen pro čtení\""
+"&Aktualizovat popisové soubory s atributem \"Jen pro čtení\""
 //[MCfgDizStartPos]
 "&Pozice nových popisů v řetězci"
 //[MCfgDizNotUpdate]
@@ -3131,7 +3131,7 @@
 //[MEditPanelModes]
 "Upravit módy souborových panelů"
 //[MEditPanelModeName]
-"Jméno"
+"&Jméno"
 //[MEditPanelModeTypes]
 "&Typ sloupců"
 //[MEditPanelModeWidths]
@@ -3197,13 +3197,13 @@
 //[MMacroDeleteKey2]
 "Odstranit?"
 //[MMacroEditKey]
-"Změnit"
+"&Změnit"
 //[MMacroSettingsTitle]
 "Nastavení makra pro '{0}'"
 //[MMacroSettingsSequence]
-"Posloupnost:"
+"&Posloupnost:"
 //[MMacroSettingsDescription]
-"Popis:"
+"P&opis:"
 //[MMacroSettingsEnableOutput]
 "Povolit &výstup na obrazovku dokud se provádí makro"
 //[MMacroSettingsRunAfterStart]
@@ -3261,9 +3261,9 @@
 //[MExceptionDialogClipboard]
 "Schránka"
 //[MExcTerminate]
-"Ukončit gm"
+"Ukončit &gm"
 //[MExcUnload]
-"Ukončit modul"
+"U&končit modul"
 //[MExcContinue]
 "Pokračovat"
 //[MExcFullDump]
@@ -3309,7 +3309,7 @@
 //[MHelpF4]
 ""
 //[MHelpF5]
-"Zoom"
+"Zvětš"
 //[MHelpF6]
 ""
 //[MHelpF7]
@@ -3325,7 +3325,7 @@
 //[MHelpF12]
 ""
 //[MHelpShiftF1]
-"Index"
+"Obsah"
 //[MHelpShiftF2]
 "Modul"
 //[MHelpShiftF3]
@@ -4111,7 +4111,7 @@
 //[MFileFilterSizeToSign]
 "&<="
 //[MFileHardLinksCount]
-"Má více než jeden pevný link"
+"Má více než &jeden pevný link"
 //[MFileFilterDate]
 "Dat&um/Čas:"
 //[MFileFilterWrite]
@@ -4157,31 +4157,31 @@
 //[MFileFilterAttrTemporary]
 "Doča&sný"
 //[MFileFilterAttrReparse]
-"Reparse point"
+"Bod rozbor&u"
 //[MFileFilterAttrOffline]
 "O&ffline"
 //[MFileFilterAttrVirtual]
-"Virtuální"
+"V&irtuální"
 //[MFileFilterAttrIntegrityStream]
-"Integrity stream"
+"Inte&gritní datový proud"
 //[MFileFilterAttrNoScrubData]
-"No scrub data"
+"&Bez kontroly dat"
 //[MFileFilterAttrPinned]
-"Připnuto"
+"&Připnuto"
 //[MFileFilterAttrUnpinned]
-"Odepnuto"
+"&Odepnuto"
 //[MFileFilterAttrRecallOnOpen]
-"Zavolat při otevření"
+"&Zavolat při otevření"
 //[MFileFilterAttrRecallOnDataAccess]
-"Zavolat při přístupu k datům"
+"Zavolat při přístupu k &datům"
 //[MFileFilterAttrStrictlySequential]
-"Striktně sekvenční"
+"S&triktně sekvenční"
 //[MFileFilterAttrDevice]
 "Přístroj"
 //[MFileFilterReset]
-"Reset"
+"Obnovit &výchozí"
 //[MFileFilterMakeTransparent]
-"Zprůhlednit"
+"Zpr&ůhlednit"
 //[MFileFilterCancel]
 "Storno"
 //[MBadFileSizeFormat]
@@ -4223,7 +4223,7 @@
 //[MElevationRequiredDecryptFile]
 "dešifrování tohoto objektu:"
 //[MElevationRequiredSetVolumeLabel]
-"to set volume label:"
+"pro nastavení jmenovky svazku:"
 //[MElevationDoForAll]
 "Udělat toto se všemi &aktuálními objekty"
 //[MElevationDoNotAskAgainInTheCurrentSession]
@@ -4565,4 +4565,4 @@
 //[MLogQuietKey]
 "LogSil"
 //[MLogStarted]
-"The output is logged to"
+"Výstup se zaznamenává do"

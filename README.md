@@ -404,7 +404,10 @@ gm runs.
 * **Menus and options**: F9 menu bar, F2 user menu with Far metasymbols
   (`!.!`, `!\`, `!?prompt?default!`, …), file associations, folder shortcuts,
   histories, screens list (F12, Ctrl+Tab), settings dialogs, colors,
-  languages (all 13 of Far's translations plus Norwegian), help (F1, from Far's help files, plus a Norwegian translation).
+  languages (all 13 of Far's translations plus Bulgarian, Danish, French,
+  Greek, Hebrew, Norwegian Bokmål, Norwegian Nynorsk and Swedish), help (F1,
+  from Far's help files, plus French, Greek, Norwegian Bokmål and Nynorsk
+  translations).
 
 ### Built-in modules (Far plugins, compiled in)
 
@@ -550,6 +553,7 @@ crates/gm-i18n       messages (generated from Far's farlang.templ.m4)
 crates/gm-help       HLF help viewer
 crates/modules/*     built-in modules
 tools/*              one-time converters for Far's language, help and palette files
+tools/i18n-check     lngcheck.py / hlfcheck.py: check translations against English
 ```
 
 `cargo test -p gm-core --test scripted_ui -- --nocapture gallery` prints the

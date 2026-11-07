@@ -1,0 +1,4568 @@
+.Language=Swedish,Svenska
+// Goodevening Manager language file (Swedish)
+//[MYes]
+"Ja"
+//[MNo]
+"Nej"
+//[MOk]
+"OK"
+//[MHYes]
+"&Ja"
+//[MHNo]
+"&Nej"
+//[MHOk]
+"&OK"
+//[MCancel]
+"Avbryt"
+//[MReset]
+"&Återställ"
+//[MRetry]
+"Försök igen"
+//[MSkip]
+"Hoppa över"
+//[MAbort]
+"Avbryt"
+//[MIgnore]
+"Ignorera"
+//[MDelete]
+"Ta bort"
+//[MHCancel]
+"&Avbryt"
+//[MHRetry]
+"&Försök igen"
+//[MHSkip]
+"&Hoppa över"
+//[MHSkipAll]
+"Hoppa över a&lla"
+//[MHAbort]
+"A&vbryt"
+//[MHIgnore]
+"&Ignorera"
+//[MHDelete]
+"&Ta bort"
+//[MHRemove]
+"&Avlägsna"
+//[MHSplit]
+"&Dela"
+//[MWarning]
+"Varning"
+//[MError]
+"Fel"
+//[MQuit]
+"Avsluta"
+//[MAskQuit]
+"Vill du avsluta gm?"
+//[MF1]
+"Hjälp"
+//[MF2]
+"AnvMn"
+//[MF3]
+"Visa"
+//[MF4]
+"Redig"
+//[MF5]
+"Kopia"
+//[MF6]
+"BytFly"
+//[MF7]
+"NyMapp"
+//[MF8]
+"TaBort"
+//[MF9]
+"KonfMn"
+//[MF10]
+"Avslut"
+//[MF11]
+"Plugin"
+//[MF12]
+"Skärm"
+//[MShiftF1]
+"Lägg"
+//[MShiftF2]
+"Packa"
+//[MShiftF3]
+"ArkKmd"
+//[MShiftF4]
+"Redig…"
+//[MShiftF5]
+"Kopia"
+//[MShiftF6]
+"BytNmn"
+//[MShiftF7]
+""
+//[MShiftF8]
+"TaBort"
+//[MShiftF9]
+"Spara"
+//[MShiftF10]
+"Senast"
+//[MShiftF11]
+"Grupp"
+//[MShiftF12]
+"MarkUp"
+//[MAltF1]
+"Vänst"
+//[MAltF2]
+"Höger"
+//[MAltF3]
+"Visa…"
+//[MAltF4]
+"Redig…"
+//[MAltF5]
+"Skriv"
+//[MAltF6]
+"NyLänk"
+//[MAltF7]
+"Sök"
+//[MAltF8]
+"Histor"
+//[MAltF9]
+"Video"
+//[MAltF10]
+"Träd"
+//[MAltF11]
+"VisHis"
+//[MAltF12]
+"MapHis"
+//[MCtrlF1]
+"Vänst"
+//[MCtrlF2]
+"Höger"
+//[MCtrlF3]
+"Namn"
+//[MCtrlF4]
+"Filänd"
+//[MCtrlF5]
+"Skrivn"
+//[MCtrlF6]
+"Storl"
+//[MCtrlF7]
+"Osort"
+//[MCtrlF8]
+"Skapad"
+//[MCtrlF9]
+"Åtkomst"
+//[MCtrlF10]
+"Beskr"
+//[MCtrlF11]
+"Ägare"
+//[MCtrlF12]
+"Sort"
+//[MAltShiftF1]
+""
+//[MAltShiftF2]
+""
+//[MAltShiftF3]
+""
+//[MAltShiftF4]
+""
+//[MAltShiftF5]
+""
+//[MAltShiftF6]
+""
+//[MAltShiftF7]
+""
+//[MAltShiftF8]
+""
+//[MAltShiftF9]
+"KonfPl"
+//[MAltShiftF10]
+""
+//[MAltShiftF11]
+""
+//[MAltShiftF12]
+""
+//[MCtrlShiftF1]
+""
+//[MCtrlShiftF2]
+""
+//[MCtrlShiftF3]
+"Visa"
+//[MCtrlShiftF4]
+"Redig"
+//[MCtrlShiftF5]
+""
+//[MCtrlShiftF6]
+""
+//[MCtrlShiftF7]
+""
+//[MCtrlShiftF8]
+""
+//[MCtrlShiftF9]
+""
+//[MCtrlShiftF10]
+""
+//[MCtrlShiftF11]
+""
+//[MCtrlShiftF12]
+""
+//[MCtrlAltF1]
+""
+//[MCtrlAltF2]
+""
+//[MCtrlAltF3]
+""
+//[MCtrlAltF4]
+""
+//[MCtrlAltF5]
+""
+//[MCtrlAltF6]
+""
+//[MCtrlAltF7]
+""
+//[MCtrlAltF8]
+""
+//[MCtrlAltF9]
+""
+//[MCtrlAltF10]
+""
+//[MCtrlAltF11]
+""
+//[MCtrlAltF12]
+""
+//[MCtrlAltShiftF1]
+""
+//[MCtrlAltShiftF2]
+""
+//[MCtrlAltShiftF3]
+""
+//[MCtrlAltShiftF4]
+""
+//[MCtrlAltShiftF5]
+""
+//[MCtrlAltShiftF6]
+""
+//[MCtrlAltShiftF7]
+""
+//[MCtrlAltShiftF8]
+""
+//[MCtrlAltShiftF9]
+""
+//[MCtrlAltShiftF10]
+""
+//[MCtrlAltShiftF11]
+""
+//[MCtrlAltShiftF12]
+""
+//[MHistoryTitle]
+"Historik"
+//[MHistoryInfoTitle]
+"Information"
+//[MHistoryInfoFolder]
+"Mapp:"
+//[MFolderHistoryTitle]
+"Mapphistorik"
+//[MViewHistoryTitle]
+"Historik för visning och redigering"
+//[MViewHistoryIsCreate]
+"Skapa filen?"
+//[MHistoryView]
+"Visa"
+//[MHistoryEdit]
+"Redigera"
+//[MHistoryExt]
+"Ext."
+//[MHistoryClear]
+"Alla poster i historiken kommer att tas bort. Fortsätta?"
+//[MClear]
+"&Rensa historik"
+//[MConfigSystemTitle]
+"Systeminställningar"
+//[MConfigRecycleBin]
+"&Ta bort till papperskorgen"
+//[MConfigSystemCopy]
+"Använd s&ystemets kopieringsrutin"
+//[MConfigCopySharing]
+"Kopiera filer öppnade för s&krivning"
+//[MConfigScanJunction]
+"Genomsök s&ymboliska länkar"
+//[MConfigSmartFolderMonitor]
+"&Uppdatera paneler endast när gm är aktivt"
+//[MConfigSaveHistory]
+"Spara kommando&historik"
+//[MConfigSaveFoldersHistory]
+"Spara &mapphistorik"
+//[MConfigSaveViewHistory]
+"Spara historik för &visning och redigering"
+//[MConfigRegisteredTypes]
+"Använd Windows re&gistrerade typer"
+//[MConfigUpdateEnvironment]
+"Automatisk uppdatering av &miljövariabler"
+//[MConfigElevation]
+"Begär administratörsrättigheter:"
+//[MConfigElevationModify]
+"För &ändring"
+//[MConfigElevationRead]
+"För &läsning"
+//[MConfigElevationUsePrivileges]
+"Använd ytterligare &privilegier"
+//[MConfigSortingCollation]
+"Sorteri&ngsordning:"
+//[MConfigSortingOrdinal]
+"ordinal"
+//[MConfigSortingInvariant]
+"invariant"
+//[MConfigSortingLinguistic]
+"språklig"
+//[MConfigSortingDigitsAsNumbers]
+"Behandla siffror som t&al"
+//[MConfigSortingCase]
+"&Skiftlägeskänslig"
+//[MConfigAutoSave]
+"Spara inställningar a&utomatiskt"
+//[MConfigTreeTitle]
+"Trädinställningar"
+//[MConfigTreeAutoChange]
+"Byt mapp &automatiskt"
+//[MConfigTreeLabelMinFolder]
+"&Minsta antal mappar:"
+//[MConfigTreeLabel1]
+"Spara en fil med mappstrukturen för:"
+//[MConfigTreeLabelLocalDisk]
+"lokala enheter"
+//[MConfigTreeLabelNetDisk]
+"nätverksenheter"
+//[MConfigTreeLabelNetPath]
+"nätverkssökvägar"
+//[MConfigTreeLabelRemovableDisk]
+"flyttbara enheter"
+//[MConfigTreeLabelCDDisk]
+"optiska enheter"
+//[MConfigTreeLabelExceptPath]
+"Skapa inte filen för följande enheter och sökvägar:"
+//[MConfigTreeLabelSaveLocalPath]
+"Sökväg för lokala, flyttbara och optiska enheter:"
+//[MConfigTreeLabelSaveNetPath]
+"Sökväg för nätverksenheter och -sökvägar:"
+//[MConfigPanelTitle]
+"Panelinställningar"
+//[MConfigHidden]
+"Visa &dolda filer och systemfiler"
+//[MConfigHighlight]
+"Mar&kera filer med färg"
+//[MConfigSelectFolders]
+"Markera &mappar"
+//[MConfigRightClickSelect]
+"Högerkli&ck markerar filer"
+//[MConfigSortFolderExt]
+"Sortera mappnamn efter fil&ändelse"
+//[MConfigAllowReverseSort]
+"Tillåt o&mvända sorteringslägen"
+//[MConfigAutoUpdateLimit]
+"&Inaktivera automatisk paneluppdatering"
+//[MConfigAutoUpdateLimit2]
+"om antalet ob&jekt överstiger"
+//[MConfigAutoUpdateRemoteDrive]
+"Automatisk uppdatering av nätverks&enheter"
+//[MConfigShowColumns]
+"Visa &kolumnrubriker"
+//[MConfigShowStatus]
+"Visa &statusrad"
+//[MConfigDetailedJunction]
+"Identifiera volym&monteringspunkter"
+//[MConfigShowTotal]
+"Visa &totalinformation om filer"
+//[MConfigShowFree]
+"Visa &ledigt utrymme"
+//[MConfigShowScrollbar]
+"Visa rull&list"
+//[MConfigShowScreensNumber]
+"Visa &antal bakgrundsskärmar"
+//[MConfigShowSortMode]
+"Visa bokstav för sorteri&ngsläge"
+//[MConfigShowDotsInRoot]
+"Visa \"&..\" i rotmappar"
+//[MConfigInterfaceTitle]
+"Gränssnittsinställningar"
+//[MConfigClock]
+"&Klocka"
+//[MConfigMouse]
+"M&us"
+//[MConfigKeyBar]
+"Visa &tangentrad"
+//[MConfigMenuBar]
+"Visa alltid &menyraden"
+//[MConfigSaver]
+"&Skärmsläckare"
+//[MConfigSaverMinutes]
+"mi&nuter"
+//[MConfigCopyTotal]
+"Visa &total förloppsindikator för kopiering"
+//[MConfigCopyTimeRule]
+"Visa tidsinformation för ko&piering"
+//[MConfigDeleteTotal]
+"Visa total förloppsindikator för &borttagning"
+//[MConfigPgUpChangeDisk]
+"Använd Ctrl+Pg&Up för att byta enhet"
+//[MConfigUseVirtualTerminalForRendering]
+"Använd &virtuell terminal för rendering"
+//[MConfigFullWidthAwareRendering]
+"Rendering med stöd för helbreddstecken"
+//[MConfigFullWidthAwareRenderingGraphemeClustersDected1]
+"Det verkar som att din terminal stöder Unicode-grafemkluster."
+//[MConfigFullWidthAwareRenderingGraphemeClustersDected2]
+"Tyvärr stöder gm dem inte ännu."
+//[MConfigFullWidthAwareRenderingGraphemeClustersDected3]
+"För bästa resultat rekommenderas att byta till kodpunktsbaserad rendering."
+//[MConfigFullWidthAwareRenderingGraphemeClustersDected4]
+"Se dokumentationen för din terminal för råd om hur du gör detta."
+//[MConfigClearType]
+"Cl&earType-vänlig omritning (kan vara långsam)"
+//[MConfigSetConsoleIcon]
+"Konsol&ikon:"
+//[MConfigSetAdminConsoleIcon]
+"Alternativ för &administratör"
+//[MConfigTitleAddons]
+"Tillägg till gm-&fönstrets titel:"
+//[MConfigDlgSetsTitle]
+"Dialoginställningar"
+//[MConfigDialogsEditHistory]
+"&Historik i dialogens redigeringsfält"
+//[MConfigDialogsEditBlock]
+"&Beständiga block i redigeringsfält"
+//[MConfigDialogsDelRemovesBlocks]
+"&Del tar bort block i redigeringsfält"
+//[MConfigDialogsAutoComplete]
+"&Autokomplettering i redigeringsfält"
+//[MConfigDialogsEULBsClear]
+"&Backsteg tar bort oförändrad text"
+//[MConfigDialogsMouseButton]
+"Musklick &utanför en dialog stänger den"
+//[MConfigVMenuTitle]
+"Menyinställningar"
+//[MConfigVMenuLBtnClick]
+"&Vänsterklick utanför en meny"
+//[MConfigVMenuRBtnClick]
+"&Högerklick utanför en meny"
+//[MConfigVMenuMBtnClick]
+"&Mittenklick utanför en meny"
+//[MConfigVMenuClickCancel]
+"Stäng menyn"
+//[MConfigVMenuClickApply]
+"Kör markerat objekt"
+//[MConfigVMenuClickIgnore]
+"Gör ingenting"
+//[MConfigCmdlineTitle]
+"Kommandoradsinställningar"
+//[MConfigCmdlineEditBlock]
+"&Beständiga block"
+//[MConfigCmdlineDelRemovesBlocks]
+"&Del tar bort block"
+//[MConfigCmdlineAutoComplete]
+"&Autokomplettering"
+//[MConfigCmdlineUsePromptFormat]
+"Ange &format för kommandoprompten"
+//[MConfigCmdlineUseHomeDir]
+"Använd &hemkatalog"
+//[MConfigCmdlinePromptFormatAdmin]
+"Administratör"
+//[MConfigAutoCompleteTitle]
+"Inställningar för autokomplettering"
+//[MConfigAutoCompleteShowList]
+"&Visa en lista"
+//[MConfigAutoCompleteModalList]
+"&Modalt läge"
+//[MConfigAutoCompleteAutoAppend]
+"&Lägg till första matchande objekt"
+//[MConfigInfoPanelTitle]
+"Inställningar för infopanelen"
+//[MConfigInfoPanelCNTitle]
+"Format för dator&namn"
+//[MConfigInfoPanelCNPhysicalNetBIOS]
+"Fysiskt NetBIOS"
+//[MConfigInfoPanelCNPhysicalDnsHostname]
+"Fysiskt DNS-värdnamn"
+//[MConfigInfoPanelCNPhysicalDnsDomain]
+"Fysisk DNS-domän"
+//[MConfigInfoPanelCNPhysicalDnsFullyQualified]
+"Fysiskt fullständigt DNS-namn (FQDN)"
+//[MConfigInfoPanelCNNetBIOS]
+"NetBIOS"
+//[MConfigInfoPanelCNDnsHostname]
+"DNS-värdnamn"
+//[MConfigInfoPanelCNDnsDomain]
+"DNS-domän"
+//[MConfigInfoPanelCNDnsFullyQualified]
+"Fullständigt DNS-namn (FQDN)"
+//[MConfigInfoPanelUNTitle]
+"Format för &användarnamn"
+//[MConfigInfoPanelUNLogon]
+"Inloggningsnamn"
+//[MConfigInfoPanelUNFullyQualifiedDN]
+"Fullständigt domännamn (FQDN)"
+//[MConfigInfoPanelUNSamCompatible]
+"SAM-kompatibelt"
+//[MConfigInfoPanelUNDisplay]
+"Visningsnamn"
+//[MConfigInfoPanelUNUniqueId]
+"Unikt ID"
+//[MConfigInfoPanelUNCanonical]
+"Kanoniskt namn"
+//[MConfigInfoPanelUNUserPrincipal]
+"Användarhuvudnamn"
+//[MConfigInfoPanelUNServicePrincipal]
+"Tjänsthuvudnamn"
+//[MConfigInfoPanelUNDnsDomain]
+"DNS-domän"
+//[MConfigInfoPanelUNGivenName]
+"Förnamn"
+//[MConfigInfoPanelUNSurname]
+"Efternamn"
+//[MConfigInfoPanelShowPowerStatus]
+"Visa &strömstatus"
+//[MConfigInfoPanelShowCDInfo]
+"Visa parametrar för &CD-enheter"
+//[MMenuInfoShowModeTitle]
+"Visa info"
+//[MMenuInfoShowModeDisk]
+"&Disk"
+//[MMenuInfoShowModeMemory]
+"&Minne"
+//[MMenuInfoShowModeDirDiz]
+"&Beskrivning"
+//[MMenuInfoShowModePluginDiz]
+"Plu&ginpanel"
+//[MMenuInfoShowModePower]
+"&Strömstatus"
+//[MViewConfigTitle]
+"Visare"
+//[MViewConfigExternalF3]
+"Använd extern visare för F&3 i stället för Alt+F3"
+//[MViewConfigExternalCommand]
+"&Visarkommando:"
+//[MViewConfigInternal]
+"Intern visare"
+//[MViewConfigSavePos]
+"&Spara position i filen"
+//[MViewConfigSaveShortPos]
+"Spara &bokmärken"
+//[MViewConfigSaveCodepage]
+"Spara filens &teckentabell"
+//[MViewConfigSaveWrapMode]
+"Spara &radbrytningsläge"
+//[MViewConfigSaveViewMode]
+"Spara visnings&läge"
+//[MViewConfigDetectDumpMode]
+"Identifiera &dumpläge"
+//[MViewAutoDetectCodePage]
+"Identifiera teckentabell &automatiskt"
+//[MViewConfigTabSize]
+"Ta&bbstorlek"
+//[MViewConfigScrollbar]
+"Visa rull&list"
+//[MViewConfigArrows]
+"Visa rull&pilar"
+//[MViewConfigPersistentSelection]
+"&Beständig markering"
+//[MViewConfigDefaultCodePage]
+"Standard&teckentabell:"
+//[MViewConfigMaxLineSize]
+"&Maximal radbredd"
+//[MViewConfigVisible0x00]
+"Synligt '\\&0'"
+//[MEditConfigTitle]
+"Redigerare"
+//[MEditConfigEditorF4]
+"Använd extern redigerare för F&4 i stället för Alt+F4"
+//[MEditConfigEditorCommand]
+"&Redigerarkommando:"
+//[MEditConfigInternal]
+"Intern redigerare"
+//[MEditConfigExpandTabsTitle]
+"Expandera &tabbar:"
+//[MEditConfigDoNotExpandTabs]
+"Expandera inte tabbar"
+//[MEditConfigExpandTabs]
+"Expandera nyinmatade tabbar till blanksteg"
+//[MEditConfigConvertAllTabsToSpaces]
+"Expandera alla tabbar till blanksteg"
+//[MEditConfigPersistentBlocks]
+"&Beständiga block"
+//[MEditConfigDelRemovesBlocks]
+"&Del tar bort block"
+//[MEditConfigAutoIndent]
+"Automatisk &indrag"
+//[MEditConfigSavePos]
+"&Spara position i filen"
+//[MEditConfigSaveShortPos]
+"Spara b&okmärken"
+//[MEditCursorBeyondEnd]
+"&Markör efter radslut"
+//[MEditAutoDetectCodePage]
+"Identifiera teckentabell &automatiskt"
+//[MEditShareWrite]
+"Tillåt redigering av filer öppnade för s&krivning"
+//[MEditLockROFileModification]
+"Lås redigering av skrivskyddade &filer"
+//[MEditWarningBeforeOpenROFile]
+"&Varna vid öppning av skrivskyddade filer"
+//[MEditConfigTabSize]
+"Tabbstorle&k"
+//[MEditConfigScrollbar]
+"Visa rull&list"
+//[MEditConfigLineNumbers]
+"Visa rad&nummer"
+//[MEditShowWhiteSpace]
+"Visa &blanktecken"
+//[MEditConfigSelFound]
+"Ma&rkera hittat"
+//[MEditConfigCursorAtEnd]
+"Markör vid slut&et"
+//[MEditConfigDefaultCodePage]
+"Standardteckenta&bell:"
+//[MConfigEditor]
+"Konfigurationsredigerare"
+//[MConfigEditorBoolean]
+"boolesk"
+//[MConfigEditorTriState]
+"tre lägen"
+//[MConfigEditorInteger]
+"heltal"
+//[MConfigEditorString]
+"sträng"
+//[MConfigEditorIntegerSigned]
+"Med tecken:"
+//[MConfigEditorIntegerUnsigned]
+"Utan tecken:"
+//[MConfigEditorIntegerHexadecimal]
+"Hexadecimalt:"
+//[MConfigEditorIntegerBinary]
+"Binärt:"
+//[MSaveSetupTitle]
+"Spara inställningar"
+//[MSaveSetupAsk1]
+"Vill du spara"
+//[MSaveSetupAsk2]
+"aktuella inställningar?"
+//[MSaveSetup]
+"Spara"
+//[MCopyDlgTitle]
+"Kopiera"
+//[MMoveDlgTitle]
+"Byt namn/Flytta"
+//[MLinkDlgTitle]
+"Länk"
+//[MCopySecurity]
+"&Åtkomsträttigheter:"
+//[MCopySecurityDefault]
+"Stan&dard"
+//[MCopySecurityCopy]
+"Ko&piera"
+//[MCopySecurityInherit]
+"&Ärv"
+//[MCopyIfFileExist]
+"Redan be&fintliga filer:"
+//[MCopyAsk]
+"&Fråga"
+//[MCopyAskRO]
+"Fråga även för &skrivskyddade filer"
+//[MCopyOnlyNewerFiles]
+"Endast n&yare filer"
+//[MLinkType]
+"Länk&typ:"
+//[MLinkTypeJunction]
+"katalog&koppling"
+//[MLinkTypeHardlink]
+"&hård länk"
+//[MLinkTypeSymlink]
+"&symbolisk länk"
+//[MLinkTypeSymlinkFile]
+"symbolisk länk (&fil)"
+//[MLinkTypeSymlinkDirectory]
+"symbolisk länk (&mapp)"
+//[MCopyPreserveAllTimestamps]
+"Bevara alla tidsstämplar"
+//[MCopySymLinkContents]
+"Kopiera innehållet i s&ymboliska länkar"
+//[MCopyMultiActions]
+"Behandla &flera mål"
+//[MCopyDlgCopy]
+"&Kopiera"
+//[MCopyDlgTree]
+"F10-&Träd"
+//[MCopyDlgCancel]
+"A&vbryt"
+//[MCopyDlgRename]
+"&Byt namn"
+//[MCopyDlgLink]
+"Skapa &länk"
+//[MCopyDlgTotal]
+"Totalt"
+//[MCopyPrepareSecury]
+"Tillämpar åtkomsträttigheter…"
+//[MCopyUseFilter]
+"&Använd filter"
+//[MCopySetFilter]
+"Filt&er"
+//[MCopyFile]
+"Kopiera {0} {1}:"
+//[MMoveFile]
+"Byt namn på eller flytta {0} {1}:"
+//[MLinkFile]
+"Skapa länk till {0} {1}:"
+//[MCopyFiles]
+"Kopiera {0} post{1} {2}:"
+//[MMoveFiles]
+"Byt namn på eller flytta {0} post{1} {2}:"
+//[MLinkFiles]
+"Skapa länkar till {0} post{1} {2}:"
+//[MCMLTargetTO]
+"&till"
+//[MCMLTargetIN]
+"&i"
+//[MCMLItems0]
+""
+//[MCMLItemsA]
+"er"
+//[MCMLItemsS]
+"er"
+//[MCopyIncorrectTargetList]
+"Felaktig mållista"
+//[MCopyCopyingTitle]
+"Kopierar"
+//[MCopyMovingTitle]
+"Flyttar"
+//[MCopyCannotFind]
+"Kan inte hitta filen"
+//[MCannotCopyFolderToItself1]
+"Kan inte kopiera mappen"
+//[MCannotCopyFolderToItself2]
+"till sig själv"
+//[MCopyCannotCreateFolder]
+"Kan inte skapa mappen"
+//[MCopyCannotRenameFolder]
+"Kan inte byta namn på mappen"
+//[MCopyIgnore]
+"&Ignorera"
+//[MCopyIgnoreAll]
+"Ignorera &alla"
+//[MCopyRetry]
+"&Försök igen"
+//[MCopySkip]
+"&Hoppa över"
+//[MCopySkipAll]
+"Hoppa över a&lla"
+//[MCopyCancel]
+"A&vbryt"
+//[MCopyDecrypt]
+"&Dekryptera"
+//[MCopyDecryptAll]
+"Dekryptera all&a"
+//[MCopyCannotCreateLink]
+"Kan inte skapa länken"
+//[MCopyFolderNotEmpty]
+"Målmappen måste vara tom"
+//[MCopyCannotCreateJunctionToFile]
+"Kan inte skapa kopplingen. Filen finns redan:"
+//[MCopyCannotCreateVolMount]
+"Fel med volymmonteringspunkter"
+//[MCopyMountVolFailed]
+"Försöket att montera volymen '{0}'"
+//[MCopyMountVolFailed2]
+"på '{0}' misslyckades"
+//[MCopyMountName]
+"Disk_"
+//[MCannotCopyFileToItself1]
+"Kan inte kopiera filen"
+//[MCannotCopyFileToItself2]
+"till sig själv"
+//[MCopyStream1]
+"Källfilen innehåller mer än en dataström,"
+//[MCopyStream2]
+"men du använder inte systemets kopieringsrutin."
+//[MCopyStream3]
+"men målvolymen stöder inte denna funktion."
+//[MCopyStream4]
+"Vissa data kommer inte att bevaras."
+//[MCopyDirectoryOrFile]
+"Anger det ett mappnamn eller ett filnamn?"
+//[MCopyDirectoryOrFileDirectory]
+"Mapp"
+//[MCopyDirectoryOrFileFile]
+"Fil"
+//[MCopyFileExist]
+"Filen finns redan"
+//[MCopySource]
+"&Ny"
+//[MCopyDest]
+"&Befintlig"
+//[MCopyOverwrite]
+"&Skriv över"
+//[MCopyAppend]
+"&Lägg till"
+//[MCopyRename]
+"&Byt namn"
+//[MCopyRememberChoice]
+"&Kom ihåg valet"
+//[MCopyRenameTitle]
+"Byt namn"
+//[MCopyRenameText]
+"&Nytt namn:"
+//[MCopyFileRO]
+"Filen är skrivskyddad"
+//[MCopyAskDelete]
+"Vill du ta bort den?"
+//[MCopyDeleteRO]
+"&Ta bort"
+//[MCopyDeleteAllRO]
+"&Alla"
+//[MCannotCopy]
+"Kan inte kopiera"
+//[MCannotMove]
+"Kan inte flytta"
+//[MCannotLink]
+"Kan inte länka"
+//[MCannotCopyTo]
+"till"
+//[MCopyEncryptWarn1]
+"Filen"
+//[MCopyEncryptWarn2]
+"kan inte kopieras eller flyttas utan att förlora sin kryptering."
+//[MCopyReadError]
+"Kan inte läsa data från"
+//[MCopyWriteError]
+"Kan inte skriva data till"
+//[MCopyCannotReserveSpace]
+"Fel vid reservering av diskutrymme"
+//[MCopyFilesTotalInfo]
+"Filer:"
+//[MCopyBytesTotalInfo]
+"Byte:"
+//[MCopyMoving]
+"Flyttar filen"
+//[MCopyCopying]
+"Kopierar filen"
+//[MCopyTo]
+"till"
+//[MDeleteTitle]
+"Ta bort"
+//[MAskDelete]
+"Vill du ta bort {0}?"
+//[MAskDeleteRecycle]
+"Vill du flytta {0} till papperskorgen?"
+//[MDeleteWipeTitle]
+"Radera"
+//[MAskWipe]
+"Vill du radera {0} permanent?"
+//[MAskDeleteFolder]
+"mappen"
+//[MAskDeleteFile]
+"filen"
+//[MAskDeleteObjects]
+"objekten"
+//[MAskDeleteLink]
+"en länk till"
+//[MAskDeleteAndMore]
+"…och {0} till"
+//[MDeleteFolderTitle]
+"Ta bort mapp"
+//[MWipeFolderTitle]
+"Radera mapp"
+//[MDeleteFilesTitle]
+"Ta bort filer"
+//[MWipeFilesTitle]
+"Radera filer"
+//[MDeleteFolderConfirm]
+"Följande mapp kommer att tas bort:"
+//[MWipeFolderConfirm]
+"Följande mapp kommer att raderas permanent:"
+//[MRecycleFolderConfirm]
+"Följande mapp kommer att flyttas till papperskorgen:"
+//[MRecycleFolderConfirmDeleteLink1]
+"Mappen innehåller symboliska länkar."
+//[MRecycleFolderConfirmDeleteLink2]
+"För att förhindra att deras innehåll går förlorat när papperskorgen töms"
+//[MRecycleFolderConfirmDeleteLink3]
+"kommer dessa länkar att brytas nu."
+//[MRecycleFolderConfirmDeleteLink4]
+"Det blir omöjligt att återställa dem senare."
+//[MDeleteWipe]
+"Radera"
+//[MDeleteRecycle]
+"Flytta"
+//[MDeleteFileDelete]
+"&Ta bort"
+//[MDeleteFileWipe]
+"&Radera"
+//[MDeleteFileAll]
+"&Alla"
+//[MDeleteFileSkip]
+"&Hoppa över"
+//[MDeleteFileSkipAll]
+"Hoppa över a&lla"
+//[MDeleteFileCancel]
+"A&vbryt"
+//[MDeletingTitle]
+"Tar bort"
+//[MDeleting]
+"Tar bort filen eller mappen"
+//[MDeletingWiping]
+"Raderar filen eller mappen"
+//[MDeleteRO]
+"Filen är skrivskyddad"
+//[MAskDeleteRO]
+"Vill du ta bort den?"
+//[MAskWipeRO]
+"Vill du radera den permanent?"
+//[MDeleteHardLink1]
+"Flera hårda länkar pekar på den här filen."
+//[MDeleteHardLink2]
+"Om filen raderas töms alla filer som länkar till den."
+//[MDeleteHardLink3]
+"Vill du radera den här filen?"
+//[MCannotDeleteFile]
+"Kan inte ta bort filen"
+//[MCannotDeleteFolder]
+"Kan inte ta bort mappen"
+//[MDeleteRetry]
+"&Försök igen"
+//[MDeleteSkip]
+"&Hoppa över"
+//[MDeleteSkipAll]
+"Hoppa över a&lla"
+//[MDeleteCancel]
+"A&vbryt"
+//[MCannotRecycleFile]
+"Kan inte flytta filen till papperskorgen"
+//[MCannotRecycleFolder]
+"Kan inte flytta mappen till papperskorgen"
+//[MTryToDeletePermanently]
+"Försöka ta bort den permanent?"
+//[MCannotGetSecurity]
+"Kan inte hämta åtkomsträttigheter för"
+//[MCannotSetSecurity]
+"Kan inte ange åtkomsträttigheter för"
+//[MSearchReplaceSearchTitle]
+"Sök"
+//[MSearchReplaceReplaceTitle]
+"Ersätt"
+//[MSearchReplaceText]
+"&Text"
+//[MSearchReplaceHex]
+"&Hex"
+//[MSearchReplacePickWord]
+"&Ord"
+//[MSearchReplacePickSelection]
+"Mar&kering"
+//[MSearchReplaceSearchFor]
+"&Sök efter"
+//[MSearchReplaceReplaceWith]
+"&Ersätt med"
+//[MSearchReplaceCase]
+"S&kiftlägeskänslig"
+//[MSearchReplaceWholeWords]
+"&Hela ord"
+//[MSearchReplaceFuzzy]
+"Ungefärlig s&ökning"
+//[MSearchReplaceRegexp]
+"&Reguljära uttryck"
+//[MSearchReplacePreserveStyle]
+"&Bevara stil"
+//[MSearchReplaceFind]
+"Sök"
+//[MSearchReplaceFindNext]
+"Sök nästa"
+//[MSearchReplaceFindPrev]
+"Sök &föregående"
+//[MSearchReplaceReplace]
+"Ersätt"
+//[MSearchReplaceReplaceNext]
+"Ersätt nästa"
+//[MSearchReplaceReplacePrev]
+"Ersätt före&gående"
+//[MSearchReplaceAll]
+"&Alla"
+//[MSearchReplaceCancel]
+"Avbryt"
+//[MEditTitle]
+"Redigerare"
+//[MAskReload]
+"är redan inläst. Hur ska filen öppnas?"
+//[MCurrent]
+"&Aktuell"
+//[MReload]
+"Läs &om"
+//[MNewOpen]
+"&Ny instans"
+//[MEditCannotOpen]
+"Kan inte öppna filen"
+//[MEditReading]
+"Läser filen {0}"
+//[MEditAskSave]
+"Filen har ändrats. Spara?"
+//[MEditAskSaveExt]
+"Filen har ändrats av ett externt program. Spara?"
+//[MEditBtnSaveAs]
+"Spara &som…"
+//[MEditRO]
+"är en skrivskyddad fil"
+//[MEditExists]
+"finns redan"
+//[MEditOvr]
+"Vill du skriva över den?"
+//[MEditSaving]
+"Sparar filen {0}"
+//[MEditStatusLine]
+"Rad"
+//[MEditStatusCol]
+"Kol"
+//[MEditStatusChar]
+"Tkn"
+//[MEditRSH]
+"är en skrivskyddad fil"
+//[MEditFileGetSizeError]
+"Filstorleken kunde inte fastställas."
+//[MEditFileLong]
+"har storleken {0},"
+//[MEditFileLong2]
+"vilket överstiger den konfigurerade maxstorleken {0}."
+//[MEditROOpen]
+"Vill du redigera den?"
+//[MEditCanNotEditDirectory]
+"Det går inte att redigera mappen"
+//[MEditSearchingFor]
+"Söker efter {0}"
+//[MEditSearchStatistics]
+"Förekomster: {0}, rader: {1}"
+//[MEditSearchAllFileNameFormat]
+"{0}{1}.Filtered.txt"
+//[MEditSearchAllFileNameFormatAlt]
+"{0}.Filtered{1}"
+//[MEditNotFound]
+"Kunde inte hitta strängen"
+//[MEditAskReplace]
+"Ersätt"
+//[MEditAskReplaceWith]
+"med"
+//[MEditReplace]
+"&Ersätt"
+//[MEditReplaceAll]
+"&Alla"
+//[MEditSkip]
+"&Hoppa över"
+//[MEditCancel]
+"A&vbryt"
+//[MEditOpenCreateLabel]
+"&Öppna/skapa fil:"
+//[MEditOpenAutoDetect]
+"Automatisk identifiering"
+//[MDefaultCP]
+"Standard"
+//[MGoTo]
+"Gå till"
+//[MGoToHex]
+"&Hexvärde"
+//[MFolderShortcutsTitle]
+"Mappgenvägar"
+//[MShortcutNone]
+"<ingen>"
+//[MShortcutPlugin]
+"<plugin>"
+//[MFSShortcutName]
+"Titel:"
+//[MFSShortcutPath]
+"Sökväg:"
+//[MFSShortcutPluginFile]
+"Fil:"
+//[MFSShortcutPluginData]
+"Data:"
+//[MNeedNearPath]
+"Gå till närmaste befintliga mapp?"
+//[MSaveThisShortcut]
+"Spara denna genväg?"
+//[MEditF1]
+"Hjälp"
+//[MEditF2]
+"Spara"
+//[MEditF3]
+""
+//[MEditF4]
+"Avslut"
+//[MEditF5]
+""
+//[MEditF6]
+"Visa"
+//[MEditF7]
+"Sök"
+//[MEditF8]
+"ANSI"
+//[MEditF9]
+""
+//[MEditF10]
+"Avslut"
+//[MEditF11]
+"Plugin"
+//[MEditF12]
+"Skärm"
+//[MEditShiftF1]
+""
+//[MEditShiftF2]
+"SparaS"
+//[MEditShiftF3]
+""
+//[MEditShiftF4]
+"Redig…"
+//[MEditShiftF5]
+""
+//[MEditShiftF6]
+""
+//[MEditShiftF7]
+"Nästa"
+//[MEditShiftF8]
+"TknTab"
+//[MEditShiftF9]
+""
+//[MEditShiftF10]
+"SparAv"
+//[MEditShiftF11]
+""
+//[MEditShiftF12]
+""
+//[MEditAltF1]
+""
+//[MEditAltF2]
+""
+//[MEditAltF3]
+""
+//[MEditAltF4]
+""
+//[MEditAltF5]
+""
+//[MEditAltF6]
+""
+//[MEditAltF7]
+"Föreg"
+//[MEditAltF8]
+"GåTill"
+//[MEditAltF9]
+"Video"
+//[MEditAltF10]
+""
+//[MEditAltF11]
+"VisHis"
+//[MEditAltF12]
+""
+//[MEditCtrlF1]
+""
+//[MEditCtrlF2]
+""
+//[MEditCtrlF3]
+"RadNr"
+//[MEditCtrlF4]
+""
+//[MEditCtrlF5]
+""
+//[MEditCtrlF6]
+""
+//[MEditCtrlF7]
+"Ersätt"
+//[MEditCtrlF8]
+"EOL"
+//[MEditCtrlF9]
+""
+//[MEditCtrlF10]
+"TillFil"
+//[MEditCtrlF11]
+""
+//[MEditCtrlF12]
+""
+//[MEditAltShiftF1]
+""
+//[MEditAltShiftF2]
+""
+//[MEditAltShiftF3]
+""
+//[MEditAltShiftF4]
+""
+//[MEditAltShiftF5]
+""
+//[MEditAltShiftF6]
+""
+//[MEditAltShiftF7]
+""
+//[MEditAltShiftF8]
+""
+//[MEditAltShiftF9]
+"Konfig"
+//[MEditAltShiftF10]
+""
+//[MEditAltShiftF11]
+""
+//[MEditAltShiftF12]
+""
+//[MEditCtrlShiftF1]
+""
+//[MEditCtrlShiftF2]
+""
+//[MEditCtrlShiftF3]
+""
+//[MEditCtrlShiftF4]
+""
+//[MEditCtrlShiftF5]
+""
+//[MEditCtrlShiftF6]
+""
+//[MEditCtrlShiftF7]
+""
+//[MEditCtrlShiftF8]
+""
+//[MEditCtrlShiftF9]
+""
+//[MEditCtrlShiftF10]
+""
+//[MEditCtrlShiftF11]
+""
+//[MEditCtrlShiftF12]
+""
+//[MEditCtrlAltF1]
+""
+//[MEditCtrlAltF2]
+""
+//[MEditCtrlAltF3]
+""
+//[MEditCtrlAltF4]
+""
+//[MEditCtrlAltF5]
+""
+//[MEditCtrlAltF6]
+""
+//[MEditCtrlAltF7]
+""
+//[MEditCtrlAltF8]
+""
+//[MEditCtrlAltF9]
+""
+//[MEditCtrlAltF10]
+""
+//[MEditCtrlAltF11]
+""
+//[MEditCtrlAltF12]
+""
+//[MEditCtrlAltShiftF1]
+""
+//[MEditCtrlAltShiftF2]
+""
+//[MEditCtrlAltShiftF3]
+""
+//[MEditCtrlAltShiftF4]
+""
+//[MEditCtrlAltShiftF5]
+""
+//[MEditCtrlAltShiftF6]
+""
+//[MEditCtrlAltShiftF7]
+""
+//[MEditCtrlAltShiftF8]
+""
+//[MEditCtrlAltShiftF9]
+""
+//[MEditCtrlAltShiftF10]
+""
+//[MEditCtrlAltShiftF11]
+""
+//[MEditCtrlAltShiftF12]
+""
+//[MEditF8DOS]
+"OEM"
+//[MEditCtrlF3Hide]
+"DöljNr"
+//[MEditSaveAs]
+"Spara fil &som"
+//[MEditCodePage]
+"&Teckentabell:"
+//[MEditAddSignature]
+"Lägg till &signatur (BOM)"
+//[MEditSaveAsFormatTitle]
+"Ändra radbrytningar till:"
+//[MEditSaveOriginal]
+"Ändra &inte"
+//[MEditSaveDOS]
+"&Dos/Windows-format (CR LF)"
+//[MEditSaveUnix]
+"&Unix-format (LF)"
+//[MEditSaveMac]
+"&Mac-format (CR)"
+//[MEditCannotSave]
+"Kan inte spara filen"
+//[MEditSavedChangedNonFile]
+"Filen har ändrats men filen eller mappen som innehåller"
+//[MEditSavedChangedNonFile1]
+"Filen eller mappen som innehåller"
+//[MEditSavedChangedNonFile2]
+"den här filen har flyttats eller tagits bort. Spara?"
+//[MEditNewPath1]
+"Sökvägen till den redigerade filen finns inte,"
+//[MEditNewPath2]
+"men den skapas när filen sparas."
+//[MEditNewPath3]
+"Fortsätta?"
+//[MEditNewPlugin1]
+"Namnet på filen som ska redigeras får inte vara tomt"
+//[MEditorReloadCPWarnLost1]
+"Filen måste läsas om för att byta teckentabell."
+//[MEditorReloadCPWarnLost2]
+"Alla osparade ändringar går förlorade."
+//[MEditorSwitchCPConfirm]
+"Fortsätta?"
+//[MEditDataLostWarn]
+"Vissa data gick förlorade under redigeringen av filen."
+//[MEditorSaveNotRecommended]
+"Det rekommenderas inte att spara den här filen."
+//[MEditorSave]
+"Spara"
+//[MEditorSaveCPWarnShow]
+"Visa"
+//[MEditorCPNotSupported]
+"Teckentabell {0} stöds inte i ditt system"
+//[MColumnName]
+"Namn"
+//[MColumnExtension]
+"Filändelse"
+//[MColumnSize]
+"Storlek"
+//[MColumnAlocatedSize]
+"Allokerat"
+//[MColumnDate]
+"Datum"
+//[MColumnTime]
+"Tid"
+//[MColumnWrited]
+"Skriven"
+//[MColumnCreated]
+"Skapad"
+//[MColumnAccessed]
+"Åtkomst"
+//[MColumnChanged]
+"Ändrad"
+//[MColumnAttr]
+"Attr"
+//[MColumnDescription]
+"Beskrivning"
+//[MColumnOwner]
+"Ägare"
+//[MColumnMumLinks]
+"AnL"
+//[MColumnNumStreams]
+"AnS"
+//[MColumnStreamsSize]
+"StrmSt"
+//[MColumnUnknown]
+"???"
+//[MListUp]
+"Upp"
+//[MListFolder]
+"Mapp"
+//[MListSymlink]
+"Symlänk"
+//[MListJunction]
+"Koppling"
+//[MListVolMount]
+"Volym"
+//[MListUnknownReparsePoint]
+"?Symlänk?"
+//[MListBrackets]
+"<>"
+//[MListBytes]
+"B"
+//[MListKb]
+"K"
+//[MListMb]
+"M"
+//[MListGb]
+"G"
+//[MListTb]
+"T"
+//[MListPb]
+"P"
+//[MListEb]
+"E"
+//[MListFileSize]
+"Byte: {0}, filer: {1}, mappar: {2}"
+//[MListFileSizeStatus]
+"{0} ({1}/{2}) {3} {4}"
+//[MListFreeSize]
+"{0} byte ledigt"
+//[MDirInfoViewTitle]
+"Visa"
+//[MFileToEdit]
+"Fil att redigera:"
+//[MUnselectTitle]
+"Avmarkera"
+//[MSelectTitle]
+"Markera"
+//[MSelectFilter]
+"&Filter"
+//[MCompareTitle]
+"Jämför"
+//[MCompareFilePanelsRequired1]
+"Två filpaneler krävs för att utföra"
+//[MCompareFilePanelsRequired2]
+"kommandot Jämför mappar"
+//[MCompareSameFolders1]
+"Mapparnas innehåll verkar"
+//[MCompareSameFolders2]
+"vara identiskt"
+//[MSelectAssocTitle]
+"Välj association"
+//[MAssocTitle]
+"Filassociationer"
+//[MAskDelAssoc]
+"Vill du ta bort associationen för"
+//[MFileAssocTitle]
+"Redigera filassociationer"
+//[MFileAssocMasks]
+"En fil&mask eller flera filmasker:"
+//[MFileAssocDescr]
+"&Beskrivning av associationen:"
+//[MFileAssocExec]
+"&Körkommando (används för Enter):"
+//[MFileAssocAltExec]
+"Kör&kommando (används för Ctrl+PgDn):"
+//[MFileAssocView]
+"&Visningskommando (används för F3):"
+//[MFileAssocAltView]
+"V&isningskommando (används för Alt+F3):"
+//[MFileAssocEdit]
+"&Redigeringskommando (används för F4):"
+//[MFileAssocAltEdit]
+"Redigerings&kommando (används för Alt+F4):"
+//[MViewF1]
+"Hjälp"
+//[MViewF2]
+"Radbr"
+//[MViewF3]
+"Avslut"
+//[MViewF4]
+"Hex"
+//[MViewF5]
+""
+//[MViewF6]
+"Redig"
+//[MViewF7]
+"Sök"
+//[MViewF8]
+"ANSI"
+//[MViewF9]
+""
+//[MViewF10]
+"Avslut"
+//[MViewF11]
+"Plugins"
+//[MViewF12]
+"Skärm"
+//[MViewShiftF1]
+""
+//[MViewShiftF2]
+"OrdBr"
+//[MViewShiftF3]
+""
+//[MViewShiftF4]
+"Läge"
+//[MViewShiftF5]
+""
+//[MViewShiftF6]
+""
+//[MViewShiftF7]
+"Nästa"
+//[MViewShiftF8]
+"TknTab"
+//[MViewShiftF9]
+""
+//[MViewShiftF10]
+""
+//[MViewShiftF11]
+""
+//[MViewShiftF12]
+""
+//[MViewAltF1]
+""
+//[MViewAltF2]
+""
+//[MViewAltF3]
+""
+//[MViewAltF4]
+""
+//[MViewAltF5]
+""
+//[MViewAltF6]
+""
+//[MViewAltF7]
+"Föreg"
+//[MViewAltF8]
+"GåTill"
+//[MViewAltF9]
+"Video"
+//[MViewAltF10]
+""
+//[MViewAltF11]
+"VisHis"
+//[MViewAltF12]
+""
+//[MViewCtrlF1]
+""
+//[MViewCtrlF2]
+""
+//[MViewCtrlF3]
+""
+//[MViewCtrlF4]
+""
+//[MViewCtrlF5]
+""
+//[MViewCtrlF6]
+""
+//[MViewCtrlF7]
+""
+//[MViewCtrlF8]
+""
+//[MViewCtrlF9]
+""
+//[MViewCtrlF10]
+"TillFil"
+//[MViewCtrlF11]
+""
+//[MViewCtrlF12]
+""
+//[MViewAltShiftF1]
+""
+//[MViewAltShiftF2]
+""
+//[MViewAltShiftF3]
+""
+//[MViewAltShiftF4]
+""
+//[MViewAltShiftF5]
+""
+//[MViewAltShiftF6]
+""
+//[MViewAltShiftF7]
+""
+//[MViewAltShiftF8]
+""
+//[MViewAltShiftF9]
+"Konfig"
+//[MViewAltShiftF10]
+""
+//[MViewAltShiftF11]
+""
+//[MViewAltShiftF12]
+""
+//[MViewCtrlShiftF1]
+""
+//[MViewCtrlShiftF2]
+""
+//[MViewCtrlShiftF3]
+""
+//[MViewCtrlShiftF4]
+""
+//[MViewCtrlShiftF5]
+""
+//[MViewCtrlShiftF6]
+""
+//[MViewCtrlShiftF7]
+""
+//[MViewCtrlShiftF8]
+""
+//[MViewCtrlShiftF9]
+""
+//[MViewCtrlShiftF10]
+""
+//[MViewCtrlShiftF11]
+""
+//[MViewCtrlShiftF12]
+""
+//[MViewCtrlAltF1]
+""
+//[MViewCtrlAltF2]
+""
+//[MViewCtrlAltF3]
+""
+//[MViewCtrlAltF4]
+""
+//[MViewCtrlAltF5]
+""
+//[MViewCtrlAltF6]
+""
+//[MViewCtrlAltF7]
+""
+//[MViewCtrlAltF8]
+""
+//[MViewCtrlAltF9]
+""
+//[MViewCtrlAltF10]
+""
+//[MViewCtrlAltF11]
+""
+//[MViewCtrlAltF12]
+""
+//[MViewCtrlAltShiftF1]
+""
+//[MViewCtrlAltShiftF2]
+""
+//[MViewCtrlAltShiftF3]
+""
+//[MViewCtrlAltShiftF4]
+""
+//[MViewCtrlAltShiftF5]
+""
+//[MViewCtrlAltShiftF6]
+""
+//[MViewCtrlAltShiftF7]
+""
+//[MViewCtrlAltShiftF8]
+""
+//[MViewCtrlAltShiftF9]
+""
+//[MViewCtrlAltShiftF10]
+""
+//[MViewCtrlAltShiftF11]
+""
+//[MViewCtrlAltShiftF12]
+""
+//[MViewF2Unwrap]
+"EjBryt"
+//[MViewF4Text]
+"Text"
+//[MViewF4Dump]
+"Dump"
+//[MViewF8DOS]
+"OEM"
+//[MViewMode]
+"Visningsläge"
+//[MInViewer]
+"visa"
+//[MInEditor]
+"redigera"
+//[MFilterTitle]
+"Filtermeny"
+//[MPanelFileType]
+"Panelens filtyp"
+//[MFolderFileType]
+"Mappar"
+//[MCanEditCustomFilterOnly]
+"Endast anpassade filter kan redigeras"
+//[MAskDeleteFilter]
+"Vill du ta bort filtret"
+//[MCanDeleteCustomFilterOnly]
+"Endast anpassade filter kan tas bort"
+//[MFindFileTitle]
+"Sök fil"
+//[MFindFileMasks]
+"En fil&mask eller flera filmasker:"
+//[MFindFileContaining]
+"Innehåller"
+//[MFindFileText]
+"&Text"
+//[MFindFileHex]
+"&Hex"
+//[MFindFileCodePage]
+"Med teckenta&bell:"
+//[MFindFileAllCodePages]
+"Alla standardteckentabeller"
+//[MFindFileSelectedCodePages]
+"Valda teckentabeller"
+//[MFindFileCase]
+"&Skiftlägeskänslig"
+//[MFindFileWholeWords]
+"&Hela ord"
+//[MFindFileFuzzy]
+"Ungefärlig s&ökning"
+//[MFindFileNotContaining]
+"&Innehåller inte"
+//[MFindFileArchives]
+"Sök i ar&kiv"
+//[MFindFileFolders]
+"Sök efter &mappar"
+//[MFindFileSymLinks]
+"Sök i symbolis&ka länkar"
+//[MFindFileAlternateStreams]
+"Sök i a&lternativa strömmar"
+//[MFindFileSearchArea]
+"Välj sök&område:"
+//[MFindFileSearchAllDisks]
+"I &alla fasta enheter"
+//[MFindFileSearchAllButNetwork]
+"I alla &lokala enheter"
+//[MFindFileSearchInPATH]
+"I &PATH-mappar"
+//[MFindFileSearchFromRootOfDrive]
+"Från &roten av"
+//[MFindFileSearchFromRootFolder]
+"Från &rotmappen"
+//[MFindFileSearchFromCurrent]
+"Från aktuell ma&pp"
+//[MFindFileSearchInCurrent]
+"Endast aktuell mapp (&y)"
+//[MFindFileSearchInSelected]
+"&Markerade mappar"
+//[MFindFileUseFilter]
+"&Använd filter"
+//[MFindFileUsingFilter]
+"med filter"
+//[MFindFileFind]
+"Sök"
+//[MFindFileDrive]
+"E&nhet"
+//[MFindFileSetFilter]
+"Filt&er"
+//[MFindFileAdvanced]
+"Avance&rat"
+//[MFindFileSearchingIn]
+"Söker {0} i"
+//[MFindFileNewSearch]
+"&Ny sökning"
+//[MFindFileGoTo]
+"&Gå till"
+//[MFindFileView]
+"&Visa"
+//[MFindFilePanel]
+"&Panel"
+//[MFindFileStop]
+"&Stoppa"
+//[MFindFileDone]
+"Sökningen klar. Hittade filer: {0}, mappar: {1}"
+//[MFindFileCancel]
+"A&vbryt"
+//[MFindFileFound]
+"Filer: {0}, mappar: {1}"
+//[MFindFileAdvancedTitle]
+"Avancerade sökalternativ"
+//[MFindFileSearchFirst]
+"Sök endast i de &första:"
+//[MFindFileSearchOutputFormat]
+"&Utdataformat:"
+//[MFindAlternateModeTypes]
+"Kolumn&typer"
+//[MFindAlternateModeWidths]
+"Kolumn&bredder"
+//[MFoldTreeSearch]
+"Sök:"
+//[MGetCodePageTitle]
+"Teckentabeller"
+//[MGetCodePageSystem]
+"System"
+//[MGetCodePageUnicode]
+"Unicode"
+//[MGetCodePageFavorites]
+"Favoriter"
+//[MGetCodePageOther]
+"Övriga"
+//[MGetCodePageEditCodePageName]
+"Byt namn på teckentabellen"
+//[MGetCodePageResetCodePageName]
+"&Återställ"
+//[MHighlightTitle]
+"Filmarkering"
+//[MHighlightUpperSortGroup]
+"Övre sorteringsgrupp"
+//[MHighlightLowerSortGroup]
+"Nedre sorteringsgrupp"
+//[MHighlightLastGroup]
+"Markeringsgrupp med lägst prioritet"
+//[MHighlightAskDel]
+"Vill du ta bort markeringen för"
+//[MHighlightWarning]
+"Du kommer att förlora alla ändringar"
+//[MHighlightAskRestore]
+"Vill du återställa standardmarkeringen?"
+//[MHighlightEditTitle]
+"Redigera filmarkering"
+//[MHighlightMark]
+"Märk&ning,"
+//[MHighlightInheritMark]
+"Ä&rv"
+//[MHighlightColors]
+"Färger för filnamn (\"svart på svart\" - standardfärg)"
+//[MHighlightFileName1]
+"&1. Normalt filnamn"
+//[MHighlightFileName2]
+"&3. Markerat filnamn"
+//[MHighlightFileName3]
+"&5. Filnamn under markören"
+//[MHighlightFileName4]
+"&7. Markerat filnamn under markören"
+//[MHighlightMarking1]
+"&2. Märkning"
+//[MHighlightMarking2]
+"&4. Märkning"
+//[MHighlightMarking3]
+"&6. Märkning"
+//[MHighlightMarking4]
+"&8. Märkning"
+//[MHighlightExample]
+"filnamn.ext"
+//[MHighlightContinueProcessing]
+"F&ortsätt bearbetningen"
+//[MInfoTitle]
+"Information"
+//[MInfoCompName]
+"Datornamn"
+//[MInfoCompDescription]
+"Datorbeskrivning"
+//[MInfoUserName]
+"Användarnamn"
+//[MInfoUserDescription]
+"Användarbeskrivning"
+//[MInfoUserAccessLevel]
+"Åtkomstnivå"
+//[MInfoUserAccessLevelGuest]
+"Gäst"
+//[MInfoUserAccessLevelUser]
+"Användare"
+//[MInfoUserAccessLevelAdministrator]
+"Administratör"
+//[MInfoUserAccessLevelUnknown]
+"Okänd"
+//[MInfoUserAccessElevated]
+"Förhöjd"
+//[MInfoUserAccessElevationTypeFull]
+"Full"
+//[MInfoUserAccessElevationTypeLimited]
+"Begränsad"
+//[MInfoDiskTitle]
+"Disk"
+//[MInfoRemovable]
+"Flyttbar"
+//[MInfoFixed]
+"Fast"
+//[MInfoNetwork]
+"Nätverk"
+//[MInfoCDROM]
+"CD-ROM"
+//[MInfoCDR]
+"CD-R"
+//[MInfoCDRW]
+"CD-RW"
+//[MInfoCDRWDVD]
+"CD-RW/DVD"
+//[MInfoDVDROM]
+"DVD-ROM"
+//[MInfoDVDR]
+"DVD-R"
+//[MInfoDVDRW]
+"DVD-RW"
+//[MInfoDVDRAM]
+"DVD-RAM"
+//[MInfoBDROM]
+"BD-ROM"
+//[MInfoBDR]
+"BD-R"
+//[MInfoBDRE]
+"BD-RE"
+//[MInfoHDDVDROM]
+"HDDVD-ROM"
+//[MInfoHDDVDR]
+"HDDVD-R"
+//[MInfoHDDVDRW]
+"HDDVD-RW"
+//[MInfoHDDVDRAM]
+"HDDVD-RAM"
+//[MInfoRAM]
+"RAM"
+//[MInfoSUBST]
+"Subst"
+//[MInfoVirtual]
+"Virtuell"
+//[MInfoUnknown]
+"Okänd"
+//[MInfoMetricTotal]
+"totalt"
+//[MInfoMetricAvailable]
+"tillgängligt"
+//[MInfoMetricUsed]
+"använt"
+//[MInfoDisk]
+"disk"
+//[MInfoDiskSpace]
+"Utrymme"
+//[MInfoDiskLabel]
+"Volymetikett"
+//[MInfoDiskNumber]
+"Serienummer"
+//[MInfoMemory]
+"Minne"
+//[MInfoMemoryCommittable]
+"Allokerbart"
+//[MInfoMemoryAddressable]
+"Adresserbart"
+//[MInfoMemoryPhysical]
+"Fysiskt"
+//[MInfoMetricMemoryInstalled]
+"installerat"
+//[MInfoDescription]
+"Beskrivning"
+//[MInfoDizAbsent]
+"Mappbeskrivningsfil saknas"
+//[MInfoPlugin]
+"Plugin"
+//[MInfoPowerStatus]
+"Strömstatus"
+//[MInfoPowerStatusAC]
+"Nätström"
+//[MInfoPowerStatusACOffline]
+"Frånkopplad"
+//[MInfoPowerStatusACOnline]
+"Ansluten"
+//[MInfoPowerStatusACBackUp]
+"Reservström"
+//[MInfoPowerStatusACUnknown]
+"Okänd"
+//[MInfoPowerStatusBCLifePercentUnknown]
+"okänd"
+//[MInfoPowerStatusBC]
+"Batteriets laddningsstatus"
+//[MInfoPowerStatusBCHigh]
+"Hög"
+//[MInfoPowerStatusBCMedium]
+"Medel"
+//[MInfoPowerStatusBCLow]
+"Låg"
+//[MInfoPowerStatusBCCritical]
+"Kritisk"
+//[MInfoPowerStatusBCCharging]
+"laddar"
+//[MInfoPowerStatusBCNoSysBat]
+"Inget systembatteri"
+//[MInfoPowerStatusBCUnknown]
+"Okänd"
+//[MInfoPowerStatusBCTimeRem]
+"Återstående batteritid"
+//[MInfoPowerStatusBCFullTimeRem]
+"Full batteritid"
+//[MInfoPowerStatusUnknown]
+"Okänd"
+//[MAccessDenied]
+"Åtkomst nekad"
+//[MCannotExecute]
+"Kan inte köra"
+//[MCannotInvokeComspec]
+"Kan inte starta kommandotolken"
+//[MCheckComspecVar]
+"Kontrollera miljövariabeln COMSPEC"
+//[MScanningFolder]
+"Genomsöker mappen"
+//[MMakeFolderTitle]
+"Skapa mapp"
+//[MCreateFolder]
+"Skapa &mappen:"
+//[MMakeFolderLinkType]
+"&Länktyp:"
+//[MMakeFolderLinkNone]
+"&ingen"
+//[MMakeFolderLinkJunction]
+"katalog&koppling"
+//[MMakeFolderLinkSymlink]
+"symbolisk &länk"
+//[MMakeFolderLinkTarget]
+"&Mål:"
+//[MMultiMakeDir]
+"Behandla &flera namn"
+//[MIncorrectDirList]
+"Felaktig mapplista"
+//[MCannotCreateFolder]
+"Kan inte skapa mappen"
+//[MMenuBriefView]
+"&Kort"
+//[MMenuMediumView]
+"&Medel"
+//[MMenuFullView]
+"&Full"
+//[MMenuWideView]
+"&Bred"
+//[MMenuDetailedView]
+"&Detaljerad"
+//[MMenuDizView]
+"B&eskrivningar"
+//[MMenuLongDizView]
+"Lån&ga beskrivningar"
+//[MMenuOwnersView]
+"Fil&ägare"
+//[MMenuLinksView]
+"Fill&änkar"
+//[MMenuAlternativeView]
+"&Alternativ full"
+//[MMenuInfoPanel]
+"&Infopanel"
+//[MMenuTreePanel]
+"&Trädpanel"
+//[MMenuQuickView]
+"Snabb&visning"
+//[MMenuSortModes]
+"&Sorteringslägen"
+//[MMenuLongNames]
+"Visa långa &namn"
+//[MMenuTogglePanel]
+"Panel &på/av"
+//[MMenuReread]
+"Läs &om"
+//[MMenuChangeDrive]
+"&Byt enhet"
+//[MMenuView]
+"&Visa"
+//[MMenuEdit]
+"&Redigera"
+//[MMenuCopy]
+"&Kopiera"
+//[MMenuMove]
+"&Byt namn eller flytta"
+//[MMenuLink]
+"&Länk"
+//[MMenuCreateFolder]
+"Skapa &mapp"
+//[MMenuDelete]
+"&Ta bort"
+//[MMenuWipe]
+"&Radera"
+//[MMenuAdd]
+"Lägg till i &arkiv"
+//[MMenuExtract]
+"&Extrahera filer"
+//[MMenuArchiveCommands]
+"Ar&kivkommandon"
+//[MMenuAttributes]
+"Fil&attribut"
+//[MMenuApplyCommand]
+"&Tillämpa kommando"
+//[MMenuDescribe]
+"Besk&riv filer"
+//[MMenuSelectGroup]
+"Markera &grupp"
+//[MMenuUnselectGroup]
+"Avmarkera gr&upp"
+//[MMenuInvertSelection]
+"&Invertera markering"
+//[MMenuRestoreSelection]
+"Återställ mark&ering"
+//[MMenuFindFile]
+"&Sök fil"
+//[MMenuHistory]
+"&Historik"
+//[MMenuVideoMode]
+"&Videoläge"
+//[MMenuFindFolder]
+"Sök &mapp"
+//[MMenuViewHistory]
+"Visnings&historik"
+//[MMenuFoldersHistory]
+"Mapphist&orik"
+//[MMenuSwapPanels]
+"&Byt plats på paneler"
+//[MMenuTogglePanels]
+"&Paneler på/av"
+//[MMenuCompareFolders]
+"&Jämför mappar"
+//[MMenuUserMenu]
+"Redigera användar&meny"
+//[MMenuFileAssociations]
+"Fil&associationer"
+//[MMenuFolderShortcuts]
+"Mapp&genvägar"
+//[MMenuFilter]
+"Filpanelens f&ilter"
+//[MMenuPluginCommands]
+"Pl&uginkommandon"
+//[MMenuWindowsList]
+"Skär&mlista"
+//[MMenuProcessList]
+"Uppgifts&lista"
+//[MMenuHotPlugList]
+"Lista över ut&tagbara enheter"
+//[MMenuSystemSettings]
+"S&ysteminställningar"
+//[MMenuPanelSettings]
+"&Panelinställningar"
+//[MMenuTreeSettings]
+"&Trädinställningar"
+//[MMenuInterface]
+"&Gränssnittsinställningar"
+//[MMenuLanguages]
+"&Språk"
+//[MMenuPluginsConfig]
+"Pl&ugininställningar"
+//[MMenuPluginsManagerSettings]
+"Inställningar för plugin&hanteraren"
+//[MMenuDialogSettings]
+"&Dialoginställningar"
+//[MMenuVMenuSettings]
+"Menyinställningar"
+//[MMenuCmdlineSettings]
+"&Kommandoradsinställningar"
+//[MMenuAutoCompleteSettings]
+"Inställningar för auto&komplettering"
+//[MMenuInfoPanelSettings]
+"Inställningar för inf&opanelen"
+//[MMenuMaskGroups]
+"Grupper av filmas&ker"
+//[MMenuConfirmation]
+"Be&kräftelser"
+//[MMenuFilePanelModes]
+"Filpanel&lägen"
+//[MMenuFileDescriptions]
+"Fil&beskrivningar"
+//[MMenuFolderInfoFiles]
+"&Mappbeskrivningsfiler"
+//[MMenuViewer]
+"&Visarinställningar"
+//[MMenuEditor]
+"&Redigerarinställningar"
+//[MMenuCodePages]
+"Teckentabeller"
+//[MMenuColors]
+"&Färger"
+//[MMenuFilesHighlighting]
+"Fil&markering och sorteringsgrupper"
+//[MMenuSaveSetup]
+"&Spara inställningar"
+//[MMenuTogglePanelRight]
+"Panel &på/av"
+//[MMenuChangeDriveRight]
+"&Byt enhet"
+//[MMenuLeftTitle]
+"&Vänster"
+//[MMenuFilesTitle]
+"&Filer"
+//[MMenuCommandsTitle]
+"&Kommandon"
+//[MMenuOptionsTitle]
+"&Alternativ"
+//[MMenuRightTitle]
+"&Höger"
+//[MMenuSortTitle]
+"Sortera efter"
+//[MMenuSortByName]
+"&Namn"
+//[MMenuSortByExt]
+"&Filändelse"
+//[MMenuSortByWrite]
+"&Skrivtid"
+//[MMenuSortBySize]
+"Stor&lek"
+//[MMenuUnsorted]
+"&Osorterat"
+//[MMenuSortByCreation]
+"S&kapandetid"
+//[MMenuSortByAccess]
+"&Åtkomsttid"
+//[MMenuSortByChange]
+"Ä&ndringstid"
+//[MMenuSortByDiz]
+"&Beskrivningar"
+//[MMenuSortByOwner]
+"Ä&gare"
+//[MMenuSortByAllocatedSize]
+"Allokerad storlek"
+//[MMenuSortByNumLinks]
+"Antal &hårda länkar"
+//[MMenuSortByNumStreams]
+"Antal st&römmar"
+//[MMenuSortByStreamsSize]
+"Strömmarnas stor&lek"
+//[MMenuSortByNameOnly]
+"Endast namn"
+//[MMenuSortUseGroups]
+"Använd sorteringsgrupper"
+//[MMenuSortSelectedFirst]
+"Visa markerade &först"
+//[MMenuSortDirectoriesFirst]
+"Visa kataloger förs&t"
+//[MMaskGroupTitle]
+"Grupper av filmasker"
+//[MMaskGroupName]
+"&Namn:"
+//[MMaskGroupMasks]
+"En fil&mask eller flera filmasker:"
+//[MMaskGroupAskDelete]
+"Vill du ta bort"
+//[MMaskGroupRestore]
+"Vill du återställa standarduppsättningarna av masker?"
+//[MMaskGroupFindMask]
+"&Mask:"
+//[MMaskGroupTotal]
+"Totalt: {0}"
+//[MChangeDriveTitle]
+"Byt enhet"
+//[MChangeDriveRemovable]
+"flyttbar"
+//[MChangeDriveFixed]
+"fast"
+//[MChangeDriveNetwork]
+"nätverk"
+//[MChangeDriveDisconnectedNetwork]
+"frånkopplad"
+//[MChangeDriveCDROM]
+"CD-ROM"
+//[MChangeDriveCDR]
+"CD-R"
+//[MChangeDriveCDRW]
+"CD-RW"
+//[MChangeDriveCDRWDVD]
+"CD-RW/DVD"
+//[MChangeDriveDVDROM]
+"DVD-ROM"
+//[MChangeDriveDVDR]
+"DVD-R"
+//[MChangeDriveDVDRW]
+"DVD-RW"
+//[MChangeDriveDVDRAM]
+"DVD-RAM"
+//[MChangeDriveBDROM]
+"BD-ROM"
+//[MChangeDriveBDR]
+"BD-R"
+//[MChangeDriveBDRE]
+"BD-RE"
+//[MChangeDriveHDDVDROM]
+"HDDVD-ROM"
+//[MChangeDriveHDDVDR]
+"HDDVD-R"
+//[MChangeDriveHDDVDRW]
+"HDDVD-RW"
+//[MChangeDriveHDDVDRAM]
+"HDDVD-RAM"
+//[MChangeDriveRAM]
+"RAM-disk"
+//[MChangeDriveSUBST]
+"subst"
+//[MChangeDriveVirtual]
+"virtuell"
+//[MChangeDriveLabelAbsent]
+"inte tillgänglig"
+//[MChangeDriveCannotReadDisk]
+"Kan inte läsa disken i enheten"
+//[MChangeDriveCannotDisconnect]
+"Kan inte koppla från"
+//[MChangeDriveCannotDelSubst]
+"Kan inte ta bort en ersättningsdisk"
+//[MChangeDriveCannotDetach]
+"Kan inte koppla från en virtuell disk"
+//[MChangeSUBSTDisconnectDriveTitle]
+"Borttagning av ersättningsdisk"
+//[MChangeSUBSTDisconnectDriveQuestion]
+"Ta bort SUBST-disken {0}?"
+//[MChangeVHDDisconnectDriveTitle]
+"Frånkoppling av virtuell disk"
+//[MChangeVHDDisconnectDriveQuestion]
+"Koppla från den virtuella disken {0}?"
+//[MChangeHotPlugDisconnectDriveTitle]
+"Borttagning av enhet"
+//[MChangeHotPlugDisconnectDriveQuestion]
+"Vill du ta bort enheten"
+//[MHotPlugDisks]
+"(disk(ar): {0})"
+//[MChangeCouldNotEjectHotPlugMedia]
+"Kan inte ta bort enheten för"
+//[MChangeCouldNotEjectHotPlugMedia2]
+"Kan inte ta bort enheten:"
+//[MChangeHotPlugNotify1]
+"Enheten"
+//[MChangeHotPlugNotify2]
+"kan nu tas bort på ett säkert sätt"
+//[MHotPlugListTitle]
+"Lista över uttagbara enheter"
+//[MChangeDriveDisconnectTitle]
+"Koppla från nätverksenhet"
+//[MChangeDriveDisconnectQuestion]
+"Koppla från enheten {0}?"
+//[MChangeDriveDisconnectMapped]
+"Enheten är mappad till:"
+//[MChangeDriveDisconnectReconnect]
+"Åte&ranslut vid inloggning"
+//[MChangeWaitingLoadDisk]
+"Väntar på att disken ska monteras…"
+//[MChangeCouldNotEjectMedia]
+"Kunde inte mata ut mediet från enheten"
+//[MChangeDriveConfigure]
+"Alternativ för menyn Byt enhet"
+//[MChangeDriveShowDiskType]
+"Visa disk&typ"
+//[MChangeDriveShowPath]
+"Visa &nätverksnamn / SUBST-sökväg / VHD-namn"
+//[MChangeDriveShowLabel]
+"Visa disk&etikett"
+//[MChangeDriveShowLabelUseShell]
+"Använd skal&namn"
+//[MChangeDriveShowFileSystem]
+"Visa &filsystemstyp"
+//[MChangeDriveShowSize]
+"Visa &storlek"
+//[MChangeDriveShowSizeFloat]
+"Visa stor&lek som decimaltal"
+//[MChangeDriveShowRemovableDrive]
+"Visa parametrar för &flyttbara enheter"
+//[MChangeDriveShowPlugins]
+"Visa &plugins"
+//[MChangeDriveSortPluginsByHotkey]
+"Sortera plugins efter &snabbtangent"
+//[MChangeDriveShowCD]
+"Visa parametrar för &CD-enheter"
+//[MChangeDriveShowNetworkDrive]
+"Visa parametrar för nät&verksenheter"
+//[MChangeDriveShowVirtualDisk]
+"Identifiera virtuella diskar"
+//[MChangeDriveVolumeLabel]
+"Volymetikett"
+//[MSearchFileTitle]
+"Sök"
+//[MCannotCreateListTemp]
+"Kan inte skapa en temporär fil för fillistan"
+//[MDragFiles]
+"{0} filer"
+//[MDragMove]
+"Flytta {0}"
+//[MDragCopy]
+"Kopiera {0}"
+//[MProcessListTitle]
+"Uppgiftslista"
+//[MKillProcessTitle]
+"Avsluta uppgift"
+//[MAskKillProcess]
+"Vill du avsluta den markerade uppgiften?"
+//[MKillProcessWarning]
+"Du förlorar all osparad information i detta program"
+//[MKillProcessKill]
+"Avsluta"
+//[MCannotKillProcess]
+"Kan inte avsluta den angivna uppgiften"
+//[MCannotKillProcessPerm]
+"Du har inte behörighet att avsluta den här processen."
+//[MQuickViewTitle]
+"Snabbvisning"
+//[MQuickViewReparsePoint]
+"&Återanalyspunkt"
+//[MQuickViewUnknownReparsePoint]
+"Okänd återanalyspunkt"
+//[MQuickViewFolders]
+"Mappar:"
+//[MQuickViewFiles]
+"Filer:"
+//[MQuickViewBytes]
+"Filstorlek:"
+//[MQuickViewAllocated]
+"Allokerad storlek:"
+//[MQuickViewCluster]
+"Klusterstorlek:"
+//[MQuickViewSlack]
+"Outnyttjat utrymme:"
+//[MQuickViewMFTOverhead]
+"MFT-overhead:"
+//[MSetAttrTitle]
+"Attribut"
+//[MSetAttrFor]
+"Ändra filattribut för"
+//[MSetAttrSelectedObjects]
+"markerade objekt"
+//[MSetAttrHardLinks]
+"hårda länkar"
+//[MSetAttrJunction]
+"&Koppling:"
+//[MSetAttrSymlink]
+"S&ymlänk{}:"
+//[MSetAttrVolMount]
+"&Volym:"
+//[MSetAttrDfsTargets]
+"DFS-mål:"
+//[MSetAttrAppExecLink]
+"Appalias:"
+//[MSetAttrUnknownReparsePoint]
+"Okänd återanalyspunkt"
+//[MSetAttrDiskDevice]
+"Enhet:"
+//[MSetAttrReadOnly]
+"&Skrivskyddad"
+//[MSetAttrArchive]
+"&Arkiv"
+//[MSetAttrHidden]
+"&Dold"
+//[MSetAttrSystem]
+"S&ystem"
+//[MSetAttrCompressed]
+"&Komprimerad"
+//[MSetAttrEncrypted]
+"&Krypterad"
+//[MSetAttrNotIndexed]
+"Inte &indexerad"
+//[MSetAttrSparse]
+"&Gles"
+//[MSetAttrTemporary]
+"&Temporär"
+//[MSetAttrOffline]
+"&Offline"
+//[MSetAttrReparsePoint]
+"&Återanalyspunkt"
+//[MSetAttrVirtual]
+"&Virtuell"
+//[MSetAttrIntegrityStream]
+"&Integritetsström"
+//[MSetAttrNoScrubData]
+"&Ingen datarensning"
+//[MSetAttrPinned]
+"&Fäst"
+//[MSetAttrUnpinned]
+"&Lossad"
+//[MSetAttrRecallOnOpen]
+"Återkalla vid ö&ppning"
+//[MSetAttrRecallOnDataAccess]
+"Återkalla vid data&åtkomst"
+//[MSetAttrStrictlySequential]
+"Strikt se&kventiell"
+//[MSetAttrDevice]
+"Enhet"
+//[MSetAttrMore]
+"&Mer"
+//[MSetAttrSubfolders]
+"Behandla under&mappar"
+//[MSetAttrOwner]
+"Ägare&:"
+//[MSetAttrDate]
+"Datum/tid:"
+//[MSetAttrWrite]
+"&skriven:"
+//[MSetAttrCreation]
+"ska&pad:"
+//[MSetAttrAccess]
+"&åtkomst:"
+//[MSetAttrChange]
+"än&drad:"
+//[MSetAttrOriginal]
+"&Ursprunglig"
+//[MSetAttrCurrent]
+"Aktu&ell"
+//[MSetAttrBlank]
+"&Tom"
+//[MSetAttrSet]
+"Ange"
+//[MSetAttrDateTitleMDY]
+"MM{0}DD{0}ÅÅÅÅÅ"
+//[MSetAttrDateTitleDMY]
+"DD{0}MM{0}ÅÅÅÅÅ"
+//[MSetAttrDateTitleYMD]
+"ÅÅÅÅÅ{0}MM{0}DD"
+//[MSetAttrTimeTitle]
+"tt{0}mm{0}ss"
+//[MSetAttrSystemDialog]
+"System&egenskaper"
+//[MSetAttrSetting]
+"Anger filattribut för"
+//[MSetAttrCannotFor]
+"Kan inte ange attribut för"
+//[MSetAttrCompressedCannotFor]
+"Kan inte ange attributet KOMPRIMERAD för"
+//[MSetAttrEncryptedCannotFor]
+"Kan inte ange attributet KRYPTERAD för"
+//[MSetAttrSparseCannotFor]
+"Kan inte ange attributet GLES för"
+//[MSetAttrTimeCannotFor]
+"Kan inte ange filtid för"
+//[MSetAttrOwnerCannotFor]
+"Kan inte ange ägare för"
+//[MSetAttrReparsePointCannotFor]
+"Kan inte ta bort återanalyspunkt för"
+//[MSetColorPanel]
+"&Panel"
+//[MSetColorDialog]
+"&Dialog"
+//[MSetColorWarning]
+"&Varningsmeddelande"
+//[MSetColorMenu]
+"&Meny"
+//[MSetColorHMenu]
+"Hori&sontell meny"
+//[MSetColorKeyBar]
+"&Tangentrad"
+//[MSetColorCommandLine]
+"&Kommandorad"
+//[MSetColorClock]
+"K&locka"
+//[MSetColorViewer]
+"V&isare"
+//[MSetColorEditor]
+"&Redigerare"
+//[MSetColorHelp]
+"&Hjälp"
+//[MColorThemes]
+"Teman"
+//[MDefaultTheme]
+"Standard"
+//[MDefaultThemeRGB]
+"Standard (RGB)"
+//[MSetColorPanelNormal]
+"Normal text"
+//[MSetColorPanelSelected]
+"Markerad text"
+//[MSetColorPanelHighlightedText]
+"Framhävd text"
+//[MSetColorPanelHighlightedInfo]
+"Framhävd info"
+//[MSetColorPanelDragging]
+"Dragen text"
+//[MSetColorPanelBox]
+"Ram"
+//[MSetColorPanelNormalCursor]
+"Normal markör"
+//[MSetColorPanelSelectedCursor]
+"Markerad markör"
+//[MSetColorPanelNormalTitle]
+"Normal titel"
+//[MSetColorPanelSelectedTitle]
+"Markerad titel"
+//[MSetColorPanelColumnTitle]
+"Kolumnrubrik"
+//[MSetColorPanelTotalInfo]
+"Totalinfo"
+//[MSetColorPanelSelectedInfo]
+"Markeringsinfo"
+//[MSetColorPanelScrollbar]
+"Rullningslist"
+//[MSetColorPanelScreensNumber]
+"Antal bakgrundsskärmar"
+//[MSetColorDialogNormal]
+"Normal text"
+//[MSetColorDialogHighlighted]
+"Framhävd text"
+//[MSetColorDialogDisabled]
+"Inaktiverad text"
+//[MSetColorDialogBox]
+"Ram"
+//[MSetColorDialogBoxTitle]
+"Titel"
+//[MSetColorDialogHighlightedBoxTitle]
+"Framhävd titel"
+//[MSetColorDialogTextInput]
+"Textinmatning"
+//[MSetColorDialogUnchangedTextInput]
+"Oförändrad textinmatning"
+//[MSetColorDialogSelectedTextInput]
+"Markerad textinmatning"
+//[MSetColorDialogEditDisabled]
+"Inaktiverad inmatningsrad"
+//[MSetColorDialogButtons]
+"Knappar"
+//[MSetColorDialogSelectedButtons]
+"Markerade knappar"
+//[MSetColorDialogHighlightedButtons]
+"Framhävda knappar"
+//[MSetColorDialogSelectedHighlightedButtons]
+"Markerade framhävda knappar"
+//[MSetColorDialogDefaultButton]
+"Standardknapp"
+//[MSetColorDialogSelectedDefaultButton]
+"Markerad standardknapp"
+//[MSetColorDialogHighlightedDefaultButton]
+"Framhävd standardknapp"
+//[MSetColorDialogSelectedHighlightedDefaultButton]
+"Markerad framhävd standardknapp"
+//[MSetColorDialogListBoxControl]
+"Listruta"
+//[MSetColorDialogComboBoxControl]
+"Kombinationsruta"
+//[MSetColorDialogListText]
+"Normal text"
+//[MSetColorDialogListSelectedText]
+"Markerad text"
+//[MSetColorDialogListHighLight]
+"Framhävd text"
+//[MSetColorDialogListSelectedHighLight]
+"Markerad framhävd text"
+//[MSetColorDialogListDisabled]
+"Inaktiverat objekt"
+//[MSetColorDialogListBox]
+"Ram"
+//[MSetColorDialogListTitle]
+"Titel"
+//[MSetColorDialogListGrayed]
+"Nedtonad listtext"
+//[MSetColorDialogSelectedListGrayed]
+"Markerad nedtonad listtext"
+//[MSetColorDialogListScrollBar]
+"Rullningslist"
+//[MSetColorDialogListArrows]
+"Indikatorer för lång sträng"
+//[MSetColorDialogListArrowsSelected]
+"Markerade indikatorer för lång sträng"
+//[MSetColorDialogListArrowsDisabled]
+"Inaktiverade indikatorer för lång sträng"
+//[MSetColorMenuNormal]
+"Normal text"
+//[MSetColorMenuSelected]
+"Markerad text"
+//[MSetColorMenuHighlighted]
+"Framhävd text"
+//[MSetColorMenuSelectedHighlighted]
+"Markerad framhävd text"
+//[MSetColorMenuDisabled]
+"Inaktiverad text"
+//[MSetColorMenuGrayed]
+"Nedtonad text"
+//[MSetColorMenuSelectedGrayed]
+"Markerad nedtonad text"
+//[MSetColorMenuBox]
+"Ram"
+//[MSetColorMenuTitle]
+"Titel"
+//[MSetColorMenuScrollBar]
+"Rullningslist"
+//[MSetColorMenuArrows]
+"Indikatorer för lång sträng"
+//[MSetColorMenuArrowsSelected]
+"Markerade indikatorer för lång sträng"
+//[MSetColorMenuArrowsDisabled]
+"Inaktiverade indikatorer för lång sträng"
+//[MSetColorHMenuNormal]
+"Normal text"
+//[MSetColorHMenuSelected]
+"Markerad text"
+//[MSetColorHMenuHighlighted]
+"Framhävd text"
+//[MSetColorHMenuSelectedHighlighted]
+"Markerad framhävd text"
+//[MSetColorKeyBarNumbers]
+"Tangentnummer"
+//[MSetColorKeyBarNames]
+"Tangentnamn"
+//[MSetColorKeyBarBackground]
+"Bakgrund"
+//[MSetColorCommandLineNormal]
+"Normal text"
+//[MSetColorCommandLineSelected]
+"Markerad textinmatning"
+//[MSetColorCommandLinePrefix]
+"Prefixtext"
+//[MSetColorCommandLineUserScreen]
+"Användarskärm"
+//[MSetColorClockNormal]
+"Normal text (panel)"
+//[MSetColorClockNormalEditor]
+"Normal text (redigerare)"
+//[MSetColorClockNormalViewer]
+"Normal text (visare)"
+//[MSetColorViewerNormal]
+"Normal text"
+//[MSetColorViewerSelected]
+"Markerad text"
+//[MSetColorViewerStatus]
+"Statusrad"
+//[MSetColorViewerArrows]
+"Pilar för skärmrullning"
+//[MSetColorViewerScrollbar]
+"Rullningslist"
+//[MSetColorEditorNormal]
+"Normal text"
+//[MSetColorEditorSelected]
+"Markerad text"
+//[MSetColorEditorStatus]
+"Statusrad"
+//[MSetColorEditorScrollbar]
+"Rullningslist"
+//[MSetColorEditorLineNumbers]
+"Radnummer"
+//[MSetColorHelpNormal]
+"Normal text"
+//[MSetColorHelpHighlighted]
+"Framhävd text"
+//[MSetColorHelpReference]
+"Referens"
+//[MSetColorHelpSelectedReference]
+"Markerad referens"
+//[MSetColorHelpBox]
+"Ram"
+//[MSetColorHelpBoxTitle]
+"Titel"
+//[MSetColorHelpScrollbar]
+"Rullningslist"
+//[MSetColorGroupsTitle]
+"Färggrupper"
+//[MSetColorItemsTitle]
+"Gruppobjekt"
+//[MSetColorTitle]
+"Färg"
+//[MSetColorForeground]
+"&Förgrund:"
+//[MSetColorBackground]
+"&Bakgrund:"
+//[MSetColorForegroundDefault]
+"Standard"
+//[MSetColorBackgroundDefault]
+"Standard"
+//[MSetColorForeIndex]
+"AA    ##"
+//[MSetColorForeAARRGGBB]
+"AARRGGBB"
+//[MSetColorForeDefault]
+"AA"
+//[MSetColorFore256]
+"&256…"
+//[MSetColorForeRGB]
+"&RGB…"
+//[MSetColorBackIndex]
+"AA    ##"
+//[MSetColorBackAARRGGBB]
+"AARRGGBB"
+//[MSetColorBackDefault]
+"AA"
+//[MSetColorBack256]
+"2&56…"
+//[MSetColorBackRGB]
+"R&GB…"
+//[MSetColorStyle]
+"Stil:"
+//[MSetColorStyleInherit]
+"&Ärv"
+//[MSetColorStyleBold]
+"&Fet"
+//[MSetColorStyleItalic]
+"&Kursiv"
+//[MSetColorStyleOverline]
+"Ö&verstruken"
+//[MSetColorStyleStrikeout]
+"&Genomstruken"
+//[MSetColorStyleFaint]
+"&Svag"
+//[MSetColorStyleBlink]
+"B&linkande"
+//[MSetColorStyleInverse]
+"Inverterad"
+//[MSetColorStyleInvisible]
+"Osynlig"
+//[MSetColorStyleUnderline]
+"&Understruken:"
+//[MSetColorStyleUnderlineNone]
+"Nej"
+//[MSetColorStyleUnderlineSingle]
+"Enkel"
+//[MSetColorStyleUnderlineDouble]
+"Dubbel"
+//[MSetColorStyleUnderlineCurly]
+"Vågig"
+//[MSetColorStyleUnderlineDotted]
+"Prickad"
+//[MSetColorStyleUnderlineDashed]
+"Streckad"
+//[MSetColorSample]
+"Text Text Text Text Text Text Text"
+//[MSetColorVTHintInfo]
+"Utökade färger och stilar kräver VT-rendering."
+//[MSetColorVTHintSupported]
+"Tryck på \"Aktivera VT\" nedan för att slå på den."
+//[MSetColorVTHintNotSupported]
+"Ditt system stöder det inte."
+//[MSetColorSystemDialog]
+"System"
+//[MSetColorSet]
+"Ange"
+//[MSetColorEnableVT]
+"Aktivera VT"
+//[MSetColorCancel]
+"Avbryt"
+//[MColorsPalette]
+"Palett"
+//[MColorsClassicPalette]
+"Klassisk palett"
+//[MSetConfirmTitle]
+"Bekräftelser"
+//[MSetConfirmCopy]
+"&Kopiera"
+//[MSetConfirmMove]
+"&Flytta"
+//[MSetConfirmRO]
+"&Skriv över och ta bort skrivskyddade filer"
+//[MSetConfirmDrag]
+"&Dra och släpp"
+//[MSetConfirmDelete]
+"&Ta bort"
+//[MSetConfirmDeleteFolders]
+"Ta bort icke-tomma &mappar"
+//[MSetConfirmEsc]
+"&Avbryt åtgärd"
+//[MSetConfirmRemoveConnection]
+"Koppla från &nätverksenhet"
+//[MSetConfirmRemoveSUBST]
+"Ta bort S&UBST-disk"
+//[MSetConfirmDetachVHD]
+"Koppla från &virtuell disk"
+//[MSetConfirmRemoveHotPlug]
+"Borttagning av ut&tagbar enhet"
+//[MSetConfirmAllowReedit]
+"&Läs om redigerad fil"
+//[MSetConfirmHistoryClear]
+"Rensa &historiklistan"
+//[MSetConfirmExit]
+"Av&sluta"
+//[MPluginsManagerSettingsTitle]
+"Inställningar för pluginhanteraren"
+//[MPluginsManagerOEMPluginsSupport]
+"Stöd för &OEM-plugins"
+//[MPluginsManagerScanSymlinks]
+"Genomsök s&ymboliska länkar"
+//[MPluginsManagerOFP]
+"&Filbearbetning"
+//[MPluginsManagerStdAssoc]
+"Visa standard&associationsobjekt"
+//[MPluginsManagerEvenOne]
+"&Även om bara en plugin hittas"
+//[MPluginsManagerSFL]
+"Sök&resultat (SetFindList)"
+//[MPluginsManagerPF]
+"&Prefixbearbetning"
+//[MPluginConfirmationTitle]
+"Val av plugin"
+//[MMenuPluginStdAssociation]
+"Standardassociation"
+//[MFindFolderTitle]
+"Sök mapp"
+//[MFolderTreeF1]
+"Hjälp"
+//[MFolderTreeF2]
+"Läs om"
+//[MFolderTreeF3]
+""
+//[MFolderTreeF4]
+""
+//[MFolderTreeF5]
+"Zoom"
+//[MFolderTreeF6]
+""
+//[MFolderTreeF7]
+""
+//[MFolderTreeF8]
+""
+//[MFolderTreeF9]
+""
+//[MFolderTreeF10]
+"Avslut"
+//[MFolderTreeF11]
+""
+//[MFolderTreeF12]
+""
+//[MFolderTreeShiftF1]
+""
+//[MFolderTreeShiftF2]
+""
+//[MFolderTreeShiftF3]
+""
+//[MFolderTreeShiftF4]
+""
+//[MFolderTreeShiftF5]
+""
+//[MFolderTreeShiftF6]
+""
+//[MFolderTreeShiftF7]
+""
+//[MFolderTreeShiftF8]
+""
+//[MFolderTreeShiftF9]
+""
+//[MFolderTreeShiftF10]
+""
+//[MFolderTreeShiftF11]
+""
+//[MFolderTreeShiftF12]
+""
+//[MFolderTreeAltF1]
+""
+//[MFolderTreeAltF2]
+""
+//[MFolderTreeAltF3]
+""
+//[MFolderTreeAltF4]
+""
+//[MFolderTreeAltF5]
+""
+//[MFolderTreeAltF6]
+""
+//[MFolderTreeAltF7]
+""
+//[MFolderTreeAltF8]
+""
+//[MFolderTreeAltF9]
+"Video"
+//[MFolderTreeAltF10]
+""
+//[MFolderTreeAltF11]
+""
+//[MFolderTreeAltF12]
+""
+//[MFolderTreeCtrlF1]
+""
+//[MFolderTreeCtrlF2]
+""
+//[MFolderTreeCtrlF3]
+""
+//[MFolderTreeCtrlF4]
+""
+//[MFolderTreeCtrlF5]
+""
+//[MFolderTreeCtrlF6]
+""
+//[MFolderTreeCtrlF7]
+""
+//[MFolderTreeCtrlF8]
+""
+//[MFolderTreeCtrlF9]
+""
+//[MFolderTreeCtrlF10]
+""
+//[MFolderTreeCtrlF11]
+""
+//[MFolderTreeCtrlF12]
+""
+//[MFolderTreeCtrlShiftF1]
+""
+//[MFolderTreeCtrlShiftF2]
+""
+//[MFolderTreeCtrlShiftF3]
+""
+//[MFolderTreeCtrlShiftF4]
+""
+//[MFolderTreeCtrlShiftF5]
+""
+//[MFolderTreeCtrlShiftF6]
+""
+//[MFolderTreeCtrlShiftF7]
+""
+//[MFolderTreeCtrlShiftF8]
+""
+//[MFolderTreeCtrlShiftF9]
+""
+//[MFolderTreeCtrlShiftF10]
+""
+//[MFolderTreeCtrlShiftF11]
+""
+//[MFolderTreeCtrlShiftF12]
+""
+//[MFolderTreeCtrlAltF1]
+""
+//[MFolderTreeCtrlAltF2]
+""
+//[MFolderTreeCtrlAltF3]
+""
+//[MFolderTreeCtrlAltF4]
+""
+//[MFolderTreeCtrlAltF5]
+""
+//[MFolderTreeCtrlAltF6]
+""
+//[MFolderTreeCtrlAltF7]
+""
+//[MFolderTreeCtrlAltF8]
+""
+//[MFolderTreeCtrlAltF9]
+""
+//[MFolderTreeCtrlAltF10]
+""
+//[MFolderTreeCtrlAltF11]
+""
+//[MFolderTreeCtrlAltF12]
+""
+//[MFolderTreeAltShiftF1]
+""
+//[MFolderTreeAltShiftF2]
+""
+//[MFolderTreeAltShiftF3]
+""
+//[MFolderTreeAltShiftF4]
+""
+//[MFolderTreeAltShiftF5]
+""
+//[MFolderTreeAltShiftF6]
+""
+//[MFolderTreeAltShiftF7]
+""
+//[MFolderTreeAltShiftF8]
+""
+//[MFolderTreeAltShiftF9]
+""
+//[MFolderTreeAltShiftF10]
+""
+//[MFolderTreeAltShiftF11]
+""
+//[MFolderTreeAltShiftF12]
+""
+//[MFolderTreeCtrlAltShiftF1]
+""
+//[MFolderTreeCtrlAltShiftF2]
+""
+//[MFolderTreeCtrlAltShiftF3]
+""
+//[MFolderTreeCtrlAltShiftF4]
+""
+//[MFolderTreeCtrlAltShiftF5]
+""
+//[MFolderTreeCtrlAltShiftF6]
+""
+//[MFolderTreeCtrlAltShiftF7]
+""
+//[MFolderTreeCtrlAltShiftF8]
+""
+//[MFolderTreeCtrlAltShiftF9]
+""
+//[MFolderTreeCtrlAltShiftF10]
+""
+//[MFolderTreeCtrlAltShiftF11]
+""
+//[MFolderTreeCtrlAltShiftF12]
+""
+//[MTreeTitle]
+"Träd"
+//[MCannotSaveTree]
+"Kan inte spara mappträdet till fil"
+//[MReadingTree]
+"Läser mappträdet"
+//[MUserMenuTitle]
+"Användarmeny"
+//[MChooseMenuType]
+"Välj vilken typ av användarmeny som ska redigeras"
+//[MChooseMenuMain]
+"&Huvud"
+//[MChooseMenuLocal]
+"&Lokal"
+//[MMainMenuTitle]
+"Huvudmeny"
+//[MMainMenuUser]
+"Användare"
+//[MMainMenuGlobal]
+"Global"
+//[MLocalMenuTitle]
+"Lokal meny"
+//[MAskDeleteMenuItem]
+"Vill du ta bort menyobjektet"
+//[MAskDeleteSubMenuItem]
+"Vill du ta bort undermenyn"
+//[MUserMenuInvalidInputLabel]
+"Ogiltigt format för användarmenyns etikett"
+//[MUserMenuInvalidInputHotKey]
+"Ogiltigt format för snabbtangent"
+//[MEditMenuTitle]
+"Redigera användarmeny"
+//[MEditMenuHotKey]
+"&Snabbtangent:"
+//[MEditMenuLabel]
+"&Etikett:"
+//[MEditMenuCommands]
+"&Kommandon:"
+//[MAskInsertMenuOrCommand]
+"Vill du infoga ett nytt kommando eller en ny meny?"
+//[MMenuInsertCommand]
+"Infoga kommando"
+//[MMenuInsertMenu]
+"Infoga meny"
+//[MEditSubmenuTitle]
+"Redigera undermenyns etikett"
+//[MEditSubmenuHotKey]
+"&Snabbtangent:"
+//[MEditSubmenuLabel]
+"&Etikett:"
+//[MEditMenuConfirmation]
+"Spara ändringar?"
+//[MEditMenuError]
+"Kan inte uppdatera menyn"
+//[MViewerTitle]
+"Visare"
+//[MViewerCannotOpenFile]
+"Kan inte öppna filen"
+//[MViewerStatusCol]
+"Kol"
+//[MViewSearchingFor]
+"Söker efter"
+//[MViewSearchingHex]
+"Söker efter byte"
+//[MViewSearchCannotFind]
+"Kunde inte hitta strängen"
+//[MViewSearchCannotFindHex]
+"Kunde inte hitta byten"
+//[MViewSearchEod]
+"Slutet av dokumentet har nåtts"
+//[MViewSearchFromBegin]
+"Fortsätta från början av dokumentet?"
+//[MViewSearchBod]
+"Början av dokumentet har nåtts"
+//[MViewSearchFromEnd]
+"Fortsätta från slutet av dokumentet?"
+//[MViewSearchCycle]
+"Hela dokumentet har genomsökts"
+//[MViewSearchRepeat]
+"Upprepa sökningen i dokumentet?"
+//[MPrintTitle]
+"Skriv ut"
+//[MPrintTo]
+"Skriv ut {0} till"
+//[MPrintFilesTo]
+"Skriv ut {0} filer till"
+//[MPrintingFile]
+"Skriver ut {0}"
+//[MCannotEnumeratePrinters]
+"Kan inte räkna upp listan över tillgängliga skrivare"
+//[MCannotOpenPrinter]
+"Kan inte öppna skrivaren"
+//[MCannotPrint]
+"Kan inte skriva ut"
+//[MDescribeFiles]
+"Beskriv fil"
+//[MEnterDescription]
+"Ange beskrivning för"
+//[MReadingDiz]
+"Läser filbeskrivningar"
+//[MCannotUpdateDiz]
+"Kan inte uppdatera filbeskrivningar"
+//[MCfgDizTitle]
+"Filbeskrivningar"
+//[MCfgDizListNames]
+"Namn på beskrivnings&listor avgränsade med kommatecken:"
+//[MCfgDizSetHidden]
+"Ange attributet \"&Dold\" för nya beskrivningslistor"
+//[MCfgDizROUpdate]
+"Uppdatera &skrivskyddad beskrivningsfil"
+//[MCfgDizStartPos]
+"&Position för nya beskrivningar i strängen"
+//[MCfgDizNotUpdate]
+"Uppdatera &inte beskrivningar"
+//[MCfgDizUpdateIfDisplayed]
+"Uppdatera om de &visas"
+//[MCfgDizAlwaysUpdate]
+"Uppdatera &alltid"
+//[MCfgDizAnsiByDefault]
+"Använd ANS&I-teckentabell som standard"
+//[MCfgDizSaveInUTF]
+"Spara i UTF-&8"
+//[MReadingTitleFiles]
+"Uppdatering av paneler"
+//[MReadingFiles]
+"Läser: {0} filer"
+//[MOperationNotCompleted]
+"Åtgärden slutfördes inte"
+//[MEditPanelModes]
+"Redigera panellägen"
+//[MEditPanelModeName]
+"&Namn"
+//[MEditPanelModeTypes]
+"Kolumn&typer"
+//[MEditPanelModeWidths]
+"Kolumn&bredder"
+//[MEditPanelModeStatusTypes]
+"Kolumntyper för st&atusraden"
+//[MEditPanelModeStatusWidths]
+"Kolumnbredder för stat&usraden"
+//[MEditPanelModeFullscreen]
+"&Helskärmsvisning"
+//[MEditPanelModeAlignExtensions]
+"Ju&stera filändelser"
+//[MEditPanelModeAlignFolderExtensions]
+"Justera mapp&ändelser"
+//[MEditPanelModeFoldersUpperCase]
+"Visa mappar med &versaler"
+//[MEditPanelModeFilesLowerCase]
+"Visa filer med &gemener"
+//[MEditPanelModeUpperToLowerCase]
+"Visa filnamn med versaler som ge&mener"
+//[MSetFolderInfoTitle]
+"Mappbeskrivningsfiler"
+//[MSetFolderInfoNames]
+"Ange filnamn avgränsade med kommatecken (jokertecken tillåts)"
+//[MScreensTitle]
+"Skärmar"
+//[MScreensPanels]
+"Paneler"
+//[MScreensView]
+"Visa"
+//[MScreensEdit]
+"Redigera"
+//[MAskApplyCommandTitle]
+"Tillämpa kommando"
+//[MAskApplyCommand]
+"Ange kommando för att bearbeta markerade filer"
+//[MPluginConfigTitle]
+"Plugininställningar"
+//[MPluginCommandsMenuTitle]
+"Pluginkommandon"
+//[MPreparingList]
+"Förbereder fillistan"
+//[MLangTitle]
+"Huvudspråk"
+//[MHelpLangTitle]
+"Hjälpspråk"
+//[MDefineMacroTitle]
+"Definiera makro"
+//[MDefineMacro]
+"Tryck på önskad tangent"
+//[MMacroReDefinedKey]
+"Makrotangenten '{0}' är redan definierad."
+//[MMacroDeleteKey]
+"Makrotangenten '{0}' kommer att tas bort."
+//[MMacroCommonReDefinedKey]
+"Den gemensamma makrotangenten '{0}' är redan definierad."
+//[MMacroCommonDeleteKey]
+"Den gemensamma makrotangenten '{0}' kommer att tas bort."
+//[MMacroSequence]
+"Sekvens:"
+//[MMacroReDefinedKey2]
+"Definiera om?"
+//[MMacroDeleteKey2]
+"Ta bort?"
+//[MMacroEditKey]
+"Än&dra"
+//[MMacroSettingsTitle]
+"Makroinställningar för '{0}'"
+//[MMacroSettingsSequence]
+"Se&kvens:"
+//[MMacroSettingsDescription]
+"&Beskrivning:"
+//[MMacroSettingsEnableOutput]
+"Tillå&t skärmutdata medan makrot körs"
+//[MMacroSettingsRunAfterStart]
+"Kör efter att gm &startat"
+//[MMacroSettingsActivePanel]
+"&Aktiv panel"
+//[MMacroSettingsPassivePanel]
+"&Passiv panel"
+//[MMacroSettingsPluginPanel]
+"P&luginpanel"
+//[MMacroSettingsFolders]
+"Kör för &mappar"
+//[MMacroSettingsSelectionPresent]
+"Mar&kering finns"
+//[MMacroSettingsCommandLine]
+"Tom &kommandorad"
+//[MMacroSettingsSelectionBlockPresent]
+"Markerat &block finns"
+//[MMacroPluginLuamacroNotLoaded]
+"Pluginen LuaMacro är inte inläst"
+//[MMacroRecordingIsDisabled]
+"Makroinspelning är inaktiverad"
+//[MCannotSaveFile]
+"Kan inte spara filen"
+//[MTextSavedToTemp]
+"Den redigerade texten är lagrad i"
+//[MPluginHotKeyTitle]
+"Tilldela snabbtangent till plugin"
+//[MPluginHotKey]
+"Ange snabbtangent (bokstav eller siffra)"
+//[MPluginInformation]
+"Plugininformation"
+//[MPluginModuleTitle]
+"&Titel:"
+//[MPluginDescription]
+"&Beskrivning:"
+//[MPluginAuthor]
+"&Författare:"
+//[MPluginVersion]
+"&Version:"
+//[MPluginModulePath]
+"&Modulsökväg:"
+//[MPluginUUID]
+"Pluginens &UUID:"
+//[MPluginItemUUID]
+"&Objektets UUID:"
+//[MPluginPrefix]
+"Pluginens &prefix:"
+//[MExceptionDialogTitle]
+"Hoppsan"
+//[MExceptionDialogMessage1]
+"Något gick fel."
+//[MExceptionDialogMessage2]
+"Skicka felrapporten till utvecklarna:"
+//[MExceptionDialogClipboard]
+"Urklipp"
+//[MExcTerminate]
+"&Avsluta gm"
+//[MExcUnload]
+"&Ladda ur plugin"
+//[MExcContinue]
+"Fortsätt"
+//[MExcFullDump]
+"Fullständig minnesdump"
+//[MNetUserName]
+"Användarnamn"
+//[MNetUserPassword]
+"Lösenord"
+//[MReadFolderError]
+"Kan inte läsa mappens innehåll"
+//[MPlgBadVers]
+"Den här pluginen kräver en nyare version av gm"
+//[MPlgRequired]
+"Version av gm som krävs är {0},"
+//[MPlgRequired2]
+"aktuell version av gm är {0}."
+//[MPlgLoadPluginError]
+"Fel vid inläsning av plugin"
+//[MHelpTitle]
+"Hjälp"
+//[MHelpActivatorURL]
+"Denna referens startar ett externt program"
+//[MHelpActivatorFormat]
+"med parametern:"
+//[MHelpActivatorQ]
+"Vill du starta det?"
+//[MCannotOpenHelp]
+"Kan inte öppna filen"
+//[MHelpTopicNotFound]
+"Det begärda hjälpavsnittet hittades inte:"
+//[MPluginsHelpTitle]
+"Hjälp för plugins"
+//[MDocumentsHelpTitle]
+"Hjälp för dokument"
+//[MHelpSearchCannotFind]
+"Kunde inte hitta strängen"
+//[MHelpF1]
+"Hjälp"
+//[MHelpF2]
+""
+//[MHelpF3]
+""
+//[MHelpF4]
+""
+//[MHelpF5]
+"Zoom"
+//[MHelpF6]
+""
+//[MHelpF7]
+"Sök"
+//[MHelpF8]
+""
+//[MHelpF9]
+""
+//[MHelpF10]
+"Avslut"
+//[MHelpF11]
+""
+//[MHelpF12]
+""
+//[MHelpShiftF1]
+"Index"
+//[MHelpShiftF2]
+"Plugin"
+//[MHelpShiftF3]
+""
+//[MHelpShiftF4]
+""
+//[MHelpShiftF5]
+""
+//[MHelpShiftF6]
+""
+//[MHelpShiftF7]
+""
+//[MHelpShiftF8]
+""
+//[MHelpShiftF9]
+""
+//[MHelpShiftF10]
+""
+//[MHelpShiftF11]
+""
+//[MHelpShiftF12]
+""
+//[MHelpAltF1]
+"Föreg"
+//[MHelpAltF2]
+""
+//[MHelpAltF3]
+""
+//[MHelpAltF4]
+""
+//[MHelpAltF5]
+""
+//[MHelpAltF6]
+""
+//[MHelpAltF7]
+""
+//[MHelpAltF8]
+""
+//[MHelpAltF9]
+"Video"
+//[MHelpAltF10]
+""
+//[MHelpAltF11]
+""
+//[MHelpAltF12]
+""
+//[MHelpCtrlF1]
+""
+//[MHelpCtrlF2]
+""
+//[MHelpCtrlF3]
+""
+//[MHelpCtrlF4]
+""
+//[MHelpCtrlF5]
+""
+//[MHelpCtrlF6]
+""
+//[MHelpCtrlF7]
+""
+//[MHelpCtrlF8]
+""
+//[MHelpCtrlF9]
+""
+//[MHelpCtrlF10]
+""
+//[MHelpCtrlF11]
+""
+//[MHelpCtrlF12]
+""
+//[MHelpAltShiftF1]
+""
+//[MHelpAltShiftF2]
+""
+//[MHelpAltShiftF3]
+""
+//[MHelpAltShiftF4]
+""
+//[MHelpAltShiftF5]
+""
+//[MHelpAltShiftF6]
+""
+//[MHelpAltShiftF7]
+""
+//[MHelpAltShiftF8]
+""
+//[MHelpAltShiftF9]
+""
+//[MHelpAltShiftF10]
+""
+//[MHelpAltShiftF11]
+""
+//[MHelpAltShiftF12]
+""
+//[MHelpCtrlShiftF1]
+""
+//[MHelpCtrlShiftF2]
+""
+//[MHelpCtrlShiftF3]
+""
+//[MHelpCtrlShiftF4]
+""
+//[MHelpCtrlShiftF5]
+""
+//[MHelpCtrlShiftF6]
+""
+//[MHelpCtrlShiftF7]
+""
+//[MHelpCtrlShiftF8]
+""
+//[MHelpCtrlShiftF9]
+""
+//[MHelpCtrlShiftF10]
+""
+//[MHelpCtrlShiftF11]
+""
+//[MHelpCtrlShiftF12]
+""
+//[MHelpCtrlAltF1]
+""
+//[MHelpCtrlAltF2]
+""
+//[MHelpCtrlAltF3]
+""
+//[MHelpCtrlAltF4]
+""
+//[MHelpCtrlAltF5]
+""
+//[MHelpCtrlAltF6]
+""
+//[MHelpCtrlAltF7]
+""
+//[MHelpCtrlAltF8]
+""
+//[MHelpCtrlAltF9]
+""
+//[MHelpCtrlAltF10]
+""
+//[MHelpCtrlAltF11]
+""
+//[MHelpCtrlAltF12]
+""
+//[MHelpCtrlAltShiftF1]
+""
+//[MHelpCtrlAltShiftF2]
+""
+//[MHelpCtrlAltShiftF3]
+""
+//[MHelpCtrlAltShiftF4]
+""
+//[MHelpCtrlAltShiftF5]
+""
+//[MHelpCtrlAltShiftF6]
+""
+//[MHelpCtrlAltShiftF7]
+""
+//[MHelpCtrlAltShiftF8]
+""
+//[MHelpCtrlAltShiftF9]
+""
+//[MHelpCtrlAltShiftF10]
+""
+//[MHelpCtrlAltShiftF11]
+""
+//[MHelpCtrlAltShiftF12]
+""
+//[MInfoF1]
+"Hjälp"
+//[MInfoF2]
+"Radbr"
+//[MInfoF3]
+"VisBes"
+//[MInfoF4]
+"RedBes"
+//[MInfoF5]
+""
+//[MInfoF6]
+""
+//[MInfoF7]
+"Sök"
+//[MInfoF8]
+"ANSI"
+//[MInfoF9]
+"KonfMn"
+//[MInfoF10]
+"Avslut"
+//[MInfoF11]
+"Plugin"
+//[MInfoF12]
+"Skärm"
+//[MInfoShiftF1]
+""
+//[MInfoShiftF2]
+"OrdBr"
+//[MInfoShiftF3]
+""
+//[MInfoShiftF4]
+""
+//[MInfoShiftF5]
+""
+//[MInfoShiftF6]
+""
+//[MInfoShiftF7]
+"Nästa"
+//[MInfoShiftF8]
+"TknTab"
+//[MInfoShiftF9]
+"Spara"
+//[MInfoShiftF10]
+"Senast"
+//[MInfoShiftF11]
+""
+//[MInfoShiftF12]
+""
+//[MInfoAltF1]
+"Vänst"
+//[MInfoAltF2]
+"Höger"
+//[MInfoAltF3]
+""
+//[MInfoAltF4]
+""
+//[MInfoAltF5]
+""
+//[MInfoAltF6]
+""
+//[MInfoAltF7]
+"Sök"
+//[MInfoAltF8]
+"GåTill"
+//[MInfoAltF9]
+"Video"
+//[MInfoAltF10]
+"Träd"
+//[MInfoAltF11]
+"VisHis"
+//[MInfoAltF12]
+"MapHis"
+//[MInfoCtrlF1]
+"Vänst"
+//[MInfoCtrlF2]
+"Höger"
+//[MInfoCtrlF3]
+""
+//[MInfoCtrlF4]
+""
+//[MInfoCtrlF5]
+""
+//[MInfoCtrlF6]
+""
+//[MInfoCtrlF7]
+""
+//[MInfoCtrlF8]
+""
+//[MInfoCtrlF9]
+""
+//[MInfoCtrlF10]
+""
+//[MInfoCtrlF11]
+""
+//[MInfoCtrlF12]
+"Läge"
+//[MInfoAltShiftF1]
+""
+//[MInfoAltShiftF2]
+""
+//[MInfoAltShiftF3]
+""
+//[MInfoAltShiftF4]
+""
+//[MInfoAltShiftF5]
+""
+//[MInfoAltShiftF6]
+""
+//[MInfoAltShiftF7]
+""
+//[MInfoAltShiftF8]
+""
+//[MInfoAltShiftF9]
+""
+//[MInfoAltShiftF10]
+""
+//[MInfoAltShiftF11]
+""
+//[MInfoAltShiftF12]
+""
+//[MInfoCtrlShiftF1]
+""
+//[MInfoCtrlShiftF2]
+""
+//[MInfoCtrlShiftF3]
+""
+//[MInfoCtrlShiftF4]
+""
+//[MInfoCtrlShiftF5]
+""
+//[MInfoCtrlShiftF6]
+""
+//[MInfoCtrlShiftF7]
+""
+//[MInfoCtrlShiftF8]
+""
+//[MInfoCtrlShiftF9]
+""
+//[MInfoCtrlShiftF10]
+""
+//[MInfoCtrlShiftF11]
+""
+//[MInfoCtrlShiftF12]
+""
+//[MInfoCtrlAltF1]
+""
+//[MInfoCtrlAltF2]
+""
+//[MInfoCtrlAltF3]
+""
+//[MInfoCtrlAltF4]
+""
+//[MInfoCtrlAltF5]
+""
+//[MInfoCtrlAltF6]
+""
+//[MInfoCtrlAltF7]
+""
+//[MInfoCtrlAltF8]
+""
+//[MInfoCtrlAltF9]
+""
+//[MInfoCtrlAltF10]
+""
+//[MInfoCtrlAltF11]
+""
+//[MInfoCtrlAltF12]
+""
+//[MInfoCtrlAltShiftF1]
+""
+//[MInfoCtrlAltShiftF2]
+""
+//[MInfoCtrlAltShiftF3]
+""
+//[MInfoCtrlAltShiftF4]
+""
+//[MInfoCtrlAltShiftF5]
+""
+//[MInfoCtrlAltShiftF6]
+""
+//[MInfoCtrlAltShiftF7]
+""
+//[MInfoCtrlAltShiftF8]
+""
+//[MInfoCtrlAltShiftF9]
+""
+//[MInfoCtrlAltShiftF10]
+""
+//[MInfoCtrlAltShiftF11]
+""
+//[MInfoCtrlAltShiftF12]
+""
+//[MQViewF1]
+"Hjälp"
+//[MQViewF2]
+"Radbr"
+//[MQViewF3]
+"Visa"
+//[MQViewF4]
+"Hex"
+//[MQViewF5]
+""
+//[MQViewF6]
+""
+//[MQViewF7]
+"Sök"
+//[MQViewF8]
+"ANSI"
+//[MQViewF9]
+"KonfMn"
+//[MQViewF10]
+"Avslut"
+//[MQViewF11]
+"Plugin"
+//[MQViewF12]
+"Skärm"
+//[MQViewShiftF1]
+""
+//[MQViewShiftF2]
+"OrdBr"
+//[MQViewShiftF3]
+""
+//[MQViewShiftF4]
+""
+//[MQViewShiftF5]
+""
+//[MQViewShiftF6]
+""
+//[MQViewShiftF7]
+"Nästa"
+//[MQViewShiftF8]
+"TknTab"
+//[MQViewShiftF9]
+"Spara"
+//[MQViewShiftF10]
+"Senast"
+//[MQViewShiftF11]
+""
+//[MQViewShiftF12]
+""
+//[MQViewAltF1]
+"Vänst"
+//[MQViewAltF2]
+"Höger"
+//[MQViewAltF3]
+""
+//[MQViewAltF4]
+""
+//[MQViewAltF5]
+""
+//[MQViewAltF6]
+""
+//[MQViewAltF7]
+"Sök"
+//[MQViewAltF8]
+"GåTill"
+//[MQViewAltF9]
+"Video"
+//[MQViewAltF10]
+"Träd"
+//[MQViewAltF11]
+"VisHis"
+//[MQViewAltF12]
+"MapHis"
+//[MQViewCtrlF1]
+"Vänst"
+//[MQViewCtrlF2]
+"Höger"
+//[MQViewCtrlF3]
+""
+//[MQViewCtrlF4]
+""
+//[MQViewCtrlF5]
+""
+//[MQViewCtrlF6]
+""
+//[MQViewCtrlF7]
+""
+//[MQViewCtrlF8]
+""
+//[MQViewCtrlF9]
+""
+//[MQViewCtrlF10]
+""
+//[MQViewCtrlF11]
+""
+//[MQViewCtrlF12]
+""
+//[MQViewAltShiftF1]
+""
+//[MQViewAltShiftF2]
+""
+//[MQViewAltShiftF3]
+""
+//[MQViewAltShiftF4]
+""
+//[MQViewAltShiftF5]
+""
+//[MQViewAltShiftF6]
+""
+//[MQViewAltShiftF7]
+""
+//[MQViewAltShiftF8]
+""
+//[MQViewAltShiftF9]
+""
+//[MQViewAltShiftF10]
+""
+//[MQViewAltShiftF11]
+""
+//[MQViewAltShiftF12]
+""
+//[MQViewCtrlShiftF1]
+""
+//[MQViewCtrlShiftF2]
+""
+//[MQViewCtrlShiftF3]
+""
+//[MQViewCtrlShiftF4]
+""
+//[MQViewCtrlShiftF5]
+""
+//[MQViewCtrlShiftF6]
+""
+//[MQViewCtrlShiftF7]
+""
+//[MQViewCtrlShiftF8]
+""
+//[MQViewCtrlShiftF9]
+""
+//[MQViewCtrlShiftF10]
+""
+//[MQViewCtrlShiftF11]
+""
+//[MQViewCtrlShiftF12]
+""
+//[MQViewCtrlAltF1]
+""
+//[MQViewCtrlAltF2]
+""
+//[MQViewCtrlAltF3]
+""
+//[MQViewCtrlAltF4]
+""
+//[MQViewCtrlAltF5]
+""
+//[MQViewCtrlAltF6]
+""
+//[MQViewCtrlAltF7]
+""
+//[MQViewCtrlAltF8]
+""
+//[MQViewCtrlAltF9]
+""
+//[MQViewCtrlAltF10]
+""
+//[MQViewCtrlAltF11]
+""
+//[MQViewCtrlAltF12]
+""
+//[MQViewCtrlAltShiftF1]
+""
+//[MQViewCtrlAltShiftF2]
+""
+//[MQViewCtrlAltShiftF3]
+""
+//[MQViewCtrlAltShiftF4]
+""
+//[MQViewCtrlAltShiftF5]
+""
+//[MQViewCtrlAltShiftF6]
+""
+//[MQViewCtrlAltShiftF7]
+""
+//[MQViewCtrlAltShiftF8]
+""
+//[MQViewCtrlAltShiftF9]
+""
+//[MQViewCtrlAltShiftF10]
+""
+//[MQViewCtrlAltShiftF11]
+""
+//[MQViewCtrlAltShiftF12]
+""
+//[MKBTreeF1]
+"Hjälp"
+//[MKBTreeF2]
+"AnvMn"
+//[MKBTreeF3]
+""
+//[MKBTreeF4]
+"Attr"
+//[MKBTreeF5]
+"Kopia"
+//[MKBTreeF6]
+"BytFly"
+//[MKBTreeF7]
+"NyMapp"
+//[MKBTreeF8]
+"TaBort"
+//[MKBTreeF9]
+"KonfMn"
+//[MKBTreeF10]
+"Avslut"
+//[MKBTreeF11]
+"Plugin"
+//[MKBTreeF12]
+"Skärm"
+//[MKBTreeShiftF1]
+""
+//[MKBTreeShiftF2]
+""
+//[MKBTreeShiftF3]
+""
+//[MKBTreeShiftF4]
+""
+//[MKBTreeShiftF5]
+"Kopia"
+//[MKBTreeShiftF6]
+"BytNmn"
+//[MKBTreeShiftF7]
+""
+//[MKBTreeShiftF8]
+""
+//[MKBTreeShiftF9]
+"Spara"
+//[MKBTreeShiftF10]
+"Senast"
+//[MKBTreeShiftF11]
+"Grupp"
+//[MKBTreeShiftF12]
+"MarkUp"
+//[MKBTreeAltF1]
+"Vänst"
+//[MKBTreeAltF2]
+"Höger"
+//[MKBTreeAltF3]
+""
+//[MKBTreeAltF4]
+""
+//[MKBTreeAltF5]
+""
+//[MKBTreeAltF6]
+""
+//[MKBTreeAltF7]
+"Sök"
+//[MKBTreeAltF8]
+"Histor"
+//[MKBTreeAltF9]
+"Video"
+//[MKBTreeAltF10]
+"Träd"
+//[MKBTreeAltF11]
+"VisHis"
+//[MKBTreeAltF12]
+"MapHis"
+//[MKBTreeCtrlF1]
+"Vänst"
+//[MKBTreeCtrlF2]
+"Höger"
+//[MKBTreeCtrlF3]
+""
+//[MKBTreeCtrlF4]
+""
+//[MKBTreeCtrlF5]
+""
+//[MKBTreeCtrlF6]
+""
+//[MKBTreeCtrlF7]
+""
+//[MKBTreeCtrlF8]
+""
+//[MKBTreeCtrlF9]
+""
+//[MKBTreeCtrlF10]
+""
+//[MKBTreeCtrlF11]
+""
+//[MKBTreeCtrlF12]
+""
+//[MKBTreeAltShiftF1]
+""
+//[MKBTreeAltShiftF2]
+""
+//[MKBTreeAltShiftF3]
+""
+//[MKBTreeAltShiftF4]
+""
+//[MKBTreeAltShiftF5]
+""
+//[MKBTreeAltShiftF6]
+""
+//[MKBTreeAltShiftF7]
+""
+//[MKBTreeAltShiftF8]
+""
+//[MKBTreeAltShiftF9]
+""
+//[MKBTreeAltShiftF10]
+""
+//[MKBTreeAltShiftF11]
+""
+//[MKBTreeAltShiftF12]
+""
+//[MKBTreeCtrlShiftF1]
+""
+//[MKBTreeCtrlShiftF2]
+""
+//[MKBTreeCtrlShiftF3]
+""
+//[MKBTreeCtrlShiftF4]
+""
+//[MKBTreeCtrlShiftF5]
+""
+//[MKBTreeCtrlShiftF6]
+""
+//[MKBTreeCtrlShiftF7]
+""
+//[MKBTreeCtrlShiftF8]
+""
+//[MKBTreeCtrlShiftF9]
+""
+//[MKBTreeCtrlShiftF10]
+""
+//[MKBTreeCtrlShiftF11]
+""
+//[MKBTreeCtrlShiftF12]
+""
+//[MKBTreeCtrlAltF1]
+""
+//[MKBTreeCtrlAltF2]
+""
+//[MKBTreeCtrlAltF3]
+""
+//[MKBTreeCtrlAltF4]
+""
+//[MKBTreeCtrlAltF5]
+""
+//[MKBTreeCtrlAltF6]
+""
+//[MKBTreeCtrlAltF7]
+""
+//[MKBTreeCtrlAltF8]
+""
+//[MKBTreeCtrlAltF9]
+""
+//[MKBTreeCtrlAltF10]
+""
+//[MKBTreeCtrlAltF11]
+""
+//[MKBTreeCtrlAltF12]
+""
+//[MKBTreeCtrlAltShiftF1]
+""
+//[MKBTreeCtrlAltShiftF2]
+""
+//[MKBTreeCtrlAltShiftF3]
+""
+//[MKBTreeCtrlAltShiftF4]
+""
+//[MKBTreeCtrlAltShiftF5]
+""
+//[MKBTreeCtrlAltShiftF6]
+""
+//[MKBTreeCtrlAltShiftF7]
+""
+//[MKBTreeCtrlAltShiftF8]
+""
+//[MKBTreeCtrlAltShiftF9]
+""
+//[MKBTreeCtrlAltShiftF10]
+""
+//[MKBTreeCtrlAltShiftF11]
+""
+//[MKBTreeCtrlAltShiftF12]
+""
+//[MCopyTimeInfoElapsed]
+"Tid:"
+//[MCopyTimeInfoRemaining]
+"Återstår:"
+//[MCopyTimeInfoSpeed]
+"B/s"
+//[MKeyESCWasPressed]
+"Åtgärden har avbrutits"
+//[MDoYouWantToCancel]
+"Vill du verkligen avbryta den?"
+//[MDoYouWantToContinue]
+"Fortsätta arbetet?"
+//[MCheckingFileInPlugin]
+"Filen kontrolleras av pluginen"
+//[MDialogType]
+"Dialog"
+//[MHelpType]
+"Hjälp"
+//[MFolderTreeType]
+"Mappträd"
+//[MVMenuType]
+"Meny"
+//[MIncorrectMask]
+"Filmasken innehåller fel"
+//[MPanelBracketsForLongName]
+"{}"
+//[MComspecNotFound]
+"Miljövariabeln %COMSPEC% är inte definierad"
+//[MFileFilterTitle]
+"Filter"
+//[MFileHilightTitle]
+"Filmarkering"
+//[MFileFilterName]
+"&Namn:"
+//[MFileFilterMatchMask]
+"&Mask:"
+//[MFileFilterSize]
+"Stor&lek:"
+//[MFileFilterSizeFromSign]
+">&="
+//[MFileFilterSizeToSign]
+"&<="
+//[MFileHardLinksCount]
+"Har mer än en hård län&k"
+//[MFileFilterDate]
+"Datum&/tid:"
+//[MFileFilterWrite]
+"&skriven"
+//[MFileFilterCreation]
+"s&kapad"
+//[MFileFilterAccess]
+"&åtkomst"
+//[MFileFilterChange]
+"än&drad"
+//[MFileFilterDateRelative]
+"Rela&tiv"
+//[MFileFilterDateAfterSign]
+">="
+//[MFileFilterDateBeforeSign]
+"<="
+//[MFileFilterCurrent]
+"Ak&tuell"
+//[MFileFilterBlank]
+"T&om"
+//[MFileFilterAttr]
+"Attri&but"
+//[MFileFilterAttrChoose]
+"&..."
+//[MFileFilterAttrReadOnly]
+"&Skrivskyddad"
+//[MFileFilterAttrArcive]
+"&Arkiv"
+//[MFileFilterAttrHidden]
+"&Dold"
+//[MFileFilterAttrSystem]
+"S&ystem"
+//[MFileFilterAttrCompressed]
+"&Komprimerad"
+//[MFileFilterAttrEncrypted]
+"K&rypterad"
+//[MFileFilterAttrDirectory]
+"&Katalog"
+//[MFileFilterAttrNotIndexed]
+"Inte &indexerad"
+//[MFileFilterAttrSparse]
+"&Gles"
+//[MFileFilterAttrTemporary]
+"&Temporär"
+//[MFileFilterAttrReparse]
+"Återanalys&punkt"
+//[MFileFilterAttrOffline]
+"O&ffline"
+//[MFileFilterAttrVirtual]
+"&Virtuell"
+//[MFileFilterAttrIntegrityStream]
+"Inte&gritetsström"
+//[MFileFilterAttrNoScrubData]
+"Ingen data&rensning"
+//[MFileFilterAttrPinned]
+"F&äst"
+//[MFileFilterAttrUnpinned]
+"&Lossad"
+//[MFileFilterAttrRecallOnOpen]
+"Återkalla vid ö&ppning"
+//[MFileFilterAttrRecallOnDataAccess]
+"Återkalla vid data&åtkomst"
+//[MFileFilterAttrStrictlySequential]
+"Strikt se&kventiell"
+//[MFileFilterAttrDevice]
+"Enhet"
+//[MFileFilterReset]
+"&Återställ"
+//[MFileFilterMakeTransparent]
+"Gör &transparent"
+//[MFileFilterCancel]
+"Avbryt"
+//[MBadFileSizeFormat]
+"Fältet för filstorlek är felaktigt ifyllt"
+//[MFarTitleAddonsAdmin]
+"Administratör"
+//[MElevationRequired]
+"Du måste ge administratörsbehörighet"
+//[MElevationRequiredPrivileges]
+"Ytterligare privilegier krävs"
+//[MElevationRequiredProcess]
+"för att bearbeta detta objekt:"
+//[MElevationRequiredDelete]
+"för att ta bort detta objekt:"
+//[MElevationRequiredCopy]
+"för att kopiera detta objekt:"
+//[MElevationRequiredMove]
+"för att flytta detta objekt:"
+//[MElevationRequiredReplace]
+"för att ersätta detta objekt:"
+//[MElevationRequiredGetAttributes]
+"för att hämta attribut för detta objekt:"
+//[MElevationRequiredSetAttributes]
+"för att ange attribut för detta objekt:"
+//[MElevationRequiredHardLink]
+"för att skapa denna hårda länk:"
+//[MElevationRequiredSymLink]
+"för att skapa denna symboliska länk:"
+//[MElevationRequiredRecycle]
+"för att flytta detta objekt till papperskorgen:"
+//[MElevationRequiredList]
+"för att lista detta objekt:"
+//[MElevationRequiredSetOwner]
+"för att ange ägare för detta objekt:"
+//[MElevationRequiredOpen]
+"för att öppna detta objekt:"
+//[MElevationRequiredEncryptFile]
+"för att kryptera detta objekt:"
+//[MElevationRequiredDecryptFile]
+"för att dekryptera detta objekt:"
+//[MElevationRequiredSetVolumeLabel]
+"för att ange volymetikett:"
+//[MElevationDoForAll]
+"Gör detta för &alla aktuella objekt"
+//[MElevationDoNotAskAgainInTheCurrentSession]
+"Fråga inte igen under aktuell session"
+//[MCompletionHistoryTitle]
+"Historik"
+//[MCompletionEnvironmentTitle]
+"Miljö"
+//[MCompletionFilesTitle]
+"Filer"
+//[MObjectLockedReason]
+"Objektet är {0} i:"
+//[MObjectLockedReasonPlayed]
+"uppspelat"
+//[MObjectLockedReasonEdited]
+"redigerat"
+//[MObjectLockedReasonOpened]
+"öppnat"
+//[MObjectLockedAndMore]
+"och {0} processer till."
+//[MObjectLockedSwitchTo]
+"Växla till"
+//[MObjectLockedClose]
+"Stäng fil"
+//[MObjectLockedReasonSessionMismatch]
+"En eller flera processer körs i en annan Terminal Services-session."
+//[MObjectLockedReasonCriticalProcess]
+"En eller flera processer är kritiska processer."
+//[MObjectLockedReasonCriticalService]
+"En eller flera tjänster är kritiska tjänster."
+//[MObjectLockedReasonDetectedSelf]
+"Filen är öppnad av den aktuella processen."
+//[MProblemDb]
+"Problem med konfigurationsdatabasen"
+//[MShowConfigFolders]
+"Visa konfigurationsmappar"
+//[MBadLanguageFile]
+"Felaktig språkfil"
+//[MLanguageStringNotFound]
+"Strängen {0} hittades inte"
+//[MUnsupportedCodePageSelectedCodepage]
+"Den valda teckentabellen"
+//[MUnsupportedCodePageDoesNotSupport]
+"stöder inte {0}"
+//[MUnsupportedCodePageCharacter]
+"tecknet"
+//[MUnsupportedCodePageByteSequence]
+"bytesekvensen"
+//[MKeyLaunchMediaSelect]
+""
+//[MKeyBrowserFavorites]
+""
+//[MKeyMediaPrevTrack]
+""
+//[MKeyMediaPlayPause]
+""
+//[MKeyMediaNextTrack]
+""
+//[MKeyBrowserRefresh]
+""
+//[MKeyBrowserForward]
+""
+//[MKeyBrowserSearch]
+""
+//[MKeyMswheelRight]
+""
+//[MKeyMswheelDown]
+""
+//[MKeyMswheelLeft]
+""
+//[MKeyBrowserStop]
+""
+//[MKeyBrowserHome]
+""
+//[MKeyBrowserBack]
+""
+//[MKeyVolumeMute]
+""
+//[MKeyVolumeDown]
+""
+//[MKeyScrolllock]
+""
+//[MKeyLaunchMail]
+""
+//[MKeyLaunchApp2]
+""
+//[MKeyLaunchApp1]
+""
+//[MKeyMswheelUp]
+""
+//[MKeyMediaStop]
+""
+//[MKeyBackslash]
+""
+//[MKeyMsm1click]
+""
+//[MKeyMsm2click]
+""
+//[MKeyMsm3click]
+""
+//[MKeyMslclick]
+""
+//[MKeyMsrclick]
+""
+//[MKeyVolumeUp]
+""
+//[MKeySubtract]
+"Grå -"
+//[MKeyNumenter]
+""
+//[MKeyMultiply]
+"Grå *"
+//[MKeyCapslock]
+""
+//[MKeyPrntscrn]
+""
+//[MKeyNumlock]
+""
+//[MKeyDecimal]
+""
+//[MKeyStandby]
+""
+//[MKeyDivide]
+""
+//[MKeyNumdel]
+""
+//[MKeySpace]
+""
+//[MKeyRight]
+""
+//[MKeyPause]
+""
+//[MKeyEnter]
+""
+//[MKeyClear]
+""
+//[MKeyBreak]
+""
+//[MKeyPgup]
+""
+//[MKeyPgdn]
+""
+//[MKeyLeft]
+""
+//[MKeyHome]
+""
+//[MKeyDown]
+""
+//[MKeyApps]
+""
+//[MKeyRwin]
+""
+//[MKeyNumpad9]
+""
+//[MKeyNumpad8]
+""
+//[MKeyNumpad7]
+""
+//[MKeyNumpad6]
+""
+//[MKeyNumpad5]
+""
+//[MKeyNumpad4]
+""
+//[MKeyNumpad3]
+""
+//[MKeyNumpad2]
+""
+//[MKeyNumpad1]
+""
+//[MKeyNumpad0]
+""
+//[MKeyLwin]
+""
+//[MKeyTab]
+""
+//[MKeyIns]
+""
+//[MKeyF10]
+""
+//[MKeyF11]
+""
+//[MKeyF12]
+""
+//[MKeyF13]
+""
+//[MKeyF14]
+""
+//[MKeyF15]
+""
+//[MKeyF16]
+""
+//[MKeyF17]
+""
+//[MKeyF18]
+""
+//[MKeyF19]
+""
+//[MKeyF20]
+""
+//[MKeyF21]
+""
+//[MKeyF22]
+""
+//[MKeyF23]
+""
+//[MKeyF24]
+""
+//[MKeyEsc]
+""
+//[MKeyEnd]
+""
+//[MKeyDel]
+""
+//[MKeyAdd]
+"Grå +"
+//[MKeyUp]
+""
+//[MKeyF9]
+""
+//[MKeyF8]
+""
+//[MKeyF7]
+""
+//[MKeyF6]
+""
+//[MKeyF5]
+""
+//[MKeyF4]
+""
+//[MKeyF3]
+""
+//[MKeyF2]
+""
+//[MKeyF1]
+""
+//[MKeyBs]
+""
+//[MKeyBackbracket]
+""
+//[MKeyQuote]
+""
+//[MKeyBracket]
+""
+//[MKeyColon]
+""
+//[MKeySemicolon]
+""
+//[MKeySlash]
+""
+//[MKeyDot]
+""
+//[MKeyComma]
+""
+//[MKeyRCtrl]
+""
+//[MKeyShift]
+""
+//[MKeyCtrl]
+""
+//[MKeyRAlt]
+""
+//[MKeyAlt]
+""
+//[MNewFileName]
+"Ny_fil_{0:04}-{1:02}-{2:02}_{3:02}.{4:02}.{5:02}.{6:03}.txt"
+//[MMenuTerminalPosition]
+"&Terminalposition"
+//[MMenuModuleCommands]
+"Mod&ulkommandon"
+//[MTermPosFull]
+"&Helskärm"
+//[MTermPosLeft]
+"&Vänster halva"
+//[MTermPosRight]
+"&Höger halva"
+//[MTermPosTop]
+"Ö&vre halvan"
+//[MTermPosBottom]
+"&Nedre halvan"
+//[MTermPosLeftTop]
+"Vänster ö&verst"
+//[MTermPosLeftBottom]
+"Vänster &nederst"
+//[MTermPosRightTop]
+"Höger ö&verst"
+//[MTermPosRightBottom]
+"Höger nederst (&m)"
+//[MMenuMultipleTerminals]
+"Fl&era terminaler"
+//[MMultiTermLeftRight]
+"&Vänster och höger terminal"
+//[MMultiTermTopBottom]
+"&Övre och nedre terminal"
+//[MMultiTermFour]
+"&4 terminaler"
+//[MMultiTermError]
+"Kan inte öppna ett nytt terminalfönster"
+//[MMenuExecOtherTerminal]
+"&Kör i annan terminal"
+//[MExecTermLeft]
+"Terminal till &vänster"
+//[MExecTermRight]
+"Terminal till &höger"
+//[MExecTermBottom]
+"Terminal &nederst"
+//[MExecTermTop]
+"Terminal &överst"
+//[MExecTermDisconnect]
+"&Koppla från annan terminal"
+//[MMenuEncodedArchives]
+"Kodade ar&kiv"
+//[MEncArcTitle]
+"Kodade arkiv"
+//[MEncArcAddNew]
+"&Lägg till ny konfiguration…"
+//[MEncArcNewExt]
+"&Ny filändelse (upp till 7 tecken):"
+//[MEncArcOrigExt]
+"&Ursprunglig filändelse (upp till 7 tecken):"
+//[MEncArcKeyFile]
+"&Nyckelfil:"
+//[MEncArcPasswordProtected]
+"&Lösenordsskyddad"
+//[MEncArcBadExtension]
+"Den nya filändelsen måste ha 1 till 7 tecken och den ursprungliga upp till 7 tecken, utan \"/\" och \"\\\""
+//[MEncArcDuplicate]
+"Denna nya filändelse är redan konfigurerad"
+//[MEncArcNoKeyFile]
+"Nyckelfilen hittades inte"
+//[MEncArcPasswordFor]
+"Lösenord för"
+//[MEncArcCannotDecode]
+"Kan inte avkoda filen"
+//[MEncArcCannotEncode]
+"Kan inte koda tillbaka filen"
+//[MLogKey]
+"Log"
+//[MLogQuietKey]
+"LogSil"
+//[MLogStarted]
+"Utdata loggas till"

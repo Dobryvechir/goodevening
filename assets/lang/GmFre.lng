@@ -1,0 +1,4568 @@
+.Language=French,Français
+// Goodevening Manager language file (French)
+//[MYes]
+"Oui"
+//[MNo]
+"Non"
+//[MOk]
+"OK"
+//[MHYes]
+"&Oui"
+//[MHNo]
+"&Non"
+//[MHOk]
+"&OK"
+//[MCancel]
+"Annuler"
+//[MReset]
+"&Réinitialiser"
+//[MRetry]
+"Réessayer"
+//[MSkip]
+"Ignorer"
+//[MAbort]
+"Abandonner"
+//[MIgnore]
+"Ignorer"
+//[MDelete]
+"Supprimer"
+//[MHCancel]
+"&Annuler"
+//[MHRetry]
+"&Réessayer"
+//[MHSkip]
+"&Passer"
+//[MHSkipAll]
+"Passer &tout"
+//[MHAbort]
+"A&bandonner"
+//[MHIgnore]
+"&Ignorer"
+//[MHDelete]
+"&Supprimer"
+//[MHRemove]
+"&Retirer"
+//[MHSplit]
+"&Scinder"
+//[MWarning]
+"Avertissement"
+//[MError]
+"Erreur"
+//[MQuit]
+"Quitter"
+//[MAskQuit]
+"Voulez-vous quitter gm ?"
+//[MF1]
+"Aide"
+//[MF2]
+"MnUtil"
+//[MF3]
+"Voir"
+//[MF4]
+"Éditer"
+//[MF5]
+"Copier"
+//[MF6]
+"RenDép"
+//[MF7]
+"CrDoss"
+//[MF8]
+"Suppr"
+//[MF9]
+"MnConf"
+//[MF10]
+"Quitter"
+//[MF11]
+"Plugin"
+//[MF12]
+"Écran"
+//[MShiftF1]
+"Ajout"
+//[MShiftF2]
+"Extrai"
+//[MShiftF3]
+"CmdArc"
+//[MShiftF4]
+"Éditer…"
+//[MShiftF5]
+"Copier"
+//[MShiftF6]
+"Renomm"
+//[MShiftF7]
+""
+//[MShiftF8]
+"Suppr"
+//[MShiftF9]
+"Enreg"
+//[MShiftF10]
+"Dernr"
+//[MShiftF11]
+"Groupe"
+//[MShiftF12]
+"SélHt"
+//[MAltF1]
+"Gauche"
+//[MAltF2]
+"Droite"
+//[MAltF3]
+"Voir…"
+//[MAltF4]
+"Éditer…"
+//[MAltF5]
+"Impr"
+//[MAltF6]
+"CrLien"
+//[MAltF7]
+"Rech"
+//[MAltF8]
+"Histor"
+//[MAltF9]
+"Vidéo"
+//[MAltF10]
+"Arbre"
+//[MAltF11]
+"HisVue"
+//[MAltF12]
+"HisDos"
+//[MCtrlF1]
+"Gauche"
+//[MCtrlF2]
+"Droite"
+//[MCtrlF3]
+"Nom"
+//[MCtrlF4]
+"Extens"
+//[MCtrlF5]
+"Écrit"
+//[MCtrlF6]
+"Taille"
+//[MCtrlF7]
+"NonTri"
+//[MCtrlF8]
+"Créat"
+//[MCtrlF9]
+"Accès"
+//[MCtrlF10]
+"Descr"
+//[MCtrlF11]
+"Propr"
+//[MCtrlF12]
+"Tri"
+//[MAltShiftF1]
+""
+//[MAltShiftF2]
+""
+//[MAltShiftF3]
+""
+//[MAltShiftF4]
+""
+//[MAltShiftF5]
+""
+//[MAltShiftF6]
+""
+//[MAltShiftF7]
+""
+//[MAltShiftF8]
+""
+//[MAltShiftF9]
+"ConfPl"
+//[MAltShiftF10]
+""
+//[MAltShiftF11]
+""
+//[MAltShiftF12]
+""
+//[MCtrlShiftF1]
+""
+//[MCtrlShiftF2]
+""
+//[MCtrlShiftF3]
+"Voir"
+//[MCtrlShiftF4]
+"Éditer"
+//[MCtrlShiftF5]
+""
+//[MCtrlShiftF6]
+""
+//[MCtrlShiftF7]
+""
+//[MCtrlShiftF8]
+""
+//[MCtrlShiftF9]
+""
+//[MCtrlShiftF10]
+""
+//[MCtrlShiftF11]
+""
+//[MCtrlShiftF12]
+""
+//[MCtrlAltF1]
+""
+//[MCtrlAltF2]
+""
+//[MCtrlAltF3]
+""
+//[MCtrlAltF4]
+""
+//[MCtrlAltF5]
+""
+//[MCtrlAltF6]
+""
+//[MCtrlAltF7]
+""
+//[MCtrlAltF8]
+""
+//[MCtrlAltF9]
+""
+//[MCtrlAltF10]
+""
+//[MCtrlAltF11]
+""
+//[MCtrlAltF12]
+""
+//[MCtrlAltShiftF1]
+""
+//[MCtrlAltShiftF2]
+""
+//[MCtrlAltShiftF3]
+""
+//[MCtrlAltShiftF4]
+""
+//[MCtrlAltShiftF5]
+""
+//[MCtrlAltShiftF6]
+""
+//[MCtrlAltShiftF7]
+""
+//[MCtrlAltShiftF8]
+""
+//[MCtrlAltShiftF9]
+""
+//[MCtrlAltShiftF10]
+""
+//[MCtrlAltShiftF11]
+""
+//[MCtrlAltShiftF12]
+""
+//[MHistoryTitle]
+"Historique"
+//[MHistoryInfoTitle]
+"Information"
+//[MHistoryInfoFolder]
+"Dossier :"
+//[MFolderHistoryTitle]
+"Historique des dossiers"
+//[MViewHistoryTitle]
+"Historique d'affichage et d'édition"
+//[MViewHistoryIsCreate]
+"Créer le fichier ?"
+//[MHistoryView]
+"Voir"
+//[MHistoryEdit]
+"Éditer"
+//[MHistoryExt]
+"Ext."
+//[MHistoryClear]
+"Tous les enregistrements de l'historique seront supprimés. Continuer ?"
+//[MClear]
+"&Effacer l'historique"
+//[MConfigSystemTitle]
+"Paramètres système"
+//[MConfigRecycleBin]
+"&Supprimer vers la Corbeille"
+//[MConfigSystemCopy]
+"Utiliser la routine de copie du s&ystème"
+//[MConfigCopySharing]
+"Copier les fichiers ouverts en é&criture"
+//[MConfigScanJunction]
+"Parcourir les liens s&ymboliques"
+//[MConfigSmartFolderMonitor]
+"Mettre à jo&ur les panneaux seulement si gm est actif"
+//[MConfigSaveHistory]
+"Enregistrer l'&historique des commandes"
+//[MConfigSaveFoldersHistory]
+"Enregistrer l'historique des &dossiers"
+//[MConfigSaveViewHistory]
+"Enregistrer l'historique d'&affichage et d'édition"
+//[MConfigRegisteredTypes]
+"Utiliser les types en&registrés de Windows"
+//[MConfigUpdateEnvironment]
+"Mise à jour automatique des variables d'&environnement"
+//[MConfigElevation]
+"Demander les droits d'administrateur :"
+//[MConfigElevationModify]
+"Pour la &modification"
+//[MConfigElevationRead]
+"Pour la &lecture"
+//[MConfigElevationUsePrivileges]
+"Utiliser des &privilèges supplémentaires"
+//[MConfigSortingCollation]
+"Classeme&nt du tri :"
+//[MConfigSortingOrdinal]
+"ordinal"
+//[MConfigSortingInvariant]
+"invariant"
+//[MConfigSortingLinguistic]
+"linguistique"
+//[MConfigSortingDigitsAsNumbers]
+"Traiter les chiffres comme des &nombres"
+//[MConfigSortingCase]
+"Respecter la &casse"
+//[MConfigAutoSave]
+"Enregistrement a&utomatique de la configuration"
+//[MConfigTreeTitle]
+"Paramètres de l'arbre"
+//[MConfigTreeAutoChange]
+"Changement &automatique de dossier"
+//[MConfigTreeLabelMinFolder]
+"Nombre &minimal de dossiers :"
+//[MConfigTreeLabel1]
+"Stocker un fichier avec la structure des dossiers pour :"
+//[MConfigTreeLabelLocalDisk]
+"lecteurs locaux"
+//[MConfigTreeLabelNetDisk]
+"lecteurs réseau"
+//[MConfigTreeLabelNetPath]
+"chemins réseau"
+//[MConfigTreeLabelRemovableDisk]
+"lecteurs amovibles"
+//[MConfigTreeLabelCDDisk]
+"lecteurs optiques"
+//[MConfigTreeLabelExceptPath]
+"Ne pas créer le fichier pour les lecteurs et chemins suivants :"
+//[MConfigTreeLabelSaveLocalPath]
+"Chemin pour les lecteurs locaux, amovibles et optiques :"
+//[MConfigTreeLabelSaveNetPath]
+"Chemin pour les lecteurs et chemins réseau :"
+//[MConfigPanelTitle]
+"Paramètres des panneaux"
+//[MConfigHidden]
+"Afficher les fichiers cachés et &système"
+//[MConfigHighlight]
+"Mettre en é&vidence les fichiers"
+//[MConfigSelectFolders]
+"Sélectionner les &dossiers"
+//[MConfigRightClickSelect]
+"Le clic dr&oit sélectionne les fichiers"
+//[MConfigSortFolderExt]
+"Trier les dossiers par e&xtension"
+//[MConfigAllowReverseSort]
+"Autoriser les modes de tri in&verses"
+//[MConfigAutoUpdateLimit]
+"&Désactiver la mise à jour automatique des panneaux"
+//[MConfigAutoUpdateLimit2]
+"si le nombre d'ob&jets dépasse"
+//[MConfigAutoUpdateRemoteDrive]
+"Actualisation auto des lecteurs rés&eau"
+//[MConfigShowColumns]
+"Afficher les titres des &colonnes"
+//[MConfigShowStatus]
+"Afficher la ligne d'é&tat"
+//[MConfigDetailedJunction]
+"Détecter les &points de montage"
+//[MConfigShowTotal]
+"Afficher les informations &totales"
+//[MConfigShowFree]
+"Afficher l'espace lib&re"
+//[MConfigShowScrollbar]
+"Afficher la &barre de défilement"
+//[MConfigShowScreensNumber]
+"Afficher le &nombre d'écrans d'arrière-plan"
+//[MConfigShowSortMode]
+"Afficher la lettre du &mode de tri"
+//[MConfigShowDotsInRoot]
+"Afficher \"&..\" dans les dossiers racine"
+//[MConfigInterfaceTitle]
+"Paramètres de l'interface"
+//[MConfigClock]
+"&Horloge"
+//[MConfigMouse]
+"S&ouris"
+//[MConfigKeyBar]
+"Afficher la barre des &touches"
+//[MConfigMenuBar]
+"Toujours afficher la barre de &menus"
+//[MConfigSaver]
+"&Économiseur d'écran"
+//[MConfigSaverMinutes]
+"mi&nutes"
+//[MConfigCopyTotal]
+"Afficher la progression &totale de la copie"
+//[MConfigCopyTimeRule]
+"Afficher la durée de la co&pie"
+//[MConfigDeleteTotal]
+"Afficher la progression totale de la &suppression"
+//[MConfigPgUpChangeDisk]
+"Utiliser Ctrl+Pg&Up pour changer de lecteur"
+//[MConfigUseVirtualTerminalForRendering]
+"Utiliser le terminal &virtuel pour le rendu"
+//[MConfigFullWidthAwareRendering]
+"Rendu tenant compte de la pleine chasse"
+//[MConfigFullWidthAwareRenderingGraphemeClustersDected1]
+"Votre terminal semble prendre en charge les grappes de graphèmes Unicode."
+//[MConfigFullWidthAwareRenderingGraphemeClustersDected2]
+"Malheureusement, gm ne les prend pas encore en charge."
+//[MConfigFullWidthAwareRenderingGraphemeClustersDected3]
+"Pour un meilleur résultat, il est recommandé de passer au rendu par points de code."
+//[MConfigFullWidthAwareRenderingGraphemeClustersDected4]
+"Consultez la documentation de votre terminal pour savoir comment faire."
+//[MConfigClearType]
+"Redessin adapté à Cl&earType (peut être lent)"
+//[MConfigSetConsoleIcon]
+"&Icône de la console :"
+//[MConfigSetAdminConsoleIcon]
+"Autre pour l'&administrateur"
+//[MConfigTitleAddons]
+"Ajouts au titre de la &fenêtre gm :"
+//[MConfigDlgSetsTitle]
+"Paramètres des dialogues"
+//[MConfigDialogsEditHistory]
+"&Historique dans les champs de saisie"
+//[MConfigDialogsEditBlock]
+"Blocs &persistants dans les champs de saisie"
+//[MConfigDialogsDelRemovesBlocks]
+"&Suppr efface les blocs dans les champs de saisie"
+//[MConfigDialogsAutoComplete]
+"&Complétion automatique dans les champs de saisie"
+//[MConfigDialogsEULBsClear]
+"&Retour arrière efface le texte non modifié"
+//[MConfigDialogsMouseButton]
+"Un clic &hors d'un dialogue le ferme"
+//[MConfigVMenuTitle]
+"Paramètres des menus"
+//[MConfigVMenuLBtnClick]
+"Clic &gauche hors d'un menu"
+//[MConfigVMenuRBtnClick]
+"Clic &droit hors d'un menu"
+//[MConfigVMenuMBtnClick]
+"Clic du &milieu hors d'un menu"
+//[MConfigVMenuClickCancel]
+"Annuler le menu"
+//[MConfigVMenuClickApply]
+"Exécuter l'élément sélectionné"
+//[MConfigVMenuClickIgnore]
+"Ne rien faire"
+//[MConfigCmdlineTitle]
+"Paramètres de la ligne de commande"
+//[MConfigCmdlineEditBlock]
+"Blocs &persistants"
+//[MConfigCmdlineDelRemovesBlocks]
+"&Suppr efface les blocs"
+//[MConfigCmdlineAutoComplete]
+"&Complétion automatique"
+//[MConfigCmdlineUsePromptFormat]
+"Définir le &format de l'invite"
+//[MConfigCmdlineUseHomeDir]
+"Utiliser le dossier &personnel"
+//[MConfigCmdlinePromptFormatAdmin]
+"Administrateur"
+//[MConfigAutoCompleteTitle]
+"Paramètres de complétion automatique"
+//[MConfigAutoCompleteShowList]
+"&Afficher une liste"
+//[MConfigAutoCompleteModalList]
+"Mode &modal"
+//[MConfigAutoCompleteAutoAppend]
+"&Ajouter le premier élément trouvé"
+//[MConfigInfoPanelTitle]
+"Paramètres du panneau d'informations"
+//[MConfigInfoPanelCNTitle]
+"Format du &nom de l'ordinateur"
+//[MConfigInfoPanelCNPhysicalNetBIOS]
+"NetBIOS physique"
+//[MConfigInfoPanelCNPhysicalDnsHostname]
+"Nom d'hôte DNS physique"
+//[MConfigInfoPanelCNPhysicalDnsDomain]
+"Domaine DNS physique"
+//[MConfigInfoPanelCNPhysicalDnsFullyQualified]
+"Nom DNS complet physique (FQDN)"
+//[MConfigInfoPanelCNNetBIOS]
+"NetBIOS"
+//[MConfigInfoPanelCNDnsHostname]
+"Nom d'hôte DNS"
+//[MConfigInfoPanelCNDnsDomain]
+"Domaine DNS"
+//[MConfigInfoPanelCNDnsFullyQualified]
+"Nom DNS complet (FQDN)"
+//[MConfigInfoPanelUNTitle]
+"Format du nom d'&utilisateur"
+//[MConfigInfoPanelUNLogon]
+"Nom d'ouverture de session"
+//[MConfigInfoPanelUNFullyQualifiedDN]
+"Nom de domaine complet (FQDN)"
+//[MConfigInfoPanelUNSamCompatible]
+"Compatible SAM"
+//[MConfigInfoPanelUNDisplay]
+"Nom d'affichage"
+//[MConfigInfoPanelUNUniqueId]
+"Identifiant unique"
+//[MConfigInfoPanelUNCanonical]
+"Nom canonique"
+//[MConfigInfoPanelUNUserPrincipal]
+"Nom principal d'utilisateur"
+//[MConfigInfoPanelUNServicePrincipal]
+"Principal de service"
+//[MConfigInfoPanelUNDnsDomain]
+"Domaine DNS"
+//[MConfigInfoPanelUNGivenName]
+"Prénom"
+//[MConfigInfoPanelUNSurname]
+"Nom"
+//[MConfigInfoPanelShowPowerStatus]
+"Afficher l'état de l'&alimentation"
+//[MConfigInfoPanelShowCDInfo]
+"Afficher les paramètres des lecteurs &CD"
+//[MMenuInfoShowModeTitle]
+"Afficher les infos"
+//[MMenuInfoShowModeDisk]
+"&Disque"
+//[MMenuInfoShowModeMemory]
+"&Mémoire"
+//[MMenuInfoShowModeDirDiz]
+"D&escription"
+//[MMenuInfoShowModePluginDiz]
+"Panneau de &plugin"
+//[MMenuInfoShowModePower]
+"État de l'&alimentation"
+//[MViewConfigTitle]
+"Visionneuse"
+//[MViewConfigExternalF3]
+"Visionneuse externe pour F&3 au lieu de Alt+F3"
+//[MViewConfigExternalCommand]
+"Commande de la &visionneuse :"
+//[MViewConfigInternal]
+"Visionneuse interne"
+//[MViewConfigSavePos]
+"&Enregistrer la position dans le fichier"
+//[MViewConfigSaveShortPos]
+"Enregistrer les &signets"
+//[MViewConfigSaveCodepage]
+"Enregistrer la page de &code"
+//[MViewConfigSaveWrapMode]
+"Enregistrer le mode de &retour à la ligne"
+//[MViewConfigSaveViewMode]
+"Enregistrer le mode d'a&ffichage"
+//[MViewConfigDetectDumpMode]
+"Détecter le mode &dump"
+//[MViewAutoDetectCodePage]
+"Détection &automatique de la page de code"
+//[MViewConfigTabSize]
+"Taille des &tabulations"
+//[MViewConfigScrollbar]
+"Afficher la barre de dé&filement"
+//[MViewConfigArrows]
+"Afficher les flèc&hes de défilement"
+//[MViewConfigPersistentSelection]
+"Sélection &persistante"
+//[MViewConfigDefaultCodePage]
+"Page de code par &défaut :"
+//[MViewConfigMaxLineSize]
+"Largeur &maximale de ligne"
+//[MViewConfigVisible0x00]
+"'\\&0' visible"
+//[MEditConfigTitle]
+"Éditeur"
+//[MEditConfigEditorF4]
+"Éditeur externe pour F&4 au lieu de Alt+F4"
+//[MEditConfigEditorCommand]
+"Commande de l'&éditeur :"
+//[MEditConfigInternal]
+"Éditeur interne"
+//[MEditConfigExpandTabsTitle]
+"Développer les &tabulations :"
+//[MEditConfigDoNotExpandTabs]
+"Ne pas développer les tabulations"
+//[MEditConfigExpandTabs]
+"Convertir les nouvelles tabulations en espaces"
+//[MEditConfigConvertAllTabsToSpaces]
+"Convertir toutes les tabulations en espaces"
+//[MEditConfigPersistentBlocks]
+"Blocs &persistants"
+//[MEditConfigDelRemovesBlocks]
+"&Suppr efface les blocs"
+//[MEditConfigAutoIndent]
+"&Indentation automatique"
+//[MEditConfigSavePos]
+"Enregistrer la p&osition dans le fichier"
+//[MEditConfigSaveShortPos]
+"Enregistrer les &signets"
+//[MEditCursorBeyondEnd]
+"&Curseur après la fin de ligne"
+//[MEditAutoDetectCodePage]
+"Détection &automatique de la page de code"
+//[MEditShareWrite]
+"Autoriser l'édition des fichiers ouverts en écrit&ure"
+//[MEditLockROFileModification]
+"Verrouiller l'édition des &fichiers en lecture seule"
+//[MEditWarningBeforeOpenROFile]
+"A&vertir à l'ouverture des fichiers en lecture seule"
+//[MEditConfigTabSize]
+"Taille des ta&bulations"
+//[MEditConfigScrollbar]
+"Afficher la barre de dé&filement"
+//[MEditConfigLineNumbers]
+"Afficher les &numéros de ligne"
+//[MEditShowWhiteSpace]
+"Afficher les &espaces"
+//[MEditConfigSelFound]
+"Sé&lectionner le résultat"
+//[MEditConfigCursorAtEnd]
+"Cu&rseur à la fin"
+//[MEditConfigDefaultCodePage]
+"Pa&ge de code par défaut :"
+//[MConfigEditor]
+"Éditeur de configuration"
+//[MConfigEditorBoolean]
+"booléen"
+//[MConfigEditorTriState]
+"3 états"
+//[MConfigEditorInteger]
+"entier"
+//[MConfigEditorString]
+"chaîne"
+//[MConfigEditorIntegerSigned]
+"Signé :"
+//[MConfigEditorIntegerUnsigned]
+"Non signé :"
+//[MConfigEditorIntegerHexadecimal]
+"Hexadécimal :"
+//[MConfigEditorIntegerBinary]
+"Binaire :"
+//[MSaveSetupTitle]
+"Enregistrer la configuration"
+//[MSaveSetupAsk1]
+"Voulez-vous enregistrer"
+//[MSaveSetupAsk2]
+"la configuration actuelle ?"
+//[MSaveSetup]
+"Enregistrer"
+//[MCopyDlgTitle]
+"Copier"
+//[MMoveDlgTitle]
+"Renommer/Déplacer"
+//[MLinkDlgTitle]
+"Lien"
+//[MCopySecurity]
+"Droits d'&accès :"
+//[MCopySecurityDefault]
+"Par &défaut"
+//[MCopySecurityCopy]
+"Co&pier"
+//[MCopySecurityInherit]
+"&Hériter"
+//[MCopyIfFileExist]
+"Fichiers déjà e&xistants :"
+//[MCopyAsk]
+"&Demander"
+//[MCopyAskRO]
+"Demander aussi pour les fichiers en lecture &seule"
+//[MCopyOnlyNewerFiles]
+"Seulement les fichiers plus ré&cents"
+//[MLinkType]
+"T&ype de lien :"
+//[MLinkTypeJunction]
+"&jonction de répertoire"
+//[MLinkTypeHardlink]
+"lien p&hysique"
+//[MLinkTypeSymlink]
+"lien &symbolique"
+//[MLinkTypeSymlinkFile]
+"lien symbolique (&fichier)"
+//[MLinkTypeSymlinkDirectory]
+"lien symbolique (&dossier)"
+//[MCopyPreserveAllTimestamps]
+"Conserver tous les horodatages"
+//[MCopySymLinkContents]
+"Copier le contenu des liens s&ymboliques"
+//[MCopyMultiActions]
+"Traiter &plusieurs destinations"
+//[MCopyDlgCopy]
+"&Copier"
+//[MCopyDlgTree]
+"F10-&Arbre"
+//[MCopyDlgCancel]
+"A&nnuler"
+//[MCopyDlgRename]
+"&Renommer"
+//[MCopyDlgLink]
+"Créer le &lien"
+//[MCopyDlgTotal]
+"Total"
+//[MCopyPrepareSecury]
+"Application des droits d'accès…"
+//[MCopyUseFilter]
+"&Utiliser un filtre"
+//[MCopySetFilter]
+"Filt&re"
+//[MCopyFile]
+"Copier {0} {1} :"
+//[MMoveFile]
+"Renommer ou déplacer {0} {1} :"
+//[MLinkFile]
+"Créer un lien vers {0} {1} :"
+//[MCopyFiles]
+"Copier {0} élément{1} {2} :"
+//[MMoveFiles]
+"Renommer ou déplacer {0} élément{1} {2} :"
+//[MLinkFiles]
+"Créer des liens vers {0} élément{1} {2} :"
+//[MCMLTargetTO]
+"&vers"
+//[MCMLTargetIN]
+"&dans"
+//[MCMLItems0]
+""
+//[MCMLItemsA]
+"s"
+//[MCMLItemsS]
+"s"
+//[MCopyIncorrectTargetList]
+"Liste de destinations incorrecte"
+//[MCopyCopyingTitle]
+"Copie"
+//[MCopyMovingTitle]
+"Déplacement"
+//[MCopyCannotFind]
+"Fichier introuvable"
+//[MCannotCopyFolderToItself1]
+"Impossible de copier le dossier"
+//[MCannotCopyFolderToItself2]
+"sur lui-même"
+//[MCopyCannotCreateFolder]
+"Impossible de créer le dossier"
+//[MCopyCannotRenameFolder]
+"Impossible de renommer le dossier"
+//[MCopyIgnore]
+"&Ignorer"
+//[MCopyIgnoreAll]
+"Ignorer &tout"
+//[MCopyRetry]
+"&Réessayer"
+//[MCopySkip]
+"&Passer"
+//[MCopySkipAll]
+"Passer t&out"
+//[MCopyCancel]
+"&Annuler"
+//[MCopyDecrypt]
+"&Déchiffrer"
+//[MCopyDecryptAll]
+"Déchiffrer t&out"
+//[MCopyCannotCreateLink]
+"Impossible de créer le lien"
+//[MCopyFolderNotEmpty]
+"Le dossier de destination doit être vide"
+//[MCopyCannotCreateJunctionToFile]
+"Impossible de créer la jonction. Le fichier existe déjà :"
+//[MCopyCannotCreateVolMount]
+"Erreur de point de montage de volume"
+//[MCopyMountVolFailed]
+"La tentative de monter le volume '{0}'"
+//[MCopyMountVolFailed2]
+"sur '{0}' a échoué"
+//[MCopyMountName]
+"Disque_"
+//[MCannotCopyFileToItself1]
+"Impossible de copier le fichier"
+//[MCannotCopyFileToItself2]
+"sur lui-même"
+//[MCopyStream1]
+"Le fichier source contient plus d'un flux de données,"
+//[MCopyStream2]
+"mais vous n'utilisez pas la routine de copie du système."
+//[MCopyStream3]
+"mais le volume de destination ne prend pas en charge cette fonction."
+//[MCopyStream4]
+"Certaines données ne seront pas conservées."
+//[MCopyDirectoryOrFile]
+"S'agit-il d'un nom de dossier ou de fichier ?"
+//[MCopyDirectoryOrFileDirectory]
+"Dossier"
+//[MCopyDirectoryOrFileFile]
+"Fichier"
+//[MCopyFileExist]
+"Le fichier existe déjà"
+//[MCopySource]
+"&Nouveau"
+//[MCopyDest]
+"E&xistant"
+//[MCopyOverwrite]
+"É&craser"
+//[MCopyAppend]
+"A&jouter"
+//[MCopyRename]
+"R&enommer"
+//[MCopyRememberChoice]
+"&Mémoriser le choix"
+//[MCopyRenameTitle]
+"Renommer"
+//[MCopyRenameText]
+"&Nouveau nom :"
+//[MCopyFileRO]
+"Le fichier est en lecture seule"
+//[MCopyAskDelete]
+"Voulez-vous le supprimer ?"
+//[MCopyDeleteRO]
+"&Supprimer"
+//[MCopyDeleteAllRO]
+"&Tous"
+//[MCannotCopy]
+"Impossible de copier"
+//[MCannotMove]
+"Impossible de déplacer"
+//[MCannotLink]
+"Impossible de lier"
+//[MCannotCopyTo]
+"vers"
+//[MCopyEncryptWarn1]
+"Le fichier"
+//[MCopyEncryptWarn2]
+"ne peut pas être copié ou déplacé sans perdre son chiffrement."
+//[MCopyReadError]
+"Impossible de lire les données de"
+//[MCopyWriteError]
+"Impossible d'écrire les données dans"
+//[MCopyCannotReserveSpace]
+"Erreur lors de la réservation d'espace disque"
+//[MCopyFilesTotalInfo]
+"Fichiers :"
+//[MCopyBytesTotalInfo]
+"Octets :"
+//[MCopyMoving]
+"Déplacement du fichier"
+//[MCopyCopying]
+"Copie du fichier"
+//[MCopyTo]
+"vers"
+//[MDeleteTitle]
+"Supprimer"
+//[MAskDelete]
+"Voulez-vous supprimer {0} ?"
+//[MAskDeleteRecycle]
+"Voulez-vous déplacer {0} vers la Corbeille ?"
+//[MDeleteWipeTitle]
+"Effacer"
+//[MAskWipe]
+"Voulez-vous effacer définitivement {0} ?"
+//[MAskDeleteFolder]
+"le dossier"
+//[MAskDeleteFile]
+"le fichier"
+//[MAskDeleteObjects]
+"les objets"
+//[MAskDeleteLink]
+"un lien vers"
+//[MAskDeleteAndMore]
+"…et {0} de plus"
+//[MDeleteFolderTitle]
+"Supprimer le dossier"
+//[MWipeFolderTitle]
+"Effacer le dossier"
+//[MDeleteFilesTitle]
+"Supprimer les fichiers"
+//[MWipeFilesTitle]
+"Effacer les fichiers"
+//[MDeleteFolderConfirm]
+"Le dossier suivant sera supprimé :"
+//[MWipeFolderConfirm]
+"Le dossier suivant sera effacé définitivement :"
+//[MRecycleFolderConfirm]
+"Le dossier suivant sera déplacé vers la Corbeille :"
+//[MRecycleFolderConfirmDeleteLink1]
+"Le dossier contient des liens symboliques."
+//[MRecycleFolderConfirmDeleteLink2]
+"Pour éviter la perte de leur contenu lors du vidage de la Corbeille,"
+//[MRecycleFolderConfirmDeleteLink3]
+"ces liens vont maintenant être rompus."
+//[MRecycleFolderConfirmDeleteLink4]
+"Il sera impossible de les restaurer ensuite."
+//[MDeleteWipe]
+"Effacer"
+//[MDeleteRecycle]
+"Déplacer"
+//[MDeleteFileDelete]
+"&Supprimer"
+//[MDeleteFileWipe]
+"&Effacer"
+//[MDeleteFileAll]
+"&Tous"
+//[MDeleteFileSkip]
+"&Passer"
+//[MDeleteFileSkipAll]
+"Passer t&out"
+//[MDeleteFileCancel]
+"&Annuler"
+//[MDeletingTitle]
+"Suppression"
+//[MDeleting]
+"Suppression du fichier ou du dossier"
+//[MDeletingWiping]
+"Effacement du fichier ou du dossier"
+//[MDeleteRO]
+"Le fichier est en lecture seule"
+//[MAskDeleteRO]
+"Voulez-vous le supprimer ?"
+//[MAskWipeRO]
+"Voulez-vous l'effacer définitivement ?"
+//[MDeleteHardLink1]
+"Plusieurs liens physiques pointent vers ce fichier."
+//[MDeleteHardLink2]
+"Effacer ce fichier videra tous les fichiers qui y sont liés."
+//[MDeleteHardLink3]
+"Voulez-vous effacer ce fichier ?"
+//[MCannotDeleteFile]
+"Impossible de supprimer le fichier"
+//[MCannotDeleteFolder]
+"Impossible de supprimer le dossier"
+//[MDeleteRetry]
+"&Réessayer"
+//[MDeleteSkip]
+"&Passer"
+//[MDeleteSkipAll]
+"Passer t&out"
+//[MDeleteCancel]
+"&Annuler"
+//[MCannotRecycleFile]
+"Impossible de déplacer le fichier vers la Corbeille"
+//[MCannotRecycleFolder]
+"Impossible de déplacer le dossier vers la Corbeille"
+//[MTryToDeletePermanently]
+"Essayer de le supprimer définitivement ?"
+//[MCannotGetSecurity]
+"Impossible d'obtenir les droits d'accès de"
+//[MCannotSetSecurity]
+"Impossible de définir les droits d'accès de"
+//[MSearchReplaceSearchTitle]
+"Rechercher"
+//[MSearchReplaceReplaceTitle]
+"Remplacer"
+//[MSearchReplaceText]
+"&Texte"
+//[MSearchReplaceHex]
+"&Hex"
+//[MSearchReplacePickWord]
+"M&ot"
+//[MSearchReplacePickSelection]
+"Sé&lection"
+//[MSearchReplaceSearchFor]
+"&Rechercher"
+//[MSearchReplaceReplaceWith]
+"Rem&placer par"
+//[MSearchReplaceCase]
+"Respecter la &casse"
+//[MSearchReplaceWholeWords]
+"&Mots entiers"
+//[MSearchReplaceFuzzy]
+"Recherche appro&ximative"
+//[MSearchReplaceRegexp]
+"&Expressions régulières"
+//[MSearchReplacePreserveStyle]
+"Conser&ver le style"
+//[MSearchReplaceFind]
+"Rechercher"
+//[MSearchReplaceFindNext]
+"Suivant"
+//[MSearchReplaceFindPrev]
+"Pré&cédent"
+//[MSearchReplaceReplace]
+"Remplacer"
+//[MSearchReplaceReplaceNext]
+"Remplacer suivant"
+//[MSearchReplaceReplacePrev]
+"Remplacer pré&cédent"
+//[MSearchReplaceAll]
+"&Tout"
+//[MSearchReplaceCancel]
+"Annuler"
+//[MEditTitle]
+"Éditeur"
+//[MAskReload]
+"déjà chargé. Comment ouvrir ce fichier ?"
+//[MCurrent]
+"&Actuel"
+//[MReload]
+"R&echarger"
+//[MNewOpen]
+"&Nouvelle instance"
+//[MEditCannotOpen]
+"Impossible d'ouvrir le fichier"
+//[MEditReading]
+"Lecture du fichier {0}"
+//[MEditAskSave]
+"Le fichier a été modifié. Enregistrer ?"
+//[MEditAskSaveExt]
+"Le fichier a été modifié par un programme externe. Enregistrer ?"
+//[MEditBtnSaveAs]
+"Enregistrer &sous…"
+//[MEditRO]
+"est un fichier en lecture seule"
+//[MEditExists]
+"existe déjà"
+//[MEditOvr]
+"Voulez-vous l'écraser ?"
+//[MEditSaving]
+"Enregistrement du fichier {0}"
+//[MEditStatusLine]
+"Lgn"
+//[MEditStatusCol]
+"Col"
+//[MEditStatusChar]
+"Car"
+//[MEditRSH]
+"est un fichier en lecture seule"
+//[MEditFileGetSizeError]
+"Impossible de déterminer la taille du fichier."
+//[MEditFileLong]
+"a une taille de {0},"
+//[MEditFileLong2]
+"ce qui dépasse la taille maximale configurée de {0}."
+//[MEditROOpen]
+"Voulez-vous le modifier ?"
+//[MEditCanNotEditDirectory]
+"Impossible d'éditer le dossier"
+//[MEditSearchingFor]
+"Recherche de {0}"
+//[MEditSearchStatistics]
+"Occurrences : {0}, lignes : {1}"
+//[MEditSearchAllFileNameFormat]
+"{0}{1}.Filtered.txt"
+//[MEditSearchAllFileNameFormatAlt]
+"{0}.Filtered{1}"
+//[MEditNotFound]
+"Chaîne introuvable"
+//[MEditAskReplace]
+"Remplacer"
+//[MEditAskReplaceWith]
+"par"
+//[MEditReplace]
+"&Remplacer"
+//[MEditReplaceAll]
+"&Tout"
+//[MEditSkip]
+"&Passer"
+//[MEditCancel]
+"&Annuler"
+//[MEditOpenCreateLabel]
+"&Ouvrir/créer le fichier :"
+//[MEditOpenAutoDetect]
+"Détection automatique"
+//[MDefaultCP]
+"Par défaut"
+//[MGoTo]
+"Aller à"
+//[MGoToHex]
+"Valeur &hexa"
+//[MFolderShortcutsTitle]
+"Raccourcis de dossiers"
+//[MShortcutNone]
+"<aucun>"
+//[MShortcutPlugin]
+"<plugin>"
+//[MFSShortcutName]
+"Titre :"
+//[MFSShortcutPath]
+"Chemin :"
+//[MFSShortcutPluginFile]
+"Fichier :"
+//[MFSShortcutPluginData]
+"Données :"
+//[MNeedNearPath]
+"Aller au dossier existant le plus proche ?"
+//[MSaveThisShortcut]
+"Enregistrer ce raccourci ?"
+//[MEditF1]
+"Aide"
+//[MEditF2]
+"Enreg"
+//[MEditF3]
+""
+//[MEditF4]
+"Quitter"
+//[MEditF5]
+""
+//[MEditF6]
+"Voir"
+//[MEditF7]
+"Rech"
+//[MEditF8]
+"ANSI"
+//[MEditF9]
+""
+//[MEditF10]
+"Quitter"
+//[MEditF11]
+"Plugin"
+//[MEditF12]
+"Écran"
+//[MEditShiftF1]
+""
+//[MEditShiftF2]
+"EnrSous"
+//[MEditShiftF3]
+""
+//[MEditShiftF4]
+"Éditer…"
+//[MEditShiftF5]
+""
+//[MEditShiftF6]
+""
+//[MEditShiftF7]
+"Suiv"
+//[MEditShiftF8]
+"PgCode"
+//[MEditShiftF9]
+""
+//[MEditShiftF10]
+"EnrQuit"
+//[MEditShiftF11]
+""
+//[MEditShiftF12]
+""
+//[MEditAltF1]
+""
+//[MEditAltF2]
+""
+//[MEditAltF3]
+""
+//[MEditAltF4]
+""
+//[MEditAltF5]
+""
+//[MEditAltF6]
+""
+//[MEditAltF7]
+"Préc"
+//[MEditAltF8]
+"AllerÀ"
+//[MEditAltF9]
+"Vidéo"
+//[MEditAltF10]
+""
+//[MEditAltF11]
+"HisVue"
+//[MEditAltF12]
+""
+//[MEditCtrlF1]
+""
+//[MEditCtrlF2]
+""
+//[MEditCtrlF3]
+"NumLgn"
+//[MEditCtrlF4]
+""
+//[MEditCtrlF5]
+""
+//[MEditCtrlF6]
+""
+//[MEditCtrlF7]
+"Rempl"
+//[MEditCtrlF8]
+"FinLgn"
+//[MEditCtrlF9]
+""
+//[MEditCtrlF10]
+"VersFic"
+//[MEditCtrlF11]
+""
+//[MEditCtrlF12]
+""
+//[MEditAltShiftF1]
+""
+//[MEditAltShiftF2]
+""
+//[MEditAltShiftF3]
+""
+//[MEditAltShiftF4]
+""
+//[MEditAltShiftF5]
+""
+//[MEditAltShiftF6]
+""
+//[MEditAltShiftF7]
+""
+//[MEditAltShiftF8]
+""
+//[MEditAltShiftF9]
+"Config"
+//[MEditAltShiftF10]
+""
+//[MEditAltShiftF11]
+""
+//[MEditAltShiftF12]
+""
+//[MEditCtrlShiftF1]
+""
+//[MEditCtrlShiftF2]
+""
+//[MEditCtrlShiftF3]
+""
+//[MEditCtrlShiftF4]
+""
+//[MEditCtrlShiftF5]
+""
+//[MEditCtrlShiftF6]
+""
+//[MEditCtrlShiftF7]
+""
+//[MEditCtrlShiftF8]
+""
+//[MEditCtrlShiftF9]
+""
+//[MEditCtrlShiftF10]
+""
+//[MEditCtrlShiftF11]
+""
+//[MEditCtrlShiftF12]
+""
+//[MEditCtrlAltF1]
+""
+//[MEditCtrlAltF2]
+""
+//[MEditCtrlAltF3]
+""
+//[MEditCtrlAltF4]
+""
+//[MEditCtrlAltF5]
+""
+//[MEditCtrlAltF6]
+""
+//[MEditCtrlAltF7]
+""
+//[MEditCtrlAltF8]
+""
+//[MEditCtrlAltF9]
+""
+//[MEditCtrlAltF10]
+""
+//[MEditCtrlAltF11]
+""
+//[MEditCtrlAltF12]
+""
+//[MEditCtrlAltShiftF1]
+""
+//[MEditCtrlAltShiftF2]
+""
+//[MEditCtrlAltShiftF3]
+""
+//[MEditCtrlAltShiftF4]
+""
+//[MEditCtrlAltShiftF5]
+""
+//[MEditCtrlAltShiftF6]
+""
+//[MEditCtrlAltShiftF7]
+""
+//[MEditCtrlAltShiftF8]
+""
+//[MEditCtrlAltShiftF9]
+""
+//[MEditCtrlAltShiftF10]
+""
+//[MEditCtrlAltShiftF11]
+""
+//[MEditCtrlAltShiftF12]
+""
+//[MEditF8DOS]
+"OEM"
+//[MEditCtrlF3Hide]
+"CachNum"
+//[MEditSaveAs]
+"Enregistrer le fichier &sous"
+//[MEditCodePage]
+"Page de &code :"
+//[MEditAddSignature]
+"Ajouter la &signature (BOM)"
+//[MEditSaveAsFormatTitle]
+"Convertir les fins de ligne en :"
+//[MEditSaveOriginal]
+"Ne &pas modifier"
+//[MEditSaveDOS]
+"Format &Dos/Windows (CR LF)"
+//[MEditSaveUnix]
+"Format &Unix (LF)"
+//[MEditSaveMac]
+"Format &Mac (CR)"
+//[MEditCannotSave]
+"Impossible d'enregistrer le fichier"
+//[MEditSavedChangedNonFile]
+"Le fichier a été modifié mais le fichier ou le dossier contenant"
+//[MEditSavedChangedNonFile1]
+"Le fichier ou le dossier contenant"
+//[MEditSavedChangedNonFile2]
+"ce fichier a été déplacé ou supprimé. Enregistrer ?"
+//[MEditNewPath1]
+"Le chemin du fichier édité n'existe pas,"
+//[MEditNewPath2]
+"mais il sera créé lors de l'enregistrement."
+//[MEditNewPath3]
+"Continuer ?"
+//[MEditNewPlugin1]
+"Le nom du fichier à éditer ne peut pas être vide"
+//[MEditorReloadCPWarnLost1]
+"Le fichier doit être rechargé pour changer la page de code."
+//[MEditorReloadCPWarnLost2]
+"Toutes les modifications non enregistrées seront perdues."
+//[MEditorSwitchCPConfirm]
+"Continuer ?"
+//[MEditDataLostWarn]
+"Des données ont été perdues pendant l'édition du fichier."
+//[MEditorSaveNotRecommended]
+"Il n'est pas recommandé d'enregistrer ce fichier."
+//[MEditorSave]
+"Enregistrer"
+//[MEditorSaveCPWarnShow]
+"Afficher"
+//[MEditorCPNotSupported]
+"La page de code {0} n'est pas prise en charge par votre système"
+//[MColumnName]
+"Nom"
+//[MColumnExtension]
+"Extension"
+//[MColumnSize]
+"Taille"
+//[MColumnAlocatedSize]
+"Allouée"
+//[MColumnDate]
+"Date"
+//[MColumnTime]
+"Heure"
+//[MColumnWrited]
+"Écriture"
+//[MColumnCreated]
+"Création"
+//[MColumnAccessed]
+"Accès"
+//[MColumnChanged]
+"Modif"
+//[MColumnAttr]
+"Attr"
+//[MColumnDescription]
+"Description"
+//[MColumnOwner]
+"Propriétaire"
+//[MColumnMumLinks]
+"NbL"
+//[MColumnNumStreams]
+"NbF"
+//[MColumnStreamsSize]
+"TFlux"
+//[MColumnUnknown]
+"???"
+//[MListUp]
+"Haut"
+//[MListFolder]
+"Dossier"
+//[MListSymlink]
+"LienSym"
+//[MListJunction]
+"Jonction"
+//[MListVolMount]
+"Volume"
+//[MListUnknownReparsePoint]
+"?LienSym?"
+//[MListBrackets]
+"<>"
+//[MListBytes]
+"B"
+//[MListKb]
+"K"
+//[MListMb]
+"M"
+//[MListGb]
+"G"
+//[MListTb]
+"T"
+//[MListPb]
+"P"
+//[MListEb]
+"E"
+//[MListFileSize]
+"Octets : {0}, fichiers : {1}, dossiers : {2}"
+//[MListFileSizeStatus]
+"{0} ({1}/{2}) {3} {4}"
+//[MListFreeSize]
+"{0} octets libres"
+//[MDirInfoViewTitle]
+"Voir"
+//[MFileToEdit]
+"Fichier à éditer :"
+//[MUnselectTitle]
+"Désélectionner"
+//[MSelectTitle]
+"Sélectionner"
+//[MSelectFilter]
+"&Filtre"
+//[MCompareTitle]
+"Comparer"
+//[MCompareFilePanelsRequired1]
+"Deux panneaux de fichiers sont nécessaires pour exécuter"
+//[MCompareFilePanelsRequired2]
+"la commande Comparer les dossiers"
+//[MCompareSameFolders1]
+"Le contenu des dossiers semble"
+//[MCompareSameFolders2]
+"identique"
+//[MSelectAssocTitle]
+"Choisir l'association"
+//[MAssocTitle]
+"Associations de fichiers"
+//[MAskDelAssoc]
+"Voulez-vous supprimer l'association pour"
+//[MFileAssocTitle]
+"Modifier les associations de fichiers"
+//[MFileAssocMasks]
+"Un &masque ou plusieurs masques de fichiers :"
+//[MFileAssocDescr]
+"&Description de l'association :"
+//[MFileAssocExec]
+"Commande d'e&xécution (pour Entrée) :"
+//[MFileAssocAltExec]
+"Commande d'exéc&ution (pour Ctrl+PgDn) :"
+//[MFileAssocView]
+"Commande d'&affichage (pour F3) :"
+//[MFileAssocAltView]
+"Commande d'a&ffichage (pour Alt+F3) :"
+//[MFileAssocEdit]
+"Commande d'&édition (pour F4) :"
+//[MFileAssocAltEdit]
+"Commande d'éd&ition (pour Alt+F4) :"
+//[MViewF1]
+"Aide"
+//[MViewF2]
+"Retour"
+//[MViewF3]
+"Quitter"
+//[MViewF4]
+"Hexa"
+//[MViewF5]
+""
+//[MViewF6]
+"Éditer"
+//[MViewF7]
+"Rech"
+//[MViewF8]
+"ANSI"
+//[MViewF9]
+""
+//[MViewF10]
+"Quitter"
+//[MViewF11]
+"Plugins"
+//[MViewF12]
+"Écran"
+//[MViewShiftF1]
+""
+//[MViewShiftF2]
+"RetMot"
+//[MViewShiftF3]
+""
+//[MViewShiftF4]
+"Mode"
+//[MViewShiftF5]
+""
+//[MViewShiftF6]
+""
+//[MViewShiftF7]
+"Suiv"
+//[MViewShiftF8]
+"PgCode"
+//[MViewShiftF9]
+""
+//[MViewShiftF10]
+""
+//[MViewShiftF11]
+""
+//[MViewShiftF12]
+""
+//[MViewAltF1]
+""
+//[MViewAltF2]
+""
+//[MViewAltF3]
+""
+//[MViewAltF4]
+""
+//[MViewAltF5]
+""
+//[MViewAltF6]
+""
+//[MViewAltF7]
+"Préc"
+//[MViewAltF8]
+"AllerÀ"
+//[MViewAltF9]
+"Vidéo"
+//[MViewAltF10]
+""
+//[MViewAltF11]
+"HisVue"
+//[MViewAltF12]
+""
+//[MViewCtrlF1]
+""
+//[MViewCtrlF2]
+""
+//[MViewCtrlF3]
+""
+//[MViewCtrlF4]
+""
+//[MViewCtrlF5]
+""
+//[MViewCtrlF6]
+""
+//[MViewCtrlF7]
+""
+//[MViewCtrlF8]
+""
+//[MViewCtrlF9]
+""
+//[MViewCtrlF10]
+"VersFic"
+//[MViewCtrlF11]
+""
+//[MViewCtrlF12]
+""
+//[MViewAltShiftF1]
+""
+//[MViewAltShiftF2]
+""
+//[MViewAltShiftF3]
+""
+//[MViewAltShiftF4]
+""
+//[MViewAltShiftF5]
+""
+//[MViewAltShiftF6]
+""
+//[MViewAltShiftF7]
+""
+//[MViewAltShiftF8]
+""
+//[MViewAltShiftF9]
+"Config"
+//[MViewAltShiftF10]
+""
+//[MViewAltShiftF11]
+""
+//[MViewAltShiftF12]
+""
+//[MViewCtrlShiftF1]
+""
+//[MViewCtrlShiftF2]
+""
+//[MViewCtrlShiftF3]
+""
+//[MViewCtrlShiftF4]
+""
+//[MViewCtrlShiftF5]
+""
+//[MViewCtrlShiftF6]
+""
+//[MViewCtrlShiftF7]
+""
+//[MViewCtrlShiftF8]
+""
+//[MViewCtrlShiftF9]
+""
+//[MViewCtrlShiftF10]
+""
+//[MViewCtrlShiftF11]
+""
+//[MViewCtrlShiftF12]
+""
+//[MViewCtrlAltF1]
+""
+//[MViewCtrlAltF2]
+""
+//[MViewCtrlAltF3]
+""
+//[MViewCtrlAltF4]
+""
+//[MViewCtrlAltF5]
+""
+//[MViewCtrlAltF6]
+""
+//[MViewCtrlAltF7]
+""
+//[MViewCtrlAltF8]
+""
+//[MViewCtrlAltF9]
+""
+//[MViewCtrlAltF10]
+""
+//[MViewCtrlAltF11]
+""
+//[MViewCtrlAltF12]
+""
+//[MViewCtrlAltShiftF1]
+""
+//[MViewCtrlAltShiftF2]
+""
+//[MViewCtrlAltShiftF3]
+""
+//[MViewCtrlAltShiftF4]
+""
+//[MViewCtrlAltShiftF5]
+""
+//[MViewCtrlAltShiftF6]
+""
+//[MViewCtrlAltShiftF7]
+""
+//[MViewCtrlAltShiftF8]
+""
+//[MViewCtrlAltShiftF9]
+""
+//[MViewCtrlAltShiftF10]
+""
+//[MViewCtrlAltShiftF11]
+""
+//[MViewCtrlAltShiftF12]
+""
+//[MViewF2Unwrap]
+"SansRet"
+//[MViewF4Text]
+"Texte"
+//[MViewF4Dump]
+"Dump"
+//[MViewF8DOS]
+"OEM"
+//[MViewMode]
+"Mode d'affichage"
+//[MInViewer]
+"affichage"
+//[MInEditor]
+"édition"
+//[MFilterTitle]
+"Menu des filtres"
+//[MPanelFileType]
+"Type de fichier du panneau"
+//[MFolderFileType]
+"Dossiers"
+//[MCanEditCustomFilterOnly]
+"Seul un filtre personnalisé peut être modifié"
+//[MAskDeleteFilter]
+"Voulez-vous supprimer le filtre"
+//[MCanDeleteCustomFilterOnly]
+"Seul un filtre personnalisé peut être supprimé"
+//[MFindFileTitle]
+"Rechercher un fichier"
+//[MFindFileMasks]
+"Un &masque ou plusieurs masques de fichiers :"
+//[MFindFileContaining]
+"Contenant"
+//[MFindFileText]
+"&Texte"
+//[MFindFileHex]
+"&Hex"
+//[MFindFileCodePage]
+"Avec la pa&ge de code :"
+//[MFindFileAllCodePages]
+"Toutes les pages de code standard"
+//[MFindFileSelectedCodePages]
+"Pages de code sélectionnées"
+//[MFindFileCase]
+"Respecter la &casse"
+//[MFindFileWholeWords]
+"Mots &entiers"
+//[MFindFileFuzzy]
+"Recherche appro&ximative"
+//[MFindFileNotContaining]
+"&Ne contenant pas"
+//[MFindFileArchives]
+"Rechercher dans les arch&ives"
+//[MFindFileFolders]
+"Rechercher des d&ossiers"
+//[MFindFileSymLinks]
+"Rechercher dans les liens symbo&liques"
+//[MFindFileAlternateStreams]
+"Rechercher dans les flux alte&rnatifs"
+//[MFindFileSearchArea]
+"Choisir la zone de rech&erche :"
+//[MFindFileSearchAllDisks]
+"Dans tous les lecteurs non &amovibles"
+//[MFindFileSearchAllButNetwork]
+"Dans tous les lecteurs &locaux"
+//[MFindFileSearchInPATH]
+"Dans les dossiers du &PATH"
+//[MFindFileSearchFromRootOfDrive]
+"Depuis la &racine de"
+//[MFindFileSearchFromRootFolder]
+"Depuis le dossier &racine"
+//[MFindFileSearchFromCurrent]
+"Depuis le dossier act&uel"
+//[MFindFileSearchInCurrent]
+"Le dossier actuel uni&quement"
+//[MFindFileSearchInSelected]
+"Dossiers &sélectionnés"
+//[MFindFileUseFilter]
+"&Utiliser un filtre"
+//[MFindFileUsingFilter]
+"avec le filtre"
+//[MFindFileFind]
+"Rechercher"
+//[MFindFileDrive]
+"Lec&teur"
+//[MFindFileSetFilter]
+"Filt&re"
+//[MFindFileAdvanced]
+"Avancé&s"
+//[MFindFileSearchingIn]
+"Recherche de {0} dans"
+//[MFindFileNewSearch]
+"&Nouvelle recherche"
+//[MFindFileGoTo]
+"&Aller à"
+//[MFindFileView]
+"&Voir"
+//[MFindFilePanel]
+"&Panneau"
+//[MFindFileStop]
+"A&rrêter"
+//[MFindFileDone]
+"Recherche terminée. Fichiers trouvés : {0}, dossiers : {1}"
+//[MFindFileCancel]
+"&Annuler"
+//[MFindFileFound]
+"Fichiers : {0}, dossiers : {1}"
+//[MFindFileAdvancedTitle]
+"Options avancées de recherche"
+//[MFindFileSearchFirst]
+"Rechercher seulement dans les &premiers :"
+//[MFindFileSearchOutputFormat]
+"Format de s&ortie :"
+//[MFindAlternateModeTypes]
+"&Types de colonnes"
+//[MFindAlternateModeWidths]
+"&Largeurs des colonnes"
+//[MFoldTreeSearch]
+"Rechercher :"
+//[MGetCodePageTitle]
+"Pages de code"
+//[MGetCodePageSystem]
+"Système"
+//[MGetCodePageUnicode]
+"Unicode"
+//[MGetCodePageFavorites]
+"Favoris"
+//[MGetCodePageOther]
+"Autres"
+//[MGetCodePageEditCodePageName]
+"Renommer la page de code"
+//[MGetCodePageResetCodePageName]
+"&Réinitialiser"
+//[MHighlightTitle]
+"Mise en évidence des fichiers"
+//[MHighlightUpperSortGroup]
+"Groupe de tri supérieur"
+//[MHighlightLowerSortGroup]
+"Groupe de tri inférieur"
+//[MHighlightLastGroup]
+"Groupe de mise en évidence de plus basse priorité"
+//[MHighlightAskDel]
+"Voulez-vous supprimer la mise en évidence pour"
+//[MHighlightWarning]
+"Vous perdrez toutes les modifications"
+//[MHighlightAskRestore]
+"Voulez-vous restaurer la mise en évidence par défaut ?"
+//[MHighlightEditTitle]
+"Modifier la mise en évidence des fichiers"
+//[MHighlightMark]
+"Mar&quage,"
+//[MHighlightInheritMark]
+"&Hériter"
+//[MHighlightColors]
+"Couleurs des noms de fichiers (\"noir sur noir\" - couleur par défaut)"
+//[MHighlightFileName1]
+"&1. Nom de fichier normal"
+//[MHighlightFileName2]
+"&3. Nom de fichier sélectionné"
+//[MHighlightFileName3]
+"&5. Nom de fichier sous le curseur"
+//[MHighlightFileName4]
+"&7. Nom sélectionné sous le curseur"
+//[MHighlightMarking1]
+"&2. Marquage"
+//[MHighlightMarking2]
+"&4. Marquage"
+//[MHighlightMarking3]
+"&6. Marquage"
+//[MHighlightMarking4]
+"&8. Marquage"
+//[MHighlightExample]
+"fichier.ext"
+//[MHighlightContinueProcessing]
+"C&ontinuer le traitement"
+//[MInfoTitle]
+"Information"
+//[MInfoCompName]
+"Nom de l'ordinateur"
+//[MInfoCompDescription]
+"Description de l'ordinateur"
+//[MInfoUserName]
+"Nom d'utilisateur"
+//[MInfoUserDescription]
+"Description de l'utilisateur"
+//[MInfoUserAccessLevel]
+"Niveau d'accès"
+//[MInfoUserAccessLevelGuest]
+"Invité"
+//[MInfoUserAccessLevelUser]
+"Utilisateur"
+//[MInfoUserAccessLevelAdministrator]
+"Administrateur"
+//[MInfoUserAccessLevelUnknown]
+"Inconnu"
+//[MInfoUserAccessElevated]
+"Élevé"
+//[MInfoUserAccessElevationTypeFull]
+"Complet"
+//[MInfoUserAccessElevationTypeLimited]
+"Limité"
+//[MInfoDiskTitle]
+"Disque"
+//[MInfoRemovable]
+"Amovible"
+//[MInfoFixed]
+"Fixe"
+//[MInfoNetwork]
+"Réseau"
+//[MInfoCDROM]
+"CD-ROM"
+//[MInfoCDR]
+"CD-R"
+//[MInfoCDRW]
+"CD-RW"
+//[MInfoCDRWDVD]
+"CD-RW/DVD"
+//[MInfoDVDROM]
+"DVD-ROM"
+//[MInfoDVDR]
+"DVD-R"
+//[MInfoDVDRW]
+"DVD-RW"
+//[MInfoDVDRAM]
+"DVD-RAM"
+//[MInfoBDROM]
+"BD-ROM"
+//[MInfoBDR]
+"BD-R"
+//[MInfoBDRE]
+"BD-RE"
+//[MInfoHDDVDROM]
+"HDDVD-ROM"
+//[MInfoHDDVDR]
+"HDDVD-R"
+//[MInfoHDDVDRW]
+"HDDVD-RW"
+//[MInfoHDDVDRAM]
+"HDDVD-RAM"
+//[MInfoRAM]
+"RAM"
+//[MInfoSUBST]
+"Subst"
+//[MInfoVirtual]
+"Virtuel"
+//[MInfoUnknown]
+"Inconnu"
+//[MInfoMetricTotal]
+"total"
+//[MInfoMetricAvailable]
+"disponible"
+//[MInfoMetricUsed]
+"utilisé"
+//[MInfoDisk]
+"disque"
+//[MInfoDiskSpace]
+"Espace"
+//[MInfoDiskLabel]
+"Nom de volume"
+//[MInfoDiskNumber]
+"Numéro de série"
+//[MInfoMemory]
+"Mémoire"
+//[MInfoMemoryCommittable]
+"Allouable"
+//[MInfoMemoryAddressable]
+"Adressable"
+//[MInfoMemoryPhysical]
+"Physique"
+//[MInfoMetricMemoryInstalled]
+"installée"
+//[MInfoDescription]
+"Description"
+//[MInfoDizAbsent]
+"Le fichier de description du dossier est absent"
+//[MInfoPlugin]
+"Plugin"
+//[MInfoPowerStatus]
+"État de l'alimentation"
+//[MInfoPowerStatusAC]
+"Alimentation secteur"
+//[MInfoPowerStatusACOffline]
+"Débranché"
+//[MInfoPowerStatusACOnline]
+"Branché"
+//[MInfoPowerStatusACBackUp]
+"Alimentation de secours"
+//[MInfoPowerStatusACUnknown]
+"Inconnu"
+//[MInfoPowerStatusBCLifePercentUnknown]
+"inconnu"
+//[MInfoPowerStatusBC]
+"Charge de la batterie"
+//[MInfoPowerStatusBCHigh]
+"Élevée"
+//[MInfoPowerStatusBCMedium]
+"Moyenne"
+//[MInfoPowerStatusBCLow]
+"Faible"
+//[MInfoPowerStatusBCCritical]
+"Critique"
+//[MInfoPowerStatusBCCharging]
+"en charge"
+//[MInfoPowerStatusBCNoSysBat]
+"Pas de batterie système"
+//[MInfoPowerStatusBCUnknown]
+"Inconnu"
+//[MInfoPowerStatusBCTimeRem]
+"Autonomie restante"
+//[MInfoPowerStatusBCFullTimeRem]
+"Autonomie totale"
+//[MInfoPowerStatusUnknown]
+"Inconnu"
+//[MAccessDenied]
+"Accès refusé"
+//[MCannotExecute]
+"Impossible d'exécuter"
+//[MCannotInvokeComspec]
+"Impossible de lancer l'interpréteur de commandes"
+//[MCheckComspecVar]
+"Vérifiez la variable d'environnement COMSPEC"
+//[MScanningFolder]
+"Analyse du dossier"
+//[MMakeFolderTitle]
+"Créer un dossier"
+//[MCreateFolder]
+"Créer le &dossier :"
+//[MMakeFolderLinkType]
+"Type de &lien :"
+//[MMakeFolderLinkNone]
+"a&ucun"
+//[MMakeFolderLinkJunction]
+"&jonction de répertoire"
+//[MMakeFolderLinkSymlink]
+"lien &symbolique"
+//[MMakeFolderLinkTarget]
+"&Cible :"
+//[MMultiMakeDir]
+"Traiter &plusieurs noms"
+//[MIncorrectDirList]
+"Liste de dossiers incorrecte"
+//[MCannotCreateFolder]
+"Impossible de créer le dossier"
+//[MMenuBriefView]
+"&Bref"
+//[MMenuMediumView]
+"&Moyen"
+//[MMenuFullView]
+"&Complet"
+//[MMenuWideView]
+"&Large"
+//[MMenuDetailedView]
+"&Détaillé"
+//[MMenuDizView]
+"D&escriptions"
+//[MMenuLongDizView]
+"Descriptions lon&gues"
+//[MMenuOwnersView]
+"Pr&opriétaires"
+//[MMenuLinksView]
+"Lien&s des fichiers"
+//[MMenuAlternativeView]
+"Complet &alternatif"
+//[MMenuInfoPanel]
+"Panneau d'&infos"
+//[MMenuTreePanel]
+"Panneau &arbre"
+//[MMenuQuickView]
+"&Vue rapide"
+//[MMenuSortModes]
+"Modes de &tri"
+//[MMenuLongNames]
+"Afficher les &noms longs"
+//[MMenuTogglePanel]
+"Panneau &oui/non"
+//[MMenuReread]
+"&Relire"
+//[MMenuChangeDrive]
+"&Changer de lecteur"
+//[MMenuView]
+"&Voir"
+//[MMenuEdit]
+"&Éditer"
+//[MMenuCopy]
+"&Copier"
+//[MMenuMove]
+"&Renommer ou déplacer"
+//[MMenuLink]
+"Lie&n"
+//[MMenuCreateFolder]
+"Créer un &dossier"
+//[MMenuDelete]
+"&Supprimer"
+//[MMenuWipe]
+"E&ffacer"
+//[MMenuAdd]
+"Ajouter à l'&archive"
+//[MMenuExtract]
+"E&xtraire les fichiers"
+//[MMenuArchiveCommands]
+"Commandes d'arc&hive"
+//[MMenuAttributes]
+"A&ttributs de fichier"
+//[MMenuApplyCommand]
+"A&ppliquer une commande"
+//[MMenuDescribe]
+"Décrire les fic&hiers"
+//[MMenuSelectGroup]
+"Sélectionner un &groupe"
+//[MMenuUnselectGroup]
+"Désélectionner un gro&upe"
+//[MMenuInvertSelection]
+"&Inverser la sélection"
+//[MMenuRestoreSelection]
+"Restaurer la séle&ction"
+//[MMenuFindFile]
+"Rechercher un &fichier"
+//[MMenuHistory]
+"&Historique"
+//[MMenuVideoMode]
+"Mode &vidéo"
+//[MMenuFindFolder]
+"Rechercher un do&ssier"
+//[MMenuViewHistory]
+"Histori&que d'affichage"
+//[MMenuFoldersHistory]
+"Historique des d&ossiers"
+//[MMenuSwapPanels]
+"Permuter les panneau&x"
+//[MMenuTogglePanels]
+"&Panneaux oui/non"
+//[MMenuCompareFolders]
+"&Comparer les dossiers"
+//[MMenuUserMenu]
+"Éditer le &menu utilisateur"
+//[MMenuFileAssociations]
+"&Associations de fichiers"
+//[MMenuFolderShortcuts]
+"Raccourcis de &dossiers"
+//[MMenuFilter]
+"F&iltre du panneau"
+//[MMenuPluginCommands]
+"Commandes des pl&ugins"
+//[MMenuWindowsList]
+"Liste des é&crans"
+//[MMenuProcessList]
+"&Liste des tâches"
+//[MMenuHotPlugList]
+"Liste des périphériques ex&tractibles"
+//[MMenuSystemSettings]
+"Paramètres s&ystème"
+//[MMenuPanelSettings]
+"Paramètres des &panneaux"
+//[MMenuTreeSettings]
+"Paramètres de l'&arbre"
+//[MMenuInterface]
+"Paramètres de l'&interface"
+//[MMenuLanguages]
+"Lan&gues"
+//[MMenuPluginsConfig]
+"Configuration des pl&ugins"
+//[MMenuPluginsManagerSettings]
+"Paramètres du gestionnai&re de plugins"
+//[MMenuDialogSettings]
+"Paramètres des &dialogues"
+//[MMenuVMenuSettings]
+"Paramètres des menus"
+//[MMenuCmdlineSettings]
+"Paramètres de la ligne de &commande"
+//[MMenuAutoCompleteSettings]
+"Paramètres de complé&tion automatique"
+//[MMenuInfoPanelSettings]
+"Paramètres du panneau d'inf&os"
+//[MMenuMaskGroups]
+"Groupes de mas&ques"
+//[MMenuConfirmation]
+"Co&nfirmations"
+//[MMenuFilePanelModes]
+"&Modes des panneaux"
+//[MMenuFileDescriptions]
+"Descriptions de &fichiers"
+//[MMenuFolderInfoFiles]
+"Fichiers de description de doss&iers"
+//[MMenuViewer]
+"Paramètres de la &visionneuse"
+//[MMenuEditor]
+"Paramètres de l'&éditeur"
+//[MMenuCodePages]
+"Pages de code"
+//[MMenuColors]
+"Coule&urs"
+//[MMenuFilesHighlighting]
+"Mise en évidence des fic&hiers et groupes de tri"
+//[MMenuSaveSetup]
+"Enregi&strer la configuration"
+//[MMenuTogglePanelRight]
+"Panneau &oui/non"
+//[MMenuChangeDriveRight]
+"&Changer de lecteur"
+//[MMenuLeftTitle]
+"&Gauche"
+//[MMenuFilesTitle]
+"&Fichiers"
+//[MMenuCommandsTitle]
+"&Commandes"
+//[MMenuOptionsTitle]
+"&Options"
+//[MMenuRightTitle]
+"&Droite"
+//[MMenuSortTitle]
+"Trier par"
+//[MMenuSortByName]
+"&Nom"
+//[MMenuSortByExt]
+"E&xtension"
+//[MMenuSortByWrite]
+"Date d'&écriture"
+//[MMenuSortBySize]
+"&Taille"
+//[MMenuUnsorted]
+"Non tri&é"
+//[MMenuSortByCreation]
+"Date de &création"
+//[MMenuSortByAccess]
+"Date d'&accès"
+//[MMenuSortByChange]
+"Date de &modification"
+//[MMenuSortByDiz]
+"&Descriptions"
+//[MMenuSortByOwner]
+"&Propriétaire"
+//[MMenuSortByAllocatedSize]
+"Taille allouée"
+//[MMenuSortByNumLinks]
+"Nombre de liens p&hysiques"
+//[MMenuSortByNumStreams]
+"Nombre de &flux"
+//[MMenuSortByStreamsSize]
+"Tai&lle des flux"
+//[MMenuSortByNameOnly]
+"Nom seulement"
+//[MMenuSortUseGroups]
+"Utiliser les groupes de tri"
+//[MMenuSortSelectedFirst]
+"Sélectionnés en p&remier"
+//[MMenuSortDirectoriesFirst]
+"Dossiers en pre&mier"
+//[MMaskGroupTitle]
+"Groupes de masques de fichiers"
+//[MMaskGroupName]
+"&Nom :"
+//[MMaskGroupMasks]
+"Un &masque ou plusieurs masques de fichiers :"
+//[MMaskGroupAskDelete]
+"Voulez-vous supprimer"
+//[MMaskGroupRestore]
+"Voulez-vous restaurer les groupes de masques par défaut ?"
+//[MMaskGroupFindMask]
+"&Masque :"
+//[MMaskGroupTotal]
+"Total : {0}"
+//[MChangeDriveTitle]
+"Changer de lecteur"
+//[MChangeDriveRemovable]
+"amovible"
+//[MChangeDriveFixed]
+"fixe"
+//[MChangeDriveNetwork]
+"réseau"
+//[MChangeDriveDisconnectedNetwork]
+"déconnecté"
+//[MChangeDriveCDROM]
+"CD-ROM"
+//[MChangeDriveCDR]
+"CD-R"
+//[MChangeDriveCDRW]
+"CD-RW"
+//[MChangeDriveCDRWDVD]
+"CD-RW/DVD"
+//[MChangeDriveDVDROM]
+"DVD-ROM"
+//[MChangeDriveDVDR]
+"DVD-R"
+//[MChangeDriveDVDRW]
+"DVD-RW"
+//[MChangeDriveDVDRAM]
+"DVD-RAM"
+//[MChangeDriveBDROM]
+"BD-ROM"
+//[MChangeDriveBDR]
+"BD-R"
+//[MChangeDriveBDRE]
+"BD-RE"
+//[MChangeDriveHDDVDROM]
+"HDDVD-ROM"
+//[MChangeDriveHDDVDR]
+"HDDVD-R"
+//[MChangeDriveHDDVDRW]
+"HDDVD-RW"
+//[MChangeDriveHDDVDRAM]
+"HDDVD-RAM"
+//[MChangeDriveRAM]
+"disque RAM"
+//[MChangeDriveSUBST]
+"subst"
+//[MChangeDriveVirtual]
+"virtuel"
+//[MChangeDriveLabelAbsent]
+"non disponible"
+//[MChangeDriveCannotReadDisk]
+"Impossible de lire le disque dans le lecteur"
+//[MChangeDriveCannotDisconnect]
+"Impossible de déconnecter"
+//[MChangeDriveCannotDelSubst]
+"Impossible de supprimer un disque substitué"
+//[MChangeDriveCannotDetach]
+"Impossible de détacher un disque virtuel"
+//[MChangeSUBSTDisconnectDriveTitle]
+"Suppression du disque substitué"
+//[MChangeSUBSTDisconnectDriveQuestion]
+"Supprimer le disque SUBST {0} ?"
+//[MChangeVHDDisconnectDriveTitle]
+"Détachement du disque virtuel"
+//[MChangeVHDDisconnectDriveQuestion]
+"Détacher le disque virtuel {0} ?"
+//[MChangeHotPlugDisconnectDriveTitle]
+"Retrait du périphérique"
+//[MChangeHotPlugDisconnectDriveQuestion]
+"Voulez-vous retirer le périphérique"
+//[MHotPlugDisks]
+"(disque(s) : {0})"
+//[MChangeCouldNotEjectHotPlugMedia]
+"Impossible de retirer le périphérique du lecteur"
+//[MChangeCouldNotEjectHotPlugMedia2]
+"Impossible de retirer le périphérique :"
+//[MChangeHotPlugNotify1]
+"Le périphérique"
+//[MChangeHotPlugNotify2]
+"peut maintenant être retiré en toute sécurité"
+//[MHotPlugListTitle]
+"Liste des périphériques extractibles"
+//[MChangeDriveDisconnectTitle]
+"Déconnecter le lecteur réseau"
+//[MChangeDriveDisconnectQuestion]
+"Se déconnecter du lecteur {0} ?"
+//[MChangeDriveDisconnectMapped]
+"Le lecteur est associé à :"
+//[MChangeDriveDisconnectReconnect]
+"&Reconnecter à l'ouverture de session"
+//[MChangeWaitingLoadDisk]
+"Attente du montage du disque…"
+//[MChangeCouldNotEjectMedia]
+"Impossible d'éjecter le support du lecteur"
+//[MChangeDriveConfigure]
+"Options du menu Changer de lecteur"
+//[MChangeDriveShowDiskType]
+"Afficher le &type de disque"
+//[MChangeDriveShowPath]
+"Afficher le nom &réseau / chemin SUBST / nom VHD"
+//[MChangeDriveShowLabel]
+"Afficher le &nom de volume"
+//[MChangeDriveShowLabelUseShell]
+"Utiliser le nom du s&hell"
+//[MChangeDriveShowFileSystem]
+"Afficher le système de &fichiers"
+//[MChangeDriveShowSize]
+"Afficher la &taille"
+//[MChangeDriveShowSizeFloat]
+"Afficher la taille en fraction &décimale"
+//[MChangeDriveShowRemovableDrive]
+"Afficher les paramètres des lecteurs &amovibles"
+//[MChangeDriveShowPlugins]
+"Afficher les &plugins"
+//[MChangeDriveSortPluginsByHotkey]
+"Trier les plugins par &raccourci"
+//[MChangeDriveShowCD]
+"Afficher les paramètres des lecteurs &CD"
+//[MChangeDriveShowNetworkDrive]
+"Afficher les paramètres des lecteurs rés&eau"
+//[MChangeDriveShowVirtualDisk]
+"Détecter les disques virtuels"
+//[MChangeDriveVolumeLabel]
+"Nom de volume"
+//[MSearchFileTitle]
+"Rechercher"
+//[MCannotCreateListTemp]
+"Impossible de créer un fichier temporaire pour la liste des fichiers"
+//[MDragFiles]
+"{0} fichiers"
+//[MDragMove]
+"Déplacer {0}"
+//[MDragCopy]
+"Copier {0}"
+//[MProcessListTitle]
+"Liste des tâches"
+//[MKillProcessTitle]
+"Terminer la tâche"
+//[MAskKillProcess]
+"Voulez-vous terminer la tâche sélectionnée ?"
+//[MKillProcessWarning]
+"Vous perdrez toutes les données non enregistrées de ce programme"
+//[MKillProcessKill]
+"Terminer"
+//[MCannotKillProcess]
+"Impossible de terminer la tâche indiquée"
+//[MCannotKillProcessPerm]
+"Vous n'avez pas l'autorisation de terminer ce processus."
+//[MQuickViewTitle]
+"Vue rapide"
+//[MQuickViewReparsePoint]
+"Point d'a&nalyse"
+//[MQuickViewUnknownReparsePoint]
+"Point d'analyse inconnu"
+//[MQuickViewFolders]
+"Dossiers :"
+//[MQuickViewFiles]
+"Fichiers :"
+//[MQuickViewBytes]
+"Taille des fichiers :"
+//[MQuickViewAllocated]
+"Taille allouée :"
+//[MQuickViewCluster]
+"Taille du cluster :"
+//[MQuickViewSlack]
+"Espace perdu :"
+//[MQuickViewMFTOverhead]
+"Surcoût MFT :"
+//[MSetAttrTitle]
+"Attributs"
+//[MSetAttrFor]
+"Modifier les attributs de"
+//[MSetAttrSelectedObjects]
+"objets sélectionnés"
+//[MSetAttrHardLinks]
+"liens physiques"
+//[MSetAttrJunction]
+"&Jonction :"
+//[MSetAttrSymlink]
+"Lien s&ymbolique{} :"
+//[MSetAttrVolMount]
+"&Volume :"
+//[MSetAttrDfsTargets]
+"Cibles DFS :"
+//[MSetAttrAppExecLink]
+"Alias d'application :"
+//[MSetAttrUnknownReparsePoint]
+"Point d'analyse inconnu"
+//[MSetAttrDiskDevice]
+"Périphérique :"
+//[MSetAttrReadOnly]
+"&Lecture seule"
+//[MSetAttrArchive]
+"&Archive"
+//[MSetAttrHidden]
+"&Caché"
+//[MSetAttrSystem]
+"&Système"
+//[MSetAttrCompressed]
+"C&ompressé"
+//[MSetAttrEncrypted]
+"Chi&ffré"
+//[MSetAttrNotIndexed]
+"Non &indexé"
+//[MSetAttrSparse]
+"Clairs&emé"
+//[MSetAttrTemporary]
+"&Temporaire"
+//[MSetAttrOffline]
+"&Hors ligne"
+//[MSetAttrReparsePoint]
+"Point d'a&nalyse"
+//[MSetAttrVirtual]
+"&Virtuel"
+//[MSetAttrIntegrityStream]
+"Flux d'inté&grité"
+//[MSetAttrNoScrubData]
+"Pas de nettoya&ge"
+//[MSetAttrPinned]
+"É&pinglé"
+//[MSetAttrUnpinned]
+"&Désépinglé"
+//[MSetAttrRecallOnOpen]
+"Rappel à l'ouve&rture"
+//[MSetAttrRecallOnDataAccess]
+"Rappel à l'accès aux &données"
+//[MSetAttrStrictlySequential]
+"Strictement sé&quentiel"
+//[MSetAttrDevice]
+"Périphérique"
+//[MSetAttrMore]
+"&Plus"
+//[MSetAttrSubfolders]
+"Traiter les sous-&dossiers"
+//[MSetAttrOwner]
+"Propriétaire&:"
+//[MSetAttrDate]
+"Date/Heure :"
+//[MSetAttrWrite]
+"é&criture :"
+//[MSetAttrCreation]
+"créa&tion :"
+//[MSetAttrAccess]
+"&accès :"
+//[MSetAttrChange]
+"&modification :"
+//[MSetAttrOriginal]
+"&Original"
+//[MSetAttrCurrent]
+"Act&uel"
+//[MSetAttrBlank]
+"&Vide"
+//[MSetAttrSet]
+"Appliquer"
+//[MSetAttrDateTitleMDY]
+"MM{0}JJ{0}AAAAA"
+//[MSetAttrDateTitleDMY]
+"JJ{0}MM{0}AAAAA"
+//[MSetAttrDateTitleYMD]
+"AAAAA{0}MM{0}JJ"
+//[MSetAttrTimeTitle]
+"hh{0}mm{0}ss"
+//[MSetAttrSystemDialog]
+"&Propriétés système"
+//[MSetAttrSetting]
+"Définition des attributs de"
+//[MSetAttrCannotFor]
+"Impossible de définir les attributs de"
+//[MSetAttrCompressedCannotFor]
+"Impossible de définir l'attribut COMPRESSÉ pour"
+//[MSetAttrEncryptedCannotFor]
+"Impossible de définir l'attribut CHIFFRÉ pour"
+//[MSetAttrSparseCannotFor]
+"Impossible de définir l'attribut CLAIRSEMÉ pour"
+//[MSetAttrTimeCannotFor]
+"Impossible de définir l'horodatage de"
+//[MSetAttrOwnerCannotFor]
+"Impossible de définir le propriétaire de"
+//[MSetAttrReparsePointCannotFor]
+"Impossible de supprimer le point d'analyse de"
+//[MSetColorPanel]
+"&Panneau"
+//[MSetColorDialog]
+"&Dialogue"
+//[MSetColorWarning]
+"Message d'&avertissement"
+//[MSetColorMenu]
+"&Menu"
+//[MSetColorHMenu]
+"Menu hori&zontal"
+//[MSetColorKeyBar]
+"Barre des &touches"
+//[MSetColorCommandLine]
+"&Ligne de commande"
+//[MSetColorClock]
+"&Horloge"
+//[MSetColorViewer]
+"&Visionneuse"
+//[MSetColorEditor]
+"&Éditeur"
+//[MSetColorHelp]
+"A&ide"
+//[MColorThemes]
+"Thèmes"
+//[MDefaultTheme]
+"Par défaut"
+//[MDefaultThemeRGB]
+"Par défaut (RVB)"
+//[MSetColorPanelNormal]
+"Texte normal"
+//[MSetColorPanelSelected]
+"Texte sélectionné"
+//[MSetColorPanelHighlightedText]
+"Texte mis en évidence"
+//[MSetColorPanelHighlightedInfo]
+"Info mise en évidence"
+//[MSetColorPanelDragging]
+"Texte glissé"
+//[MSetColorPanelBox]
+"Bordure"
+//[MSetColorPanelNormalCursor]
+"Curseur normal"
+//[MSetColorPanelSelectedCursor]
+"Curseur sélectionné"
+//[MSetColorPanelNormalTitle]
+"Titre normal"
+//[MSetColorPanelSelectedTitle]
+"Titre sélectionné"
+//[MSetColorPanelColumnTitle]
+"Titre de colonne"
+//[MSetColorPanelTotalInfo]
+"Info totale"
+//[MSetColorPanelSelectedInfo]
+"Info de sélection"
+//[MSetColorPanelScrollbar]
+"Barre de défilement"
+//[MSetColorPanelScreensNumber]
+"Nombre d'écrans d'arrière-plan"
+//[MSetColorDialogNormal]
+"Texte normal"
+//[MSetColorDialogHighlighted]
+"Texte mis en évidence"
+//[MSetColorDialogDisabled]
+"Texte désactivé"
+//[MSetColorDialogBox]
+"Bordure"
+//[MSetColorDialogBoxTitle]
+"Titre"
+//[MSetColorDialogHighlightedBoxTitle]
+"Titre mis en évidence"
+//[MSetColorDialogTextInput]
+"Saisie de texte"
+//[MSetColorDialogUnchangedTextInput]
+"Saisie de texte inchangée"
+//[MSetColorDialogSelectedTextInput]
+"Saisie de texte sélectionnée"
+//[MSetColorDialogEditDisabled]
+"Ligne de saisie désactivée"
+//[MSetColorDialogButtons]
+"Boutons"
+//[MSetColorDialogSelectedButtons]
+"Boutons sélectionnés"
+//[MSetColorDialogHighlightedButtons]
+"Boutons mis en évidence"
+//[MSetColorDialogSelectedHighlightedButtons]
+"Boutons sélectionnés mis en évidence"
+//[MSetColorDialogDefaultButton]
+"Bouton par défaut"
+//[MSetColorDialogSelectedDefaultButton]
+"Bouton par défaut sélectionné"
+//[MSetColorDialogHighlightedDefaultButton]
+"Bouton par défaut mis en évidence"
+//[MSetColorDialogSelectedHighlightedDefaultButton]
+"Bouton par défaut sélectionné mis en évidence"
+//[MSetColorDialogListBoxControl]
+"Zone de liste"
+//[MSetColorDialogComboBoxControl]
+"Liste déroulante"
+//[MSetColorDialogListText]
+"Texte normal"
+//[MSetColorDialogListSelectedText]
+"Texte sélectionné"
+//[MSetColorDialogListHighLight]
+"Texte mis en évidence"
+//[MSetColorDialogListSelectedHighLight]
+"Texte sélectionné mis en évidence"
+//[MSetColorDialogListDisabled]
+"Élément désactivé"
+//[MSetColorDialogListBox]
+"Bordure"
+//[MSetColorDialogListTitle]
+"Titre"
+//[MSetColorDialogListGrayed]
+"Texte de liste grisé"
+//[MSetColorDialogSelectedListGrayed]
+"Texte de liste grisé sélectionné"
+//[MSetColorDialogListScrollBar]
+"Barre de défilement"
+//[MSetColorDialogListArrows]
+"Indicateurs de chaîne longue"
+//[MSetColorDialogListArrowsSelected]
+"Indicateurs de chaîne longue sélectionnés"
+//[MSetColorDialogListArrowsDisabled]
+"Indicateurs de chaîne longue désactivés"
+//[MSetColorMenuNormal]
+"Texte normal"
+//[MSetColorMenuSelected]
+"Texte sélectionné"
+//[MSetColorMenuHighlighted]
+"Texte mis en évidence"
+//[MSetColorMenuSelectedHighlighted]
+"Texte sélectionné mis en évidence"
+//[MSetColorMenuDisabled]
+"Texte désactivé"
+//[MSetColorMenuGrayed]
+"Texte grisé"
+//[MSetColorMenuSelectedGrayed]
+"Texte grisé sélectionné"
+//[MSetColorMenuBox]
+"Bordure"
+//[MSetColorMenuTitle]
+"Titre"
+//[MSetColorMenuScrollBar]
+"Barre de défilement"
+//[MSetColorMenuArrows]
+"Indicateurs de chaîne longue"
+//[MSetColorMenuArrowsSelected]
+"Indicateurs de chaîne longue sélectionnés"
+//[MSetColorMenuArrowsDisabled]
+"Indicateurs de chaîne longue désactivés"
+//[MSetColorHMenuNormal]
+"Texte normal"
+//[MSetColorHMenuSelected]
+"Texte sélectionné"
+//[MSetColorHMenuHighlighted]
+"Texte mis en évidence"
+//[MSetColorHMenuSelectedHighlighted]
+"Texte sélectionné mis en évidence"
+//[MSetColorKeyBarNumbers]
+"Numéros des touches"
+//[MSetColorKeyBarNames]
+"Noms des touches"
+//[MSetColorKeyBarBackground]
+"Arrière-plan"
+//[MSetColorCommandLineNormal]
+"Texte normal"
+//[MSetColorCommandLineSelected]
+"Saisie de texte sélectionnée"
+//[MSetColorCommandLinePrefix]
+"Texte de l'invite"
+//[MSetColorCommandLineUserScreen]
+"Écran utilisateur"
+//[MSetColorClockNormal]
+"Texte normal (panneau)"
+//[MSetColorClockNormalEditor]
+"Texte normal (éditeur)"
+//[MSetColorClockNormalViewer]
+"Texte normal (visionneuse)"
+//[MSetColorViewerNormal]
+"Texte normal"
+//[MSetColorViewerSelected]
+"Texte sélectionné"
+//[MSetColorViewerStatus]
+"Ligne d'état"
+//[MSetColorViewerArrows]
+"Flèches de défilement de l'écran"
+//[MSetColorViewerScrollbar]
+"Barre de défilement"
+//[MSetColorEditorNormal]
+"Texte normal"
+//[MSetColorEditorSelected]
+"Texte sélectionné"
+//[MSetColorEditorStatus]
+"Ligne d'état"
+//[MSetColorEditorScrollbar]
+"Barre de défilement"
+//[MSetColorEditorLineNumbers]
+"Numéros de ligne"
+//[MSetColorHelpNormal]
+"Texte normal"
+//[MSetColorHelpHighlighted]
+"Texte mis en évidence"
+//[MSetColorHelpReference]
+"Référence"
+//[MSetColorHelpSelectedReference]
+"Référence sélectionnée"
+//[MSetColorHelpBox]
+"Bordure"
+//[MSetColorHelpBoxTitle]
+"Titre"
+//[MSetColorHelpScrollbar]
+"Barre de défilement"
+//[MSetColorGroupsTitle]
+"Groupes de couleurs"
+//[MSetColorItemsTitle]
+"Éléments du groupe"
+//[MSetColorTitle]
+"Couleur"
+//[MSetColorForeground]
+"&Premier plan :"
+//[MSetColorBackground]
+"&Arrière-plan :"
+//[MSetColorForegroundDefault]
+"Par défaut"
+//[MSetColorBackgroundDefault]
+"Par défaut"
+//[MSetColorForeIndex]
+"AA    ##"
+//[MSetColorForeAARRGGBB]
+"AARRGGBB"
+//[MSetColorForeDefault]
+"AA"
+//[MSetColorFore256]
+"&256…"
+//[MSetColorForeRGB]
+"&RVB…"
+//[MSetColorBackIndex]
+"AA    ##"
+//[MSetColorBackAARRGGBB]
+"AARRGGBB"
+//[MSetColorBackDefault]
+"AA"
+//[MSetColorBack256]
+"2&56…"
+//[MSetColorBackRGB]
+"R&VB…"
+//[MSetColorStyle]
+"Style :"
+//[MSetColorStyleInherit]
+"&Hériter"
+//[MSetColorStyleBold]
+"&Gras"
+//[MSetColorStyleItalic]
+"I&talique"
+//[MSetColorStyleOverline]
+"Surli&gné"
+//[MSetColorStyleStrikeout]
+"&Barré"
+//[MSetColorStyleFaint]
+"&Atténué"
+//[MSetColorStyleBlink]
+"C&lignotant"
+//[MSetColorStyleInverse]
+"Inversé"
+//[MSetColorStyleInvisible]
+"Invisible"
+//[MSetColorStyleUnderline]
+"So&uligné :"
+//[MSetColorStyleUnderlineNone]
+"Non"
+//[MSetColorStyleUnderlineSingle]
+"Simple"
+//[MSetColorStyleUnderlineDouble]
+"Double"
+//[MSetColorStyleUnderlineCurly]
+"Ondulé"
+//[MSetColorStyleUnderlineDotted]
+"Pointillé"
+//[MSetColorStyleUnderlineDashed]
+"Tirets"
+//[MSetColorSample]
+"Texte Texte Texte Texte Texte Texte"
+//[MSetColorVTHintInfo]
+"Les couleurs et styles étendus nécessitent le rendu VT."
+//[MSetColorVTHintSupported]
+"Appuyez sur \"Activer VT\" ci-dessous pour l'activer."
+//[MSetColorVTHintNotSupported]
+"Votre système ne le prend pas en charge."
+//[MSetColorSystemDialog]
+"Système"
+//[MSetColorSet]
+"Appliquer"
+//[MSetColorEnableVT]
+"Activer VT"
+//[MSetColorCancel]
+"Annuler"
+//[MColorsPalette]
+"Palette"
+//[MColorsClassicPalette]
+"Palette classique"
+//[MSetConfirmTitle]
+"Confirmations"
+//[MSetConfirmCopy]
+"&Copie"
+//[MSetConfirmMove]
+"&Déplacement"
+//[MSetConfirmRO]
+"Écraser et supprimer les fichiers en lecture &seule"
+//[MSetConfirmDrag]
+"&Glisser-déposer"
+//[MSetConfirmDelete]
+"Supp&ression"
+//[MSetConfirmDeleteFolders]
+"Supprimer les dossiers non &vides"
+//[MSetConfirmEsc]
+"&Interrompre l'opération"
+//[MSetConfirmRemoveConnection]
+"Déconnecter un lecteur &réseau"
+//[MSetConfirmRemoveSUBST]
+"Supprimer un disque S&UBST"
+//[MSetConfirmDetachVHD]
+"Détacher un disque vir&tuel"
+//[MSetConfirmRemoveHotPlug]
+"Retrait de périp&hérique extractible"
+//[MSetConfirmAllowReedit]
+"Rec&harger le fichier édité"
+//[MSetConfirmHistoryClear]
+"Effacer la liste d'&historique"
+//[MSetConfirmExit]
+"&Quitter"
+//[MPluginsManagerSettingsTitle]
+"Paramètres du gestionnaire de plugins"
+//[MPluginsManagerOEMPluginsSupport]
+"Prise en charge des plugins &OEM"
+//[MPluginsManagerScanSymlinks]
+"Parcourir les liens s&ymboliques"
+//[MPluginsManagerOFP]
+"Traitement des &fichiers"
+//[MPluginsManagerStdAssoc]
+"Afficher l'élément d'&association standard"
+//[MPluginsManagerEvenOne]
+"&Même si un seul plugin est trouvé"
+//[MPluginsManagerSFL]
+"&Résultats de recherche (SetFindList)"
+//[MPluginsManagerPF]
+"Traitement des &préfixes"
+//[MPluginConfirmationTitle]
+"Choix du plugin"
+//[MMenuPluginStdAssociation]
+"Association standard"
+//[MFindFolderTitle]
+"Rechercher un dossier"
+//[MFolderTreeF1]
+"Aide"
+//[MFolderTreeF2]
+"Relire"
+//[MFolderTreeF3]
+""
+//[MFolderTreeF4]
+""
+//[MFolderTreeF5]
+"Zoom"
+//[MFolderTreeF6]
+""
+//[MFolderTreeF7]
+""
+//[MFolderTreeF8]
+""
+//[MFolderTreeF9]
+""
+//[MFolderTreeF10]
+"Quitter"
+//[MFolderTreeF11]
+""
+//[MFolderTreeF12]
+""
+//[MFolderTreeShiftF1]
+""
+//[MFolderTreeShiftF2]
+""
+//[MFolderTreeShiftF3]
+""
+//[MFolderTreeShiftF4]
+""
+//[MFolderTreeShiftF5]
+""
+//[MFolderTreeShiftF6]
+""
+//[MFolderTreeShiftF7]
+""
+//[MFolderTreeShiftF8]
+""
+//[MFolderTreeShiftF9]
+""
+//[MFolderTreeShiftF10]
+""
+//[MFolderTreeShiftF11]
+""
+//[MFolderTreeShiftF12]
+""
+//[MFolderTreeAltF1]
+""
+//[MFolderTreeAltF2]
+""
+//[MFolderTreeAltF3]
+""
+//[MFolderTreeAltF4]
+""
+//[MFolderTreeAltF5]
+""
+//[MFolderTreeAltF6]
+""
+//[MFolderTreeAltF7]
+""
+//[MFolderTreeAltF8]
+""
+//[MFolderTreeAltF9]
+"Vidéo"
+//[MFolderTreeAltF10]
+""
+//[MFolderTreeAltF11]
+""
+//[MFolderTreeAltF12]
+""
+//[MFolderTreeCtrlF1]
+""
+//[MFolderTreeCtrlF2]
+""
+//[MFolderTreeCtrlF3]
+""
+//[MFolderTreeCtrlF4]
+""
+//[MFolderTreeCtrlF5]
+""
+//[MFolderTreeCtrlF6]
+""
+//[MFolderTreeCtrlF7]
+""
+//[MFolderTreeCtrlF8]
+""
+//[MFolderTreeCtrlF9]
+""
+//[MFolderTreeCtrlF10]
+""
+//[MFolderTreeCtrlF11]
+""
+//[MFolderTreeCtrlF12]
+""
+//[MFolderTreeCtrlShiftF1]
+""
+//[MFolderTreeCtrlShiftF2]
+""
+//[MFolderTreeCtrlShiftF3]
+""
+//[MFolderTreeCtrlShiftF4]
+""
+//[MFolderTreeCtrlShiftF5]
+""
+//[MFolderTreeCtrlShiftF6]
+""
+//[MFolderTreeCtrlShiftF7]
+""
+//[MFolderTreeCtrlShiftF8]
+""
+//[MFolderTreeCtrlShiftF9]
+""
+//[MFolderTreeCtrlShiftF10]
+""
+//[MFolderTreeCtrlShiftF11]
+""
+//[MFolderTreeCtrlShiftF12]
+""
+//[MFolderTreeCtrlAltF1]
+""
+//[MFolderTreeCtrlAltF2]
+""
+//[MFolderTreeCtrlAltF3]
+""
+//[MFolderTreeCtrlAltF4]
+""
+//[MFolderTreeCtrlAltF5]
+""
+//[MFolderTreeCtrlAltF6]
+""
+//[MFolderTreeCtrlAltF7]
+""
+//[MFolderTreeCtrlAltF8]
+""
+//[MFolderTreeCtrlAltF9]
+""
+//[MFolderTreeCtrlAltF10]
+""
+//[MFolderTreeCtrlAltF11]
+""
+//[MFolderTreeCtrlAltF12]
+""
+//[MFolderTreeAltShiftF1]
+""
+//[MFolderTreeAltShiftF2]
+""
+//[MFolderTreeAltShiftF3]
+""
+//[MFolderTreeAltShiftF4]
+""
+//[MFolderTreeAltShiftF5]
+""
+//[MFolderTreeAltShiftF6]
+""
+//[MFolderTreeAltShiftF7]
+""
+//[MFolderTreeAltShiftF8]
+""
+//[MFolderTreeAltShiftF9]
+""
+//[MFolderTreeAltShiftF10]
+""
+//[MFolderTreeAltShiftF11]
+""
+//[MFolderTreeAltShiftF12]
+""
+//[MFolderTreeCtrlAltShiftF1]
+""
+//[MFolderTreeCtrlAltShiftF2]
+""
+//[MFolderTreeCtrlAltShiftF3]
+""
+//[MFolderTreeCtrlAltShiftF4]
+""
+//[MFolderTreeCtrlAltShiftF5]
+""
+//[MFolderTreeCtrlAltShiftF6]
+""
+//[MFolderTreeCtrlAltShiftF7]
+""
+//[MFolderTreeCtrlAltShiftF8]
+""
+//[MFolderTreeCtrlAltShiftF9]
+""
+//[MFolderTreeCtrlAltShiftF10]
+""
+//[MFolderTreeCtrlAltShiftF11]
+""
+//[MFolderTreeCtrlAltShiftF12]
+""
+//[MTreeTitle]
+"Arbre"
+//[MCannotSaveTree]
+"Impossible d'enregistrer l'arbre des dossiers dans un fichier"
+//[MReadingTree]
+"Lecture de l'arbre des dossiers"
+//[MUserMenuTitle]
+"Menu utilisateur"
+//[MChooseMenuType]
+"Choisissez le type de menu utilisateur à éditer"
+//[MChooseMenuMain]
+"&Principal"
+//[MChooseMenuLocal]
+"&Local"
+//[MMainMenuTitle]
+"Menu principal"
+//[MMainMenuUser]
+"Utilisateur"
+//[MMainMenuGlobal]
+"Global"
+//[MLocalMenuTitle]
+"Menu local"
+//[MAskDeleteMenuItem]
+"Voulez-vous supprimer l'élément de menu"
+//[MAskDeleteSubMenuItem]
+"Voulez-vous supprimer le sous-menu"
+//[MUserMenuInvalidInputLabel]
+"Format de libellé du menu utilisateur incorrect"
+//[MUserMenuInvalidInputHotKey]
+"Format de raccourci incorrect"
+//[MEditMenuTitle]
+"Éditer le menu utilisateur"
+//[MEditMenuHotKey]
+"&Raccourci :"
+//[MEditMenuLabel]
+"&Libellé :"
+//[MEditMenuCommands]
+"&Commandes :"
+//[MAskInsertMenuOrCommand]
+"Voulez-vous insérer une nouvelle commande ou un nouveau menu ?"
+//[MMenuInsertCommand]
+"Insérer une commande"
+//[MMenuInsertMenu]
+"Insérer un menu"
+//[MEditSubmenuTitle]
+"Éditer le libellé du sous-menu"
+//[MEditSubmenuHotKey]
+"&Raccourci :"
+//[MEditSubmenuLabel]
+"&Libellé :"
+//[MEditMenuConfirmation]
+"Enregistrer les modifications ?"
+//[MEditMenuError]
+"Impossible de mettre à jour le menu"
+//[MViewerTitle]
+"Visionneuse"
+//[MViewerCannotOpenFile]
+"Impossible d'ouvrir le fichier"
+//[MViewerStatusCol]
+"Col"
+//[MViewSearchingFor]
+"Recherche de"
+//[MViewSearchingHex]
+"Recherche des octets"
+//[MViewSearchCannotFind]
+"Chaîne introuvable"
+//[MViewSearchCannotFindHex]
+"Octets introuvables"
+//[MViewSearchEod]
+"Fin du document atteinte"
+//[MViewSearchFromBegin]
+"Continuer depuis le début du document ?"
+//[MViewSearchBod]
+"Début du document atteint"
+//[MViewSearchFromEnd]
+"Continuer depuis la fin du document ?"
+//[MViewSearchCycle]
+"Le document entier a été parcouru"
+//[MViewSearchRepeat]
+"Répéter la recherche dans le document ?"
+//[MPrintTitle]
+"Imprimer"
+//[MPrintTo]
+"Imprimer {0} sur"
+//[MPrintFilesTo]
+"Imprimer {0} fichiers sur"
+//[MPrintingFile]
+"Impression de {0}"
+//[MCannotEnumeratePrinters]
+"Impossible d'obtenir la liste des imprimantes disponibles"
+//[MCannotOpenPrinter]
+"Impossible d'ouvrir l'imprimante"
+//[MCannotPrint]
+"Impossible d'imprimer"
+//[MDescribeFiles]
+"Décrire le fichier"
+//[MEnterDescription]
+"Saisissez la description de"
+//[MReadingDiz]
+"Lecture des descriptions de fichiers"
+//[MCannotUpdateDiz]
+"Impossible de mettre à jour les descriptions de fichiers"
+//[MCfgDizTitle]
+"Descriptions de fichiers"
+//[MCfgDizListNames]
+"Noms des &listes de descriptions séparés par des virgules :"
+//[MCfgDizSetHidden]
+"Attribut \"&Caché\" pour les nouvelles listes de descriptions"
+//[MCfgDizROUpdate]
+"Mettre à jour les fichiers de description en lecture &seule"
+//[MCfgDizStartPos]
+"&Position des nouvelles descriptions dans la ligne"
+//[MCfgDizNotUpdate]
+"&Ne pas mettre à jour les descriptions"
+//[MCfgDizUpdateIfDisplayed]
+"Mettre à jour si &affichées"
+//[MCfgDizAlwaysUpdate]
+"&Toujours mettre à jour"
+//[MCfgDizAnsiByDefault]
+"Utiliser la page de code ANS&I par défaut"
+//[MCfgDizSaveInUTF]
+"Enregistrer en UTF-&8"
+//[MReadingTitleFiles]
+"Mise à jour des panneaux"
+//[MReadingFiles]
+"Lecture : {0} fichiers"
+//[MOperationNotCompleted]
+"Opération non terminée"
+//[MEditPanelModes]
+"Modifier les modes des panneaux"
+//[MEditPanelModeName]
+"&Nom"
+//[MEditPanelModeTypes]
+"&Types de colonnes"
+//[MEditPanelModeWidths]
+"&Largeurs des colonnes"
+//[MEditPanelModeStatusTypes]
+"Types de colonnes de la ligne d'ét&at"
+//[MEditPanelModeStatusWidths]
+"Largeurs de colonnes de la l&igne d'état"
+//[MEditPanelModeFullscreen]
+"Affichage &plein écran"
+//[MEditPanelModeAlignExtensions]
+"Ali&gner les extensions des fichiers"
+//[MEditPanelModeAlignFolderExtensions]
+"Aligner les e&xtensions des dossiers"
+//[MEditPanelModeFoldersUpperCase]
+"Dossiers en &majuscules"
+//[MEditPanelModeFilesLowerCase]
+"Fichiers en mi&nuscules"
+//[MEditPanelModeUpperToLowerCase]
+"Noms en majuscules affichés en minus&cules"
+//[MSetFolderInfoTitle]
+"Fichiers de description de dossiers"
+//[MSetFolderInfoNames]
+"Saisissez les noms de fichiers séparés par des virgules (jokers autorisés)"
+//[MScreensTitle]
+"Écrans"
+//[MScreensPanels]
+"Panneaux"
+//[MScreensView]
+"Voir"
+//[MScreensEdit]
+"Éditer"
+//[MAskApplyCommandTitle]
+"Appliquer une commande"
+//[MAskApplyCommand]
+"Saisissez la commande à appliquer aux fichiers sélectionnés"
+//[MPluginConfigTitle]
+"Configuration des plugins"
+//[MPluginCommandsMenuTitle]
+"Commandes des plugins"
+//[MPreparingList]
+"Préparation de la liste des fichiers"
+//[MLangTitle]
+"Langue principale"
+//[MHelpLangTitle]
+"Langue de l'aide"
+//[MDefineMacroTitle]
+"Définir une macro"
+//[MDefineMacro]
+"Appuyez sur la touche souhaitée"
+//[MMacroReDefinedKey]
+"La touche de macro '{0}' est déjà définie."
+//[MMacroDeleteKey]
+"La touche de macro '{0}' sera supprimée."
+//[MMacroCommonReDefinedKey]
+"La touche de macro commune '{0}' est déjà définie."
+//[MMacroCommonDeleteKey]
+"La touche de macro commune '{0}' sera supprimée."
+//[MMacroSequence]
+"Séquence :"
+//[MMacroReDefinedKey2]
+"Redéfinir ?"
+//[MMacroDeleteKey2]
+"Supprimer ?"
+//[MMacroEditKey]
+"&Modifier"
+//[MMacroSettingsTitle]
+"Paramètres de la macro '{0}'"
+//[MMacroSettingsSequence]
+"Sé&quence :"
+//[MMacroSettingsDescription]
+"&Description :"
+//[MMacroSettingsEnableOutput]
+"Autoriser l'affic&hage pendant l'exécution de la macro"
+//[MMacroSettingsRunAfterStart]
+"Exécuter après le &démarrage de gm"
+//[MMacroSettingsActivePanel]
+"Panneau &actif"
+//[MMacroSettingsPassivePanel]
+"Panneau &passif"
+//[MMacroSettingsPluginPanel]
+"Panneau de p&lugin"
+//[MMacroSettingsFolders]
+"Exécuter pour les &dossiers"
+//[MMacroSettingsSelectionPresent]
+"Sé&lection présente"
+//[MMacroSettingsCommandLine]
+"Ligne de &commande vide"
+//[MMacroSettingsSelectionBlockPresent]
+"&Bloc sélectionné présent"
+//[MMacroPluginLuamacroNotLoaded]
+"Le plugin LuaMacro n'est pas chargé"
+//[MMacroRecordingIsDisabled]
+"L'enregistrement des macros est désactivé"
+//[MCannotSaveFile]
+"Impossible d'enregistrer le fichier"
+//[MTextSavedToTemp]
+"Le texte édité est stocké dans"
+//[MPluginHotKeyTitle]
+"Attribuer un raccourci au plugin"
+//[MPluginHotKey]
+"Saisissez le raccourci (lettre ou chiffre)"
+//[MPluginInformation]
+"Informations sur le plugin"
+//[MPluginModuleTitle]
+"&Titre :"
+//[MPluginDescription]
+"&Description :"
+//[MPluginAuthor]
+"&Auteur :"
+//[MPluginVersion]
+"&Version :"
+//[MPluginModulePath]
+"Chemin du &module :"
+//[MPluginUUID]
+"&UUID du plugin :"
+//[MPluginItemUUID]
+"UUID de l'&élément :"
+//[MPluginPrefix]
+"&Préfixe du plugin :"
+//[MExceptionDialogTitle]
+"Oups"
+//[MExceptionDialogMessage1]
+"Une erreur s'est produite."
+//[MExceptionDialogMessage2]
+"Veuillez envoyer le rapport d'erreur aux développeurs :"
+//[MExceptionDialogClipboard]
+"Presse-papiers"
+//[MExcTerminate]
+"&Terminer gm"
+//[MExcUnload]
+"&Décharger le plugin"
+//[MExcContinue]
+"Continuer"
+//[MExcFullDump]
+"Dump complet"
+//[MNetUserName]
+"Nom d'utilisateur"
+//[MNetUserPassword]
+"Mot de passe"
+//[MReadFolderError]
+"Impossible de lire le contenu du dossier"
+//[MPlgBadVers]
+"Ce plugin nécessite une version plus récente de gm"
+//[MPlgRequired]
+"La version de gm requise est {0},"
+//[MPlgRequired2]
+"la version actuelle de gm est {0}."
+//[MPlgLoadPluginError]
+"Erreur de chargement du plugin"
+//[MHelpTitle]
+"Aide"
+//[MHelpActivatorURL]
+"Cette référence lance une application externe"
+//[MHelpActivatorFormat]
+"avec le paramètre :"
+//[MHelpActivatorQ]
+"Voulez-vous la lancer ?"
+//[MCannotOpenHelp]
+"Impossible d'ouvrir le fichier"
+//[MHelpTopicNotFound]
+"Rubrique d'aide demandée introuvable :"
+//[MPluginsHelpTitle]
+"Aide des plugins"
+//[MDocumentsHelpTitle]
+"Aide des documents"
+//[MHelpSearchCannotFind]
+"Chaîne introuvable"
+//[MHelpF1]
+"Aide"
+//[MHelpF2]
+""
+//[MHelpF3]
+""
+//[MHelpF4]
+""
+//[MHelpF5]
+"Zoom"
+//[MHelpF6]
+""
+//[MHelpF7]
+"Rech"
+//[MHelpF8]
+""
+//[MHelpF9]
+""
+//[MHelpF10]
+"Quitter"
+//[MHelpF11]
+""
+//[MHelpF12]
+""
+//[MHelpShiftF1]
+"Index"
+//[MHelpShiftF2]
+"Plugin"
+//[MHelpShiftF3]
+""
+//[MHelpShiftF4]
+""
+//[MHelpShiftF5]
+""
+//[MHelpShiftF6]
+""
+//[MHelpShiftF7]
+""
+//[MHelpShiftF8]
+""
+//[MHelpShiftF9]
+""
+//[MHelpShiftF10]
+""
+//[MHelpShiftF11]
+""
+//[MHelpShiftF12]
+""
+//[MHelpAltF1]
+"Préc"
+//[MHelpAltF2]
+""
+//[MHelpAltF3]
+""
+//[MHelpAltF4]
+""
+//[MHelpAltF5]
+""
+//[MHelpAltF6]
+""
+//[MHelpAltF7]
+""
+//[MHelpAltF8]
+""
+//[MHelpAltF9]
+"Vidéo"
+//[MHelpAltF10]
+""
+//[MHelpAltF11]
+""
+//[MHelpAltF12]
+""
+//[MHelpCtrlF1]
+""
+//[MHelpCtrlF2]
+""
+//[MHelpCtrlF3]
+""
+//[MHelpCtrlF4]
+""
+//[MHelpCtrlF5]
+""
+//[MHelpCtrlF6]
+""
+//[MHelpCtrlF7]
+""
+//[MHelpCtrlF8]
+""
+//[MHelpCtrlF9]
+""
+//[MHelpCtrlF10]
+""
+//[MHelpCtrlF11]
+""
+//[MHelpCtrlF12]
+""
+//[MHelpAltShiftF1]
+""
+//[MHelpAltShiftF2]
+""
+//[MHelpAltShiftF3]
+""
+//[MHelpAltShiftF4]
+""
+//[MHelpAltShiftF5]
+""
+//[MHelpAltShiftF6]
+""
+//[MHelpAltShiftF7]
+""
+//[MHelpAltShiftF8]
+""
+//[MHelpAltShiftF9]
+""
+//[MHelpAltShiftF10]
+""
+//[MHelpAltShiftF11]
+""
+//[MHelpAltShiftF12]
+""
+//[MHelpCtrlShiftF1]
+""
+//[MHelpCtrlShiftF2]
+""
+//[MHelpCtrlShiftF3]
+""
+//[MHelpCtrlShiftF4]
+""
+//[MHelpCtrlShiftF5]
+""
+//[MHelpCtrlShiftF6]
+""
+//[MHelpCtrlShiftF7]
+""
+//[MHelpCtrlShiftF8]
+""
+//[MHelpCtrlShiftF9]
+""
+//[MHelpCtrlShiftF10]
+""
+//[MHelpCtrlShiftF11]
+""
+//[MHelpCtrlShiftF12]
+""
+//[MHelpCtrlAltF1]
+""
+//[MHelpCtrlAltF2]
+""
+//[MHelpCtrlAltF3]
+""
+//[MHelpCtrlAltF4]
+""
+//[MHelpCtrlAltF5]
+""
+//[MHelpCtrlAltF6]
+""
+//[MHelpCtrlAltF7]
+""
+//[MHelpCtrlAltF8]
+""
+//[MHelpCtrlAltF9]
+""
+//[MHelpCtrlAltF10]
+""
+//[MHelpCtrlAltF11]
+""
+//[MHelpCtrlAltF12]
+""
+//[MHelpCtrlAltShiftF1]
+""
+//[MHelpCtrlAltShiftF2]
+""
+//[MHelpCtrlAltShiftF3]
+""
+//[MHelpCtrlAltShiftF4]
+""
+//[MHelpCtrlAltShiftF5]
+""
+//[MHelpCtrlAltShiftF6]
+""
+//[MHelpCtrlAltShiftF7]
+""
+//[MHelpCtrlAltShiftF8]
+""
+//[MHelpCtrlAltShiftF9]
+""
+//[MHelpCtrlAltShiftF10]
+""
+//[MHelpCtrlAltShiftF11]
+""
+//[MHelpCtrlAltShiftF12]
+""
+//[MInfoF1]
+"Aide"
+//[MInfoF2]
+"Retour"
+//[MInfoF3]
+"VoirDz"
+//[MInfoF4]
+"ÉditDz"
+//[MInfoF5]
+""
+//[MInfoF6]
+""
+//[MInfoF7]
+"Rech"
+//[MInfoF8]
+"ANSI"
+//[MInfoF9]
+"MnConf"
+//[MInfoF10]
+"Quitter"
+//[MInfoF11]
+"Plugin"
+//[MInfoF12]
+"Écran"
+//[MInfoShiftF1]
+""
+//[MInfoShiftF2]
+"RetMot"
+//[MInfoShiftF3]
+""
+//[MInfoShiftF4]
+""
+//[MInfoShiftF5]
+""
+//[MInfoShiftF6]
+""
+//[MInfoShiftF7]
+"Suiv"
+//[MInfoShiftF8]
+"PgCode"
+//[MInfoShiftF9]
+"Enreg"
+//[MInfoShiftF10]
+"Dernr"
+//[MInfoShiftF11]
+""
+//[MInfoShiftF12]
+""
+//[MInfoAltF1]
+"Gauche"
+//[MInfoAltF2]
+"Droite"
+//[MInfoAltF3]
+""
+//[MInfoAltF4]
+""
+//[MInfoAltF5]
+""
+//[MInfoAltF6]
+""
+//[MInfoAltF7]
+"Rech"
+//[MInfoAltF8]
+"AllerÀ"
+//[MInfoAltF9]
+"Vidéo"
+//[MInfoAltF10]
+"Arbre"
+//[MInfoAltF11]
+"HisVue"
+//[MInfoAltF12]
+"HisDos"
+//[MInfoCtrlF1]
+"Gauche"
+//[MInfoCtrlF2]
+"Droite"
+//[MInfoCtrlF3]
+""
+//[MInfoCtrlF4]
+""
+//[MInfoCtrlF5]
+""
+//[MInfoCtrlF6]
+""
+//[MInfoCtrlF7]
+""
+//[MInfoCtrlF8]
+""
+//[MInfoCtrlF9]
+""
+//[MInfoCtrlF10]
+""
+//[MInfoCtrlF11]
+""
+//[MInfoCtrlF12]
+"Mode"
+//[MInfoAltShiftF1]
+""
+//[MInfoAltShiftF2]
+""
+//[MInfoAltShiftF3]
+""
+//[MInfoAltShiftF4]
+""
+//[MInfoAltShiftF5]
+""
+//[MInfoAltShiftF6]
+""
+//[MInfoAltShiftF7]
+""
+//[MInfoAltShiftF8]
+""
+//[MInfoAltShiftF9]
+""
+//[MInfoAltShiftF10]
+""
+//[MInfoAltShiftF11]
+""
+//[MInfoAltShiftF12]
+""
+//[MInfoCtrlShiftF1]
+""
+//[MInfoCtrlShiftF2]
+""
+//[MInfoCtrlShiftF3]
+""
+//[MInfoCtrlShiftF4]
+""
+//[MInfoCtrlShiftF5]
+""
+//[MInfoCtrlShiftF6]
+""
+//[MInfoCtrlShiftF7]
+""
+//[MInfoCtrlShiftF8]
+""
+//[MInfoCtrlShiftF9]
+""
+//[MInfoCtrlShiftF10]
+""
+//[MInfoCtrlShiftF11]
+""
+//[MInfoCtrlShiftF12]
+""
+//[MInfoCtrlAltF1]
+""
+//[MInfoCtrlAltF2]
+""
+//[MInfoCtrlAltF3]
+""
+//[MInfoCtrlAltF4]
+""
+//[MInfoCtrlAltF5]
+""
+//[MInfoCtrlAltF6]
+""
+//[MInfoCtrlAltF7]
+""
+//[MInfoCtrlAltF8]
+""
+//[MInfoCtrlAltF9]
+""
+//[MInfoCtrlAltF10]
+""
+//[MInfoCtrlAltF11]
+""
+//[MInfoCtrlAltF12]
+""
+//[MInfoCtrlAltShiftF1]
+""
+//[MInfoCtrlAltShiftF2]
+""
+//[MInfoCtrlAltShiftF3]
+""
+//[MInfoCtrlAltShiftF4]
+""
+//[MInfoCtrlAltShiftF5]
+""
+//[MInfoCtrlAltShiftF6]
+""
+//[MInfoCtrlAltShiftF7]
+""
+//[MInfoCtrlAltShiftF8]
+""
+//[MInfoCtrlAltShiftF9]
+""
+//[MInfoCtrlAltShiftF10]
+""
+//[MInfoCtrlAltShiftF11]
+""
+//[MInfoCtrlAltShiftF12]
+""
+//[MQViewF1]
+"Aide"
+//[MQViewF2]
+"Retour"
+//[MQViewF3]
+"Voir"
+//[MQViewF4]
+"Hexa"
+//[MQViewF5]
+""
+//[MQViewF6]
+""
+//[MQViewF7]
+"Rech"
+//[MQViewF8]
+"ANSI"
+//[MQViewF9]
+"MnConf"
+//[MQViewF10]
+"Quitter"
+//[MQViewF11]
+"Plugin"
+//[MQViewF12]
+"Écran"
+//[MQViewShiftF1]
+""
+//[MQViewShiftF2]
+"RetMot"
+//[MQViewShiftF3]
+""
+//[MQViewShiftF4]
+""
+//[MQViewShiftF5]
+""
+//[MQViewShiftF6]
+""
+//[MQViewShiftF7]
+"Suiv"
+//[MQViewShiftF8]
+"PgCode"
+//[MQViewShiftF9]
+"Enreg"
+//[MQViewShiftF10]
+"Dernr"
+//[MQViewShiftF11]
+""
+//[MQViewShiftF12]
+""
+//[MQViewAltF1]
+"Gauche"
+//[MQViewAltF2]
+"Droite"
+//[MQViewAltF3]
+""
+//[MQViewAltF4]
+""
+//[MQViewAltF5]
+""
+//[MQViewAltF6]
+""
+//[MQViewAltF7]
+"Rech"
+//[MQViewAltF8]
+"AllerÀ"
+//[MQViewAltF9]
+"Vidéo"
+//[MQViewAltF10]
+"Arbre"
+//[MQViewAltF11]
+"HisVue"
+//[MQViewAltF12]
+"HisDos"
+//[MQViewCtrlF1]
+"Gauche"
+//[MQViewCtrlF2]
+"Droite"
+//[MQViewCtrlF3]
+""
+//[MQViewCtrlF4]
+""
+//[MQViewCtrlF5]
+""
+//[MQViewCtrlF6]
+""
+//[MQViewCtrlF7]
+""
+//[MQViewCtrlF8]
+""
+//[MQViewCtrlF9]
+""
+//[MQViewCtrlF10]
+""
+//[MQViewCtrlF11]
+""
+//[MQViewCtrlF12]
+""
+//[MQViewAltShiftF1]
+""
+//[MQViewAltShiftF2]
+""
+//[MQViewAltShiftF3]
+""
+//[MQViewAltShiftF4]
+""
+//[MQViewAltShiftF5]
+""
+//[MQViewAltShiftF6]
+""
+//[MQViewAltShiftF7]
+""
+//[MQViewAltShiftF8]
+""
+//[MQViewAltShiftF9]
+""
+//[MQViewAltShiftF10]
+""
+//[MQViewAltShiftF11]
+""
+//[MQViewAltShiftF12]
+""
+//[MQViewCtrlShiftF1]
+""
+//[MQViewCtrlShiftF2]
+""
+//[MQViewCtrlShiftF3]
+""
+//[MQViewCtrlShiftF4]
+""
+//[MQViewCtrlShiftF5]
+""
+//[MQViewCtrlShiftF6]
+""
+//[MQViewCtrlShiftF7]
+""
+//[MQViewCtrlShiftF8]
+""
+//[MQViewCtrlShiftF9]
+""
+//[MQViewCtrlShiftF10]
+""
+//[MQViewCtrlShiftF11]
+""
+//[MQViewCtrlShiftF12]
+""
+//[MQViewCtrlAltF1]
+""
+//[MQViewCtrlAltF2]
+""
+//[MQViewCtrlAltF3]
+""
+//[MQViewCtrlAltF4]
+""
+//[MQViewCtrlAltF5]
+""
+//[MQViewCtrlAltF6]
+""
+//[MQViewCtrlAltF7]
+""
+//[MQViewCtrlAltF8]
+""
+//[MQViewCtrlAltF9]
+""
+//[MQViewCtrlAltF10]
+""
+//[MQViewCtrlAltF11]
+""
+//[MQViewCtrlAltF12]
+""
+//[MQViewCtrlAltShiftF1]
+""
+//[MQViewCtrlAltShiftF2]
+""
+//[MQViewCtrlAltShiftF3]
+""
+//[MQViewCtrlAltShiftF4]
+""
+//[MQViewCtrlAltShiftF5]
+""
+//[MQViewCtrlAltShiftF6]
+""
+//[MQViewCtrlAltShiftF7]
+""
+//[MQViewCtrlAltShiftF8]
+""
+//[MQViewCtrlAltShiftF9]
+""
+//[MQViewCtrlAltShiftF10]
+""
+//[MQViewCtrlAltShiftF11]
+""
+//[MQViewCtrlAltShiftF12]
+""
+//[MKBTreeF1]
+"Aide"
+//[MKBTreeF2]
+"MnUtil"
+//[MKBTreeF3]
+""
+//[MKBTreeF4]
+"Attr"
+//[MKBTreeF5]
+"Copier"
+//[MKBTreeF6]
+"RenDép"
+//[MKBTreeF7]
+"CrDoss"
+//[MKBTreeF8]
+"Suppr"
+//[MKBTreeF9]
+"MnConf"
+//[MKBTreeF10]
+"Quitter"
+//[MKBTreeF11]
+"Plugin"
+//[MKBTreeF12]
+"Écran"
+//[MKBTreeShiftF1]
+""
+//[MKBTreeShiftF2]
+""
+//[MKBTreeShiftF3]
+""
+//[MKBTreeShiftF4]
+""
+//[MKBTreeShiftF5]
+"Copier"
+//[MKBTreeShiftF6]
+"Renomm"
+//[MKBTreeShiftF7]
+""
+//[MKBTreeShiftF8]
+""
+//[MKBTreeShiftF9]
+"Enreg"
+//[MKBTreeShiftF10]
+"Dernr"
+//[MKBTreeShiftF11]
+"Groupe"
+//[MKBTreeShiftF12]
+"SélHt"
+//[MKBTreeAltF1]
+"Gauche"
+//[MKBTreeAltF2]
+"Droite"
+//[MKBTreeAltF3]
+""
+//[MKBTreeAltF4]
+""
+//[MKBTreeAltF5]
+""
+//[MKBTreeAltF6]
+""
+//[MKBTreeAltF7]
+"Rech"
+//[MKBTreeAltF8]
+"Histor"
+//[MKBTreeAltF9]
+"Vidéo"
+//[MKBTreeAltF10]
+"Arbre"
+//[MKBTreeAltF11]
+"HisVue"
+//[MKBTreeAltF12]
+"HisDos"
+//[MKBTreeCtrlF1]
+"Gauche"
+//[MKBTreeCtrlF2]
+"Droite"
+//[MKBTreeCtrlF3]
+""
+//[MKBTreeCtrlF4]
+""
+//[MKBTreeCtrlF5]
+""
+//[MKBTreeCtrlF6]
+""
+//[MKBTreeCtrlF7]
+""
+//[MKBTreeCtrlF8]
+""
+//[MKBTreeCtrlF9]
+""
+//[MKBTreeCtrlF10]
+""
+//[MKBTreeCtrlF11]
+""
+//[MKBTreeCtrlF12]
+""
+//[MKBTreeAltShiftF1]
+""
+//[MKBTreeAltShiftF2]
+""
+//[MKBTreeAltShiftF3]
+""
+//[MKBTreeAltShiftF4]
+""
+//[MKBTreeAltShiftF5]
+""
+//[MKBTreeAltShiftF6]
+""
+//[MKBTreeAltShiftF7]
+""
+//[MKBTreeAltShiftF8]
+""
+//[MKBTreeAltShiftF9]
+""
+//[MKBTreeAltShiftF10]
+""
+//[MKBTreeAltShiftF11]
+""
+//[MKBTreeAltShiftF12]
+""
+//[MKBTreeCtrlShiftF1]
+""
+//[MKBTreeCtrlShiftF2]
+""
+//[MKBTreeCtrlShiftF3]
+""
+//[MKBTreeCtrlShiftF4]
+""
+//[MKBTreeCtrlShiftF5]
+""
+//[MKBTreeCtrlShiftF6]
+""
+//[MKBTreeCtrlShiftF7]
+""
+//[MKBTreeCtrlShiftF8]
+""
+//[MKBTreeCtrlShiftF9]
+""
+//[MKBTreeCtrlShiftF10]
+""
+//[MKBTreeCtrlShiftF11]
+""
+//[MKBTreeCtrlShiftF12]
+""
+//[MKBTreeCtrlAltF1]
+""
+//[MKBTreeCtrlAltF2]
+""
+//[MKBTreeCtrlAltF3]
+""
+//[MKBTreeCtrlAltF4]
+""
+//[MKBTreeCtrlAltF5]
+""
+//[MKBTreeCtrlAltF6]
+""
+//[MKBTreeCtrlAltF7]
+""
+//[MKBTreeCtrlAltF8]
+""
+//[MKBTreeCtrlAltF9]
+""
+//[MKBTreeCtrlAltF10]
+""
+//[MKBTreeCtrlAltF11]
+""
+//[MKBTreeCtrlAltF12]
+""
+//[MKBTreeCtrlAltShiftF1]
+""
+//[MKBTreeCtrlAltShiftF2]
+""
+//[MKBTreeCtrlAltShiftF3]
+""
+//[MKBTreeCtrlAltShiftF4]
+""
+//[MKBTreeCtrlAltShiftF5]
+""
+//[MKBTreeCtrlAltShiftF6]
+""
+//[MKBTreeCtrlAltShiftF7]
+""
+//[MKBTreeCtrlAltShiftF8]
+""
+//[MKBTreeCtrlAltShiftF9]
+""
+//[MKBTreeCtrlAltShiftF10]
+""
+//[MKBTreeCtrlAltShiftF11]
+""
+//[MKBTreeCtrlAltShiftF12]
+""
+//[MCopyTimeInfoElapsed]
+"Durée :"
+//[MCopyTimeInfoRemaining]
+"Restant :"
+//[MCopyTimeInfoSpeed]
+"B/s"
+//[MKeyESCWasPressed]
+"L'opération a été interrompue"
+//[MDoYouWantToCancel]
+"Voulez-vous vraiment l'annuler ?"
+//[MDoYouWantToContinue]
+"Continuer ?"
+//[MCheckingFileInPlugin]
+"Le fichier est en cours de vérification par le plugin"
+//[MDialogType]
+"Dialogue"
+//[MHelpType]
+"Aide"
+//[MFolderTreeType]
+"ArbreDossiers"
+//[MVMenuType]
+"Menu"
+//[MIncorrectMask]
+"Le masque de fichier contient des erreurs"
+//[MPanelBracketsForLongName]
+"{}"
+//[MComspecNotFound]
+"La variable d'environnement %COMSPEC% n'est pas définie"
+//[MFileFilterTitle]
+"Filtre"
+//[MFileHilightTitle]
+"Mise en évidence des fichiers"
+//[MFileFilterName]
+"&Nom :"
+//[MFileFilterMatchMask]
+"&Masque :"
+//[MFileFilterSize]
+"Tai&lle :"
+//[MFileFilterSizeFromSign]
+">&="
+//[MFileFilterSizeToSign]
+"&<="
+//[MFileHardLinksCount]
+"A plus d'un lien p&hysique"
+//[MFileFilterDate]
+"Date&/Heure :"
+//[MFileFilterWrite]
+"é&criture"
+//[MFileFilterCreation]
+"c&réation"
+//[MFileFilterAccess]
+"&accès"
+//[MFileFilterChange]
+"&modification"
+//[MFileFilterDateRelative]
+"Relat&if"
+//[MFileFilterDateAfterSign]
+">="
+//[MFileFilterDateBeforeSign]
+"<="
+//[MFileFilterCurrent]
+"Act&uel"
+//[MFileFilterBlank]
+"&Vide"
+//[MFileFilterAttr]
+"Attri&buts"
+//[MFileFilterAttrChoose]
+"&..."
+//[MFileFilterAttrReadOnly]
+"&Lecture seule"
+//[MFileFilterAttrArcive]
+"&Archive"
+//[MFileFilterAttrHidden]
+"&Caché"
+//[MFileFilterAttrSystem]
+"&Système"
+//[MFileFilterAttrCompressed]
+"C&ompressé"
+//[MFileFilterAttrEncrypted]
+"Chi&ffré"
+//[MFileFilterAttrDirectory]
+"&Dossier"
+//[MFileFilterAttrNotIndexed]
+"Non &indexé"
+//[MFileFilterAttrSparse]
+"Clairs&emé"
+//[MFileFilterAttrTemporary]
+"&Temporaire"
+//[MFileFilterAttrReparse]
+"Point d'a&nalyse"
+//[MFileFilterAttrOffline]
+"&Hors ligne"
+//[MFileFilterAttrVirtual]
+"&Virtuel"
+//[MFileFilterAttrIntegrityStream]
+"Flux d'inté&grité"
+//[MFileFilterAttrNoScrubData]
+"Pas de nettoyage (&b)"
+//[MFileFilterAttrPinned]
+"É&pinglé"
+//[MFileFilterAttrUnpinned]
+"Désé&pinglé"
+//[MFileFilterAttrRecallOnOpen]
+"Rappel à l'ouve&rture"
+//[MFileFilterAttrRecallOnDataAccess]
+"Rappel à l'accès a&ux données"
+//[MFileFilterAttrStrictlySequential]
+"Strictement sé&quentiel"
+//[MFileFilterAttrDevice]
+"Périphérique"
+//[MFileFilterReset]
+"&Réinitialiser"
+//[MFileFilterMakeTransparent]
+"Rendre &transparent"
+//[MFileFilterCancel]
+"Annuler"
+//[MBadFileSizeFormat]
+"Le champ de taille de fichier est mal rempli"
+//[MFarTitleAddonsAdmin]
+"Administrateur"
+//[MElevationRequired]
+"Vous devez fournir l'autorisation d'administrateur"
+//[MElevationRequiredPrivileges]
+"Privilèges supplémentaires requis"
+//[MElevationRequiredProcess]
+"pour traiter cet objet :"
+//[MElevationRequiredDelete]
+"pour supprimer cet objet :"
+//[MElevationRequiredCopy]
+"pour copier cet objet :"
+//[MElevationRequiredMove]
+"pour déplacer cet objet :"
+//[MElevationRequiredReplace]
+"pour remplacer cet objet :"
+//[MElevationRequiredGetAttributes]
+"pour obtenir les attributs de cet objet :"
+//[MElevationRequiredSetAttributes]
+"pour définir les attributs de cet objet :"
+//[MElevationRequiredHardLink]
+"pour créer ce lien physique :"
+//[MElevationRequiredSymLink]
+"pour créer ce lien symbolique :"
+//[MElevationRequiredRecycle]
+"pour déplacer cet objet vers la Corbeille :"
+//[MElevationRequiredList]
+"pour lister cet objet :"
+//[MElevationRequiredSetOwner]
+"pour définir le propriétaire de cet objet :"
+//[MElevationRequiredOpen]
+"pour ouvrir cet objet :"
+//[MElevationRequiredEncryptFile]
+"pour chiffrer cet objet :"
+//[MElevationRequiredDecryptFile]
+"pour déchiffrer cet objet :"
+//[MElevationRequiredSetVolumeLabel]
+"pour définir le nom de volume :"
+//[MElevationDoForAll]
+"Faire ceci pour &tous les objets actuels"
+//[MElevationDoNotAskAgainInTheCurrentSession]
+"Ne plus demander pendant la session actuelle"
+//[MCompletionHistoryTitle]
+"Historique"
+//[MCompletionEnvironmentTitle]
+"Environnement"
+//[MCompletionFilesTitle]
+"Fichiers"
+//[MObjectLockedReason]
+"L'objet est {0} dans :"
+//[MObjectLockedReasonPlayed]
+"lu"
+//[MObjectLockedReasonEdited]
+"édité"
+//[MObjectLockedReasonOpened]
+"ouvert"
+//[MObjectLockedAndMore]
+"et {0} autres processus."
+//[MObjectLockedSwitchTo]
+"Basculer vers"
+//[MObjectLockedClose]
+"Fermer le fichier"
+//[MObjectLockedReasonSessionMismatch]
+"Un ou plusieurs processus s'exécutent dans une autre session Terminal Services."
+//[MObjectLockedReasonCriticalProcess]
+"Un ou plusieurs processus sont des processus critiques."
+//[MObjectLockedReasonCriticalService]
+"Un ou plusieurs services sont des services critiques."
+//[MObjectLockedReasonDetectedSelf]
+"Le fichier est ouvert par le processus actuel."
+//[MProblemDb]
+"Problème avec la base de configuration"
+//[MShowConfigFolders]
+"Afficher les dossiers de configuration"
+//[MBadLanguageFile]
+"Fichier de langue incorrect"
+//[MLanguageStringNotFound]
+"Chaîne {0} introuvable"
+//[MUnsupportedCodePageSelectedCodepage]
+"La page de code sélectionnée"
+//[MUnsupportedCodePageDoesNotSupport]
+"ne prend pas en charge {0}"
+//[MUnsupportedCodePageCharacter]
+"le caractère"
+//[MUnsupportedCodePageByteSequence]
+"la séquence d'octets"
+//[MKeyLaunchMediaSelect]
+""
+//[MKeyBrowserFavorites]
+""
+//[MKeyMediaPrevTrack]
+""
+//[MKeyMediaPlayPause]
+""
+//[MKeyMediaNextTrack]
+""
+//[MKeyBrowserRefresh]
+""
+//[MKeyBrowserForward]
+""
+//[MKeyBrowserSearch]
+""
+//[MKeyMswheelRight]
+""
+//[MKeyMswheelDown]
+""
+//[MKeyMswheelLeft]
+""
+//[MKeyBrowserStop]
+""
+//[MKeyBrowserHome]
+""
+//[MKeyBrowserBack]
+""
+//[MKeyVolumeMute]
+""
+//[MKeyVolumeDown]
+""
+//[MKeyScrolllock]
+""
+//[MKeyLaunchMail]
+""
+//[MKeyLaunchApp2]
+""
+//[MKeyLaunchApp1]
+""
+//[MKeyMswheelUp]
+""
+//[MKeyMediaStop]
+""
+//[MKeyBackslash]
+""
+//[MKeyMsm1click]
+""
+//[MKeyMsm2click]
+""
+//[MKeyMsm3click]
+""
+//[MKeyMslclick]
+""
+//[MKeyMsrclick]
+""
+//[MKeyVolumeUp]
+""
+//[MKeySubtract]
+"Gris -"
+//[MKeyNumenter]
+""
+//[MKeyMultiply]
+"Gris *"
+//[MKeyCapslock]
+""
+//[MKeyPrntscrn]
+""
+//[MKeyNumlock]
+""
+//[MKeyDecimal]
+""
+//[MKeyStandby]
+""
+//[MKeyDivide]
+""
+//[MKeyNumdel]
+""
+//[MKeySpace]
+""
+//[MKeyRight]
+""
+//[MKeyPause]
+""
+//[MKeyEnter]
+""
+//[MKeyClear]
+""
+//[MKeyBreak]
+""
+//[MKeyPgup]
+""
+//[MKeyPgdn]
+""
+//[MKeyLeft]
+""
+//[MKeyHome]
+""
+//[MKeyDown]
+""
+//[MKeyApps]
+""
+//[MKeyRwin]
+""
+//[MKeyNumpad9]
+""
+//[MKeyNumpad8]
+""
+//[MKeyNumpad7]
+""
+//[MKeyNumpad6]
+""
+//[MKeyNumpad5]
+""
+//[MKeyNumpad4]
+""
+//[MKeyNumpad3]
+""
+//[MKeyNumpad2]
+""
+//[MKeyNumpad1]
+""
+//[MKeyNumpad0]
+""
+//[MKeyLwin]
+""
+//[MKeyTab]
+""
+//[MKeyIns]
+""
+//[MKeyF10]
+""
+//[MKeyF11]
+""
+//[MKeyF12]
+""
+//[MKeyF13]
+""
+//[MKeyF14]
+""
+//[MKeyF15]
+""
+//[MKeyF16]
+""
+//[MKeyF17]
+""
+//[MKeyF18]
+""
+//[MKeyF19]
+""
+//[MKeyF20]
+""
+//[MKeyF21]
+""
+//[MKeyF22]
+""
+//[MKeyF23]
+""
+//[MKeyF24]
+""
+//[MKeyEsc]
+""
+//[MKeyEnd]
+""
+//[MKeyDel]
+""
+//[MKeyAdd]
+"Gris +"
+//[MKeyUp]
+""
+//[MKeyF9]
+""
+//[MKeyF8]
+""
+//[MKeyF7]
+""
+//[MKeyF6]
+""
+//[MKeyF5]
+""
+//[MKeyF4]
+""
+//[MKeyF3]
+""
+//[MKeyF2]
+""
+//[MKeyF1]
+""
+//[MKeyBs]
+""
+//[MKeyBackbracket]
+""
+//[MKeyQuote]
+""
+//[MKeyBracket]
+""
+//[MKeyColon]
+""
+//[MKeySemicolon]
+""
+//[MKeySlash]
+""
+//[MKeyDot]
+""
+//[MKeyComma]
+""
+//[MKeyRCtrl]
+""
+//[MKeyShift]
+""
+//[MKeyCtrl]
+""
+//[MKeyRAlt]
+""
+//[MKeyAlt]
+""
+//[MNewFileName]
+"Nouveau_fichier_{0:04}-{1:02}-{2:02}_{3:02}.{4:02}.{5:02}.{6:03}.txt"
+//[MMenuTerminalPosition]
+"Position du &terminal"
+//[MMenuModuleCommands]
+"Commandes des mod&ules"
+//[MTermPosFull]
+"&Plein écran"
+//[MTermPosLeft]
+"Moitié &gauche"
+//[MTermPosRight]
+"Moitié &droite"
+//[MTermPosTop]
+"Moitié &haute"
+//[MTermPosBottom]
+"Moitié &basse"
+//[MTermPosLeftTop]
+"En haut à gauc&he"
+//[MTermPosLeftBottom]
+"En bas à gau&che"
+//[MTermPosRightTop]
+"En haut à dr&oite"
+//[MTermPosRightBottom]
+"En bas à droi&te"
+//[MMenuMultipleTerminals]
+"Plusi&eurs terminaux"
+//[MMultiTermLeftRight]
+"Terminaux à &gauche et à droite"
+//[MMultiTermTopBottom]
+"Terminaux en &haut et en bas"
+//[MMultiTermFour]
+"&4 terminaux"
+//[MMultiTermError]
+"Impossible d'ouvrir une nouvelle fenêtre de terminal"
+//[MMenuExecOtherTerminal]
+"E&xécuter dans l'autre terminal"
+//[MExecTermLeft]
+"Terminal à &gauche"
+//[MExecTermRight]
+"Terminal à &droite"
+//[MExecTermBottom]
+"Terminal en &bas"
+//[MExecTermTop]
+"Terminal en &haut"
+//[MExecTermDisconnect]
+"Dé&connecter l'autre terminal"
+//[MMenuEncodedArchives]
+"Archi&ves chiffrées"
+//[MEncArcTitle]
+"Archives chiffrées"
+//[MEncArcAddNew]
+"&Ajouter une configuration…"
+//[MEncArcNewExt]
+"&Nouvelle extension (jusqu'à 7 caractères) :"
+//[MEncArcOrigExt]
+"Extension d'&origine (jusqu'à 7 caractères) :"
+//[MEncArcKeyFile]
+"Fichier de &clé :"
+//[MEncArcPasswordProtected]
+"Protégé par &mot de passe"
+//[MEncArcBadExtension]
+"La nouvelle extension doit avoir de 1 à 7 caractères et l'extension d'origine jusqu'à 7 caractères, sans \"/\" ni \"\\\""
+//[MEncArcDuplicate]
+"Cette nouvelle extension est déjà configurée"
+//[MEncArcNoKeyFile]
+"Le fichier de clé est introuvable"
+//[MEncArcPasswordFor]
+"Mot de passe pour"
+//[MEncArcCannotDecode]
+"Impossible de déchiffrer le fichier"
+//[MEncArcCannotEncode]
+"Impossible de rechiffrer le fichier"
+//[MLogKey]
+"Log"
+//[MLogQuietKey]
+"LogSil"
+//[MLogStarted]
+"La sortie est journalisée dans"

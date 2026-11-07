@@ -15,7 +15,7 @@
 //[MCancel]
 "Mégsem"
 //[MReset]
-"&Reset"
+"&Alaphelyzet"
 //[MRetry]
 "Újra"
 //[MSkip]
@@ -73,7 +73,7 @@
 //[MF10]
 "Kilép"
 //[MF11]
-"Plugin"
+"Bővítm"
 //[MF12]
 "Képrny"
 //[MShiftF1]
@@ -117,7 +117,7 @@
 //[MAltF8]
 "ParElő"
 //[MAltF9]
-"Video"
+"Videó"
 //[MAltF10]
 "MapKer"
 //[MAltF11]
@@ -133,7 +133,7 @@
 //[MCtrlF4]
 "Kiterj"
 //[MCtrlF5]
-"Write"
+"Írás"
 //[MCtrlF6]
 "Méret"
 //[MCtrlF7]
@@ -277,7 +277,7 @@
 //[MConfigScanJunction]
 "Szimbolikus linkek &vizsgálata"
 //[MConfigSmartFolderMonitor]
-"Update panels only when gm is active"
+"&Panelek frissítése csak akkor, ha a gm aktív"
 //[MConfigSaveHistory]
 "Parancs elő&zmények mentése"
 //[MConfigSaveFoldersHistory]
@@ -287,53 +287,53 @@
 //[MConfigRegisteredTypes]
 "&Windows reg. fájltípusok használata"
 //[MConfigUpdateEnvironment]
-"Automatic update of environment variables"
+"&Környezeti változók automatikus frissítése"
 //[MConfigElevation]
-"Request administrator rights:"
+"Rendszergazdai jogok kérése:"
 //[MConfigElevationModify]
-"For modification"
+"Mó&dosításhoz"
 //[MConfigElevationRead]
-"For reading"
+"&Olvasáshoz"
 //[MConfigElevationUsePrivileges]
-"Use additional privileges"
+"További &jogosultságok használata"
 //[MConfigSortingCollation]
-"Sorting collation:"
+"&Rendezési sorrend:"
 //[MConfigSortingOrdinal]
-"ordinal"
+"sorszám szerinti"
 //[MConfigSortingInvariant]
-"invariant"
+"nyelvfüggetlen"
 //[MConfigSortingLinguistic]
-"linguistic"
+"nyelvi"
 //[MConfigSortingDigitsAsNumbers]
-"Treat digits as numbers"
+"Számjegyek kezelése számkén&t"
 //[MConfigSortingCase]
 "&Nagy/kisbetű érz."
 //[MConfigAutoSave]
 "B&eállítások automatikus mentése"
 //[MConfigTreeTitle]
-"Tree settings"
+"Fa beállításai"
 //[MConfigTreeAutoChange]
 "&Automatikus mappaváltás"
 //[MConfigTreeLabelMinFolder]
-"&Minimum number of folders:"
+"Mappák &minimális száma:"
 //[MConfigTreeLabel1]
-"Store a file with folder structure for:"
+"Mappaszerkezetet tároló fájl készítése ezekhez:"
 //[MConfigTreeLabelLocalDisk]
-"local drives"
+"helyi meghajtók"
 //[MConfigTreeLabelNetDisk]
-"network drives"
+"hálózati meghajtók"
 //[MConfigTreeLabelNetPath]
-"network paths"
+"hálózati útvonalak"
 //[MConfigTreeLabelRemovableDisk]
-"removable drives"
+"cserélhető meghajtók"
 //[MConfigTreeLabelCDDisk]
-"optical drives"
+"optikai meghajtók"
 //[MConfigTreeLabelExceptPath]
-"Don't create the file for following drives and paths:"
+"Ne készüljön fájl a következő meghajtókhoz és útvonalakhoz:"
 //[MConfigTreeLabelSaveLocalPath]
-"Path for local, removale and optical drives:"
+"Útvonal a helyi, cserélhető és optikai meghajtókhoz:"
 //[MConfigTreeLabelSaveNetPath]
-"Path for network drives and paths:"
+"Útvonal a hálózati meghajtókhoz és útvonalakhoz:"
 //[MConfigPanelTitle]
 "Panel beállítások"
 //[MConfigHidden]
@@ -343,7 +343,7 @@
 //[MConfigSelectFolders]
 "A ma&ppák is kijelölhetők"
 //[MConfigRightClickSelect]
-"Right click selects files"
+"J&obb kattintás kijelöli a fájlokat"
 //[MConfigSortFolderExt]
 "Mappák is rendezhetők &kiterjesztés szerint"
 //[MConfigAllowReverseSort]
@@ -351,7 +351,7 @@
 //[MConfigAutoUpdateLimit]
 "Pan&el automatikus frissítése kikapcsolva,"
 //[MConfigAutoUpdateLimit2]
-"ha több elem van, mint:"
+"ha több elem van, &mint:"
 //[MConfigAutoUpdateRemoteDrive]
 "Hálózati meghajtók autom. &frissítése"
 //[MConfigShowColumns]
@@ -359,7 +359,7 @@
 //[MConfigShowStatus]
 "Á&llapotsor mutatva"
 //[MConfigDetailedJunction]
-"Detect volume mount &points"
+"Kötet&csatolási pontok felismerése"
 //[MConfigShowTotal]
 "Fájl össze&s információja mutatva"
 //[MConfigShowFree]
@@ -371,7 +371,7 @@
 //[MConfigShowSortMode]
 "Rendezési mó&d betűjele mutatva"
 //[MConfigShowDotsInRoot]
-"Show \"..\" in root folders"
+"\"&..\" megjelenítése a gyökérmappákban"
 //[MConfigInterfaceTitle]
 "Kezelőfelület beállítások"
 //[MConfigClock]
@@ -385,35 +385,35 @@
 //[MConfigSaver]
 "&Képernyőpihentető"
 //[MConfigSaverMinutes]
-"perc tétlenség után"
+"&perc tétlenség után"
 //[MConfigCopyTotal]
 "Másolás összesen folyamat&jelző"
 //[MConfigCopyTimeRule]
 "Má&solási idő mutatva"
 //[MConfigDeleteTotal]
-"Show total delete progress indicator"
+"Teljes &törlési folyamatjelző megjelenítése"
 //[MConfigPgUpChangeDisk]
 "A Ctrl+Pg&Up meghajtót vált"
 //[MConfigUseVirtualTerminalForRendering]
-"Use Virtual Terminal for rendering"
+"&Virtuális terminál használata a megjelenítéshez"
 //[MConfigFullWidthAwareRendering]
-"Fullwidth-aware rendering"
+"Teljes szélességű karaktereket figyelembe vevő megjelenítés"
 //[MConfigFullWidthAwareRenderingGraphemeClustersDected1]
-"It appears that your terminal supports Unicode grapheme clusters."
+"Úgy tűnik, a terminál támogatja a Unicode graféma-klasztereket."
 //[MConfigFullWidthAwareRenderingGraphemeClustersDected2]
-"Unfortunately, gm does not support them yet."
+"Sajnos a gm ezeket még nem támogatja."
 //[MConfigFullWidthAwareRenderingGraphemeClustersDected3]
-"For best experience it is recommended to switch to codepoint-based rendering."
+"A legjobb eredményért ajánlott kódpont alapú megjelenítésre váltani."
 //[MConfigFullWidthAwareRenderingGraphemeClustersDected4]
-"Consult the documentation of your terminal for advice on how to do this."
+"Ennek módját a terminál dokumentációjában találja."
 //[MConfigClearType]
-"ClearType-friendly redraw (can be slow)"
+"ClearType-barát újrarajzolás (lassú le&het)"
 //[MConfigSetConsoleIcon]
-"Console icon:"
+"Konzol&ikon:"
 //[MConfigSetAdminConsoleIcon]
-"Alternate for Administrator"
+"Eltérő &rendszergazdának"
 //[MConfigTitleAddons]
-"gm window title addons:"
+"gm &ablakcím kiegészítései:"
 //[MConfigDlgSetsTitle]
 "Párbeszédablak beállítások"
 //[MConfigDialogsEditHistory]
@@ -429,75 +429,75 @@
 //[MConfigDialogsMouseButton]
 "&Egérkattintás a párb.ablakon kívül: bezárja"
 //[MConfigVMenuTitle]
-"Menu settings"
+"Menübeállítások"
 //[MConfigVMenuLBtnClick]
-"Left mouse click outside a menu"
+"Bal kattintás a &menün kívül"
 //[MConfigVMenuRBtnClick]
-"Right mouse click outside a menu"
+"&Jobb kattintás a menün kívül"
 //[MConfigVMenuMBtnClick]
-"Middle mouse click outside a menu"
+"Kö&zépső kattintás a menün kívül"
 //[MConfigVMenuClickCancel]
-"Cancel menu"
+"Menü bezárása"
 //[MConfigVMenuClickApply]
-"Execute selected item"
+"Kijelölt elem végrehajtása"
 //[MConfigVMenuClickIgnore]
-"Do nothing"
+"Nincs művelet"
 //[MConfigCmdlineTitle]
-"Command line settings"
+"Parancssor beállításai"
 //[MConfigCmdlineEditBlock]
-"Persistent blocks"
+"&Tartós blokkok"
 //[MConfigCmdlineDelRemovesBlocks]
-"Del removes blocks"
+"A &Del törli a blokkokat"
 //[MConfigCmdlineAutoComplete]
-"Automatikus kiegészítés"
+"Automatikus &kiegészítés"
 //[MConfigCmdlineUsePromptFormat]
 "Parancssori &prompt formátuma"
 //[MConfigCmdlineUseHomeDir]
-"Use &home dir"
+"&Saját mappa használata"
 //[MConfigCmdlinePromptFormatAdmin]
 "Adminisztrátor"
 //[MConfigAutoCompleteTitle]
-"AutoComplete settings"
+"Automatikus kiegészítés beállításai"
 //[MConfigAutoCompleteShowList]
-"&Show a list"
+"&Lista megjelenítése"
 //[MConfigAutoCompleteModalList]
-"&Modal mode"
+"&Modális mód"
 //[MConfigAutoCompleteAutoAppend]
-"&Append the first matched item"
+"Az első &egyező elem hozzáfűzése"
 //[MConfigInfoPanelTitle]
-"InfoPanel settings"
+"Infópanel beállításai"
 //[MConfigInfoPanelCNTitle]
-"Computer &name format"
+"Számító&gépnév formátuma"
 //[MConfigInfoPanelCNPhysicalNetBIOS]
-"Physical NetBIOS"
+"Fizikai NetBIOS"
 //[MConfigInfoPanelCNPhysicalDnsHostname]
-"Physical DNS hostname"
+"Fizikai DNS-gazdanév"
 //[MConfigInfoPanelCNPhysicalDnsDomain]
-"Physical DNS domain"
+"Fizikai DNS-tartomány"
 //[MConfigInfoPanelCNPhysicalDnsFullyQualified]
-"Physical DNS fully-qualified (FQDN)"
+"Fizikai teljes DNS-név (FQDN)"
 //[MConfigInfoPanelCNNetBIOS]
 "NetBIOS"
 //[MConfigInfoPanelCNDnsHostname]
-"DNS hostname"
+"DNS-gazdanév"
 //[MConfigInfoPanelCNDnsDomain]
 "DNS-tartomány"
 //[MConfigInfoPanelCNDnsFullyQualified]
-"DNS fully-qualified (FQDN)"
+"Teljes DNS-név (FQDN)"
 //[MConfigInfoPanelUNTitle]
-"Felhasználónév formátum "
+"&Felhasználónév formátum"
 //[MConfigInfoPanelUNLogon]
 "Bejelentkezési név"
 //[MConfigInfoPanelUNFullyQualifiedDN]
-"Fully Qualified Domain Name (FQDN)"
+"Teljes tartománynév (FQDN)"
 //[MConfigInfoPanelUNSamCompatible]
-"Sam Compatible"
+"SAM-kompatibilis"
 //[MConfigInfoPanelUNDisplay]
-"Display Name"
+"Megjelenítendő név"
 //[MConfigInfoPanelUNUniqueId]
-"Unique Id"
+"Egyedi azonosító"
 //[MConfigInfoPanelUNCanonical]
-"Canonical Name"
+"Kanonikus név"
 //[MConfigInfoPanelUNUserPrincipal]
 "Fő felhasználónév"
 //[MConfigInfoPanelUNServicePrincipal]
@@ -509,21 +509,21 @@
 //[MConfigInfoPanelUNSurname]
 "Vezetéknév"
 //[MConfigInfoPanelShowPowerStatus]
-"Show &power status"
+"E&nergiaállapot megjelenítése"
 //[MConfigInfoPanelShowCDInfo]
-"Show &CD drive parameters"
+"&CD-meghajtó paramétereinek megjelenítése"
 //[MMenuInfoShowModeTitle]
-"Show Info"
+"Infó megjelenítése"
 //[MMenuInfoShowModeDisk]
-"&Disk"
+"Leme&z"
 //[MMenuInfoShowModeMemory]
-"&Memory"
+"&Memória"
 //[MMenuInfoShowModeDirDiz]
-"&Description"
+"&Leírás"
 //[MMenuInfoShowModePluginDiz]
-"Plu&gin panel"
+"&Bővítménypanel"
 //[MMenuInfoShowModePower]
-"&Power status"
+"&Energiaállapot"
 //[MViewConfigTitle]
 "Nézőke"
 //[MViewConfigExternalF3]
@@ -537,13 +537,13 @@
 //[MViewConfigSaveShortPos]
 "Könyv&jelzők mentése"
 //[MViewConfigSaveCodepage]
-"Save file &code page"
+"Fájl kódl&apjának mentése"
 //[MViewConfigSaveWrapMode]
-"Save w&rap mode"
+"&Tördelési mód mentése"
 //[MViewConfigSaveViewMode]
-"Save view mode"
+"&Nézetmód mentése"
 //[MViewConfigDetectDumpMode]
-"Detect dump view mode"
+"D&ump nézetmód felismerése"
 //[MViewAutoDetectCodePage]
 "&Kódlap automatikus felismerése"
 //[MViewConfigTabSize]
@@ -555,11 +555,11 @@
 //[MViewConfigPersistentSelection]
 "&Maradó blokkok"
 //[MViewConfigDefaultCodePage]
-"Default code page:"
+"Alapértelmezett kód&lap:"
 //[MViewConfigMaxLineSize]
-"Maximum line width"
+"Ma&ximális sorszélesség"
 //[MViewConfigVisible0x00]
-"Visible '\\0'"
+"Látható '\\&0'"
 //[MEditConfigTitle]
 "Szerkesztő"
 //[MEditConfigEditorF4]
@@ -603,31 +603,31 @@
 //[MEditConfigLineNumbers]
 "&Sorokszámok megjelenítes"
 //[MEditShowWhiteSpace]
-"Show white space"
+"Üres &helyek megjelenítése"
 //[MEditConfigSelFound]
 "&Találat kijelölése"
 //[MEditConfigCursorAtEnd]
-"Cursor at the end"
+"Kurzor a vég&én"
 //[MEditConfigDefaultCodePage]
-"Default code page:"
+"Alapértelmezett kód&lap:"
 //[MConfigEditor]
-"Configuration editor"
+"Konfigurációszerkesztő"
 //[MConfigEditorBoolean]
-"boolean"
+"logikai"
 //[MConfigEditorTriState]
-"3-state"
+"háromállapotú"
 //[MConfigEditorInteger]
-"integer"
+"egész"
 //[MConfigEditorString]
-"string"
+"karakterlánc"
 //[MConfigEditorIntegerSigned]
-"Signed:"
+"Előjeles:"
 //[MConfigEditorIntegerUnsigned]
-"Unsigned:"
+"Előjel nélküli:"
 //[MConfigEditorIntegerHexadecimal]
-"Hexadecimal:"
+"Hexadecimális:"
 //[MConfigEditorIntegerBinary]
-"Binary:"
+"Bináris:"
 //[MSaveSetupTitle]
 "Beállítások mentése"
 //[MSaveSetupAsk1]
@@ -665,7 +665,7 @@
 //[MLinkTypeHardlink]
 "&Hardlink"
 //[MLinkTypeSymlink]
-"Szimbolikus link"
+"S&zimbolikus link"
 //[MLinkTypeSymlinkFile]
 "Szimbolikus link (&fájl)"
 //[MLinkTypeSymlinkDirectory]
@@ -685,7 +685,7 @@
 //[MCopyDlgRename]
 "Át&nevez-Mozgat"
 //[MCopyDlgLink]
-"Create &link"
+"Hivatkozás &létrehozása"
 //[MCopyDlgTotal]
 "Összesen"
 //[MCopyPrepareSecury]
@@ -699,15 +699,15 @@
 //[MMoveFile]
 "átnevezése-mozgatása {0} {1}:"
 //[MLinkFile]
-"Create link to {0} {1}:"
+"Hivatkozás létrehozása {0} {1}:"
 //[MCopyFiles]
 "{0} elem másolása{1} {2}:"
 //[MMoveFiles]
 "{0} elem átnevezése-mozgatása{1} {2}:"
 //[MLinkFiles]
-"Create links to {0} item{1} {2}:"
+"{0} elem hivatkozásának létrehozása{1} {2}:"
 //[MCMLTargetTO]
-"ide"
+"i&de"
 //[MCMLTargetIN]
 "&in"
 //[MCMLItems0]
@@ -757,11 +757,11 @@
 //[MCopyCannotCreateVolMount]
 "Kötet mountpont hiba"
 //[MCopyMountVolFailed]
-""{0}" kötet mountolása"
+"'{0}' kötet mountolása"
 //[MCopyMountVolFailed2]
-"nem sikerült: "{0}""
+"nem sikerült: '{0}'"
 //[MCopyMountName]
-"Disk_"
+"Lemez_"
 //[MCannotCopyFileToItself1]
 "A fájl"
 //[MCannotCopyFileToItself2]
@@ -775,11 +775,11 @@
 //[MCopyStream4]
 "Az adatok egy része el fog veszni."
 //[MCopyDirectoryOrFile]
-"Does it specify a folder name or file name?"
+"Mappanevet vagy fájlnevet jelöl?"
 //[MCopyDirectoryOrFileDirectory]
-"Folder"
+"Mappa"
 //[MCopyDirectoryOrFileFile]
-"File"
+"Fájl"
 //[MCopyFileExist]
 "A fájl már létezik:"
 //[MCopySource]
@@ -827,7 +827,7 @@
 //[MCopyFilesTotalInfo]
 "Fájl:"
 //[MCopyBytesTotalInfo]
-"Bytes:"
+"Bájt:"
 //[MCopyMoving]
 "Fájl mozgatása"
 //[MCopyCopying]
@@ -867,19 +867,19 @@
 //[MWipeFolderConfirm]
 "A mappa kisöprődik:"
 //[MRecycleFolderConfirm]
-"The following folder will be moved to the Recycle Bin:"
+"A következő mappa a Lomtárba kerül:"
 //[MRecycleFolderConfirmDeleteLink1]
-"Folder contains symbolic links."
+"A mappa szimbolikus hivatkozásokat tartalmaz."
 //[MRecycleFolderConfirmDeleteLink2]
-"To prevent the loss of their content when clearing Recyle Bin"
+"Hogy a Lomtár ürítésekor ne vesszen el a tartalmuk,"
 //[MRecycleFolderConfirmDeleteLink3]
-"those links will be broken now."
+"ezek a hivatkozások most megszakadnak."
 //[MRecycleFolderConfirmDeleteLink4]
-"It would be impossible to restore them later."
+"Később nem lehet majd visszaállítani őket."
 //[MDeleteWipe]
 "Kisöpör"
 //[MDeleteRecycle]
-"Move"
+"Áthelyezés"
 //[MDeleteFileDelete]
 "&Töröl"
 //[MDeleteFileWipe]
@@ -923,11 +923,11 @@
 //[MDeleteCancel]
 "&Mégsem"
 //[MCannotRecycleFile]
-"Cannot move file to the Recycle Bin"
+"A fájl nem helyezhető át a Lomtárba"
 //[MCannotRecycleFolder]
-"Cannot move folder to the Recycle Bin"
+"A mappa nem helyezhető át a Lomtárba"
 //[MTryToDeletePermanently]
-"Try to delete it permanently?"
+"Megpróbálja véglegesen törölni?"
 //[MCannotGetSecurity]
 "A fájlhoz nincs hozzáférési joga:"
 //[MCannotSetSecurity]
@@ -941,9 +941,9 @@
 //[MSearchReplaceHex]
 "&Hexákra"
 //[MSearchReplacePickWord]
-"Word"
+"Szó (&o)"
 //[MSearchReplacePickSelection]
-"Selection"
+"K&ijelölés"
 //[MSearchReplaceSearchFor]
 "&Keresés:"
 //[MSearchReplaceReplaceWith]
@@ -953,27 +953,27 @@
 //[MSearchReplaceWholeWords]
 "Csak e&gész szavak"
 //[MSearchReplaceFuzzy]
-"Fu&zzy search"
+"Kö&zelítő keresés"
 //[MSearchReplaceRegexp]
-"Re&gular expressions"
+"Reguláris kife&jezések"
 //[MSearchReplacePreserveStyle]
 "&Megőrzése stílus"
 //[MSearchReplaceFind]
-"Kere&sés"
+"Keresés"
 //[MSearchReplaceFindNext]
-"Find next"
+"Következő keresése"
 //[MSearchReplaceFindPrev]
-"Find pre&vious"
+"Előző ke&resése"
 //[MSearchReplaceReplace]
-"&Csere"
+"Csere"
 //[MSearchReplaceReplaceNext]
-"Replace next"
+"Következő cseréje"
 //[MSearchReplaceReplacePrev]
-"Replace pre&vious"
+"Előző c&seréje"
 //[MSearchReplaceAll]
 "&All"
 //[MSearchReplaceCancel]
-"&Mégsem"
+"Mégsem"
 //[MEditTitle]
 "Szerkesztő"
 //[MAskReload]
@@ -1023,7 +1023,7 @@
 //[MEditSearchingFor]
 "Keresett szöveg {0}"
 //[MEditSearchStatistics]
-"Occurrences: {0}, lines: {1}"
+"Előfordulások: {0}, sorok: {1}"
 //[MEditSearchAllFileNameFormat]
 "{0}{1}.Filtered.txt"
 //[MEditSearchAllFileNameFormatAlt]
@@ -1047,7 +1047,7 @@
 //[MEditOpenAutoDetect]
 "Automatikus felismerés"
 //[MDefaultCP]
-"Default"
+"Alapértelmezett"
 //[MGoTo]
 "Ugrás"
 //[MGoToHex]
@@ -1057,15 +1057,15 @@
 //[MShortcutNone]
 "<nincs>"
 //[MShortcutPlugin]
-"<plugin>"
+"<bővítmény>"
 //[MFSShortcutName]
-"Title:"
+"Cím:"
 //[MFSShortcutPath]
-"Path:"
+"Útvonal:"
 //[MFSShortcutPluginFile]
 "Fájl:"
 //[MFSShortcutPluginData]
-"Data:"
+"Adatok:"
 //[MNeedNearPath]
 "Ugrás a legközelebbi létező mappára?"
 //[MSaveThisShortcut]
@@ -1091,7 +1091,7 @@
 //[MEditF10]
 "Kilép"
 //[MEditF11]
-"Plugin"
+"Bővítm"
 //[MEditF12]
 "Képrny"
 //[MEditShiftF1]
@@ -1135,7 +1135,7 @@
 //[MEditAltF8]
 "Ugrás"
 //[MEditAltF9]
-"Video"
+"Videó"
 //[MEditAltF10]
 ""
 //[MEditAltF11]
@@ -1269,7 +1269,7 @@
 //[MEditSaveAs]
 "Fá&jl mentése, mint:"
 //[MEditCodePage]
-"Kódlap:"
+"K&ódlap:"
 //[MEditAddSignature]
 "Uni&code bájtsorrend jelzővel (BOM)"
 //[MEditSaveAsFormatTitle]
@@ -1299,41 +1299,41 @@
 //[MEditNewPlugin1]
 "A szerkesztendő fájlnak nevet kell adni"
 //[MEditorReloadCPWarnLost1]
-"The file has to be reloaded to change the code page."
+"A kódlap módosításához a fájlt újra kell tölteni."
 //[MEditorReloadCPWarnLost2]
-"All unsaved changes will be lost."
+"Minden nem mentett módosítás elvész."
 //[MEditorSwitchCPConfirm]
-"Continue?"
+"Folytatja?"
 //[MEditDataLostWarn]
-"During the file editing some data was lost."
+"A fájl szerkesztése közben néhány adat elveszett."
 //[MEditorSaveNotRecommended]
 "A fájl mentése nem ajánlott."
 //[MEditorSave]
 "Mentés"
 //[MEditorSaveCPWarnShow]
-"Show"
+"Megjelenítés"
 //[MEditorCPNotSupported]
-"Code page {0} is not supported in your system"
+"A(z) {0} kódlapot a rendszer nem támogatja"
 //[MColumnName]
 "Név"
 //[MColumnExtension]
-"Extension"
+"Kiterjesztés"
 //[MColumnSize]
 "Méret"
 //[MColumnAlocatedSize]
-"Allocated"
+"Lefoglalt"
 //[MColumnDate]
 "Dátum"
 //[MColumnTime]
 "Idő"
 //[MColumnWrited]
-"Write"
+"Írás"
 //[MColumnCreated]
 "Létrejött"
 //[MColumnAccessed]
 "Hozzáférés"
 //[MColumnChanged]
-"Change"
+"Változás"
 //[MColumnAttr]
 "Attrib"
 //[MColumnDescription]
@@ -1377,7 +1377,7 @@
 //[MListEb]
 "E"
 //[MListFileSize]
-"Bytes: {0}, files: {1}, folders: {2}"
+"Bájt: {0}, fájl: {1}, mappa: {2}"
 //[MListFileSizeStatus]
 "{0} ({1}/{2}) {3} {4}"
 //[MListFreeSize]
@@ -1457,7 +1457,7 @@
 //[MViewShiftF3]
 ""
 //[MViewShiftF4]
-"Mode"
+"Mód"
 //[MViewShiftF5]
 ""
 //[MViewShiftF6]
@@ -1491,7 +1491,7 @@
 //[MViewAltF8]
 "Ugrás"
 //[MViewAltF9]
-"Video"
+"Videó"
 //[MViewAltF10]
 ""
 //[MViewAltF11]
@@ -1623,11 +1623,11 @@
 //[MViewF4Text]
 "Szöveg"
 //[MViewF4Dump]
-"Dump"
+"Nyers"
 //[MViewF8DOS]
 "OEM"
 //[MViewMode]
-"View mode"
+"Nézetmód"
 //[MInViewer]
 "megnézése"
 //[MInEditor]
@@ -1659,15 +1659,15 @@
 //[MFindFileAllCodePages]
 "Minden kódlappal"
 //[MFindFileSelectedCodePages]
-"Selected code pages"
+"Kijelölt kódlapok"
 //[MFindFileCase]
 "&Nagy/kisbetű érzékeny"
 //[MFindFileWholeWords]
 "Csak egés&z szavak"
 //[MFindFileFuzzy]
-"Fu&zzy search"
+"&Közelítő keresés"
 //[MFindFileNotContaining]
-"Not containing"
+"Ne&m tartalmazza"
 //[MFindFileArchives]
 "Keresés t&ömörítettekben"
 //[MFindFileFolders]
@@ -1675,7 +1675,7 @@
 //[MFindFileSymLinks]
 "Keresés sz&imbolikus linkekben"
 //[MFindFileAlternateStreams]
-"Search in alternate streams"
+"Keresés az a&lternatív adatfolyamokban"
 //[MFindFileSearchArea]
 "Keresés hatós&ugara:"
 //[MFindFileSearchAllDisks]
@@ -1699,7 +1699,7 @@
 //[MFindFileUsingFilter]
 "szűrővel"
 //[MFindFileFind]
-"K&eres"
+"Keres"
 //[MFindFileDrive]
 "Meghajt&ó"
 //[MFindFileSetFilter]
@@ -1729,7 +1729,7 @@
 //[MFindFileSearchFirst]
 "Keresés csak az első &x bájtban:"
 //[MFindFileSearchOutputFormat]
-"&Output format:"
+"&Kimeneti formátum:"
 //[MFindAlternateModeTypes]
 "Oszlop&típusok"
 //[MFindAlternateModeWidths]
@@ -1747,9 +1747,9 @@
 //[MGetCodePageOther]
 "Egyéb"
 //[MGetCodePageEditCodePageName]
-"Rename the code page"
+"Kódlap átnevezése"
 //[MGetCodePageResetCodePageName]
-"&Reset"
+"&Alaphelyzet"
 //[MHighlightTitle]
 "Fájlkiemelések, rendezési csoportok"
 //[MHighlightUpperSortGroup]
@@ -1769,7 +1769,7 @@
 //[MHighlightMark]
 "&Jelzés,"
 //[MHighlightInheritMark]
-"Örökölje"
+"&Örökölje"
 //[MHighlightColors]
 "Fájlnév színek (feketén fekete = alapértelmezett szín)"
 //[MHighlightFileName1]
@@ -1797,27 +1797,27 @@
 //[MInfoCompName]
 "Számítógép neve"
 //[MInfoCompDescription]
-"Computer description"
+"Számítógép leírása"
 //[MInfoUserName]
 "Felhasználói név"
 //[MInfoUserDescription]
-"User description"
+"Felhasználó leírása"
 //[MInfoUserAccessLevel]
-"Access level"
+"Hozzáférési szint"
 //[MInfoUserAccessLevelGuest]
-"Guest"
+"Vendég"
 //[MInfoUserAccessLevelUser]
-"User"
+"Felhasználó"
 //[MInfoUserAccessLevelAdministrator]
 "Adminisztrátor"
 //[MInfoUserAccessLevelUnknown]
-"Unknown"
+"Ismeretlen"
 //[MInfoUserAccessElevated]
-"Elevated"
+"Emelt szintű"
 //[MInfoUserAccessElevationTypeFull]
-"Full"
+"Teljes"
 //[MInfoUserAccessElevationTypeLimited]
-"Limited"
+"Korlátozott"
 //[MInfoDiskTitle]
 "Lemez"
 //[MInfoRemovable]
@@ -1861,15 +1861,15 @@
 //[MInfoSUBST]
 "Subst"
 //[MInfoVirtual]
-"Virtual"
+"Virtuális"
 //[MInfoUnknown]
-"Unknown"
+"Ismeretlen"
 //[MInfoMetricTotal]
 "összesen"
 //[MInfoMetricAvailable]
 "elérhető"
 //[MInfoMetricUsed]
-"used"
+"foglalt"
 //[MInfoDisk]
 "lemez"
 //[MInfoDiskSpace]
@@ -1881,11 +1881,11 @@
 //[MInfoMemory]
 "Memória"
 //[MInfoMemoryCommittable]
-"Committable"
+"Lefoglalható"
 //[MInfoMemoryAddressable]
-"Addressable"
+"Címezhető"
 //[MInfoMemoryPhysical]
-"Physical"
+"Fizikai"
 //[MInfoMetricMemoryInstalled]
 "Telepítve"
 //[MInfoDescription]
@@ -1893,51 +1893,51 @@
 //[MInfoDizAbsent]
 "Mappa megjegyzésfájl nincs"
 //[MInfoPlugin]
-"Plugin"
+"Bővítmény"
 //[MInfoPowerStatus]
-"Power Status"
+"Energiaállapot"
 //[MInfoPowerStatusAC]
-"AC power status"
+"Hálózati tápellátás állapota"
 //[MInfoPowerStatusACOffline]
-"Offline"
+"Nincs csatlakoztatva"
 //[MInfoPowerStatusACOnline]
-"Online"
+"Csatlakoztatva"
 //[MInfoPowerStatusACBackUp]
-"Backup power"
+"Tartalék tápellátás"
 //[MInfoPowerStatusACUnknown]
-"Unknown"
+"Ismeretlen"
 //[MInfoPowerStatusBCLifePercentUnknown]
-"unknown"
+"ismeretlen"
 //[MInfoPowerStatusBC]
-"Battery charge status"
+"Akkumulátor töltöttsége"
 //[MInfoPowerStatusBCHigh]
-"High"
+"Magas"
 //[MInfoPowerStatusBCMedium]
 "Közepes"
 //[MInfoPowerStatusBCLow]
 "Low"
 //[MInfoPowerStatusBCCritical]
-"Critical"
+"Kritikus"
 //[MInfoPowerStatusBCCharging]
-"charging"
+"töltődik"
 //[MInfoPowerStatusBCNoSysBat]
-"No system battery"
+"Nincs rendszerakkumulátor"
 //[MInfoPowerStatusBCUnknown]
-"Unknown"
+"Ismeretlen"
 //[MInfoPowerStatusBCTimeRem]
-"Battery life time"
+"Hátralévő üzemidő"
 //[MInfoPowerStatusBCFullTimeRem]
-"Battery full time"
+"Teljes üzemidő"
 //[MInfoPowerStatusUnknown]
-"Unknown"
+"Ismeretlen"
 //[MAccessDenied]
 "Hozzáférés megtagadva"
 //[MCannotExecute]
 "Nem végrehajtható:"
 //[MCannotInvokeComspec]
-"Cannot invoke command interpreter"
+"A parancsértelmező nem indítható"
 //[MCheckComspecVar]
-"Check COMSPEC environment variable"
+"Ellenőrizze a COMSPEC környezeti változót"
 //[MScanningFolder]
 "Mappák olvasása"
 //[MMakeFolderTitle]
@@ -1945,15 +1945,15 @@
 //[MCreateFolder]
 "Mappa &neve:"
 //[MMakeFolderLinkType]
-"Link típusa:"
+"L&ink típusa:"
 //[MMakeFolderLinkNone]
-"None"
+"N&one"
 //[MMakeFolderLinkJunction]
-"Mappa csomópont"
+"Mappa &csomópont"
 //[MMakeFolderLinkSymlink]
-"Szimbolikus link"
+"S&zimbolikus link"
 //[MMakeFolderLinkTarget]
-"Target:"
+"C&él:"
 //[MMultiMakeDir]
 "Töb&b név feldolgozása"
 //[MIncorrectDirList]
@@ -1981,7 +1981,7 @@
 //[MMenuAlternativeView]
 "&Alternatív teljes"
 //[MMenuInfoPanel]
-"&Info panel"
+"&Infópanel"
 //[MMenuTreePanel]
 "&Fastruktúra"
 //[MMenuQuickView]
@@ -2005,7 +2005,7 @@
 //[MMenuMove]
 "Át&nevez-Mozgat"
 //[MMenuLink]
-"Link"
+"&Link"
 //[MMenuCreateFolder]
 "Ú&j mappa"
 //[MMenuDelete]
@@ -2071,7 +2071,7 @@
 //[MMenuPanelSettings]
 "&Panel beállítások"
 //[MMenuTreeSettings]
-"Tree settings"
+"F&a beállításai"
 //[MMenuInterface]
 "Kezelő&felület beállítások"
 //[MMenuLanguages]
@@ -2079,19 +2079,19 @@
 //[MMenuPluginsConfig]
 "Pl&ugin beállítások"
 //[MMenuPluginsManagerSettings]
-"Plugins manager settings"
+"Bővítménykezelő beállítása&i"
 //[MMenuDialogSettings]
 "Pár&beszédablak beállítások"
 //[MMenuVMenuSettings]
-"Menu settings"
+"Menübeállítások"
 //[MMenuCmdlineSettings]
-"Command line settings"
+"Parancssor beá&llításai"
 //[MMenuAutoCompleteSettings]
-"AutoComplete settings"
+"Automatikus &kiegészítés beállításai"
 //[MMenuInfoPanelSettings]
-"Inf&oPanel settings"
+"Inf&ópanel beállításai"
 //[MMenuMaskGroups]
-"Groups of file masks"
+"Fá&jlmaszk-csoportok"
 //[MMenuConfirmation]
 "Meg&erősítések"
 //[MMenuFilePanelModes]
@@ -2133,7 +2133,7 @@
 //[MMenuSortByExt]
 "Ki&terjesztés"
 //[MMenuSortByWrite]
-"&Write time"
+"Írás &ideje"
 //[MMenuSortBySize]
 "&Méret"
 //[MMenuUnsorted]
@@ -2143,13 +2143,13 @@
 //[MMenuSortByAccess]
 "&Hozzáférés ideje"
 //[MMenuSortByChange]
-"Change time"
+"&Változás ideje"
 //[MMenuSortByDiz]
 "Megjegyzé&sek"
 //[MMenuSortByOwner]
 "Tula&jdonos"
 //[MMenuSortByAllocatedSize]
-"Allocated size"
+"Lefoglalt méret"
 //[MMenuSortByNumLinks]
 "Hardlinkek s&záma"
 //[MMenuSortByNumStreams]
@@ -2159,13 +2159,13 @@
 //[MMenuSortByNameOnly]
 "Csak név"
 //[MMenuSortUseGroups]
-"Rend. cs&oport haszn."
+"Rend. csoport haszn."
 //[MMenuSortSelectedFirst]
 "Kijel&ölteket előre"
 //[MMenuSortDirectoriesFirst]
-"Sho&w directories first"
+"M&appák elöl"
 //[MMaskGroupTitle]
-"Groups of file masks"
+"Fájlmaszk-csoportok"
 //[MMaskGroupName]
 "&Neve:"
 //[MMaskGroupMasks]
@@ -2173,7 +2173,7 @@
 //[MMaskGroupAskDelete]
 "Törölni akar"
 //[MMaskGroupRestore]
-"Do you wish to restore default mask sets?"
+"Visszaállítja az alapértelmezett maszkkészleteket?"
 //[MMaskGroupFindMask]
 "&Maszk:"
 //[MMaskGroupTotal]
@@ -2223,7 +2223,7 @@
 //[MChangeDriveSUBST]
 "virtuális"
 //[MChangeDriveVirtual]
-"virtual"
+"virtuális"
 //[MChangeDriveLabelAbsent]
 "nem elérhető"
 //[MChangeDriveCannotReadDisk]
@@ -2239,9 +2239,9 @@
 //[MChangeSUBSTDisconnectDriveQuestion]
 "Törli {0} virtuális meghajtót?"
 //[MChangeVHDDisconnectDriveTitle]
-"Virtual disk detaching"
+"Virtuális lemez leválasztása"
 //[MChangeVHDDisconnectDriveQuestion]
-"Detach virtual disk {0}?"
+"Leválasztja a(z) {0} virtuális lemezt?"
 //[MChangeHotPlugDisconnectDriveTitle]
 "Eszköz biztonságos eltávolítása"
 //[MChangeHotPlugDisconnectDriveQuestion]
@@ -2271,33 +2271,33 @@
 //[MChangeCouldNotEjectMedia]
 "Meghajtó lemeze nem oldható ki"
 //[MChangeDriveConfigure]
-"Change Drive Menu Options"
+"Meghajtómenü beállításai"
 //[MChangeDriveShowDiskType]
-"Show disk type"
+"Lemez&típus megjelenítése"
 //[MChangeDriveShowPath]
-"Show &network name / SUBST path / VHD name"
+"&Hálózati név / SUBST útvonal / VHD név megjelenítése"
 //[MChangeDriveShowLabel]
-"Show disk &label"
+"Lemezcím&ke megjelenítése"
 //[MChangeDriveShowLabelUseShell]
-"Use shell name"
+"&Shell által adott név használata"
 //[MChangeDriveShowFileSystem]
-"Show &file system type"
+"&Fájlrendszer típusának megjelenítése"
 //[MChangeDriveShowSize]
-"Show &size"
+"&Méret megjelenítése"
 //[MChangeDriveShowSizeFloat]
-"Show size as a decimal fraction"
+"Mér&et megjelenítése tizedes törtként"
 //[MChangeDriveShowRemovableDrive]
-"Show &removable drive parameters"
+"&Cserélhető meghajtók paramétereinek megjelenítése"
 //[MChangeDriveShowPlugins]
-"Show &plugins"
+"Bő&vítmények megjelenítése"
 //[MChangeDriveSortPluginsByHotkey]
-"Sort plugins by hotkey"
+"Bővítmények rendezése &gyorsbillentyű szerint"
 //[MChangeDriveShowCD]
-"Show &CD drive parameters"
+"C&D-meghajtó paramétereinek megjelenítése"
 //[MChangeDriveShowNetworkDrive]
-"Show ne&twork drive parameters"
+"Hálózati megh&ajtók paramétereinek megjelenítése"
 //[MChangeDriveShowVirtualDisk]
-"Detect virtual disks"
+"Virtuális lemezek felismerése"
 //[MChangeDriveVolumeLabel]
 "Kötetcímke"
 //[MSearchFileTitle]
@@ -2327,9 +2327,9 @@
 //[MQuickViewTitle]
 "Gyorsnézet"
 //[MQuickViewReparsePoint]
-"Reparse point"
+"Új&raelemzési pont"
 //[MQuickViewUnknownReparsePoint]
-"Unknown reparse point"
+"Ismeretlen újraelemzési pont"
 //[MQuickViewFolders]
 "Mappák száma:"
 //[MQuickViewFiles]
@@ -2337,13 +2337,13 @@
 //[MQuickViewBytes]
 "Fájlok mérete:"
 //[MQuickViewAllocated]
-"Allocated size:"
+"Lefoglalt méret:"
 //[MQuickViewCluster]
 "Klaszterméret:"
 //[MQuickViewSlack]
 "Meddő terület:"
 //[MQuickViewMFTOverhead]
-"MFT overhead:"
+"MFT többletterhelés:"
 //[MSetAttrTitle]
 "Attribútumok"
 //[MSetAttrFor]
@@ -2353,17 +2353,17 @@
 //[MSetAttrHardLinks]
 "hardlink"
 //[MSetAttrJunction]
-"Сsomópont:"
+"&Сsomópont:"
 //[MSetAttrSymlink]
-"Szimlink{}:"
+"&Szimlink{}:"
 //[MSetAttrVolMount]
-"Kötet:"
+"K&ötet:"
 //[MSetAttrDfsTargets]
-"DFS Targets:"
+"DFS-célok:"
 //[MSetAttrAppExecLink]
 "Alkalmazás alias :"
 //[MSetAttrUnknownReparsePoint]
-"Unknown reparse point"
+"Ismeretlen újraelemzési pont"
 //[MSetAttrDiskDevice]
 "Eszköz:"
 //[MSetAttrReadOnly]
@@ -2385,33 +2385,33 @@
 //[MSetAttrTemporary]
 "&Átmeneti"
 //[MSetAttrOffline]
-"O&ffline"
+"&Offline"
 //[MSetAttrReparsePoint]
-"Reparse point"
+"Újraelemzési &pont"
 //[MSetAttrVirtual]
 "&Virtuális"
 //[MSetAttrIntegrityStream]
-"Integrity stream"
+"&Integritási adatfolyam"
 //[MSetAttrNoScrubData]
-"No scrub data"
+"&Nincs adatellenőrzés"
 //[MSetAttrPinned]
-"Rögzítve"
+"R&ögzítve"
 //[MSetAttrUnpinned]
-"Feloldva"
+"F&eloldva"
 //[MSetAttrRecallOnOpen]
-"Recall on open"
+"Lekérés megn&yitáskor"
 //[MSetAttrRecallOnDataAccess]
-"Recall on data access"
+"Lekérés a&dathozzáféréskor"
 //[MSetAttrStrictlySequential]
-"Strictly sequential"
+"Szigorúan &szekvenciális"
 //[MSetAttrDevice]
 "Eszköz"
 //[MSetAttrMore]
-"Továbbiak"
+"&Továbbiak"
 //[MSetAttrSubfolders]
-"Az almappákon is"
+"&Az almappákon is"
 //[MSetAttrOwner]
-"Tulajdonos:"
+"T&ulajdonos:"
 //[MSetAttrDate]
 "Dátum/Idő:"
 //[MSetAttrWrite]
@@ -2421,7 +2421,7 @@
 //[MSetAttrAccess]
 "&hozzáférés:"
 //[MSetAttrChange]
-"változás:"
+"&változás:"
 //[MSetAttrOriginal]
 "&Eredeti"
 //[MSetAttrCurrent]
@@ -2439,7 +2439,7 @@
 //[MSetAttrTimeTitle]
 "óó{0}pp{0}mm"
 //[MSetAttrSystemDialog]
-"System properties"
+"Rendszer&tulajdonságok"
 //[MSetAttrSetting]
 "Attribútumok beállítása"
 //[MSetAttrCannotFor]
@@ -2453,7 +2453,7 @@
 //[MSetAttrTimeCannotFor]
 "A dátum nem állítható be:"
 //[MSetAttrOwnerCannotFor]
-"Cannot set owner for"
+"Nem állítható be a tulajdonos ehhez:"
 //[MSetAttrReparsePointCannotFor]
 "Az újraértelmezési pont nem távolítható el a következőhöz"
 //[MSetColorPanel]
@@ -2543,13 +2543,13 @@
 //[MSetColorDialogSelectedHighlightedButtons]
 "Kijelölt kiemelt gombok"
 //[MSetColorDialogDefaultButton]
-"Default button"
+"Alapértelmezett gomb"
 //[MSetColorDialogSelectedDefaultButton]
-"Selected default button"
+"Kijelölt alapértelmezett gomb"
 //[MSetColorDialogHighlightedDefaultButton]
-"Highlighted default button"
+"Kiemelt alapértelmezett gomb"
 //[MSetColorDialogSelectedHighlightedDefaultButton]
-"Selected highlighted default button"
+"Kijelölt kiemelt alapértelmezett gomb"
 //[MSetColorDialogListBoxControl]
 "Listaablak"
 //[MSetColorDialogComboBoxControl]
@@ -2705,25 +2705,25 @@
 //[MSetColorStyle]
 "Stílus:"
 //[MSetColorStyleInherit]
-"Örökölje"
+"&Örökölje"
 //[MSetColorStyleBold]
-"Félkövér"
+"&Félkövér"
 //[MSetColorStyleItalic]
-"Dőlt"
+"&Dőlt"
 //[MSetColorStyleOverline]
-"Föléhúzás"
+"Fö&léhúzás"
 //[MSetColorStyleStrikeout]
-"Áthúzás"
+"&Áthúzás"
 //[MSetColorStyleFaint]
-"Sötét"
+"&Sötét"
 //[MSetColorStyleBlink]
-"Villogás"
+"&Villogás"
 //[MSetColorStyleInverse]
 "Inverz"
 //[MSetColorStyleInvisible]
 "Láthatatlan"
 //[MSetColorStyleUnderline]
-"Aláhúzás:"
+"&Aláhúzás:"
 //[MSetColorStyleUnderlineNone]
 "Nem"
 //[MSetColorStyleUnderlineSingle]
@@ -2737,21 +2737,21 @@
 //[MSetColorStyleUnderlineDashed]
 "Szaggatott"
 //[MSetColorSample]
-"Text Text Text Text Text Text Text"
+"Szöveg Szöveg Szöveg Szöveg Szöveg Szöveg Szöveg"
 //[MSetColorVTHintInfo]
-"Extended colors and styles require VT rendering."
+"A bővített színekhez és stílusokhoz VT-megjelenítés szükséges."
 //[MSetColorVTHintSupported]
-"Press \"Enable VT\" below to turn it on."
+"A bekapcsoláshoz nyomja meg lent a \"VT engedélyezése\" gombot."
 //[MSetColorVTHintNotSupported]
-"Your system does not support it."
+"A rendszer nem támogatja."
 //[MSetColorSystemDialog]
-"System"
+"Rendszer"
 //[MSetColorSet]
-"A&lkalmaz"
+"Alkalmaz"
 //[MSetColorEnableVT]
-"Enable VT"
+"VT engedélyezése"
 //[MSetColorCancel]
-"&Mégsem"
+"Mégsem"
 //[MColorsPalette]
 "Paletta"
 //[MColorsClassicPalette]
@@ -2777,7 +2777,7 @@
 //[MSetConfirmRemoveSUBST]
 "Virt&uális meghajtó törlése"
 //[MSetConfirmDetachVHD]
-"Detach virtual disk"
+"Vi&rtuális lemez leválasztása"
 //[MSetConfirmRemoveHotPlug]
 "H&otPlug eszköz eltávolítása"
 //[MSetConfirmAllowReedit]
@@ -2787,21 +2787,21 @@
 //[MSetConfirmExit]
 "K&ilépés a gm-ból"
 //[MPluginsManagerSettingsTitle]
-"Plugins manager settings"
+"Bővítménykezelő beállításai"
 //[MPluginsManagerOEMPluginsSupport]
-"OEM plugins support"
+"OEM &bővítmények támogatása"
 //[MPluginsManagerScanSymlinks]
 "Szimbolikus linkek &vizsgálata"
 //[MPluginsManagerOFP]
 "&Fájl feldolgozása"
 //[MPluginsManagerStdAssoc]
-"Szabvány társítás megjelenítése"
+"Szabvány &társítás megjelenítése"
 //[MPluginsManagerEvenOne]
-"Akkor is, ha csak egy plugin van"
+"&Akkor is, ha csak egy plugin van"
 //[MPluginsManagerSFL]
-"Keresés eredménye (SetFindList)"
+"&Keresés eredménye (SetFindList)"
 //[MPluginsManagerPF]
-"Előtag feldolgozása"
+"E&lőtag feldolgozása"
 //[MPluginConfirmationTitle]
 "Plugin választás"
 //[MMenuPluginStdAssociation]
@@ -2873,7 +2873,7 @@
 //[MFolderTreeAltF8]
 ""
 //[MFolderTreeAltF9]
-"Video"
+"Videó"
 //[MFolderTreeAltF10]
 ""
 //[MFolderTreeAltF11]
@@ -3017,9 +3017,9 @@
 //[MMainMenuTitle]
 "Főmenü"
 //[MMainMenuUser]
-"User"
+"Felhasználói"
 //[MMainMenuGlobal]
-"Global"
+"Globális"
 //[MLocalMenuTitle]
 "Helyi menü"
 //[MAskDeleteMenuItem]
@@ -3051,9 +3051,9 @@
 //[MEditSubmenuLabel]
 "&Név:"
 //[MEditMenuConfirmation]
-"Save changes?"
+"Menti a módosításokat?"
 //[MEditMenuError]
-"Cannot update menu"
+"A menü nem frissíthető"
 //[MViewerTitle]
 "Nézőke"
 //[MViewerCannotOpenFile]
@@ -3069,17 +3069,17 @@
 //[MViewSearchCannotFindHex]
 "Nem találtam a bájtokat:"
 //[MViewSearchEod]
-"End of the document reached"
+"Elérte a dokumentum végét"
 //[MViewSearchFromBegin]
 "Folytassam a keresést a dokumentum elejétől?"
 //[MViewSearchBod]
-"Begin of the document reached"
+"Elérte a dokumentum elejét"
 //[MViewSearchFromEnd]
 "Folytassam a keresést a dokumentum végétől?"
 //[MViewSearchCycle]
 "The Whole document scanned"
 //[MViewSearchRepeat]
-"Repeat the search in the document?"
+"Megismétli a keresést a dokumentumban?"
 //[MPrintTitle]
 "Nyomtatás"
 //[MPrintTo]
@@ -3121,7 +3121,7 @@
 //[MCfgDizAnsiByDefault]
 "Fájlok eredeti megnyitása ANS&I kódlappal"
 //[MCfgDizSaveInUTF]
-"Save in UTF-&8"
+"Mentés UTF-&8 kódolással"
 //[MReadingTitleFiles]
 "Panelek frissítése"
 //[MReadingFiles]
@@ -3131,7 +3131,7 @@
 //[MEditPanelModes]
 "Panel módok szerkesztése"
 //[MEditPanelModeName]
-"Neve"
+"Ne&ve"
 //[MEditPanelModeTypes]
 "Oszlop&típusok"
 //[MEditPanelModeWidths]
@@ -3183,13 +3183,13 @@
 //[MDefineMacro]
 "Nyomja le a billentyűt"
 //[MMacroReDefinedKey]
-""{0}" makróbillentyű foglalt"
+"'{0}' makróbillentyű foglalt"
 //[MMacroDeleteKey]
-""{0}" makróbillentyű törlődik"
+"'{0}' makróbillentyű törlődik"
 //[MMacroCommonReDefinedKey]
-""{0}" közös makróbill. foglalt"
+"'{0}' közös makróbill. foglalt"
 //[MMacroCommonDeleteKey]
-""{0}" közös makróbill. törlődik"
+"'{0}' közös makróbill. törlődik"
 //[MMacroSequence]
 "Szekvencia:"
 //[MMacroReDefinedKey2]
@@ -3197,13 +3197,13 @@
 //[MMacroDeleteKey2]
 "Törli?"
 //[MMacroEditKey]
-"Change"
+"M&ódosítás"
 //[MMacroSettingsTitle]
-""{0}" makró beállításai"
+"'{0}' makró beállításai"
 //[MMacroSettingsSequence]
-"Szekvencia:"
+"&Szekvencia:"
 //[MMacroSettingsDescription]
-"Megjegyzés:"
+"M&egjegyzés:"
 //[MMacroSettingsEnableOutput]
 "Képernyő&kimenet a makró futása közben"
 //[MMacroSettingsRunAfterStart]
@@ -3223,9 +3223,9 @@
 //[MMacroSettingsSelectionBlockPresent]
 "Ha van kijelölt &blokk"
 //[MMacroPluginLuamacroNotLoaded]
-"Plugin LuaMacro is not loaded"
+"A LuaMacro bővítmény nincs betöltve"
 //[MMacroRecordingIsDisabled]
-"Macro recording is disabled"
+"A makrórögzítés le van tiltva"
 //[MCannotSaveFile]
 "A fájl nem menthető"
 //[MTextSavedToTemp]
@@ -3235,23 +3235,23 @@
 //[MPluginHotKey]
 "Nyomja le a billentyűt (betű vagy szám)"
 //[MPluginInformation]
-"Plugin information"
+"Bővítmény adatai"
 //[MPluginModuleTitle]
-"&Title:"
+"&Cím:"
 //[MPluginDescription]
-"&Description:"
+"L&eírás:"
 //[MPluginAuthor]
-"&Author:"
+"S&zerző:"
 //[MPluginVersion]
-"&Version:"
+"&Verzió:"
 //[MPluginModulePath]
-"&Module path:"
+"&Modul elérési útja:"
 //[MPluginUUID]
-"Plugin &UUID:"
+"Bővítmény &UUID:"
 //[MPluginItemUUID]
-"Plugin &item UUID:"
+"&Bővítmény elem UUID:"
 //[MPluginPrefix]
-"Plugin &prefix:"
+"Bővítmén&y előtag:"
 //[MExceptionDialogTitle]
 "Hoppá"
 //[MExceptionDialogMessage1]
@@ -3261,9 +3261,9 @@
 //[MExceptionDialogClipboard]
 "Vágólap"
 //[MExcTerminate]
-"Terminate gm"
+"A gm &leállítása"
 //[MExcUnload]
-"Unload plugin"
+"Bővítmény eltávolítá&sa"
 //[MExcContinue]
 "Folytatni"
 //[MExcFullDump]
@@ -3365,7 +3365,7 @@
 //[MHelpAltF8]
 ""
 //[MHelpAltF9]
-"Video"
+"Videó"
 //[MHelpAltF10]
 ""
 //[MHelpAltF11]
@@ -3513,7 +3513,7 @@
 //[MInfoF10]
 "Kilép"
 //[MInfoF11]
-"Plugin"
+"Bővítm"
 //[MInfoF12]
 "Képrny"
 //[MInfoShiftF1]
@@ -3557,7 +3557,7 @@
 //[MInfoAltF8]
 "Ugrás"
 //[MInfoAltF9]
-"Video"
+"Videó"
 //[MInfoAltF10]
 "MapKer"
 //[MInfoAltF11]
@@ -3705,7 +3705,7 @@
 //[MQViewF10]
 "Kilép"
 //[MQViewF11]
-"Plugin"
+"Bővítm"
 //[MQViewF12]
 "Képrny"
 //[MQViewShiftF1]
@@ -3749,7 +3749,7 @@
 //[MQViewAltF8]
 "Ugrás"
 //[MQViewAltF9]
-"Video"
+"Videó"
 //[MQViewAltF10]
 "MapKer"
 //[MQViewAltF11]
@@ -3897,7 +3897,7 @@
 //[MKBTreeF10]
 "Kilép"
 //[MKBTreeF11]
-"Plugin"
+"Bővítm"
 //[MKBTreeF12]
 "Képrny"
 //[MKBTreeShiftF1]
@@ -3941,7 +3941,7 @@
 //[MKBTreeAltF8]
 "ParElő"
 //[MKBTreeAltF9]
-"Video"
+"Videó"
 //[MKBTreeAltF10]
 "MapKer"
 //[MKBTreeAltF11]
@@ -4111,17 +4111,17 @@
 //[MFileFilterSizeToSign]
 "&<="
 //[MFileHardLinksCount]
-"Has more than one hardlink"
+"Több mint egy hardlin&kje van"
 //[MFileFilterDate]
 "&Dátum/Idő:"
 //[MFileFilterWrite]
-"írás"
+"í&rás"
 //[MFileFilterCreation]
 "&létrehozás"
 //[MFileFilterAccess]
 "&hozzáférés"
 //[MFileFilterChange]
-"c&hange"
+"&változás"
 //[MFileFilterDateRelative]
 "Relat&ív"
 //[MFileFilterDateAfterSign]
@@ -4157,31 +4157,31 @@
 //[MFileFilterAttrTemporary]
 "Átm&eneti"
 //[MFileFilterAttrReparse]
-"Reparse point"
+"Újraelemzési p&ont"
 //[MFileFilterAttrOffline]
 "O&ffline"
 //[MFileFilterAttrVirtual]
 "&Virtuális"
 //[MFileFilterAttrIntegrityStream]
-"Integrity stream"
+"Inte&gritási adatfolyam"
 //[MFileFilterAttrNoScrubData]
-"No scrub data"
+"Nincs adatellen&őrzés"
 //[MFileFilterAttrPinned]
-"Rögzítve"
+"&Rögzítve"
 //[MFileFilterAttrUnpinned]
-"Feloldva"
+"Fe&loldva"
 //[MFileFilterAttrRecallOnOpen]
-"Recall on open"
+"Lekérés megnyitás&kor"
 //[MFileFilterAttrRecallOnDataAccess]
-"Recall on data access"
+"Lekérés a&dathozzáféréskor"
 //[MFileFilterAttrStrictlySequential]
-"Strictly sequential"
+"Szigorúan s&zekvenciális"
 //[MFileFilterAttrDevice]
 "Eszköz"
 //[MFileFilterReset]
-"Reset"
+"&Alaphelyzet"
 //[MFileFilterMakeTransparent]
-"Legyen átlátszó"
+"Legyen &átlátszó"
 //[MFileFilterCancel]
 "Mégsem"
 //[MBadFileSizeFormat]
@@ -4189,81 +4189,81 @@
 //[MFarTitleAddonsAdmin]
 "Adminisztrátor"
 //[MElevationRequired]
-"You need to provide administrator permission"
+"Rendszergazdai engedélyt kell adnia"
 //[MElevationRequiredPrivileges]
-"Additional privileges required"
+"További jogosultságok szükségesek"
 //[MElevationRequiredProcess]
-"to process this object:"
+"az objektum feldolgozásához:"
 //[MElevationRequiredDelete]
-"to delete this object:"
+"az objektum törléséhez:"
 //[MElevationRequiredCopy]
-"to copy this object:"
+"az objektum másolásához:"
 //[MElevationRequiredMove]
-"to move this object:"
+"az objektum áthelyezéséhez:"
 //[MElevationRequiredReplace]
-"to replace this object:"
+"az objektum cseréjéhez:"
 //[MElevationRequiredGetAttributes]
-"to get attributes of this object:"
+"az objektum attribútumainak lekéréséhez:"
 //[MElevationRequiredSetAttributes]
-"to set attributes of this object:"
+"az objektum attribútumainak beállításához:"
 //[MElevationRequiredHardLink]
-"to create this hard link:"
+"a hardlink létrehozásához:"
 //[MElevationRequiredSymLink]
-"to create this symbolic link:"
+"a szimbolikus hivatkozás létrehozásához:"
 //[MElevationRequiredRecycle]
-"to move this object to recycle bin:"
+"az objektum Lomtárba helyezéséhez:"
 //[MElevationRequiredList]
-"to list this object:"
+"az objektum tartalmának listázásához:"
 //[MElevationRequiredSetOwner]
-"to set owner of this object:"
+"az objektum tulajdonosának beállításához:"
 //[MElevationRequiredOpen]
-"to open this object:"
+"az objektum megnyitásához:"
 //[MElevationRequiredEncryptFile]
-"to encrypt this object:"
+"az objektum titkosításához:"
 //[MElevationRequiredDecryptFile]
-"to decrypt this object:"
+"az objektum visszafejtéséhez:"
 //[MElevationRequiredSetVolumeLabel]
-"to set volume label:"
+"a kötetcímke beállításához:"
 //[MElevationDoForAll]
-"Do this for &all current objects"
+"Végrehajtás &minden jelenlegi objektumra"
 //[MElevationDoNotAskAgainInTheCurrentSession]
-"Do not ask again in the current session"
+"Ne kérdezzen újra ebben a munkamenetben"
 //[MCompletionHistoryTitle]
-"History"
+"Előzmények"
 //[MCompletionEnvironmentTitle]
-"Environment"
+"Környezet"
 //[MCompletionFilesTitle]
-"Files"
+"Fájlok"
 //[MObjectLockedReason]
-"Object is being {0} in:"
+"Az objektum {0} itt:"
 //[MObjectLockedReasonPlayed]
-"played"
+"lejátszás alatt áll"
 //[MObjectLockedReasonEdited]
-"edited"
+"szerkesztés alatt áll"
 //[MObjectLockedReasonOpened]
-"opened"
+"meg van nyitva"
 //[MObjectLockedAndMore]
-"and {0} more processes."
+"és még {0} folyamat."
 //[MObjectLockedSwitchTo]
-"Switch to"
+"Váltás erre"
 //[MObjectLockedClose]
-"Close file"
+"Fájl bezárása"
 //[MObjectLockedReasonSessionMismatch]
-"One or more processes are running in another Terminal Services session."
+"Egy vagy több folyamat egy másik Terminálszolgáltatások-munkamenetben fut."
 //[MObjectLockedReasonCriticalProcess]
-"One or more processes are critical processes."
+"Egy vagy több folyamat kritikus folyamat."
 //[MObjectLockedReasonCriticalService]
-"One or more services are critical services."
+"Egy vagy több szolgáltatás kritikus szolgáltatás."
 //[MObjectLockedReasonDetectedSelf]
-"The file is opened by the current process."
+"A fájlt a jelenlegi folyamat nyitotta meg."
 //[MProblemDb]
-"Problem configuration DB"
+"Hiba a konfigurációs adatbázisban"
 //[MShowConfigFolders]
-"Show configuration folders"
+"Konfigurációs mappák megjelenítése"
 //[MBadLanguageFile]
-"Incorrect language file"
+"Hibás nyelvi fájl"
 //[MLanguageStringNotFound]
-"String {0} not found"
+"A(z) {0} karakterlánc nem található"
 //[MUnsupportedCodePageSelectedCodepage]
 "A kiválasztott kódlap"
 //[MUnsupportedCodePageDoesNotSupport]
@@ -4565,4 +4565,4 @@
 //[MLogQuietKey]
 "LogSil"
 //[MLogStarted]
-"The output is logged to"
+"A kimenet naplózásának helye:"

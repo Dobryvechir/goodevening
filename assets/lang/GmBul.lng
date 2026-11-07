@@ -1,0 +1,4568 @@
+.Language=Bulgarian,Български
+// Goodevening Manager language file (Bulgarian)
+//[MYes]
+"Да"
+//[MNo]
+"Не"
+//[MOk]
+"OK"
+//[MHYes]
+"&Да"
+//[MHNo]
+"&Не"
+//[MHOk]
+"&OK"
+//[MCancel]
+"Отказ"
+//[MReset]
+"&Нулиране"
+//[MRetry]
+"Повтори"
+//[MSkip]
+"Пропусни"
+//[MAbort]
+"Прекрати"
+//[MIgnore]
+"Игнорирай"
+//[MDelete]
+"Изтрий"
+//[MHCancel]
+"&Отказ"
+//[MHRetry]
+"&Повтори"
+//[MHSkip]
+"П&ропусни"
+//[MHSkipAll]
+"Пропусни &всички"
+//[MHAbort]
+"Пре&крати"
+//[MHIgnore]
+"&Игнорирай"
+//[MHDelete]
+"&Изтрий"
+//[MHRemove]
+"П&ремахни"
+//[MHSplit]
+"Ра&здели"
+//[MWarning]
+"Предупреждение"
+//[MError]
+"Грешка"
+//[MQuit]
+"Изход"
+//[MAskQuit]
+"Искате ли да излезете от gm?"
+//[MF1]
+"Помощ"
+//[MF2]
+"ПотрМн"
+//[MF3]
+"Преглд"
+//[MF4]
+"Редакт"
+//[MF5]
+"Копир"
+//[MF6]
+"ПреимМ"
+//[MF7]
+"НПапка"
+//[MF8]
+"Изтрий"
+//[MF9]
+"КонфМн"
+//[MF10]
+"Изход"
+//[MF11]
+"Модул"
+//[MF12]
+"Екран"
+//[MShiftF1]
+"Добави"
+//[MShiftF2]
+"Извлчи"
+//[MShiftF3]
+"АрхКом"
+//[MShiftF4]
+"Редак…"
+//[MShiftF5]
+"Копир"
+//[MShiftF6]
+"Преим"
+//[MShiftF7]
+""
+//[MShiftF8]
+"Изтрий"
+//[MShiftF9]
+"Запиш"
+//[MShiftF10]
+"Послед"
+//[MShiftF11]
+"Група"
+//[MShiftF12]
+"ИзбГор"
+//[MAltF1]
+"Ляв"
+//[MAltF2]
+"Десен"
+//[MAltF3]
+"Прегл…"
+//[MAltF4]
+"Редак…"
+//[MAltF5]
+"Печат"
+//[MAltF6]
+"Връзка"
+//[MAltF7]
+"Търси"
+//[MAltF8]
+"Истор"
+//[MAltF9]
+"Видео"
+//[MAltF10]
+"Дърво"
+//[MAltF11]
+"ИстПрг"
+//[MAltF12]
+"ИстПап"
+//[MCtrlF1]
+"Ляв"
+//[MCtrlF2]
+"Десен"
+//[MCtrlF3]
+"Име"
+//[MCtrlF4]
+"Разшир"
+//[MCtrlF5]
+"Запис"
+//[MCtrlF6]
+"Размер"
+//[MCtrlF7]
+"НеСорт"
+//[MCtrlF8]
+"Създ"
+//[MCtrlF9]
+"Достъп"
+//[MCtrlF10]
+"Описан"
+//[MCtrlF11]
+"Собств"
+//[MCtrlF12]
+"Сорт"
+//[MAltShiftF1]
+""
+//[MAltShiftF2]
+""
+//[MAltShiftF3]
+""
+//[MAltShiftF4]
+""
+//[MAltShiftF5]
+""
+//[MAltShiftF6]
+""
+//[MAltShiftF7]
+""
+//[MAltShiftF8]
+""
+//[MAltShiftF9]
+"КонфМд"
+//[MAltShiftF10]
+""
+//[MAltShiftF11]
+""
+//[MAltShiftF12]
+""
+//[MCtrlShiftF1]
+""
+//[MCtrlShiftF2]
+""
+//[MCtrlShiftF3]
+"Преглд"
+//[MCtrlShiftF4]
+"Редакт"
+//[MCtrlShiftF5]
+""
+//[MCtrlShiftF6]
+""
+//[MCtrlShiftF7]
+""
+//[MCtrlShiftF8]
+""
+//[MCtrlShiftF9]
+""
+//[MCtrlShiftF10]
+""
+//[MCtrlShiftF11]
+""
+//[MCtrlShiftF12]
+""
+//[MCtrlAltF1]
+""
+//[MCtrlAltF2]
+""
+//[MCtrlAltF3]
+""
+//[MCtrlAltF4]
+""
+//[MCtrlAltF5]
+""
+//[MCtrlAltF6]
+""
+//[MCtrlAltF7]
+""
+//[MCtrlAltF8]
+""
+//[MCtrlAltF9]
+""
+//[MCtrlAltF10]
+""
+//[MCtrlAltF11]
+""
+//[MCtrlAltF12]
+""
+//[MCtrlAltShiftF1]
+""
+//[MCtrlAltShiftF2]
+""
+//[MCtrlAltShiftF3]
+""
+//[MCtrlAltShiftF4]
+""
+//[MCtrlAltShiftF5]
+""
+//[MCtrlAltShiftF6]
+""
+//[MCtrlAltShiftF7]
+""
+//[MCtrlAltShiftF8]
+""
+//[MCtrlAltShiftF9]
+""
+//[MCtrlAltShiftF10]
+""
+//[MCtrlAltShiftF11]
+""
+//[MCtrlAltShiftF12]
+""
+//[MHistoryTitle]
+"История"
+//[MHistoryInfoTitle]
+"Информация"
+//[MHistoryInfoFolder]
+"Папка:"
+//[MFolderHistoryTitle]
+"История на папките"
+//[MViewHistoryTitle]
+"История на преглеждане и редактиране"
+//[MViewHistoryIsCreate]
+"Да се създаде ли файлът?"
+//[MHistoryView]
+"Преглед"
+//[MHistoryEdit]
+"Редакция"
+//[MHistoryExt]
+"Вън."
+//[MHistoryClear]
+"Всички записи в историята ще бъдат изтрити. Продължаване?"
+//[MClear]
+"&Изчистване на историята"
+//[MConfigSystemTitle]
+"Системни настройки"
+//[MConfigRecycleBin]
+"&Изтриване в кошчето"
+//[MConfigSystemCopy]
+"Използване на с&истемната функция за копиране"
+//[MConfigCopySharing]
+"Копиране на файлове, отворени за &запис"
+//[MConfigScanJunction]
+"Обхождане на си&мволни връзки"
+//[MConfigSmartFolderMonitor]
+"&Обновяване на панелите само когато gm е активен"
+//[MConfigSaveHistory]
+"Запазване на &историята на командите"
+//[MConfigSaveFoldersHistory]
+"Запазване на историята на &папките"
+//[MConfigSaveViewHistory]
+"Запазване на историята на п&реглед и редакция"
+//[MConfigRegisteredTypes]
+"Използване на ре&гистрираните в Windows типове"
+//[MConfigUpdateEnvironment]
+"Автоматично обновяване на &променливите на средата"
+//[MConfigElevation]
+"Искане на администраторски права:"
+//[MConfigElevationModify]
+"За п&ромяна"
+//[MConfigElevationRead]
+"За &четене"
+//[MConfigElevationUsePrivileges]
+"Използване на допълнителни при&вилегии"
+//[MConfigSortingCollation]
+"Правила за &сортиране:"
+//[MConfigSortingOrdinal]
+"поредно"
+//[MConfigSortingInvariant]
+"инвариантно"
+//[MConfigSortingLinguistic]
+"езиково"
+//[MConfigSortingDigitsAsNumbers]
+"Цифрите &като числа"
+//[MConfigSortingCase]
+"&Разлика между малки и главни букви"
+//[MConfigAutoSave]
+"&Автоматично запазване на настройките"
+//[MConfigTreeTitle]
+"Настройки на дървото"
+//[MConfigTreeAutoChange]
+"&Автоматична смяна на папката"
+//[MConfigTreeLabelMinFolder]
+"&Минимален брой папки:"
+//[MConfigTreeLabel1]
+"Запазване на файл със структурата на папките за:"
+//[MConfigTreeLabelLocalDisk]
+"локални устройства"
+//[MConfigTreeLabelNetDisk]
+"мрежови устройства"
+//[MConfigTreeLabelNetPath]
+"мрежови пътища"
+//[MConfigTreeLabelRemovableDisk]
+"сменяеми устройства"
+//[MConfigTreeLabelCDDisk]
+"оптични устройства"
+//[MConfigTreeLabelExceptPath]
+"Без създаване на файла за следните устройства и пътища:"
+//[MConfigTreeLabelSaveLocalPath]
+"Път за локални, сменяеми и оптични устройства:"
+//[MConfigTreeLabelSaveNetPath]
+"Път за мрежови устройства и пътища:"
+//[MConfigPanelTitle]
+"Настройки на панелите"
+//[MConfigHidden]
+"Показване на &скрити и системни файлове"
+//[MConfigHighlight]
+"&Оцветяване на файловете"
+//[MConfigSelectFolders]
+"Избиране на &папки"
+//[MConfigRightClickSelect]
+"Десният &бутон избира файлове"
+//[MConfigSortFolderExt]
+"Сортиране на папките по &разширение"
+//[MConfigAllowReverseSort]
+"Разрешаване на о&братно сортиране"
+//[MConfigAutoUpdateLimit]
+"&Забрана на автоматичното обновяване на панела"
+//[MConfigAutoUpdateLimit2]
+"ако броят на о&бектите надвишава"
+//[MConfigAutoUpdateRemoteDrive]
+"Автоматично обновяване на мр&ежови устройства"
+//[MConfigShowColumns]
+"Показване на &заглавията на колоните"
+//[MConfigShowStatus]
+"Показване на &лентата на състоянието"
+//[MConfigDetailedJunction]
+"Разпознаване на &точки на монтиране"
+//[MConfigShowTotal]
+"Показване на &обща информация за файловете"
+//[MConfigShowFree]
+"Показване на с&вободното място"
+//[MConfigShowScrollbar]
+"Показване на лента за &превъртане"
+//[MConfigShowScreensNumber]
+"Показване на &броя фонови екрани"
+//[MConfigShowSortMode]
+"Показване на буквата на ре&жима на сортиране"
+//[MConfigShowDotsInRoot]
+"Показване на \"&..\" в коренните папки"
+//[MConfigInterfaceTitle]
+"Настройки на интерфейса"
+//[MConfigClock]
+"&Часовник"
+//[MConfigMouse]
+"&Мишка"
+//[MConfigKeyBar]
+"Показване на лентата с &клавиши"
+//[MConfigMenuBar]
+"Винаги показвай лентата с м&еню"
+//[MConfigSaver]
+"&Скрийнсейвър"
+//[MConfigSaverMinutes]
+"&минути"
+//[MConfigCopyTotal]
+"Показване на &общия напредък на копирането"
+//[MConfigCopyTimeRule]
+"Показване на &времето на копиране"
+//[MConfigDeleteTotal]
+"Показване на общия напредък на &изтриването"
+//[MConfigPgUpChangeDisk]
+"Ctrl+Pg&Up сменя устройството"
+//[MConfigUseVirtualTerminalForRendering]
+"Използване на &виртуален терминал за изобразяване"
+//[MConfigFullWidthAwareRendering]
+"Изобразяване с отчитане на пълноширинни знаци"
+//[MConfigFullWidthAwareRenderingGraphemeClustersDected1]
+"Изглежда вашият терминал поддържа Unicode графемни клъстери."
+//[MConfigFullWidthAwareRenderingGraphemeClustersDected2]
+"За съжаление gm все още не ги поддържа."
+//[MConfigFullWidthAwareRenderingGraphemeClustersDected3]
+"За най-добър резултат се препоръчва изобразяване по кодови точки."
+//[MConfigFullWidthAwareRenderingGraphemeClustersDected4]
+"Вижте документацията на терминала си как да направите това."
+//[MConfigClearType]
+"Прерисуване, съвместимо с Cl&earType (може да е бавно)"
+//[MConfigSetConsoleIcon]
+"&Икона на конзолата:"
+//[MConfigSetAdminConsoleIcon]
+"Друга за &администратор"
+//[MConfigTitleAddons]
+"Добавки към заглавието на &прозореца на gm:"
+//[MConfigDlgSetsTitle]
+"Настройки на диалозите"
+//[MConfigDialogsEditHistory]
+"&История в полетата за въвеждане"
+//[MConfigDialogsEditBlock]
+"&Постоянни блокове в полетата за въвеждане"
+//[MConfigDialogsDelRemovesBlocks]
+"&Del изтрива блоковете в полетата за въвеждане"
+//[MConfigDialogsAutoComplete]
+"&Автодовършване в полетата за въвеждане"
+//[MConfigDialogsEULBsClear]
+"&Backspace изтрива непроменения текст"
+//[MConfigDialogsMouseButton]
+"Щракване &извън диалога го затваря"
+//[MConfigVMenuTitle]
+"Настройки на менютата"
+//[MConfigVMenuLBtnClick]
+"&Ляво щракване извън меню"
+//[MConfigVMenuRBtnClick]
+"&Дясно щракване извън меню"
+//[MConfigVMenuMBtnClick]
+"&Средно щракване извън меню"
+//[MConfigVMenuClickCancel]
+"Затваряне на менюто"
+//[MConfigVMenuClickApply]
+"Изпълнение на избрания елемент"
+//[MConfigVMenuClickIgnore]
+"Нищо"
+//[MConfigCmdlineTitle]
+"Настройки на командния ред"
+//[MConfigCmdlineEditBlock]
+"&Постоянни блокове"
+//[MConfigCmdlineDelRemovesBlocks]
+"&Del изтрива блоковете"
+//[MConfigCmdlineAutoComplete]
+"&Автодовършване"
+//[MConfigCmdlineUsePromptFormat]
+"Задаване на &формат на подканата"
+//[MConfigCmdlineUseHomeDir]
+"Използване на &домашната папка"
+//[MConfigCmdlinePromptFormatAdmin]
+"Администратор"
+//[MConfigAutoCompleteTitle]
+"Настройки на автодовършването"
+//[MConfigAutoCompleteShowList]
+"&Показване на списък"
+//[MConfigAutoCompleteModalList]
+"&Модален режим"
+//[MConfigAutoCompleteAutoAppend]
+"&Добавяне на първия съвпадащ елемент"
+//[MConfigInfoPanelTitle]
+"Настройки на информационния панел"
+//[MConfigInfoPanelCNTitle]
+"Формат на &името на компютъра"
+//[MConfigInfoPanelCNPhysicalNetBIOS]
+"Физическо NetBIOS"
+//[MConfigInfoPanelCNPhysicalDnsHostname]
+"Физическо DNS име на хоста"
+//[MConfigInfoPanelCNPhysicalDnsDomain]
+"Физически DNS домейн"
+//[MConfigInfoPanelCNPhysicalDnsFullyQualified]
+"Физическо пълно DNS име (FQDN)"
+//[MConfigInfoPanelCNNetBIOS]
+"NetBIOS"
+//[MConfigInfoPanelCNDnsHostname]
+"DNS име на хоста"
+//[MConfigInfoPanelCNDnsDomain]
+"DNS домейн"
+//[MConfigInfoPanelCNDnsFullyQualified]
+"Пълно DNS име (FQDN)"
+//[MConfigInfoPanelUNTitle]
+"Формат на &потребителското име"
+//[MConfigInfoPanelUNLogon]
+"Име за вход"
+//[MConfigInfoPanelUNFullyQualifiedDN]
+"Пълно име на домейна (FQDN)"
+//[MConfigInfoPanelUNSamCompatible]
+"Съвместимо със SAM"
+//[MConfigInfoPanelUNDisplay]
+"Показвано име"
+//[MConfigInfoPanelUNUniqueId]
+"Уникален идентификатор"
+//[MConfigInfoPanelUNCanonical]
+"Канонично име"
+//[MConfigInfoPanelUNUserPrincipal]
+"Основно потребителско име"
+//[MConfigInfoPanelUNServicePrincipal]
+"Основно име на услуга"
+//[MConfigInfoPanelUNDnsDomain]
+"DNS домейн"
+//[MConfigInfoPanelUNGivenName]
+"Собствено име"
+//[MConfigInfoPanelUNSurname]
+"Фамилия"
+//[MConfigInfoPanelShowPowerStatus]
+"Показване на състоянието на &захранването"
+//[MConfigInfoPanelShowCDInfo]
+"Показване на параметрите на &CD устройствата"
+//[MMenuInfoShowModeTitle]
+"Показване на информация"
+//[MMenuInfoShowModeDisk]
+"&Диск"
+//[MMenuInfoShowModeMemory]
+"&Памет"
+//[MMenuInfoShowModeDirDiz]
+"&Описание"
+//[MMenuInfoShowModePluginDiz]
+"Панел на &модул"
+//[MMenuInfoShowModePower]
+"&Захранване"
+//[MViewConfigTitle]
+"Програма за преглед"
+//[MViewConfigExternalF3]
+"Външна програма за преглед за F&3 вместо Alt+F3"
+//[MViewConfigExternalCommand]
+"&Команда за преглед:"
+//[MViewConfigInternal]
+"Вградена програма за преглед"
+//[MViewConfigSavePos]
+"&Запазване на позицията във файла"
+//[MViewConfigSaveShortPos]
+"Запазване на &отметките"
+//[MViewConfigSaveCodepage]
+"Запазване на &кодовата таблица"
+//[MViewConfigSaveWrapMode]
+"Запазване на режима на &пренасяне"
+//[MViewConfigSaveViewMode]
+"Запазване на режима на п&реглед"
+//[MViewConfigDetectDumpMode]
+"Разпознаване на режим &дъмп"
+//[MViewAutoDetectCodePage]
+"&Автоматично разпознаване на кодовата таблица"
+//[MViewConfigTabSize]
+"Размер на &табулацията"
+//[MViewConfigScrollbar]
+"Показване на лента за пре&въртане"
+//[MViewConfigArrows]
+"Показване на &стрелки за превъртане"
+//[MViewConfigPersistentSelection]
+"&Постоянно маркиране"
+//[MViewConfigDefaultCodePage]
+"Кодова таблица по п&одразбиране:"
+//[MViewConfigMaxLineSize]
+"&Максимална ширина на реда"
+//[MViewConfigVisible0x00]
+"Видим '\\&0'"
+//[MEditConfigTitle]
+"Редактор"
+//[MEditConfigEditorF4]
+"Външен редактор за F&4 вместо Alt+F4"
+//[MEditConfigEditorCommand]
+"Команда на &редактора:"
+//[MEditConfigInternal]
+"Вграден редактор"
+//[MEditConfigExpandTabsTitle]
+"Заместване на &табулациите:"
+//[MEditConfigDoNotExpandTabs]
+"Без заместване на табулациите"
+//[MEditConfigExpandTabs]
+"Заместване на новите табулации с интервали"
+//[MEditConfigConvertAllTabsToSpaces]
+"Заместване на всички табулации с интервали"
+//[MEditConfigPersistentBlocks]
+"&Постоянни блокове"
+//[MEditConfigDelRemovesBlocks]
+"&Del изтрива блоковете"
+//[MEditConfigAutoIndent]
+"Автоматичен &отстъп"
+//[MEditConfigSavePos]
+"&Запазване на позицията във файла"
+//[MEditConfigSaveShortPos]
+"Запазване на от&метките"
+//[MEditCursorBeyondEnd]
+"&Курсор след края на реда"
+//[MEditAutoDetectCodePage]
+"&Автоматично разпознаване на кодовата таблица"
+//[MEditShareWrite]
+"Редактиране на файлове, отворени за &запис"
+//[MEditLockROFileModification]
+"Забрана за редакция на &файлове само за четене"
+//[MEditWarningBeforeOpenROFile]
+"П&редупреждение при отваряне на файлове само за четене"
+//[MEditConfigTabSize]
+"Размер на та&булацията"
+//[MEditConfigScrollbar]
+"Показване на лента за &превъртане"
+//[MEditConfigLineNumbers]
+"Показване на &номерата на редовете"
+//[MEditShowWhiteSpace]
+"Показване на &празните знаци"
+//[MEditConfigSelFound]
+"Мар&киране на намереното"
+//[MEditConfigCursorAtEnd]
+"Курсор в &края"
+//[MEditConfigDefaultCodePage]
+"Кодова таблица по подра&збиране:"
+//[MConfigEditor]
+"Редактор на конфигурацията"
+//[MConfigEditorBoolean]
+"булев"
+//[MConfigEditorTriState]
+"три състояния"
+//[MConfigEditorInteger]
+"цяло число"
+//[MConfigEditorString]
+"низ"
+//[MConfigEditorIntegerSigned]
+"Със знак:"
+//[MConfigEditorIntegerUnsigned]
+"Без знак:"
+//[MConfigEditorIntegerHexadecimal]
+"Шестнадесетично:"
+//[MConfigEditorIntegerBinary]
+"Двоично:"
+//[MSaveSetupTitle]
+"Запазване на настройките"
+//[MSaveSetupAsk1]
+"Искате ли да запазите"
+//[MSaveSetupAsk2]
+"текущите настройки?"
+//[MSaveSetup]
+"Запази"
+//[MCopyDlgTitle]
+"Копиране"
+//[MMoveDlgTitle]
+"Преименуване/Преместване"
+//[MLinkDlgTitle]
+"Връзка"
+//[MCopySecurity]
+"Права за &достъп:"
+//[MCopySecurityDefault]
+"По &подразбиране"
+//[MCopySecurityCopy]
+"&Копиране"
+//[MCopySecurityInherit]
+"&Наследяване"
+//[MCopyIfFileExist]
+"Вече съ&ществуващи файлове:"
+//[MCopyAsk]
+"&Питане"
+//[MCopyAskRO]
+"Питане и за файлове само за &четене"
+//[MCopyOnlyNewerFiles]
+"Само по-&нови файлове"
+//[MLinkType]
+"&Тип на връзката:"
+//[MLinkTypeJunction]
+"&съединение на директории"
+//[MLinkTypeHardlink]
+"&твърда връзка"
+//[MLinkTypeSymlink]
+"си&мволна връзка"
+//[MLinkTypeSymlinkFile]
+"символна връзка (&файл)"
+//[MLinkTypeSymlinkDirectory]
+"символна връзка (&папка)"
+//[MCopyPreserveAllTimestamps]
+"Запазване на всички времеви отпечатъци"
+//[MCopySymLinkContents]
+"Копиране на съдържанието на си&мволните връзки"
+//[MCopyMultiActions]
+"Обработка на &няколко местоназначения"
+//[MCopyDlgCopy]
+"&Копирай"
+//[MCopyDlgTree]
+"F10-&Дърво"
+//[MCopyDlgCancel]
+"&Отказ"
+//[MCopyDlgRename]
+"&Преименувай"
+//[MCopyDlgLink]
+"Създай &връзка"
+//[MCopyDlgTotal]
+"Общо"
+//[MCopyPrepareSecury]
+"Прилагане на правата за достъп…"
+//[MCopyUseFilter]
+"&Използване на филтър"
+//[MCopySetFilter]
+"&Филтър"
+//[MCopyFile]
+"Копиране на {0} {1}:"
+//[MMoveFile]
+"Преименуване или преместване на {0} {1}:"
+//[MLinkFile]
+"Създаване на връзка към {0} {1}:"
+//[MCopyFiles]
+"Копиране на {0} елемент{1} {2}:"
+//[MMoveFiles]
+"Преименуване или преместване на {0} елемент{1} {2}:"
+//[MLinkFiles]
+"Създаване на връзки към {0} елемент{1} {2}:"
+//[MCMLTargetTO]
+"&в"
+//[MCMLTargetIN]
+"в&ъв"
+//[MCMLItems0]
+""
+//[MCMLItemsA]
+"а"
+//[MCMLItemsS]
+"а"
+//[MCopyIncorrectTargetList]
+"Неправилен списък с местоназначения"
+//[MCopyCopyingTitle]
+"Копиране"
+//[MCopyMovingTitle]
+"Преместване"
+//[MCopyCannotFind]
+"Файлът не може да бъде намерен"
+//[MCannotCopyFolderToItself1]
+"Папката не може да бъде копирана"
+//[MCannotCopyFolderToItself2]
+"в самата себе си"
+//[MCopyCannotCreateFolder]
+"Папката не може да бъде създадена"
+//[MCopyCannotRenameFolder]
+"Папката не може да бъде преименувана"
+//[MCopyIgnore]
+"&Игнорирай"
+//[MCopyIgnoreAll]
+"Игнорирай &всички"
+//[MCopyRetry]
+"&Повтори"
+//[MCopySkip]
+"П&ропусни"
+//[MCopySkipAll]
+"Пропусни в&сички"
+//[MCopyCancel]
+"&Отказ"
+//[MCopyDecrypt]
+"&Дешифрирай"
+//[MCopyDecryptAll]
+"Дешифрирай вси&чки"
+//[MCopyCannotCreateLink]
+"Връзката не може да бъде създадена"
+//[MCopyFolderNotEmpty]
+"Целевата папка трябва да е празна"
+//[MCopyCannotCreateJunctionToFile]
+"Съединението не може да бъде създадено. Файлът вече съществува:"
+//[MCopyCannotCreateVolMount]
+"Грешка в точките на монтиране на томове"
+//[MCopyMountVolFailed]
+"Опитът за монтиране на тома '{0}'"
+//[MCopyMountVolFailed2]
+"в '{0}' беше неуспешен"
+//[MCopyMountName]
+"Диск_"
+//[MCannotCopyFileToItself1]
+"Файлът не може да бъде копиран"
+//[MCannotCopyFileToItself2]
+"в самия себе си"
+//[MCopyStream1]
+"Изходният файл съдържа повече от един поток данни,"
+//[MCopyStream2]
+"но не използвате системната функция за копиране."
+//[MCopyStream3]
+"но целевият том не поддържа тази възможност."
+//[MCopyStream4]
+"Част от данните няма да бъдат запазени."
+//[MCopyDirectoryOrFile]
+"Това име на папка ли е или име на файл?"
+//[MCopyDirectoryOrFileDirectory]
+"Папка"
+//[MCopyDirectoryOrFileFile]
+"Файл"
+//[MCopyFileExist]
+"Файлът вече съществува"
+//[MCopySource]
+"&Нов"
+//[MCopyDest]
+"&Съществуващ"
+//[MCopyOverwrite]
+"&Презапиши"
+//[MCopyAppend]
+"&Добави"
+//[MCopyRename]
+"П&реименувай"
+//[MCopyRememberChoice]
+"&Запомни избора"
+//[MCopyRenameTitle]
+"Преименуване"
+//[MCopyRenameText]
+"&Ново име:"
+//[MCopyFileRO]
+"Файлът е само за четене"
+//[MCopyAskDelete]
+"Искате ли да го изтриете?"
+//[MCopyDeleteRO]
+"&Изтрий"
+//[MCopyDeleteAllRO]
+"&Всички"
+//[MCannotCopy]
+"Не може да се копира"
+//[MCannotMove]
+"Не може да се премести"
+//[MCannotLink]
+"Не може да се създаде връзка"
+//[MCannotCopyTo]
+"в"
+//[MCopyEncryptWarn1]
+"Файлът"
+//[MCopyEncryptWarn2]
+"не може да бъде копиран или преместен, без да загуби шифроването си."
+//[MCopyReadError]
+"Не могат да бъдат прочетени данни от"
+//[MCopyWriteError]
+"Не могат да бъдат записани данни в"
+//[MCopyCannotReserveSpace]
+"Грешка при резервиране на дисково пространство"
+//[MCopyFilesTotalInfo]
+"Файлове:"
+//[MCopyBytesTotalInfo]
+"Байтове:"
+//[MCopyMoving]
+"Преместване на файла"
+//[MCopyCopying]
+"Копиране на файла"
+//[MCopyTo]
+"в"
+//[MDeleteTitle]
+"Изтриване"
+//[MAskDelete]
+"Искате ли да изтриете {0}?"
+//[MAskDeleteRecycle]
+"Искате ли да преместите {0} в кошчето?"
+//[MDeleteWipeTitle]
+"Унищожаване"
+//[MAskWipe]
+"Искате ли да унищожите {0}?"
+//[MAskDeleteFolder]
+"папката"
+//[MAskDeleteFile]
+"файла"
+//[MAskDeleteObjects]
+"обектите"
+//[MAskDeleteLink]
+"връзка към"
+//[MAskDeleteAndMore]
+"…и още {0}"
+//[MDeleteFolderTitle]
+"Изтриване на папка"
+//[MWipeFolderTitle]
+"Унищожаване на папка"
+//[MDeleteFilesTitle]
+"Изтриване на файлове"
+//[MWipeFilesTitle]
+"Унищожаване на файлове"
+//[MDeleteFolderConfirm]
+"Следната папка ще бъде изтрита:"
+//[MWipeFolderConfirm]
+"Следната папка ще бъде унищожена:"
+//[MRecycleFolderConfirm]
+"Следната папка ще бъде преместена в кошчето:"
+//[MRecycleFolderConfirmDeleteLink1]
+"Папката съдържа символни връзки."
+//[MRecycleFolderConfirmDeleteLink2]
+"За да не се загуби съдържанието им при изпразване на кошчето,"
+//[MRecycleFolderConfirmDeleteLink3]
+"тези връзки ще бъдат прекъснати сега."
+//[MRecycleFolderConfirmDeleteLink4]
+"По-късно няма да е възможно да бъдат възстановени."
+//[MDeleteWipe]
+"Унищожи"
+//[MDeleteRecycle]
+"Премести"
+//[MDeleteFileDelete]
+"&Изтрий"
+//[MDeleteFileWipe]
+"&Унищожи"
+//[MDeleteFileAll]
+"&Всички"
+//[MDeleteFileSkip]
+"П&ропусни"
+//[MDeleteFileSkipAll]
+"Пропусни в&сички"
+//[MDeleteFileCancel]
+"&Отказ"
+//[MDeletingTitle]
+"Изтриване"
+//[MDeleting]
+"Изтриване на файла или папката"
+//[MDeletingWiping]
+"Унищожаване на файла или папката"
+//[MDeleteRO]
+"Файлът е само за четене"
+//[MAskDeleteRO]
+"Искате ли да го изтриете?"
+//[MAskWipeRO]
+"Искате ли да го унищожите?"
+//[MDeleteHardLink1]
+"Няколко твърди връзки сочат към този файл."
+//[MDeleteHardLink2]
+"Унищожаването на файла ще изпразни всички свързани с него файлове."
+//[MDeleteHardLink3]
+"Искате ли да унищожите този файл?"
+//[MCannotDeleteFile]
+"Файлът не може да бъде изтрит"
+//[MCannotDeleteFolder]
+"Папката не може да бъде изтрита"
+//[MDeleteRetry]
+"&Повтори"
+//[MDeleteSkip]
+"П&ропусни"
+//[MDeleteSkipAll]
+"Пропусни в&сички"
+//[MDeleteCancel]
+"&Отказ"
+//[MCannotRecycleFile]
+"Файлът не може да бъде преместен в кошчето"
+//[MCannotRecycleFolder]
+"Папката не може да бъде преместена в кошчето"
+//[MTryToDeletePermanently]
+"Да се опита ли окончателно изтриване?"
+//[MCannotGetSecurity]
+"Не могат да бъдат получени правата за достъп до"
+//[MCannotSetSecurity]
+"Не могат да бъдат зададени правата за достъп до"
+//[MSearchReplaceSearchTitle]
+"Търсене"
+//[MSearchReplaceReplaceTitle]
+"Замяна"
+//[MSearchReplaceText]
+"&Текст"
+//[MSearchReplaceHex]
+"&Шестн."
+//[MSearchReplacePickWord]
+"Д&ума"
+//[MSearchReplacePickSelection]
+"&Маркирано"
+//[MSearchReplaceSearchFor]
+"&Търсене на"
+//[MSearchReplaceReplaceWith]
+"&Замяна с"
+//[MSearchReplaceCase]
+"&Разлика малки/главни"
+//[MSearchReplaceWholeWords]
+"&Цели думи"
+//[MSearchReplaceFuzzy]
+"Не&точно търсене"
+//[MSearchReplaceRegexp]
+"Р&егулярни изрази"
+//[MSearchReplacePreserveStyle]
+"&Запазване на стила"
+//[MSearchReplaceFind]
+"Търси"
+//[MSearchReplaceFindNext]
+"Търси следващ"
+//[MSearchReplaceFindPrev]
+"Търси &предишен"
+//[MSearchReplaceReplace]
+"Замени"
+//[MSearchReplaceReplaceNext]
+"Замени следващ"
+//[MSearchReplaceReplacePrev]
+"Замени п&редишен"
+//[MSearchReplaceAll]
+"&Всички"
+//[MSearchReplaceCancel]
+"Отказ"
+//[MEditTitle]
+"Редактор"
+//[MAskReload]
+"вече е зареден. Как да се отвори този файл?"
+//[MCurrent]
+"&Текущ"
+//[MReload]
+"&Презареди"
+//[MNewOpen]
+"&Нов екземпляр"
+//[MEditCannotOpen]
+"Файлът не може да бъде отворен"
+//[MEditReading]
+"Четене на файла {0}"
+//[MEditAskSave]
+"Файлът е променен. Да се запази ли?"
+//[MEditAskSaveExt]
+"Файлът е променен от външна програма. Да се запази ли?"
+//[MEditBtnSaveAs]
+"Запази &като…"
+//[MEditRO]
+"е файл само за четене"
+//[MEditExists]
+"вече съществува"
+//[MEditOvr]
+"Искате ли да го презапишете?"
+//[MEditSaving]
+"Запазване на файла {0}"
+//[MEditStatusLine]
+"Ред"
+//[MEditStatusCol]
+"Кол"
+//[MEditStatusChar]
+"Зн"
+//[MEditRSH]
+"е файл само за четене"
+//[MEditFileGetSizeError]
+"Размерът на файла не може да бъде определен."
+//[MEditFileLong]
+"има размер {0},"
+//[MEditFileLong2]
+"което надвишава зададения максимален размер {0}."
+//[MEditROOpen]
+"Искате ли да го редактирате?"
+//[MEditCanNotEditDirectory]
+"Папката не може да бъде редактирана"
+//[MEditSearchingFor]
+"Търсене на {0}"
+//[MEditSearchStatistics]
+"Срещания: {0}, редове: {1}"
+//[MEditSearchAllFileNameFormat]
+"{0}{1}.Filtered.txt"
+//[MEditSearchAllFileNameFormatAlt]
+"{0}.Filtered{1}"
+//[MEditNotFound]
+"Низът не е намерен"
+//[MEditAskReplace]
+"Замяна на"
+//[MEditAskReplaceWith]
+"с"
+//[MEditReplace]
+"&Замени"
+//[MEditReplaceAll]
+"&Всички"
+//[MEditSkip]
+"П&ропусни"
+//[MEditCancel]
+"&Отказ"
+//[MEditOpenCreateLabel]
+"&Отваряне/създаване на файл:"
+//[MEditOpenAutoDetect]
+"Автоматично разпознаване"
+//[MDefaultCP]
+"По подразбиране"
+//[MGoTo]
+"Отиване на"
+//[MGoToHex]
+"&Шестнадесетична стойност"
+//[MFolderShortcutsTitle]
+"Бързи връзки към папки"
+//[MShortcutNone]
+"<няма>"
+//[MShortcutPlugin]
+"<модул>"
+//[MFSShortcutName]
+"Заглавие:"
+//[MFSShortcutPath]
+"Път:"
+//[MFSShortcutPluginFile]
+"Файл:"
+//[MFSShortcutPluginData]
+"Данни:"
+//[MNeedNearPath]
+"Да се премине ли към най-близката съществуваща папка?"
+//[MSaveThisShortcut]
+"Да се запази ли тази бърза връзка?"
+//[MEditF1]
+"Помощ"
+//[MEditF2]
+"Запиш"
+//[MEditF3]
+""
+//[MEditF4]
+"Изход"
+//[MEditF5]
+""
+//[MEditF6]
+"Преглд"
+//[MEditF7]
+"Търси"
+//[MEditF8]
+"ANSI"
+//[MEditF9]
+""
+//[MEditF10]
+"Изход"
+//[MEditF11]
+"Модул"
+//[MEditF12]
+"Екран"
+//[MEditShiftF1]
+""
+//[MEditShiftF2]
+"ЗапКат"
+//[MEditShiftF3]
+""
+//[MEditShiftF4]
+"Редак…"
+//[MEditShiftF5]
+""
+//[MEditShiftF6]
+""
+//[MEditShiftF7]
+"Следв"
+//[MEditShiftF8]
+"КодТбл"
+//[MEditShiftF9]
+""
+//[MEditShiftF10]
+"ЗапИзх"
+//[MEditShiftF11]
+""
+//[MEditShiftF12]
+""
+//[MEditAltF1]
+""
+//[MEditAltF2]
+""
+//[MEditAltF3]
+""
+//[MEditAltF4]
+""
+//[MEditAltF5]
+""
+//[MEditAltF6]
+""
+//[MEditAltF7]
+"Предш"
+//[MEditAltF8]
+"Отиди"
+//[MEditAltF9]
+"Видео"
+//[MEditAltF10]
+""
+//[MEditAltF11]
+"ИстПрг"
+//[MEditAltF12]
+""
+//[MEditCtrlF1]
+""
+//[MEditCtrlF2]
+""
+//[MEditCtrlF3]
+"НомРед"
+//[MEditCtrlF4]
+""
+//[MEditCtrlF5]
+""
+//[MEditCtrlF6]
+""
+//[MEditCtrlF7]
+"Замени"
+//[MEditCtrlF8]
+"КрайРд"
+//[MEditCtrlF9]
+""
+//[MEditCtrlF10]
+"КъмФайл"
+//[MEditCtrlF11]
+""
+//[MEditCtrlF12]
+""
+//[MEditAltShiftF1]
+""
+//[MEditAltShiftF2]
+""
+//[MEditAltShiftF3]
+""
+//[MEditAltShiftF4]
+""
+//[MEditAltShiftF5]
+""
+//[MEditAltShiftF6]
+""
+//[MEditAltShiftF7]
+""
+//[MEditAltShiftF8]
+""
+//[MEditAltShiftF9]
+"Конфиг"
+//[MEditAltShiftF10]
+""
+//[MEditAltShiftF11]
+""
+//[MEditAltShiftF12]
+""
+//[MEditCtrlShiftF1]
+""
+//[MEditCtrlShiftF2]
+""
+//[MEditCtrlShiftF3]
+""
+//[MEditCtrlShiftF4]
+""
+//[MEditCtrlShiftF5]
+""
+//[MEditCtrlShiftF6]
+""
+//[MEditCtrlShiftF7]
+""
+//[MEditCtrlShiftF8]
+""
+//[MEditCtrlShiftF9]
+""
+//[MEditCtrlShiftF10]
+""
+//[MEditCtrlShiftF11]
+""
+//[MEditCtrlShiftF12]
+""
+//[MEditCtrlAltF1]
+""
+//[MEditCtrlAltF2]
+""
+//[MEditCtrlAltF3]
+""
+//[MEditCtrlAltF4]
+""
+//[MEditCtrlAltF5]
+""
+//[MEditCtrlAltF6]
+""
+//[MEditCtrlAltF7]
+""
+//[MEditCtrlAltF8]
+""
+//[MEditCtrlAltF9]
+""
+//[MEditCtrlAltF10]
+""
+//[MEditCtrlAltF11]
+""
+//[MEditCtrlAltF12]
+""
+//[MEditCtrlAltShiftF1]
+""
+//[MEditCtrlAltShiftF2]
+""
+//[MEditCtrlAltShiftF3]
+""
+//[MEditCtrlAltShiftF4]
+""
+//[MEditCtrlAltShiftF5]
+""
+//[MEditCtrlAltShiftF6]
+""
+//[MEditCtrlAltShiftF7]
+""
+//[MEditCtrlAltShiftF8]
+""
+//[MEditCtrlAltShiftF9]
+""
+//[MEditCtrlAltShiftF10]
+""
+//[MEditCtrlAltShiftF11]
+""
+//[MEditCtrlAltShiftF12]
+""
+//[MEditF8DOS]
+"OEM"
+//[MEditCtrlF3Hide]
+"СкрНом"
+//[MEditSaveAs]
+"Запазване на файла &като"
+//[MEditCodePage]
+"&Кодова таблица:"
+//[MEditAddSignature]
+"Добавяне на &сигнатура (BOM)"
+//[MEditSaveAsFormatTitle]
+"Промяна на края на редовете на:"
+//[MEditSaveOriginal]
+"Без &промяна"
+//[MEditSaveDOS]
+"Формат &Dos/Windows (CR LF)"
+//[MEditSaveUnix]
+"Формат &Unix (LF)"
+//[MEditSaveMac]
+"Формат &Mac (CR)"
+//[MEditCannotSave]
+"Файлът не може да бъде запазен"
+//[MEditSavedChangedNonFile]
+"Файлът е променен, но файлът или папката, съдържаща"
+//[MEditSavedChangedNonFile1]
+"Файлът или папката, съдържаща"
+//[MEditSavedChangedNonFile2]
+"този файл, е преместен или изтрит. Да се запази ли?"
+//[MEditNewPath1]
+"Пътят до редактирания файл не съществува,"
+//[MEditNewPath2]
+"но ще бъде създаден при запазване на файла."
+//[MEditNewPath3]
+"Продължаване?"
+//[MEditNewPlugin1]
+"Името на файла за редактиране не може да е празно"
+//[MEditorReloadCPWarnLost1]
+"Файлът трябва да бъде презареден, за да се смени кодовата таблица."
+//[MEditorReloadCPWarnLost2]
+"Всички незапазени промени ще бъдат загубени."
+//[MEditorSwitchCPConfirm]
+"Продължаване?"
+//[MEditDataLostWarn]
+"По време на редактирането на файла бяха загубени данни."
+//[MEditorSaveNotRecommended]
+"Не се препоръчва този файл да се запазва."
+//[MEditorSave]
+"Запази"
+//[MEditorSaveCPWarnShow]
+"Покажи"
+//[MEditorCPNotSupported]
+"Кодова таблица {0} не се поддържа от системата ви"
+//[MColumnName]
+"Име"
+//[MColumnExtension]
+"Разширение"
+//[MColumnSize]
+"Размер"
+//[MColumnAlocatedSize]
+"Заето"
+//[MColumnDate]
+"Дата"
+//[MColumnTime]
+"Час"
+//[MColumnWrited]
+"Запис"
+//[MColumnCreated]
+"Създаден"
+//[MColumnAccessed]
+"Достъп"
+//[MColumnChanged]
+"Промяна"
+//[MColumnAttr]
+"Атр"
+//[MColumnDescription]
+"Описание"
+//[MColumnOwner]
+"Собственик"
+//[MColumnMumLinks]
+"БрВ"
+//[MColumnNumStreams]
+"БрП"
+//[MColumnStreamsSize]
+"РзмП"
+//[MColumnUnknown]
+"???"
+//[MListUp]
+"Нагоре"
+//[MListFolder]
+"Папка"
+//[MListSymlink]
+"Символ"
+//[MListJunction]
+"Съедин"
+//[MListVolMount]
+"Том"
+//[MListUnknownReparsePoint]
+"?Символ?"
+//[MListBrackets]
+"<>"
+//[MListBytes]
+"B"
+//[MListKb]
+"К"
+//[MListMb]
+"М"
+//[MListGb]
+"Г"
+//[MListTb]
+"Т"
+//[MListPb]
+"П"
+//[MListEb]
+"Е"
+//[MListFileSize]
+"Байтове: {0}, файлове: {1}, папки: {2}"
+//[MListFileSizeStatus]
+"{0} ({1}/{2}) {3} {4}"
+//[MListFreeSize]
+"{0} свободни байта"
+//[MDirInfoViewTitle]
+"Преглед"
+//[MFileToEdit]
+"Файл за редактиране:"
+//[MUnselectTitle]
+"Отмаркиране"
+//[MSelectTitle]
+"Маркиране"
+//[MSelectFilter]
+"&Филтър"
+//[MCompareTitle]
+"Сравняване"
+//[MCompareFilePanelsRequired1]
+"Необходими са два файлови панела за изпълнение"
+//[MCompareFilePanelsRequired2]
+"на командата Сравняване на папки"
+//[MCompareSameFolders1]
+"Съдържанието на папките изглежда"
+//[MCompareSameFolders2]
+"еднакво"
+//[MSelectAssocTitle]
+"Избор на асоциация"
+//[MAssocTitle]
+"Файлови асоциации"
+//[MAskDelAssoc]
+"Искате ли да изтриете асоциацията за"
+//[MFileAssocTitle]
+"Редактиране на файлови асоциации"
+//[MFileAssocMasks]
+"Файлова &маска или няколко маски:"
+//[MFileAssocDescr]
+"&Описание на асоциацията:"
+//[MFileAssocExec]
+"Команда за &изпълнение (за Enter):"
+//[MFileAssocAltExec]
+"Команда за из&пълнение (за Ctrl+PgDn):"
+//[MFileAssocView]
+"Команда за п&реглед (за F3):"
+//[MFileAssocAltView]
+"Команда за пр&еглед (за Alt+F3):"
+//[MFileAssocEdit]
+"Команда за &редактиране (за F4):"
+//[MFileAssocAltEdit]
+"Команда за ре&дактиране (за Alt+F4):"
+//[MViewF1]
+"Помощ"
+//[MViewF2]
+"Пренос"
+//[MViewF3]
+"Изход"
+//[MViewF4]
+"Шестн"
+//[MViewF5]
+""
+//[MViewF6]
+"Редакт"
+//[MViewF7]
+"Търси"
+//[MViewF8]
+"ANSI"
+//[MViewF9]
+""
+//[MViewF10]
+"Изход"
+//[MViewF11]
+"Модули"
+//[MViewF12]
+"Екран"
+//[MViewShiftF1]
+""
+//[MViewShiftF2]
+"ПрДуми"
+//[MViewShiftF3]
+""
+//[MViewShiftF4]
+"Режим"
+//[MViewShiftF5]
+""
+//[MViewShiftF6]
+""
+//[MViewShiftF7]
+"Следв"
+//[MViewShiftF8]
+"КодТбл"
+//[MViewShiftF9]
+""
+//[MViewShiftF10]
+""
+//[MViewShiftF11]
+""
+//[MViewShiftF12]
+""
+//[MViewAltF1]
+""
+//[MViewAltF2]
+""
+//[MViewAltF3]
+""
+//[MViewAltF4]
+""
+//[MViewAltF5]
+""
+//[MViewAltF6]
+""
+//[MViewAltF7]
+"Предш"
+//[MViewAltF8]
+"Отиди"
+//[MViewAltF9]
+"Видео"
+//[MViewAltF10]
+""
+//[MViewAltF11]
+"ИстПрг"
+//[MViewAltF12]
+""
+//[MViewCtrlF1]
+""
+//[MViewCtrlF2]
+""
+//[MViewCtrlF3]
+""
+//[MViewCtrlF4]
+""
+//[MViewCtrlF5]
+""
+//[MViewCtrlF6]
+""
+//[MViewCtrlF7]
+""
+//[MViewCtrlF8]
+""
+//[MViewCtrlF9]
+""
+//[MViewCtrlF10]
+"КъмФайл"
+//[MViewCtrlF11]
+""
+//[MViewCtrlF12]
+""
+//[MViewAltShiftF1]
+""
+//[MViewAltShiftF2]
+""
+//[MViewAltShiftF3]
+""
+//[MViewAltShiftF4]
+""
+//[MViewAltShiftF5]
+""
+//[MViewAltShiftF6]
+""
+//[MViewAltShiftF7]
+""
+//[MViewAltShiftF8]
+""
+//[MViewAltShiftF9]
+"Конфиг"
+//[MViewAltShiftF10]
+""
+//[MViewAltShiftF11]
+""
+//[MViewAltShiftF12]
+""
+//[MViewCtrlShiftF1]
+""
+//[MViewCtrlShiftF2]
+""
+//[MViewCtrlShiftF3]
+""
+//[MViewCtrlShiftF4]
+""
+//[MViewCtrlShiftF5]
+""
+//[MViewCtrlShiftF6]
+""
+//[MViewCtrlShiftF7]
+""
+//[MViewCtrlShiftF8]
+""
+//[MViewCtrlShiftF9]
+""
+//[MViewCtrlShiftF10]
+""
+//[MViewCtrlShiftF11]
+""
+//[MViewCtrlShiftF12]
+""
+//[MViewCtrlAltF1]
+""
+//[MViewCtrlAltF2]
+""
+//[MViewCtrlAltF3]
+""
+//[MViewCtrlAltF4]
+""
+//[MViewCtrlAltF5]
+""
+//[MViewCtrlAltF6]
+""
+//[MViewCtrlAltF7]
+""
+//[MViewCtrlAltF8]
+""
+//[MViewCtrlAltF9]
+""
+//[MViewCtrlAltF10]
+""
+//[MViewCtrlAltF11]
+""
+//[MViewCtrlAltF12]
+""
+//[MViewCtrlAltShiftF1]
+""
+//[MViewCtrlAltShiftF2]
+""
+//[MViewCtrlAltShiftF3]
+""
+//[MViewCtrlAltShiftF4]
+""
+//[MViewCtrlAltShiftF5]
+""
+//[MViewCtrlAltShiftF6]
+""
+//[MViewCtrlAltShiftF7]
+""
+//[MViewCtrlAltShiftF8]
+""
+//[MViewCtrlAltShiftF9]
+""
+//[MViewCtrlAltShiftF10]
+""
+//[MViewCtrlAltShiftF11]
+""
+//[MViewCtrlAltShiftF12]
+""
+//[MViewF2Unwrap]
+"БезПрн"
+//[MViewF4Text]
+"Текст"
+//[MViewF4Dump]
+"Дъмп"
+//[MViewF8DOS]
+"OEM"
+//[MViewMode]
+"Режим на преглед"
+//[MInViewer]
+"преглед"
+//[MInEditor]
+"редакция"
+//[MFilterTitle]
+"Меню на филтрите"
+//[MPanelFileType]
+"Тип файлове в панела"
+//[MFolderFileType]
+"Папки"
+//[MCanEditCustomFilterOnly]
+"Може да се редактира само потребителски филтър"
+//[MAskDeleteFilter]
+"Искате ли да изтриете филтъра"
+//[MCanDeleteCustomFilterOnly]
+"Може да се изтрие само потребителски филтър"
+//[MFindFileTitle]
+"Търсене на файл"
+//[MFindFileMasks]
+"Файлова &маска или няколко маски:"
+//[MFindFileContaining]
+"Съдържащ"
+//[MFindFileText]
+"&Текст"
+//[MFindFileHex]
+"&Шестн."
+//[MFindFileCodePage]
+"С кодова &таблица:"
+//[MFindFileAllCodePages]
+"Всички стандартни кодови таблици"
+//[MFindFileSelectedCodePages]
+"Избрани кодови таблици"
+//[MFindFileCase]
+"&Разлика малки/главни"
+//[MFindFileWholeWords]
+"&Цели думи"
+//[MFindFileFuzzy]
+"Не&точно търсене"
+//[MFindFileNotContaining]
+"&Несъдържащ"
+//[MFindFileArchives]
+"Търсене в ар&хиви"
+//[MFindFileFolders]
+"Търсене на п&апки"
+//[MFindFileSymLinks]
+"Търсене в символни &връзки"
+//[MFindFileAlternateStreams]
+"Търсене в а&лтернативни потоци"
+//[MFindFileSearchArea]
+"Избор на &област на търсене:"
+//[MFindFileSearchAllDisks]
+"Във &всички несменяеми устройства"
+//[MFindFileSearchAllButNetwork]
+"Във всички &локални устройства"
+//[MFindFileSearchInPATH]
+"В папките от &PATH"
+//[MFindFileSearchFromRootOfDrive]
+"От &корена на"
+//[MFindFileSearchFromRootFolder]
+"От &коренната папка"
+//[MFindFileSearchFromCurrent]
+"От текущата п&апка"
+//[MFindFileSearchInCurrent]
+"Само в текущата па&пка"
+//[MFindFileSearchInSelected]
+"&Избраните папки"
+//[MFindFileUseFilter]
+"&Използване на филтър"
+//[MFindFileUsingFilter]
+"с филтър"
+//[MFindFileFind]
+"Търси"
+//[MFindFileDrive]
+"&Устройство"
+//[MFindFileSetFilter]
+"&Филтър"
+//[MFindFileAdvanced]
+"&Разширено"
+//[MFindFileSearchingIn]
+"Търсене на {0} в"
+//[MFindFileNewSearch]
+"&Ново търсене"
+//[MFindFileGoTo]
+"&Отиди"
+//[MFindFileView]
+"&Преглед"
+//[MFindFilePanel]
+"П&анел"
+//[MFindFileStop]
+"&Спри"
+//[MFindFileDone]
+"Търсенето приключи. Намерени файлове: {0}, папки: {1}"
+//[MFindFileCancel]
+"&Отказ"
+//[MFindFileFound]
+"Файлове: {0}, папки: {1}"
+//[MFindFileAdvancedTitle]
+"Разширени настройки на търсенето"
+//[MFindFileSearchFirst]
+"Търсене само в &първите:"
+//[MFindFileSearchOutputFormat]
+"&Формат на резултата:"
+//[MFindAlternateModeTypes]
+"&Типове колони"
+//[MFindAlternateModeWidths]
+"&Ширини на колоните"
+//[MFoldTreeSearch]
+"Търсене:"
+//[MGetCodePageTitle]
+"Кодови таблици"
+//[MGetCodePageSystem]
+"Системни"
+//[MGetCodePageUnicode]
+"Unicode"
+//[MGetCodePageFavorites]
+"Любими"
+//[MGetCodePageOther]
+"Други"
+//[MGetCodePageEditCodePageName]
+"Преименуване на кодовата таблица"
+//[MGetCodePageResetCodePageName]
+"&Нулиране"
+//[MHighlightTitle]
+"Оцветяване на файловете"
+//[MHighlightUpperSortGroup]
+"Горна група за сортиране"
+//[MHighlightLowerSortGroup]
+"Долна група за сортиране"
+//[MHighlightLastGroup]
+"Група за оцветяване с най-нисък приоритет"
+//[MHighlightAskDel]
+"Искате ли да изтриете оцветяването за"
+//[MHighlightWarning]
+"Ще загубите всички промени"
+//[MHighlightAskRestore]
+"Искате ли да възстановите оцветяването по подразбиране?"
+//[MHighlightEditTitle]
+"Редактиране на оцветяването на файловете"
+//[MHighlightMark]
+"Мар&кер,"
+//[MHighlightInheritMark]
+"&Наследяване"
+//[MHighlightColors]
+"Цветове на имената (\"черно на черно\" - цвят по подразбиране)"
+//[MHighlightFileName1]
+"&1. Обикновено име"
+//[MHighlightFileName2]
+"&3. Маркирано име"
+//[MHighlightFileName3]
+"&5. Име под курсора"
+//[MHighlightFileName4]
+"&7. Маркирано име под курсора"
+//[MHighlightMarking1]
+"&2. Маркер"
+//[MHighlightMarking2]
+"&4. Маркер"
+//[MHighlightMarking3]
+"&6. Маркер"
+//[MHighlightMarking4]
+"&8. Маркер"
+//[MHighlightExample]
+"файл.ext"
+//[MHighlightContinueProcessing]
+"П&родължаване на обработката"
+//[MInfoTitle]
+"Информация"
+//[MInfoCompName]
+"Име на компютъра"
+//[MInfoCompDescription]
+"Описание на компютъра"
+//[MInfoUserName]
+"Потребителско име"
+//[MInfoUserDescription]
+"Описание на потребителя"
+//[MInfoUserAccessLevel]
+"Ниво на достъп"
+//[MInfoUserAccessLevelGuest]
+"Гост"
+//[MInfoUserAccessLevelUser]
+"Потребител"
+//[MInfoUserAccessLevelAdministrator]
+"Администратор"
+//[MInfoUserAccessLevelUnknown]
+"Неизвестно"
+//[MInfoUserAccessElevated]
+"Повишено"
+//[MInfoUserAccessElevationTypeFull]
+"Пълно"
+//[MInfoUserAccessElevationTypeLimited]
+"Ограничено"
+//[MInfoDiskTitle]
+"Диск"
+//[MInfoRemovable]
+"Сменяем"
+//[MInfoFixed]
+"Твърд"
+//[MInfoNetwork]
+"Мрежов"
+//[MInfoCDROM]
+"CD-ROM"
+//[MInfoCDR]
+"CD-R"
+//[MInfoCDRW]
+"CD-RW"
+//[MInfoCDRWDVD]
+"CD-RW/DVD"
+//[MInfoDVDROM]
+"DVD-ROM"
+//[MInfoDVDR]
+"DVD-R"
+//[MInfoDVDRW]
+"DVD-RW"
+//[MInfoDVDRAM]
+"DVD-RAM"
+//[MInfoBDROM]
+"BD-ROM"
+//[MInfoBDR]
+"BD-R"
+//[MInfoBDRE]
+"BD-RE"
+//[MInfoHDDVDROM]
+"HDDVD-ROM"
+//[MInfoHDDVDR]
+"HDDVD-R"
+//[MInfoHDDVDRW]
+"HDDVD-RW"
+//[MInfoHDDVDRAM]
+"HDDVD-RAM"
+//[MInfoRAM]
+"RAM"
+//[MInfoSUBST]
+"Subst"
+//[MInfoVirtual]
+"Виртуален"
+//[MInfoUnknown]
+"Неизвестен"
+//[MInfoMetricTotal]
+"общо"
+//[MInfoMetricAvailable]
+"налично"
+//[MInfoMetricUsed]
+"заето"
+//[MInfoDisk]
+"диск"
+//[MInfoDiskSpace]
+"Място"
+//[MInfoDiskLabel]
+"Етикет на тома"
+//[MInfoDiskNumber]
+"Сериен номер"
+//[MInfoMemory]
+"Памет"
+//[MInfoMemoryCommittable]
+"Заделяема"
+//[MInfoMemoryAddressable]
+"Адресируема"
+//[MInfoMemoryPhysical]
+"Физическа"
+//[MInfoMetricMemoryInstalled]
+"инсталирана"
+//[MInfoDescription]
+"Описание"
+//[MInfoDizAbsent]
+"Липсва файл с описание на папката"
+//[MInfoPlugin]
+"Модул"
+//[MInfoPowerStatus]
+"Захранване"
+//[MInfoPowerStatusAC]
+"Мрежово захранване"
+//[MInfoPowerStatusACOffline]
+"Изключено"
+//[MInfoPowerStatusACOnline]
+"Включено"
+//[MInfoPowerStatusACBackUp]
+"Резервно захранване"
+//[MInfoPowerStatusACUnknown]
+"Неизвестно"
+//[MInfoPowerStatusBCLifePercentUnknown]
+"неизвестно"
+//[MInfoPowerStatusBC]
+"Заряд на батерията"
+//[MInfoPowerStatusBCHigh]
+"Висок"
+//[MInfoPowerStatusBCMedium]
+"Среден"
+//[MInfoPowerStatusBCLow]
+"Нисък"
+//[MInfoPowerStatusBCCritical]
+"Критичен"
+//[MInfoPowerStatusBCCharging]
+"зарежда се"
+//[MInfoPowerStatusBCNoSysBat]
+"Няма системна батерия"
+//[MInfoPowerStatusBCUnknown]
+"Неизвестно"
+//[MInfoPowerStatusBCTimeRem]
+"Оставащо време на батерията"
+//[MInfoPowerStatusBCFullTimeRem]
+"Пълно време на батерията"
+//[MInfoPowerStatusUnknown]
+"Неизвестно"
+//[MAccessDenied]
+"Достъпът е отказан"
+//[MCannotExecute]
+"Не може да се изпълни"
+//[MCannotInvokeComspec]
+"Командният интерпретатор не може да бъде стартиран"
+//[MCheckComspecVar]
+"Проверете променливата на средата COMSPEC"
+//[MScanningFolder]
+"Обхождане на папката"
+//[MMakeFolderTitle]
+"Създаване на папка"
+//[MCreateFolder]
+"Създаване на &папката:"
+//[MMakeFolderLinkType]
+"&Тип на връзката:"
+//[MMakeFolderLinkNone]
+"&няма"
+//[MMakeFolderLinkJunction]
+"&съединение на директории"
+//[MMakeFolderLinkSymlink]
+"символна &връзка"
+//[MMakeFolderLinkTarget]
+"&Цел:"
+//[MMultiMakeDir]
+"Обработка на &няколко имена"
+//[MIncorrectDirList]
+"Неправилен списък с папки"
+//[MCannotCreateFolder]
+"Папката не може да бъде създадена"
+//[MMenuBriefView]
+"&Кратък"
+//[MMenuMediumView]
+"&Среден"
+//[MMenuFullView]
+"&Пълен"
+//[MMenuWideView]
+"&Широк"
+//[MMenuDetailedView]
+"&Подробен"
+//[MMenuDizView]
+"&Описания"
+//[MMenuLongDizView]
+"&Дълги описания"
+//[MMenuOwnersView]
+"Соб&ственици"
+//[MMenuLinksView]
+"Вр&ъзки на файловете"
+//[MMenuAlternativeView]
+"&Алтернативен пълен"
+//[MMenuInfoPanel]
+"&Информационен панел"
+//[MMenuTreePanel]
+"Панел &дърво"
+//[MMenuQuickView]
+"Бърз п&реглед"
+//[MMenuSortModes]
+"Режими на &сортиране"
+//[MMenuLongNames]
+"Показване на дълги &имена"
+//[MMenuTogglePanel]
+"Панел &вкл./изкл."
+//[MMenuReread]
+"&Препрочитане"
+//[MMenuChangeDrive]
+"С&мяна на устройство"
+//[MMenuView]
+"&Преглед"
+//[MMenuEdit]
+"&Редактиране"
+//[MMenuCopy]
+"&Копиране"
+//[MMenuMove]
+"П&реименуване или преместване"
+//[MMenuLink]
+"&Връзка"
+//[MMenuCreateFolder]
+"Създаване на &папка"
+//[MMenuDelete]
+"&Изтриване"
+//[MMenuWipe]
+"&Унищожаване"
+//[MMenuAdd]
+"Добавяне в &архив"
+//[MMenuExtract]
+"&Извличане на файлове"
+//[MMenuArchiveCommands]
+"Ар&хивни команди"
+//[MMenuAttributes]
+"&Атрибути на файла"
+//[MMenuApplyCommand]
+"При&лагане на команда"
+//[MMenuDescribe]
+"&Описване на файлове"
+//[MMenuSelectGroup]
+"Маркиране на &група"
+//[MMenuUnselectGroup]
+"&Отмаркиране на група"
+//[MMenuInvertSelection]
+"&Обръщане на маркирането"
+//[MMenuRestoreSelection]
+"Въз&становяване на маркирането"
+//[MMenuFindFile]
+"&Търсене на файл"
+//[MMenuHistory]
+"&История"
+//[MMenuVideoMode]
+"&Видеорежим"
+//[MMenuFindFolder]
+"Търсене на п&апка"
+//[MMenuViewHistory]
+"История на п&реглеждането"
+//[MMenuFoldersHistory]
+"История на па&пките"
+//[MMenuSwapPanels]
+"&Размяна на панелите"
+//[MMenuTogglePanels]
+"&Панели вкл./изкл."
+//[MMenuCompareFolders]
+"&Сравняване на папки"
+//[MMenuUserMenu]
+"Редактиране на потребителското &меню"
+//[MMenuFileAssociations]
+"Файлови &асоциации"
+//[MMenuFolderShortcuts]
+"Бързи връзки към &папки"
+//[MMenuFilter]
+"&Филтър на файловия панел"
+//[MMenuPluginCommands]
+"Команди на &модулите"
+//[MMenuWindowsList]
+"Списък на &екраните"
+//[MMenuProcessList]
+"Списък на &задачите"
+//[MMenuHotPlugList]
+"Списък на &сменяемите устройства"
+//[MMenuSystemSettings]
+"&Системни настройки"
+//[MMenuPanelSettings]
+"Настройки на &панелите"
+//[MMenuTreeSettings]
+"Настройки на &дървото"
+//[MMenuInterface]
+"Настройки на &интерфейса"
+//[MMenuLanguages]
+"&Езици"
+//[MMenuPluginsConfig]
+"Конфигурация на &модулите"
+//[MMenuPluginsManagerSettings]
+"Настройки на &диспечера на модули"
+//[MMenuDialogSettings]
+"Настройки на ди&алозите"
+//[MMenuVMenuSettings]
+"Настройки на менютата"
+//[MMenuCmdlineSettings]
+"Настройки на &командния ред"
+//[MMenuAutoCompleteSettings]
+"Настройки на ав&тодовършването"
+//[MMenuInfoPanelSettings]
+"Настройки на информационния пан&ел"
+//[MMenuMaskGroups]
+"Групи файлови мас&ки"
+//[MMenuConfirmation]
+"П&отвърждения"
+//[MMenuFilePanelModes]
+"Режими на файловия па&нел"
+//[MMenuFileDescriptions]
+"Описания на &файлове"
+//[MMenuFolderInfoFiles]
+"Файлове с описания на п&апки"
+//[MMenuViewer]
+"Настройки на п&реглеждането"
+//[MMenuEditor]
+"Настройки на &редактора"
+//[MMenuCodePages]
+"Кодови таблици"
+//[MMenuColors]
+"&Цветове"
+//[MMenuFilesHighlighting]
+"&Оцветяване на файлове и групи за сортиране"
+//[MMenuSaveSetup]
+"&Запазване на настройките"
+//[MMenuTogglePanelRight]
+"Панел &вкл./изкл."
+//[MMenuChangeDriveRight]
+"С&мяна на устройство"
+//[MMenuLeftTitle]
+"&Ляв"
+//[MMenuFilesTitle]
+"&Файлове"
+//[MMenuCommandsTitle]
+"&Команди"
+//[MMenuOptionsTitle]
+"&Настройки"
+//[MMenuRightTitle]
+"&Десен"
+//[MMenuSortTitle]
+"Сортиране по"
+//[MMenuSortByName]
+"&Име"
+//[MMenuSortByExt]
+"&Разширение"
+//[MMenuSortByWrite]
+"Време на &запис"
+//[MMenuSortBySize]
+"Раз&мер"
+//[MMenuUnsorted]
+"&Без сортиране"
+//[MMenuSortByCreation]
+"Време на &създаване"
+//[MMenuSortByAccess]
+"Време на &достъп"
+//[MMenuSortByChange]
+"Време на п&ромяна"
+//[MMenuSortByDiz]
+"&Описания"
+//[MMenuSortByOwner]
+"С&обственик"
+//[MMenuSortByAllocatedSize]
+"Заето място"
+//[MMenuSortByNumLinks]
+"Брой &твърди връзки"
+//[MMenuSortByNumStreams]
+"Брой по&тоци"
+//[MMenuSortByStreamsSize]
+"Размер на пото&ците"
+//[MMenuSortByNameOnly]
+"Само име"
+//[MMenuSortUseGroups]
+"Използване на групи за сортиране"
+//[MMenuSortSelectedFirst]
+"Маркираните &първи"
+//[MMenuSortDirectoriesFirst]
+"Папките п&ърви"
+//[MMaskGroupTitle]
+"Групи файлови маски"
+//[MMaskGroupName]
+"&Име:"
+//[MMaskGroupMasks]
+"Файлова &маска или няколко маски:"
+//[MMaskGroupAskDelete]
+"Искате ли да изтриете"
+//[MMaskGroupRestore]
+"Искате ли да възстановите наборите маски по подразбиране?"
+//[MMaskGroupFindMask]
+"&Маска:"
+//[MMaskGroupTotal]
+"Общо: {0}"
+//[MChangeDriveTitle]
+"Смяна на устройство"
+//[MChangeDriveRemovable]
+"сменяем"
+//[MChangeDriveFixed]
+"твърд"
+//[MChangeDriveNetwork]
+"мрежов"
+//[MChangeDriveDisconnectedNetwork]
+"изключен"
+//[MChangeDriveCDROM]
+"CD-ROM"
+//[MChangeDriveCDR]
+"CD-R"
+//[MChangeDriveCDRW]
+"CD-RW"
+//[MChangeDriveCDRWDVD]
+"CD-RW/DVD"
+//[MChangeDriveDVDROM]
+"DVD-ROM"
+//[MChangeDriveDVDR]
+"DVD-R"
+//[MChangeDriveDVDRW]
+"DVD-RW"
+//[MChangeDriveDVDRAM]
+"DVD-RAM"
+//[MChangeDriveBDROM]
+"BD-ROM"
+//[MChangeDriveBDR]
+"BD-R"
+//[MChangeDriveBDRE]
+"BD-RE"
+//[MChangeDriveHDDVDROM]
+"HDDVD-ROM"
+//[MChangeDriveHDDVDR]
+"HDDVD-R"
+//[MChangeDriveHDDVDRW]
+"HDDVD-RW"
+//[MChangeDriveHDDVDRAM]
+"HDDVD-RAM"
+//[MChangeDriveRAM]
+"RAM диск"
+//[MChangeDriveSUBST]
+"subst"
+//[MChangeDriveVirtual]
+"виртуален"
+//[MChangeDriveLabelAbsent]
+"не е наличен"
+//[MChangeDriveCannotReadDisk]
+"Дискът в устройството не може да бъде прочетен"
+//[MChangeDriveCannotDisconnect]
+"Не може да се изключи"
+//[MChangeDriveCannotDelSubst]
+"Заместващият диск не може да бъде изтрит"
+//[MChangeDriveCannotDetach]
+"Виртуалният диск не може да бъде откачен"
+//[MChangeSUBSTDisconnectDriveTitle]
+"Изтриване на заместващ диск"
+//[MChangeSUBSTDisconnectDriveQuestion]
+"Да се изтрие ли SUBST диск {0}?"
+//[MChangeVHDDisconnectDriveTitle]
+"Откачане на виртуален диск"
+//[MChangeVHDDisconnectDriveQuestion]
+"Да се откачи ли виртуален диск {0}?"
+//[MChangeHotPlugDisconnectDriveTitle]
+"Премахване на устройство"
+//[MChangeHotPlugDisconnectDriveQuestion]
+"Искате ли да премахнете устройството"
+//[MHotPlugDisks]
+"(диск(ове): {0})"
+//[MChangeCouldNotEjectHotPlugMedia]
+"Не може да се премахне устройството за"
+//[MChangeCouldNotEjectHotPlugMedia2]
+"Не може да се премахне устройството:"
+//[MChangeHotPlugNotify1]
+"Устройството"
+//[MChangeHotPlugNotify2]
+"вече може да бъде безопасно премахнато"
+//[MHotPlugListTitle]
+"Списък на сменяемите устройства"
+//[MChangeDriveDisconnectTitle]
+"Изключване на мрежово устройство"
+//[MChangeDriveDisconnectQuestion]
+"Да се изключи ли устройство {0}?"
+//[MChangeDriveDisconnectMapped]
+"Устройството е свързано с:"
+//[MChangeDriveDisconnectReconnect]
+"&Повторно свързване при влизане"
+//[MChangeWaitingLoadDisk]
+"Изчакване на монтирането на диска…"
+//[MChangeCouldNotEjectMedia]
+"Носителят не може да бъде изваден от устройството"
+//[MChangeDriveConfigure]
+"Настройки на менюто Смяна на устройство"
+//[MChangeDriveShowDiskType]
+"Показване на &типа на диска"
+//[MChangeDriveShowPath]
+"Показване на &мрежово име / SUBST път / VHD име"
+//[MChangeDriveShowLabel]
+"Показване на &етикета на диска"
+//[MChangeDriveShowLabelUseShell]
+"Използване на името от о&бвивката"
+//[MChangeDriveShowFileSystem]
+"Показване на &файловата система"
+//[MChangeDriveShowSize]
+"Показване на &размера"
+//[MChangeDriveShowSizeFloat]
+"Показване на размера като &десетична дроб"
+//[MChangeDriveShowRemovableDrive]
+"Показване на параметрите на с&меняемите устройства"
+//[MChangeDriveShowPlugins]
+"Показване на &модулите"
+//[MChangeDriveSortPluginsByHotkey]
+"Сортиране на модулите по &бърз клавиш"
+//[MChangeDriveShowCD]
+"Показване на параметрите на &CD устройствата"
+//[MChangeDriveShowNetworkDrive]
+"Показване на параметрите на мр&ежовите устройства"
+//[MChangeDriveShowVirtualDisk]
+"Разпознаване на виртуални дискове"
+//[MChangeDriveVolumeLabel]
+"Етикет на тома"
+//[MSearchFileTitle]
+"Търсене"
+//[MCannotCreateListTemp]
+"Не може да бъде създаден временен файл за списъка с файлове"
+//[MDragFiles]
+"{0} файла"
+//[MDragMove]
+"Преместване на {0}"
+//[MDragCopy]
+"Копиране на {0}"
+//[MProcessListTitle]
+"Списък на задачите"
+//[MKillProcessTitle]
+"Прекратяване на задача"
+//[MAskKillProcess]
+"Искате ли да прекратите избраната задача?"
+//[MKillProcessWarning]
+"Ще загубите всички незапазени данни в тази програма"
+//[MKillProcessKill]
+"Прекрати"
+//[MCannotKillProcess]
+"Посочената задача не може да бъде прекратена"
+//[MCannotKillProcessPerm]
+"Нямате права да прекратите този процес."
+//[MQuickViewTitle]
+"Бърз преглед"
+//[MQuickViewReparsePoint]
+"&Точка на повторен анализ"
+//[MQuickViewUnknownReparsePoint]
+"Неизвестна точка на повторен анализ"
+//[MQuickViewFolders]
+"Папки:"
+//[MQuickViewFiles]
+"Файлове:"
+//[MQuickViewBytes]
+"Размер на файловете:"
+//[MQuickViewAllocated]
+"Заето място:"
+//[MQuickViewCluster]
+"Размер на клъстера:"
+//[MQuickViewSlack]
+"Неизползвано място:"
+//[MQuickViewMFTOverhead]
+"Допълнително за MFT:"
+//[MSetAttrTitle]
+"Атрибути"
+//[MSetAttrFor]
+"Промяна на атрибутите на"
+//[MSetAttrSelectedObjects]
+"избраните обекти"
+//[MSetAttrHardLinks]
+"твърди връзки"
+//[MSetAttrJunction]
+"&Съединение:"
+//[MSetAttrSymlink]
+"Си&мволна връзка{}:"
+//[MSetAttrVolMount]
+"&Том:"
+//[MSetAttrDfsTargets]
+"DFS цели:"
+//[MSetAttrAppExecLink]
+"Псевдоним на приложение:"
+//[MSetAttrUnknownReparsePoint]
+"Неизвестна точка на повторен анализ"
+//[MSetAttrDiskDevice]
+"Устройство:"
+//[MSetAttrReadOnly]
+"&Само за четене"
+//[MSetAttrArchive]
+"&Архивен"
+//[MSetAttrHidden]
+"&Скрит"
+//[MSetAttrSystem]
+"Сис&темен"
+//[MSetAttrCompressed]
+"&Компресиран"
+//[MSetAttrEncrypted]
+"&Шифрован"
+//[MSetAttrNotIndexed]
+"Не&индексиран"
+//[MSetAttrSparse]
+"&Разреден"
+//[MSetAttrTemporary]
+"&Временен"
+//[MSetAttrOffline]
+"&Офлайн"
+//[MSetAttrReparsePoint]
+"Точка на &повторен анализ"
+//[MSetAttrVirtual]
+"&Виртуален"
+//[MSetAttrIntegrityStream]
+"Поток за ц&еластност"
+//[MSetAttrNoScrubData]
+"&Без проверка на данните"
+//[MSetAttrPinned]
+"&Закачен"
+//[MSetAttrUnpinned]
+"&Откачен"
+//[MSetAttrRecallOnOpen]
+"Извличане при о&тваряне"
+//[MSetAttrRecallOnDataAccess]
+"Извличане при достъп до &данните"
+//[MSetAttrStrictlySequential]
+"Строго по&следователен"
+//[MSetAttrDevice]
+"Устройство"
+//[MSetAttrMore]
+"&Още"
+//[MSetAttrSubfolders]
+"Обработка на &подпапките"
+//[MSetAttrOwner]
+"Собственик&:"
+//[MSetAttrDate]
+"Дата/час:"
+//[MSetAttrWrite]
+"&запис:"
+//[MSetAttrCreation]
+"съ&здаване:"
+//[MSetAttrAccess]
+"&достъп:"
+//[MSetAttrChange]
+"про&мяна:"
+//[MSetAttrOriginal]
+"&Първоначални"
+//[MSetAttrCurrent]
+"&Текущи"
+//[MSetAttrBlank]
+"&Празни"
+//[MSetAttrSet]
+"Задай"
+//[MSetAttrDateTitleMDY]
+"ММ{0}ДД{0}ГГГГГ"
+//[MSetAttrDateTitleDMY]
+"ДД{0}ММ{0}ГГГГГ"
+//[MSetAttrDateTitleYMD]
+"ГГГГГ{0}ММ{0}ДД"
+//[MSetAttrTimeTitle]
+"чч{0}мм{0}сс"
+//[MSetAttrSystemDialog]
+"Системни &свойства"
+//[MSetAttrSetting]
+"Задаване на атрибутите на"
+//[MSetAttrCannotFor]
+"Не могат да бъдат зададени атрибутите на"
+//[MSetAttrCompressedCannotFor]
+"Не може да бъде зададен атрибут КОМПРЕСИРАН на"
+//[MSetAttrEncryptedCannotFor]
+"Не може да бъде зададен атрибут ШИФРОВАН на"
+//[MSetAttrSparseCannotFor]
+"Не може да бъде зададен атрибут РАЗРЕДЕН на"
+//[MSetAttrTimeCannotFor]
+"Не може да бъде зададено времето на"
+//[MSetAttrOwnerCannotFor]
+"Не може да бъде зададен собственик на"
+//[MSetAttrReparsePointCannotFor]
+"Не може да бъде премахната точката на повторен анализ на"
+//[MSetColorPanel]
+"&Панел"
+//[MSetColorDialog]
+"&Диалог"
+//[MSetColorWarning]
+"&Предупредително съобщение"
+//[MSetColorMenu]
+"&Меню"
+//[MSetColorHMenu]
+"&Хоризонтално меню"
+//[MSetColorKeyBar]
+"Лента с &клавиши"
+//[MSetColorCommandLine]
+"Ко&манден ред"
+//[MSetColorClock]
+"&Часовник"
+//[MSetColorViewer]
+"П&реглед"
+//[MSetColorEditor]
+"&Редактор"
+//[MSetColorHelp]
+"П&омощ"
+//[MColorThemes]
+"Теми"
+//[MDefaultTheme]
+"По подразбиране"
+//[MDefaultThemeRGB]
+"По подразбиране (RGB)"
+//[MSetColorPanelNormal]
+"Обикновен текст"
+//[MSetColorPanelSelected]
+"Маркиран текст"
+//[MSetColorPanelHighlightedText]
+"Откроен текст"
+//[MSetColorPanelHighlightedInfo]
+"Откроена информация"
+//[MSetColorPanelDragging]
+"Влачен текст"
+//[MSetColorPanelBox]
+"Рамка"
+//[MSetColorPanelNormalCursor]
+"Обикновен курсор"
+//[MSetColorPanelSelectedCursor]
+"Маркиран курсор"
+//[MSetColorPanelNormalTitle]
+"Обикновено заглавие"
+//[MSetColorPanelSelectedTitle]
+"Маркирано заглавие"
+//[MSetColorPanelColumnTitle]
+"Заглавие на колона"
+//[MSetColorPanelTotalInfo]
+"Обща информация"
+//[MSetColorPanelSelectedInfo]
+"Информация за маркираното"
+//[MSetColorPanelScrollbar]
+"Лента за превъртане"
+//[MSetColorPanelScreensNumber]
+"Брой фонови екрани"
+//[MSetColorDialogNormal]
+"Обикновен текст"
+//[MSetColorDialogHighlighted]
+"Откроен текст"
+//[MSetColorDialogDisabled]
+"Неактивен текст"
+//[MSetColorDialogBox]
+"Рамка"
+//[MSetColorDialogBoxTitle]
+"Заглавие"
+//[MSetColorDialogHighlightedBoxTitle]
+"Откроено заглавие"
+//[MSetColorDialogTextInput]
+"Въвеждане на текст"
+//[MSetColorDialogUnchangedTextInput]
+"Непроменен въведен текст"
+//[MSetColorDialogSelectedTextInput]
+"Маркиран въведен текст"
+//[MSetColorDialogEditDisabled]
+"Неактивен ред за въвеждане"
+//[MSetColorDialogButtons]
+"Бутони"
+//[MSetColorDialogSelectedButtons]
+"Маркирани бутони"
+//[MSetColorDialogHighlightedButtons]
+"Откроени бутони"
+//[MSetColorDialogSelectedHighlightedButtons]
+"Маркирани откроени бутони"
+//[MSetColorDialogDefaultButton]
+"Бутон по подразбиране"
+//[MSetColorDialogSelectedDefaultButton]
+"Маркиран бутон по подразбиране"
+//[MSetColorDialogHighlightedDefaultButton]
+"Откроен бутон по подразбиране"
+//[MSetColorDialogSelectedHighlightedDefaultButton]
+"Маркиран откроен бутон по подразбиране"
+//[MSetColorDialogListBoxControl]
+"Списък"
+//[MSetColorDialogComboBoxControl]
+"Падащ списък"
+//[MSetColorDialogListText]
+"Обикновен текст"
+//[MSetColorDialogListSelectedText]
+"Маркиран текст"
+//[MSetColorDialogListHighLight]
+"Откроен текст"
+//[MSetColorDialogListSelectedHighLight]
+"Маркиран откроен текст"
+//[MSetColorDialogListDisabled]
+"Неактивен елемент"
+//[MSetColorDialogListBox]
+"Рамка"
+//[MSetColorDialogListTitle]
+"Заглавие"
+//[MSetColorDialogListGrayed]
+"Посивял текст на списъка"
+//[MSetColorDialogSelectedListGrayed]
+"Маркиран посивял текст на списъка"
+//[MSetColorDialogListScrollBar]
+"Лента за превъртане"
+//[MSetColorDialogListArrows]
+"Индикатори за дълъг низ"
+//[MSetColorDialogListArrowsSelected]
+"Маркирани индикатори за дълъг низ"
+//[MSetColorDialogListArrowsDisabled]
+"Неактивни индикатори за дълъг низ"
+//[MSetColorMenuNormal]
+"Обикновен текст"
+//[MSetColorMenuSelected]
+"Маркиран текст"
+//[MSetColorMenuHighlighted]
+"Откроен текст"
+//[MSetColorMenuSelectedHighlighted]
+"Маркиран откроен текст"
+//[MSetColorMenuDisabled]
+"Неактивен текст"
+//[MSetColorMenuGrayed]
+"Посивял текст"
+//[MSetColorMenuSelectedGrayed]
+"Маркиран посивял текст"
+//[MSetColorMenuBox]
+"Рамка"
+//[MSetColorMenuTitle]
+"Заглавие"
+//[MSetColorMenuScrollBar]
+"Лента за превъртане"
+//[MSetColorMenuArrows]
+"Индикатори за дълъг низ"
+//[MSetColorMenuArrowsSelected]
+"Маркирани индикатори за дълъг низ"
+//[MSetColorMenuArrowsDisabled]
+"Неактивни индикатори за дълъг низ"
+//[MSetColorHMenuNormal]
+"Обикновен текст"
+//[MSetColorHMenuSelected]
+"Маркиран текст"
+//[MSetColorHMenuHighlighted]
+"Откроен текст"
+//[MSetColorHMenuSelectedHighlighted]
+"Маркиран откроен текст"
+//[MSetColorKeyBarNumbers]
+"Номера на клавишите"
+//[MSetColorKeyBarNames]
+"Имена на клавишите"
+//[MSetColorKeyBarBackground]
+"Фон"
+//[MSetColorCommandLineNormal]
+"Обикновен текст"
+//[MSetColorCommandLineSelected]
+"Маркиран въведен текст"
+//[MSetColorCommandLinePrefix]
+"Текст на подканата"
+//[MSetColorCommandLineUserScreen]
+"Потребителски екран"
+//[MSetColorClockNormal]
+"Обикновен текст (панел)"
+//[MSetColorClockNormalEditor]
+"Обикновен текст (редактор)"
+//[MSetColorClockNormalViewer]
+"Обикновен текст (преглед)"
+//[MSetColorViewerNormal]
+"Обикновен текст"
+//[MSetColorViewerSelected]
+"Маркиран текст"
+//[MSetColorViewerStatus]
+"Лента на състоянието"
+//[MSetColorViewerArrows]
+"Стрелки за превъртане на екрана"
+//[MSetColorViewerScrollbar]
+"Лента за превъртане"
+//[MSetColorEditorNormal]
+"Обикновен текст"
+//[MSetColorEditorSelected]
+"Маркиран текст"
+//[MSetColorEditorStatus]
+"Лента на състоянието"
+//[MSetColorEditorScrollbar]
+"Лента за превъртане"
+//[MSetColorEditorLineNumbers]
+"Номера на редовете"
+//[MSetColorHelpNormal]
+"Обикновен текст"
+//[MSetColorHelpHighlighted]
+"Откроен текст"
+//[MSetColorHelpReference]
+"Препратка"
+//[MSetColorHelpSelectedReference]
+"Маркирана препратка"
+//[MSetColorHelpBox]
+"Рамка"
+//[MSetColorHelpBoxTitle]
+"Заглавие"
+//[MSetColorHelpScrollbar]
+"Лента за превъртане"
+//[MSetColorGroupsTitle]
+"Цветови групи"
+//[MSetColorItemsTitle]
+"Елементи на групата"
+//[MSetColorTitle]
+"Цвят"
+//[MSetColorForeground]
+"&Текст:"
+//[MSetColorBackground]
+"&Фон:"
+//[MSetColorForegroundDefault]
+"По подразбиране"
+//[MSetColorBackgroundDefault]
+"По подразбиране"
+//[MSetColorForeIndex]
+"AA    ##"
+//[MSetColorForeAARRGGBB]
+"AARRGGBB"
+//[MSetColorForeDefault]
+"AA"
+//[MSetColorFore256]
+"&256…"
+//[MSetColorForeRGB]
+"&RGB…"
+//[MSetColorBackIndex]
+"AA    ##"
+//[MSetColorBackAARRGGBB]
+"AARRGGBB"
+//[MSetColorBackDefault]
+"AA"
+//[MSetColorBack256]
+"2&56…"
+//[MSetColorBackRGB]
+"R&GB…"
+//[MSetColorStyle]
+"Стил:"
+//[MSetColorStyleInherit]
+"&Наследяване"
+//[MSetColorStyleBold]
+"&Удебелен"
+//[MSetColorStyleItalic]
+"&Курсив"
+//[MSetColorStyleOverline]
+"&Надчертан"
+//[MSetColorStyleStrikeout]
+"&Зачертан"
+//[MSetColorStyleFaint]
+"&Блед"
+//[MSetColorStyleBlink]
+"&Мигащ"
+//[MSetColorStyleInverse]
+"Обърнат"
+//[MSetColorStyleInvisible]
+"Невидим"
+//[MSetColorStyleUnderline]
+"&Подчертаване:"
+//[MSetColorStyleUnderlineNone]
+"Не"
+//[MSetColorStyleUnderlineSingle]
+"Единично"
+//[MSetColorStyleUnderlineDouble]
+"Двойно"
+//[MSetColorStyleUnderlineCurly]
+"Вълнообразно"
+//[MSetColorStyleUnderlineDotted]
+"Точково"
+//[MSetColorStyleUnderlineDashed]
+"Пунктирано"
+//[MSetColorSample]
+"Текст Текст Текст Текст Текст Текст Текст"
+//[MSetColorVTHintInfo]
+"Разширените цветове и стилове изискват VT изобразяване."
+//[MSetColorVTHintSupported]
+"Натиснете \"Включи VT\" по-долу, за да го включите."
+//[MSetColorVTHintNotSupported]
+"Системата ви не го поддържа."
+//[MSetColorSystemDialog]
+"Системни"
+//[MSetColorSet]
+"Задай"
+//[MSetColorEnableVT]
+"Включи VT"
+//[MSetColorCancel]
+"Отказ"
+//[MColorsPalette]
+"Палитра"
+//[MColorsClassicPalette]
+"Класическа палитра"
+//[MSetConfirmTitle]
+"Потвърждения"
+//[MSetConfirmCopy]
+"&Копиране"
+//[MSetConfirmMove]
+"&Преместване"
+//[MSetConfirmRO]
+"П&резаписване и изтриване на файлове само за четене"
+//[MSetConfirmDrag]
+"&Влачене и пускане"
+//[MSetConfirmDelete]
+"&Изтриване"
+//[MSetConfirmDeleteFolders]
+"Изтриване на непразни &папки"
+//[MSetConfirmEsc]
+"П&рекъсване на операция"
+//[MSetConfirmRemoveConnection]
+"Изключване на &мрежово устройство"
+//[MSetConfirmRemoveSUBST]
+"Изтриване на &SUBST диск"
+//[MSetConfirmDetachVHD]
+"Откачане на &виртуален диск"
+//[MSetConfirmRemoveHotPlug]
+"Премахване на &сменяемо устройство"
+//[MSetConfirmAllowReedit]
+"Презареждане на &редактиран файл"
+//[MSetConfirmHistoryClear]
+"Изчистване на &историята"
+//[MSetConfirmExit]
+"И&зход"
+//[MPluginsManagerSettingsTitle]
+"Настройки на диспечера на модули"
+//[MPluginsManagerOEMPluginsSupport]
+"Поддръжка на &OEM модули"
+//[MPluginsManagerScanSymlinks]
+"Обхождане на си&мволни връзки"
+//[MPluginsManagerOFP]
+"Обработка на &файлове"
+//[MPluginsManagerStdAssoc]
+"Показване на стандартната &асоциация"
+//[MPluginsManagerEvenOne]
+"&Дори ако е намерен само един модул"
+//[MPluginsManagerSFL]
+"&Резултати от търсене (SetFindList)"
+//[MPluginsManagerPF]
+"Обработка на &префикси"
+//[MPluginConfirmationTitle]
+"Избор на модул"
+//[MMenuPluginStdAssociation]
+"Стандартна асоциация"
+//[MFindFolderTitle]
+"Търсене на папка"
+//[MFolderTreeF1]
+"Помощ"
+//[MFolderTreeF2]
+"Обнови"
+//[MFolderTreeF3]
+""
+//[MFolderTreeF4]
+""
+//[MFolderTreeF5]
+"Мащаб"
+//[MFolderTreeF6]
+""
+//[MFolderTreeF7]
+""
+//[MFolderTreeF8]
+""
+//[MFolderTreeF9]
+""
+//[MFolderTreeF10]
+"Изход"
+//[MFolderTreeF11]
+""
+//[MFolderTreeF12]
+""
+//[MFolderTreeShiftF1]
+""
+//[MFolderTreeShiftF2]
+""
+//[MFolderTreeShiftF3]
+""
+//[MFolderTreeShiftF4]
+""
+//[MFolderTreeShiftF5]
+""
+//[MFolderTreeShiftF6]
+""
+//[MFolderTreeShiftF7]
+""
+//[MFolderTreeShiftF8]
+""
+//[MFolderTreeShiftF9]
+""
+//[MFolderTreeShiftF10]
+""
+//[MFolderTreeShiftF11]
+""
+//[MFolderTreeShiftF12]
+""
+//[MFolderTreeAltF1]
+""
+//[MFolderTreeAltF2]
+""
+//[MFolderTreeAltF3]
+""
+//[MFolderTreeAltF4]
+""
+//[MFolderTreeAltF5]
+""
+//[MFolderTreeAltF6]
+""
+//[MFolderTreeAltF7]
+""
+//[MFolderTreeAltF8]
+""
+//[MFolderTreeAltF9]
+"Видео"
+//[MFolderTreeAltF10]
+""
+//[MFolderTreeAltF11]
+""
+//[MFolderTreeAltF12]
+""
+//[MFolderTreeCtrlF1]
+""
+//[MFolderTreeCtrlF2]
+""
+//[MFolderTreeCtrlF3]
+""
+//[MFolderTreeCtrlF4]
+""
+//[MFolderTreeCtrlF5]
+""
+//[MFolderTreeCtrlF6]
+""
+//[MFolderTreeCtrlF7]
+""
+//[MFolderTreeCtrlF8]
+""
+//[MFolderTreeCtrlF9]
+""
+//[MFolderTreeCtrlF10]
+""
+//[MFolderTreeCtrlF11]
+""
+//[MFolderTreeCtrlF12]
+""
+//[MFolderTreeCtrlShiftF1]
+""
+//[MFolderTreeCtrlShiftF2]
+""
+//[MFolderTreeCtrlShiftF3]
+""
+//[MFolderTreeCtrlShiftF4]
+""
+//[MFolderTreeCtrlShiftF5]
+""
+//[MFolderTreeCtrlShiftF6]
+""
+//[MFolderTreeCtrlShiftF7]
+""
+//[MFolderTreeCtrlShiftF8]
+""
+//[MFolderTreeCtrlShiftF9]
+""
+//[MFolderTreeCtrlShiftF10]
+""
+//[MFolderTreeCtrlShiftF11]
+""
+//[MFolderTreeCtrlShiftF12]
+""
+//[MFolderTreeCtrlAltF1]
+""
+//[MFolderTreeCtrlAltF2]
+""
+//[MFolderTreeCtrlAltF3]
+""
+//[MFolderTreeCtrlAltF4]
+""
+//[MFolderTreeCtrlAltF5]
+""
+//[MFolderTreeCtrlAltF6]
+""
+//[MFolderTreeCtrlAltF7]
+""
+//[MFolderTreeCtrlAltF8]
+""
+//[MFolderTreeCtrlAltF9]
+""
+//[MFolderTreeCtrlAltF10]
+""
+//[MFolderTreeCtrlAltF11]
+""
+//[MFolderTreeCtrlAltF12]
+""
+//[MFolderTreeAltShiftF1]
+""
+//[MFolderTreeAltShiftF2]
+""
+//[MFolderTreeAltShiftF3]
+""
+//[MFolderTreeAltShiftF4]
+""
+//[MFolderTreeAltShiftF5]
+""
+//[MFolderTreeAltShiftF6]
+""
+//[MFolderTreeAltShiftF7]
+""
+//[MFolderTreeAltShiftF8]
+""
+//[MFolderTreeAltShiftF9]
+""
+//[MFolderTreeAltShiftF10]
+""
+//[MFolderTreeAltShiftF11]
+""
+//[MFolderTreeAltShiftF12]
+""
+//[MFolderTreeCtrlAltShiftF1]
+""
+//[MFolderTreeCtrlAltShiftF2]
+""
+//[MFolderTreeCtrlAltShiftF3]
+""
+//[MFolderTreeCtrlAltShiftF4]
+""
+//[MFolderTreeCtrlAltShiftF5]
+""
+//[MFolderTreeCtrlAltShiftF6]
+""
+//[MFolderTreeCtrlAltShiftF7]
+""
+//[MFolderTreeCtrlAltShiftF8]
+""
+//[MFolderTreeCtrlAltShiftF9]
+""
+//[MFolderTreeCtrlAltShiftF10]
+""
+//[MFolderTreeCtrlAltShiftF11]
+""
+//[MFolderTreeCtrlAltShiftF12]
+""
+//[MTreeTitle]
+"Дърво"
+//[MCannotSaveTree]
+"Дървото на папките не може да бъде запазено във файл"
+//[MReadingTree]
+"Четене на дървото на папките"
+//[MUserMenuTitle]
+"Потребителско меню"
+//[MChooseMenuType]
+"Изберете вида потребителско меню за редактиране"
+//[MChooseMenuMain]
+"&Главно"
+//[MChooseMenuLocal]
+"&Локално"
+//[MMainMenuTitle]
+"Главно меню"
+//[MMainMenuUser]
+"Потребителско"
+//[MMainMenuGlobal]
+"Глобално"
+//[MLocalMenuTitle]
+"Локално меню"
+//[MAskDeleteMenuItem]
+"Искате ли да изтриете елемента от менюто"
+//[MAskDeleteSubMenuItem]
+"Искате ли да изтриете подменюто"
+//[MUserMenuInvalidInputLabel]
+"Неправилен формат на етикета в потребителското меню"
+//[MUserMenuInvalidInputHotKey]
+"Неправилен формат на бързия клавиш"
+//[MEditMenuTitle]
+"Редактиране на потребителското меню"
+//[MEditMenuHotKey]
+"&Бърз клавиш:"
+//[MEditMenuLabel]
+"&Етикет:"
+//[MEditMenuCommands]
+"&Команди:"
+//[MAskInsertMenuOrCommand]
+"Искате ли да вмъкнете нова команда или ново меню?"
+//[MMenuInsertCommand]
+"Вмъкни команда"
+//[MMenuInsertMenu]
+"Вмъкни меню"
+//[MEditSubmenuTitle]
+"Редактиране на етикета на подменюто"
+//[MEditSubmenuHotKey]
+"&Бърз клавиш:"
+//[MEditSubmenuLabel]
+"&Етикет:"
+//[MEditMenuConfirmation]
+"Да се запазят ли промените?"
+//[MEditMenuError]
+"Менюто не може да бъде обновено"
+//[MViewerTitle]
+"Преглед"
+//[MViewerCannotOpenFile]
+"Файлът не може да бъде отворен"
+//[MViewerStatusCol]
+"Кол"
+//[MViewSearchingFor]
+"Търсене на"
+//[MViewSearchingHex]
+"Търсене на байтове"
+//[MViewSearchCannotFind]
+"Низът не е намерен"
+//[MViewSearchCannotFindHex]
+"Байтовете не са намерени"
+//[MViewSearchEod]
+"Достигнат е краят на документа"
+//[MViewSearchFromBegin]
+"Продължаване от началото на документа?"
+//[MViewSearchBod]
+"Достигнато е началото на документа"
+//[MViewSearchFromEnd]
+"Продължаване от края на документа?"
+//[MViewSearchCycle]
+"Целият документ е претърсен"
+//[MViewSearchRepeat]
+"Повторение на търсенето в документа?"
+//[MPrintTitle]
+"Печат"
+//[MPrintTo]
+"Отпечатване на {0} на"
+//[MPrintFilesTo]
+"Отпечатване на {0} файла на"
+//[MPrintingFile]
+"Отпечатване на {0}"
+//[MCannotEnumeratePrinters]
+"Списъкът с наличните принтери не може да бъде получен"
+//[MCannotOpenPrinter]
+"Принтерът не може да бъде отворен"
+//[MCannotPrint]
+"Не може да се отпечата"
+//[MDescribeFiles]
+"Описание на файл"
+//[MEnterDescription]
+"Въведете описание за"
+//[MReadingDiz]
+"Четене на описанията на файловете"
+//[MCannotUpdateDiz]
+"Описанията на файловете не могат да бъдат обновени"
+//[MCfgDizTitle]
+"Описания на файлове"
+//[MCfgDizListNames]
+"Имена на &списъците с описания, разделени със запетаи:"
+//[MCfgDizSetHidden]
+"Задаване на атрибут \"&Скрит\" на новите списъци с описания"
+//[MCfgDizROUpdate]
+"Обновяване на файловете с описания само за &четене"
+//[MCfgDizStartPos]
+"&Позиция на новите описания в реда"
+//[MCfgDizNotUpdate]
+"&Без обновяване на описанията"
+//[MCfgDizUpdateIfDisplayed]
+"Обновяване, ако се &показват"
+//[MCfgDizAlwaysUpdate]
+"&Винаги обновявай"
+//[MCfgDizAnsiByDefault]
+"ANS&I кодова таблица по подразбиране"
+//[MCfgDizSaveInUTF]
+"Запазване в UTF-&8"
+//[MReadingTitleFiles]
+"Обновяване на панелите"
+//[MReadingFiles]
+"Четене: {0} файла"
+//[MOperationNotCompleted]
+"Операцията не е завършена"
+//[MEditPanelModes]
+"Редактиране на режимите на панелите"
+//[MEditPanelModeName]
+"&Име"
+//[MEditPanelModeTypes]
+"&Типове колони"
+//[MEditPanelModeWidths]
+"&Ширини на колоните"
+//[MEditPanelModeStatusTypes]
+"Типове колони в &лентата на състоянието"
+//[MEditPanelModeStatusWidths]
+"Ширини на колоните в л&ентата на състоянието"
+//[MEditPanelModeFullscreen]
+"&Цял екран"
+//[MEditPanelModeAlignExtensions]
+"Подравняване на &разширенията на файловете"
+//[MEditPanelModeAlignFolderExtensions]
+"Подравняване на разширенията на &папките"
+//[MEditPanelModeFoldersUpperCase]
+"Папките с &главни букви"
+//[MEditPanelModeFilesLowerCase]
+"Файловете с &малки букви"
+//[MEditPanelModeUpperToLowerCase]
+"Имената с главни букви – с ма&лки"
+//[MSetFolderInfoTitle]
+"Файлове с описания на папки"
+//[MSetFolderInfoNames]
+"Въведете имена на файлове, разделени със запетаи (разрешени са шаблони)"
+//[MScreensTitle]
+"Екрани"
+//[MScreensPanels]
+"Панели"
+//[MScreensView]
+"Преглед"
+//[MScreensEdit]
+"Редакция"
+//[MAskApplyCommandTitle]
+"Прилагане на команда"
+//[MAskApplyCommand]
+"Въведете команда за обработка на избраните файлове"
+//[MPluginConfigTitle]
+"Конфигурация на модулите"
+//[MPluginCommandsMenuTitle]
+"Команди на модулите"
+//[MPreparingList]
+"Подготовка на списъка с файлове"
+//[MLangTitle]
+"Основен език"
+//[MHelpLangTitle]
+"Език на помощта"
+//[MDefineMacroTitle]
+"Задаване на макрос"
+//[MDefineMacro]
+"Натиснете желания клавиш"
+//[MMacroReDefinedKey]
+"Клавишът за макрос '{0}' вече е зададен."
+//[MMacroDeleteKey]
+"Клавишът за макрос '{0}' ще бъде премахнат."
+//[MMacroCommonReDefinedKey]
+"Общият клавиш за макрос '{0}' вече е зададен."
+//[MMacroCommonDeleteKey]
+"Общият клавиш за макрос '{0}' ще бъде премахнат."
+//[MMacroSequence]
+"Последователност:"
+//[MMacroReDefinedKey2]
+"Да се предефинира ли?"
+//[MMacroDeleteKey2]
+"Да се изтрие ли?"
+//[MMacroEditKey]
+"&Промени"
+//[MMacroSettingsTitle]
+"Настройки на макроса за '{0}'"
+//[MMacroSettingsSequence]
+"&Последователност:"
+//[MMacroSettingsDescription]
+"&Описание:"
+//[MMacroSettingsEnableOutput]
+"Ра&зрешаване на извеждане на екрана по време на макроса"
+//[MMacroSettingsRunAfterStart]
+"Изпълнение след &стартиране на gm"
+//[MMacroSettingsActivePanel]
+"&Активен панел"
+//[MMacroSettingsPassivePanel]
+"&Пасивен панел"
+//[MMacroSettingsPluginPanel]
+"Панел на м&одул"
+//[MMacroSettingsFolders]
+"Изпълнение за &папки"
+//[MMacroSettingsSelectionPresent]
+"Има &маркиране"
+//[MMacroSettingsCommandLine]
+"Празен &команден ред"
+//[MMacroSettingsSelectionBlockPresent]
+"Има маркиран &блок"
+//[MMacroPluginLuamacroNotLoaded]
+"Модулът LuaMacro не е зареден"
+//[MMacroRecordingIsDisabled]
+"Записът на макроси е забранен"
+//[MCannotSaveFile]
+"Файлът не може да бъде запазен"
+//[MTextSavedToTemp]
+"Редактираният текст е запазен в"
+//[MPluginHotKeyTitle]
+"Задаване на бърз клавиш за модул"
+//[MPluginHotKey]
+"Въведете бърз клавиш (буква или цифра)"
+//[MPluginInformation]
+"Информация за модула"
+//[MPluginModuleTitle]
+"&Заглавие:"
+//[MPluginDescription]
+"&Описание:"
+//[MPluginAuthor]
+"&Автор:"
+//[MPluginVersion]
+"&Версия:"
+//[MPluginModulePath]
+"Път до &модула:"
+//[MPluginUUID]
+"&UUID на модула:"
+//[MPluginItemUUID]
+"UUID на &елемента:"
+//[MPluginPrefix]
+"&Префикс на модула:"
+//[MExceptionDialogTitle]
+"Опа"
+//[MExceptionDialogMessage1]
+"Нещо се обърка."
+//[MExceptionDialogMessage2]
+"Моля, изпратете доклада за грешката на разработчиците:"
+//[MExceptionDialogClipboard]
+"Клипборд"
+//[MExcTerminate]
+"&Прекрати gm"
+//[MExcUnload]
+"&Разтовари модула"
+//[MExcContinue]
+"Продължи"
+//[MExcFullDump]
+"Пълен дъмп"
+//[MNetUserName]
+"Потребителско име"
+//[MNetUserPassword]
+"Парола"
+//[MReadFolderError]
+"Съдържанието на папката не може да бъде прочетено"
+//[MPlgBadVers]
+"Този модул изисква по-нова версия на gm"
+//[MPlgRequired]
+"Изисква се версия на gm {0},"
+//[MPlgRequired2]
+"текущата версия на gm е {0}."
+//[MPlgLoadPluginError]
+"Грешка при зареждане на модула"
+//[MHelpTitle]
+"Помощ"
+//[MHelpActivatorURL]
+"Тази препратка стартира външно приложение"
+//[MHelpActivatorFormat]
+"с параметър:"
+//[MHelpActivatorQ]
+"Искате ли да го стартирате?"
+//[MCannotOpenHelp]
+"Файлът не може да бъде отворен"
+//[MHelpTopicNotFound]
+"Търсената тема в помощта не е намерена:"
+//[MPluginsHelpTitle]
+"Помощ за модулите"
+//[MDocumentsHelpTitle]
+"Помощ за документите"
+//[MHelpSearchCannotFind]
+"Низът не е намерен"
+//[MHelpF1]
+"Помощ"
+//[MHelpF2]
+""
+//[MHelpF3]
+""
+//[MHelpF4]
+""
+//[MHelpF5]
+"Мащаб"
+//[MHelpF6]
+""
+//[MHelpF7]
+"Търси"
+//[MHelpF8]
+""
+//[MHelpF9]
+""
+//[MHelpF10]
+"Изход"
+//[MHelpF11]
+""
+//[MHelpF12]
+""
+//[MHelpShiftF1]
+"Индекс"
+//[MHelpShiftF2]
+"Модул"
+//[MHelpShiftF3]
+""
+//[MHelpShiftF4]
+""
+//[MHelpShiftF5]
+""
+//[MHelpShiftF6]
+""
+//[MHelpShiftF7]
+""
+//[MHelpShiftF8]
+""
+//[MHelpShiftF9]
+""
+//[MHelpShiftF10]
+""
+//[MHelpShiftF11]
+""
+//[MHelpShiftF12]
+""
+//[MHelpAltF1]
+"Предш"
+//[MHelpAltF2]
+""
+//[MHelpAltF3]
+""
+//[MHelpAltF4]
+""
+//[MHelpAltF5]
+""
+//[MHelpAltF6]
+""
+//[MHelpAltF7]
+""
+//[MHelpAltF8]
+""
+//[MHelpAltF9]
+"Видео"
+//[MHelpAltF10]
+""
+//[MHelpAltF11]
+""
+//[MHelpAltF12]
+""
+//[MHelpCtrlF1]
+""
+//[MHelpCtrlF2]
+""
+//[MHelpCtrlF3]
+""
+//[MHelpCtrlF4]
+""
+//[MHelpCtrlF5]
+""
+//[MHelpCtrlF6]
+""
+//[MHelpCtrlF7]
+""
+//[MHelpCtrlF8]
+""
+//[MHelpCtrlF9]
+""
+//[MHelpCtrlF10]
+""
+//[MHelpCtrlF11]
+""
+//[MHelpCtrlF12]
+""
+//[MHelpAltShiftF1]
+""
+//[MHelpAltShiftF2]
+""
+//[MHelpAltShiftF3]
+""
+//[MHelpAltShiftF4]
+""
+//[MHelpAltShiftF5]
+""
+//[MHelpAltShiftF6]
+""
+//[MHelpAltShiftF7]
+""
+//[MHelpAltShiftF8]
+""
+//[MHelpAltShiftF9]
+""
+//[MHelpAltShiftF10]
+""
+//[MHelpAltShiftF11]
+""
+//[MHelpAltShiftF12]
+""
+//[MHelpCtrlShiftF1]
+""
+//[MHelpCtrlShiftF2]
+""
+//[MHelpCtrlShiftF3]
+""
+//[MHelpCtrlShiftF4]
+""
+//[MHelpCtrlShiftF5]
+""
+//[MHelpCtrlShiftF6]
+""
+//[MHelpCtrlShiftF7]
+""
+//[MHelpCtrlShiftF8]
+""
+//[MHelpCtrlShiftF9]
+""
+//[MHelpCtrlShiftF10]
+""
+//[MHelpCtrlShiftF11]
+""
+//[MHelpCtrlShiftF12]
+""
+//[MHelpCtrlAltF1]
+""
+//[MHelpCtrlAltF2]
+""
+//[MHelpCtrlAltF3]
+""
+//[MHelpCtrlAltF4]
+""
+//[MHelpCtrlAltF5]
+""
+//[MHelpCtrlAltF6]
+""
+//[MHelpCtrlAltF7]
+""
+//[MHelpCtrlAltF8]
+""
+//[MHelpCtrlAltF9]
+""
+//[MHelpCtrlAltF10]
+""
+//[MHelpCtrlAltF11]
+""
+//[MHelpCtrlAltF12]
+""
+//[MHelpCtrlAltShiftF1]
+""
+//[MHelpCtrlAltShiftF2]
+""
+//[MHelpCtrlAltShiftF3]
+""
+//[MHelpCtrlAltShiftF4]
+""
+//[MHelpCtrlAltShiftF5]
+""
+//[MHelpCtrlAltShiftF6]
+""
+//[MHelpCtrlAltShiftF7]
+""
+//[MHelpCtrlAltShiftF8]
+""
+//[MHelpCtrlAltShiftF9]
+""
+//[MHelpCtrlAltShiftF10]
+""
+//[MHelpCtrlAltShiftF11]
+""
+//[MHelpCtrlAltShiftF12]
+""
+//[MInfoF1]
+"Помощ"
+//[MInfoF2]
+"Пренос"
+//[MInfoF3]
+"ПрОпис"
+//[MInfoF4]
+"РдОпис"
+//[MInfoF5]
+""
+//[MInfoF6]
+""
+//[MInfoF7]
+"Търси"
+//[MInfoF8]
+"ANSI"
+//[MInfoF9]
+"КонфМн"
+//[MInfoF10]
+"Изход"
+//[MInfoF11]
+"Модул"
+//[MInfoF12]
+"Екран"
+//[MInfoShiftF1]
+""
+//[MInfoShiftF2]
+"ПрДуми"
+//[MInfoShiftF3]
+""
+//[MInfoShiftF4]
+""
+//[MInfoShiftF5]
+""
+//[MInfoShiftF6]
+""
+//[MInfoShiftF7]
+"Следв"
+//[MInfoShiftF8]
+"КодТбл"
+//[MInfoShiftF9]
+"Запиш"
+//[MInfoShiftF10]
+"Послед"
+//[MInfoShiftF11]
+""
+//[MInfoShiftF12]
+""
+//[MInfoAltF1]
+"Ляв"
+//[MInfoAltF2]
+"Десен"
+//[MInfoAltF3]
+""
+//[MInfoAltF4]
+""
+//[MInfoAltF5]
+""
+//[MInfoAltF6]
+""
+//[MInfoAltF7]
+"Търси"
+//[MInfoAltF8]
+"Отиди"
+//[MInfoAltF9]
+"Видео"
+//[MInfoAltF10]
+"Дърво"
+//[MInfoAltF11]
+"ИстПрг"
+//[MInfoAltF12]
+"ИстПап"
+//[MInfoCtrlF1]
+"Ляв"
+//[MInfoCtrlF2]
+"Десен"
+//[MInfoCtrlF3]
+""
+//[MInfoCtrlF4]
+""
+//[MInfoCtrlF5]
+""
+//[MInfoCtrlF6]
+""
+//[MInfoCtrlF7]
+""
+//[MInfoCtrlF8]
+""
+//[MInfoCtrlF9]
+""
+//[MInfoCtrlF10]
+""
+//[MInfoCtrlF11]
+""
+//[MInfoCtrlF12]
+"Режим"
+//[MInfoAltShiftF1]
+""
+//[MInfoAltShiftF2]
+""
+//[MInfoAltShiftF3]
+""
+//[MInfoAltShiftF4]
+""
+//[MInfoAltShiftF5]
+""
+//[MInfoAltShiftF6]
+""
+//[MInfoAltShiftF7]
+""
+//[MInfoAltShiftF8]
+""
+//[MInfoAltShiftF9]
+""
+//[MInfoAltShiftF10]
+""
+//[MInfoAltShiftF11]
+""
+//[MInfoAltShiftF12]
+""
+//[MInfoCtrlShiftF1]
+""
+//[MInfoCtrlShiftF2]
+""
+//[MInfoCtrlShiftF3]
+""
+//[MInfoCtrlShiftF4]
+""
+//[MInfoCtrlShiftF5]
+""
+//[MInfoCtrlShiftF6]
+""
+//[MInfoCtrlShiftF7]
+""
+//[MInfoCtrlShiftF8]
+""
+//[MInfoCtrlShiftF9]
+""
+//[MInfoCtrlShiftF10]
+""
+//[MInfoCtrlShiftF11]
+""
+//[MInfoCtrlShiftF12]
+""
+//[MInfoCtrlAltF1]
+""
+//[MInfoCtrlAltF2]
+""
+//[MInfoCtrlAltF3]
+""
+//[MInfoCtrlAltF4]
+""
+//[MInfoCtrlAltF5]
+""
+//[MInfoCtrlAltF6]
+""
+//[MInfoCtrlAltF7]
+""
+//[MInfoCtrlAltF8]
+""
+//[MInfoCtrlAltF9]
+""
+//[MInfoCtrlAltF10]
+""
+//[MInfoCtrlAltF11]
+""
+//[MInfoCtrlAltF12]
+""
+//[MInfoCtrlAltShiftF1]
+""
+//[MInfoCtrlAltShiftF2]
+""
+//[MInfoCtrlAltShiftF3]
+""
+//[MInfoCtrlAltShiftF4]
+""
+//[MInfoCtrlAltShiftF5]
+""
+//[MInfoCtrlAltShiftF6]
+""
+//[MInfoCtrlAltShiftF7]
+""
+//[MInfoCtrlAltShiftF8]
+""
+//[MInfoCtrlAltShiftF9]
+""
+//[MInfoCtrlAltShiftF10]
+""
+//[MInfoCtrlAltShiftF11]
+""
+//[MInfoCtrlAltShiftF12]
+""
+//[MQViewF1]
+"Помощ"
+//[MQViewF2]
+"Пренос"
+//[MQViewF3]
+"Преглд"
+//[MQViewF4]
+"Шестн"
+//[MQViewF5]
+""
+//[MQViewF6]
+""
+//[MQViewF7]
+"Търси"
+//[MQViewF8]
+"ANSI"
+//[MQViewF9]
+"КонфМн"
+//[MQViewF10]
+"Изход"
+//[MQViewF11]
+"Модул"
+//[MQViewF12]
+"Екран"
+//[MQViewShiftF1]
+""
+//[MQViewShiftF2]
+"ПрДуми"
+//[MQViewShiftF3]
+""
+//[MQViewShiftF4]
+""
+//[MQViewShiftF5]
+""
+//[MQViewShiftF6]
+""
+//[MQViewShiftF7]
+"Следв"
+//[MQViewShiftF8]
+"КодТбл"
+//[MQViewShiftF9]
+"Запиш"
+//[MQViewShiftF10]
+"Послед"
+//[MQViewShiftF11]
+""
+//[MQViewShiftF12]
+""
+//[MQViewAltF1]
+"Ляв"
+//[MQViewAltF2]
+"Десен"
+//[MQViewAltF3]
+""
+//[MQViewAltF4]
+""
+//[MQViewAltF5]
+""
+//[MQViewAltF6]
+""
+//[MQViewAltF7]
+"Търси"
+//[MQViewAltF8]
+"Отиди"
+//[MQViewAltF9]
+"Видео"
+//[MQViewAltF10]
+"Дърво"
+//[MQViewAltF11]
+"ИстПрг"
+//[MQViewAltF12]
+"ИстПап"
+//[MQViewCtrlF1]
+"Ляв"
+//[MQViewCtrlF2]
+"Десен"
+//[MQViewCtrlF3]
+""
+//[MQViewCtrlF4]
+""
+//[MQViewCtrlF5]
+""
+//[MQViewCtrlF6]
+""
+//[MQViewCtrlF7]
+""
+//[MQViewCtrlF8]
+""
+//[MQViewCtrlF9]
+""
+//[MQViewCtrlF10]
+""
+//[MQViewCtrlF11]
+""
+//[MQViewCtrlF12]
+""
+//[MQViewAltShiftF1]
+""
+//[MQViewAltShiftF2]
+""
+//[MQViewAltShiftF3]
+""
+//[MQViewAltShiftF4]
+""
+//[MQViewAltShiftF5]
+""
+//[MQViewAltShiftF6]
+""
+//[MQViewAltShiftF7]
+""
+//[MQViewAltShiftF8]
+""
+//[MQViewAltShiftF9]
+""
+//[MQViewAltShiftF10]
+""
+//[MQViewAltShiftF11]
+""
+//[MQViewAltShiftF12]
+""
+//[MQViewCtrlShiftF1]
+""
+//[MQViewCtrlShiftF2]
+""
+//[MQViewCtrlShiftF3]
+""
+//[MQViewCtrlShiftF4]
+""
+//[MQViewCtrlShiftF5]
+""
+//[MQViewCtrlShiftF6]
+""
+//[MQViewCtrlShiftF7]
+""
+//[MQViewCtrlShiftF8]
+""
+//[MQViewCtrlShiftF9]
+""
+//[MQViewCtrlShiftF10]
+""
+//[MQViewCtrlShiftF11]
+""
+//[MQViewCtrlShiftF12]
+""
+//[MQViewCtrlAltF1]
+""
+//[MQViewCtrlAltF2]
+""
+//[MQViewCtrlAltF3]
+""
+//[MQViewCtrlAltF4]
+""
+//[MQViewCtrlAltF5]
+""
+//[MQViewCtrlAltF6]
+""
+//[MQViewCtrlAltF7]
+""
+//[MQViewCtrlAltF8]
+""
+//[MQViewCtrlAltF9]
+""
+//[MQViewCtrlAltF10]
+""
+//[MQViewCtrlAltF11]
+""
+//[MQViewCtrlAltF12]
+""
+//[MQViewCtrlAltShiftF1]
+""
+//[MQViewCtrlAltShiftF2]
+""
+//[MQViewCtrlAltShiftF3]
+""
+//[MQViewCtrlAltShiftF4]
+""
+//[MQViewCtrlAltShiftF5]
+""
+//[MQViewCtrlAltShiftF6]
+""
+//[MQViewCtrlAltShiftF7]
+""
+//[MQViewCtrlAltShiftF8]
+""
+//[MQViewCtrlAltShiftF9]
+""
+//[MQViewCtrlAltShiftF10]
+""
+//[MQViewCtrlAltShiftF11]
+""
+//[MQViewCtrlAltShiftF12]
+""
+//[MKBTreeF1]
+"Помощ"
+//[MKBTreeF2]
+"ПотрМн"
+//[MKBTreeF3]
+""
+//[MKBTreeF4]
+"Атриб"
+//[MKBTreeF5]
+"Копир"
+//[MKBTreeF6]
+"ПреимМ"
+//[MKBTreeF7]
+"НПапка"
+//[MKBTreeF8]
+"Изтрий"
+//[MKBTreeF9]
+"КонфМн"
+//[MKBTreeF10]
+"Изход"
+//[MKBTreeF11]
+"Модул"
+//[MKBTreeF12]
+"Екран"
+//[MKBTreeShiftF1]
+""
+//[MKBTreeShiftF2]
+""
+//[MKBTreeShiftF3]
+""
+//[MKBTreeShiftF4]
+""
+//[MKBTreeShiftF5]
+"Копир"
+//[MKBTreeShiftF6]
+"Преим"
+//[MKBTreeShiftF7]
+""
+//[MKBTreeShiftF8]
+""
+//[MKBTreeShiftF9]
+"Запиш"
+//[MKBTreeShiftF10]
+"Послед"
+//[MKBTreeShiftF11]
+"Група"
+//[MKBTreeShiftF12]
+"ИзбГор"
+//[MKBTreeAltF1]
+"Ляв"
+//[MKBTreeAltF2]
+"Десен"
+//[MKBTreeAltF3]
+""
+//[MKBTreeAltF4]
+""
+//[MKBTreeAltF5]
+""
+//[MKBTreeAltF6]
+""
+//[MKBTreeAltF7]
+"Търси"
+//[MKBTreeAltF8]
+"Истор"
+//[MKBTreeAltF9]
+"Видео"
+//[MKBTreeAltF10]
+"Дърво"
+//[MKBTreeAltF11]
+"ИстПрг"
+//[MKBTreeAltF12]
+"ИстПап"
+//[MKBTreeCtrlF1]
+"Ляв"
+//[MKBTreeCtrlF2]
+"Десен"
+//[MKBTreeCtrlF3]
+""
+//[MKBTreeCtrlF4]
+""
+//[MKBTreeCtrlF5]
+""
+//[MKBTreeCtrlF6]
+""
+//[MKBTreeCtrlF7]
+""
+//[MKBTreeCtrlF8]
+""
+//[MKBTreeCtrlF9]
+""
+//[MKBTreeCtrlF10]
+""
+//[MKBTreeCtrlF11]
+""
+//[MKBTreeCtrlF12]
+""
+//[MKBTreeAltShiftF1]
+""
+//[MKBTreeAltShiftF2]
+""
+//[MKBTreeAltShiftF3]
+""
+//[MKBTreeAltShiftF4]
+""
+//[MKBTreeAltShiftF5]
+""
+//[MKBTreeAltShiftF6]
+""
+//[MKBTreeAltShiftF7]
+""
+//[MKBTreeAltShiftF8]
+""
+//[MKBTreeAltShiftF9]
+""
+//[MKBTreeAltShiftF10]
+""
+//[MKBTreeAltShiftF11]
+""
+//[MKBTreeAltShiftF12]
+""
+//[MKBTreeCtrlShiftF1]
+""
+//[MKBTreeCtrlShiftF2]
+""
+//[MKBTreeCtrlShiftF3]
+""
+//[MKBTreeCtrlShiftF4]
+""
+//[MKBTreeCtrlShiftF5]
+""
+//[MKBTreeCtrlShiftF6]
+""
+//[MKBTreeCtrlShiftF7]
+""
+//[MKBTreeCtrlShiftF8]
+""
+//[MKBTreeCtrlShiftF9]
+""
+//[MKBTreeCtrlShiftF10]
+""
+//[MKBTreeCtrlShiftF11]
+""
+//[MKBTreeCtrlShiftF12]
+""
+//[MKBTreeCtrlAltF1]
+""
+//[MKBTreeCtrlAltF2]
+""
+//[MKBTreeCtrlAltF3]
+""
+//[MKBTreeCtrlAltF4]
+""
+//[MKBTreeCtrlAltF5]
+""
+//[MKBTreeCtrlAltF6]
+""
+//[MKBTreeCtrlAltF7]
+""
+//[MKBTreeCtrlAltF8]
+""
+//[MKBTreeCtrlAltF9]
+""
+//[MKBTreeCtrlAltF10]
+""
+//[MKBTreeCtrlAltF11]
+""
+//[MKBTreeCtrlAltF12]
+""
+//[MKBTreeCtrlAltShiftF1]
+""
+//[MKBTreeCtrlAltShiftF2]
+""
+//[MKBTreeCtrlAltShiftF3]
+""
+//[MKBTreeCtrlAltShiftF4]
+""
+//[MKBTreeCtrlAltShiftF5]
+""
+//[MKBTreeCtrlAltShiftF6]
+""
+//[MKBTreeCtrlAltShiftF7]
+""
+//[MKBTreeCtrlAltShiftF8]
+""
+//[MKBTreeCtrlAltShiftF9]
+""
+//[MKBTreeCtrlAltShiftF10]
+""
+//[MKBTreeCtrlAltShiftF11]
+""
+//[MKBTreeCtrlAltShiftF12]
+""
+//[MCopyTimeInfoElapsed]
+"Време:"
+//[MCopyTimeInfoRemaining]
+"Остава:"
+//[MCopyTimeInfoSpeed]
+"B/s"
+//[MKeyESCWasPressed]
+"Операцията беше прекъсната"
+//[MDoYouWantToCancel]
+"Наистина ли искате да я отмените?"
+//[MDoYouWantToContinue]
+"Продължаване на работата?"
+//[MCheckingFileInPlugin]
+"Файлът се проверява от модула"
+//[MDialogType]
+"Диалог"
+//[MHelpType]
+"Помощ"
+//[MFolderTreeType]
+"ДървоПапки"
+//[MVMenuType]
+"Меню"
+//[MIncorrectMask]
+"Файловата маска съдържа грешки"
+//[MPanelBracketsForLongName]
+"{}"
+//[MComspecNotFound]
+"Променливата на средата %COMSPEC% не е зададена"
+//[MFileFilterTitle]
+"Филтър"
+//[MFileHilightTitle]
+"Оцветяване на файловете"
+//[MFileFilterName]
+"&Име:"
+//[MFileFilterMatchMask]
+"&Маска:"
+//[MFileFilterSize]
+"Раз&мер:"
+//[MFileFilterSizeFromSign]
+">&="
+//[MFileFilterSizeToSign]
+"&<="
+//[MFileHardLinksCount]
+"Има повече от една твърда &връзка"
+//[MFileFilterDate]
+"Дата&/час:"
+//[MFileFilterWrite]
+"&запис"
+//[MFileFilterCreation]
+"&създаване"
+//[MFileFilterAccess]
+"&достъп"
+//[MFileFilterChange]
+"п&ромяна"
+//[MFileFilterDateRelative]
+"&Относително"
+//[MFileFilterDateAfterSign]
+">="
+//[MFileFilterDateBeforeSign]
+"<="
+//[MFileFilterCurrent]
+"&Текущи"
+//[MFileFilterBlank]
+"&Празни"
+//[MFileFilterAttr]
+"&Атрибути"
+//[MFileFilterAttrChoose]
+"&..."
+//[MFileFilterAttrReadOnly]
+"&Само за четене"
+//[MFileFilterAttrArcive]
+"&Архивен"
+//[MFileFilterAttrHidden]
+"&Скрит"
+//[MFileFilterAttrSystem]
+"Сис&темен"
+//[MFileFilterAttrCompressed]
+"&Компресиран"
+//[MFileFilterAttrEncrypted]
+"&Шифрован"
+//[MFileFilterAttrDirectory]
+"&Папка"
+//[MFileFilterAttrNotIndexed]
+"Не&индексиран"
+//[MFileFilterAttrSparse]
+"&Разреден"
+//[MFileFilterAttrTemporary]
+"&Временен"
+//[MFileFilterAttrReparse]
+"Точка на повторен &анализ"
+//[MFileFilterAttrOffline]
+"&Офлайн"
+//[MFileFilterAttrVirtual]
+"Ви&ртуален"
+//[MFileFilterAttrIntegrityStream]
+"Поток за ц&еластност"
+//[MFileFilterAttrNoScrubData]
+"&Без проверка на данните"
+//[MFileFilterAttrPinned]
+"&Закачен"
+//[MFileFilterAttrUnpinned]
+"Отк&ачен"
+//[MFileFilterAttrRecallOnOpen]
+"Извличане при о&тваряне"
+//[MFileFilterAttrRecallOnDataAccess]
+"Извличане при достъп до &данните"
+//[MFileFilterAttrStrictlySequential]
+"Строго по&следователен"
+//[MFileFilterAttrDevice]
+"Устройство"
+//[MFileFilterReset]
+"&Нулиране"
+//[MFileFilterMakeTransparent]
+"&Прозрачен"
+//[MFileFilterCancel]
+"Отказ"
+//[MBadFileSizeFormat]
+"Полето за размер на файла е попълнено неправилно"
+//[MFarTitleAddonsAdmin]
+"Администратор"
+//[MElevationRequired]
+"Необходимо е администраторско разрешение"
+//[MElevationRequiredPrivileges]
+"Необходими са допълнителни привилегии"
+//[MElevationRequiredProcess]
+"за обработка на този обект:"
+//[MElevationRequiredDelete]
+"за изтриване на този обект:"
+//[MElevationRequiredCopy]
+"за копиране на този обект:"
+//[MElevationRequiredMove]
+"за преместване на този обект:"
+//[MElevationRequiredReplace]
+"за замяна на този обект:"
+//[MElevationRequiredGetAttributes]
+"за получаване на атрибутите на този обект:"
+//[MElevationRequiredSetAttributes]
+"за задаване на атрибутите на този обект:"
+//[MElevationRequiredHardLink]
+"за създаване на тази твърда връзка:"
+//[MElevationRequiredSymLink]
+"за създаване на тази символна връзка:"
+//[MElevationRequiredRecycle]
+"за преместване на този обект в кошчето:"
+//[MElevationRequiredList]
+"за показване на съдържанието на този обект:"
+//[MElevationRequiredSetOwner]
+"за задаване на собственик на този обект:"
+//[MElevationRequiredOpen]
+"за отваряне на този обект:"
+//[MElevationRequiredEncryptFile]
+"за шифроване на този обект:"
+//[MElevationRequiredDecryptFile]
+"за дешифриране на този обект:"
+//[MElevationRequiredSetVolumeLabel]
+"за задаване на етикет на тома:"
+//[MElevationDoForAll]
+"Същото за &всички текущи обекти"
+//[MElevationDoNotAskAgainInTheCurrentSession]
+"Без повторно питане в текущата сесия"
+//[MCompletionHistoryTitle]
+"История"
+//[MCompletionEnvironmentTitle]
+"Среда"
+//[MCompletionFilesTitle]
+"Файлове"
+//[MObjectLockedReason]
+"Обектът е {0} в:"
+//[MObjectLockedReasonPlayed]
+"възпроизвеждан"
+//[MObjectLockedReasonEdited]
+"редактиран"
+//[MObjectLockedReasonOpened]
+"отворен"
+//[MObjectLockedAndMore]
+"и още {0} процеса."
+//[MObjectLockedSwitchTo]
+"Превключи към"
+//[MObjectLockedClose]
+"Затвори файла"
+//[MObjectLockedReasonSessionMismatch]
+"Един или повече процеси работят в друга сесия на Terminal Services."
+//[MObjectLockedReasonCriticalProcess]
+"Един или повече процеси са критични процеси."
+//[MObjectLockedReasonCriticalService]
+"Една или повече услуги са критични услуги."
+//[MObjectLockedReasonDetectedSelf]
+"Файлът е отворен от текущия процес."
+//[MProblemDb]
+"Проблем с базата данни на конфигурацията"
+//[MShowConfigFolders]
+"Показване на папките с конфигурацията"
+//[MBadLanguageFile]
+"Неправилен езиков файл"
+//[MLanguageStringNotFound]
+"Низът {0} не е намерен"
+//[MUnsupportedCodePageSelectedCodepage]
+"Избраната кодова таблица"
+//[MUnsupportedCodePageDoesNotSupport]
+"не поддържа {0}"
+//[MUnsupportedCodePageCharacter]
+"знака"
+//[MUnsupportedCodePageByteSequence]
+"последователността от байтове"
+//[MKeyLaunchMediaSelect]
+""
+//[MKeyBrowserFavorites]
+""
+//[MKeyMediaPrevTrack]
+""
+//[MKeyMediaPlayPause]
+""
+//[MKeyMediaNextTrack]
+""
+//[MKeyBrowserRefresh]
+""
+//[MKeyBrowserForward]
+""
+//[MKeyBrowserSearch]
+""
+//[MKeyMswheelRight]
+""
+//[MKeyMswheelDown]
+""
+//[MKeyMswheelLeft]
+""
+//[MKeyBrowserStop]
+""
+//[MKeyBrowserHome]
+""
+//[MKeyBrowserBack]
+""
+//[MKeyVolumeMute]
+""
+//[MKeyVolumeDown]
+""
+//[MKeyScrolllock]
+""
+//[MKeyLaunchMail]
+""
+//[MKeyLaunchApp2]
+""
+//[MKeyLaunchApp1]
+""
+//[MKeyMswheelUp]
+""
+//[MKeyMediaStop]
+""
+//[MKeyBackslash]
+""
+//[MKeyMsm1click]
+""
+//[MKeyMsm2click]
+""
+//[MKeyMsm3click]
+""
+//[MKeyMslclick]
+""
+//[MKeyMsrclick]
+""
+//[MKeyVolumeUp]
+""
+//[MKeySubtract]
+"Gray -"
+//[MKeyNumenter]
+""
+//[MKeyMultiply]
+"Gray *"
+//[MKeyCapslock]
+""
+//[MKeyPrntscrn]
+""
+//[MKeyNumlock]
+""
+//[MKeyDecimal]
+""
+//[MKeyStandby]
+""
+//[MKeyDivide]
+""
+//[MKeyNumdel]
+""
+//[MKeySpace]
+""
+//[MKeyRight]
+""
+//[MKeyPause]
+""
+//[MKeyEnter]
+""
+//[MKeyClear]
+""
+//[MKeyBreak]
+""
+//[MKeyPgup]
+""
+//[MKeyPgdn]
+""
+//[MKeyLeft]
+""
+//[MKeyHome]
+""
+//[MKeyDown]
+""
+//[MKeyApps]
+""
+//[MKeyRwin]
+""
+//[MKeyNumpad9]
+""
+//[MKeyNumpad8]
+""
+//[MKeyNumpad7]
+""
+//[MKeyNumpad6]
+""
+//[MKeyNumpad5]
+""
+//[MKeyNumpad4]
+""
+//[MKeyNumpad3]
+""
+//[MKeyNumpad2]
+""
+//[MKeyNumpad1]
+""
+//[MKeyNumpad0]
+""
+//[MKeyLwin]
+""
+//[MKeyTab]
+""
+//[MKeyIns]
+""
+//[MKeyF10]
+""
+//[MKeyF11]
+""
+//[MKeyF12]
+""
+//[MKeyF13]
+""
+//[MKeyF14]
+""
+//[MKeyF15]
+""
+//[MKeyF16]
+""
+//[MKeyF17]
+""
+//[MKeyF18]
+""
+//[MKeyF19]
+""
+//[MKeyF20]
+""
+//[MKeyF21]
+""
+//[MKeyF22]
+""
+//[MKeyF23]
+""
+//[MKeyF24]
+""
+//[MKeyEsc]
+""
+//[MKeyEnd]
+""
+//[MKeyDel]
+""
+//[MKeyAdd]
+"Gray +"
+//[MKeyUp]
+""
+//[MKeyF9]
+""
+//[MKeyF8]
+""
+//[MKeyF7]
+""
+//[MKeyF6]
+""
+//[MKeyF5]
+""
+//[MKeyF4]
+""
+//[MKeyF3]
+""
+//[MKeyF2]
+""
+//[MKeyF1]
+""
+//[MKeyBs]
+""
+//[MKeyBackbracket]
+""
+//[MKeyQuote]
+""
+//[MKeyBracket]
+""
+//[MKeyColon]
+""
+//[MKeySemicolon]
+""
+//[MKeySlash]
+""
+//[MKeyDot]
+""
+//[MKeyComma]
+""
+//[MKeyRCtrl]
+""
+//[MKeyShift]
+""
+//[MKeyCtrl]
+""
+//[MKeyRAlt]
+""
+//[MKeyAlt]
+""
+//[MNewFileName]
+"Нов_файл_{0:04}-{1:02}-{2:02}_{3:02}.{4:02}.{5:02}.{6:03}.txt"
+//[MMenuTerminalPosition]
+"Позиция на &терминала"
+//[MMenuModuleCommands]
+"Команди на мод&улите"
+//[MTermPosFull]
+"&Цял екран"
+//[MTermPosLeft]
+"&Лява половина"
+//[MTermPosRight]
+"&Дясна половина"
+//[MTermPosTop]
+"&Горна половина"
+//[MTermPosBottom]
+"Д&олна половина"
+//[MTermPosLeftTop]
+"Горе в&ляво"
+//[MTermPosLeftBottom]
+"Долу вл&яво"
+//[MTermPosRightTop]
+"Горе вд&ясно"
+//[MTermPosRightBottom]
+"Долу вдя&сно"
+//[MMenuMultipleTerminals]
+"Няколко т&ерминала"
+//[MMultiTermLeftRight]
+"&Ляв и десен терминал"
+//[MMultiTermTopBottom]
+"&Горен и долен терминал"
+//[MMultiTermFour]
+"&4 терминала"
+//[MMultiTermError]
+"Не може да се отвори нов прозорец на терминал"
+//[MMenuExecOtherTerminal]
+"&Изпълнение в друг терминал"
+//[MExecTermLeft]
+"Терминал &отляво"
+//[MExecTermRight]
+"Терминал о&тдясно"
+//[MExecTermBottom]
+"Терминал от&долу"
+//[MExecTermTop]
+"Терминал отг&оре"
+//[MExecTermDisconnect]
+"&Изключване на другия терминал"
+//[MMenuEncodedArchives]
+"Кодирани ар&хиви"
+//[MEncArcTitle]
+"Кодирани архиви"
+//[MEncArcAddNew]
+"&Добавяне на нова конфигурация…"
+//[MEncArcNewExt]
+"&Ново разширение (до 7 знака):"
+//[MEncArcOrigExt]
+"&Оригинално разширение (до 7 знака):"
+//[MEncArcKeyFile]
+"&Файл с ключ:"
+//[MEncArcPasswordProtected]
+"&Защитен с парола"
+//[MEncArcBadExtension]
+"Новото разширение трябва да е от 1 до 7 знака, а оригиналното – до 7 знака, без \"/\" и \"\\\""
+//[MEncArcDuplicate]
+"Това ново разширение вече е конфигурирано"
+//[MEncArcNoKeyFile]
+"Файлът с ключ не е намерен"
+//[MEncArcPasswordFor]
+"Парола за"
+//[MEncArcCannotDecode]
+"Файлът не може да бъде декодиран"
+//[MEncArcCannotEncode]
+"Файлът не може да бъде кодиран обратно"
+//[MLogKey]
+"Log"
+//[MLogQuietKey]
+"LogSil"
+//[MLogStarted]
+"Изходът се записва в"

@@ -22,6 +22,9 @@ static FILES: &[(&str, &str)] = &[
     ("Polish", include_str!("../../../assets/help/GmPol.hlf")),
     ("Slovak", include_str!("../../../assets/help/GmSky.hlf")),
     ("Norwegian", include_str!("../../../assets/help/GmNor.hlf")),
+    ("Nynorsk", include_str!("../../../assets/help/GmNyn.hlf")),
+    ("French", include_str!("../../../assets/help/GmFre.hlf")),
+    ("Greek", include_str!("../../../assets/help/GmGre.hlf")),
 ];
 
 #[derive(Clone, Debug, PartialEq, Eq)]
@@ -502,11 +505,20 @@ mod tests {
     }
 
     #[test]
-    fn norwegian_file_matches_english_topics() {
+    fn translations_match_english_topics() {
         let eng = HelpFile::parse(FILES[0].1);
-        let (_, text) = FILES.iter().find(|(n, _)| *n == "Norwegian").unwrap();
-        let nor = HelpFile::parse(text);
-        assert_eq!(eng.order, nor.order);
-        assert!(nor.resolve("Interface.CursorSize1").is_some());
+        for (name, text) in &FILES[1..] {
+            let f = HelpFile::parse(text);
+            assert_eq!(eng.order, f.order, "{name}");
+            assert!(f.resolve("Interface.CursorSize1").is_some(), "{name}");
+        }
+    }
+
+    #[test]
+    fn every_help_language_is_a_ui_language() {
+        let ui: Vec<&str> = gm_i18n::languages().iter().map(|l| l.0).collect();
+        for (name, _) in FILES {
+            assert!(ui.contains(name), "{name}");
+        }
     }
 }

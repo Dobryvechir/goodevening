@@ -1,0 +1,4568 @@
+.Language=Hebrew,עברית
+// Goodevening Manager language file (Hebrew)
+//[MYes]
+"כן"
+//[MNo]
+"לא"
+//[MOk]
+"OK"
+//[MHYes]
+"&כן"
+//[MHNo]
+"&לא"
+//[MHOk]
+"&OK"
+//[MCancel]
+"ביטול"
+//[MReset]
+"&איפוס"
+//[MRetry]
+"נסה שוב"
+//[MSkip]
+"דלג"
+//[MAbort]
+"הפסק"
+//[MIgnore]
+"התעלם"
+//[MDelete]
+"מחק"
+//[MHCancel]
+"&ביטול"
+//[MHRetry]
+"&נסה שוב"
+//[MHSkip]
+"&דלג"
+//[MHSkipAll]
+"דלג על ה&כול"
+//[MHAbort]
+"&הפסק"
+//[MHIgnore]
+"ה&תעלם"
+//[MHDelete]
+"&מחק"
+//[MHRemove]
+"ה&סר"
+//[MHSplit]
+"&פצל"
+//[MWarning]
+"אזהרה"
+//[MError]
+"שגיאה"
+//[MQuit]
+"יציאה"
+//[MAskQuit]
+"האם לצאת מ-gm?"
+//[MF1]
+"עזרה"
+//[MF2]
+"תפמשת"
+//[MF3]
+"הצג"
+//[MF4]
+"ערוך"
+//[MF5]
+"העתק"
+//[MF6]
+"שנההעב"
+//[MF7]
+"תיקייה"
+//[MF8]
+"מחק"
+//[MF9]
+"תפהגד"
+//[MF10]
+"יציאה"
+//[MF11]
+"תוסף"
+//[MF12]
+"מסך"
+//[MShiftF1]
+"הוסף"
+//[MShiftF2]
+"חלץ"
+//[MShiftF3]
+"פקארכ"
+//[MShiftF4]
+"ערוך…"
+//[MShiftF5]
+"העתק"
+//[MShiftF6]
+"שנהשם"
+//[MShiftF7]
+""
+//[MShiftF8]
+"מחק"
+//[MShiftF9]
+"שמור"
+//[MShiftF10]
+"אחרון"
+//[MShiftF11]
+"קבוצה"
+//[MShiftF12]
+"בחרלמ"
+//[MAltF1]
+"שמאל"
+//[MAltF2]
+"ימין"
+//[MAltF3]
+"הצג…"
+//[MAltF4]
+"ערוך…"
+//[MAltF5]
+"הדפס"
+//[MAltF6]
+"קישור"
+//[MAltF7]
+"חפש"
+//[MAltF8]
+"היסטו"
+//[MAltF9]
+"וידאו"
+//[MAltF10]
+"עץ"
+//[MAltF11]
+"היסצג"
+//[MAltF12]
+"היסתק"
+//[MCtrlF1]
+"שמאל"
+//[MCtrlF2]
+"ימין"
+//[MCtrlF3]
+"שם"
+//[MCtrlF4]
+"סיומת"
+//[MCtrlF5]
+"כתיבה"
+//[MCtrlF6]
+"גודל"
+//[MCtrlF7]
+"ללמיון"
+//[MCtrlF8]
+"יצירה"
+//[MCtrlF9]
+"גישה"
+//[MCtrlF10]
+"תיאור"
+//[MCtrlF11]
+"בעלים"
+//[MCtrlF12]
+"מיון"
+//[MAltShiftF1]
+""
+//[MAltShiftF2]
+""
+//[MAltShiftF3]
+""
+//[MAltShiftF4]
+""
+//[MAltShiftF5]
+""
+//[MAltShiftF6]
+""
+//[MAltShiftF7]
+""
+//[MAltShiftF8]
+""
+//[MAltShiftF9]
+"הגדתוס"
+//[MAltShiftF10]
+""
+//[MAltShiftF11]
+""
+//[MAltShiftF12]
+""
+//[MCtrlShiftF1]
+""
+//[MCtrlShiftF2]
+""
+//[MCtrlShiftF3]
+"הצג"
+//[MCtrlShiftF4]
+"ערוך"
+//[MCtrlShiftF5]
+""
+//[MCtrlShiftF6]
+""
+//[MCtrlShiftF7]
+""
+//[MCtrlShiftF8]
+""
+//[MCtrlShiftF9]
+""
+//[MCtrlShiftF10]
+""
+//[MCtrlShiftF11]
+""
+//[MCtrlShiftF12]
+""
+//[MCtrlAltF1]
+""
+//[MCtrlAltF2]
+""
+//[MCtrlAltF3]
+""
+//[MCtrlAltF4]
+""
+//[MCtrlAltF5]
+""
+//[MCtrlAltF6]
+""
+//[MCtrlAltF7]
+""
+//[MCtrlAltF8]
+""
+//[MCtrlAltF9]
+""
+//[MCtrlAltF10]
+""
+//[MCtrlAltF11]
+""
+//[MCtrlAltF12]
+""
+//[MCtrlAltShiftF1]
+""
+//[MCtrlAltShiftF2]
+""
+//[MCtrlAltShiftF3]
+""
+//[MCtrlAltShiftF4]
+""
+//[MCtrlAltShiftF5]
+""
+//[MCtrlAltShiftF6]
+""
+//[MCtrlAltShiftF7]
+""
+//[MCtrlAltShiftF8]
+""
+//[MCtrlAltShiftF9]
+""
+//[MCtrlAltShiftF10]
+""
+//[MCtrlAltShiftF11]
+""
+//[MCtrlAltShiftF12]
+""
+//[MHistoryTitle]
+"היסטוריה"
+//[MHistoryInfoTitle]
+"מידע"
+//[MHistoryInfoFolder]
+"תיקייה:"
+//[MFolderHistoryTitle]
+"היסטוריית תיקיות"
+//[MViewHistoryTitle]
+"היסטוריית הצגה ועריכה"
+//[MViewHistoryIsCreate]
+"ליצור את הקובץ?"
+//[MHistoryView]
+"הצגה"
+//[MHistoryEdit]
+"עריכה"
+//[MHistoryExt]
+"סיומת"
+//[MHistoryClear]
+"כל הרשומות בהיסטוריה יימחקו. להמשיך?"
+//[MClear]
+"&ניקוי ההיסטוריה"
+//[MConfigSystemTitle]
+"הגדרות מערכת"
+//[MConfigRecycleBin]
+"מחיקה ל&סל המיחזור"
+//[MConfigSystemCopy]
+"שימוש בשגרת ההעתקה של ה&מערכת"
+//[MConfigCopySharing]
+"העתקת קבצים הפתוחים ל&כתיבה"
+//[MConfigScanJunction]
+"סריקת קישורים &סמליים"
+//[MConfigSmartFolderMonitor]
+"&עדכון חלוניות רק כאשר gm פעיל"
+//[MConfigSaveHistory]
+"שמירת &היסטוריית פקודות"
+//[MConfigSaveFoldersHistory]
+"שמירת היסטוריית &תיקיות"
+//[MConfigSaveViewHistory]
+"שמירת היסטוריית ה&צגה ועריכה"
+//[MConfigRegisteredTypes]
+"שימוש בסוגים ה&רשומים ב-Windows"
+//[MConfigUpdateEnvironment]
+"עדכון אוטומטי של משתני ה&סביבה"
+//[MConfigElevation]
+"בקשת הרשאות מנהל:"
+//[MConfigElevationModify]
+"ל&שינוי"
+//[MConfigElevationRead]
+"ל&קריאה"
+//[MConfigElevationUsePrivileges]
+"שימוש ב&הרשאות נוספות"
+//[MConfigSortingCollation]
+"כללי &מיון:"
+//[MConfigSortingOrdinal]
+"סידורי"
+//[MConfigSortingInvariant]
+"קבוע"
+//[MConfigSortingLinguistic]
+"לשוני"
+//[MConfigSortingDigitsAsNumbers]
+"ספרות כ&מספרים"
+//[MConfigSortingCase]
+"&תלוי רישיות"
+//[MConfigAutoSave]
+"&שמירה אוטומטית של ההגדרות"
+//[MConfigTreeTitle]
+"הגדרות עץ"
+//[MConfigTreeAutoChange]
+"החלפת תיקייה &אוטומטית"
+//[MConfigTreeLabelMinFolder]
+"מספר תיקיות &מינימלי:"
+//[MConfigTreeLabel1]
+"שמירת קובץ עם מבנה התיקיות עבור:"
+//[MConfigTreeLabelLocalDisk]
+"כוננים מקומיים"
+//[MConfigTreeLabelNetDisk]
+"כונני רשת"
+//[MConfigTreeLabelNetPath]
+"נתיבי רשת"
+//[MConfigTreeLabelRemovableDisk]
+"כוננים נשלפים"
+//[MConfigTreeLabelCDDisk]
+"כוננים אופטיים"
+//[MConfigTreeLabelExceptPath]
+"לא ליצור את הקובץ עבור הכוננים והנתיבים הבאים:"
+//[MConfigTreeLabelSaveLocalPath]
+"נתיב לכוננים מקומיים, נשלפים ואופטיים:"
+//[MConfigTreeLabelSaveNetPath]
+"נתיב לכונני רשת ונתיבי רשת:"
+//[MConfigPanelTitle]
+"הגדרות חלוניות"
+//[MConfigHidden]
+"הצגת קבצים &מוסתרים וקבצי מערכת"
+//[MConfigHighlight]
+"&צביעת קבצים"
+//[MConfigSelectFolders]
+"בחירת &תיקיות"
+//[MConfigRightClickSelect]
+"לחיצה &ימנית בוחרת קבצים"
+//[MConfigSortFolderExt]
+"מיון תיקיות לפי &סיומת"
+//[MConfigAllowReverseSort]
+"אפשור מיון &הפוך"
+//[MConfigAutoUpdateLimit]
+"&ביטול עדכון אוטומטי של החלונית"
+//[MConfigAutoUpdateLimit2]
+"אם מספר ה&פריטים עולה על"
+//[MConfigAutoUpdateRemoteDrive]
+"רענון אוטומטי של כונני &רשת"
+//[MConfigShowColumns]
+"הצגת כותרות &עמודות"
+//[MConfigShowStatus]
+"הצגת &שורת מצב"
+//[MConfigDetailedJunction]
+"זיהוי נקודות &עגינה"
+//[MConfigShowTotal]
+"הצגת מידע &כולל על הקבצים"
+//[MConfigShowFree]
+"הצגת שטח &פנוי"
+//[MConfigShowScrollbar]
+"הצגת &פס גלילה"
+//[MConfigShowScreensNumber]
+"הצגת &מספר מסכי הרקע"
+//[MConfigShowSortMode]
+"הצגת אות &מצב המיון"
+//[MConfigShowDotsInRoot]
+"הצגת \"&..\" בתיקיות שורש"
+//[MConfigInterfaceTitle]
+"הגדרות ממשק"
+//[MConfigClock]
+"&שעון"
+//[MConfigMouse]
+"&עכבר"
+//[MConfigKeyBar]
+"הצגת שורת &מקשים"
+//[MConfigMenuBar]
+"הצגת שורת ה&תפריטים תמיד"
+//[MConfigSaver]
+"&שומר מסך"
+//[MConfigSaverMinutes]
+"&דקות"
+//[MConfigCopyTotal]
+"הצגת התקדמות &כוללת של ההעתקה"
+//[MConfigCopyTimeRule]
+"הצגת &זמן ההעתקה"
+//[MConfigDeleteTotal]
+"הצגת התקדמות כוללת של ה&מחיקה"
+//[MConfigPgUpChangeDisk]
+"Ctrl+Pg&Up להחלפת כונן"
+//[MConfigUseVirtualTerminalForRendering]
+"שימוש במסוף &וירטואלי לעיבוד התצוגה"
+//[MConfigFullWidthAwareRendering]
+"עיבוד תצוגה עם תמיכה בתווים ברוחב מלא"
+//[MConfigFullWidthAwareRenderingGraphemeClustersDected1]
+"נראה שהמסוף שלך תומך באשכולות גרפמות של Unicode."
+//[MConfigFullWidthAwareRenderingGraphemeClustersDected2]
+"לצערנו, gm עדיין אינו תומך בהם."
+//[MConfigFullWidthAwareRenderingGraphemeClustersDected3]
+"לתוצאה הטובה ביותר מומלץ לעבור לעיבוד לפי נקודות קוד."
+//[MConfigFullWidthAwareRenderingGraphemeClustersDected4]
+"עיין בתיעוד של המסוף שלך כדי לדעת כיצד לעשות זאת."
+//[MConfigClearType]
+"ציור מחדש התואם ל-Cl&earType (עלול להיות איטי)"
+//[MConfigSetConsoleIcon]
+"&סמל המסוף:"
+//[MConfigSetAdminConsoleIcon]
+"חלופי עבור &מנהל"
+//[MConfigTitleAddons]
+"תוספות לכותרת &חלון gm:"
+//[MConfigDlgSetsTitle]
+"הגדרות תיבות דו-שיח"
+//[MConfigDialogsEditHistory]
+"&היסטוריה בשדות הקלט"
+//[MConfigDialogsEditBlock]
+"בלוקים &קבועים בשדות הקלט"
+//[MConfigDialogsDelRemovesBlocks]
+"&Del מוחק בלוקים בשדות הקלט"
+//[MConfigDialogsAutoComplete]
+"&השלמה אוטומטית בשדות הקלט"
+//[MConfigDialogsEULBsClear]
+"&Backspace מוחק טקסט שלא שונה"
+//[MConfigDialogsMouseButton]
+"לחיצה &מחוץ לתיבת דו-שיח סוגרת אותה"
+//[MConfigVMenuTitle]
+"הגדרות תפריטים"
+//[MConfigVMenuLBtnClick]
+"לחיצה &שמאלית מחוץ לתפריט"
+//[MConfigVMenuRBtnClick]
+"לחיצה &ימנית מחוץ לתפריט"
+//[MConfigVMenuMBtnClick]
+"לחיצה &אמצעית מחוץ לתפריט"
+//[MConfigVMenuClickCancel]
+"סגירת התפריט"
+//[MConfigVMenuClickApply]
+"הפעלת הפריט הנבחר"
+//[MConfigVMenuClickIgnore]
+"לא לעשות דבר"
+//[MConfigCmdlineTitle]
+"הגדרות שורת הפקודה"
+//[MConfigCmdlineEditBlock]
+"בלוקים &קבועים"
+//[MConfigCmdlineDelRemovesBlocks]
+"&Del מוחק בלוקים"
+//[MConfigCmdlineAutoComplete]
+"&השלמה אוטומטית"
+//[MConfigCmdlineUsePromptFormat]
+"הגדרת &תבנית שורת ההנחיה"
+//[MConfigCmdlineUseHomeDir]
+"שימוש בתיקיית ה&בית"
+//[MConfigCmdlinePromptFormatAdmin]
+"מנהל"
+//[MConfigAutoCompleteTitle]
+"הגדרות השלמה אוטומטית"
+//[MConfigAutoCompleteShowList]
+"&הצגת רשימה"
+//[MConfigAutoCompleteModalList]
+"מצב &מודאלי"
+//[MConfigAutoCompleteAutoAppend]
+"&הוספת הפריט התואם הראשון"
+//[MConfigInfoPanelTitle]
+"הגדרות חלונית המידע"
+//[MConfigInfoPanelCNTitle]
+"תבנית &שם המחשב"
+//[MConfigInfoPanelCNPhysicalNetBIOS]
+"NetBIOS פיזי"
+//[MConfigInfoPanelCNPhysicalDnsHostname]
+"שם מארח DNS פיזי"
+//[MConfigInfoPanelCNPhysicalDnsDomain]
+"תחום DNS פיזי"
+//[MConfigInfoPanelCNPhysicalDnsFullyQualified]
+"שם DNS מלא פיזי (FQDN)"
+//[MConfigInfoPanelCNNetBIOS]
+"NetBIOS"
+//[MConfigInfoPanelCNDnsHostname]
+"שם מארח DNS"
+//[MConfigInfoPanelCNDnsDomain]
+"תחום DNS"
+//[MConfigInfoPanelCNDnsFullyQualified]
+"שם DNS מלא (FQDN)"
+//[MConfigInfoPanelUNTitle]
+"תבנית שם ה&משתמש"
+//[MConfigInfoPanelUNLogon]
+"שם כניסה"
+//[MConfigInfoPanelUNFullyQualifiedDN]
+"שם תחום מלא (FQDN)"
+//[MConfigInfoPanelUNSamCompatible]
+"תואם SAM"
+//[MConfigInfoPanelUNDisplay]
+"שם תצוגה"
+//[MConfigInfoPanelUNUniqueId]
+"מזהה ייחודי"
+//[MConfigInfoPanelUNCanonical]
+"שם קנוני"
+//[MConfigInfoPanelUNUserPrincipal]
+"שם משתמש ראשי"
+//[MConfigInfoPanelUNServicePrincipal]
+"שם שירות ראשי"
+//[MConfigInfoPanelUNDnsDomain]
+"תחום DNS"
+//[MConfigInfoPanelUNGivenName]
+"שם פרטי"
+//[MConfigInfoPanelUNSurname]
+"שם משפחה"
+//[MConfigInfoPanelShowPowerStatus]
+"הצגת מצב ה&חשמל"
+//[MConfigInfoPanelShowCDInfo]
+"הצגת הפרמטרים של כונני &CD"
+//[MMenuInfoShowModeTitle]
+"הצגת מידע"
+//[MMenuInfoShowModeDisk]
+"&דיסק"
+//[MMenuInfoShowModeMemory]
+"&זיכרון"
+//[MMenuInfoShowModeDirDiz]
+"&תיאור"
+//[MMenuInfoShowModePluginDiz]
+"חלונית &תוסף"
+//[MMenuInfoShowModePower]
+"מצב ה&חשמל"
+//[MViewConfigTitle]
+"מציג"
+//[MViewConfigExternalF3]
+"שימוש במציג חיצוני עבור F&3 במקום Alt+F3"
+//[MViewConfigExternalCommand]
+"פקודת ה&מציג:"
+//[MViewConfigInternal]
+"מציג פנימי"
+//[MViewConfigSavePos]
+"&שמירת המיקום בקובץ"
+//[MViewConfigSaveShortPos]
+"שמירת &סימניות"
+//[MViewConfigSaveCodepage]
+"שמירת &דף הקוד של הקובץ"
+//[MViewConfigSaveWrapMode]
+"שמירת מצב &גלישת שורות"
+//[MViewConfigSaveViewMode]
+"שמירת מצב ה&תצוגה"
+//[MViewConfigDetectDumpMode]
+"זיהוי מצב &dump"
+//[MViewAutoDetectCodePage]
+"זיהוי &אוטומטי של דף הקוד"
+//[MViewConfigTabSize]
+"גודל &טאב"
+//[MViewConfigScrollbar]
+"הצגת &פס גלילה"
+//[MViewConfigArrows]
+"הצגת &חיצי גלילה"
+//[MViewConfigPersistentSelection]
+"בחירה &קבועה"
+//[MViewConfigDefaultCodePage]
+"דף קוד &ברירת מחדל:"
+//[MViewConfigMaxLineSize]
+"רוחב שורה &מרבי"
+//[MViewConfigVisible0x00]
+"'\\&0' גלוי"
+//[MEditConfigTitle]
+"עורך"
+//[MEditConfigEditorF4]
+"שימוש בעורך חיצוני עבור F&4 במקום Alt+F4"
+//[MEditConfigEditorCommand]
+"פקודת ה&עורך:"
+//[MEditConfigInternal]
+"עורך פנימי"
+//[MEditConfigExpandTabsTitle]
+"הרחבת &טאבים:"
+//[MEditConfigDoNotExpandTabs]
+"ללא הרחבת טאבים"
+//[MEditConfigExpandTabs]
+"המרת טאבים חדשים לרווחים"
+//[MEditConfigConvertAllTabsToSpaces]
+"המרת כל הטאבים לרווחים"
+//[MEditConfigPersistentBlocks]
+"בלוקים &קבועים"
+//[MEditConfigDelRemovesBlocks]
+"&Del מוחק בלוקים"
+//[MEditConfigAutoIndent]
+"&הזחה אוטומטית"
+//[MEditConfigSavePos]
+"&שמירת המיקום בקובץ"
+//[MEditConfigSaveShortPos]
+"שמירת &סימניות"
+//[MEditCursorBeyondEnd]
+"&סמן אחרי סוף השורה"
+//[MEditAutoDetectCodePage]
+"זיהוי &אוטומטי של דף הקוד"
+//[MEditShareWrite]
+"אפשור עריכת קבצים הפתוחים ל&כתיבה"
+//[MEditLockROFileModification]
+"נעילת עריכה של &קבצים לקריאה בלבד"
+//[MEditWarningBeforeOpenROFile]
+"&אזהרה בפתיחת קבצים לקריאה בלבד"
+//[MEditConfigTabSize]
+"גודל ט&אב"
+//[MEditConfigScrollbar]
+"הצגת &פס גלילה"
+//[MEditConfigLineNumbers]
+"הצגת &מספרי שורות"
+//[MEditShowWhiteSpace]
+"הצגת &רווחים"
+//[MEditConfigSelFound]
+"&בחירת התוצאה"
+//[MEditConfigCursorAtEnd]
+"סמן ב&סוף"
+//[MEditConfigDefaultCodePage]
+"דף קוד ב&רירת מחדל:"
+//[MConfigEditor]
+"עורך תצורה"
+//[MConfigEditorBoolean]
+"בוליאני"
+//[MConfigEditorTriState]
+"3 מצבים"
+//[MConfigEditorInteger]
+"שלם"
+//[MConfigEditorString]
+"מחרוזת"
+//[MConfigEditorIntegerSigned]
+"עם סימן:"
+//[MConfigEditorIntegerUnsigned]
+"ללא סימן:"
+//[MConfigEditorIntegerHexadecimal]
+"הקסדצימלי:"
+//[MConfigEditorIntegerBinary]
+"בינארי:"
+//[MSaveSetupTitle]
+"שמירת הגדרות"
+//[MSaveSetupAsk1]
+"האם לשמור"
+//[MSaveSetupAsk2]
+"את ההגדרות הנוכחיות?"
+//[MSaveSetup]
+"שמור"
+//[MCopyDlgTitle]
+"העתקה"
+//[MMoveDlgTitle]
+"שינוי שם/העברה"
+//[MLinkDlgTitle]
+"קישור"
+//[MCopySecurity]
+"הרשאות &גישה:"
+//[MCopySecurityDefault]
+"ברירת &מחדל"
+//[MCopySecurityCopy]
+"ה&עתקה"
+//[MCopySecurityInherit]
+"&ירושה"
+//[MCopyIfFileExist]
+"קבצים &קיימים:"
+//[MCopyAsk]
+"&שאל"
+//[MCopyAskRO]
+"לשאול גם על קבצים לקריאה &בלבד"
+//[MCopyOnlyNewerFiles]
+"רק קבצים &חדשים יותר"
+//[MLinkType]
+"&סוג הקישור:"
+//[MLinkTypeJunction]
+"&צומת ספרייה"
+//[MLinkTypeHardlink]
+"קישור &קשיח"
+//[MLinkTypeSymlink]
+"קישור &סמלי"
+//[MLinkTypeSymlinkFile]
+"קישור סמלי (&קובץ)"
+//[MLinkTypeSymlinkDirectory]
+"קישור סמלי (&תיקייה)"
+//[MCopyPreserveAllTimestamps]
+"שמירת כל חותמות הזמן"
+//[MCopySymLinkContents]
+"העתקת תוכן הקישורים ה&סמליים"
+//[MCopyMultiActions]
+"עיבוד &יעדים מרובים"
+//[MCopyDlgCopy]
+"&העתק"
+//[MCopyDlgTree]
+"F10-&עץ"
+//[MCopyDlgCancel]
+"&ביטול"
+//[MCopyDlgRename]
+"&שנה שם"
+//[MCopyDlgLink]
+"צור &קישור"
+//[MCopyDlgTotal]
+"סה״כ"
+//[MCopyPrepareSecury]
+"מחיל הרשאות גישה…"
+//[MCopyUseFilter]
+"&שימוש במסנן"
+//[MCopySetFilter]
+"מ&סנן"
+//[MCopyFile]
+"העתקת {0} {1}:"
+//[MMoveFile]
+"שינוי שם או העברה של {0} {1}:"
+//[MLinkFile]
+"יצירת קישור אל {0} {1}:"
+//[MCopyFiles]
+"העתקת {0} פריט{1} {2}:"
+//[MMoveFiles]
+"שינוי שם או העברה של {0} פריט{1} {2}:"
+//[MLinkFiles]
+"יצירת קישורים אל {0} פריט{1} {2}:"
+//[MCMLTargetTO]
+"&אל"
+//[MCMLTargetIN]
+"&בתוך"
+//[MCMLItems0]
+""
+//[MCMLItemsA]
+"ים"
+//[MCMLItemsS]
+"ים"
+//[MCopyIncorrectTargetList]
+"רשימת יעדים שגויה"
+//[MCopyCopyingTitle]
+"העתקה"
+//[MCopyMovingTitle]
+"העברה"
+//[MCopyCannotFind]
+"לא ניתן למצוא את הקובץ"
+//[MCannotCopyFolderToItself1]
+"לא ניתן להעתיק את התיקייה"
+//[MCannotCopyFolderToItself2]
+"אל עצמה"
+//[MCopyCannotCreateFolder]
+"לא ניתן ליצור את התיקייה"
+//[MCopyCannotRenameFolder]
+"לא ניתן לשנות את שם התיקייה"
+//[MCopyIgnore]
+"ה&תעלם"
+//[MCopyIgnoreAll]
+"התעלם מה&כול"
+//[MCopyRetry]
+"&נסה שוב"
+//[MCopySkip]
+"&דלג"
+//[MCopySkipAll]
+"דלג על &הכול"
+//[MCopyCancel]
+"&ביטול"
+//[MCopyDecrypt]
+"&פענח"
+//[MCopyDecryptAll]
+"פענח &הכול"
+//[MCopyCannotCreateLink]
+"לא ניתן ליצור את הקישור"
+//[MCopyFolderNotEmpty]
+"תיקיית היעד חייבת להיות ריקה"
+//[MCopyCannotCreateJunctionToFile]
+"לא ניתן ליצור צומת. הקובץ כבר קיים:"
+//[MCopyCannotCreateVolMount]
+"שגיאה בנקודות עגינה של אמצעי אחסון"
+//[MCopyMountVolFailed]
+"הניסיון לעגן את אמצעי האחסון '{0}'"
+//[MCopyMountVolFailed2]
+"ב-'{0}' נכשל"
+//[MCopyMountName]
+"דיסק_"
+//[MCannotCopyFileToItself1]
+"לא ניתן להעתיק את הקובץ"
+//[MCannotCopyFileToItself2]
+"אל עצמו"
+//[MCopyStream1]
+"קובץ המקור מכיל יותר מזרם נתונים אחד,"
+//[MCopyStream2]
+"אך אינך משתמש בשגרת ההעתקה של המערכת."
+//[MCopyStream3]
+"אך אמצעי האחסון ביעד אינו תומך בתכונה זו."
+//[MCopyStream4]
+"חלק מהנתונים לא יישמרו."
+//[MCopyDirectoryOrFile]
+"האם זה שם של תיקייה או שם של קובץ?"
+//[MCopyDirectoryOrFileDirectory]
+"תיקייה"
+//[MCopyDirectoryOrFileFile]
+"קובץ"
+//[MCopyFileExist]
+"הקובץ כבר קיים"
+//[MCopySource]
+"&חדש"
+//[MCopyDest]
+"&קיים"
+//[MCopyOverwrite]
+"&דרוס"
+//[MCopyAppend]
+"&צרף"
+//[MCopyRename]
+"&שנה שם"
+//[MCopyRememberChoice]
+"&זכור את הבחירה"
+//[MCopyRenameTitle]
+"שינוי שם"
+//[MCopyRenameText]
+"שם &חדש:"
+//[MCopyFileRO]
+"הקובץ לקריאה בלבד"
+//[MCopyAskDelete]
+"האם למחוק אותו?"
+//[MCopyDeleteRO]
+"&מחק"
+//[MCopyDeleteAllRO]
+"ה&כול"
+//[MCannotCopy]
+"לא ניתן להעתיק"
+//[MCannotMove]
+"לא ניתן להעביר"
+//[MCannotLink]
+"לא ניתן לקשר"
+//[MCannotCopyTo]
+"אל"
+//[MCopyEncryptWarn1]
+"הקובץ"
+//[MCopyEncryptWarn2]
+"אינו יכול להיות מועתק או מועבר מבלי לאבד את ההצפנה שלו."
+//[MCopyReadError]
+"לא ניתן לקרוא נתונים מ-"
+//[MCopyWriteError]
+"לא ניתן לכתוב נתונים אל"
+//[MCopyCannotReserveSpace]
+"שגיאה בהקצאת שטח בדיסק"
+//[MCopyFilesTotalInfo]
+"קבצים:"
+//[MCopyBytesTotalInfo]
+"בתים:"
+//[MCopyMoving]
+"מעביר את הקובץ"
+//[MCopyCopying]
+"מעתיק את הקובץ"
+//[MCopyTo]
+"אל"
+//[MDeleteTitle]
+"מחיקה"
+//[MAskDelete]
+"האם למחוק את {0}?"
+//[MAskDeleteRecycle]
+"האם להעביר את {0} לסל המיחזור?"
+//[MDeleteWipeTitle]
+"השמדה"
+//[MAskWipe]
+"האם להשמיד את {0}?"
+//[MAskDeleteFolder]
+"התיקייה"
+//[MAskDeleteFile]
+"הקובץ"
+//[MAskDeleteObjects]
+"הפריטים"
+//[MAskDeleteLink]
+"קישור אל"
+//[MAskDeleteAndMore]
+"…ועוד {0}"
+//[MDeleteFolderTitle]
+"מחיקת תיקייה"
+//[MWipeFolderTitle]
+"השמדת תיקייה"
+//[MDeleteFilesTitle]
+"מחיקת קבצים"
+//[MWipeFilesTitle]
+"השמדת קבצים"
+//[MDeleteFolderConfirm]
+"התיקייה הבאה תימחק:"
+//[MWipeFolderConfirm]
+"התיקייה הבאה תושמד:"
+//[MRecycleFolderConfirm]
+"התיקייה הבאה תועבר לסל המיחזור:"
+//[MRecycleFolderConfirmDeleteLink1]
+"התיקייה מכילה קישורים סמליים."
+//[MRecycleFolderConfirmDeleteLink2]
+"כדי למנוע אובדן התוכן שלהם בעת ריקון סל המיחזור"
+//[MRecycleFolderConfirmDeleteLink3]
+"קישורים אלה ינותקו כעת."
+//[MRecycleFolderConfirmDeleteLink4]
+"לא ניתן יהיה לשחזר אותם מאוחר יותר."
+//[MDeleteWipe]
+"השמד"
+//[MDeleteRecycle]
+"העבר"
+//[MDeleteFileDelete]
+"&מחק"
+//[MDeleteFileWipe]
+"&השמד"
+//[MDeleteFileAll]
+"ה&כול"
+//[MDeleteFileSkip]
+"&דלג"
+//[MDeleteFileSkipAll]
+"דלג על ה&כול"
+//[MDeleteFileCancel]
+"&ביטול"
+//[MDeletingTitle]
+"מחיקה"
+//[MDeleting]
+"מוחק את הקובץ או התיקייה"
+//[MDeletingWiping]
+"משמיד את הקובץ או התיקייה"
+//[MDeleteRO]
+"הקובץ לקריאה בלבד"
+//[MAskDeleteRO]
+"האם למחוק אותו?"
+//[MAskWipeRO]
+"האם להשמיד אותו?"
+//[MDeleteHardLink1]
+"כמה קישורים קשיחים מפנים לקובץ זה."
+//[MDeleteHardLink2]
+"השמדת הקובץ תרוקן את כל הקבצים המקושרים אליו."
+//[MDeleteHardLink3]
+"האם להשמיד קובץ זה?"
+//[MCannotDeleteFile]
+"לא ניתן למחוק את הקובץ"
+//[MCannotDeleteFolder]
+"לא ניתן למחוק את התיקייה"
+//[MDeleteRetry]
+"&נסה שוב"
+//[MDeleteSkip]
+"&דלג"
+//[MDeleteSkipAll]
+"דלג על ה&כול"
+//[MDeleteCancel]
+"&ביטול"
+//[MCannotRecycleFile]
+"לא ניתן להעביר את הקובץ לסל המיחזור"
+//[MCannotRecycleFolder]
+"לא ניתן להעביר את התיקייה לסל המיחזור"
+//[MTryToDeletePermanently]
+"לנסות למחוק לצמיתות?"
+//[MCannotGetSecurity]
+"לא ניתן לקבל את הרשאות הגישה של"
+//[MCannotSetSecurity]
+"לא ניתן להגדיר את הרשאות הגישה של"
+//[MSearchReplaceSearchTitle]
+"חיפוש"
+//[MSearchReplaceReplaceTitle]
+"החלפה"
+//[MSearchReplaceText]
+"&טקסט"
+//[MSearchReplaceHex]
+"&הקס"
+//[MSearchReplacePickWord]
+"&מילה"
+//[MSearchReplacePickSelection]
+"&בחירה"
+//[MSearchReplaceSearchFor]
+"&חיפוש"
+//[MSearchReplaceReplaceWith]
+"ה&חלפה ב-"
+//[MSearchReplaceCase]
+"&תלוי רישיות"
+//[MSearchReplaceWholeWords]
+"מילים &שלמות"
+//[MSearchReplaceFuzzy]
+"חיפוש &מקורב"
+//[MSearchReplaceRegexp]
+"&ביטויים רגולריים"
+//[MSearchReplacePreserveStyle]
+"&שמירת סגנון"
+//[MSearchReplaceFind]
+"חפש"
+//[MSearchReplaceFindNext]
+"חפש הבא"
+//[MSearchReplaceFindPrev]
+"חפש &קודם"
+//[MSearchReplaceReplace]
+"החלף"
+//[MSearchReplaceReplaceNext]
+"החלף הבא"
+//[MSearchReplaceReplacePrev]
+"החלף ק&ודם"
+//[MSearchReplaceAll]
+"ה&כול"
+//[MSearchReplaceCancel]
+"ביטול"
+//[MEditTitle]
+"עורך"
+//[MAskReload]
+"כבר נטען. כיצד לפתוח קובץ זה?"
+//[MCurrent]
+"&נוכחי"
+//[MReload]
+"&טען מחדש"
+//[MNewOpen]
+"מופע &חדש"
+//[MEditCannotOpen]
+"לא ניתן לפתוח את הקובץ"
+//[MEditReading]
+"קורא את הקובץ {0}"
+//[MEditAskSave]
+"הקובץ שונה. לשמור?"
+//[MEditAskSaveExt]
+"הקובץ שונה על ידי תוכנה חיצונית. לשמור?"
+//[MEditBtnSaveAs]
+"שמור &בשם…"
+//[MEditRO]
+"הוא קובץ לקריאה בלבד"
+//[MEditExists]
+"כבר קיים"
+//[MEditOvr]
+"האם לדרוס אותו?"
+//[MEditSaving]
+"שומר את הקובץ {0}"
+//[MEditStatusLine]
+"שורה"
+//[MEditStatusCol]
+"עמ"
+//[MEditStatusChar]
+"תו"
+//[MEditRSH]
+"הוא קובץ לקריאה בלבד"
+//[MEditFileGetSizeError]
+"לא ניתן לקבוע את גודל הקובץ."
+//[MEditFileLong]
+"בגודל {0},"
+//[MEditFileLong2]
+"החורג מהגודל המרבי שהוגדר, {0}."
+//[MEditROOpen]
+"האם לערוך אותו?"
+//[MEditCanNotEditDirectory]
+"לא ניתן לערוך תיקייה"
+//[MEditSearchingFor]
+"מחפש את {0}"
+//[MEditSearchStatistics]
+"מופעים: {0}, שורות: {1}"
+//[MEditSearchAllFileNameFormat]
+"{0}{1}.Filtered.txt"
+//[MEditSearchAllFileNameFormatAlt]
+"{0}.Filtered{1}"
+//[MEditNotFound]
+"המחרוזת לא נמצאה"
+//[MEditAskReplace]
+"להחליף את"
+//[MEditAskReplaceWith]
+"ב-"
+//[MEditReplace]
+"&החלף"
+//[MEditReplaceAll]
+"ה&כול"
+//[MEditSkip]
+"&דלג"
+//[MEditCancel]
+"&ביטול"
+//[MEditOpenCreateLabel]
+"&פתיחה/יצירה של קובץ:"
+//[MEditOpenAutoDetect]
+"זיהוי אוטומטי"
+//[MDefaultCP]
+"ברירת מחדל"
+//[MGoTo]
+"מעבר אל"
+//[MGoToHex]
+"ערך &הקסדצימלי"
+//[MFolderShortcutsTitle]
+"קיצורי דרך לתיקיות"
+//[MShortcutNone]
+"<אין>"
+//[MShortcutPlugin]
+"<תוסף>"
+//[MFSShortcutName]
+"כותרת:"
+//[MFSShortcutPath]
+"נתיב:"
+//[MFSShortcutPluginFile]
+"קובץ:"
+//[MFSShortcutPluginData]
+"נתונים:"
+//[MNeedNearPath]
+"לעבור לתיקייה הקיימת הקרובה ביותר?"
+//[MSaveThisShortcut]
+"לשמור קיצור דרך זה?"
+//[MEditF1]
+"עזרה"
+//[MEditF2]
+"שמור"
+//[MEditF3]
+""
+//[MEditF4]
+"יציאה"
+//[MEditF5]
+""
+//[MEditF6]
+"הצג"
+//[MEditF7]
+"חפש"
+//[MEditF8]
+"ANSI"
+//[MEditF9]
+""
+//[MEditF10]
+"יציאה"
+//[MEditF11]
+"תוסף"
+//[MEditF12]
+"מסך"
+//[MEditShiftF1]
+""
+//[MEditShiftF2]
+"שמורב"
+//[MEditShiftF3]
+""
+//[MEditShiftF4]
+"ערוך…"
+//[MEditShiftF5]
+""
+//[MEditShiftF6]
+""
+//[MEditShiftF7]
+"הבא"
+//[MEditShiftF8]
+"דףקוד"
+//[MEditShiftF9]
+""
+//[MEditShiftF10]
+"שמוצא"
+//[MEditShiftF11]
+""
+//[MEditShiftF12]
+""
+//[MEditAltF1]
+""
+//[MEditAltF2]
+""
+//[MEditAltF3]
+""
+//[MEditAltF4]
+""
+//[MEditAltF5]
+""
+//[MEditAltF6]
+""
+//[MEditAltF7]
+"קודם"
+//[MEditAltF8]
+"מעבר"
+//[MEditAltF9]
+"וידאו"
+//[MEditAltF10]
+""
+//[MEditAltF11]
+"היסצג"
+//[MEditAltF12]
+""
+//[MEditCtrlF1]
+""
+//[MEditCtrlF2]
+""
+//[MEditCtrlF3]
+"מסשור"
+//[MEditCtrlF4]
+""
+//[MEditCtrlF5]
+""
+//[MEditCtrlF6]
+""
+//[MEditCtrlF7]
+"החלף"
+//[MEditCtrlF8]
+"סוףשר"
+//[MEditCtrlF9]
+""
+//[MEditCtrlF10]
+"לקובץ"
+//[MEditCtrlF11]
+""
+//[MEditCtrlF12]
+""
+//[MEditAltShiftF1]
+""
+//[MEditAltShiftF2]
+""
+//[MEditAltShiftF3]
+""
+//[MEditAltShiftF4]
+""
+//[MEditAltShiftF5]
+""
+//[MEditAltShiftF6]
+""
+//[MEditAltShiftF7]
+""
+//[MEditAltShiftF8]
+""
+//[MEditAltShiftF9]
+"הגדרות"
+//[MEditAltShiftF10]
+""
+//[MEditAltShiftF11]
+""
+//[MEditAltShiftF12]
+""
+//[MEditCtrlShiftF1]
+""
+//[MEditCtrlShiftF2]
+""
+//[MEditCtrlShiftF3]
+""
+//[MEditCtrlShiftF4]
+""
+//[MEditCtrlShiftF5]
+""
+//[MEditCtrlShiftF6]
+""
+//[MEditCtrlShiftF7]
+""
+//[MEditCtrlShiftF8]
+""
+//[MEditCtrlShiftF9]
+""
+//[MEditCtrlShiftF10]
+""
+//[MEditCtrlShiftF11]
+""
+//[MEditCtrlShiftF12]
+""
+//[MEditCtrlAltF1]
+""
+//[MEditCtrlAltF2]
+""
+//[MEditCtrlAltF3]
+""
+//[MEditCtrlAltF4]
+""
+//[MEditCtrlAltF5]
+""
+//[MEditCtrlAltF6]
+""
+//[MEditCtrlAltF7]
+""
+//[MEditCtrlAltF8]
+""
+//[MEditCtrlAltF9]
+""
+//[MEditCtrlAltF10]
+""
+//[MEditCtrlAltF11]
+""
+//[MEditCtrlAltF12]
+""
+//[MEditCtrlAltShiftF1]
+""
+//[MEditCtrlAltShiftF2]
+""
+//[MEditCtrlAltShiftF3]
+""
+//[MEditCtrlAltShiftF4]
+""
+//[MEditCtrlAltShiftF5]
+""
+//[MEditCtrlAltShiftF6]
+""
+//[MEditCtrlAltShiftF7]
+""
+//[MEditCtrlAltShiftF8]
+""
+//[MEditCtrlAltShiftF9]
+""
+//[MEditCtrlAltShiftF10]
+""
+//[MEditCtrlAltShiftF11]
+""
+//[MEditCtrlAltShiftF12]
+""
+//[MEditF8DOS]
+"OEM"
+//[MEditCtrlF3Hide]
+"הסתמס"
+//[MEditSaveAs]
+"שמירת הקובץ &בשם"
+//[MEditCodePage]
+"&דף קוד:"
+//[MEditAddSignature]
+"הוספת &חתימה (BOM)"
+//[MEditSaveAsFormatTitle]
+"המרת סופי השורות ל:"
+//[MEditSaveOriginal]
+"&ללא שינוי"
+//[MEditSaveDOS]
+"תבנית &Dos/Windows (CR LF)"
+//[MEditSaveUnix]
+"תבנית &Unix (LF)"
+//[MEditSaveMac]
+"תבנית &Mac (CR)"
+//[MEditCannotSave]
+"לא ניתן לשמור את הקובץ"
+//[MEditSavedChangedNonFile]
+"הקובץ שונה, אך הקובץ או התיקייה המכילה"
+//[MEditSavedChangedNonFile1]
+"הקובץ או התיקייה המכילה"
+//[MEditSavedChangedNonFile2]
+"את הקובץ הזה הועברו או נמחקו. לשמור?"
+//[MEditNewPath1]
+"הנתיב לקובץ הנערך אינו קיים,"
+//[MEditNewPath2]
+"אך הוא ייווצר בעת שמירת הקובץ."
+//[MEditNewPath3]
+"להמשיך?"
+//[MEditNewPlugin1]
+"שם הקובץ לעריכה אינו יכול להיות ריק"
+//[MEditorReloadCPWarnLost1]
+"יש לטעון את הקובץ מחדש כדי לשנות את דף הקוד."
+//[MEditorReloadCPWarnLost2]
+"כל השינויים שלא נשמרו יאבדו."
+//[MEditorSwitchCPConfirm]
+"להמשיך?"
+//[MEditDataLostWarn]
+"במהלך עריכת הקובץ אבדו נתונים."
+//[MEditorSaveNotRecommended]
+"לא מומלץ לשמור קובץ זה."
+//[MEditorSave]
+"שמור"
+//[MEditorSaveCPWarnShow]
+"הצג"
+//[MEditorCPNotSupported]
+"דף הקוד {0} אינו נתמך במערכת שלך"
+//[MColumnName]
+"שם"
+//[MColumnExtension]
+"סיומת"
+//[MColumnSize]
+"גודל"
+//[MColumnAlocatedSize]
+"מוקצה"
+//[MColumnDate]
+"תאריך"
+//[MColumnTime]
+"שעה"
+//[MColumnWrited]
+"כתיבה"
+//[MColumnCreated]
+"נוצר"
+//[MColumnAccessed]
+"גישה"
+//[MColumnChanged]
+"שינוי"
+//[MColumnAttr]
+"תכונ"
+//[MColumnDescription]
+"תיאור"
+//[MColumnOwner]
+"בעלים"
+//[MColumnMumLinks]
+"מסק"
+//[MColumnNumStreams]
+"מסז"
+//[MColumnStreamsSize]
+"גדזרם"
+//[MColumnUnknown]
+"???"
+//[MListUp]
+"למעלה"
+//[MListFolder]
+"תיקייה"
+//[MListSymlink]
+"קישסמל"
+//[MListJunction]
+"צומת"
+//[MListVolMount]
+"כרך"
+//[MListUnknownReparsePoint]
+"?קישסמל?"
+//[MListBrackets]
+"<>"
+//[MListBytes]
+"B"
+//[MListKb]
+"K"
+//[MListMb]
+"M"
+//[MListGb]
+"G"
+//[MListTb]
+"T"
+//[MListPb]
+"P"
+//[MListEb]
+"E"
+//[MListFileSize]
+"בתים: {0}, קבצים: {1}, תיקיות: {2}"
+//[MListFileSizeStatus]
+"{0} ({1}/{2}) {3} {4}"
+//[MListFreeSize]
+"{0} בתים פנויים"
+//[MDirInfoViewTitle]
+"הצגה"
+//[MFileToEdit]
+"קובץ לעריכה:"
+//[MUnselectTitle]
+"ביטול בחירה"
+//[MSelectTitle]
+"בחירה"
+//[MSelectFilter]
+"&מסנן"
+//[MCompareTitle]
+"השוואה"
+//[MCompareFilePanelsRequired1]
+"נדרשות שתי חלוניות קבצים לביצוע"
+//[MCompareFilePanelsRequired2]
+"הפקודה השוואת תיקיות"
+//[MCompareSameFolders1]
+"נראה שתוכן התיקיות"
+//[MCompareSameFolders2]
+"זהה"
+//[MSelectAssocTitle]
+"בחירת שיוך"
+//[MAssocTitle]
+"שיוכי קבצים"
+//[MAskDelAssoc]
+"האם למחוק את השיוך עבור"
+//[MFileAssocTitle]
+"עריכת שיוכי קבצים"
+//[MFileAssocMasks]
+"&מסכת קבצים אחת או כמה מסכות:"
+//[MFileAssocDescr]
+"&תיאור השיוך:"
+//[MFileAssocExec]
+"פקודת &הפעלה (עבור Enter):"
+//[MFileAssocAltExec]
+"פקודת ה&פעלה (עבור Ctrl+PgDn):"
+//[MFileAssocView]
+"פקודת &הצגה (עבור F3):"
+//[MFileAssocAltView]
+"פקודת ה&צגה (עבור Alt+F3):"
+//[MFileAssocEdit]
+"פקודת &עריכה (עבור F4):"
+//[MFileAssocAltEdit]
+"פקודת ע&ריכה (עבור Alt+F4):"
+//[MViewF1]
+"עזרה"
+//[MViewF2]
+"גלישה"
+//[MViewF3]
+"יציאה"
+//[MViewF4]
+"הקס"
+//[MViewF5]
+""
+//[MViewF6]
+"ערוך"
+//[MViewF7]
+"חפש"
+//[MViewF8]
+"ANSI"
+//[MViewF9]
+""
+//[MViewF10]
+"יציאה"
+//[MViewF11]
+"תוספים"
+//[MViewF12]
+"מסך"
+//[MViewShiftF1]
+""
+//[MViewShiftF2]
+"גלשמל"
+//[MViewShiftF3]
+""
+//[MViewShiftF4]
+"מצב"
+//[MViewShiftF5]
+""
+//[MViewShiftF6]
+""
+//[MViewShiftF7]
+"הבא"
+//[MViewShiftF8]
+"דףקוד"
+//[MViewShiftF9]
+""
+//[MViewShiftF10]
+""
+//[MViewShiftF11]
+""
+//[MViewShiftF12]
+""
+//[MViewAltF1]
+""
+//[MViewAltF2]
+""
+//[MViewAltF3]
+""
+//[MViewAltF4]
+""
+//[MViewAltF5]
+""
+//[MViewAltF6]
+""
+//[MViewAltF7]
+"קודם"
+//[MViewAltF8]
+"מעבר"
+//[MViewAltF9]
+"וידאו"
+//[MViewAltF10]
+""
+//[MViewAltF11]
+"היסצג"
+//[MViewAltF12]
+""
+//[MViewCtrlF1]
+""
+//[MViewCtrlF2]
+""
+//[MViewCtrlF3]
+""
+//[MViewCtrlF4]
+""
+//[MViewCtrlF5]
+""
+//[MViewCtrlF6]
+""
+//[MViewCtrlF7]
+""
+//[MViewCtrlF8]
+""
+//[MViewCtrlF9]
+""
+//[MViewCtrlF10]
+"לקובץ"
+//[MViewCtrlF11]
+""
+//[MViewCtrlF12]
+""
+//[MViewAltShiftF1]
+""
+//[MViewAltShiftF2]
+""
+//[MViewAltShiftF3]
+""
+//[MViewAltShiftF4]
+""
+//[MViewAltShiftF5]
+""
+//[MViewAltShiftF6]
+""
+//[MViewAltShiftF7]
+""
+//[MViewAltShiftF8]
+""
+//[MViewAltShiftF9]
+"הגדרות"
+//[MViewAltShiftF10]
+""
+//[MViewAltShiftF11]
+""
+//[MViewAltShiftF12]
+""
+//[MViewCtrlShiftF1]
+""
+//[MViewCtrlShiftF2]
+""
+//[MViewCtrlShiftF3]
+""
+//[MViewCtrlShiftF4]
+""
+//[MViewCtrlShiftF5]
+""
+//[MViewCtrlShiftF6]
+""
+//[MViewCtrlShiftF7]
+""
+//[MViewCtrlShiftF8]
+""
+//[MViewCtrlShiftF9]
+""
+//[MViewCtrlShiftF10]
+""
+//[MViewCtrlShiftF11]
+""
+//[MViewCtrlShiftF12]
+""
+//[MViewCtrlAltF1]
+""
+//[MViewCtrlAltF2]
+""
+//[MViewCtrlAltF3]
+""
+//[MViewCtrlAltF4]
+""
+//[MViewCtrlAltF5]
+""
+//[MViewCtrlAltF6]
+""
+//[MViewCtrlAltF7]
+""
+//[MViewCtrlAltF8]
+""
+//[MViewCtrlAltF9]
+""
+//[MViewCtrlAltF10]
+""
+//[MViewCtrlAltF11]
+""
+//[MViewCtrlAltF12]
+""
+//[MViewCtrlAltShiftF1]
+""
+//[MViewCtrlAltShiftF2]
+""
+//[MViewCtrlAltShiftF3]
+""
+//[MViewCtrlAltShiftF4]
+""
+//[MViewCtrlAltShiftF5]
+""
+//[MViewCtrlAltShiftF6]
+""
+//[MViewCtrlAltShiftF7]
+""
+//[MViewCtrlAltShiftF8]
+""
+//[MViewCtrlAltShiftF9]
+""
+//[MViewCtrlAltShiftF10]
+""
+//[MViewCtrlAltShiftF11]
+""
+//[MViewCtrlAltShiftF12]
+""
+//[MViewF2Unwrap]
+"בלגלש"
+//[MViewF4Text]
+"טקסט"
+//[MViewF4Dump]
+"גולמי"
+//[MViewF8DOS]
+"OEM"
+//[MViewMode]
+"מצב תצוגה"
+//[MInViewer]
+"הצגה"
+//[MInEditor]
+"עריכה"
+//[MFilterTitle]
+"תפריט מסננים"
+//[MPanelFileType]
+"סוג הקבצים בחלונית"
+//[MFolderFileType]
+"תיקיות"
+//[MCanEditCustomFilterOnly]
+"ניתן לערוך רק מסנן מותאם אישית"
+//[MAskDeleteFilter]
+"האם למחוק את המסנן"
+//[MCanDeleteCustomFilterOnly]
+"ניתן למחוק רק מסנן מותאם אישית"
+//[MFindFileTitle]
+"חיפוש קובץ"
+//[MFindFileMasks]
+"&מסכת קבצים אחת או כמה מסכות:"
+//[MFindFileContaining]
+"המכיל"
+//[MFindFileText]
+"&טקסט"
+//[MFindFileHex]
+"&הקס"
+//[MFindFileCodePage]
+"עם &דף קוד:"
+//[MFindFileAllCodePages]
+"כל דפי הקוד הסטנדרטיים"
+//[MFindFileSelectedCodePages]
+"דפי קוד נבחרים"
+//[MFindFileCase]
+"&תלוי רישיות"
+//[MFindFileWholeWords]
+"מילים &שלמות"
+//[MFindFileFuzzy]
+"חיפוש &מקורב"
+//[MFindFileNotContaining]
+"&שאינו מכיל"
+//[MFindFileArchives]
+"חיפוש ב&ארכיונים"
+//[MFindFileFolders]
+"חיפוש &תיקיות"
+//[MFindFileSymLinks]
+"חיפוש בקישורים &סמליים"
+//[MFindFileAlternateStreams]
+"חיפוש בזרמים &חלופיים"
+//[MFindFileSearchArea]
+"בחירת &אזור החיפוש:"
+//[MFindFileSearchAllDisks]
+"ב&כל הכוננים הלא נשלפים"
+//[MFindFileSearchAllButNetwork]
+"בכל הכוננים ה&מקומיים"
+//[MFindFileSearchInPATH]
+"בתיקיות ה-&PATH"
+//[MFindFileSearchFromRootOfDrive]
+"מ&שורש"
+//[MFindFileSearchFromRootFolder]
+"מתיקיית ה&שורש"
+//[MFindFileSearchFromCurrent]
+"מה&תיקייה הנוכחית"
+//[MFindFileSearchInCurrent]
+"ה&תיקייה הנוכחית בלבד"
+//[MFindFileSearchInSelected]
+"תיקיות &נבחרות"
+//[MFindFileUseFilter]
+"&שימוש במסנן"
+//[MFindFileUsingFilter]
+"עם מסנן"
+//[MFindFileFind]
+"חפש"
+//[MFindFileDrive]
+"&כונן"
+//[MFindFileSetFilter]
+"מ&סנן"
+//[MFindFileAdvanced]
+"&מתקדם"
+//[MFindFileSearchingIn]
+"מחפש את {0} ב-"
+//[MFindFileNewSearch]
+"חיפוש &חדש"
+//[MFindFileGoTo]
+"&מעבר"
+//[MFindFileView]
+"&הצגה"
+//[MFindFilePanel]
+"&חלונית"
+//[MFindFileStop]
+"&עצור"
+//[MFindFileDone]
+"החיפוש הסתיים. נמצאו קבצים: {0}, תיקיות: {1}"
+//[MFindFileCancel]
+"&ביטול"
+//[MFindFileFound]
+"קבצים: {0}, תיקיות: {1}"
+//[MFindFileAdvancedTitle]
+"אפשרויות חיפוש מתקדמות"
+//[MFindFileSearchFirst]
+"חיפוש רק ב&ראשונים:"
+//[MFindFileSearchOutputFormat]
+"תבנית ה&פלט:"
+//[MFindAlternateModeTypes]
+"&סוגי עמודות"
+//[MFindAlternateModeWidths]
+"&רוחבי עמודות"
+//[MFoldTreeSearch]
+"חיפוש:"
+//[MGetCodePageTitle]
+"דפי קוד"
+//[MGetCodePageSystem]
+"מערכת"
+//[MGetCodePageUnicode]
+"Unicode"
+//[MGetCodePageFavorites]
+"מועדפים"
+//[MGetCodePageOther]
+"אחרים"
+//[MGetCodePageEditCodePageName]
+"שינוי שם דף הקוד"
+//[MGetCodePageResetCodePageName]
+"&איפוס"
+//[MHighlightTitle]
+"צביעת קבצים"
+//[MHighlightUpperSortGroup]
+"קבוצת מיון עליונה"
+//[MHighlightLowerSortGroup]
+"קבוצת מיון תחתונה"
+//[MHighlightLastGroup]
+"קבוצת צביעה בעדיפות הנמוכה ביותר"
+//[MHighlightAskDel]
+"האם למחוק את הצביעה עבור"
+//[MHighlightWarning]
+"כל השינויים יאבדו"
+//[MHighlightAskRestore]
+"האם לשחזר את צביעת ברירת המחדל?"
+//[MHighlightEditTitle]
+"עריכת צביעת קבצים"
+//[MHighlightMark]
+"&סימון,"
+//[MHighlightInheritMark]
+"&ירושה"
+//[MHighlightColors]
+"צבעי שמות קבצים (\"שחור על שחור\" - צבע ברירת מחדל)"
+//[MHighlightFileName1]
+"&1. שם קובץ רגיל"
+//[MHighlightFileName2]
+"&3. שם קובץ נבחר"
+//[MHighlightFileName3]
+"&5. שם קובץ תחת הסמן"
+//[MHighlightFileName4]
+"&7. שם קובץ נבחר תחת הסמן"
+//[MHighlightMarking1]
+"&2. סימון"
+//[MHighlightMarking2]
+"&4. סימון"
+//[MHighlightMarking3]
+"&6. סימון"
+//[MHighlightMarking4]
+"&8. סימון"
+//[MHighlightExample]
+"קובץ.ext"
+//[MHighlightContinueProcessing]
+"&המשך עיבוד"
+//[MInfoTitle]
+"מידע"
+//[MInfoCompName]
+"שם המחשב"
+//[MInfoCompDescription]
+"תיאור המחשב"
+//[MInfoUserName]
+"שם המשתמש"
+//[MInfoUserDescription]
+"תיאור המשתמש"
+//[MInfoUserAccessLevel]
+"רמת גישה"
+//[MInfoUserAccessLevelGuest]
+"אורח"
+//[MInfoUserAccessLevelUser]
+"משתמש"
+//[MInfoUserAccessLevelAdministrator]
+"מנהל"
+//[MInfoUserAccessLevelUnknown]
+"לא ידוע"
+//[MInfoUserAccessElevated]
+"מוגבהת"
+//[MInfoUserAccessElevationTypeFull]
+"מלאה"
+//[MInfoUserAccessElevationTypeLimited]
+"מוגבלת"
+//[MInfoDiskTitle]
+"דיסק"
+//[MInfoRemovable]
+"נשלף"
+//[MInfoFixed]
+"קבוע"
+//[MInfoNetwork]
+"רשת"
+//[MInfoCDROM]
+"CD-ROM"
+//[MInfoCDR]
+"CD-R"
+//[MInfoCDRW]
+"CD-RW"
+//[MInfoCDRWDVD]
+"CD-RW/DVD"
+//[MInfoDVDROM]
+"DVD-ROM"
+//[MInfoDVDR]
+"DVD-R"
+//[MInfoDVDRW]
+"DVD-RW"
+//[MInfoDVDRAM]
+"DVD-RAM"
+//[MInfoBDROM]
+"BD-ROM"
+//[MInfoBDR]
+"BD-R"
+//[MInfoBDRE]
+"BD-RE"
+//[MInfoHDDVDROM]
+"HDDVD-ROM"
+//[MInfoHDDVDR]
+"HDDVD-R"
+//[MInfoHDDVDRW]
+"HDDVD-RW"
+//[MInfoHDDVDRAM]
+"HDDVD-RAM"
+//[MInfoRAM]
+"RAM"
+//[MInfoSUBST]
+"Subst"
+//[MInfoVirtual]
+"וירטואלי"
+//[MInfoUnknown]
+"לא ידוע"
+//[MInfoMetricTotal]
+"סה״כ"
+//[MInfoMetricAvailable]
+"זמין"
+//[MInfoMetricUsed]
+"בשימוש"
+//[MInfoDisk]
+"דיסק"
+//[MInfoDiskSpace]
+"שטח"
+//[MInfoDiskLabel]
+"תווית אמצעי האחסון"
+//[MInfoDiskNumber]
+"מספר סידורי"
+//[MInfoMemory]
+"זיכרון"
+//[MInfoMemoryCommittable]
+"ניתן להקצאה"
+//[MInfoMemoryAddressable]
+"ניתן למיעון"
+//[MInfoMemoryPhysical]
+"פיזי"
+//[MInfoMetricMemoryInstalled]
+"מותקן"
+//[MInfoDescription]
+"תיאור"
+//[MInfoDizAbsent]
+"קובץ תיאור התיקייה חסר"
+//[MInfoPlugin]
+"תוסף"
+//[MInfoPowerStatus]
+"מצב חשמל"
+//[MInfoPowerStatusAC]
+"מתח רשת"
+//[MInfoPowerStatusACOffline]
+"מנותק"
+//[MInfoPowerStatusACOnline]
+"מחובר"
+//[MInfoPowerStatusACBackUp]
+"מתח גיבוי"
+//[MInfoPowerStatusACUnknown]
+"לא ידוע"
+//[MInfoPowerStatusBCLifePercentUnknown]
+"לא ידוע"
+//[MInfoPowerStatusBC]
+"מצב טעינת הסוללה"
+//[MInfoPowerStatusBCHigh]
+"גבוה"
+//[MInfoPowerStatusBCMedium]
+"בינוני"
+//[MInfoPowerStatusBCLow]
+"נמוך"
+//[MInfoPowerStatusBCCritical]
+"קריטי"
+//[MInfoPowerStatusBCCharging]
+"בטעינה"
+//[MInfoPowerStatusBCNoSysBat]
+"אין סוללת מערכת"
+//[MInfoPowerStatusBCUnknown]
+"לא ידוע"
+//[MInfoPowerStatusBCTimeRem]
+"זמן סוללה שנותר"
+//[MInfoPowerStatusBCFullTimeRem]
+"זמן סוללה מלא"
+//[MInfoPowerStatusUnknown]
+"לא ידוע"
+//[MAccessDenied]
+"הגישה נדחתה"
+//[MCannotExecute]
+"לא ניתן להפעיל"
+//[MCannotInvokeComspec]
+"לא ניתן להפעיל את מפרש הפקודות"
+//[MCheckComspecVar]
+"בדוק את משתנה הסביבה COMSPEC"
+//[MScanningFolder]
+"סורק את התיקייה"
+//[MMakeFolderTitle]
+"יצירת תיקייה"
+//[MCreateFolder]
+"יצירת ה&תיקייה:"
+//[MMakeFolderLinkType]
+"&סוג הקישור:"
+//[MMakeFolderLinkNone]
+"&ללא"
+//[MMakeFolderLinkJunction]
+"&צומת ספרייה"
+//[MMakeFolderLinkSymlink]
+"קישור &סמלי"
+//[MMakeFolderLinkTarget]
+"&יעד:"
+//[MMultiMakeDir]
+"עיבוד &שמות מרובים"
+//[MIncorrectDirList]
+"רשימת תיקיות שגויה"
+//[MCannotCreateFolder]
+"לא ניתן ליצור את התיקייה"
+//[MMenuBriefView]
+"&מקוצר"
+//[MMenuMediumView]
+"&בינוני"
+//[MMenuFullView]
+"&מלא"
+//[MMenuWideView]
+"&רחב"
+//[MMenuDetailedView]
+"&מפורט"
+//[MMenuDizView]
+"&תיאורים"
+//[MMenuLongDizView]
+"תיאורים &ארוכים"
+//[MMenuOwnersView]
+"&בעלי הקבצים"
+//[MMenuLinksView]
+"&קישורי הקבצים"
+//[MMenuAlternativeView]
+"מלא &חלופי"
+//[MMenuInfoPanel]
+"חלונית &מידע"
+//[MMenuTreePanel]
+"חלונית &עץ"
+//[MMenuQuickView]
+"תצוגה &מהירה"
+//[MMenuSortModes]
+"מצבי &מיון"
+//[MMenuLongNames]
+"הצגת &שמות ארוכים"
+//[MMenuTogglePanel]
+"חלונית &פעיל/כבוי"
+//[MMenuReread]
+"&קריאה מחדש"
+//[MMenuChangeDrive]
+"&החלפת כונן"
+//[MMenuView]
+"&הצגה"
+//[MMenuEdit]
+"&עריכה"
+//[MMenuCopy]
+"ה&עתקה"
+//[MMenuMove]
+"&שינוי שם או העברה"
+//[MMenuLink]
+"&קישור"
+//[MMenuCreateFolder]
+"יצירת &תיקייה"
+//[MMenuDelete]
+"&מחיקה"
+//[MMenuWipe]
+"ה&שמדה"
+//[MMenuAdd]
+"הוספה ל&ארכיון"
+//[MMenuExtract]
+"&חילוץ קבצים"
+//[MMenuArchiveCommands]
+"פקודות א&רכיון"
+//[MMenuAttributes]
+"&תכונות קובץ"
+//[MMenuApplyCommand]
+"ה&חלת פקודה"
+//[MMenuDescribe]
+"&תיאור קבצים"
+//[MMenuSelectGroup]
+"בחירת &קבוצה"
+//[MMenuUnselectGroup]
+"&ביטול בחירת קבוצה"
+//[MMenuInvertSelection]
+"&היפוך הבחירה"
+//[MMenuRestoreSelection]
+"&שחזור הבחירה"
+//[MMenuFindFile]
+"&חיפוש קובץ"
+//[MMenuHistory]
+"&היסטוריה"
+//[MMenuVideoMode]
+"מצב &וידאו"
+//[MMenuFindFolder]
+"חיפוש &תיקייה"
+//[MMenuViewHistory]
+"היסטוריית ה&צגה"
+//[MMenuFoldersHistory]
+"היסטוריית ת&יקיות"
+//[MMenuSwapPanels]
+"ה&חלפת חלוניות"
+//[MMenuTogglePanels]
+"&חלוניות פעיל/כבוי"
+//[MMenuCompareFolders]
+"ה&שוואת תיקיות"
+//[MMenuUserMenu]
+"עריכת &תפריט המשתמש"
+//[MMenuFileAssociations]
+"&שיוכי קבצים"
+//[MMenuFolderShortcuts]
+"קיצורי &דרך לתיקיות"
+//[MMenuFilter]
+"&מסנן חלונית הקבצים"
+//[MMenuPluginCommands]
+"פקודות &תוספים"
+//[MMenuWindowsList]
+"רשימת &מסכים"
+//[MMenuProcessList]
+"רשימת מ&שימות"
+//[MMenuHotPlugList]
+"רשימת &התקנים נשלפים"
+//[MMenuSystemSettings]
+"הגדרות &מערכת"
+//[MMenuPanelSettings]
+"הגדרות &חלוניות"
+//[MMenuTreeSettings]
+"הגדרות &עץ"
+//[MMenuInterface]
+"הגדרות מ&משק"
+//[MMenuLanguages]
+"&שפות"
+//[MMenuPluginsConfig]
+"תצורת &תוספים"
+//[MMenuPluginsManagerSettings]
+"הגדרות מ&נהל התוספים"
+//[MMenuDialogSettings]
+"הגדרות תיבות &דו-שיח"
+//[MMenuVMenuSettings]
+"הגדרות תפריטים"
+//[MMenuCmdlineSettings]
+"הגדרות שורת ה&פקודה"
+//[MMenuAutoCompleteSettings]
+"הגדרות השלמה &אוטומטית"
+//[MMenuInfoPanelSettings]
+"הגדרות חלונית ה&מידע"
+//[MMenuMaskGroups]
+"קבוצות &מסכות קבצים"
+//[MMenuConfirmation]
+"&אישורים"
+//[MMenuFilePanelModes]
+"מצבי חלונית ה&קבצים"
+//[MMenuFileDescriptions]
+"תיאורי &קבצים"
+//[MMenuFolderInfoFiles]
+"קובצי &תיאור תיקיות"
+//[MMenuViewer]
+"הגדרות ה&מציג"
+//[MMenuEditor]
+"הגדרות ה&עורך"
+//[MMenuCodePages]
+"דפי קוד"
+//[MMenuColors]
+"&צבעים"
+//[MMenuFilesHighlighting]
+"&צביעת קבצים וקבוצות מיון"
+//[MMenuSaveSetup]
+"&שמירת הגדרות"
+//[MMenuTogglePanelRight]
+"חלונית &פעיל/כבוי"
+//[MMenuChangeDriveRight]
+"&החלפת כונן"
+//[MMenuLeftTitle]
+"&שמאל"
+//[MMenuFilesTitle]
+"&קבצים"
+//[MMenuCommandsTitle]
+"&פקודות"
+//[MMenuOptionsTitle]
+"&אפשרויות"
+//[MMenuRightTitle]
+"&ימין"
+//[MMenuSortTitle]
+"מיון לפי"
+//[MMenuSortByName]
+"&שם"
+//[MMenuSortByExt]
+"&סיומת"
+//[MMenuSortByWrite]
+"זמן &כתיבה"
+//[MMenuSortBySize]
+"&גודל"
+//[MMenuUnsorted]
+"&ללא מיון"
+//[MMenuSortByCreation]
+"זמן &יצירה"
+//[MMenuSortByAccess]
+"זמן &גישה"
+//[MMenuSortByChange]
+"זמן &שינוי"
+//[MMenuSortByDiz]
+"&תיאורים"
+//[MMenuSortByOwner]
+"&בעלים"
+//[MMenuSortByAllocatedSize]
+"גודל מוקצה"
+//[MMenuSortByNumLinks]
+"מספר קישורים &קשיחים"
+//[MMenuSortByNumStreams]
+"מספר &זרמים"
+//[MMenuSortByStreamsSize]
+"גודל ה&זרמים"
+//[MMenuSortByNameOnly]
+"שם בלבד"
+//[MMenuSortUseGroups]
+"שימוש בקבוצות מיון"
+//[MMenuSortSelectedFirst]
+"הצגת הנבחרים &תחילה"
+//[MMenuSortDirectoriesFirst]
+"הצגת התיקיות &ראשונות"
+//[MMaskGroupTitle]
+"קבוצות מסכות קבצים"
+//[MMaskGroupName]
+"&שם:"
+//[MMaskGroupMasks]
+"&מסכת קבצים אחת או כמה מסכות:"
+//[MMaskGroupAskDelete]
+"האם למחוק"
+//[MMaskGroupRestore]
+"האם לשחזר את ערכות המסכות של ברירת המחדל?"
+//[MMaskGroupFindMask]
+"&מסכה:"
+//[MMaskGroupTotal]
+"סה״כ: {0}"
+//[MChangeDriveTitle]
+"החלפת כונן"
+//[MChangeDriveRemovable]
+"נשלף"
+//[MChangeDriveFixed]
+"קבוע"
+//[MChangeDriveNetwork]
+"רשת"
+//[MChangeDriveDisconnectedNetwork]
+"מנותק"
+//[MChangeDriveCDROM]
+"CD-ROM"
+//[MChangeDriveCDR]
+"CD-R"
+//[MChangeDriveCDRW]
+"CD-RW"
+//[MChangeDriveCDRWDVD]
+"CD-RW/DVD"
+//[MChangeDriveDVDROM]
+"DVD-ROM"
+//[MChangeDriveDVDR]
+"DVD-R"
+//[MChangeDriveDVDRW]
+"DVD-RW"
+//[MChangeDriveDVDRAM]
+"DVD-RAM"
+//[MChangeDriveBDROM]
+"BD-ROM"
+//[MChangeDriveBDR]
+"BD-R"
+//[MChangeDriveBDRE]
+"BD-RE"
+//[MChangeDriveHDDVDROM]
+"HDDVD-ROM"
+//[MChangeDriveHDDVDR]
+"HDDVD-R"
+//[MChangeDriveHDDVDRW]
+"HDDVD-RW"
+//[MChangeDriveHDDVDRAM]
+"HDDVD-RAM"
+//[MChangeDriveRAM]
+"דיסק RAM"
+//[MChangeDriveSUBST]
+"subst"
+//[MChangeDriveVirtual]
+"וירטואלי"
+//[MChangeDriveLabelAbsent]
+"לא זמין"
+//[MChangeDriveCannotReadDisk]
+"לא ניתן לקרוא את הדיסק בכונן"
+//[MChangeDriveCannotDisconnect]
+"לא ניתן לנתק"
+//[MChangeDriveCannotDelSubst]
+"לא ניתן למחוק דיסק חלופי"
+//[MChangeDriveCannotDetach]
+"לא ניתן לנתק דיסק וירטואלי"
+//[MChangeSUBSTDisconnectDriveTitle]
+"מחיקת דיסק חלופי"
+//[MChangeSUBSTDisconnectDriveQuestion]
+"למחוק את דיסק ה-SUBST {0}?"
+//[MChangeVHDDisconnectDriveTitle]
+"ניתוק דיסק וירטואלי"
+//[MChangeVHDDisconnectDriveQuestion]
+"לנתק את הדיסק הווירטואלי {0}?"
+//[MChangeHotPlugDisconnectDriveTitle]
+"הסרת התקן"
+//[MChangeHotPlugDisconnectDriveQuestion]
+"האם להסיר את ההתקן"
+//[MHotPlugDisks]
+"(דיסקים: {0})"
+//[MChangeCouldNotEjectHotPlugMedia]
+"לא ניתן להסיר את ההתקן של הכונן"
+//[MChangeCouldNotEjectHotPlugMedia2]
+"לא ניתן להסיר את ההתקן:"
+//[MChangeHotPlugNotify1]
+"ההתקן"
+//[MChangeHotPlugNotify2]
+"ניתן כעת להסרה בבטחה"
+//[MHotPlugListTitle]
+"רשימת התקנים נשלפים"
+//[MChangeDriveDisconnectTitle]
+"ניתוק כונן רשת"
+//[MChangeDriveDisconnectQuestion]
+"להתנתק מהכונן {0}?"
+//[MChangeDriveDisconnectMapped]
+"הכונן ממופה אל:"
+//[MChangeDriveDisconnectReconnect]
+"&התחבר מחדש בכניסה"
+//[MChangeWaitingLoadDisk]
+"ממתין לעגינת הדיסק…"
+//[MChangeCouldNotEjectMedia]
+"לא ניתן להוציא את המדיה מהכונן"
+//[MChangeDriveConfigure]
+"אפשרויות תפריט החלפת כונן"
+//[MChangeDriveShowDiskType]
+"הצגת &סוג הדיסק"
+//[MChangeDriveShowPath]
+"הצגת שם &רשת / נתיב SUBST / שם VHD"
+//[MChangeDriveShowLabel]
+"הצגת &תווית הדיסק"
+//[MChangeDriveShowLabelUseShell]
+"שימוש בשם &המעטפת"
+//[MChangeDriveShowFileSystem]
+"הצגת סוג &מערכת הקבצים"
+//[MChangeDriveShowSize]
+"הצגת ה&גודל"
+//[MChangeDriveShowSizeFloat]
+"הצגת הגודל כ&שבר עשרוני"
+//[MChangeDriveShowRemovableDrive]
+"הצגת הפרמטרים של כוננים &נשלפים"
+//[MChangeDriveShowPlugins]
+"הצגת &תוספים"
+//[MChangeDriveSortPluginsByHotkey]
+"מיון תוספים לפי &מקש קיצור"
+//[MChangeDriveShowCD]
+"הצגת הפרמטרים של כונני &CD"
+//[MChangeDriveShowNetworkDrive]
+"הצגת הפרמטרים של כונני &רשת"
+//[MChangeDriveShowVirtualDisk]
+"זיהוי דיסקים וירטואליים"
+//[MChangeDriveVolumeLabel]
+"תווית אמצעי האחסון"
+//[MSearchFileTitle]
+"חיפוש"
+//[MCannotCreateListTemp]
+"לא ניתן ליצור קובץ זמני עבור רשימת הקבצים"
+//[MDragFiles]
+"{0} קבצים"
+//[MDragMove]
+"העברת {0}"
+//[MDragCopy]
+"העתקת {0}"
+//[MProcessListTitle]
+"רשימת משימות"
+//[MKillProcessTitle]
+"סיום משימה"
+//[MAskKillProcess]
+"האם לסיים את המשימה הנבחרת?"
+//[MKillProcessWarning]
+"כל המידע שלא נשמר בתוכנה זו יאבד"
+//[MKillProcessKill]
+"סיים"
+//[MCannotKillProcess]
+"לא ניתן לסיים את המשימה שצוינה"
+//[MCannotKillProcessPerm]
+"אין לך הרשאה לסיים תהליך זה."
+//[MQuickViewTitle]
+"תצוגה מהירה"
+//[MQuickViewReparsePoint]
+"נקודת &ניתוח חוזר"
+//[MQuickViewUnknownReparsePoint]
+"נקודת ניתוח חוזר לא ידועה"
+//[MQuickViewFolders]
+"תיקיות:"
+//[MQuickViewFiles]
+"קבצים:"
+//[MQuickViewBytes]
+"גודל הקבצים:"
+//[MQuickViewAllocated]
+"גודל מוקצה:"
+//[MQuickViewCluster]
+"גודל אשכול:"
+//[MQuickViewSlack]
+"שטח מבוזבז:"
+//[MQuickViewMFTOverhead]
+"תקורת MFT:"
+//[MSetAttrTitle]
+"תכונות"
+//[MSetAttrFor]
+"שינוי תכונות הקובץ עבור"
+//[MSetAttrSelectedObjects]
+"פריטים נבחרים"
+//[MSetAttrHardLinks]
+"קישורים קשיחים"
+//[MSetAttrJunction]
+"&צומת:"
+//[MSetAttrSymlink]
+"קישור &סמלי{}:"
+//[MSetAttrVolMount]
+"&כרך:"
+//[MSetAttrDfsTargets]
+"יעדי DFS:"
+//[MSetAttrAppExecLink]
+"כינוי יישום:"
+//[MSetAttrUnknownReparsePoint]
+"נקודת ניתוח חוזר לא ידועה"
+//[MSetAttrDiskDevice]
+"התקן:"
+//[MSetAttrReadOnly]
+"&קריאה בלבד"
+//[MSetAttrArchive]
+"&ארכיון"
+//[MSetAttrHidden]
+"&מוסתר"
+//[MSetAttrSystem]
+"מ&ערכת"
+//[MSetAttrCompressed]
+"&דחוס"
+//[MSetAttrEncrypted]
+"מ&וצפן"
+//[MSetAttrNotIndexed]
+"לא מ&אונדקס"
+//[MSetAttrSparse]
+"&דליל"
+//[MSetAttrTemporary]
+"&זמני"
+//[MSetAttrOffline]
+"&לא מקוון"
+//[MSetAttrReparsePoint]
+"נקודת &ניתוח חוזר"
+//[MSetAttrVirtual]
+"&וירטואלי"
+//[MSetAttrIntegrityStream]
+"זרם &שלמות"
+//[MSetAttrNoScrubData]
+"&ללא בדיקת נתונים"
+//[MSetAttrPinned]
+"מ&וצמד"
+//[MSetAttrUnpinned]
+"&לא מוצמד"
+//[MSetAttrRecallOnOpen]
+"שליפה ב&פתיחה"
+//[MSetAttrRecallOnDataAccess]
+"שליפה ב&גישה לנתונים"
+//[MSetAttrStrictlySequential]
+"&רציף בלבד"
+//[MSetAttrDevice]
+"התקן"
+//[MSetAttrMore]
+"&עוד"
+//[MSetAttrSubfolders]
+"עיבוד תיקיות &משנה"
+//[MSetAttrOwner]
+"בעלים&:"
+//[MSetAttrDate]
+"תאריך/שעה:"
+//[MSetAttrWrite]
+"&כתיבה:"
+//[MSetAttrCreation]
+"&יצירה:"
+//[MSetAttrAccess]
+"&גישה:"
+//[MSetAttrChange]
+"&שינוי:"
+//[MSetAttrOriginal]
+"&מקורי"
+//[MSetAttrCurrent]
+"&נוכחי"
+//[MSetAttrBlank]
+"&ריק"
+//[MSetAttrSet]
+"הגדר"
+//[MSetAttrDateTitleMDY]
+"MM{0}DD{0}YYYYY"
+//[MSetAttrDateTitleDMY]
+"DD{0}MM{0}YYYYY"
+//[MSetAttrDateTitleYMD]
+"YYYYY{0}MM{0}DD"
+//[MSetAttrTimeTitle]
+"hh{0}mm{0}ss"
+//[MSetAttrSystemDialog]
+"&מאפייני מערכת"
+//[MSetAttrSetting]
+"מגדיר את תכונות הקובץ עבור"
+//[MSetAttrCannotFor]
+"לא ניתן להגדיר תכונות עבור"
+//[MSetAttrCompressedCannotFor]
+"לא ניתן להגדיר את התכונה דחוס עבור"
+//[MSetAttrEncryptedCannotFor]
+"לא ניתן להגדיר את התכונה מוצפן עבור"
+//[MSetAttrSparseCannotFor]
+"לא ניתן להגדיר את התכונה דליל עבור"
+//[MSetAttrTimeCannotFor]
+"לא ניתן להגדיר את זמן הקובץ עבור"
+//[MSetAttrOwnerCannotFor]
+"לא ניתן להגדיר בעלים עבור"
+//[MSetAttrReparsePointCannotFor]
+"לא ניתן להסיר את נקודת הניתוח החוזר עבור"
+//[MSetColorPanel]
+"&חלונית"
+//[MSetColorDialog]
+"תיבת &דו-שיח"
+//[MSetColorWarning]
+"הודעת &אזהרה"
+//[MSetColorMenu]
+"&תפריט"
+//[MSetColorHMenu]
+"תפריט &אופקי"
+//[MSetColorKeyBar]
+"שורת &מקשים"
+//[MSetColorCommandLine]
+"שורת &פקודה"
+//[MSetColorClock]
+"&שעון"
+//[MSetColorViewer]
+"מ&ציג"
+//[MSetColorEditor]
+"&עורך"
+//[MSetColorHelp]
+"ע&זרה"
+//[MColorThemes]
+"ערכות נושא"
+//[MDefaultTheme]
+"ברירת מחדל"
+//[MDefaultThemeRGB]
+"ברירת מחדל (RGB)"
+//[MSetColorPanelNormal]
+"טקסט רגיל"
+//[MSetColorPanelSelected]
+"טקסט נבחר"
+//[MSetColorPanelHighlightedText]
+"טקסט מודגש"
+//[MSetColorPanelHighlightedInfo]
+"מידע מודגש"
+//[MSetColorPanelDragging]
+"טקסט נגרר"
+//[MSetColorPanelBox]
+"מסגרת"
+//[MSetColorPanelNormalCursor]
+"סמן רגיל"
+//[MSetColorPanelSelectedCursor]
+"סמן נבחר"
+//[MSetColorPanelNormalTitle]
+"כותרת רגילה"
+//[MSetColorPanelSelectedTitle]
+"כותרת נבחרת"
+//[MSetColorPanelColumnTitle]
+"כותרת עמודה"
+//[MSetColorPanelTotalInfo]
+"מידע כולל"
+//[MSetColorPanelSelectedInfo]
+"מידע על הבחירה"
+//[MSetColorPanelScrollbar]
+"פס גלילה"
+//[MSetColorPanelScreensNumber]
+"מספר מסכי רקע"
+//[MSetColorDialogNormal]
+"טקסט רגיל"
+//[MSetColorDialogHighlighted]
+"טקסט מודגש"
+//[MSetColorDialogDisabled]
+"טקסט מושבת"
+//[MSetColorDialogBox]
+"מסגרת"
+//[MSetColorDialogBoxTitle]
+"כותרת"
+//[MSetColorDialogHighlightedBoxTitle]
+"כותרת מודגשת"
+//[MSetColorDialogTextInput]
+"קלט טקסט"
+//[MSetColorDialogUnchangedTextInput]
+"קלט טקסט שלא שונה"
+//[MSetColorDialogSelectedTextInput]
+"קלט טקסט נבחר"
+//[MSetColorDialogEditDisabled]
+"שורת קלט מושבתת"
+//[MSetColorDialogButtons]
+"לחצנים"
+//[MSetColorDialogSelectedButtons]
+"לחצנים נבחרים"
+//[MSetColorDialogHighlightedButtons]
+"לחצנים מודגשים"
+//[MSetColorDialogSelectedHighlightedButtons]
+"לחצנים נבחרים מודגשים"
+//[MSetColorDialogDefaultButton]
+"לחצן ברירת מחדל"
+//[MSetColorDialogSelectedDefaultButton]
+"לחצן ברירת מחדל נבחר"
+//[MSetColorDialogHighlightedDefaultButton]
+"לחצן ברירת מחדל מודגש"
+//[MSetColorDialogSelectedHighlightedDefaultButton]
+"לחצן ברירת מחדל נבחר מודגש"
+//[MSetColorDialogListBoxControl]
+"תיבת רשימה"
+//[MSetColorDialogComboBoxControl]
+"תיבה משולבת"
+//[MSetColorDialogListText]
+"טקסט רגיל"
+//[MSetColorDialogListSelectedText]
+"טקסט נבחר"
+//[MSetColorDialogListHighLight]
+"טקסט מודגש"
+//[MSetColorDialogListSelectedHighLight]
+"טקסט נבחר מודגש"
+//[MSetColorDialogListDisabled]
+"פריט מושבת"
+//[MSetColorDialogListBox]
+"מסגרת"
+//[MSetColorDialogListTitle]
+"כותרת"
+//[MSetColorDialogListGrayed]
+"טקסט רשימה אפור"
+//[MSetColorDialogSelectedListGrayed]
+"טקסט רשימה אפור נבחר"
+//[MSetColorDialogListScrollBar]
+"פס גלילה"
+//[MSetColorDialogListArrows]
+"מחווני מחרוזת ארוכה"
+//[MSetColorDialogListArrowsSelected]
+"מחווני מחרוזת ארוכה נבחרים"
+//[MSetColorDialogListArrowsDisabled]
+"מחווני מחרוזת ארוכה מושבתים"
+//[MSetColorMenuNormal]
+"טקסט רגיל"
+//[MSetColorMenuSelected]
+"טקסט נבחר"
+//[MSetColorMenuHighlighted]
+"טקסט מודגש"
+//[MSetColorMenuSelectedHighlighted]
+"טקסט נבחר מודגש"
+//[MSetColorMenuDisabled]
+"טקסט מושבת"
+//[MSetColorMenuGrayed]
+"טקסט אפור"
+//[MSetColorMenuSelectedGrayed]
+"טקסט אפור נבחר"
+//[MSetColorMenuBox]
+"מסגרת"
+//[MSetColorMenuTitle]
+"כותרת"
+//[MSetColorMenuScrollBar]
+"פס גלילה"
+//[MSetColorMenuArrows]
+"מחווני מחרוזת ארוכה"
+//[MSetColorMenuArrowsSelected]
+"מחווני מחרוזת ארוכה נבחרים"
+//[MSetColorMenuArrowsDisabled]
+"מחווני מחרוזת ארוכה מושבתים"
+//[MSetColorHMenuNormal]
+"טקסט רגיל"
+//[MSetColorHMenuSelected]
+"טקסט נבחר"
+//[MSetColorHMenuHighlighted]
+"טקסט מודגש"
+//[MSetColorHMenuSelectedHighlighted]
+"טקסט נבחר מודגש"
+//[MSetColorKeyBarNumbers]
+"מספרי מקשים"
+//[MSetColorKeyBarNames]
+"שמות מקשים"
+//[MSetColorKeyBarBackground]
+"רקע"
+//[MSetColorCommandLineNormal]
+"טקסט רגיל"
+//[MSetColorCommandLineSelected]
+"קלט טקסט נבחר"
+//[MSetColorCommandLinePrefix]
+"טקסט קידומת"
+//[MSetColorCommandLineUserScreen]
+"מסך המשתמש"
+//[MSetColorClockNormal]
+"טקסט רגיל (חלונית)"
+//[MSetColorClockNormalEditor]
+"טקסט רגיל (עורך)"
+//[MSetColorClockNormalViewer]
+"טקסט רגיל (מציג)"
+//[MSetColorViewerNormal]
+"טקסט רגיל"
+//[MSetColorViewerSelected]
+"טקסט נבחר"
+//[MSetColorViewerStatus]
+"שורת מצב"
+//[MSetColorViewerArrows]
+"חיצי גלילת מסך"
+//[MSetColorViewerScrollbar]
+"פס גלילה"
+//[MSetColorEditorNormal]
+"טקסט רגיל"
+//[MSetColorEditorSelected]
+"טקסט נבחר"
+//[MSetColorEditorStatus]
+"שורת מצב"
+//[MSetColorEditorScrollbar]
+"פס גלילה"
+//[MSetColorEditorLineNumbers]
+"מספרי שורות"
+//[MSetColorHelpNormal]
+"טקסט רגיל"
+//[MSetColorHelpHighlighted]
+"טקסט מודגש"
+//[MSetColorHelpReference]
+"הפניה"
+//[MSetColorHelpSelectedReference]
+"הפניה נבחרת"
+//[MSetColorHelpBox]
+"מסגרת"
+//[MSetColorHelpBoxTitle]
+"כותרת"
+//[MSetColorHelpScrollbar]
+"פס גלילה"
+//[MSetColorGroupsTitle]
+"קבוצות צבעים"
+//[MSetColorItemsTitle]
+"פריטי הקבוצה"
+//[MSetColorTitle]
+"צבע"
+//[MSetColorForeground]
+"&חזית:"
+//[MSetColorBackground]
+"&רקע:"
+//[MSetColorForegroundDefault]
+"ברירת מחדל"
+//[MSetColorBackgroundDefault]
+"ברירת מחדל"
+//[MSetColorForeIndex]
+"AA    ##"
+//[MSetColorForeAARRGGBB]
+"AARRGGBB"
+//[MSetColorForeDefault]
+"AA"
+//[MSetColorFore256]
+"&256…"
+//[MSetColorForeRGB]
+"&RGB…"
+//[MSetColorBackIndex]
+"AA    ##"
+//[MSetColorBackAARRGGBB]
+"AARRGGBB"
+//[MSetColorBackDefault]
+"AA"
+//[MSetColorBack256]
+"2&56…"
+//[MSetColorBackRGB]
+"R&GB…"
+//[MSetColorStyle]
+"סגנון:"
+//[MSetColorStyleInherit]
+"&ירושה"
+//[MSetColorStyleBold]
+"&מודגש"
+//[MSetColorStyleItalic]
+"&נטוי"
+//[MSetColorStyleOverline]
+"קו &עליון"
+//[MSetColorStyleStrikeout]
+"קו &חוצה"
+//[MSetColorStyleFaint]
+"&עמום"
+//[MSetColorStyleBlink]
+"&מהבהב"
+//[MSetColorStyleInverse]
+"הפוך"
+//[MSetColorStyleInvisible]
+"בלתי נראה"
+//[MSetColorStyleUnderline]
+"קו &תחתון:"
+//[MSetColorStyleUnderlineNone]
+"לא"
+//[MSetColorStyleUnderlineSingle]
+"יחיד"
+//[MSetColorStyleUnderlineDouble]
+"כפול"
+//[MSetColorStyleUnderlineCurly]
+"גלי"
+//[MSetColorStyleUnderlineDotted]
+"מנוקד"
+//[MSetColorStyleUnderlineDashed]
+"מקווקו"
+//[MSetColorSample]
+"טקסט טקסט טקסט טקסט טקסט טקסט טקסט"
+//[MSetColorVTHintInfo]
+"צבעים וסגנונות מורחבים דורשים עיבוד VT."
+//[MSetColorVTHintSupported]
+"לחץ על \"הפעל VT\" למטה כדי להפעיל אותו."
+//[MSetColorVTHintNotSupported]
+"המערכת שלך אינה תומכת בכך."
+//[MSetColorSystemDialog]
+"מערכת"
+//[MSetColorSet]
+"הגדר"
+//[MSetColorEnableVT]
+"הפעל VT"
+//[MSetColorCancel]
+"ביטול"
+//[MColorsPalette]
+"לוח צבעים"
+//[MColorsClassicPalette]
+"לוח צבעים קלאסי"
+//[MSetConfirmTitle]
+"אישורים"
+//[MSetConfirmCopy]
+"&העתקה"
+//[MSetConfirmMove]
+"ה&עברה"
+//[MSetConfirmRO]
+"&דריסה ומחיקה של קבצים לקריאה בלבד"
+//[MSetConfirmDrag]
+"&גרירה ושחרור"
+//[MSetConfirmDelete]
+"&מחיקה"
+//[MSetConfirmDeleteFolders]
+"מחיקת &תיקיות שאינן ריקות"
+//[MSetConfirmEsc]
+"&הפסקת פעולה"
+//[MSetConfirmRemoveConnection]
+"ניתוק כונן &רשת"
+//[MSetConfirmRemoveSUBST]
+"מחיקת דיסק &SUBST"
+//[MSetConfirmDetachVHD]
+"ניתוק דיסק &וירטואלי"
+//[MSetConfirmRemoveHotPlug]
+"הסרת התקן &נשלף"
+//[MSetConfirmAllowReedit]
+"&טעינה מחדש של קובץ נערך"
+//[MSetConfirmHistoryClear]
+"ניקוי רשימת ה&היסטוריה"
+//[MSetConfirmExit]
+"&יציאה"
+//[MPluginsManagerSettingsTitle]
+"הגדרות מנהל התוספים"
+//[MPluginsManagerOEMPluginsSupport]
+"תמיכה בתוספי &OEM"
+//[MPluginsManagerScanSymlinks]
+"סריקת קישורים &סמליים"
+//[MPluginsManagerOFP]
+"עיבוד &קבצים"
+//[MPluginsManagerStdAssoc]
+"הצגת פריט ה&שיוך הסטנדרטי"
+//[MPluginsManagerEvenOne]
+"&גם אם נמצא תוסף אחד בלבד"
+//[MPluginsManagerSFL]
+"&תוצאות חיפוש (SetFindList)"
+//[MPluginsManagerPF]
+"עיבוד &קידומות"
+//[MPluginConfirmationTitle]
+"בחירת תוסף"
+//[MMenuPluginStdAssociation]
+"שיוך סטנדרטי"
+//[MFindFolderTitle]
+"חיפוש תיקייה"
+//[MFolderTreeF1]
+"עזרה"
+//[MFolderTreeF2]
+"סרוק"
+//[MFolderTreeF3]
+""
+//[MFolderTreeF4]
+""
+//[MFolderTreeF5]
+"זום"
+//[MFolderTreeF6]
+""
+//[MFolderTreeF7]
+""
+//[MFolderTreeF8]
+""
+//[MFolderTreeF9]
+""
+//[MFolderTreeF10]
+"יציאה"
+//[MFolderTreeF11]
+""
+//[MFolderTreeF12]
+""
+//[MFolderTreeShiftF1]
+""
+//[MFolderTreeShiftF2]
+""
+//[MFolderTreeShiftF3]
+""
+//[MFolderTreeShiftF4]
+""
+//[MFolderTreeShiftF5]
+""
+//[MFolderTreeShiftF6]
+""
+//[MFolderTreeShiftF7]
+""
+//[MFolderTreeShiftF8]
+""
+//[MFolderTreeShiftF9]
+""
+//[MFolderTreeShiftF10]
+""
+//[MFolderTreeShiftF11]
+""
+//[MFolderTreeShiftF12]
+""
+//[MFolderTreeAltF1]
+""
+//[MFolderTreeAltF2]
+""
+//[MFolderTreeAltF3]
+""
+//[MFolderTreeAltF4]
+""
+//[MFolderTreeAltF5]
+""
+//[MFolderTreeAltF6]
+""
+//[MFolderTreeAltF7]
+""
+//[MFolderTreeAltF8]
+""
+//[MFolderTreeAltF9]
+"וידאו"
+//[MFolderTreeAltF10]
+""
+//[MFolderTreeAltF11]
+""
+//[MFolderTreeAltF12]
+""
+//[MFolderTreeCtrlF1]
+""
+//[MFolderTreeCtrlF2]
+""
+//[MFolderTreeCtrlF3]
+""
+//[MFolderTreeCtrlF4]
+""
+//[MFolderTreeCtrlF5]
+""
+//[MFolderTreeCtrlF6]
+""
+//[MFolderTreeCtrlF7]
+""
+//[MFolderTreeCtrlF8]
+""
+//[MFolderTreeCtrlF9]
+""
+//[MFolderTreeCtrlF10]
+""
+//[MFolderTreeCtrlF11]
+""
+//[MFolderTreeCtrlF12]
+""
+//[MFolderTreeCtrlShiftF1]
+""
+//[MFolderTreeCtrlShiftF2]
+""
+//[MFolderTreeCtrlShiftF3]
+""
+//[MFolderTreeCtrlShiftF4]
+""
+//[MFolderTreeCtrlShiftF5]
+""
+//[MFolderTreeCtrlShiftF6]
+""
+//[MFolderTreeCtrlShiftF7]
+""
+//[MFolderTreeCtrlShiftF8]
+""
+//[MFolderTreeCtrlShiftF9]
+""
+//[MFolderTreeCtrlShiftF10]
+""
+//[MFolderTreeCtrlShiftF11]
+""
+//[MFolderTreeCtrlShiftF12]
+""
+//[MFolderTreeCtrlAltF1]
+""
+//[MFolderTreeCtrlAltF2]
+""
+//[MFolderTreeCtrlAltF3]
+""
+//[MFolderTreeCtrlAltF4]
+""
+//[MFolderTreeCtrlAltF5]
+""
+//[MFolderTreeCtrlAltF6]
+""
+//[MFolderTreeCtrlAltF7]
+""
+//[MFolderTreeCtrlAltF8]
+""
+//[MFolderTreeCtrlAltF9]
+""
+//[MFolderTreeCtrlAltF10]
+""
+//[MFolderTreeCtrlAltF11]
+""
+//[MFolderTreeCtrlAltF12]
+""
+//[MFolderTreeAltShiftF1]
+""
+//[MFolderTreeAltShiftF2]
+""
+//[MFolderTreeAltShiftF3]
+""
+//[MFolderTreeAltShiftF4]
+""
+//[MFolderTreeAltShiftF5]
+""
+//[MFolderTreeAltShiftF6]
+""
+//[MFolderTreeAltShiftF7]
+""
+//[MFolderTreeAltShiftF8]
+""
+//[MFolderTreeAltShiftF9]
+""
+//[MFolderTreeAltShiftF10]
+""
+//[MFolderTreeAltShiftF11]
+""
+//[MFolderTreeAltShiftF12]
+""
+//[MFolderTreeCtrlAltShiftF1]
+""
+//[MFolderTreeCtrlAltShiftF2]
+""
+//[MFolderTreeCtrlAltShiftF3]
+""
+//[MFolderTreeCtrlAltShiftF4]
+""
+//[MFolderTreeCtrlAltShiftF5]
+""
+//[MFolderTreeCtrlAltShiftF6]
+""
+//[MFolderTreeCtrlAltShiftF7]
+""
+//[MFolderTreeCtrlAltShiftF8]
+""
+//[MFolderTreeCtrlAltShiftF9]
+""
+//[MFolderTreeCtrlAltShiftF10]
+""
+//[MFolderTreeCtrlAltShiftF11]
+""
+//[MFolderTreeCtrlAltShiftF12]
+""
+//[MTreeTitle]
+"עץ"
+//[MCannotSaveTree]
+"לא ניתן לשמור את עץ התיקיות לקובץ"
+//[MReadingTree]
+"קורא את עץ התיקיות"
+//[MUserMenuTitle]
+"תפריט משתמש"
+//[MChooseMenuType]
+"בחר את סוג תפריט המשתמש לעריכה"
+//[MChooseMenuMain]
+"&ראשי"
+//[MChooseMenuLocal]
+"&מקומי"
+//[MMainMenuTitle]
+"תפריט ראשי"
+//[MMainMenuUser]
+"משתמש"
+//[MMainMenuGlobal]
+"גלובלי"
+//[MLocalMenuTitle]
+"תפריט מקומי"
+//[MAskDeleteMenuItem]
+"האם למחוק את פריט התפריט"
+//[MAskDeleteSubMenuItem]
+"האם למחוק את תפריט המשנה"
+//[MUserMenuInvalidInputLabel]
+"תבנית תווית שגויה בתפריט המשתמש"
+//[MUserMenuInvalidInputHotKey]
+"תבנית מקש קיצור שגויה"
+//[MEditMenuTitle]
+"עריכת תפריט המשתמש"
+//[MEditMenuHotKey]
+"&מקש קיצור:"
+//[MEditMenuLabel]
+"&תווית:"
+//[MEditMenuCommands]
+"&פקודות:"
+//[MAskInsertMenuOrCommand]
+"האם להוסיף פקודה חדשה או תפריט חדש?"
+//[MMenuInsertCommand]
+"הוסף פקודה"
+//[MMenuInsertMenu]
+"הוסף תפריט"
+//[MEditSubmenuTitle]
+"עריכת תווית תפריט המשנה"
+//[MEditSubmenuHotKey]
+"&מקש קיצור:"
+//[MEditSubmenuLabel]
+"&תווית:"
+//[MEditMenuConfirmation]
+"לשמור את השינויים?"
+//[MEditMenuError]
+"לא ניתן לעדכן את התפריט"
+//[MViewerTitle]
+"מציג"
+//[MViewerCannotOpenFile]
+"לא ניתן לפתוח את הקובץ"
+//[MViewerStatusCol]
+"עמ"
+//[MViewSearchingFor]
+"מחפש את"
+//[MViewSearchingHex]
+"מחפש בתים"
+//[MViewSearchCannotFind]
+"המחרוזת לא נמצאה"
+//[MViewSearchCannotFindHex]
+"הבתים לא נמצאו"
+//[MViewSearchEod]
+"הגעת לסוף המסמך"
+//[MViewSearchFromBegin]
+"להמשיך מתחילת המסמך?"
+//[MViewSearchBod]
+"הגעת לתחילת המסמך"
+//[MViewSearchFromEnd]
+"להמשיך מסוף המסמך?"
+//[MViewSearchCycle]
+"כל המסמך נסרק"
+//[MViewSearchRepeat]
+"לחזור על החיפוש במסמך?"
+//[MPrintTitle]
+"הדפסה"
+//[MPrintTo]
+"הדפסת {0} אל"
+//[MPrintFilesTo]
+"הדפסת {0} קבצים אל"
+//[MPrintingFile]
+"מדפיס את {0}"
+//[MCannotEnumeratePrinters]
+"לא ניתן לקבל את רשימת המדפסות הזמינות"
+//[MCannotOpenPrinter]
+"לא ניתן לפתוח את המדפסת"
+//[MCannotPrint]
+"לא ניתן להדפיס"
+//[MDescribeFiles]
+"תיאור קובץ"
+//[MEnterDescription]
+"הזן תיאור עבור"
+//[MReadingDiz]
+"קורא תיאורי קבצים"
+//[MCannotUpdateDiz]
+"לא ניתן לעדכן את תיאורי הקבצים"
+//[MCfgDizTitle]
+"תיאורי קבצים"
+//[MCfgDizListNames]
+"שמות &רשימות התיאורים, מופרדים בפסיקים:"
+//[MCfgDizSetHidden]
+"הגדרת התכונה \"&מוסתר\" לרשימות תיאורים חדשות"
+//[MCfgDizROUpdate]
+"עדכון קובץ תיאורים לקריאה &בלבד"
+//[MCfgDizStartPos]
+"&מיקום התיאורים החדשים בשורה"
+//[MCfgDizNotUpdate]
+"&ללא עדכון תיאורים"
+//[MCfgDizUpdateIfDisplayed]
+"עדכון אם &מוצגים"
+//[MCfgDizAlwaysUpdate]
+"עדכון &תמיד"
+//[MCfgDizAnsiByDefault]
+"שימוש בדף קוד ANS&I כברירת מחדל"
+//[MCfgDizSaveInUTF]
+"שמירה ב-UTF-&8"
+//[MReadingTitleFiles]
+"עדכון חלוניות"
+//[MReadingFiles]
+"קורא: {0} קבצים"
+//[MOperationNotCompleted]
+"הפעולה לא הושלמה"
+//[MEditPanelModes]
+"עריכת מצבי חלונית"
+//[MEditPanelModeName]
+"&שם"
+//[MEditPanelModeTypes]
+"&סוגי עמודות"
+//[MEditPanelModeWidths]
+"&רוחבי עמודות"
+//[MEditPanelModeStatusTypes]
+"סוגי עמודות בשורת ה&מצב"
+//[MEditPanelModeStatusWidths]
+"רוחבי עמודות בשורת המ&צב"
+//[MEditPanelModeFullscreen]
+"תצוגת &מסך מלא"
+//[MEditPanelModeAlignExtensions]
+"יישור &סיומות קבצים"
+//[MEditPanelModeAlignFolderExtensions]
+"יישור סיומות &תיקיות"
+//[MEditPanelModeFoldersUpperCase]
+"הצגת תיקיות ב&אותיות רישיות"
+//[MEditPanelModeFilesLowerCase]
+"הצגת קבצים באותיות &קטנות"
+//[MEditPanelModeUpperToLowerCase]
+"הצגת שמות ברישיות באותיות ק&טנות"
+//[MSetFolderInfoTitle]
+"קובצי תיאור תיקיות"
+//[MSetFolderInfoNames]
+"הזן שמות קבצים מופרדים בפסיקים (מותרים תווים כלליים)"
+//[MScreensTitle]
+"מסכים"
+//[MScreensPanels]
+"חלוניות"
+//[MScreensView]
+"הצגה"
+//[MScreensEdit]
+"עריכה"
+//[MAskApplyCommandTitle]
+"החלת פקודה"
+//[MAskApplyCommand]
+"הזן פקודה לעיבוד הקבצים הנבחרים"
+//[MPluginConfigTitle]
+"תצורת תוספים"
+//[MPluginCommandsMenuTitle]
+"פקודות תוספים"
+//[MPreparingList]
+"מכין את רשימת הקבצים"
+//[MLangTitle]
+"שפה ראשית"
+//[MHelpLangTitle]
+"שפת העזרה"
+//[MDefineMacroTitle]
+"הגדרת מאקרו"
+//[MDefineMacro]
+"הקש על המקש הרצוי"
+//[MMacroReDefinedKey]
+"מקש המאקרו '{0}' כבר מוגדר."
+//[MMacroDeleteKey]
+"מקש המאקרו '{0}' יוסר."
+//[MMacroCommonReDefinedKey]
+"מקש המאקרו המשותף '{0}' כבר מוגדר."
+//[MMacroCommonDeleteKey]
+"מקש המאקרו המשותף '{0}' יוסר."
+//[MMacroSequence]
+"רצף:"
+//[MMacroReDefinedKey2]
+"להגדיר מחדש?"
+//[MMacroDeleteKey2]
+"למחוק?"
+//[MMacroEditKey]
+"&שנה"
+//[MMacroSettingsTitle]
+"הגדרות מאקרו עבור '{0}'"
+//[MMacroSettingsSequence]
+"&רצף:"
+//[MMacroSettingsDescription]
+"&תיאור:"
+//[MMacroSettingsEnableOutput]
+"&אפשור פלט למסך בזמן הרצת המאקרו"
+//[MMacroSettingsRunAfterStart]
+"הרצה לאחר &הפעלת gm"
+//[MMacroSettingsActivePanel]
+"חלונית &פעילה"
+//[MMacroSettingsPassivePanel]
+"חלונית &סבילה"
+//[MMacroSettingsPluginPanel]
+"חלונית &תוסף"
+//[MMacroSettingsFolders]
+"הרצה עבור &תיקיות"
+//[MMacroSettingsSelectionPresent]
+"קיימת &בחירה"
+//[MMacroSettingsCommandLine]
+"שורת &פקודה ריקה"
+//[MMacroSettingsSelectionBlockPresent]
+"קיים &בלוק נבחר"
+//[MMacroPluginLuamacroNotLoaded]
+"התוסף LuaMacro לא נטען"
+//[MMacroRecordingIsDisabled]
+"הקלטת מאקרו מושבתת"
+//[MCannotSaveFile]
+"לא ניתן לשמור את הקובץ"
+//[MTextSavedToTemp]
+"הטקסט הערוך נשמר ב-"
+//[MPluginHotKeyTitle]
+"הקצאת מקש קיצור לתוסף"
+//[MPluginHotKey]
+"הזן מקש קיצור (אות או ספרה)"
+//[MPluginInformation]
+"מידע על התוסף"
+//[MPluginModuleTitle]
+"&כותרת:"
+//[MPluginDescription]
+"&תיאור:"
+//[MPluginAuthor]
+"&מחבר:"
+//[MPluginVersion]
+"&גרסה:"
+//[MPluginModulePath]
+"נתיב ה&מודול:"
+//[MPluginUUID]
+"&UUID של התוסף:"
+//[MPluginItemUUID]
+"UUID של ה&פריט:"
+//[MPluginPrefix]
+"&קידומת התוסף:"
+//[MExceptionDialogTitle]
+"אופס"
+//[MExceptionDialogMessage1]
+"משהו השתבש."
+//[MExceptionDialogMessage2]
+"אנא שלח את דוח השגיאה למפתחים:"
+//[MExceptionDialogClipboard]
+"לוח"
+//[MExcTerminate]
+"&סיום gm"
+//[MExcUnload]
+"&פריקת התוסף"
+//[MExcContinue]
+"המשך"
+//[MExcFullDump]
+"Dump מלא"
+//[MNetUserName]
+"שם משתמש"
+//[MNetUserPassword]
+"סיסמה"
+//[MReadFolderError]
+"לא ניתן לקרוא את תוכן התיקייה"
+//[MPlgBadVers]
+"תוסף זה דורש גרסה חדשה יותר של gm"
+//[MPlgRequired]
+"גרסת gm הנדרשת היא {0},"
+//[MPlgRequired2]
+"גרסת gm הנוכחית היא {0}."
+//[MPlgLoadPluginError]
+"שגיאה בטעינת התוסף"
+//[MHelpTitle]
+"עזרה"
+//[MHelpActivatorURL]
+"הפניה זו מפעילה יישום חיצוני"
+//[MHelpActivatorFormat]
+"עם הפרמטר:"
+//[MHelpActivatorQ]
+"האם להפעיל אותו?"
+//[MCannotOpenHelp]
+"לא ניתן לפתוח את הקובץ"
+//[MHelpTopicNotFound]
+"נושא העזרה המבוקש לא נמצא:"
+//[MPluginsHelpTitle]
+"עזרה לתוספים"
+//[MDocumentsHelpTitle]
+"עזרה למסמכים"
+//[MHelpSearchCannotFind]
+"המחרוזת לא נמצאה"
+//[MHelpF1]
+"עזרה"
+//[MHelpF2]
+""
+//[MHelpF3]
+""
+//[MHelpF4]
+""
+//[MHelpF5]
+"זום"
+//[MHelpF6]
+""
+//[MHelpF7]
+"חפש"
+//[MHelpF8]
+""
+//[MHelpF9]
+""
+//[MHelpF10]
+"יציאה"
+//[MHelpF11]
+""
+//[MHelpF12]
+""
+//[MHelpShiftF1]
+"אינדקס"
+//[MHelpShiftF2]
+"תוסף"
+//[MHelpShiftF3]
+""
+//[MHelpShiftF4]
+""
+//[MHelpShiftF5]
+""
+//[MHelpShiftF6]
+""
+//[MHelpShiftF7]
+""
+//[MHelpShiftF8]
+""
+//[MHelpShiftF9]
+""
+//[MHelpShiftF10]
+""
+//[MHelpShiftF11]
+""
+//[MHelpShiftF12]
+""
+//[MHelpAltF1]
+"קודם"
+//[MHelpAltF2]
+""
+//[MHelpAltF3]
+""
+//[MHelpAltF4]
+""
+//[MHelpAltF5]
+""
+//[MHelpAltF6]
+""
+//[MHelpAltF7]
+""
+//[MHelpAltF8]
+""
+//[MHelpAltF9]
+"וידאו"
+//[MHelpAltF10]
+""
+//[MHelpAltF11]
+""
+//[MHelpAltF12]
+""
+//[MHelpCtrlF1]
+""
+//[MHelpCtrlF2]
+""
+//[MHelpCtrlF3]
+""
+//[MHelpCtrlF4]
+""
+//[MHelpCtrlF5]
+""
+//[MHelpCtrlF6]
+""
+//[MHelpCtrlF7]
+""
+//[MHelpCtrlF8]
+""
+//[MHelpCtrlF9]
+""
+//[MHelpCtrlF10]
+""
+//[MHelpCtrlF11]
+""
+//[MHelpCtrlF12]
+""
+//[MHelpAltShiftF1]
+""
+//[MHelpAltShiftF2]
+""
+//[MHelpAltShiftF3]
+""
+//[MHelpAltShiftF4]
+""
+//[MHelpAltShiftF5]
+""
+//[MHelpAltShiftF6]
+""
+//[MHelpAltShiftF7]
+""
+//[MHelpAltShiftF8]
+""
+//[MHelpAltShiftF9]
+""
+//[MHelpAltShiftF10]
+""
+//[MHelpAltShiftF11]
+""
+//[MHelpAltShiftF12]
+""
+//[MHelpCtrlShiftF1]
+""
+//[MHelpCtrlShiftF2]
+""
+//[MHelpCtrlShiftF3]
+""
+//[MHelpCtrlShiftF4]
+""
+//[MHelpCtrlShiftF5]
+""
+//[MHelpCtrlShiftF6]
+""
+//[MHelpCtrlShiftF7]
+""
+//[MHelpCtrlShiftF8]
+""
+//[MHelpCtrlShiftF9]
+""
+//[MHelpCtrlShiftF10]
+""
+//[MHelpCtrlShiftF11]
+""
+//[MHelpCtrlShiftF12]
+""
+//[MHelpCtrlAltF1]
+""
+//[MHelpCtrlAltF2]
+""
+//[MHelpCtrlAltF3]
+""
+//[MHelpCtrlAltF4]
+""
+//[MHelpCtrlAltF5]
+""
+//[MHelpCtrlAltF6]
+""
+//[MHelpCtrlAltF7]
+""
+//[MHelpCtrlAltF8]
+""
+//[MHelpCtrlAltF9]
+""
+//[MHelpCtrlAltF10]
+""
+//[MHelpCtrlAltF11]
+""
+//[MHelpCtrlAltF12]
+""
+//[MHelpCtrlAltShiftF1]
+""
+//[MHelpCtrlAltShiftF2]
+""
+//[MHelpCtrlAltShiftF3]
+""
+//[MHelpCtrlAltShiftF4]
+""
+//[MHelpCtrlAltShiftF5]
+""
+//[MHelpCtrlAltShiftF6]
+""
+//[MHelpCtrlAltShiftF7]
+""
+//[MHelpCtrlAltShiftF8]
+""
+//[MHelpCtrlAltShiftF9]
+""
+//[MHelpCtrlAltShiftF10]
+""
+//[MHelpCtrlAltShiftF11]
+""
+//[MHelpCtrlAltShiftF12]
+""
+//[MInfoF1]
+"עזרה"
+//[MInfoF2]
+"גלישה"
+//[MInfoF3]
+"הצגתא"
+//[MInfoF4]
+"ערותא"
+//[MInfoF5]
+""
+//[MInfoF6]
+""
+//[MInfoF7]
+"חפש"
+//[MInfoF8]
+"ANSI"
+//[MInfoF9]
+"תפהגד"
+//[MInfoF10]
+"יציאה"
+//[MInfoF11]
+"תוסף"
+//[MInfoF12]
+"מסך"
+//[MInfoShiftF1]
+""
+//[MInfoShiftF2]
+"גלשמל"
+//[MInfoShiftF3]
+""
+//[MInfoShiftF4]
+""
+//[MInfoShiftF5]
+""
+//[MInfoShiftF6]
+""
+//[MInfoShiftF7]
+"הבא"
+//[MInfoShiftF8]
+"דףקוד"
+//[MInfoShiftF9]
+"שמור"
+//[MInfoShiftF10]
+"אחרון"
+//[MInfoShiftF11]
+""
+//[MInfoShiftF12]
+""
+//[MInfoAltF1]
+"שמאל"
+//[MInfoAltF2]
+"ימין"
+//[MInfoAltF3]
+""
+//[MInfoAltF4]
+""
+//[MInfoAltF5]
+""
+//[MInfoAltF6]
+""
+//[MInfoAltF7]
+"חפש"
+//[MInfoAltF8]
+"מעבר"
+//[MInfoAltF9]
+"וידאו"
+//[MInfoAltF10]
+"עץ"
+//[MInfoAltF11]
+"היסצג"
+//[MInfoAltF12]
+"היסתק"
+//[MInfoCtrlF1]
+"שמאל"
+//[MInfoCtrlF2]
+"ימין"
+//[MInfoCtrlF3]
+""
+//[MInfoCtrlF4]
+""
+//[MInfoCtrlF5]
+""
+//[MInfoCtrlF6]
+""
+//[MInfoCtrlF7]
+""
+//[MInfoCtrlF8]
+""
+//[MInfoCtrlF9]
+""
+//[MInfoCtrlF10]
+""
+//[MInfoCtrlF11]
+""
+//[MInfoCtrlF12]
+"מצב"
+//[MInfoAltShiftF1]
+""
+//[MInfoAltShiftF2]
+""
+//[MInfoAltShiftF3]
+""
+//[MInfoAltShiftF4]
+""
+//[MInfoAltShiftF5]
+""
+//[MInfoAltShiftF6]
+""
+//[MInfoAltShiftF7]
+""
+//[MInfoAltShiftF8]
+""
+//[MInfoAltShiftF9]
+""
+//[MInfoAltShiftF10]
+""
+//[MInfoAltShiftF11]
+""
+//[MInfoAltShiftF12]
+""
+//[MInfoCtrlShiftF1]
+""
+//[MInfoCtrlShiftF2]
+""
+//[MInfoCtrlShiftF3]
+""
+//[MInfoCtrlShiftF4]
+""
+//[MInfoCtrlShiftF5]
+""
+//[MInfoCtrlShiftF6]
+""
+//[MInfoCtrlShiftF7]
+""
+//[MInfoCtrlShiftF8]
+""
+//[MInfoCtrlShiftF9]
+""
+//[MInfoCtrlShiftF10]
+""
+//[MInfoCtrlShiftF11]
+""
+//[MInfoCtrlShiftF12]
+""
+//[MInfoCtrlAltF1]
+""
+//[MInfoCtrlAltF2]
+""
+//[MInfoCtrlAltF3]
+""
+//[MInfoCtrlAltF4]
+""
+//[MInfoCtrlAltF5]
+""
+//[MInfoCtrlAltF6]
+""
+//[MInfoCtrlAltF7]
+""
+//[MInfoCtrlAltF8]
+""
+//[MInfoCtrlAltF9]
+""
+//[MInfoCtrlAltF10]
+""
+//[MInfoCtrlAltF11]
+""
+//[MInfoCtrlAltF12]
+""
+//[MInfoCtrlAltShiftF1]
+""
+//[MInfoCtrlAltShiftF2]
+""
+//[MInfoCtrlAltShiftF3]
+""
+//[MInfoCtrlAltShiftF4]
+""
+//[MInfoCtrlAltShiftF5]
+""
+//[MInfoCtrlAltShiftF6]
+""
+//[MInfoCtrlAltShiftF7]
+""
+//[MInfoCtrlAltShiftF8]
+""
+//[MInfoCtrlAltShiftF9]
+""
+//[MInfoCtrlAltShiftF10]
+""
+//[MInfoCtrlAltShiftF11]
+""
+//[MInfoCtrlAltShiftF12]
+""
+//[MQViewF1]
+"עזרה"
+//[MQViewF2]
+"גלישה"
+//[MQViewF3]
+"הצג"
+//[MQViewF4]
+"הקס"
+//[MQViewF5]
+""
+//[MQViewF6]
+""
+//[MQViewF7]
+"חפש"
+//[MQViewF8]
+"ANSI"
+//[MQViewF9]
+"תפהגד"
+//[MQViewF10]
+"יציאה"
+//[MQViewF11]
+"תוסף"
+//[MQViewF12]
+"מסך"
+//[MQViewShiftF1]
+""
+//[MQViewShiftF2]
+"גלשמל"
+//[MQViewShiftF3]
+""
+//[MQViewShiftF4]
+""
+//[MQViewShiftF5]
+""
+//[MQViewShiftF6]
+""
+//[MQViewShiftF7]
+"הבא"
+//[MQViewShiftF8]
+"דףקוד"
+//[MQViewShiftF9]
+"שמור"
+//[MQViewShiftF10]
+"אחרון"
+//[MQViewShiftF11]
+""
+//[MQViewShiftF12]
+""
+//[MQViewAltF1]
+"שמאל"
+//[MQViewAltF2]
+"ימין"
+//[MQViewAltF3]
+""
+//[MQViewAltF4]
+""
+//[MQViewAltF5]
+""
+//[MQViewAltF6]
+""
+//[MQViewAltF7]
+"חפש"
+//[MQViewAltF8]
+"מעבר"
+//[MQViewAltF9]
+"וידאו"
+//[MQViewAltF10]
+"עץ"
+//[MQViewAltF11]
+"היסצג"
+//[MQViewAltF12]
+"היסתק"
+//[MQViewCtrlF1]
+"שמאל"
+//[MQViewCtrlF2]
+"ימין"
+//[MQViewCtrlF3]
+""
+//[MQViewCtrlF4]
+""
+//[MQViewCtrlF5]
+""
+//[MQViewCtrlF6]
+""
+//[MQViewCtrlF7]
+""
+//[MQViewCtrlF8]
+""
+//[MQViewCtrlF9]
+""
+//[MQViewCtrlF10]
+""
+//[MQViewCtrlF11]
+""
+//[MQViewCtrlF12]
+""
+//[MQViewAltShiftF1]
+""
+//[MQViewAltShiftF2]
+""
+//[MQViewAltShiftF3]
+""
+//[MQViewAltShiftF4]
+""
+//[MQViewAltShiftF5]
+""
+//[MQViewAltShiftF6]
+""
+//[MQViewAltShiftF7]
+""
+//[MQViewAltShiftF8]
+""
+//[MQViewAltShiftF9]
+""
+//[MQViewAltShiftF10]
+""
+//[MQViewAltShiftF11]
+""
+//[MQViewAltShiftF12]
+""
+//[MQViewCtrlShiftF1]
+""
+//[MQViewCtrlShiftF2]
+""
+//[MQViewCtrlShiftF3]
+""
+//[MQViewCtrlShiftF4]
+""
+//[MQViewCtrlShiftF5]
+""
+//[MQViewCtrlShiftF6]
+""
+//[MQViewCtrlShiftF7]
+""
+//[MQViewCtrlShiftF8]
+""
+//[MQViewCtrlShiftF9]
+""
+//[MQViewCtrlShiftF10]
+""
+//[MQViewCtrlShiftF11]
+""
+//[MQViewCtrlShiftF12]
+""
+//[MQViewCtrlAltF1]
+""
+//[MQViewCtrlAltF2]
+""
+//[MQViewCtrlAltF3]
+""
+//[MQViewCtrlAltF4]
+""
+//[MQViewCtrlAltF5]
+""
+//[MQViewCtrlAltF6]
+""
+//[MQViewCtrlAltF7]
+""
+//[MQViewCtrlAltF8]
+""
+//[MQViewCtrlAltF9]
+""
+//[MQViewCtrlAltF10]
+""
+//[MQViewCtrlAltF11]
+""
+//[MQViewCtrlAltF12]
+""
+//[MQViewCtrlAltShiftF1]
+""
+//[MQViewCtrlAltShiftF2]
+""
+//[MQViewCtrlAltShiftF3]
+""
+//[MQViewCtrlAltShiftF4]
+""
+//[MQViewCtrlAltShiftF5]
+""
+//[MQViewCtrlAltShiftF6]
+""
+//[MQViewCtrlAltShiftF7]
+""
+//[MQViewCtrlAltShiftF8]
+""
+//[MQViewCtrlAltShiftF9]
+""
+//[MQViewCtrlAltShiftF10]
+""
+//[MQViewCtrlAltShiftF11]
+""
+//[MQViewCtrlAltShiftF12]
+""
+//[MKBTreeF1]
+"עזרה"
+//[MKBTreeF2]
+"תפמשת"
+//[MKBTreeF3]
+""
+//[MKBTreeF4]
+"תכונות"
+//[MKBTreeF5]
+"העתק"
+//[MKBTreeF6]
+"שנההעב"
+//[MKBTreeF7]
+"תיקייה"
+//[MKBTreeF8]
+"מחק"
+//[MKBTreeF9]
+"תפהגד"
+//[MKBTreeF10]
+"יציאה"
+//[MKBTreeF11]
+"תוסף"
+//[MKBTreeF12]
+"מסך"
+//[MKBTreeShiftF1]
+""
+//[MKBTreeShiftF2]
+""
+//[MKBTreeShiftF3]
+""
+//[MKBTreeShiftF4]
+""
+//[MKBTreeShiftF5]
+"העתק"
+//[MKBTreeShiftF6]
+"שנהשם"
+//[MKBTreeShiftF7]
+""
+//[MKBTreeShiftF8]
+""
+//[MKBTreeShiftF9]
+"שמור"
+//[MKBTreeShiftF10]
+"אחרון"
+//[MKBTreeShiftF11]
+"קבוצה"
+//[MKBTreeShiftF12]
+"בחרלמ"
+//[MKBTreeAltF1]
+"שמאל"
+//[MKBTreeAltF2]
+"ימין"
+//[MKBTreeAltF3]
+""
+//[MKBTreeAltF4]
+""
+//[MKBTreeAltF5]
+""
+//[MKBTreeAltF6]
+""
+//[MKBTreeAltF7]
+"חפש"
+//[MKBTreeAltF8]
+"היסטו"
+//[MKBTreeAltF9]
+"וידאו"
+//[MKBTreeAltF10]
+"עץ"
+//[MKBTreeAltF11]
+"היסצג"
+//[MKBTreeAltF12]
+"היסתק"
+//[MKBTreeCtrlF1]
+"שמאל"
+//[MKBTreeCtrlF2]
+"ימין"
+//[MKBTreeCtrlF3]
+""
+//[MKBTreeCtrlF4]
+""
+//[MKBTreeCtrlF5]
+""
+//[MKBTreeCtrlF6]
+""
+//[MKBTreeCtrlF7]
+""
+//[MKBTreeCtrlF8]
+""
+//[MKBTreeCtrlF9]
+""
+//[MKBTreeCtrlF10]
+""
+//[MKBTreeCtrlF11]
+""
+//[MKBTreeCtrlF12]
+""
+//[MKBTreeAltShiftF1]
+""
+//[MKBTreeAltShiftF2]
+""
+//[MKBTreeAltShiftF3]
+""
+//[MKBTreeAltShiftF4]
+""
+//[MKBTreeAltShiftF5]
+""
+//[MKBTreeAltShiftF6]
+""
+//[MKBTreeAltShiftF7]
+""
+//[MKBTreeAltShiftF8]
+""
+//[MKBTreeAltShiftF9]
+""
+//[MKBTreeAltShiftF10]
+""
+//[MKBTreeAltShiftF11]
+""
+//[MKBTreeAltShiftF12]
+""
+//[MKBTreeCtrlShiftF1]
+""
+//[MKBTreeCtrlShiftF2]
+""
+//[MKBTreeCtrlShiftF3]
+""
+//[MKBTreeCtrlShiftF4]
+""
+//[MKBTreeCtrlShiftF5]
+""
+//[MKBTreeCtrlShiftF6]
+""
+//[MKBTreeCtrlShiftF7]
+""
+//[MKBTreeCtrlShiftF8]
+""
+//[MKBTreeCtrlShiftF9]
+""
+//[MKBTreeCtrlShiftF10]
+""
+//[MKBTreeCtrlShiftF11]
+""
+//[MKBTreeCtrlShiftF12]
+""
+//[MKBTreeCtrlAltF1]
+""
+//[MKBTreeCtrlAltF2]
+""
+//[MKBTreeCtrlAltF3]
+""
+//[MKBTreeCtrlAltF4]
+""
+//[MKBTreeCtrlAltF5]
+""
+//[MKBTreeCtrlAltF6]
+""
+//[MKBTreeCtrlAltF7]
+""
+//[MKBTreeCtrlAltF8]
+""
+//[MKBTreeCtrlAltF9]
+""
+//[MKBTreeCtrlAltF10]
+""
+//[MKBTreeCtrlAltF11]
+""
+//[MKBTreeCtrlAltF12]
+""
+//[MKBTreeCtrlAltShiftF1]
+""
+//[MKBTreeCtrlAltShiftF2]
+""
+//[MKBTreeCtrlAltShiftF3]
+""
+//[MKBTreeCtrlAltShiftF4]
+""
+//[MKBTreeCtrlAltShiftF5]
+""
+//[MKBTreeCtrlAltShiftF6]
+""
+//[MKBTreeCtrlAltShiftF7]
+""
+//[MKBTreeCtrlAltShiftF8]
+""
+//[MKBTreeCtrlAltShiftF9]
+""
+//[MKBTreeCtrlAltShiftF10]
+""
+//[MKBTreeCtrlAltShiftF11]
+""
+//[MKBTreeCtrlAltShiftF12]
+""
+//[MCopyTimeInfoElapsed]
+"זמן:"
+//[MCopyTimeInfoRemaining]
+"נותר:"
+//[MCopyTimeInfoSpeed]
+"B/s"
+//[MKeyESCWasPressed]
+"הפעולה הופסקה"
+//[MDoYouWantToCancel]
+"האם אתה בטוח שברצונך לבטל אותה?"
+//[MDoYouWantToContinue]
+"להמשיך בעבודה?"
+//[MCheckingFileInPlugin]
+"הקובץ נבדק על ידי התוסף"
+//[MDialogType]
+"דו-שיח"
+//[MHelpType]
+"עזרה"
+//[MFolderTreeType]
+"עץתיקיות"
+//[MVMenuType]
+"תפריט"
+//[MIncorrectMask]
+"מסכת הקבצים מכילה שגיאות"
+//[MPanelBracketsForLongName]
+"{}"
+//[MComspecNotFound]
+"משתנה הסביבה %COMSPEC% אינו מוגדר"
+//[MFileFilterTitle]
+"מסנן"
+//[MFileHilightTitle]
+"צביעת קבצים"
+//[MFileFilterName]
+"&שם:"
+//[MFileFilterMatchMask]
+"&מסכה:"
+//[MFileFilterSize]
+"&גודל:"
+//[MFileFilterSizeFromSign]
+">&="
+//[MFileFilterSizeToSign]
+"&<="
+//[MFileHardLinksCount]
+"יש יותר מקישור &קשיח אחד"
+//[MFileFilterDate]
+"תאריך&/שעה:"
+//[MFileFilterWrite]
+"&כתיבה"
+//[MFileFilterCreation]
+"&יצירה"
+//[MFileFilterAccess]
+"&גישה"
+//[MFileFilterChange]
+"&שינוי"
+//[MFileFilterDateRelative]
+"&יחסי"
+//[MFileFilterDateAfterSign]
+">="
+//[MFileFilterDateBeforeSign]
+"<="
+//[MFileFilterCurrent]
+"&נוכחי"
+//[MFileFilterBlank]
+"&ריק"
+//[MFileFilterAttr]
+"&תכונות"
+//[MFileFilterAttrChoose]
+"&..."
+//[MFileFilterAttrReadOnly]
+"&קריאה בלבד"
+//[MFileFilterAttrArcive]
+"&ארכיון"
+//[MFileFilterAttrHidden]
+"&מוסתר"
+//[MFileFilterAttrSystem]
+"מ&ערכת"
+//[MFileFilterAttrCompressed]
+"&דחוס"
+//[MFileFilterAttrEncrypted]
+"מ&וצפן"
+//[MFileFilterAttrDirectory]
+"&תיקייה"
+//[MFileFilterAttrNotIndexed]
+"לא מ&אונדקס"
+//[MFileFilterAttrSparse]
+"ד&ליל"
+//[MFileFilterAttrTemporary]
+"&זמני"
+//[MFileFilterAttrReparse]
+"נקודת &ניתוח חוזר"
+//[MFileFilterAttrOffline]
+"לא &מקוון"
+//[MFileFilterAttrVirtual]
+"&וירטואלי"
+//[MFileFilterAttrIntegrityStream]
+"זרם &שלמות"
+//[MFileFilterAttrNoScrubData]
+"ללא &בדיקת נתונים"
+//[MFileFilterAttrPinned]
+"מוצ&מד"
+//[MFileFilterAttrUnpinned]
+"לא מוצמ&ד"
+//[MFileFilterAttrRecallOnOpen]
+"שליפה ב&פתיחה"
+//[MFileFilterAttrRecallOnDataAccess]
+"שליפה בגישה ל&נתונים"
+//[MFileFilterAttrStrictlySequential]
+"&רציף בלבד"
+//[MFileFilterAttrDevice]
+"התקן"
+//[MFileFilterReset]
+"&איפוס"
+//[MFileFilterMakeTransparent]
+"הפוך ל&שקוף"
+//[MFileFilterCancel]
+"ביטול"
+//[MBadFileSizeFormat]
+"שדה גודל הקובץ מולא באופן שגוי"
+//[MFarTitleAddonsAdmin]
+"מנהל"
+//[MElevationRequired]
+"עליך לספק הרשאת מנהל"
+//[MElevationRequiredPrivileges]
+"נדרשות הרשאות נוספות"
+//[MElevationRequiredProcess]
+"כדי לעבד פריט זה:"
+//[MElevationRequiredDelete]
+"כדי למחוק פריט זה:"
+//[MElevationRequiredCopy]
+"כדי להעתיק פריט זה:"
+//[MElevationRequiredMove]
+"כדי להעביר פריט זה:"
+//[MElevationRequiredReplace]
+"כדי להחליף פריט זה:"
+//[MElevationRequiredGetAttributes]
+"כדי לקבל את התכונות של פריט זה:"
+//[MElevationRequiredSetAttributes]
+"כדי להגדיר את התכונות של פריט זה:"
+//[MElevationRequiredHardLink]
+"כדי ליצור קישור קשיח זה:"
+//[MElevationRequiredSymLink]
+"כדי ליצור קישור סמלי זה:"
+//[MElevationRequiredRecycle]
+"כדי להעביר פריט זה לסל המיחזור:"
+//[MElevationRequiredList]
+"כדי להציג את תוכן הפריט:"
+//[MElevationRequiredSetOwner]
+"כדי להגדיר את הבעלים של פריט זה:"
+//[MElevationRequiredOpen]
+"כדי לפתוח פריט זה:"
+//[MElevationRequiredEncryptFile]
+"כדי להצפין פריט זה:"
+//[MElevationRequiredDecryptFile]
+"כדי לפענח פריט זה:"
+//[MElevationRequiredSetVolumeLabel]
+"כדי להגדיר תווית לאמצעי האחסון:"
+//[MElevationDoForAll]
+"לבצע זאת עבור &כל הפריטים הנוכחיים"
+//[MElevationDoNotAskAgainInTheCurrentSession]
+"לא לשאול שוב בהפעלה הנוכחית"
+//[MCompletionHistoryTitle]
+"היסטוריה"
+//[MCompletionEnvironmentTitle]
+"סביבה"
+//[MCompletionFilesTitle]
+"קבצים"
+//[MObjectLockedReason]
+"הפריט {0} ב:"
+//[MObjectLockedReasonPlayed]
+"מושמע"
+//[MObjectLockedReasonEdited]
+"נערך"
+//[MObjectLockedReasonOpened]
+"פתוח"
+//[MObjectLockedAndMore]
+"ועוד {0} תהליכים."
+//[MObjectLockedSwitchTo]
+"עבור אל"
+//[MObjectLockedClose]
+"סגור קובץ"
+//[MObjectLockedReasonSessionMismatch]
+"תהליך אחד או יותר פועלים בהפעלת Terminal Services אחרת."
+//[MObjectLockedReasonCriticalProcess]
+"תהליך אחד או יותר הם תהליכים קריטיים."
+//[MObjectLockedReasonCriticalService]
+"שירות אחד או יותר הם שירותים קריטיים."
+//[MObjectLockedReasonDetectedSelf]
+"הקובץ פתוח על ידי התהליך הנוכחי."
+//[MProblemDb]
+"בעיה במסד נתוני התצורה"
+//[MShowConfigFolders]
+"הצגת תיקיות התצורה"
+//[MBadLanguageFile]
+"קובץ שפה שגוי"
+//[MLanguageStringNotFound]
+"המחרוזת {0} לא נמצאה"
+//[MUnsupportedCodePageSelectedCodepage]
+"דף הקוד הנבחר"
+//[MUnsupportedCodePageDoesNotSupport]
+"אינו תומך ב{0}"
+//[MUnsupportedCodePageCharacter]
+"תו"
+//[MUnsupportedCodePageByteSequence]
+"רצף הבתים"
+//[MKeyLaunchMediaSelect]
+""
+//[MKeyBrowserFavorites]
+""
+//[MKeyMediaPrevTrack]
+""
+//[MKeyMediaPlayPause]
+""
+//[MKeyMediaNextTrack]
+""
+//[MKeyBrowserRefresh]
+""
+//[MKeyBrowserForward]
+""
+//[MKeyBrowserSearch]
+""
+//[MKeyMswheelRight]
+""
+//[MKeyMswheelDown]
+""
+//[MKeyMswheelLeft]
+""
+//[MKeyBrowserStop]
+""
+//[MKeyBrowserHome]
+""
+//[MKeyBrowserBack]
+""
+//[MKeyVolumeMute]
+""
+//[MKeyVolumeDown]
+""
+//[MKeyScrolllock]
+""
+//[MKeyLaunchMail]
+""
+//[MKeyLaunchApp2]
+""
+//[MKeyLaunchApp1]
+""
+//[MKeyMswheelUp]
+""
+//[MKeyMediaStop]
+""
+//[MKeyBackslash]
+""
+//[MKeyMsm1click]
+""
+//[MKeyMsm2click]
+""
+//[MKeyMsm3click]
+""
+//[MKeyMslclick]
+""
+//[MKeyMsrclick]
+""
+//[MKeyVolumeUp]
+""
+//[MKeySubtract]
+"Gray -"
+//[MKeyNumenter]
+""
+//[MKeyMultiply]
+"Gray *"
+//[MKeyCapslock]
+""
+//[MKeyPrntscrn]
+""
+//[MKeyNumlock]
+""
+//[MKeyDecimal]
+""
+//[MKeyStandby]
+""
+//[MKeyDivide]
+""
+//[MKeyNumdel]
+""
+//[MKeySpace]
+""
+//[MKeyRight]
+""
+//[MKeyPause]
+""
+//[MKeyEnter]
+""
+//[MKeyClear]
+""
+//[MKeyBreak]
+""
+//[MKeyPgup]
+""
+//[MKeyPgdn]
+""
+//[MKeyLeft]
+""
+//[MKeyHome]
+""
+//[MKeyDown]
+""
+//[MKeyApps]
+""
+//[MKeyRwin]
+""
+//[MKeyNumpad9]
+""
+//[MKeyNumpad8]
+""
+//[MKeyNumpad7]
+""
+//[MKeyNumpad6]
+""
+//[MKeyNumpad5]
+""
+//[MKeyNumpad4]
+""
+//[MKeyNumpad3]
+""
+//[MKeyNumpad2]
+""
+//[MKeyNumpad1]
+""
+//[MKeyNumpad0]
+""
+//[MKeyLwin]
+""
+//[MKeyTab]
+""
+//[MKeyIns]
+""
+//[MKeyF10]
+""
+//[MKeyF11]
+""
+//[MKeyF12]
+""
+//[MKeyF13]
+""
+//[MKeyF14]
+""
+//[MKeyF15]
+""
+//[MKeyF16]
+""
+//[MKeyF17]
+""
+//[MKeyF18]
+""
+//[MKeyF19]
+""
+//[MKeyF20]
+""
+//[MKeyF21]
+""
+//[MKeyF22]
+""
+//[MKeyF23]
+""
+//[MKeyF24]
+""
+//[MKeyEsc]
+""
+//[MKeyEnd]
+""
+//[MKeyDel]
+""
+//[MKeyAdd]
+"Gray +"
+//[MKeyUp]
+""
+//[MKeyF9]
+""
+//[MKeyF8]
+""
+//[MKeyF7]
+""
+//[MKeyF6]
+""
+//[MKeyF5]
+""
+//[MKeyF4]
+""
+//[MKeyF3]
+""
+//[MKeyF2]
+""
+//[MKeyF1]
+""
+//[MKeyBs]
+""
+//[MKeyBackbracket]
+""
+//[MKeyQuote]
+""
+//[MKeyBracket]
+""
+//[MKeyColon]
+""
+//[MKeySemicolon]
+""
+//[MKeySlash]
+""
+//[MKeyDot]
+""
+//[MKeyComma]
+""
+//[MKeyRCtrl]
+""
+//[MKeyShift]
+""
+//[MKeyCtrl]
+""
+//[MKeyRAlt]
+""
+//[MKeyAlt]
+""
+//[MNewFileName]
+"קובץ_חדש_{0:04}-{1:02}-{2:02}_{3:02}.{4:02}.{5:02}.{6:03}.txt"
+//[MMenuTerminalPosition]
+"מיקום ה&מסוף"
+//[MMenuModuleCommands]
+"פקודות &מודולים"
+//[MTermPosFull]
+"&מסך מלא"
+//[MTermPosLeft]
+"חצי &שמאלי"
+//[MTermPosRight]
+"חצי &ימני"
+//[MTermPosTop]
+"חצי &עליון"
+//[MTermPosBottom]
+"חצי &תחתון"
+//[MTermPosLeftTop]
+"שמאל למ&עלה"
+//[MTermPosLeftBottom]
+"שמאל למ&טה"
+//[MTermPosRightTop]
+"ימין ל&מעלה"
+//[MTermPosRightBottom]
+"ימין למט&ה"
+//[MMenuMultipleTerminals]
+"מסופים &מרובים"
+//[MMultiTermLeftRight]
+"מסופים &שמאלי וימני"
+//[MMultiTermTopBottom]
+"מסופים &עליון ותחתון"
+//[MMultiTermFour]
+"&4 מסופים"
+//[MMultiTermError]
+"לא ניתן לפתוח חלון מסוף חדש"
+//[MMenuExecOtherTerminal]
+"הרצה במסוף &אחר"
+//[MExecTermLeft]
+"מסוף &משמאל"
+//[MExecTermRight]
+"מסוף מ&ימין"
+//[MExecTermBottom]
+"מסוף &למטה"
+//[MExecTermTop]
+"מסוף ל&מעלה"
+//[MExecTermDisconnect]
+"&ניתוק המסוף האחר"
+//[MMenuEncodedArchives]
+"ארכיונים &מקודדים"
+//[MEncArcTitle]
+"ארכיונים מקודדים"
+//[MEncArcAddNew]
+"&הוספת תצורה חדשה…"
+//[MEncArcNewExt]
+"סיומת &חדשה (עד 7 תווים):"
+//[MEncArcOrigExt]
+"סיומת &מקורית (עד 7 תווים):"
+//[MEncArcKeyFile]
+"קובץ &מפתח:"
+//[MEncArcPasswordProtected]
+"מוגן ב&סיסמה"
+//[MEncArcBadExtension]
+"הסיומת החדשה חייבת להכיל 1 עד 7 תווים והמקורית עד 7 תווים, ללא \"/\" ו-\"\\\""
+//[MEncArcDuplicate]
+"סיומת חדשה זו כבר מוגדרת"
+//[MEncArcNoKeyFile]
+"קובץ המפתח לא נמצא"
+//[MEncArcPasswordFor]
+"סיסמה עבור"
+//[MEncArcCannotDecode]
+"לא ניתן לפענח את הקובץ"
+//[MEncArcCannotEncode]
+"לא ניתן לקודד את הקובץ בחזרה"
+//[MLogKey]
+"Log"
+//[MLogQuietKey]
+"LogSil"
+//[MLogStarted]
+"הפלט נרשם אל"

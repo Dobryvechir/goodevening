@@ -15,15 +15,15 @@
 //[MCancel]
 "Atšaukti"
 //[MReset]
-"&Reset"
+"At&statyti"
 //[MRetry]
 "Bandyti vėl"
 //[MSkip]
 "Praleisti"
 //[MAbort]
-"Abort"
+"Nutraukti"
 //[MIgnore]
-"Ignore"
+"Ignoruoti"
 //[MDelete]
 "Trinti"
 //[MHCancel]
@@ -33,17 +33,17 @@
 //[MHSkip]
 "&Praleisti"
 //[MHSkipAll]
-"S&kip all"
+"Praleisti &visus"
 //[MHAbort]
-"&Abort"
+"&Nutraukti"
 //[MHIgnore]
-"&Ignore"
+"&Ignoruoti"
 //[MHDelete]
 "&Trinti"
 //[MHRemove]
-"R&emove"
+"Pa&šalinti"
 //[MHSplit]
-"Padalinti"
+"Pada&linti"
 //[MWarning]
 "Įspėjimas"
 //[MError]
@@ -165,7 +165,7 @@
 //[MAltShiftF8]
 ""
 //[MAltShiftF9]
-"ConfPl"
+"KonfPp"
 //[MAltShiftF10]
 ""
 //[MAltShiftF11]
@@ -247,15 +247,15 @@
 //[MHistoryTitle]
 "Istorija"
 //[MHistoryInfoTitle]
-"Information"
+"Informacija"
 //[MHistoryInfoFolder]
-"Folder:"
+"Katalogas:"
 //[MFolderHistoryTitle]
 "Katalogų istorija"
 //[MViewHistoryTitle]
 "Failų peržiūros istorija"
 //[MViewHistoryIsCreate]
-"Create the file?"
+"Sukurti failą?"
 //[MHistoryView]
 "Žiūrėti"
 //[MHistoryEdit]
@@ -263,9 +263,9 @@
 //[MHistoryExt]
 "Ext."
 //[MHistoryClear]
-"All records in the history will be deleted. Continue?"
+"Visi istorijos įrašai bus ištrinti. Tęsti?"
 //[MClear]
-"&Clear history"
+"I&švalyti istoriją"
 //[MConfigSystemTitle]
 "Sisteminiai nustatymai"
 //[MConfigRecycleBin]
@@ -275,9 +275,9 @@
 //[MConfigCopySharing]
 "Kopijuoti failus at&vertus įrašymui"
 //[MConfigScanJunction]
-"Scan s&ymbolic links"
+"Tikrinti si&mbolines nuorodas"
 //[MConfigSmartFolderMonitor]
-"&Update panels only when gm is active"
+"At&naujinti langus tik kai gm aktyvus"
 //[MConfigSaveHistory]
 "Išsaugoti komandų &istoriją"
 //[MConfigSaveFoldersHistory]
@@ -287,53 +287,53 @@
 //[MConfigRegisteredTypes]
 "Naudoti Windows &registruotus tipus"
 //[MConfigUpdateEnvironment]
-"Automatic update of &environment variables"
+"A&utomatiškai atnaujinti aplinkos kintamuosius"
 //[MConfigElevation]
-"Request administrator rights:"
+"Prašyti administratoriaus teisių:"
 //[MConfigElevationModify]
-"For &modification"
+"K&eitimui"
 //[MConfigElevationRead]
-"For &reading"
+"Skait&ymui"
 //[MConfigElevationUsePrivileges]
-"Use additional &privileges"
+"Naudoti papildomas &privilegijas"
 //[MConfigSortingCollation]
-"Sorti&ng collation:"
+"Rūšiavimo &tvarka:"
 //[MConfigSortingOrdinal]
-"ordinal"
+"pagal kodą"
 //[MConfigSortingInvariant]
-"invariant"
+"nepriklausomai nuo kalbos"
 //[MConfigSortingLinguistic]
-"linguistic"
+"lingvistinis"
 //[MConfigSortingDigitsAsNumbers]
-"Treat digits &as numbers"
+"Skaitmenis laikyti &skaičiais"
 //[MConfigSortingCase]
-"&Case sensitive"
+"Skirti raidžių &dydį"
 //[MConfigAutoSave]
 "&Automatiškai išsaugoti nustatymus"
 //[MConfigTreeTitle]
-"Tree settings"
+"Medžio parametrai"
 //[MConfigTreeAutoChange]
 "&Auto keisti katalogą"
 //[MConfigTreeLabelMinFolder]
-"&Minimum number of folders:"
+"&Mažiausias katalogų skaičius:"
 //[MConfigTreeLabel1]
-"Store a file with folder structure for:"
+"Saugoti failą su katalogų struktūra:"
 //[MConfigTreeLabelLocalDisk]
-"local drives"
+"vietiniams diskams"
 //[MConfigTreeLabelNetDisk]
-"network drives"
+"tinklo diskams"
 //[MConfigTreeLabelNetPath]
-"network paths"
+"tinklo keliams"
 //[MConfigTreeLabelRemovableDisk]
-"removable drives"
+"keičiamiesiems diskams"
 //[MConfigTreeLabelCDDisk]
-"optical drives"
+"optiniams diskams"
 //[MConfigTreeLabelExceptPath]
-"Don't create the file for following drives and paths:"
+"Nekurti failo šiems diskams ir keliams:"
 //[MConfigTreeLabelSaveLocalPath]
-"Path for local, removale and optical drives:"
+"Kelias vietiniams, keičiamiesiems ir optiniams diskams:"
 //[MConfigTreeLabelSaveNetPath]
-"Path for network drives and paths:"
+"Kelias tinklo diskams ir keliams:"
 //[MConfigPanelTitle]
 "Langų parametrai"
 //[MConfigHidden]
@@ -343,23 +343,23 @@
 //[MConfigSelectFolders]
 "Žymėti &katalogus"
 //[MConfigRightClickSelect]
-"Right clic&k selects files"
+"Dešinysis spra&gtelėjimas žymi failus"
 //[MConfigSortFolderExt]
-"Sort folder names by e&xtension"
+"&Rikiuoti katalogų vardus pagal plėtinį"
 //[MConfigAllowReverseSort]
 "Leisti at&virkštinį rūšiavimo būdą"
 //[MConfigAutoUpdateLimit]
-"&Disable automatic panel update"
+"&Išjungti automatinį langų atnaujinimą"
 //[MConfigAutoUpdateLimit2]
-"if ob&ject count exceeds"
+"jei ob&jektų skaičius viršija"
 //[MConfigAutoUpdateRemoteDrive]
-"Network drives autor&efresh"
+"Tinklo diskų automatinis atn&aujinimas"
 //[MConfigShowColumns]
 "Rodyti s&tulpelių antraštes"
 //[MConfigShowStatus]
 "Rodyti &statuso juostą"
 //[MConfigDetailedJunction]
-"Detect volume mount &points"
+"Aptikti t&omų prijungimo taškus"
 //[MConfigShowTotal]
 "Rodyti failų dydžio su&minę informaciją"
 //[MConfigShowFree]
@@ -371,7 +371,7 @@
 //[MConfigShowSortMode]
 "Rodyti rūšiavimo &būdo raidę"
 //[MConfigShowDotsInRoot]
-"Show \"&..\" in root folders"
+"Rodyti \"&..\" šakniniuose kataloguose"
 //[MConfigInterfaceTitle]
 "Sąsajos nustatymai"
 //[MConfigClock]
@@ -385,119 +385,119 @@
 //[MConfigSaver]
 "&Ekrano užsklanda"
 //[MConfigSaverMinutes]
-"minutės"
+"minu&tės"
 //[MConfigCopyTotal]
 "Rodyti &bendro progreso indikatorių"
 //[MConfigCopyTimeRule]
-"Show cop&ying time information"
+"&Rodyti kopijavimo laiko informaciją"
 //[MConfigDeleteTotal]
-"Show total &delete progress indicator"
+"Rodyti bendrą trynimo eigos &indikatorių"
 //[MConfigPgUpChangeDisk]
-"Use Ctrl+Pg&Up to change drive"
+"Ctrl+Pg&Up keičia diską"
 //[MConfigUseVirtualTerminalForRendering]
-"Use &Virtual Terminal for rendering"
+"Atvaizdavimui naudoti &virtualų terminalą"
 //[MConfigFullWidthAwareRendering]
-"Fullwidth-aware rendering"
+"Atvaizdavimas atsižvelgiant į viso pločio simbolius"
 //[MConfigFullWidthAwareRenderingGraphemeClustersDected1]
-"It appears that your terminal supports Unicode grapheme clusters."
+"Panašu, kad jūsų terminalas palaiko Unicode grafemų klasterius."
 //[MConfigFullWidthAwareRenderingGraphemeClustersDected2]
-"Unfortunately, gm does not support them yet."
+"Deja, gm jų dar nepalaiko."
 //[MConfigFullWidthAwareRenderingGraphemeClustersDected3]
-"For best experience it is recommended to switch to codepoint-based rendering."
+"Geriausiam rezultatui rekomenduojama perjungti į atvaizdavimą pagal kodo taškus."
 //[MConfigFullWidthAwareRenderingGraphemeClustersDected4]
-"Consult the documentation of your terminal for advice on how to do this."
+"Kaip tai padaryti, žr. savo terminalo dokumentacijoje."
 //[MConfigClearType]
-"Cl&earType-friendly redraw (can be slow)"
+"&ClearType tinkamas perpiešimas (gali būti lėtas)"
 //[MConfigSetConsoleIcon]
-"Console &icon:"
+"Konsolės &piktograma:"
 //[MConfigSetAdminConsoleIcon]
-"Alternate for &Administrator"
+"&Kita administratoriui"
 //[MConfigTitleAddons]
-"gm &window title addons:"
+"gm &lango antraštės priedai:"
 //[MConfigDlgSetsTitle]
-"Dialog settings"
+"Dialogų parametrai"
 //[MConfigDialogsEditHistory]
 "Dialogų teksto &istorija"
 //[MConfigDialogsEditBlock]
-"&Persistent blocks in edit controls"
+"&Nuolatiniai blokai įvesties laukuose"
 //[MConfigDialogsDelRemovesBlocks]
-"&Del removes blocks in edit controls"
+"Del &šalina blokus įvesties laukuose"
 //[MConfigDialogsAutoComplete]
-"&AutoComplete in edit controls"
+"&Automatinis užbaigimas įvesties laukuose"
 //[MConfigDialogsEULBsClear]
-"&Backspace deletes unchanged text"
+"&Backspace ištrina nepakeistą tekstą"
 //[MConfigDialogsMouseButton]
-"Mouse click &outside a dialog closes it"
+"&Spragtelėjimas už dialogo jį uždaro"
 //[MConfigVMenuTitle]
-"Menu settings"
+"Meniu parametrai"
 //[MConfigVMenuLBtnClick]
-"&Left mouse click outside a menu"
+"Kairysis spragtelėjimas &už meniu"
 //[MConfigVMenuRBtnClick]
-"&Right mouse click outside a menu"
+"Dešinysis spragtelėjimas už &meniu"
 //[MConfigVMenuMBtnClick]
-"&Middle mouse click outside a menu"
+"&Vidurinis spragtelėjimas už meniu"
 //[MConfigVMenuClickCancel]
-"Cancel menu"
+"Uždaryti meniu"
 //[MConfigVMenuClickApply]
-"Execute selected item"
+"Vykdyti pažymėtą elementą"
 //[MConfigVMenuClickIgnore]
-"Do nothing"
+"Nieko nedaryti"
 //[MConfigCmdlineTitle]
-"Command line settings"
+"Komandų eilutės parametrai"
 //[MConfigCmdlineEditBlock]
-"&Persistent blocks"
+"Nuo&latiniai blokai"
 //[MConfigCmdlineDelRemovesBlocks]
-"&Del removes blocks"
+"&Del šalina blokus"
 //[MConfigCmdlineAutoComplete]
 "&Automatinis užbaigimas"
 //[MConfigCmdlineUsePromptFormat]
 "Nustatyti komandinės eilutės pr&ompt formatą"
 //[MConfigCmdlineUseHomeDir]
-"Use &home dir"
+"Naudoti &namų katalogą"
 //[MConfigCmdlinePromptFormatAdmin]
 "Administratorius"
 //[MConfigAutoCompleteTitle]
-"AutoComplete settings"
+"Automatinio užbaigimo parametrai"
 //[MConfigAutoCompleteShowList]
-"&Show a list"
+"&Rodyti sąrašą"
 //[MConfigAutoCompleteModalList]
-"&Modal mode"
+"&Modalinis režimas"
 //[MConfigAutoCompleteAutoAppend]
-"&Append the first matched item"
+"&Pridėti pirmą atitikusį elementą"
 //[MConfigInfoPanelTitle]
-"InfoPanel settings"
+"Informacijos lango parametrai"
 //[MConfigInfoPanelCNTitle]
-"Computer &name format"
+"&Kompiuterio vardo formatas"
 //[MConfigInfoPanelCNPhysicalNetBIOS]
-"Physical NetBIOS"
+"Fizinis NetBIOS"
 //[MConfigInfoPanelCNPhysicalDnsHostname]
-"Physical DNS hostname"
+"Fizinis DNS pagrindinio kompiuterio vardas"
 //[MConfigInfoPanelCNPhysicalDnsDomain]
-"Physical DNS domain"
+"Fizinis DNS domenas"
 //[MConfigInfoPanelCNPhysicalDnsFullyQualified]
-"Physical DNS fully-qualified (FQDN)"
+"Fizinis visas DNS vardas (FQDN)"
 //[MConfigInfoPanelCNNetBIOS]
 "NetBIOS"
 //[MConfigInfoPanelCNDnsHostname]
-"DNS hostname"
+"DNS pagrindinio kompiuterio vardas"
 //[MConfigInfoPanelCNDnsDomain]
 "DNS domenas"
 //[MConfigInfoPanelCNDnsFullyQualified]
-"DNS fully-qualified (FQDN)"
+"Visas DNS vardas (FQDN)"
 //[MConfigInfoPanelUNTitle]
-"Vartotojo vardo formatas"
+"&Vartotojo vardo formatas"
 //[MConfigInfoPanelUNLogon]
-"Logon name"
+"Prisijungimo vardas"
 //[MConfigInfoPanelUNFullyQualifiedDN]
-"Fully Qualified Domain Name (FQDN)"
+"Visas domeno vardas (FQDN)"
 //[MConfigInfoPanelUNSamCompatible]
-"Sam Compatible"
+"Suderinamas su SAM"
 //[MConfigInfoPanelUNDisplay]
-"Display Name"
+"Rodomas vardas"
 //[MConfigInfoPanelUNUniqueId]
-"Unique Id"
+"Unikalus ID"
 //[MConfigInfoPanelUNCanonical]
-"Canonical Name"
+"Kanoninis vardas"
 //[MConfigInfoPanelUNUserPrincipal]
 "Pagrindinis vartotojo vardas"
 //[MConfigInfoPanelUNServicePrincipal]
@@ -505,29 +505,29 @@
 //[MConfigInfoPanelUNDnsDomain]
 "DNS domenas"
 //[MConfigInfoPanelUNGivenName]
-"Given name"
+"Vardas"
 //[MConfigInfoPanelUNSurname]
-"Surname"
+"Pavardė"
 //[MConfigInfoPanelShowPowerStatus]
-"Show &power status"
+"&Rodyti maitinimo būseną"
 //[MConfigInfoPanelShowCDInfo]
-"Show &CD drive parameters"
+"Rodyti &CD įrenginio parametrus"
 //[MMenuInfoShowModeTitle]
-"Show Info"
+"Rodyti informaciją"
 //[MMenuInfoShowModeDisk]
-"&Disk"
+"&Diskas"
 //[MMenuInfoShowModeMemory]
-"&Memory"
+"A&tmintis"
 //[MMenuInfoShowModeDirDiz]
-"&Description"
+"&Aprašas"
 //[MMenuInfoShowModePluginDiz]
-"Plu&gin panel"
+"Papildinio lan&gas"
 //[MMenuInfoShowModePower]
-"&Power status"
+"&Maitinimo būsena"
 //[MViewConfigTitle]
 "Peržiūra"
 //[MViewConfigExternalF3]
-"Naudoti išorinė peržiūros programa su F3 vietoj Alt+F3"
+"Naudoti &išorinė peržiūros programa su F3 vietoj Alt+F3"
 //[MViewConfigExternalCommand]
 "&Peržiūros komanda:"
 //[MViewConfigInternal]
@@ -537,13 +537,13 @@
 //[MViewConfigSaveShortPos]
 "Išsaugoti nu&orodas"
 //[MViewConfigSaveCodepage]
-"Save file &code page"
+"Išsaugoti failo &kodų lentelę"
 //[MViewConfigSaveWrapMode]
-"Save w&rap mode"
+"Išsaugoti &laužymo režimą"
 //[MViewConfigSaveViewMode]
-"Save vi&ew mode"
+"Išsaugoti p&eržiūros režimą"
 //[MViewConfigDetectDumpMode]
-"Detect d&ump view mode"
+"Aptikti &dvejetainės peržiūros režimą"
 //[MViewAutoDetectCodePage]
 "Auto&nustatyti kodavimo puslapį"
 //[MViewConfigTabSize]
@@ -551,31 +551,31 @@
 //[MViewConfigScrollbar]
 "Rodyti šlia&užiklį"
 //[MViewConfigArrows]
-"Rodyti šliaužiklio rodykles"
+"Rodyti &šliaužiklio rodykles"
 //[MViewConfigPersistentSelection]
-"&Persistent selection"
+"Nuol&atinis žymėjimas"
 //[MViewConfigDefaultCodePage]
-"&Default code page:"
+"Nu&matytoji kodų lentelė:"
 //[MViewConfigMaxLineSize]
-"&Maximum line width"
+"Did&žiausias eilutės plotis"
 //[MViewConfigVisible0x00]
-"Visible '\\&0'"
+"Matomas '\\&0'"
 //[MEditConfigTitle]
 "Redaktorius"
 //[MEditConfigEditorF4]
-"Naudoti išorinis redaktorius su F4 vietoj Alt+F4"
+"Naudoti &išorinis redaktorius su F4 vietoj Alt+F4"
 //[MEditConfigEditorCommand]
 "&Redaktoriaus komanda:"
 //[MEditConfigInternal]
 "Vidinis redaktorius"
 //[MEditConfigExpandTabsTitle]
-"Expand &tabs:"
+"Išskleisti &tabuliacijas:"
 //[MEditConfigDoNotExpandTabs]
-"Do not expand tabs"
+"Neišskleisti tabuliacijų"
 //[MEditConfigExpandTabs]
-"Expand newly entered tabs to spaces"
+"Naujai įvestas tabuliacijas keisti tarpais"
 //[MEditConfigConvertAllTabsToSpaces]
-"Expand all tabs to spaces"
+"Visas tabuliacijas keisti tarpais"
 //[MEditConfigPersistentBlocks]
 "&Pastovus blokas"
 //[MEditConfigDelRemovesBlocks]
@@ -585,17 +585,17 @@
 //[MEditConfigSavePos]
 "Iš&saugoti failo poziciją"
 //[MEditConfigSaveShortPos]
-"Save &bookmarks"
+"I&šsaugoti žymes"
 //[MEditCursorBeyondEnd]
 "&Žymeklis už eilutės pabaigos"
 //[MEditAutoDetectCodePage]
 "Auto&nustatyti kodavimo puslapį"
 //[MEditShareWrite]
-"Allow editing files ope&ned for writing"
+"Leisti &redaguoti rašymui atidarytus failus"
 //[MEditLockROFileModification]
-"Lock editing of read-only &files"
+"Blokuoti tik skaitomų &failų redagavimą"
 //[MEditWarningBeforeOpenROFile]
-"&Warn when opening read-only files"
+"&Įspėti atidarant tik skaitomus failus"
 //[MEditConfigTabSize]
 "Tab d&ydis"
 //[MEditConfigScrollbar]
@@ -603,31 +603,31 @@
 //[MEditConfigLineNumbers]
 "Rodyt&i eilučių numerius"
 //[MEditShowWhiteSpace]
-"Sh&ow white space"
+"R&odyti tarpus"
 //[MEditConfigSelFound]
-"Se&lect found"
+"Pažymėti ras&tą"
 //[MEditConfigCursorAtEnd]
-"Cu&rsor at the end"
+"Žymeklis &pabaigoje"
 //[MEditConfigDefaultCodePage]
-"Default code pa&ge:"
+"Numatytoji kodų &lentelė:"
 //[MConfigEditor]
-"Configuration editor"
+"Konfigūracijos redaktorius"
 //[MConfigEditorBoolean]
-"boolean"
+"loginis"
 //[MConfigEditorTriState]
-"3-state"
+"3 būsenų"
 //[MConfigEditorInteger]
-"integer"
+"sveikasis"
 //[MConfigEditorString]
-"string"
+"eilutė"
 //[MConfigEditorIntegerSigned]
-"Signed:"
+"Su ženklu:"
 //[MConfigEditorIntegerUnsigned]
-"Unsigned:"
+"Be ženklo:"
 //[MConfigEditorIntegerHexadecimal]
-"Hexadecimal:"
+"Šešioliktainis:"
 //[MConfigEditorIntegerBinary]
-"Binary:"
+"Dvejetainis:"
 //[MSaveSetupTitle]
 "Išsaugoti nuostatus"
 //[MSaveSetupAsk1]
@@ -645,37 +645,37 @@
 //[MCopySecurity]
 "Kopijuoti &priėjimo teises:"
 //[MCopySecurityDefault]
-"Defau&lt"
+"&Numatytosios"
 //[MCopySecurityCopy]
 "Ko&pijuoti"
 //[MCopySecurityInherit]
-"&Inherit"
+"Pa&veldėti"
 //[MCopyIfFileExist]
-"Already e&xisting files:"
+"Jau e&gzistuojantys failai:"
 //[MCopyAsk]
 "&Ask"
 //[MCopyAskRO]
-"Also ask on &R/O files"
+"Taip pat klausti dėl &R/O failų"
 //[MCopyOnlyNewerFiles]
 "&Tik naujesnius failus"
 //[MLinkType]
-"Link t&ype:"
+"Nuorodos t&ipas:"
 //[MLinkTypeJunction]
-"directory &junction"
+"katal&ogo sandūra"
 //[MLinkTypeHardlink]
-"&hard link"
+"ki&etoji nuoroda"
 //[MLinkTypeSymlink]
-"&symbolic link"
+"sim&bolinė nuoroda"
 //[MLinkTypeSymlinkFile]
-"symbolic link (&file)"
+"simbolinė nuoroda (&failas)"
 //[MLinkTypeSymlinkDirectory]
-"symbolic link (fol&der)"
+"simbolinė nuoroda (kata&logas)"
 //[MCopyPreserveAllTimestamps]
 "Išsaugoti visas laiko žymas"
 //[MCopySymLinkContents]
-"Cop&y contents of symbolic links"
+"Kopijuoti simbolinių &nuorodų turinį"
 //[MCopyMultiActions]
-"Process &multiple destinations"
+"Apdoroti kelias &paskirties vietas"
 //[MCopyDlgCopy]
 "&Kopijuoti"
 //[MCopyDlgTree]
@@ -689,11 +689,11 @@
 //[MCopyDlgTotal]
 "Viso"
 //[MCopyPrepareSecury]
-"Applying access rights…"
+"Taikomos prieigos teisės…"
 //[MCopyUseFilter]
-"&Use filter"
+"Na&udoti filtrą"
 //[MCopySetFilter]
-"Filt&er"
+"Filt&ras"
 //[MCopyFile]
 "Kopijuoti {0} {1}:"
 //[MMoveFile]
@@ -707,9 +707,9 @@
 //[MLinkFiles]
 "Susieti {0} failu{1} {2}:"
 //[MCMLTargetTO]
-"į"
+"&į"
 //[MCMLTargetIN]
-"su"
+"&su"
 //[MCMLItems0]
 ""
 //[MCMLItemsA]
@@ -717,7 +717,7 @@
 //[MCMLItemsS]
 "s"
 //[MCopyIncorrectTargetList]
-"Incorrect target list"
+"Neteisingas paskirties sąrašas"
 //[MCopyCopyingTitle]
 "Kopijuoju"
 //[MCopyMovingTitle]
@@ -731,73 +731,73 @@
 //[MCopyCannotCreateFolder]
 "Negaliu sukurti katalogo"
 //[MCopyCannotRenameFolder]
-"Cannot rename the folder"
+"Nepavyko pervadinti katalogo"
 //[MCopyIgnore]
-"&Ignore"
+"I&gnoruoti"
 //[MCopyIgnoreAll]
-"Ignore &All"
+"Ig&noruoti viską"
 //[MCopyRetry]
 "&Bandyti vėl"
 //[MCopySkip]
 "&Praleist"
 //[MCopySkipAll]
-"S&kip all"
+"P&raleisti visus"
 //[MCopyCancel]
 "&Atšaukti"
 //[MCopyDecrypt]
-"&Decrypt"
+"&Iššifruoti"
 //[MCopyDecryptAll]
-"Decrypt &all"
+"Iššifruoti &viską"
 //[MCopyCannotCreateLink]
-"Cannot create the link"
+"Nepavyko sukurti nuorodos"
 //[MCopyFolderNotEmpty]
-"Target folder must be empty"
+"Paskirties katalogas turi būti tuščias"
 //[MCopyCannotCreateJunctionToFile]
-"Cannot create junction. The file already exists:"
+"Nepavyko sukurti sandūros. Failas jau egzistuoja:"
 //[MCopyCannotCreateVolMount]
-"Volume mount points error"
+"Tomų prijungimo taškų klaida"
 //[MCopyMountVolFailed]
-"Attempt to volume mount '{0}'"
+"Bandymas prijungti tomą '{0}'"
 //[MCopyMountVolFailed2]
-"at '{0}' failed"
+"ties '{0}' nepavyko"
 //[MCopyMountName]
-"Disk_"
+"Diskas_"
 //[MCannotCopyFileToItself1]
 "Negaliu nukopijuoti failo"
 //[MCannotCopyFileToItself2]
 "į save patį"
 //[MCopyStream1]
-"The source file contains more than one data stream,"
+"Šaltinio failas turi daugiau nei vieną duomenų srautą,"
 //[MCopyStream2]
-"but you're not using the system copy routine."
+"bet jūs nenaudojate sisteminės kopijavimo funkcijos."
 //[MCopyStream3]
-"but the destination volume does not support this feature."
+"bet paskirties tomas nepalaiko šios funkcijos."
 //[MCopyStream4]
-"Some data will not be preserved."
+"Kai kurie duomenys nebus išsaugoti."
 //[MCopyDirectoryOrFile]
-"Does it specify a folder name or file name?"
+"Ar tai katalogo, ar failo vardas?"
 //[MCopyDirectoryOrFileDirectory]
-"Folder"
+"Katalogas"
 //[MCopyDirectoryOrFileFile]
-"File"
+"Failas"
 //[MCopyFileExist]
 "Toks failas jau yra"
 //[MCopySource]
-"Kopijuojamas"
+"&Kopijuojamas"
 //[MCopyDest]
-"Esantis"
+"E&santis"
 //[MCopyOverwrite]
 "U&žrašyti"
 //[MCopyAppend]
 "Pri&jungti"
 //[MCopyRename]
-"R&ename"
+"P&ervadinti"
 //[MCopyRememberChoice]
-"&Remember choice"
+"&Prisiminti pasirinkimą"
 //[MCopyRenameTitle]
-"Rename"
+"Pervadinti"
 //[MCopyRenameText]
-"&New name:"
+"&Naujas vardas:"
 //[MCopyFileRO]
 "Failas yra read only"
 //[MCopyAskDelete]
@@ -815,9 +815,9 @@
 //[MCannotCopyTo]
 "į"
 //[MCopyEncryptWarn1]
-"The file"
+"Failas"
 //[MCopyEncryptWarn2]
-"cannot be copied or moved without losing its encryption."
+"negali būti nukopijuotas ar perkeltas neprarandant šifravimo."
 //[MCopyReadError]
 "Negaliu nuskaityti duomenų iš"
 //[MCopyWriteError]
@@ -827,7 +827,7 @@
 //[MCopyFilesTotalInfo]
 "Failų:"
 //[MCopyBytesTotalInfo]
-"Bytes:"
+"Baitai:"
 //[MCopyMoving]
 "Perkeliu failą"
 //[MCopyCopying]
@@ -869,21 +869,21 @@
 //[MRecycleFolderConfirm]
 "Šis katalogas bus perkeltas į Recycle Bin:"
 //[MRecycleFolderConfirmDeleteLink1]
-"Folder contains symbolic links."
+"Kataloge yra simbolinių nuorodų."
 //[MRecycleFolderConfirmDeleteLink2]
-"To prevent the loss of their content when clearing Recyle Bin"
+"Kad valant Šiukšlinę nebūtų prarastas jų turinys,"
 //[MRecycleFolderConfirmDeleteLink3]
-"those links will be broken now."
+"šios nuorodos dabar bus nutrauktos."
 //[MRecycleFolderConfirmDeleteLink4]
-"It would be impossible to restore them later."
+"Vėliau jų atkurti bus neįmanoma."
 //[MDeleteWipe]
-"Wipe"
+"Išvalyti"
 //[MDeleteRecycle]
-"Move"
+"Perkelti"
 //[MDeleteFileDelete]
 "&Trinti"
 //[MDeleteFileWipe]
-"&Wipe"
+"&Išvalyti"
 //[MDeleteFileAll]
 "&Visus"
 //[MDeleteFileSkip]
@@ -905,11 +905,11 @@
 //[MAskWipeRO]
 "Ar norite jį išvalyti?"
 //[MDeleteHardLink1]
-"Several hard links link to this file."
+"Į šį failą nurodo kelios kietosios nuorodos."
 //[MDeleteHardLink2]
-"Wiping this file will void all files linking to it."
+"Išvalius šį failą, visi į jį nurodantys failai taps tušti."
 //[MDeleteHardLink3]
-"Do you wish to wipe this file?"
+"Ar norite išvalyti šį failą?"
 //[MCannotDeleteFile]
 "Negaliu ištrinti failo"
 //[MCannotDeleteFolder]
@@ -923,11 +923,11 @@
 //[MDeleteCancel]
 "&Atšaukti"
 //[MCannotRecycleFile]
-"Cannot move file to the Recycle Bin"
+"Nepavyko perkelti failo į Šiukšlinę"
 //[MCannotRecycleFolder]
-"Cannot move folder to the Recycle Bin"
+"Nepavyko perkelti katalogo į Šiukšlinę"
 //[MTryToDeletePermanently]
-"Try to delete it permanently?"
+"Bandyti ištrinti visam laikui?"
 //[MCannotGetSecurity]
 "Negaliu gauti failo priėjimo teisių failui"
 //[MCannotSetSecurity]
@@ -941,9 +941,9 @@
 //[MSearchReplaceHex]
 "Ieškoti &hex"
 //[MSearchReplacePickWord]
-"W&ord"
+"&Žodis"
 //[MSearchReplacePickSelection]
-"Se&lection"
+"Ž&ymėjimas"
 //[MSearchReplaceSearchFor]
 "&Rasti"
 //[MSearchReplaceReplaceWith]
@@ -953,27 +953,27 @@
 //[MSearchReplaceWholeWords]
 "Visi ž&odžiai"
 //[MSearchReplaceFuzzy]
-"Fu&zzy search"
+"Apytikslė &paieška"
 //[MSearchReplaceRegexp]
-"Re&gular expressions"
+"Re&guliarieji reiškiniai"
 //[MSearchReplacePreserveStyle]
-"&Preserve style"
+"&Išlaikyti stilių"
 //[MSearchReplaceFind]
-"&Ieškoti"
+"Ieškoti"
 //[MSearchReplaceFindNext]
-"Find next"
+"Rasti kitą"
 //[MSearchReplaceFindPrev]
-"Find pre&vious"
+"Ra&sti ankstesnį"
 //[MSearchReplaceReplace]
-"Pakeisti &į"
+"Pakeisti į"
 //[MSearchReplaceReplaceNext]
-"Replace next"
+"Pakeisti kitą"
 //[MSearchReplaceReplacePrev]
-"Replace pre&vious"
+"Pakeis&ti ankstesnį"
 //[MSearchReplaceAll]
 "&Atšaukti"
 //[MSearchReplaceCancel]
-"&Atšaukti"
+"Atšaukti"
 //[MEditTitle]
 "Redaktorius"
 //[MAskReload]
@@ -983,17 +983,17 @@
 //[MReload]
 "Pe&rkrauti"
 //[MNewOpen]
-"&New instance"
+"&Naujas egzempliorius"
 //[MEditCannotOpen]
 "Negaliu atidaryti failo"
 //[MEditReading]
 "Skaitau failą {0}"
 //[MEditAskSave]
-"Failas buvo redaguotas. Iš&saugoti?"
+"Failas buvo redaguotas. Išsaugoti?"
 //[MEditAskSaveExt]
-"The file was changed by an external program. Save?"
+"Failą pakeitė išorinė programa. Išsaugoti?"
 //[MEditBtnSaveAs]
-"Save &as…"
+"Išsaugoti &kaip…"
 //[MEditRO]
 "yra read only failas"
 //[MEditExists]
@@ -1009,21 +1009,21 @@
 //[MEditStatusChar]
 "Ch"
 //[MEditRSH]
-"is a read-only file"
+"yra tik skaitomas failas"
 //[MEditFileGetSizeError]
-"File size could not be determined."
+"Nepavyko nustatyti failo dydžio."
 //[MEditFileLong]
-"has the size of {0},"
+"yra {0} dydžio,"
 //[MEditFileLong2]
 "kuris viršyja sukonfigūruotą maksimalų dydį {0}."
 //[MEditROOpen]
 "Ar norite jį redaguoti?"
 //[MEditCanNotEditDirectory]
-"It is impossible to edit the folder"
+"Katalogo redaguoti neįmanoma"
 //[MEditSearchingFor]
 "Ieškau {0}"
 //[MEditSearchStatistics]
-"Occurrences: {0}, lines: {1}"
+"Atvejų: {0}, eilučių: {1}"
 //[MEditSearchAllFileNameFormat]
 "{0}{1}.Filtered.txt"
 //[MEditSearchAllFileNameFormatAlt]
@@ -1043,33 +1043,33 @@
 //[MEditCancel]
 "&Atšaukti"
 //[MEditOpenCreateLabel]
-"&Open/create file:"
+"Atidaryti/&sukurti failą:"
 //[MEditOpenAutoDetect]
-"Automatic detection"
+"Automatinis aptikimas"
 //[MDefaultCP]
-"Default"
+"Numatytoji"
 //[MGoTo]
 "Eiti į"
 //[MGoToHex]
-"&Hex value"
+"Še&šioliktainė reikšmė"
 //[MFolderShortcutsTitle]
 "Katalogų nuorodos"
 //[MShortcutNone]
 "<nėra>"
 //[MShortcutPlugin]
-"<plugin>"
+"<papildinys>"
 //[MFSShortcutName]
-"Title:"
+"Pavadinimas:"
 //[MFSShortcutPath]
-"Path:"
+"Kelias:"
 //[MFSShortcutPluginFile]
-"File:"
+"Failas:"
 //[MFSShortcutPluginData]
-"Data:"
+"Duomenys:"
 //[MNeedNearPath]
-"Jump to the nearest existing folder?"
+"Pereiti į artimiausią egzistuojantį katalogą?"
 //[MSaveThisShortcut]
-"Save this shortcut?"
+"Išsaugoti šią nuorodą?"
 //[MEditF1]
 "Pagalb"
 //[MEditF2]
@@ -1077,7 +1077,7 @@
 //[MEditF3]
 ""
 //[MEditF4]
-"Quit"
+"Išeiti"
 //[MEditF5]
 ""
 //[MEditF6]
@@ -1101,7 +1101,7 @@
 //[MEditShiftF3]
 ""
 //[MEditShiftF4]
-"Edit…"
+"Reda…"
 //[MEditShiftF5]
 ""
 //[MEditShiftF6]
@@ -1109,7 +1109,7 @@
 //[MEditShiftF7]
 "Kitas"
 //[MEditShiftF8]
-"CodePg"
+"KodLnt"
 //[MEditShiftF9]
 ""
 //[MEditShiftF10]
@@ -1131,7 +1131,7 @@
 //[MEditAltF6]
 ""
 //[MEditAltF7]
-"Prev"
+"Ankst"
 //[MEditAltF8]
 "Eiti"
 //[MEditAltF9]
@@ -1139,7 +1139,7 @@
 //[MEditAltF10]
 ""
 //[MEditAltF11]
-"ViewHs"
+"ŽiūrIs"
 //[MEditAltF12]
 ""
 //[MEditCtrlF1]
@@ -1161,7 +1161,7 @@
 //[MEditCtrlF9]
 ""
 //[MEditCtrlF10]
-"GoFile"
+"ĮFailą"
 //[MEditCtrlF11]
 ""
 //[MEditCtrlF12]
@@ -1183,7 +1183,7 @@
 //[MEditAltShiftF8]
 ""
 //[MEditAltShiftF9]
-"Config"
+"Konfig"
 //[MEditAltShiftF10]
 ""
 //[MEditAltShiftF11]
@@ -1267,53 +1267,53 @@
 //[MEditCtrlF3Hide]
 "SlėptEil"
 //[MEditSaveAs]
-"Išsaugoti failą vardu"
+"&Išsaugoti failą vardu"
 //[MEditCodePage]
-"&Code page:"
+"&Kodų lentelė:"
 //[MEditAddSignature]
-"Add &signature (BOM)"
+"Pridėti &parašą (BOM)"
 //[MEditSaveAsFormatTitle]
-"Change line breaks to:"
+"Pakeisti eilučių pabaigas į:"
 //[MEditSaveOriginal]
-"Do n&ot change"
+"Nek&eisti"
 //[MEditSaveDOS]
-"&Dos/Windows format (CR LF)"
+"&Dos/Windows formatas (CR LF)"
 //[MEditSaveUnix]
-"&Unix format (LF)"
+"&Unix formatas (LF)"
 //[MEditSaveMac]
-"&Mac format (CR)"
+"&Mac formatas (CR)"
 //[MEditCannotSave]
 "Negaliu išsaugoti failo"
 //[MEditSavedChangedNonFile]
-"The file is changed but the file or the folder containing"
+"Failas pakeistas, tačiau failas arba katalogas, kuriame"
 //[MEditSavedChangedNonFile1]
-"The file or the folder containing"
+"Failas arba katalogas, kuriame"
 //[MEditSavedChangedNonFile2]
-"this file was moved or deleted. Save?"
+"yra šis failas, buvo perkeltas arba ištrintas. Išsaugoti?"
 //[MEditNewPath1]
-"The path to the edited file does not exist,"
+"Redaguojamo failo kelias neegzistuoja,"
 //[MEditNewPath2]
-"but will be created when the file is saved."
+"bet bus sukurtas išsaugant failą."
 //[MEditNewPath3]
-"Continue?"
+"Tęsti?"
 //[MEditNewPlugin1]
-"The name of the file to edit cannot be empty"
+"Redaguojamo failo vardas negali būti tuščias"
 //[MEditorReloadCPWarnLost1]
-"The file has to be reloaded to change the code page."
+"Norint pakeisti kodų lentelę, failą reikia įkelti iš naujo."
 //[MEditorReloadCPWarnLost2]
-"All unsaved changes will be lost."
+"Visi neišsaugoti pakeitimai bus prarasti."
 //[MEditorSwitchCPConfirm]
-"Continue?"
+"Tęsti?"
 //[MEditDataLostWarn]
-"During the file editing some data was lost."
+"Redaguojant failą dalis duomenų buvo prarasta."
 //[MEditorSaveNotRecommended]
-"It is not recommended to save this file."
+"Šio failo išsaugoti nerekomenduojama."
 //[MEditorSave]
-"Save"
+"Išsaugoti"
 //[MEditorSaveCPWarnShow]
-"Show"
+"Rodyti"
 //[MEditorCPNotSupported]
-"Code page {0} is not supported in your system"
+"Kodų lentelė {0} jūsų sistemoje nepalaikoma"
 //[MColumnName]
 "Vardas"
 //[MColumnExtension]
@@ -1321,7 +1321,7 @@
 //[MColumnSize]
 "Dydis"
 //[MColumnAlocatedSize]
-"Allocated"
+"Užimta"
 //[MColumnDate]
 "Data"
 //[MColumnTime]
@@ -1333,7 +1333,7 @@
 //[MColumnAccessed]
 "Naudotas"
 //[MColumnChanged]
-"Change"
+"Pakeista"
 //[MColumnAttr]
 "Atrib"
 //[MColumnDescription]
@@ -1345,7 +1345,7 @@
 //[MColumnNumStreams]
 "NumS"
 //[MColumnStreamsSize]
-"StrmSz"
+"SrDyd"
 //[MColumnUnknown]
 "???"
 //[MListUp]
@@ -1353,13 +1353,13 @@
 //[MListFolder]
 "Katalogs"
 //[MListSymlink]
-"Symlink"
+"Nuoroda"
 //[MListJunction]
-"Junction"
+"Sandūra"
 //[MListVolMount]
-"Volume"
+"Tomas"
 //[MListUnknownReparsePoint]
-"?Symlink?"
+"?Nuoroda?"
 //[MListBrackets]
 "<>"
 //[MListBytes]
@@ -1391,11 +1391,11 @@
 //[MSelectTitle]
 "Pažymėti"
 //[MSelectFilter]
-"&Filter"
+"&Filtras"
 //[MCompareTitle]
 "Palyginti"
 //[MCompareFilePanelsRequired1]
-"Komandai ""Palyginti katalogus"" įvykdyti"
+"Komandai \"Palyginti katalogus\" įvykdyti"
 //[MCompareFilePanelsRequired2]
 "reikia dviejų langų"
 //[MCompareSameFolders1]
@@ -1417,15 +1417,15 @@
 //[MFileAssocExec]
 "V&ykdyti komandą (naudoti su Enter):"
 //[MFileAssocAltExec]
-"Vykdyti komandą (naudoti su Ctrl+PgDn):"
+"&Vykdyti komandą (naudoti su Ctrl+PgDn):"
 //[MFileAssocView]
 "Per&žiūros komanda (naudoti su F3):"
 //[MFileAssocAltView]
-"Peržiūros komanda (naudoti su Alt+F3):"
+"&Peržiūros komanda (naudoti su Alt+F3):"
 //[MFileAssocEdit]
 "&Redagavimo komanda (naudoti su F4):"
 //[MFileAssocAltEdit]
-"Redagavimo komanda (naudoti su Alt+F4):"
+"Redagavimo &komanda (naudoti su Alt+F4):"
 //[MViewF1]
 "Pagalb"
 //[MViewF2]
@@ -1457,7 +1457,7 @@
 //[MViewShiftF3]
 ""
 //[MViewShiftF4]
-"Mode"
+"Režim"
 //[MViewShiftF5]
 ""
 //[MViewShiftF6]
@@ -1465,7 +1465,7 @@
 //[MViewShiftF7]
 "Kitas"
 //[MViewShiftF8]
-"CodePg"
+"KodLnt"
 //[MViewShiftF9]
 ""
 //[MViewShiftF10]
@@ -1487,7 +1487,7 @@
 //[MViewAltF6]
 ""
 //[MViewAltF7]
-"Prev"
+"Ankst"
 //[MViewAltF8]
 "Eiti"
 //[MViewAltF9]
@@ -1495,7 +1495,7 @@
 //[MViewAltF10]
 ""
 //[MViewAltF11]
-"ViewHs"
+"ŽiūrIs"
 //[MViewAltF12]
 ""
 //[MViewCtrlF1]
@@ -1517,7 +1517,7 @@
 //[MViewCtrlF9]
 ""
 //[MViewCtrlF10]
-"GoFile"
+"ĮFailą"
 //[MViewCtrlF11]
 ""
 //[MViewCtrlF12]
@@ -1539,7 +1539,7 @@
 //[MViewAltShiftF8]
 ""
 //[MViewAltShiftF9]
-"Config"
+"Konfig"
 //[MViewAltShiftF10]
 ""
 //[MViewAltShiftF11]
@@ -1623,11 +1623,11 @@
 //[MViewF4Text]
 "Tekst"
 //[MViewF4Dump]
-"Dump"
+"Išklot"
 //[MViewF8DOS]
 "OEM"
 //[MViewMode]
-"View mode"
+"Peržiūros režimas"
 //[MInViewer]
 "žiūrėti"
 //[MInEditor]
@@ -1637,7 +1637,7 @@
 //[MPanelFileType]
 "Lango failų tipas"
 //[MFolderFileType]
-"Folders"
+"Katalogai"
 //[MCanEditCustomFilterOnly]
 "Tik vartotojo filtrai gali būti redaguojami"
 //[MAskDeleteFilter]
@@ -1655,37 +1655,37 @@
 //[MFindFileHex]
 "&Hex"
 //[MFindFileCodePage]
-"Using code pa&ge:"
+"Naudojama kodų lent&elė:"
 //[MFindFileAllCodePages]
-"All standard code pages"
+"Visos standartinės kodų lentelės"
 //[MFindFileSelectedCodePages]
-"Selected code pages"
+"Pasirinktos kodų lentelės"
 //[MFindFileCase]
 "&Didžiosios skiriasi"
 //[MFindFileWholeWords]
 "Visi ž&odžiai"
 //[MFindFileFuzzy]
-"Fu&zzy search"
+"Apytikslė pa&ieška"
 //[MFindFileNotContaining]
-"&Not containing"
+"&Neturintys"
 //[MFindFileArchives]
 "Ieškoti arch&yvuose"
 //[MFindFileFolders]
-"Search for f&olders"
+"Ieškoti kata&logų"
 //[MFindFileSymLinks]
-"Search in symbolic lin&ks"
+"Ieškoti sim&bolinėse nuorodose"
 //[MFindFileAlternateStreams]
-"Search in a&lternate streams"
+"Ieškoti &alternatyviuose srautuose"
 //[MFindFileSearchArea]
-"Select search &area:"
+"Pasirinkite paieškos &sritį:"
 //[MFindFileSearchAllDisks]
 "Ieškoti &visuose fiksuotuose diskuose"
 //[MFindFileSearchAllButNetwork]
-"In all &local drives"
+"Visuose vie&tiniuose diskuose"
 //[MFindFileSearchInPATH]
-"In &PATH folders"
+"&PATH kataloguose"
 //[MFindFileSearchFromRootOfDrive]
-"From the &root of"
+"Nuo &šaknies"
 //[MFindFileSearchFromRootFolder]
 "Ieškoti nuo ša&kninio katalogo"
 //[MFindFileSearchFromCurrent]
@@ -1695,17 +1695,17 @@
 //[MFindFileSearchInSelected]
 "Ieškoti paž&ymėtuose kataloguose"
 //[MFindFileUseFilter]
-"&Use filter"
+"Na&udoti filtrą"
 //[MFindFileUsingFilter]
-"using filter"
+"naudojant filtrą"
 //[MFindFileFind]
-"&Rasti"
+"Rasti"
 //[MFindFileDrive]
 "Dri&ve"
 //[MFindFileSetFilter]
-"Filt&er"
+"Filt&ras"
 //[MFindFileAdvanced]
-"Advance&d"
+"Išpl&ėstinė"
 //[MFindFileSearchingIn]
 "Ieškau {0} į"
 //[MFindFileNewSearch]
@@ -1717,47 +1717,47 @@
 //[MFindFilePanel]
 "&Langas"
 //[MFindFileStop]
-"&Stop"
+"&Stabdyti"
 //[MFindFileDone]
 "Paieška baigta. Rasta files: {0}, folders: {1}"
 //[MFindFileCancel]
 "&Atšaukti"
 //[MFindFileFound]
-"Files: {0}, folders: {1}"
+"Failų: {0}, katalogų: {1}"
 //[MFindFileAdvancedTitle]
-"Find file advanced options"
+"Išplėstinės failų paieškos parinktys"
 //[MFindFileSearchFirst]
-"Search only in the &first:"
+"Ie&škoti tik pirmuose:"
 //[MFindFileSearchOutputFormat]
-"&Output format:"
+"&Išvesties formatas:"
 //[MFindAlternateModeTypes]
-"Column &types"
+"Stulpelių &tipai"
 //[MFindAlternateModeWidths]
-"Column &widths"
+"Stulpelių &pločiai"
 //[MFoldTreeSearch]
-"Search:"
+"Ieškoti:"
 //[MGetCodePageTitle]
-"Code pages"
+"Kodų lentelės"
 //[MGetCodePageSystem]
-"System"
+"Sisteminės"
 //[MGetCodePageUnicode]
 "Unicode"
 //[MGetCodePageFavorites]
-"Favorites"
+"Mėgstamos"
 //[MGetCodePageOther]
-"Other"
+"Kitos"
 //[MGetCodePageEditCodePageName]
-"Rename the code page"
+"Pervadinti kodų lentelę"
 //[MGetCodePageResetCodePageName]
-"&Reset"
+"&Atstatyti"
 //[MHighlightTitle]
 "Failų spalvos"
 //[MHighlightUpperSortGroup]
-"Upper sort group"
+"Viršutinė rūšiavimo grupė"
 //[MHighlightLowerSortGroup]
-"Lower sort group"
+"Apatinė rūšiavimo grupė"
 //[MHighlightLastGroup]
-"Lowest priority highlighting group"
+"Žemiausio prioriteto paryškinimo grupė"
 //[MHighlightAskDel]
 "Ar norite ištrinti spalvą failams"
 //[MHighlightWarning]
@@ -1767,7 +1767,7 @@
 //[MHighlightEditTitle]
 "Redaguoti failų spalvas"
 //[MHighlightMark]
-"Žymėjimas,"
+"&Žymėjimas,"
 //[MHighlightInheritMark]
 "&Paveldėti"
 //[MHighlightColors]
@@ -1781,45 +1781,45 @@
 //[MHighlightFileName4]
 "&7. Pažymėtas po kursoriumi"
 //[MHighlightMarking1]
-"&2. Marking"
+"&2. Žymėjimas"
 //[MHighlightMarking2]
-"&4. Marking"
+"&4. Žymėjimas"
 //[MHighlightMarking3]
-"&6. Marking"
+"&6. Žymėjimas"
 //[MHighlightMarking4]
-"&8. Marking"
+"&8. Žymėjimas"
 //[MHighlightExample]
-"filename.ext"
+"failovardas.ext"
 //[MHighlightContinueProcessing]
-"C&ontinue processing"
+"Tęsti apd&orojimą"
 //[MInfoTitle]
 "Informacija"
 //[MInfoCompName]
 "Kompiuterio vardas"
 //[MInfoCompDescription]
-"Computer description"
+"Kompiuterio aprašas"
 //[MInfoUserName]
 "Vartotojo vardas"
 //[MInfoUserDescription]
-"User description"
+"Vartotojo aprašas"
 //[MInfoUserAccessLevel]
-"Access level"
+"Prieigos lygis"
 //[MInfoUserAccessLevelGuest]
-"Guest"
+"Svečias"
 //[MInfoUserAccessLevelUser]
-"User"
+"Vartotojas"
 //[MInfoUserAccessLevelAdministrator]
 "Administratorius"
 //[MInfoUserAccessLevelUnknown]
-"Unknown"
+"Nežinomas"
 //[MInfoUserAccessElevated]
-"Elevated"
+"Padidintos teisės"
 //[MInfoUserAccessElevationTypeFull]
-"Full"
+"Visas"
 //[MInfoUserAccessElevationTypeLimited]
-"Limited"
+"Ribotas"
 //[MInfoDiskTitle]
-"Disk"
+"Diskas"
 //[MInfoRemovable]
 "Keičiamas"
 //[MInfoFixed]
@@ -1861,15 +1861,15 @@
 //[MInfoSUBST]
 "Subst"
 //[MInfoVirtual]
-"Virtual"
+"Virtualus"
 //[MInfoUnknown]
-"Unknown"
+"Nežinomas"
 //[MInfoMetricTotal]
 "viso"
 //[MInfoMetricAvailable]
 "turima"
 //[MInfoMetricUsed]
-"used"
+"naudojama"
 //[MInfoDisk]
 "Diskas"
 //[MInfoDiskSpace]
@@ -1881,83 +1881,83 @@
 //[MInfoMemory]
 "Atmintis"
 //[MInfoMemoryCommittable]
-"Committable"
+"Priskiriama"
 //[MInfoMemoryAddressable]
-"Addressable"
+"Adresuojama"
 //[MInfoMemoryPhysical]
-"Physical"
+"Fizinė"
 //[MInfoMetricMemoryInstalled]
 "įdiegta"
 //[MInfoDescription]
-"Description"
+"Aprašas"
 //[MInfoDizAbsent]
 "Katalogo aprašymo failas nerastas"
 //[MInfoPlugin]
-"Plugin"
+"Papildinys"
 //[MInfoPowerStatus]
-"Power Status"
+"Maitinimo būsena"
 //[MInfoPowerStatusAC]
-"AC power status"
+"Kintamosios srovės maitinimo būsena"
 //[MInfoPowerStatusACOffline]
-"Offline"
+"Atjungtas"
 //[MInfoPowerStatusACOnline]
-"Online"
+"Prijungtas"
 //[MInfoPowerStatusACBackUp]
-"Backup power"
+"Atsarginis maitinimas"
 //[MInfoPowerStatusACUnknown]
-"Unknown"
+"Nežinoma"
 //[MInfoPowerStatusBCLifePercentUnknown]
-"unknown"
+"nežinoma"
 //[MInfoPowerStatusBC]
-"Battery charge status"
+"Akumuliatoriaus įkrovos būsena"
 //[MInfoPowerStatusBCHigh]
-"High"
+"Aukšta"
 //[MInfoPowerStatusBCMedium]
 "Vidutinis"
 //[MInfoPowerStatusBCLow]
 "Low"
 //[MInfoPowerStatusBCCritical]
-"Critical"
+"Kritinė"
 //[MInfoPowerStatusBCCharging]
-"charging"
+"kraunama"
 //[MInfoPowerStatusBCNoSysBat]
-"No system battery"
+"Nėra sistemos akumuliatoriaus"
 //[MInfoPowerStatusBCUnknown]
-"Unknown"
+"Nežinoma"
 //[MInfoPowerStatusBCTimeRem]
-"Battery life time"
+"Likęs akumuliatoriaus veikimo laikas"
 //[MInfoPowerStatusBCFullTimeRem]
-"Battery full time"
+"Visas akumuliatoriaus veikimo laikas"
 //[MInfoPowerStatusUnknown]
-"Unknown"
+"Nežinoma"
 //[MAccessDenied]
-"Access denied"
+"Prieiga uždrausta"
 //[MCannotExecute]
 "Negaliu įvykdyti"
 //[MCannotInvokeComspec]
-"Cannot invoke command interpreter"
+"Nepavyko paleisti komandų interpretatoriaus"
 //[MCheckComspecVar]
-"Check COMSPEC environment variable"
+"Patikrinkite aplinkos kintamąjį COMSPEC"
 //[MScanningFolder]
 "Skenuoju katalogą"
 //[MMakeFolderTitle]
 "Sukurti katalogą"
 //[MCreateFolder]
-"Sukurti katalogą:"
+"&Sukurti katalogą:"
 //[MMakeFolderLinkType]
-"&Link type:"
+"N&uorodos tipas:"
 //[MMakeFolderLinkNone]
-"&none"
+"n&ėra"
 //[MMakeFolderLinkJunction]
-"directory &junction"
+"k&atalogo sandūra"
 //[MMakeFolderLinkSymlink]
-"symbolic &link"
+"simbolinė &nuoroda"
 //[MMakeFolderLinkTarget]
-"&Target:"
+"Pask&irtis:"
 //[MMultiMakeDir]
-"Process &multiple names"
+"Apdoroti &kelis vardus"
 //[MIncorrectDirList]
-"Incorrect folders list"
+"Neteisingas katalogų sąrašas"
 //[MCannotCreateFolder]
 "Negaliu sukurti katalogo"
 //[MMenuBriefView]
@@ -2011,7 +2011,7 @@
 //[MMenuDelete]
 "&Trinti"
 //[MMenuWipe]
-"&Wipe"
+"I&švalyti"
 //[MMenuAdd]
 "Su&pakuoti į archyvą"
 //[MMenuExtract]
@@ -2065,13 +2065,13 @@
 //[MMenuProcessList]
 "&Užduočių sąrašas"
 //[MMenuHotPlugList]
-"Ho&tplug devices list"
+"Kar&štai prijungiamų įrenginių sąrašas"
 //[MMenuSystemSettings]
 "Siste&miniai nustatymai"
 //[MMenuPanelSettings]
 "La&ngų parametrai"
 //[MMenuTreeSettings]
-"&Tree settings"
+"Med&žio parametrai"
 //[MMenuInterface]
 "&Sąsajos nustatymai"
 //[MMenuLanguages]
@@ -2079,19 +2079,19 @@
 //[MMenuPluginsConfig]
 "Pri&edų konfigūracija"
 //[MMenuPluginsManagerSettings]
-"Plugins manage&r settings"
+"&Papildinių tvarkyklės parametrai"
 //[MMenuDialogSettings]
-"Di&alog settings"
+"&Dialogų parametrai"
 //[MMenuVMenuSettings]
-"Menu settings"
+"Meniu parametrai"
 //[MMenuCmdlineSettings]
-"&Command line settings"
+"Komand&ų eilutės parametrai"
 //[MMenuAutoCompleteSettings]
-"Au&toComplete settings"
+"Au&tomatinio užbaigimo parametrai"
 //[MMenuInfoPanelSettings]
-"Inf&oPanel settings"
+"In&formacijos lango parametrai"
 //[MMenuMaskGroups]
-"Groups of file mas&ks"
+"Failų ka&ukių grupės"
 //[MMenuConfirmation]
 "Pa&tvirtinimai"
 //[MMenuFilePanelModes]
@@ -2105,7 +2105,7 @@
 //[MMenuEditor]
 "&Redaktoriaus nustatymai"
 //[MMenuCodePages]
-"Code pages"
+"Kodų lentelės"
 //[MMenuColors]
 "Spa&lvos"
 //[MMenuFilesHighlighting]
@@ -2143,41 +2143,41 @@
 //[MMenuSortByAccess]
 "Nau&dojimo datą"
 //[MMenuSortByChange]
-"Chan&ge time"
+"Pa&keitimo laikas"
 //[MMenuSortByDiz]
 "Ap&rašymą"
 //[MMenuSortByOwner]
 "S&avininką"
 //[MMenuSortByAllocatedSize]
-"S&upakuoto dydį"
+"Supakuoto dydį"
 //[MMenuSortByNumLinks]
 "&Hard links skaičių"
 //[MMenuSortByNumStreams]
-"Number of st&reams"
+"Sra&utų skaičius"
 //[MMenuSortByStreamsSize]
-"Si&ze of streams"
+"Srautų d&ydis"
 //[MMenuSortByNameOnly]
-"Name only"
+"Tik vardas"
 //[MMenuSortUseGroups]
-"Naudoti rūšiavimo &grupes"
+"Naudoti rūšiavimo grupes"
 //[MMenuSortSelectedFirst]
 "Pirmiau rodyti pa&žymėtus"
 //[MMenuSortDirectoriesFirst]
-"Sho&w directories first"
+"Ka&talogus rodyti pirma"
 //[MMaskGroupTitle]
-"Groups of file masks"
+"Failų kaukių grupės"
 //[MMaskGroupName]
-"&Name:"
+"&Pavadinimas:"
 //[MMaskGroupMasks]
-"A file &mask or several file masks:"
+"&Failo kaukė arba kelios failų kaukės:"
 //[MMaskGroupAskDelete]
-"Do you wish to delete"
+"Ar norite ištrinti"
 //[MMaskGroupRestore]
-"Do you wish to restore default mask sets?"
+"Ar norite atkurti numatytuosius kaukių rinkinius?"
 //[MMaskGroupFindMask]
-"&Mask:"
+"&Kaukė:"
 //[MMaskGroupTotal]
-"Total: {0}"
+"Iš viso: {0}"
 //[MChangeDriveTitle]
 "Keisti diską"
 //[MChangeDriveRemovable]
@@ -2187,7 +2187,7 @@
 //[MChangeDriveNetwork]
 "tinklas"
 //[MChangeDriveDisconnectedNetwork]
-"disconnected"
+"atjungtas"
 //[MChangeDriveCDROM]
 "CD-ROM"
 //[MChangeDriveCDR]
@@ -2223,7 +2223,7 @@
 //[MChangeDriveSUBST]
 "subst"
 //[MChangeDriveVirtual]
-"virtual"
+"virtualus"
 //[MChangeDriveLabelAbsent]
 "neprieinamas"
 //[MChangeDriveCannotReadDisk]
@@ -2231,73 +2231,73 @@
 //[MChangeDriveCannotDisconnect]
 "Negaliu atsijungti"
 //[MChangeDriveCannotDelSubst]
-"Cannot delete a substituted disk"
+"Nepavyko pašalinti pakeistinio disko"
 //[MChangeDriveCannotDetach]
-"Cannot detach a virtual disk"
+"Nepavyko atjungti virtualaus disko"
 //[MChangeSUBSTDisconnectDriveTitle]
-"Substituted disk deletion"
+"Pakeistinio disko šalinimas"
 //[MChangeSUBSTDisconnectDriveQuestion]
-"Delete SUBST-disk {0}?"
+"Pašalinti SUBST diską {0}?"
 //[MChangeVHDDisconnectDriveTitle]
-"Virtual disk detaching"
+"Virtualaus disko atjungimas"
 //[MChangeVHDDisconnectDriveQuestion]
-"Detach virtual disk {0}?"
+"Atjungti virtualų diską {0}?"
 //[MChangeHotPlugDisconnectDriveTitle]
-"Device Removal"
+"Įrenginio šalinimas"
 //[MChangeHotPlugDisconnectDriveQuestion]
-"Do you want to remove the device"
+"Ar norite pašalinti įrenginį"
 //[MHotPlugDisks]
-"(disk(s): {0})"
+"(diskų: {0})"
 //[MChangeCouldNotEjectHotPlugMedia]
-"Cannot remove a device for drive"
+"Nepavyko pašalinti disko įrenginio"
 //[MChangeCouldNotEjectHotPlugMedia2]
-"Cannot remove a device:"
+"Nepavyko pašalinti įrenginio:"
 //[MChangeHotPlugNotify1]
-"The device"
+"Įrenginį"
 //[MChangeHotPlugNotify2]
-"can now be safely removed"
+"dabar galima saugiai ištraukti"
 //[MHotPlugListTitle]
-"Hotplug devices list"
+"Karštai prijungiamų įrenginių sąrašas"
 //[MChangeDriveDisconnectTitle]
-"Disconnect network drive"
+"Atjungti tinklo diską"
 //[MChangeDriveDisconnectQuestion]
-"Disconnect from the drive {0}?"
+"Atsijungti nuo disko {0}?"
 //[MChangeDriveDisconnectMapped]
-"The drive is mapped to:"
+"Diskas susietas su:"
 //[MChangeDriveDisconnectReconnect]
-"&Reconnect at logon"
+"P&rijungti iš naujo prisijungiant"
 //[MChangeWaitingLoadDisk]
-"Waiting for the disk to mount…"
+"Laukiama, kol diskas bus prijungtas…"
 //[MChangeCouldNotEjectMedia]
-"Could not eject media from drive"
+"Nepavyko išimti laikmenos iš disko"
 //[MChangeDriveConfigure]
-"Change Drive Menu Options"
+"Diskų meniu parinktys"
 //[MChangeDriveShowDiskType]
-"Show disk &type"
+"Rod&yti disko tipą"
 //[MChangeDriveShowPath]
-"Show &network name / SUBST path / VHD name"
+"Rodyti &tinklo vardą / SUBST kelią / VHD vardą"
 //[MChangeDriveShowLabel]
-"Show disk &label"
+"Rodyti disko &žymę"
 //[MChangeDriveShowLabelUseShell]
-"Use shell na&me"
+"Naudoti apvalkalo &vardą"
 //[MChangeDriveShowFileSystem]
-"Show &file system type"
+"Rodyti &failų sistemos tipą"
 //[MChangeDriveShowSize]
-"Show &size"
+"Rodyti &dydį"
 //[MChangeDriveShowSizeFloat]
-"Show si&ze as a decimal fraction"
+"Rodyti dydį de&šimtaine trupmena"
 //[MChangeDriveShowRemovableDrive]
-"Show &removable drive parameters"
+"Rodyti &keičiamųjų diskų parametrus"
 //[MChangeDriveShowPlugins]
-"Show &plugins"
+"Rodyti &papildinius"
 //[MChangeDriveSortPluginsByHotkey]
-"Sort plugins by &hotkey"
+"Rikiuoti papildinius pagal &spartųjį klavišą"
 //[MChangeDriveShowCD]
-"Show &CD drive parameters"
+"Rodyti &CD įrenginio parametrus"
 //[MChangeDriveShowNetworkDrive]
-"Show n&etwork drive parameters"
+"Rodyti tinkl&o diskų parametrus"
 //[MChangeDriveShowVirtualDisk]
-"Detect virtual disks"
+"Aptikti virtualius diskus"
 //[MChangeDriveVolumeLabel]
 "Tomo etiketė"
 //[MSearchFileTitle]
@@ -2323,13 +2323,13 @@
 //[MCannotKillProcess]
 "Negaliu uždaryti nurodytos programos"
 //[MCannotKillProcessPerm]
-"You have no permission to kill this process."
+"Neturite teisės nutraukti šio proceso."
 //[MQuickViewTitle]
 "Vaizdas"
 //[MQuickViewReparsePoint]
-"&Reparse point"
+"&Pakartotinės analizės taškas"
 //[MQuickViewUnknownReparsePoint]
-"Unknown reparse point"
+"Nežinomas pakartotinės analizės taškas"
 //[MQuickViewFolders]
 "Katalogai:"
 //[MQuickViewFiles]
@@ -2341,77 +2341,77 @@
 //[MQuickViewCluster]
 "Klasterio dydis"
 //[MQuickViewSlack]
-"Files slack:"
+"Failų nepanaudota vieta:"
 //[MQuickViewMFTOverhead]
-"MFT overhead:"
+"MFT papildoma vieta:"
 //[MSetAttrTitle]
 "Atributai"
 //[MSetAttrFor]
 "Keisti atributus"
 //[MSetAttrSelectedObjects]
-"selected objects"
+"pažymėti objektai"
 //[MSetAttrHardLinks]
-"hard links"
+"kietosios nuorodos"
 //[MSetAttrJunction]
-"&Junction:"
+"Sa&ndūra:"
 //[MSetAttrSymlink]
-"Symlink{}:"
+"Nu&oroda{}:"
 //[MSetAttrVolMount]
-"Volume:"
+"To&mas:"
 //[MSetAttrDfsTargets]
-"DFS Targets:"
+"DFS paskirtys:"
 //[MSetAttrAppExecLink]
 "Programos slapyvardis :"
 //[MSetAttrUnknownReparsePoint]
-"Unknown reparse point"
+"Nežinomas pakartotinės analizės taškas"
 //[MSetAttrDiskDevice]
 "Įrenginys:"
 //[MSetAttrReadOnly]
-"&Read only"
+"&Tik skaitymui"
 //[MSetAttrArchive]
-"&Archive"
+"&Archyvinis"
 //[MSetAttrHidden]
-"&Hidden"
+"Pasl&ėptas"
 //[MSetAttrSystem]
-"&System"
+"S&isteminis"
 //[MSetAttrCompressed]
-"&Compressed"
+"&Suglaudintas"
 //[MSetAttrEncrypted]
-"&Encrypted"
+"&Užšifruotas"
 //[MSetAttrNotIndexed]
-"Not &indexed"
+"N&eindeksuotas"
 //[MSetAttrSparse]
-"&Sparse"
+"&Retasis"
 //[MSetAttrTemporary]
-"&Temporary"
+"&Laikinas"
 //[MSetAttrOffline]
-"&Offline"
+"Neprisi&jungęs"
 //[MSetAttrReparsePoint]
-"&Reparse point"
+"Pakart&otinės analizės taškas"
 //[MSetAttrVirtual]
-"&Virtual"
+"&Virtualus"
 //[MSetAttrIntegrityStream]
-"&Integrity stream"
+"&Vientisumo srautas"
 //[MSetAttrNoScrubData]
-"&No scrub data"
+"&Be duomenų tikrinimo"
 //[MSetAttrPinned]
-"Prisegta"
+"&Prisegta"
 //[MSetAttrUnpinned]
-"Atsegta"
+"Atse&gta"
 //[MSetAttrRecallOnOpen]
-"R&ecall on open"
+"&Atkurti atidarant"
 //[MSetAttrRecallOnDataAccess]
-"Rec&all on data access"
+"Atkurti kreipiantis &į duomenis"
 //[MSetAttrStrictlySequential]
-"Strictly se&quential"
+"Gr&iežtai nuoseklus"
 //[MSetAttrDevice]
 "Įrenginys"
 //[MSetAttrMore]
-"&More"
+"&Daugiau"
 //[MSetAttrSubfolders]
 "Apdoroti pa&katalogius"
 //[MSetAttrOwner]
-"Savininkas:"
+"&Savininkas:"
 //[MSetAttrDate]
 "Data/Laikas:"
 //[MSetAttrWrite]
@@ -2423,11 +2423,11 @@
 //[MSetAttrChange]
 "&pasikeitimas:"
 //[MSetAttrOriginal]
-"&Original"
+"P&radinis"
 //[MSetAttrCurrent]
 "&Einamas"
 //[MSetAttrBlank]
-"&Blank"
+"&Tuščias"
 //[MSetAttrSet]
 "Keisti"
 //[MSetAttrDateTitleMDY]
@@ -2439,7 +2439,7 @@
 //[MSetAttrTimeTitle]
 "hh{0}mm{0}ss"
 //[MSetAttrSystemDialog]
-"System &properties"
+"Sistemos &ypatybės"
 //[MSetAttrSetting]
 "Uždedu atributus failui"
 //[MSetAttrCannotFor]
@@ -2453,7 +2453,7 @@
 //[MSetAttrTimeCannotFor]
 "Negaliu uždėti failo laiko failui"
 //[MSetAttrOwnerCannotFor]
-"Cannot set owner for"
+"Nepavyko nustatyti savininko"
 //[MSetAttrReparsePointCannotFor]
 "Nepavyko pašalinti atkūrimo taško"
 //[MSetColorPanel]
@@ -2489,7 +2489,7 @@
 //[MSetColorPanelSelected]
 "Pažymėtas tekstas"
 //[MSetColorPanelHighlightedText]
-"Highlighted text"
+"Paryškintas tekstas"
 //[MSetColorPanelHighlightedInfo]
 "Paryškinta info"
 //[MSetColorPanelDragging]
@@ -2543,17 +2543,17 @@
 //[MSetColorDialogSelectedHighlightedButtons]
 "Pažymėti paryškinti mygtukai"
 //[MSetColorDialogDefaultButton]
-"Default button"
+"Numatytasis mygtukas"
 //[MSetColorDialogSelectedDefaultButton]
-"Selected default button"
+"Pažymėtas numatytasis mygtukas"
 //[MSetColorDialogHighlightedDefaultButton]
-"Highlighted default button"
+"Paryškintas numatytasis mygtukas"
 //[MSetColorDialogSelectedHighlightedDefaultButton]
-"Selected highlighted default button"
+"Pažymėtas paryškintas numatytasis mygtukas"
 //[MSetColorDialogListBoxControl]
 "Sąrašo"
 //[MSetColorDialogComboBoxControl]
-"Combobox"
+"Išskleidžiamasis sąrašas"
 //[MSetColorDialogListText]
 "Normalus tekstas"
 //[MSetColorDialogListSelectedText]
@@ -2561,25 +2561,25 @@
 //[MSetColorDialogListHighLight]
 "Paryškintas tekstas"
 //[MSetColorDialogListSelectedHighLight]
-"Selected highlighted text"
+"Pažymėtas paryškintas tekstas"
 //[MSetColorDialogListDisabled]
-"Disabled item"
+"Išjungtas elementas"
 //[MSetColorDialogListBox]
 "Rėmelis"
 //[MSetColorDialogListTitle]
 "Antraštė"
 //[MSetColorDialogListGrayed]
-"Grayed list text"
+"Pilkas sąrašo tekstas"
 //[MSetColorDialogSelectedListGrayed]
-"Selected grayed list text"
+"Pažymėtas pilkas sąrašo tekstas"
 //[MSetColorDialogListScrollBar]
 "Šliaužiklis"
 //[MSetColorDialogListArrows]
-"Long string indicators"
+"Ilgos eilutės indikatoriai"
 //[MSetColorDialogListArrowsSelected]
-"Selected long string indicators"
+"Pažymėti ilgos eilutės indikatoriai"
 //[MSetColorDialogListArrowsDisabled]
-"Disabled long string indicators"
+"Išjungti ilgos eilutės indikatoriai"
 //[MSetColorMenuNormal]
 "Normalus tekstas"
 //[MSetColorMenuSelected]
@@ -2591,9 +2591,9 @@
 //[MSetColorMenuDisabled]
 "Atjungtas tekstas"
 //[MSetColorMenuGrayed]
-"Grayed text"
+"Pilkas tekstas"
 //[MSetColorMenuSelectedGrayed]
-"Selected grayed text"
+"Pažymėtas pilkas tekstas"
 //[MSetColorMenuBox]
 "Rėmelis"
 //[MSetColorMenuTitle]
@@ -2601,11 +2601,11 @@
 //[MSetColorMenuScrollBar]
 "Šliaužiklis"
 //[MSetColorMenuArrows]
-"Long string indicators"
+"Ilgos eilutės indikatoriai"
 //[MSetColorMenuArrowsSelected]
-"Selected long string indicators"
+"Pažymėti ilgos eilutės indikatoriai"
 //[MSetColorMenuArrowsDisabled]
-"Disabled long string indicators"
+"Išjungti ilgos eilutės indikatoriai"
 //[MSetColorHMenuNormal]
 "Normalus tekstas"
 //[MSetColorHMenuSelected]
@@ -2627,7 +2627,7 @@
 //[MSetColorCommandLinePrefix]
 "Prefix tekstas"
 //[MSetColorCommandLineUserScreen]
-"User screen"
+"Vartotojo ekranas"
 //[MSetColorClockNormal]
 "Normalus tekstas (Langas)"
 //[MSetColorClockNormalEditor]
@@ -2705,25 +2705,25 @@
 //[MSetColorStyle]
 "Stilius:"
 //[MSetColorStyleInherit]
-"Paveldėti"
+"&Paveldėti"
 //[MSetColorStyleBold]
-"Paryškintasis"
+"P&aryškintasis"
 //[MSetColorStyleItalic]
-"Kursyvas"
+"&Kursyvas"
 //[MSetColorStyleOverline]
-"Pabrauktas virš"
+"Pabrauktas &virš"
 //[MSetColorStyleStrikeout]
-"Perbraukimas"
+"Perbraukima&s"
 //[MSetColorStyleFaint]
-"Tamsus"
+"&Tamsus"
 //[MSetColorStyleBlink]
-"Mirksėjimas"
+"&Mirksėjimas"
 //[MSetColorStyleInverse]
 "Atvirkščiai"
 //[MSetColorStyleInvisible]
 "Nematomas"
 //[MSetColorStyleUnderline]
-"Pabraukimas:"
+"Pabra&ukimas:"
 //[MSetColorStyleUnderlineNone]
 "Ne"
 //[MSetColorStyleUnderlineSingle]
@@ -2739,17 +2739,17 @@
 //[MSetColorSample]
 "Tekstas Tekstas Tekstas Tekstas Te"
 //[MSetColorVTHintInfo]
-"Extended colors and styles require VT rendering."
+"Išplėstinėms spalvoms ir stiliams reikia VT atvaizdavimo."
 //[MSetColorVTHintSupported]
-"Press \"Enable VT\" below to turn it on."
+"Norėdami įjungti, spauskite \"Įjungti VT\" žemiau."
 //[MSetColorVTHintNotSupported]
-"Your system does not support it."
+"Jūsų sistema to nepalaiko."
 //[MSetColorSystemDialog]
-"System"
+"Sistema"
 //[MSetColorSet]
 "Gerai"
 //[MSetColorEnableVT]
-"Enable VT"
+"Įjungti VT"
 //[MSetColorCancel]
 "Atšaukti"
 //[MColorsPalette]
@@ -2763,7 +2763,7 @@
 //[MSetConfirmMove]
 "&Perkeliant"
 //[MSetConfirmRO]
-"&Overwrite and delete R/O files"
+"Perrašyti ir trinti tik skaitomus &failus"
 //[MSetConfirmDrag]
 "Pert&empiant pele"
 //[MSetConfirmDelete]
@@ -2771,53 +2771,53 @@
 //[MSetConfirmDeleteFolders]
 "Trinant &netuščius katalogus"
 //[MSetConfirmEsc]
-"&Interrupt operation"
+"N&utraukti operaciją"
 //[MSetConfirmRemoveConnection]
-"Disconnect &network drive"
+"&Atjungti tinklo diską"
 //[MSetConfirmRemoveSUBST]
-"Delete &SUBST-disk"
+"Pašalinti SUBST &diską"
 //[MSetConfirmDetachVHD]
-"Detach &virtual disk"
+"Atjungti &virtualų diską"
 //[MSetConfirmRemoveHotPlug]
-"Hot&Plug-device removal"
+"Karštai prijungiamo įrenginio ša&linimas"
 //[MSetConfirmAllowReedit]
-"&Reload edited file"
+"&Įkelti redaguojamą failą iš naujo"
 //[MSetConfirmHistoryClear]
-"Clear &history list"
+"Išvalyti &istorijos sąrašą"
 //[MSetConfirmExit]
 "I&šeinant"
 //[MPluginsManagerSettingsTitle]
-"Plugins manager settings"
+"Papildinių tvarkyklės parametrai"
 //[MPluginsManagerOEMPluginsSupport]
-"&OEM plugins support"
+"&OEM papildinių palaikymas"
 //[MPluginsManagerScanSymlinks]
-"Scan s&ymbolic links"
+"Ti&krinti simbolines nuorodas"
 //[MPluginsManagerOFP]
-"&File processing"
+"&Failų apdorojimas"
 //[MPluginsManagerStdAssoc]
-"Show standard &association item"
+"Rodyti &standartinės susiejimo elementą"
 //[MPluginsManagerEvenOne]
-"&Even if only one plugin found"
+"&Net jei rastas tik vienas papildinys"
 //[MPluginsManagerSFL]
-"Search &results (SetFindList)"
+"Paieškos &rezultatai (SetFindList)"
 //[MPluginsManagerPF]
-"&Prefix processing"
+"&Prefiksų apdorojimas"
 //[MPluginConfirmationTitle]
-"Plugin selection"
+"Papildinio pasirinkimas"
 //[MMenuPluginStdAssociation]
-"Standard association"
+"Standartinis susiejimas"
 //[MFindFolderTitle]
 "Rasti katalogą"
 //[MFolderTreeF1]
-"Help"
+"Pagalb"
 //[MFolderTreeF2]
-"Rescan"
+"Atnauj"
 //[MFolderTreeF3]
 ""
 //[MFolderTreeF4]
 ""
 //[MFolderTreeF5]
-"Zoom"
+"Didint"
 //[MFolderTreeF6]
 ""
 //[MFolderTreeF7]
@@ -2827,7 +2827,7 @@
 //[MFolderTreeF9]
 ""
 //[MFolderTreeF10]
-"Quit"
+"Išeiti"
 //[MFolderTreeF11]
 ""
 //[MFolderTreeF12]
@@ -3011,25 +3011,25 @@
 //[MChooseMenuType]
 "Pasirinkite kurį vartotojo meniu redaguoti"
 //[MChooseMenuMain]
-"Pagrindinį"
+"&Pagrindinį"
 //[MChooseMenuLocal]
-"Vietinį"
+"V&ietinį"
 //[MMainMenuTitle]
 "Pagrindinis meniu"
 //[MMainMenuUser]
-"User"
+"Vartotojo"
 //[MMainMenuGlobal]
-"Global"
+"Bendras"
 //[MLocalMenuTitle]
 "Vietinis meniu"
 //[MAskDeleteMenuItem]
 "Ar norite ištrinti iš meniu"
 //[MAskDeleteSubMenuItem]
-"Do you wish to delete the submenu"
+"Ar norite ištrinti submeniu"
 //[MUserMenuInvalidInputLabel]
-"Invalid format for UserMenu Label"
+"Neteisingas vartotojo meniu žymės formatas"
 //[MUserMenuInvalidInputHotKey]
-"Invalid format for Hot Key"
+"Neteisingas sparčiojo klavišo formatas"
 //[MEditMenuTitle]
 "Redaguoti vartotojo meniu"
 //[MEditMenuHotKey]
@@ -3051,9 +3051,9 @@
 //[MEditSubmenuLabel]
 "&Vardas:"
 //[MEditMenuConfirmation]
-"Save changes?"
+"Išsaugoti pakeitimus?"
 //[MEditMenuError]
-"Cannot update menu"
+"Nepavyko atnaujinti meniu"
 //[MViewerTitle]
 "Peržiūra"
 //[MViewerCannotOpenFile]
@@ -3063,23 +3063,23 @@
 //[MViewSearchingFor]
 "Ieškau"
 //[MViewSearchingHex]
-"Searching for bytes"
+"Ieškoma baitų"
 //[MViewSearchCannotFind]
 "Negalėjau surasti eilutės"
 //[MViewSearchCannotFindHex]
-"Could not find the bytes"
+"Nepavyko rasti baitų"
 //[MViewSearchEod]
-"End of the document reached"
+"Pasiekta dokumento pabaiga"
 //[MViewSearchFromBegin]
-"Continue from the beginning of the document?"
+"Tęsti nuo dokumento pradžios?"
 //[MViewSearchBod]
-"Begin of the document reached"
+"Pasiekta dokumento pradžia"
 //[MViewSearchFromEnd]
-"Continue from the end of the document?"
+"Tęsti nuo dokumento pabaigos?"
 //[MViewSearchCycle]
-"The whole document scanned"
+"Peržiūrėtas visas dokumentas"
 //[MViewSearchRepeat]
-"Repeat the search in the document?"
+"Pakartoti paiešką dokumente?"
 //[MPrintTitle]
 "Spausdinti"
 //[MPrintTo]
@@ -3089,7 +3089,7 @@
 //[MPrintingFile]
 "Spausdinimas {0}"
 //[MCannotEnumeratePrinters]
-"Cannot enumerate available printers list"
+"Nepavyko gauti galimų spausdintuvų sąrašo"
 //[MCannotOpenPrinter]
 "Negaliu susisiekti su spausdintuvu"
 //[MCannotPrint]
@@ -3109,7 +3109,7 @@
 //[MCfgDizSetHidden]
 "Uždėti \"&Hidden\" atributą naujiems aprašymų failams"
 //[MCfgDizROUpdate]
-"Update &read only description file"
+"&Atnaujinti tik skaitomą aprašų failą"
 //[MCfgDizStartPos]
 "Naujų aprašymų &pozicija eilutėje"
 //[MCfgDizNotUpdate]
@@ -3119,11 +3119,11 @@
 //[MCfgDizAlwaysUpdate]
 "&Visada atnaujinti"
 //[MCfgDizAnsiByDefault]
-"Use ANS&I code page by default"
+"Pagal numatymą naudoti ANS&I kodų lentelę"
 //[MCfgDizSaveInUTF]
-"Save in UTF-&8"
+"Išsaugoti UTF-&8 koduote"
 //[MReadingTitleFiles]
-"Update of panels"
+"Langų atnaujinimas"
 //[MReadingFiles]
 "Skaitau: {0} failus"
 //[MOperationNotCompleted]
@@ -3145,7 +3145,7 @@
 //[MEditPanelModeAlignExtensions]
 "Sulygiuoti failų p&lėtinius"
 //[MEditPanelModeAlignFolderExtensions]
-"Sulygiuoti katalogus plėtinius"
+"&Sulygiuoti katalogus plėtinius"
 //[MEditPanelModeFoldersUpperCase]
 "Rodyti katalogus &didžiosiomis"
 //[MEditPanelModeFilesLowerCase]
@@ -3183,49 +3183,49 @@
 //[MDefineMacro]
 "Paspauskite pasirinktą klavišą"
 //[MMacroReDefinedKey]
-"Macro key '{0}' already defined."
+"Makro klavišas '{0}' jau apibrėžtas."
 //[MMacroDeleteKey]
-"Macro key '{0}' will be removed."
+"Makro klavišas '{0}' bus pašalintas."
 //[MMacroCommonReDefinedKey]
-"Common macro key '{0}' already defined."
+"Bendras makro klavišas '{0}' jau apibrėžtas."
 //[MMacroCommonDeleteKey]
-"Common macro key '{0}' will be removed."
+"Bendras makro klavišas '{0}' bus pašalintas."
 //[MMacroSequence]
-"Sequence:"
+"Seka:"
 //[MMacroReDefinedKey2]
-"Redefine?"
+"Apibrėžti iš naujo?"
 //[MMacroDeleteKey2]
-"Delete?"
+"Ištrinti?"
 //[MMacroEditKey]
-"Chan&ge"
+"K&eisti"
 //[MMacroSettingsTitle]
 "Makro parametrai dėl '{0}'"
 //[MMacroSettingsSequence]
-"Se&quence:"
+"&Seka:"
 //[MMacroSettingsDescription]
-"&Description:"
+"Ap&rašas:"
 //[MMacroSettingsEnableOutput]
-"Išvedimą į ekraną kol vykdoma makro"
+"&Išvedimą į ekraną kol vykdoma makro"
 //[MMacroSettingsRunAfterStart]
 "Vykdyti po gm &paleidimo"
 //[MMacroSettingsActivePanel]
-"&Active panel"
+"&Aktyvus langas"
 //[MMacroSettingsPassivePanel]
-"&Passive panel"
+"Pasyvus &langas"
 //[MMacroSettingsPluginPanel]
-"P&lugin panel"
+"Papil&dinio langas"
 //[MMacroSettingsFolders]
-"Execute for &folders"
+"&Vykdyti katalogams"
 //[MMacroSettingsSelectionPresent]
-"Se&lection present"
+"Yra &žymėjimas"
 //[MMacroSettingsCommandLine]
-"Komandinė eilutė tuščia"
+"&Komandinė eilutė tuščia"
 //[MMacroSettingsSelectionBlockPresent]
-"Selection &block present"
+"Yra pažymėtas &blokas"
 //[MMacroPluginLuamacroNotLoaded]
-"Plugin LuaMacro is not loaded"
+"Papildinys LuaMacro neįkeltas"
 //[MMacroRecordingIsDisabled]
-"Macro recording is disabled"
+"Makrokomandų įrašymas išjungtas"
 //[MCannotSaveFile]
 "Negaliu išsaugoti failo"
 //[MTextSavedToTemp]
@@ -3235,23 +3235,23 @@
 //[MPluginHotKey]
 "Įveskite greitraktį (raidė ar skaitmuo)"
 //[MPluginInformation]
-"Plugin information"
+"Informacija apie papildinį"
 //[MPluginModuleTitle]
-"&Title:"
+"Pavad&inimas:"
 //[MPluginDescription]
-"&Description:"
+"&Aprašas:"
 //[MPluginAuthor]
-"&Author:"
+"Au&torius:"
 //[MPluginVersion]
-"&Version:"
+"&Versija:"
 //[MPluginModulePath]
-"&Module path:"
+"&Modulio kelias:"
 //[MPluginUUID]
-"Plugin &UUID:"
+"Papildinio &UUID:"
 //[MPluginItemUUID]
-"Plugin &item UUID:"
+"Papildinio &elemento UUID:"
 //[MPluginPrefix]
-"Plugin &prefix:"
+"Papildinio &prefiksas:"
 //[MExceptionDialogTitle]
 "Oi"
 //[MExceptionDialogMessage1]
@@ -3261,17 +3261,17 @@
 //[MExceptionDialogClipboard]
 "Mainų sritis"
 //[MExcTerminate]
-"&Terminate gm"
+"&Nutraukti gm"
 //[MExcUnload]
-"Iškrauti priedą"
+"I&škrauti priedą"
 //[MExcContinue]
 "Tęsti"
 //[MExcFullDump]
 "Visa iškeltis"
 //[MNetUserName]
-"User name"
+"Vartotojo vardas"
 //[MNetUserPassword]
-"User password"
+"Vartotojo slaptažodis"
 //[MReadFolderError]
 "Negaliu perskaityti katalogo"
 //[MPlgBadVers]
@@ -3283,7 +3283,7 @@
 //[MPlgLoadPluginError]
 "Priedo pakrovimo klaida"
 //[MHelpTitle]
-"Help"
+"Žinynas"
 //[MHelpActivatorURL]
 "Ši nuoroda paleis šorinę programą:"
 //[MHelpActivatorFormat]
@@ -3291,17 +3291,17 @@
 //[MHelpActivatorQ]
 "Ar norite ją paleisti?"
 //[MCannotOpenHelp]
-"Cannot open the file"
+"Nepavyko atidaryti failo"
 //[MHelpTopicNotFound]
-"Requested help topic not found:"
+"Prašoma žinyno tema nerasta:"
 //[MPluginsHelpTitle]
 "Priedų pagalba"
 //[MDocumentsHelpTitle]
-"Documents help"
+"Dokumentų žinynas"
 //[MHelpSearchCannotFind]
-"Could not find the string"
+"Nepavyko rasti eilutės"
 //[MHelpF1]
-"Help"
+"Pagalb"
 //[MHelpF2]
 ""
 //[MHelpF3]
@@ -3309,25 +3309,25 @@
 //[MHelpF4]
 ""
 //[MHelpF5]
-"Zoom"
+"Didint"
 //[MHelpF6]
 ""
 //[MHelpF7]
-"Search"
+"Ieškot"
 //[MHelpF8]
 ""
 //[MHelpF9]
 ""
 //[MHelpF10]
-"Quit"
+"Išeiti"
 //[MHelpF11]
 ""
 //[MHelpF12]
 ""
 //[MHelpShiftF1]
-"Index"
+"Turiny"
 //[MHelpShiftF2]
-"Plugin"
+"Papild"
 //[MHelpShiftF3]
 ""
 //[MHelpShiftF4]
@@ -3349,7 +3349,7 @@
 //[MHelpShiftF12]
 ""
 //[MHelpAltF1]
-"Prev"
+"Ankst"
 //[MHelpAltF2]
 ""
 //[MHelpAltF3]
@@ -3493,9 +3493,9 @@
 //[MHelpCtrlAltShiftF12]
 ""
 //[MInfoF1]
-"Help"
+"Pagalb"
 //[MInfoF2]
-"Wrap"
+"Kelt"
 //[MInfoF3]
 "VieDiz"
 //[MInfoF4]
@@ -3505,17 +3505,17 @@
 //[MInfoF6]
 ""
 //[MInfoF7]
-"Search"
+"Ieškot"
 //[MInfoF8]
 "ANSI"
 //[MInfoF9]
-"ConfMn"
+"KonfMn"
 //[MInfoF10]
-"Quit"
+"Išeiti"
 //[MInfoF11]
-"Plugin"
+"Papild"
 //[MInfoF12]
-"Screen"
+"Ekran"
 //[MInfoShiftF1]
 ""
 //[MInfoShiftF2]
@@ -3529,21 +3529,21 @@
 //[MInfoShiftF6]
 ""
 //[MInfoShiftF7]
-"Next"
+"Kitas"
 //[MInfoShiftF8]
-"CodePg"
+"KodLnt"
 //[MInfoShiftF9]
-"Save"
+"Išsaug"
 //[MInfoShiftF10]
-"Last"
+"Pask"
 //[MInfoShiftF11]
 ""
 //[MInfoShiftF12]
 ""
 //[MInfoAltF1]
-"Left"
+"Kairė"
 //[MInfoAltF2]
-"Right"
+"Dešinė"
 //[MInfoAltF3]
 ""
 //[MInfoAltF4]
@@ -3553,21 +3553,21 @@
 //[MInfoAltF6]
 ""
 //[MInfoAltF7]
-"Find"
+"Rasti"
 //[MInfoAltF8]
 "Eiti"
 //[MInfoAltF9]
 "Video"
 //[MInfoAltF10]
-"Tree"
+"Medis"
 //[MInfoAltF11]
-"ViewHs"
+"ŽiūrIs"
 //[MInfoAltF12]
-"FoldHs"
+"KatIs"
 //[MInfoCtrlF1]
-"Left"
+"Kairė"
 //[MInfoCtrlF2]
-"Right"
+"Dešinė"
 //[MInfoCtrlF3]
 ""
 //[MInfoCtrlF4]
@@ -3685,11 +3685,11 @@
 //[MInfoCtrlAltShiftF12]
 ""
 //[MQViewF1]
-"Help"
+"Pagalb"
 //[MQViewF2]
-"Wrap"
+"Kelt"
 //[MQViewF3]
-"View"
+"Žiūrėt"
 //[MQViewF4]
 "Hex"
 //[MQViewF5]
@@ -3697,17 +3697,17 @@
 //[MQViewF6]
 ""
 //[MQViewF7]
-"Search"
+"Ieškot"
 //[MQViewF8]
 "ANSI"
 //[MQViewF9]
-"ConfMn"
+"KonfMn"
 //[MQViewF10]
-"Quit"
+"Išeiti"
 //[MQViewF11]
-"Plugin"
+"Papild"
 //[MQViewF12]
-"Screen"
+"Ekran"
 //[MQViewShiftF1]
 ""
 //[MQViewShiftF2]
@@ -3721,21 +3721,21 @@
 //[MQViewShiftF6]
 ""
 //[MQViewShiftF7]
-"Next"
+"Kitas"
 //[MQViewShiftF8]
-"CodePg"
+"KodLnt"
 //[MQViewShiftF9]
-"Save"
+"Išsaug"
 //[MQViewShiftF10]
-"Last"
+"Pask"
 //[MQViewShiftF11]
 ""
 //[MQViewShiftF12]
 ""
 //[MQViewAltF1]
-"Left"
+"Kairė"
 //[MQViewAltF2]
-"Right"
+"Dešinė"
 //[MQViewAltF3]
 ""
 //[MQViewAltF4]
@@ -3745,21 +3745,21 @@
 //[MQViewAltF6]
 ""
 //[MQViewAltF7]
-"Find"
+"Rasti"
 //[MQViewAltF8]
 "Eiti"
 //[MQViewAltF9]
 "Video"
 //[MQViewAltF10]
-"Tree"
+"Medis"
 //[MQViewAltF11]
-"ViewHs"
+"ŽiūrIs"
 //[MQViewAltF12]
-"FoldHs"
+"KatIs"
 //[MQViewCtrlF1]
-"Left"
+"Kairė"
 //[MQViewCtrlF2]
-"Right"
+"Dešinė"
 //[MQViewCtrlF3]
 ""
 //[MQViewCtrlF4]
@@ -3877,29 +3877,29 @@
 //[MQViewCtrlAltShiftF12]
 ""
 //[MKBTreeF1]
-"Help"
+"Pagalb"
 //[MKBTreeF2]
-"UserMn"
+"Meniu"
 //[MKBTreeF3]
 ""
 //[MKBTreeF4]
-"Attr"
+"Atrib"
 //[MKBTreeF5]
-"Copy"
+"Kopij"
 //[MKBTreeF6]
 "RenMov"
 //[MKBTreeF7]
-"MkFold"
+"Katal"
 //[MKBTreeF8]
-"Delete"
+"Trinti"
 //[MKBTreeF9]
-"ConfMn"
+"KonfMn"
 //[MKBTreeF10]
-"Quit"
+"Išeiti"
 //[MKBTreeF11]
-"Plugin"
+"Papild"
 //[MKBTreeF12]
-"Screen"
+"Ekran"
 //[MKBTreeShiftF1]
 ""
 //[MKBTreeShiftF2]
@@ -3909,25 +3909,25 @@
 //[MKBTreeShiftF4]
 ""
 //[MKBTreeShiftF5]
-"Copy"
+"Kopij"
 //[MKBTreeShiftF6]
-"Rename"
+"Pervad"
 //[MKBTreeShiftF7]
 ""
 //[MKBTreeShiftF8]
 ""
 //[MKBTreeShiftF9]
-"Save"
+"Išsaug"
 //[MKBTreeShiftF10]
-"Last"
+"Pask"
 //[MKBTreeShiftF11]
-"Group"
+"Grupė"
 //[MKBTreeShiftF12]
 "SelUp"
 //[MKBTreeAltF1]
-"Left"
+"Kairė"
 //[MKBTreeAltF2]
-"Right"
+"Dešinė"
 //[MKBTreeAltF3]
 ""
 //[MKBTreeAltF4]
@@ -3937,21 +3937,21 @@
 //[MKBTreeAltF6]
 ""
 //[MKBTreeAltF7]
-"Find"
+"Rasti"
 //[MKBTreeAltF8]
-"Histry"
+"Istor"
 //[MKBTreeAltF9]
 "Video"
 //[MKBTreeAltF10]
-"Tree"
+"Medis"
 //[MKBTreeAltF11]
-"ViewHs"
+"ŽiūrIs"
 //[MKBTreeAltF12]
-"FoldHs"
+"KatIs"
 //[MKBTreeCtrlF1]
-"Left"
+"Kairė"
 //[MKBTreeCtrlF2]
-"Right"
+"Dešinė"
 //[MKBTreeCtrlF3]
 ""
 //[MKBTreeCtrlF4]
@@ -4069,41 +4069,41 @@
 //[MKBTreeCtrlAltShiftF12]
 ""
 //[MCopyTimeInfoElapsed]
-"Time:"
+"Laikas:"
 //[MCopyTimeInfoRemaining]
-"Remaining:"
+"Liko:"
 //[MCopyTimeInfoSpeed]
 "B/s"
 //[MKeyESCWasPressed]
-"Operation has been interrupted"
+"Operacija nutraukta"
 //[MDoYouWantToCancel]
-"Do you really want to cancel it?"
+"Ar tikrai norite ją atšaukti?"
 //[MDoYouWantToContinue]
-"Continue work?"
+"Tęsti darbą?"
 //[MCheckingFileInPlugin]
-"The file is being checked by the plugin"
+"Failą tikrina papildinys"
 //[MDialogType]
 "Dialogas"
 //[MHelpType]
-"Help"
+"Žinynas"
 //[MFolderTreeType]
-"FolderTree"
+"KatalogųMedis"
 //[MVMenuType]
 "Meniu"
 //[MIncorrectMask]
-"File-mask string contains errors"
+"Failų kaukės eilutėje yra klaidų"
 //[MPanelBracketsForLongName]
 "{}"
 //[MComspecNotFound]
-"Environment variable %COMSPEC% not defined"
+"Aplinkos kintamasis %COMSPEC% neapibrėžtas"
 //[MFileFilterTitle]
-"Filter"
+"Filtras"
 //[MFileHilightTitle]
-"Files highlighting"
+"Failų paryškinimas"
 //[MFileFilterName]
-"&Name:"
+"&Pavadinimas:"
 //[MFileFilterMatchMask]
-"&Mask:"
+"K&aukė:"
 //[MFileFilterSize]
 "Si&ze:"
 //[MFileFilterSizeFromSign]
@@ -4111,159 +4111,159 @@
 //[MFileFilterSizeToSign]
 "&<="
 //[MFileHardLinksCount]
-"Has more than one hardlin&k"
+"Turi daugiau nei &vieną kietąją nuorodą"
 //[MFileFilterDate]
-"Data/Laikas:"
+"&Data/Laikas:"
 //[MFileFilterWrite]
 "rašy&mas"
 //[MFileFilterCreation]
-"&creation"
+"&sukūrimas"
 //[MFileFilterAccess]
 "&naudotas"
 //[MFileFilterChange]
-"c&hange"
+"&keitimas"
 //[MFileFilterDateRelative]
-"Relat&ive"
+"Sant&ykinis"
 //[MFileFilterDateAfterSign]
 ">="
 //[MFileFilterDateBeforeSign]
 "<="
 //[MFileFilterCurrent]
-"C&urrent"
+"Daba&rtinis"
 //[MFileFilterBlank]
-"B&lank"
+"Tu&ščias"
 //[MFileFilterAttr]
-"Attri&butes"
+"Atri&butai"
 //[MFileFilterAttrChoose]
 "&..."
 //[MFileFilterAttrReadOnly]
-"&Read only"
+"T&ik skaitymui"
 //[MFileFilterAttrArcive]
-"&Archive"
+"&Archyvinis"
 //[MFileFilterAttrHidden]
-"&Hidden"
+"&Paslėptas"
 //[MFileFilterAttrSystem]
-"&System"
+"Siste&minis"
 //[MFileFilterAttrCompressed]
-"&Compressed"
+"Su&glaudintas"
 //[MFileFilterAttrEncrypted]
-"&Encrypted"
+"&Užšifruotas"
 //[MFileFilterAttrDirectory]
-"&Directory"
+"&Katalogas"
 //[MFileFilterAttrNotIndexed]
-"Not &indexed"
+"Nein&deksuotas"
 //[MFileFilterAttrSparse]
-"S&parse"
+"R&etasis"
 //[MFileFilterAttrTemporary]
-"Temporar&y"
+"&Laikinas"
 //[MFileFilterAttrReparse]
-"Reparse poin&t"
+"Pakartotinės analizės &taškas"
 //[MFileFilterAttrOffline]
-"O&ffline"
+"&Neprisijungęs"
 //[MFileFilterAttrVirtual]
-"&Virtual"
+"&Virtualus"
 //[MFileFilterAttrIntegrityStream]
-"Inte&grity stream"
+"V&ientisumo srautas"
 //[MFileFilterAttrNoScrubData]
-"No scru&b data"
+"Be duomenų tikrinim&o"
 //[MFileFilterAttrPinned]
-"Prisegta"
+"Prisegt&a"
 //[MFileFilterAttrUnpinned]
-"Atsegta"
+"At&segta"
 //[MFileFilterAttrRecallOnOpen]
-"Recal&l on open"
+"Atkurti atida&rant"
 //[MFileFilterAttrRecallOnDataAccess]
-"Recall &on data access"
+"Atkurti kreipiantis į d&uomenis"
 //[MFileFilterAttrStrictlySequential]
-"Strictly se&quential"
+"&Griežtai nuoseklus"
 //[MFileFilterAttrDevice]
 "Įrenginys"
 //[MFileFilterReset]
-"&Reset"
+"Atstat&yti"
 //[MFileFilterMakeTransparent]
-"Make &transparent"
+"&Padaryti skaidrų"
 //[MFileFilterCancel]
-"Cancel"
+"Atšaukti"
 //[MBadFileSizeFormat]
-"File size field is incorrectly filled"
+"Failo dydžio laukas užpildytas neteisingai"
 //[MFarTitleAddonsAdmin]
 "Administratorius"
 //[MElevationRequired]
-"You need to provide administrator permission"
+"Turite suteikti administratoriaus leidimą"
 //[MElevationRequiredPrivileges]
-"Additional privileges required"
+"Reikia papildomų privilegijų"
 //[MElevationRequiredProcess]
-"to process this object:"
+"šiam objektui apdoroti:"
 //[MElevationRequiredDelete]
-"to delete this object:"
+"šiam objektui ištrinti:"
 //[MElevationRequiredCopy]
-"to copy this object:"
+"šiam objektui kopijuoti:"
 //[MElevationRequiredMove]
-"to move this object:"
+"šiam objektui perkelti:"
 //[MElevationRequiredReplace]
-"to replace this object:"
+"šiam objektui pakeisti:"
 //[MElevationRequiredGetAttributes]
-"to get attributes of this object:"
+"šio objekto atributams gauti:"
 //[MElevationRequiredSetAttributes]
-"to set attributes of this object:"
+"šio objekto atributams nustatyti:"
 //[MElevationRequiredHardLink]
-"to create this hard link:"
+"šiai kietajai nuorodai sukurti:"
 //[MElevationRequiredSymLink]
-"to create this symbolic link:"
+"šiai simbolinei nuorodai sukurti:"
 //[MElevationRequiredRecycle]
-"to move this object to recycle bin:"
+"šiam objektui perkelti į Šiukšlinę:"
 //[MElevationRequiredList]
-"to list this object:"
+"šio objekto turiniui parodyti:"
 //[MElevationRequiredSetOwner]
-"to set owner of this object:"
+"šio objekto savininkui nustatyti:"
 //[MElevationRequiredOpen]
-"to open this object:"
+"šiam objektui atidaryti:"
 //[MElevationRequiredEncryptFile]
-"to encrypt this object:"
+"šiam objektui užšifruoti:"
 //[MElevationRequiredDecryptFile]
-"to decrypt this object:"
+"šiam objektui iššifruoti:"
 //[MElevationRequiredSetVolumeLabel]
-"to set volume label:"
+"tomo žymei nustatyti:"
 //[MElevationDoForAll]
-"Do this for &all current objects"
+"Atlikti tai &visiems dabartiniams objektams"
 //[MElevationDoNotAskAgainInTheCurrentSession]
-"Do not ask again in the current session"
+"Daugiau neklausti šios sesijos metu"
 //[MCompletionHistoryTitle]
-"History"
+"Istorija"
 //[MCompletionEnvironmentTitle]
-"Environment"
+"Aplinka"
 //[MCompletionFilesTitle]
-"Files"
+"Failai"
 //[MObjectLockedReason]
-"Object is being {0} in:"
+"Objektas {0} programoje:"
 //[MObjectLockedReasonPlayed]
-"played"
+"grojamas"
 //[MObjectLockedReasonEdited]
-"edited"
+"redaguojamas"
 //[MObjectLockedReasonOpened]
-"opened"
+"atidarytas"
 //[MObjectLockedAndMore]
-"and {0} more processes."
+"ir dar {0} procesai."
 //[MObjectLockedSwitchTo]
-"Switch to"
+"Pereiti į"
 //[MObjectLockedClose]
-"Close file"
+"Uždaryti failą"
 //[MObjectLockedReasonSessionMismatch]
-"One or more processes are running in another Terminal Services session."
+"Vienas ar keli procesai vykdomi kitoje terminalo paslaugų sesijoje."
 //[MObjectLockedReasonCriticalProcess]
-"One or more processes are critical processes."
+"Vienas ar keli procesai yra kritiniai procesai."
 //[MObjectLockedReasonCriticalService]
-"One or more services are critical services."
+"Viena ar kelios paslaugos yra kritinės paslaugos."
 //[MObjectLockedReasonDetectedSelf]
-"The file is opened by the current process."
+"Failą atidarė dabartinis procesas."
 //[MProblemDb]
-"Problem configuration DB"
+"Konfigūracijos duomenų bazės problema"
 //[MShowConfigFolders]
-"Show configuration folders"
+"Rodyti konfigūracijos katalogus"
 //[MBadLanguageFile]
-"Incorrect language file"
+"Neteisingas kalbos failas"
 //[MLanguageStringNotFound]
-"String {0} not found"
+"Eilutė {0} nerasta"
 //[MUnsupportedCodePageSelectedCodepage]
 "Pasirinktas kodo puslapis"
 //[MUnsupportedCodePageDoesNotSupport]
@@ -4479,7 +4479,7 @@
 //[MKeyComma]
 ""
 //[MKeyRCtrl]
-"DešinysCtrl"
+""
 //[MKeyShift]
 ""
 //[MKeyCtrl]
@@ -4489,7 +4489,7 @@
 //[MKeyAlt]
 ""
 //[MNewFileName]
-"New_File_{0:04}-{1:02}-{2:02}_{3:02}.{4:02}.{5:02}.{6:03}.txt"
+"Naujas_failas_{0:04}-{1:02}-{2:02}_{3:02}.{4:02}.{5:02}.{6:03}.txt"
 //[MMenuTerminalPosition]
 "T&erminalo padėtis"
 //[MMenuModuleCommands]
@@ -4565,4 +4565,4 @@
 //[MLogQuietKey]
 "LogSil"
 //[MLogStarted]
-"The output is logged to"
+"Išvestis įrašoma į"

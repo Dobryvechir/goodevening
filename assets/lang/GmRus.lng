@@ -277,7 +277,7 @@
 //[MConfigScanJunction]
 "Ск&анировать символические ссылки"
 //[MConfigSmartFolderMonitor]
-"Обновление панелей только если gm активен"
+"Обновление &панелей только если gm активен"
 //[MConfigSaveHistory]
 "Сохранять &историю команд"
 //[MConfigSaveFoldersHistory]
@@ -297,7 +297,7 @@
 //[MConfigElevationUsePrivileges]
 "Исп&ользовать дополнительные привилегии"
 //[MConfigSortingCollation]
-"Сортировочное сравнение:"
+"&Сортировочное сравнение:"
 //[MConfigSortingOrdinal]
 "порядковое"
 //[MConfigSortingInvariant]
@@ -305,7 +305,7 @@
 //[MConfigSortingLinguistic]
 "лингвистическое"
 //[MConfigSortingDigitsAsNumbers]
-"Трактовать цифры как числа"
+"Трактовать &цифры как числа"
 //[MConfigSortingCase]
 "&Учитывать регистр"
 //[MConfigAutoSave]
@@ -343,7 +343,7 @@
 //[MConfigSelectFolders]
 "Пометка &папок"
 //[MConfigRightClickSelect]
-"Правый клик помечает файлы"
+"Правый &клик помечает файлы"
 //[MConfigSortFolderExt]
 "Сортировать имена папок по рас&ширению"
 //[MConfigAllowReverseSort]
@@ -351,7 +351,7 @@
 //[MConfigAutoUpdateLimit]
 "Отключать автооб&новление панелей,"
 //[MConfigAutoUpdateLimit2]
-"если объектов больше"
+"если объектов &больше"
 //[MConfigAutoUpdateRemoteDrive]
 "Автообновление с&етевых дисков"
 //[MConfigShowColumns]
@@ -371,7 +371,7 @@
 //[MConfigShowSortMode]
 "Показывать букву режима сор&тировки"
 //[MConfigShowDotsInRoot]
-"Показывать \"..\" в корневых каталогах"
+"&Показывать \"..\" в корневых каталогах"
 //[MConfigInterfaceTitle]
 "Настройки интерфейса"
 //[MConfigClock]
@@ -385,7 +385,7 @@
 //[MConfigSaver]
 "Экранная за&ставка"
 //[MConfigSaverMinutes]
-"минут"
+"ми&нут"
 //[MConfigCopyTotal]
 "Показывать &общий индикатор копирования"
 //[MConfigCopyTimeRule]
@@ -395,23 +395,23 @@
 //[MConfigPgUpChangeDisk]
 "Использовать Ctrl+PgUp для в&ыбора диска"
 //[MConfigUseVirtualTerminalForRendering]
-"Использовать Virtual Terminal для рендеринга"
+"Использовать &Virtual Terminal для рендеринга"
 //[MConfigFullWidthAwareRendering]
-"Fullwidth-aware rendering"
+"Отрисовка с учётом полноширинных символов"
 //[MConfigFullWidthAwareRenderingGraphemeClustersDected1]
-"It appears that your terminal supports Unicode grapheme clusters."
+"Похоже, ваш терминал поддерживает кластеры графем Unicode."
 //[MConfigFullWidthAwareRenderingGraphemeClustersDected2]
-"Unfortunately, gm does not support them yet."
+"К сожалению, gm пока их не поддерживает."
 //[MConfigFullWidthAwareRenderingGraphemeClustersDected3]
-"For best experience it is recommended to switch to codepoint-based rendering."
+"Для лучшего результата рекомендуется переключиться на отрисовку по кодовым точкам."
 //[MConfigFullWidthAwareRenderingGraphemeClustersDected4]
-"Consult the documentation of your terminal for advice on how to do this."
+"Как это сделать, смотрите в документации вашего терминала."
 //[MConfigClearType]
 "Перер&исовка с поддержкой ClearType (может быть медленной)"
 //[MConfigSetConsoleIcon]
-"Иконка консоли:"
+"Иконка кон&соли:"
 //[MConfigSetAdminConsoleIcon]
-"Альтернативная для администратора"
+"Альтернативная &для администратора"
 //[MConfigTitleAddons]
 "Дополнительная информация для &заголовка окна:"
 //[MConfigDlgSetsTitle]
@@ -431,11 +431,11 @@
 //[MConfigVMenuTitle]
 "Настройки меню"
 //[MConfigVMenuLBtnClick]
-"Клик левой кнопки мыши вне меню"
+"&Клик левой кнопки мыши вне меню"
 //[MConfigVMenuRBtnClick]
-"Клик правой кнопки мыши вне меню"
+"Клик правой кнопки &мыши вне меню"
 //[MConfigVMenuMBtnClick]
-"Клик средней кнопки мыши вне меню"
+"Клик с&редней кнопки мыши вне меню"
 //[MConfigVMenuClickCancel]
 "Закрыть с отменой"
 //[MConfigVMenuClickApply]
@@ -613,21 +613,21 @@
 //[MConfigEditor]
 "Редактор конфигурации"
 //[MConfigEditorBoolean]
-"boolean"
+"логический"
 //[MConfigEditorTriState]
-"3-state"
+"3 состояния"
 //[MConfigEditorInteger]
-"integer"
+"целое"
 //[MConfigEditorString]
-"string"
+"строка"
 //[MConfigEditorIntegerSigned]
-"Signed:"
+"Со знаком:"
 //[MConfigEditorIntegerUnsigned]
-"Unsigned:"
+"Без знака:"
 //[MConfigEditorIntegerHexadecimal]
-"Hexadecimal:"
+"Шестнадцатеричное:"
 //[MConfigEditorIntegerBinary]
-"Binary:"
+"Двоичное:"
 //[MSaveSetupTitle]
 "Конфигурация"
 //[MSaveSetupAsk1]
@@ -761,7 +761,7 @@
 //[MCopyMountVolFailed2]
 "на '{0}'"
 //[MCopyMountName]
-"Disk_"
+"Диск_"
 //[MCannotCopyFileToItself1]
 "Нельзя копировать файл"
 //[MCannotCopyFileToItself2]
@@ -1675,7 +1675,7 @@
 //[MFindFileSymLinks]
 "Искать в символи&ческих ссылках"
 //[MFindFileAlternateStreams]
-"Искать в альтернативных потоках"
+"&Искать в альтернативных потоках"
 //[MFindFileSearchArea]
 "Выберите &область поиска:"
 //[MFindFileSearchAllDisks]
@@ -1789,7 +1789,7 @@
 //[MHighlightMarking4]
 "&8. Пометка"
 //[MHighlightExample]
-"filename.ext"
+"имяфайла.расш"
 //[MHighlightContinueProcessing]
 "Продолжать &обработку"
 //[MInfoTitle]
@@ -1813,11 +1813,11 @@
 //[MInfoUserAccessLevelUnknown]
 "Неизвестно"
 //[MInfoUserAccessElevated]
-"Elevated"
+"Повышенный"
 //[MInfoUserAccessElevationTypeFull]
-"Full"
+"Полный"
 //[MInfoUserAccessElevationTypeLimited]
-"Limited"
+"Ограниченный"
 //[MInfoDiskTitle]
 "Диск"
 //[MInfoRemovable]
@@ -1881,11 +1881,11 @@
 //[MInfoMemory]
 "Память"
 //[MInfoMemoryCommittable]
-"Committable"
+"Выделяемая"
 //[MInfoMemoryAddressable]
-"Addressable"
+"Адресуемая"
 //[MInfoMemoryPhysical]
-"Physical"
+"Физическая"
 //[MInfoMetricMemoryInstalled]
 "установлено"
 //[MInfoDescription]
@@ -1945,15 +1945,15 @@
 //[MCreateFolder]
 "Создать п&апку:"
 //[MMakeFolderLinkType]
-"Тип ссылки:"
+"&Тип ссылки:"
 //[MMakeFolderLinkNone]
-"Нет"
+"&Нет"
 //[MMakeFolderLinkJunction]
-"связь каталогов"
+"с&вязь каталогов"
 //[MMakeFolderLinkSymlink]
-"символическая ссылка"
+"с&имволическая ссылка"
 //[MMakeFolderLinkTarget]
-"Цель:"
+"&Цель:"
 //[MMultiMakeDir]
 "Обрабатыват&ь несколько имён папок"
 //[MIncorrectDirList]
@@ -1977,7 +1977,7 @@
 //[MMenuOwnersView]
 "Вл&адельцы файлов"
 //[MMenuLinksView]
-"Ссылки файлов"
+"&Ссылки файлов"
 //[MMenuAlternativeView]
 "Аль&тернативный полный"
 //[MMenuInfoPanel]
@@ -2079,7 +2079,7 @@
 //[MMenuPluginsConfig]
 "Параметры плагино&в"
 //[MMenuPluginsManagerSettings]
-"Параметры менеджера плагинов"
+"Параметры менед&жера плагинов"
 //[MMenuDialogSettings]
 "Настройки &диалогов"
 //[MMenuVMenuSettings]
@@ -2091,7 +2091,7 @@
 //[MMenuInfoPanelSettings]
 "Нас&тройки информационной панели"
 //[MMenuMaskGroups]
-"Группы масок файлов"
+"Гр&уппы масок файлов"
 //[MMenuConfirmation]
 "&Подтверждения"
 //[MMenuFilePanelModes]
@@ -2105,7 +2105,7 @@
 //[MMenuEditor]
 "Настройки &редактора"
 //[MMenuCodePages]
-"Кодов&ые страницы"
+"Кодовые страницы"
 //[MMenuColors]
 "&Цвета"
 //[MMenuFilesHighlighting]
@@ -2159,7 +2159,7 @@
 //[MMenuSortByNameOnly]
 "Только имя"
 //[MMenuSortUseGroups]
-"Использовать &группы сортировки"
+"Использовать группы сортировки"
 //[MMenuSortSelectedFirst]
 "Помеченные &файлы вперёд"
 //[MMenuSortDirectoriesFirst]
@@ -2279,7 +2279,7 @@
 //[MChangeDriveShowLabel]
 "Показывать &метку диска"
 //[MChangeDriveShowLabelUseShell]
-"Использовать имя оболочки"
+"&Использовать имя оболочки"
 //[MChangeDriveShowFileSystem]
 "Показывать тип &файловой системы"
 //[MChangeDriveShowSize]
@@ -2291,7 +2291,7 @@
 //[MChangeDriveShowPlugins]
 "Показывать &плагины"
 //[MChangeDriveSortPluginsByHotkey]
-"Сортировать плагины по горячей клавише"
+"Сортировать плагины по &горячей клавише"
 //[MChangeDriveShowCD]
 "Показывать параметры &компакт-дисков"
 //[MChangeDriveShowNetworkDrive]
@@ -2327,7 +2327,7 @@
 //[MQuickViewTitle]
 "Быстрый просмотр"
 //[MQuickViewReparsePoint]
-"Точка повторного анализа"
+"&Точка повторного анализа"
 //[MQuickViewUnknownReparsePoint]
 "Неизвестная точка повторного анализа"
 //[MQuickViewFolders]
@@ -2353,11 +2353,11 @@
 //[MSetAttrHardLinks]
 "жёстких ссылок"
 //[MSetAttrJunction]
-"Связь:"
+"&Связь:"
 //[MSetAttrSymlink]
-"Ссылка{}:"
+"Ссы&лка{}:"
 //[MSetAttrVolMount]
-"Том:"
+"Т&ом:"
 //[MSetAttrDfsTargets]
 "DFS цели:"
 //[MSetAttrAppExecLink]
@@ -2379,39 +2379,39 @@
 //[MSetAttrEncrypted]
 "За&шифрованный"
 //[MSetAttrNotIndexed]
-"Неиндексируемый"
+"&Неиндексируемый"
 //[MSetAttrSparse]
-"Разреженный"
+"&Разреженный"
 //[MSetAttrTemporary]
-"Временный"
+"&Временный"
 //[MSetAttrOffline]
-"Автономный"
+"Авт&ономный"
 //[MSetAttrReparsePoint]
-"Точка повторного анализа"
+"Точка &повторного анализа"
 //[MSetAttrVirtual]
-"Виртуальный"
+"Вирт&уальный"
 //[MSetAttrIntegrityStream]
-"Поток целостности"
+"Поток &целостности"
 //[MSetAttrNoScrubData]
-"Нет данных очистки"
+"Нет &данных очистки"
 //[MSetAttrPinned]
-"Закреплённый"
+"З&акреплённый"
 //[MSetAttrUnpinned]
-"Откреплённый"
+"О&ткреплённый"
 //[MSetAttrRecallOnOpen]
-"Recall on open"
+"Загрузка при от&крытии"
 //[MSetAttrRecallOnDataAccess]
-"Recall on data access"
+"Загрузка при доступе к данн&ым"
 //[MSetAttrStrictlySequential]
-"Strictly sequential"
+"&Строго последовательный"
 //[MSetAttrDevice]
 "Устройство"
 //[MSetAttrMore]
-"Ещё"
+"&Ещё"
 //[MSetAttrSubfolders]
 "Обрабатывать &вложенные папки"
 //[MSetAttrOwner]
-"Владелец:"
+"В&ладелец:"
 //[MSetAttrDate]
 "Дата/Время:"
 //[MSetAttrWrite]
@@ -2705,25 +2705,25 @@
 //[MSetColorStyle]
 "Стиль:"
 //[MSetColorStyleInherit]
-"Наследовать"
+"&Наследовать"
 //[MSetColorStyleBold]
-"Жирный"
+"&Жирный"
 //[MSetColorStyleItalic]
-"Курсив"
+"&Курсив"
 //[MSetColorStyleOverline]
-"Надчёркивание"
+"Н&адчёркивание"
 //[MSetColorStyleStrikeout]
-"Зачёркнутый"
+"&Зачёркнутый"
 //[MSetColorStyleFaint]
-"Бледный"
+"&Бледный"
 //[MSetColorStyleBlink]
-"Мерцающий"
+"&Мерцающий"
 //[MSetColorStyleInverse]
 "Обратный"
 //[MSetColorStyleInvisible]
 "Невидимый"
 //[MSetColorStyleUnderline]
-"Подчёркивание:"
+"&Подчёркивание:"
 //[MSetColorStyleUnderlineNone]
 "Нет"
 //[MSetColorStyleUnderlineSingle]
@@ -2739,17 +2739,17 @@
 //[MSetColorSample]
 "Текст Текст Текст Текст Текст Текст"
 //[MSetColorVTHintInfo]
-"Extended colors and styles require VT rendering."
+"Расширенные цвета и стили требуют отрисовки через VT."
 //[MSetColorVTHintSupported]
-"Press \"Enable VT\" below to turn it on."
+"Нажмите \"Включить VT\" ниже, чтобы включить её."
 //[MSetColorVTHintNotSupported]
-"Your system does not support it."
+"Ваша система её не поддерживает."
 //[MSetColorSystemDialog]
-"System"
+"Система"
 //[MSetColorSet]
 "Установить"
 //[MSetColorEnableVT]
-"Enable VT"
+"Включить VT"
 //[MSetColorCancel]
 "Отменить"
 //[MColorsPalette]
@@ -2775,9 +2775,9 @@
 //[MSetConfirmRemoveConnection]
 "&Отсоединение сетевого диска"
 //[MSetConfirmRemoveSUBST]
-"Удаление SUBST-диска"
+"Удаление &SUBST-диска"
 //[MSetConfirmDetachVHD]
-"Отсоедиение виртуального диска"
+"Отсо&едиение виртуального диска"
 //[MSetConfirmRemoveHotPlug]
 "Отключение HotPlug-у&стройства"
 //[MSetConfirmAllowReedit]
@@ -3131,7 +3131,7 @@
 //[MEditPanelModes]
 "Режимы панели"
 //[MEditPanelModeName]
-"Имя"
+"И&мя"
 //[MEditPanelModeTypes]
 "&Типы колонок"
 //[MEditPanelModeWidths]
@@ -3197,13 +3197,13 @@
 //[MMacroDeleteKey2]
 "Удалить?"
 //[MMacroEditKey]
-"Изменить"
+"&Изменить"
 //[MMacroSettingsTitle]
 "Параметры макрокоманды для '{0}'"
 //[MMacroSettingsSequence]
-"Последовательность:"
+"Посл&едовательность:"
 //[MMacroSettingsDescription]
-"Описание:"
+"Описа&ние:"
 //[MMacroSettingsEnableOutput]
 "Разрешить во время &выполнения вывод на экран"
 //[MMacroSettingsRunAfterStart]
@@ -3261,9 +3261,9 @@
 //[MExceptionDialogClipboard]
 "Буфер обмена"
 //[MExcTerminate]
-"Завершить gm"
+"&Завершить gm"
 //[MExcUnload]
-"Выгрузить плагин"
+"В&ыгрузить плагин"
 //[MExcContinue]
 "Продолжить"
 //[MExcFullDump]
@@ -4111,7 +4111,7 @@
 //[MFileFilterSizeToSign]
 "&<="
 //[MFileHardLinksCount]
-"Болee одной жёсткой ссылки"
+"Болee &одной жёсткой ссылки"
 //[MFileFilterDate]
 "&Дата/Время:"
 //[MFileFilterWrite]
@@ -4157,31 +4157,31 @@
 //[MFileFilterAttrTemporary]
 "&Временный"
 //[MFileFilterAttrReparse]
-"Точка повторного анализа"
+"Точка &повторного анализа"
 //[MFileFilterAttrOffline]
 "Автономны&й"
 //[MFileFilterAttrVirtual]
 "Вирт&уальный"
 //[MFileFilterAttrIntegrityStream]
-"Поток целостности"
+"Поток &целостности"
 //[MFileFilterAttrNoScrubData]
-"Нет данных очистки"
+"Нет &данных очистки"
 //[MFileFilterAttrPinned]
-"Закреплённый"
+"З&акреплённый"
 //[MFileFilterAttrUnpinned]
-"Откреплённый"
+"&Откреплённый"
 //[MFileFilterAttrRecallOnOpen]
-"Recall on open"
+"Загрузка при о&ткрытии"
 //[MFileFilterAttrRecallOnDataAccess]
-"Recall on data access"
+"&Загрузка при доступе к данным"
 //[MFileFilterAttrStrictlySequential]
-"Strictly sequential"
+"&Строго последовательный"
 //[MFileFilterAttrDevice]
 "Устройство"
 //[MFileFilterReset]
 "Очистит&ь"
 //[MFileFilterMakeTransparent]
-"Выставить прозрачность"
+"&Выставить прозрачность"
 //[MFileFilterCancel]
 "Отмена"
 //[MBadFileSizeFormat]
@@ -4223,7 +4223,7 @@
 //[MElevationRequiredDecryptFile]
 "для расшифрования этого объекта:"
 //[MElevationRequiredSetVolumeLabel]
-"to set volume label:"
+"для установки метки тома:"
 //[MElevationDoForAll]
 "Выполнить это действие для &всех текущих объектов"
 //[MElevationDoNotAskAgainInTheCurrentSession]

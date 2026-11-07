@@ -3267,7 +3267,7 @@
 //[MExcContinue]
 "Fortsett"
 //[MExcFullDump]
-"Full dump"
+"Fullstendig minnedump"
 //[MNetUserName]
 "Brukernavn"
 //[MNetUserPassword]
@@ -4565,4 +4565,4 @@
 //[MLogQuietKey]
 "LogSil"
 //[MLogStarted]
-"The output is logged to"
+"Utdata blir logget til"

@@ -1,0 +1,4568 @@
+.Language=Greek,Ελληνικά
+// Goodevening Manager language file (Greek)
+//[MYes]
+"Ναι"
+//[MNo]
+"Όχι"
+//[MOk]
+"OK"
+//[MHYes]
+"&Ναι"
+//[MHNo]
+"Ό&χι"
+//[MHOk]
+"&OK"
+//[MCancel]
+"Άκυρο"
+//[MReset]
+"&Επαναφορά"
+//[MRetry]
+"Επανάληψη"
+//[MSkip]
+"Παράλειψη"
+//[MAbort]
+"Διακοπή"
+//[MIgnore]
+"Αγνόηση"
+//[MDelete]
+"Διαγραφή"
+//[MHCancel]
+"Ά&κυρο"
+//[MHRetry]
+"&Επανάληψη"
+//[MHSkip]
+"&Παράλειψη"
+//[MHSkipAll]
+"Παράλειψη ό&λων"
+//[MHAbort]
+"&Διακοπή"
+//[MHIgnore]
+"&Αγνόηση"
+//[MHDelete]
+"&Διαγραφή"
+//[MHRemove]
+"&Αφαίρεση"
+//[MHSplit]
+"Δια&χωρισμός"
+//[MWarning]
+"Προειδοποίηση"
+//[MError]
+"Σφάλμα"
+//[MQuit]
+"Έξοδος"
+//[MAskQuit]
+"Θέλετε να κλείσετε το gm;"
+//[MF1]
+"Βοήθ"
+//[MF2]
+"ΜενΧρ"
+//[MF3]
+"Προβ"
+//[MF4]
+"Επεξ"
+//[MF5]
+"Αντιγ"
+//[MF6]
+"ΜετΜετ"
+//[MF7]
+"ΝέοςΦ"
+//[MF8]
+"Διαγρ"
+//[MF9]
+"ΜενΡυθ"
+//[MF10]
+"Έξοδος"
+//[MF11]
+"Πρόσθ"
+//[MF12]
+"Οθόνη"
+//[MShiftF1]
+"Προσθ"
+//[MShiftF2]
+"Εξαγ"
+//[MShiftF3]
+"ΕντΑρχ"
+//[MShiftF4]
+"Επεξ…"
+//[MShiftF5]
+"Αντιγ"
+//[MShiftF6]
+"Μετον"
+//[MShiftF7]
+""
+//[MShiftF8]
+"Διαγρ"
+//[MShiftF9]
+"Αποθ"
+//[MShiftF10]
+"Τελευτ"
+//[MShiftF11]
+"Ομάδα"
+//[MShiftF12]
+"ΕπιλΠ"
+//[MAltF1]
+"Αριστ"
+//[MAltF2]
+"Δεξιά"
+//[MAltF3]
+"Προβ…"
+//[MAltF4]
+"Επεξ…"
+//[MAltF5]
+"Εκτύπ"
+//[MAltF6]
+"Σύνδ"
+//[MAltF7]
+"Εύρεση"
+//[MAltF8]
+"Ιστορ"
+//[MAltF9]
+"Βίντεο"
+//[MAltF10]
+"Δέντρο"
+//[MAltF11]
+"ΙστΠρ"
+//[MAltF12]
+"ΙστΦακ"
+//[MCtrlF1]
+"Αριστ"
+//[MCtrlF2]
+"Δεξιά"
+//[MCtrlF3]
+"Όνομα"
+//[MCtrlF4]
+"Επέκτ"
+//[MCtrlF5]
+"Εγγρ"
+//[MCtrlF6]
+"Μέγεθ"
+//[MCtrlF7]
+"ΧωρΤαξ"
+//[MCtrlF8]
+"Δημιου"
+//[MCtrlF9]
+"Πρόσβ"
+//[MCtrlF10]
+"Περιγρ"
+//[MCtrlF11]
+"Κάτοχ"
+//[MCtrlF12]
+"Ταξιν"
+//[MAltShiftF1]
+""
+//[MAltShiftF2]
+""
+//[MAltShiftF3]
+""
+//[MAltShiftF4]
+""
+//[MAltShiftF5]
+""
+//[MAltShiftF6]
+""
+//[MAltShiftF7]
+""
+//[MAltShiftF8]
+""
+//[MAltShiftF9]
+"ΡυθΠρ"
+//[MAltShiftF10]
+""
+//[MAltShiftF11]
+""
+//[MAltShiftF12]
+""
+//[MCtrlShiftF1]
+""
+//[MCtrlShiftF2]
+""
+//[MCtrlShiftF3]
+"Προβ"
+//[MCtrlShiftF4]
+"Επεξ"
+//[MCtrlShiftF5]
+""
+//[MCtrlShiftF6]
+""
+//[MCtrlShiftF7]
+""
+//[MCtrlShiftF8]
+""
+//[MCtrlShiftF9]
+""
+//[MCtrlShiftF10]
+""
+//[MCtrlShiftF11]
+""
+//[MCtrlShiftF12]
+""
+//[MCtrlAltF1]
+""
+//[MCtrlAltF2]
+""
+//[MCtrlAltF3]
+""
+//[MCtrlAltF4]
+""
+//[MCtrlAltF5]
+""
+//[MCtrlAltF6]
+""
+//[MCtrlAltF7]
+""
+//[MCtrlAltF8]
+""
+//[MCtrlAltF9]
+""
+//[MCtrlAltF10]
+""
+//[MCtrlAltF11]
+""
+//[MCtrlAltF12]
+""
+//[MCtrlAltShiftF1]
+""
+//[MCtrlAltShiftF2]
+""
+//[MCtrlAltShiftF3]
+""
+//[MCtrlAltShiftF4]
+""
+//[MCtrlAltShiftF5]
+""
+//[MCtrlAltShiftF6]
+""
+//[MCtrlAltShiftF7]
+""
+//[MCtrlAltShiftF8]
+""
+//[MCtrlAltShiftF9]
+""
+//[MCtrlAltShiftF10]
+""
+//[MCtrlAltShiftF11]
+""
+//[MCtrlAltShiftF12]
+""
+//[MHistoryTitle]
+"Ιστορικό"
+//[MHistoryInfoTitle]
+"Πληροφορίες"
+//[MHistoryInfoFolder]
+"Φάκελος:"
+//[MFolderHistoryTitle]
+"Ιστορικό φακέλων"
+//[MViewHistoryTitle]
+"Ιστορικό προβολής και επεξεργασίας"
+//[MViewHistoryIsCreate]
+"Δημιουργία του αρχείου;"
+//[MHistoryView]
+"Προβολή"
+//[MHistoryEdit]
+"Επεξεργασία"
+//[MHistoryExt]
+"Επέκ."
+//[MHistoryClear]
+"Όλες οι εγγραφές του ιστορικού θα διαγραφούν. Συνέχεια;"
+//[MClear]
+"&Εκκαθάριση ιστορικού"
+//[MConfigSystemTitle]
+"Ρυθμίσεις συστήματος"
+//[MConfigRecycleBin]
+"&Διαγραφή στον Κάδο Ανακύκλωσης"
+//[MConfigSystemCopy]
+"Χρήση της ρουτίνας αντιγραφής του σ&υστήματος"
+//[MConfigCopySharing]
+"Αντιγραφή αρχείων ανοιχτών για &εγγραφή"
+//[MConfigScanJunction]
+"Σάρωση &συμβολικών συνδέσμων"
+//[MConfigSmartFolderMonitor]
+"&Ενημέρωση πλαισίων μόνο όταν το gm είναι ενεργό"
+//[MConfigSaveHistory]
+"Αποθήκευση &ιστορικού εντολών"
+//[MConfigSaveFoldersHistory]
+"Αποθήκευση ιστορικού &φακέλων"
+//[MConfigSaveViewHistory]
+"Αποθήκευση ιστορικού &προβολής και επεξεργασίας"
+//[MConfigRegisteredTypes]
+"Χρήση των καταχωρημένων &τύπων των Windows"
+//[MConfigUpdateEnvironment]
+"Αυτόματη ενημέρωση &μεταβλητών περιβάλλοντος"
+//[MConfigElevation]
+"Αίτηση δικαιωμάτων διαχειριστή:"
+//[MConfigElevationModify]
+"Για &τροποποίηση"
+//[MConfigElevationRead]
+"Για &ανάγνωση"
+//[MConfigElevationUsePrivileges]
+"Χρήση πρόσθετων &προνομίων"
+//[MConfigSortingCollation]
+"Κανόνες &ταξινόμησης:"
+//[MConfigSortingOrdinal]
+"τακτική"
+//[MConfigSortingInvariant]
+"αμετάβλητη"
+//[MConfigSortingLinguistic]
+"γλωσσική"
+//[MConfigSortingDigitsAsNumbers]
+"Τα ψηφία &ως αριθμοί"
+//[MConfigSortingCase]
+"&Διάκριση πεζών-κεφαλαίων"
+//[MConfigAutoSave]
+"Αυτόματη &αποθήκευση ρυθμίσεων"
+//[MConfigTreeTitle]
+"Ρυθμίσεις δέντρου"
+//[MConfigTreeAutoChange]
+"&Αυτόματη αλλαγή φακέλου"
+//[MConfigTreeLabelMinFolder]
+"&Ελάχιστος αριθμός φακέλων:"
+//[MConfigTreeLabel1]
+"Αποθήκευση αρχείου με τη δομή φακέλων για:"
+//[MConfigTreeLabelLocalDisk]
+"τοπικές μονάδες"
+//[MConfigTreeLabelNetDisk]
+"μονάδες δικτύου"
+//[MConfigTreeLabelNetPath]
+"διαδρομές δικτύου"
+//[MConfigTreeLabelRemovableDisk]
+"αφαιρούμενες μονάδες"
+//[MConfigTreeLabelCDDisk]
+"οπτικές μονάδες"
+//[MConfigTreeLabelExceptPath]
+"Να μη δημιουργείται το αρχείο για τις εξής μονάδες και διαδρομές:"
+//[MConfigTreeLabelSaveLocalPath]
+"Διαδρομή για τοπικές, αφαιρούμενες και οπτικές μονάδες:"
+//[MConfigTreeLabelSaveNetPath]
+"Διαδρομή για μονάδες και διαδρομές δικτύου:"
+//[MConfigPanelTitle]
+"Ρυθμίσεις πλαισίων"
+//[MConfigHidden]
+"Εμφάνιση &κρυφών αρχείων και αρχείων συστήματος"
+//[MConfigHighlight]
+"&Χρωματισμός αρχείων"
+//[MConfigSelectFolders]
+"Επιλογή &φακέλων"
+//[MConfigRightClickSelect]
+"Το δεξί &κλικ επιλέγει αρχεία"
+//[MConfigSortFolderExt]
+"Ταξινόμηση φακέλων κατά &επέκταση"
+//[MConfigAllowReverseSort]
+"Να επιτρέπεται α&ντίστροφη ταξινόμηση"
+//[MConfigAutoUpdateLimit]
+"&Απενεργοποίηση αυτόματης ενημέρωσης πλαισίου"
+//[MConfigAutoUpdateLimit2]
+"αν ο αριθμός α&ντικειμένων υπερβαίνει"
+//[MConfigAutoUpdateRemoteDrive]
+"Αυτόματη ανανέωση μονάδων &δικτύου"
+//[MConfigShowColumns]
+"Εμφάνιση τίτλων &στηλών"
+//[MConfigShowStatus]
+"Εμφάνιση &γραμμής κατάστασης"
+//[MConfigDetailedJunction]
+"Εντοπισμός σημείων &προσάρτησης"
+//[MConfigShowTotal]
+"Εμφάνιση &συνολικών πληροφοριών αρχείων"
+//[MConfigShowFree]
+"Εμφάνιση &ελεύθερου χώρου"
+//[MConfigShowScrollbar]
+"Εμφάνιση γραμμής &κύλισης"
+//[MConfigShowScreensNumber]
+"Εμφάνιση &αριθμού οθονών παρασκηνίου"
+//[MConfigShowSortMode]
+"Εμφάνιση γράμματος &τρόπου ταξινόμησης"
+//[MConfigShowDotsInRoot]
+"Εμφάνιση \"&..\" στους ριζικούς φακέλους"
+//[MConfigInterfaceTitle]
+"Ρυθμίσεις διεπαφής"
+//[MConfigClock]
+"&Ρολόι"
+//[MConfigMouse]
+"&Ποντίκι"
+//[MConfigKeyBar]
+"Εμφάνιση γραμμής &πλήκτρων"
+//[MConfigMenuBar]
+"Πάντα εμφάνιση της γραμμής &μενού"
+//[MConfigSaver]
+"&Προφύλαξη οθόνης"
+//[MConfigSaverMinutes]
+"&λεπτά"
+//[MConfigCopyTotal]
+"Εμφάνιση &συνολικής προόδου αντιγραφής"
+//[MConfigCopyTimeRule]
+"Εμφάνιση &χρόνου αντιγραφής"
+//[MConfigDeleteTotal]
+"Εμφάνιση συνολικής προόδου &διαγραφής"
+//[MConfigPgUpChangeDisk]
+"Χρήση Ctrl+Pg&Up για αλλαγή μονάδας"
+//[MConfigUseVirtualTerminalForRendering]
+"Χρήση &εικονικού τερματικού για απόδοση"
+//[MConfigFullWidthAwareRendering]
+"Απόδοση με υποστήριξη χαρακτήρων πλήρους πλάτους"
+//[MConfigFullWidthAwareRenderingGraphemeClustersDected1]
+"Φαίνεται ότι το τερματικό σας υποστηρίζει συμπλέγματα γραφημάτων Unicode."
+//[MConfigFullWidthAwareRenderingGraphemeClustersDected2]
+"Δυστυχώς, το gm δεν τα υποστηρίζει ακόμη."
+//[MConfigFullWidthAwareRenderingGraphemeClustersDected3]
+"Για καλύτερο αποτέλεσμα συνιστάται απόδοση βάσει σημείων κώδικα."
+//[MConfigFullWidthAwareRenderingGraphemeClustersDected4]
+"Συμβουλευτείτε την τεκμηρίωση του τερματικού σας για το πώς να το κάνετε."
+//[MConfigClearType]
+"Επανασχεδίαση συμβατή με Cl&earType (μπορεί να είναι αργή)"
+//[MConfigSetConsoleIcon]
+"&Εικονίδιο κονσόλας:"
+//[MConfigSetAdminConsoleIcon]
+"Άλλο για &διαχειριστή"
+//[MConfigTitleAddons]
+"Προσθήκες στον τίτλο του &παραθύρου gm:"
+//[MConfigDlgSetsTitle]
+"Ρυθμίσεις διαλόγων"
+//[MConfigDialogsEditHistory]
+"&Ιστορικό στα πεδία εισαγωγής"
+//[MConfigDialogsEditBlock]
+"&Μόνιμα μπλοκ στα πεδία εισαγωγής"
+//[MConfigDialogsDelRemovesBlocks]
+"Το &Del διαγράφει μπλοκ στα πεδία εισαγωγής"
+//[MConfigDialogsAutoComplete]
+"&Αυτόματη συμπλήρωση στα πεδία εισαγωγής"
+//[MConfigDialogsEULBsClear]
+"Το &Backspace διαγράφει αμετάβλητο κείμενο"
+//[MConfigDialogsMouseButton]
+"Κλικ &έξω από διάλογο τον κλείνει"
+//[MConfigVMenuTitle]
+"Ρυθμίσεις μενού"
+//[MConfigVMenuLBtnClick]
+"&Αριστερό κλικ έξω από μενού"
+//[MConfigVMenuRBtnClick]
+"&Δεξί κλικ έξω από μενού"
+//[MConfigVMenuMBtnClick]
+"&Μεσαίο κλικ έξω από μενού"
+//[MConfigVMenuClickCancel]
+"Κλείσιμο μενού"
+//[MConfigVMenuClickApply]
+"Εκτέλεση επιλεγμένου στοιχείου"
+//[MConfigVMenuClickIgnore]
+"Καμία ενέργεια"
+//[MConfigCmdlineTitle]
+"Ρυθμίσεις γραμμής εντολών"
+//[MConfigCmdlineEditBlock]
+"&Μόνιμα μπλοκ"
+//[MConfigCmdlineDelRemovesBlocks]
+"Το &Del διαγράφει μπλοκ"
+//[MConfigCmdlineAutoComplete]
+"&Αυτόματη συμπλήρωση"
+//[MConfigCmdlineUsePromptFormat]
+"Ορισμός &μορφής προτροπής"
+//[MConfigCmdlineUseHomeDir]
+"Χρήση &αρχικού φακέλου"
+//[MConfigCmdlinePromptFormatAdmin]
+"Διαχειριστής"
+//[MConfigAutoCompleteTitle]
+"Ρυθμίσεις αυτόματης συμπλήρωσης"
+//[MConfigAutoCompleteShowList]
+"&Εμφάνιση λίστας"
+//[MConfigAutoCompleteModalList]
+"&Αποκλειστική λειτουργία"
+//[MConfigAutoCompleteAutoAppend]
+"&Προσθήκη του πρώτου αποτελέσματος"
+//[MConfigInfoPanelTitle]
+"Ρυθμίσεις πλαισίου πληροφοριών"
+//[MConfigInfoPanelCNTitle]
+"Μορφή &ονόματος υπολογιστή"
+//[MConfigInfoPanelCNPhysicalNetBIOS]
+"Φυσικό NetBIOS"
+//[MConfigInfoPanelCNPhysicalDnsHostname]
+"Φυσικό όνομα κεντρικού υπολογιστή DNS"
+//[MConfigInfoPanelCNPhysicalDnsDomain]
+"Φυσικός τομέας DNS"
+//[MConfigInfoPanelCNPhysicalDnsFullyQualified]
+"Φυσικό πλήρες όνομα DNS (FQDN)"
+//[MConfigInfoPanelCNNetBIOS]
+"NetBIOS"
+//[MConfigInfoPanelCNDnsHostname]
+"Όνομα κεντρικού υπολογιστή DNS"
+//[MConfigInfoPanelCNDnsDomain]
+"Τομέας DNS"
+//[MConfigInfoPanelCNDnsFullyQualified]
+"Πλήρες όνομα DNS (FQDN)"
+//[MConfigInfoPanelUNTitle]
+"Μορφή ονόματος &χρήστη"
+//[MConfigInfoPanelUNLogon]
+"Όνομα σύνδεσης"
+//[MConfigInfoPanelUNFullyQualifiedDN]
+"Πλήρες όνομα τομέα (FQDN)"
+//[MConfigInfoPanelUNSamCompatible]
+"Συμβατό με SAM"
+//[MConfigInfoPanelUNDisplay]
+"Εμφανιζόμενο όνομα"
+//[MConfigInfoPanelUNUniqueId]
+"Μοναδικό αναγνωριστικό"
+//[MConfigInfoPanelUNCanonical]
+"Κανονικό όνομα"
+//[MConfigInfoPanelUNUserPrincipal]
+"Κύριο όνομα χρήστη"
+//[MConfigInfoPanelUNServicePrincipal]
+"Κύριο όνομα υπηρεσίας"
+//[MConfigInfoPanelUNDnsDomain]
+"Τομέας DNS"
+//[MConfigInfoPanelUNGivenName]
+"Όνομα"
+//[MConfigInfoPanelUNSurname]
+"Επώνυμο"
+//[MConfigInfoPanelShowPowerStatus]
+"Εμφάνιση κατάστασης &τροφοδοσίας"
+//[MConfigInfoPanelShowCDInfo]
+"Εμφάνιση παραμέτρων μονάδων &CD"
+//[MMenuInfoShowModeTitle]
+"Εμφάνιση πληροφοριών"
+//[MMenuInfoShowModeDisk]
+"&Δίσκος"
+//[MMenuInfoShowModeMemory]
+"&Μνήμη"
+//[MMenuInfoShowModeDirDiz]
+"&Περιγραφή"
+//[MMenuInfoShowModePluginDiz]
+"Πλαίσιο &πρόσθετου"
+//[MMenuInfoShowModePower]
+"&Τροφοδοσία"
+//[MViewConfigTitle]
+"Προβολή"
+//[MViewConfigExternalF3]
+"Εξωτερικό πρόγραμμα προβολής για F&3 αντί για Alt+F3"
+//[MViewConfigExternalCommand]
+"Εντολή &προβολής:"
+//[MViewConfigInternal]
+"Εσωτερική προβολή"
+//[MViewConfigSavePos]
+"&Αποθήκευση θέσης στο αρχείο"
+//[MViewConfigSaveShortPos]
+"Αποθήκευση &σελιδοδεικτών"
+//[MViewConfigSaveCodepage]
+"Αποθήκευση &κωδικοσελίδας"
+//[MViewConfigSaveWrapMode]
+"Αποθήκευση τρόπου &αναδίπλωσης"
+//[MViewConfigSaveViewMode]
+"Αποθήκευση τρόπου π&ροβολής"
+//[MViewConfigDetectDumpMode]
+"Εντοπισμός τρόπου &dump"
+//[MViewAutoDetectCodePage]
+"&Αυτόματος εντοπισμός κωδικοσελίδας"
+//[MViewConfigTabSize]
+"Μέγεθος &στηλοθέτη"
+//[MViewConfigScrollbar]
+"Εμφάνιση γραμμής &κύλισης"
+//[MViewConfigArrows]
+"Εμφάνιση &βελών κύλισης"
+//[MViewConfigPersistentSelection]
+"&Μόνιμη επιλογή"
+//[MViewConfigDefaultCodePage]
+"Προεπιλεγμένη &κωδικοσελίδα:"
+//[MViewConfigMaxLineSize]
+"&Μέγιστο πλάτος γραμμής"
+//[MViewConfigVisible0x00]
+"Ορατό '\\&0'"
+//[MEditConfigTitle]
+"Επεξεργαστής"
+//[MEditConfigEditorF4]
+"Εξωτερικός επεξεργαστής για F&4 αντί για Alt+F4"
+//[MEditConfigEditorCommand]
+"Εντολή &επεξεργαστή:"
+//[MEditConfigInternal]
+"Εσωτερικός επεξεργαστής"
+//[MEditConfigExpandTabsTitle]
+"Ανάπτυξη &στηλοθετών:"
+//[MEditConfigDoNotExpandTabs]
+"Χωρίς ανάπτυξη στηλοθετών"
+//[MEditConfigExpandTabs]
+"Μετατροπή νέων στηλοθετών σε κενά"
+//[MEditConfigConvertAllTabsToSpaces]
+"Μετατροπή όλων των στηλοθετών σε κενά"
+//[MEditConfigPersistentBlocks]
+"&Μόνιμα μπλοκ"
+//[MEditConfigDelRemovesBlocks]
+"Το &Del διαγράφει μπλοκ"
+//[MEditConfigAutoIndent]
+"Αυτόματη &εσοχή"
+//[MEditConfigSavePos]
+"&Αποθήκευση θέσης στο αρχείο"
+//[MEditConfigSaveShortPos]
+"Αποθήκευση &σελιδοδεικτών"
+//[MEditCursorBeyondEnd]
+"&Δρομέας μετά το τέλος γραμμής"
+//[MEditAutoDetectCodePage]
+"Αυ&τόματος εντοπισμός κωδικοσελίδας"
+//[MEditShareWrite]
+"Επεξεργασία αρχείων ανοιχτών για &εγγραφή"
+//[MEditLockROFileModification]
+"Κλείδωμα επεξεργασίας &αρχείων μόνο για ανάγνωση"
+//[MEditWarningBeforeOpenROFile]
+"&Προειδοποίηση κατά το άνοιγμα αρχείων μόνο για ανάγνωση"
+//[MEditConfigTabSize]
+"Μέγεθος στη&λοθέτη"
+//[MEditConfigScrollbar]
+"Εμφάνιση γραμμής &κύλισης"
+//[MEditConfigLineNumbers]
+"Εμφάνιση &αριθμών γραμμών"
+//[MEditShowWhiteSpace]
+"Εμφάνιση &κενών χαρακτήρων"
+//[MEditConfigSelFound]
+"Επι&λογή ευρημάτων"
+//[MEditConfigCursorAtEnd]
+"Δρομέας στο &τέλος"
+//[MEditConfigDefaultCodePage]
+"Προεπιλεγμένη κωδικοσε&λίδα:"
+//[MConfigEditor]
+"Επεξεργαστής ρυθμίσεων"
+//[MConfigEditorBoolean]
+"λογική τιμή"
+//[MConfigEditorTriState]
+"3 καταστάσεις"
+//[MConfigEditorInteger]
+"ακέραιος"
+//[MConfigEditorString]
+"συμβολοσειρά"
+//[MConfigEditorIntegerSigned]
+"Προσημασμένος:"
+//[MConfigEditorIntegerUnsigned]
+"Μη προσημασμένος:"
+//[MConfigEditorIntegerHexadecimal]
+"Δεκαεξαδικός:"
+//[MConfigEditorIntegerBinary]
+"Δυαδικός:"
+//[MSaveSetupTitle]
+"Αποθήκευση ρυθμίσεων"
+//[MSaveSetupAsk1]
+"Θέλετε να αποθηκεύσετε"
+//[MSaveSetupAsk2]
+"τις τρέχουσες ρυθμίσεις;"
+//[MSaveSetup]
+"Αποθήκευση"
+//[MCopyDlgTitle]
+"Αντιγραφή"
+//[MMoveDlgTitle]
+"Μετονομασία/Μετακίνηση"
+//[MLinkDlgTitle]
+"Σύνδεσμος"
+//[MCopySecurity]
+"Δικαιώματα &πρόσβασης:"
+//[MCopySecurityDefault]
+"Προε&πιλογή"
+//[MCopySecurityCopy]
+"Αντι&γραφή"
+//[MCopySecurityInherit]
+"&Κληρονόμηση"
+//[MCopyIfFileExist]
+"Ήδη υπάρ&χοντα αρχεία:"
+//[MCopyAsk]
+"&Ερώτηση"
+//[MCopyAskRO]
+"Ερώτηση και για αρχεία μόνο για &ανάγνωση"
+//[MCopyOnlyNewerFiles]
+"Μόνο &νεότερα αρχεία"
+//[MLinkType]
+"&Τύπος συνδέσμου:"
+//[MLinkTypeJunction]
+"σημείο &σύνδεσης καταλόγου"
+//[MLinkTypeHardlink]
+"σ&κληρός σύνδεσμος"
+//[MLinkTypeSymlink]
+"συ&μβολικός σύνδεσμος"
+//[MLinkTypeSymlinkFile]
+"συμβολικός σύνδεσμος (&αρχείο)"
+//[MLinkTypeSymlinkDirectory]
+"συμβολικός σύνδεσμος (&φάκελος)"
+//[MCopyPreserveAllTimestamps]
+"Διατήρηση όλων των χρονοσημάνσεων"
+//[MCopySymLinkContents]
+"Αντιγραφή περιεχομένου σ&υμβολικών συνδέσμων"
+//[MCopyMultiActions]
+"Επεξεργασία &πολλαπλών προορισμών"
+//[MCopyDlgCopy]
+"&Αντιγραφή"
+//[MCopyDlgTree]
+"F10-&Δέντρο"
+//[MCopyDlgCancel]
+"Ά&κυρο"
+//[MCopyDlgRename]
+"&Μετονομασία"
+//[MCopyDlgLink]
+"Δημιουργία &συνδέσμου"
+//[MCopyDlgTotal]
+"Σύνολο"
+//[MCopyPrepareSecury]
+"Εφαρμογή δικαιωμάτων πρόσβασης…"
+//[MCopyUseFilter]
+"&Χρήση φίλτρου"
+//[MCopySetFilter]
+"&Φίλτρο"
+//[MCopyFile]
+"Αντιγραφή {0} {1}:"
+//[MMoveFile]
+"Μετονομασία ή μετακίνηση {0} {1}:"
+//[MLinkFile]
+"Δημιουργία συνδέσμου προς {0} {1}:"
+//[MCopyFiles]
+"Αντιγραφή {0} στοιχεί{1} {2}:"
+//[MMoveFiles]
+"Μετονομασία ή μετακίνηση {0} στοιχεί{1} {2}:"
+//[MLinkFiles]
+"Δημιουργία συνδέσμων προς {0} στοιχεί{1} {2}:"
+//[MCMLTargetTO]
+"&σε"
+//[MCMLTargetIN]
+"&μέσα σε"
+//[MCMLItems0]
+""
+//[MCMLItemsA]
+"α"
+//[MCMLItemsS]
+"α"
+//[MCopyIncorrectTargetList]
+"Λανθασμένη λίστα προορισμών"
+//[MCopyCopyingTitle]
+"Αντιγραφή"
+//[MCopyMovingTitle]
+"Μετακίνηση"
+//[MCopyCannotFind]
+"Δεν είναι δυνατή η εύρεση του αρχείου"
+//[MCannotCopyFolderToItself1]
+"Δεν είναι δυνατή η αντιγραφή του φακέλου"
+//[MCannotCopyFolderToItself2]
+"στον εαυτό του"
+//[MCopyCannotCreateFolder]
+"Δεν είναι δυνατή η δημιουργία του φακέλου"
+//[MCopyCannotRenameFolder]
+"Δεν είναι δυνατή η μετονομασία του φακέλου"
+//[MCopyIgnore]
+"&Αγνόηση"
+//[MCopyIgnoreAll]
+"Αγνόηση ό&λων"
+//[MCopyRetry]
+"&Επανάληψη"
+//[MCopySkip]
+"&Παράλειψη"
+//[MCopySkipAll]
+"Παράλειψη όλ&ων"
+//[MCopyCancel]
+"Ά&κυρο"
+//[MCopyDecrypt]
+"Α&ποκρυπτογράφηση"
+//[MCopyDecryptAll]
+"Αποκρυπτογράφηση &όλων"
+//[MCopyCannotCreateLink]
+"Δεν είναι δυνατή η δημιουργία του συνδέσμου"
+//[MCopyFolderNotEmpty]
+"Ο φάκελος προορισμού πρέπει να είναι κενός"
+//[MCopyCannotCreateJunctionToFile]
+"Δεν είναι δυνατή η δημιουργία σημείου σύνδεσης. Το αρχείο υπάρχει ήδη:"
+//[MCopyCannotCreateVolMount]
+"Σφάλμα σημείων προσάρτησης τόμων"
+//[MCopyMountVolFailed]
+"Η απόπειρα προσάρτησης του τόμου '{0}'"
+//[MCopyMountVolFailed2]
+"στο '{0}' απέτυχε"
+//[MCopyMountName]
+"Δίσκος_"
+//[MCannotCopyFileToItself1]
+"Δεν είναι δυνατή η αντιγραφή του αρχείου"
+//[MCannotCopyFileToItself2]
+"στον εαυτό του"
+//[MCopyStream1]
+"Το αρχείο προέλευσης περιέχει περισσότερες από μία ροές δεδομένων,"
+//[MCopyStream2]
+"αλλά δεν χρησιμοποιείτε τη ρουτίνα αντιγραφής του συστήματος."
+//[MCopyStream3]
+"αλλά ο τόμος προορισμού δεν υποστηρίζει αυτή τη δυνατότητα."
+//[MCopyStream4]
+"Ορισμένα δεδομένα δεν θα διατηρηθούν."
+//[MCopyDirectoryOrFile]
+"Πρόκειται για όνομα φακέλου ή όνομα αρχείου;"
+//[MCopyDirectoryOrFileDirectory]
+"Φάκελος"
+//[MCopyDirectoryOrFileFile]
+"Αρχείο"
+//[MCopyFileExist]
+"Το αρχείο υπάρχει ήδη"
+//[MCopySource]
+"&Νέο"
+//[MCopyDest]
+"&Υπάρχον"
+//[MCopyOverwrite]
+"&Αντικατάσταση"
+//[MCopyAppend]
+"&Προσάρτηση"
+//[MCopyRename]
+"&Μετονομασία"
+//[MCopyRememberChoice]
+"Απο&μνημόνευση επιλογής"
+//[MCopyRenameTitle]
+"Μετονομασία"
+//[MCopyRenameText]
+"&Νέο όνομα:"
+//[MCopyFileRO]
+"Το αρχείο είναι μόνο για ανάγνωση"
+//[MCopyAskDelete]
+"Θέλετε να το διαγράψετε;"
+//[MCopyDeleteRO]
+"&Διαγραφή"
+//[MCopyDeleteAllRO]
+"&Όλα"
+//[MCannotCopy]
+"Δεν είναι δυνατή η αντιγραφή"
+//[MCannotMove]
+"Δεν είναι δυνατή η μετακίνηση"
+//[MCannotLink]
+"Δεν είναι δυνατή η σύνδεση"
+//[MCannotCopyTo]
+"σε"
+//[MCopyEncryptWarn1]
+"Το αρχείο"
+//[MCopyEncryptWarn2]
+"δεν μπορεί να αντιγραφεί ή να μετακινηθεί χωρίς να χάσει την κρυπτογράφησή του."
+//[MCopyReadError]
+"Δεν είναι δυνατή η ανάγνωση δεδομένων από"
+//[MCopyWriteError]
+"Δεν είναι δυνατή η εγγραφή δεδομένων σε"
+//[MCopyCannotReserveSpace]
+"Σφάλμα δέσμευσης χώρου στον δίσκο"
+//[MCopyFilesTotalInfo]
+"Αρχεία:"
+//[MCopyBytesTotalInfo]
+"Byte:"
+//[MCopyMoving]
+"Μετακίνηση του αρχείου"
+//[MCopyCopying]
+"Αντιγραφή του αρχείου"
+//[MCopyTo]
+"σε"
+//[MDeleteTitle]
+"Διαγραφή"
+//[MAskDelete]
+"Θέλετε να διαγράψετε {0};"
+//[MAskDeleteRecycle]
+"Θέλετε να μετακινήσετε {0} στον Κάδο Ανακύκλωσης;"
+//[MDeleteWipeTitle]
+"Οριστική διαγραφή"
+//[MAskWipe]
+"Θέλετε να διαγράψετε οριστικά {0};"
+//[MAskDeleteFolder]
+"τον φάκελο"
+//[MAskDeleteFile]
+"το αρχείο"
+//[MAskDeleteObjects]
+"τα αντικείμενα"
+//[MAskDeleteLink]
+"έναν σύνδεσμο προς"
+//[MAskDeleteAndMore]
+"…και {0} ακόμη"
+//[MDeleteFolderTitle]
+"Διαγραφή φακέλου"
+//[MWipeFolderTitle]
+"Οριστική διαγραφή φακέλου"
+//[MDeleteFilesTitle]
+"Διαγραφή αρχείων"
+//[MWipeFilesTitle]
+"Οριστική διαγραφή αρχείων"
+//[MDeleteFolderConfirm]
+"Ο ακόλουθος φάκελος θα διαγραφεί:"
+//[MWipeFolderConfirm]
+"Ο ακόλουθος φάκελος θα διαγραφεί οριστικά:"
+//[MRecycleFolderConfirm]
+"Ο ακόλουθος φάκελος θα μετακινηθεί στον Κάδο Ανακύκλωσης:"
+//[MRecycleFolderConfirmDeleteLink1]
+"Ο φάκελος περιέχει συμβολικούς συνδέσμους."
+//[MRecycleFolderConfirmDeleteLink2]
+"Για να μη χαθεί το περιεχόμενό τους κατά το άδειασμα του Κάδου,"
+//[MRecycleFolderConfirmDeleteLink3]
+"αυτοί οι σύνδεσμοι θα αποσυνδεθούν τώρα."
+//[MRecycleFolderConfirmDeleteLink4]
+"Δεν θα είναι δυνατή η επαναφορά τους αργότερα."
+//[MDeleteWipe]
+"Οριστικά"
+//[MDeleteRecycle]
+"Μετακίνηση"
+//[MDeleteFileDelete]
+"&Διαγραφή"
+//[MDeleteFileWipe]
+"&Οριστικά"
+//[MDeleteFileAll]
+"Ό&λα"
+//[MDeleteFileSkip]
+"&Παράλειψη"
+//[MDeleteFileSkipAll]
+"Παράλειψη όλ&ων"
+//[MDeleteFileCancel]
+"Ά&κυρο"
+//[MDeletingTitle]
+"Διαγραφή"
+//[MDeleting]
+"Διαγραφή του αρχείου ή του φακέλου"
+//[MDeletingWiping]
+"Οριστική διαγραφή του αρχείου ή του φακέλου"
+//[MDeleteRO]
+"Το αρχείο είναι μόνο για ανάγνωση"
+//[MAskDeleteRO]
+"Θέλετε να το διαγράψετε;"
+//[MAskWipeRO]
+"Θέλετε να το διαγράψετε οριστικά;"
+//[MDeleteHardLink1]
+"Αρκετοί σκληροί σύνδεσμοι δείχνουν σε αυτό το αρχείο."
+//[MDeleteHardLink2]
+"Η οριστική διαγραφή του θα αδειάσει όλα τα αρχεία που συνδέονται με αυτό."
+//[MDeleteHardLink3]
+"Θέλετε να διαγράψετε οριστικά αυτό το αρχείο;"
+//[MCannotDeleteFile]
+"Δεν είναι δυνατή η διαγραφή του αρχείου"
+//[MCannotDeleteFolder]
+"Δεν είναι δυνατή η διαγραφή του φακέλου"
+//[MDeleteRetry]
+"&Επανάληψη"
+//[MDeleteSkip]
+"&Παράλειψη"
+//[MDeleteSkipAll]
+"Παράλειψη όλ&ων"
+//[MDeleteCancel]
+"Ά&κυρο"
+//[MCannotRecycleFile]
+"Δεν είναι δυνατή η μετακίνηση του αρχείου στον Κάδο Ανακύκλωσης"
+//[MCannotRecycleFolder]
+"Δεν είναι δυνατή η μετακίνηση του φακέλου στον Κάδο Ανακύκλωσης"
+//[MTryToDeletePermanently]
+"Δοκιμή μόνιμης διαγραφής;"
+//[MCannotGetSecurity]
+"Δεν είναι δυνατή η λήψη δικαιωμάτων πρόσβασης για"
+//[MCannotSetSecurity]
+"Δεν είναι δυνατός ο ορισμός δικαιωμάτων πρόσβασης για"
+//[MSearchReplaceSearchTitle]
+"Αναζήτηση"
+//[MSearchReplaceReplaceTitle]
+"Αντικατάσταση"
+//[MSearchReplaceText]
+"&Κείμενο"
+//[MSearchReplaceHex]
+"&Δεκαεξ."
+//[MSearchReplacePickWord]
+"&Λέξη"
+//[MSearchReplacePickSelection]
+"Ε&πιλογή"
+//[MSearchReplaceSearchFor]
+"&Αναζήτηση για"
+//[MSearchReplaceReplaceWith]
+"Α&ντικατάσταση με"
+//[MSearchReplaceCase]
+"&Διάκριση πεζών-κεφαλαίων"
+//[MSearchReplaceWholeWords]
+"&Ολόκληρες λέξεις"
+//[MSearchReplaceFuzzy]
+"&Ασαφής αναζήτηση"
+//[MSearchReplaceRegexp]
+"&Κανονικές εκφράσεις"
+//[MSearchReplacePreserveStyle]
+"&Διατήρηση στυλ"
+//[MSearchReplaceFind]
+"Εύρεση"
+//[MSearchReplaceFindNext]
+"Εύρεση επόμενου"
+//[MSearchReplaceFindPrev]
+"Εύρεση &προηγούμενου"
+//[MSearchReplaceReplace]
+"Αντικατάσταση"
+//[MSearchReplaceReplaceNext]
+"Αντικατάσταση επόμενου"
+//[MSearchReplaceReplacePrev]
+"Αντικατάσταση π&ροηγούμενου"
+//[MSearchReplaceAll]
+"Ό&λα"
+//[MSearchReplaceCancel]
+"Άκυρο"
+//[MEditTitle]
+"Επεξεργαστής"
+//[MAskReload]
+"έχει ήδη φορτωθεί. Πώς να ανοίξει αυτό το αρχείο;"
+//[MCurrent]
+"&Τρέχον"
+//[MReload]
+"Ε&παναφόρτωση"
+//[MNewOpen]
+"&Νέα παρουσία"
+//[MEditCannotOpen]
+"Δεν είναι δυνατό το άνοιγμα του αρχείου"
+//[MEditReading]
+"Ανάγνωση του αρχείου {0}"
+//[MEditAskSave]
+"Το αρχείο τροποποιήθηκε. Αποθήκευση;"
+//[MEditAskSaveExt]
+"Το αρχείο τροποποιήθηκε από εξωτερικό πρόγραμμα. Αποθήκευση;"
+//[MEditBtnSaveAs]
+"Αποθήκευση &ως…"
+//[MEditRO]
+"είναι αρχείο μόνο για ανάγνωση"
+//[MEditExists]
+"υπάρχει ήδη"
+//[MEditOvr]
+"Θέλετε να το αντικαταστήσετε;"
+//[MEditSaving]
+"Αποθήκευση του αρχείου {0}"
+//[MEditStatusLine]
+"Γρ"
+//[MEditStatusCol]
+"Στ"
+//[MEditStatusChar]
+"Χαρ"
+//[MEditRSH]
+"είναι αρχείο μόνο για ανάγνωση"
+//[MEditFileGetSizeError]
+"Δεν ήταν δυνατός ο προσδιορισμός του μεγέθους του αρχείου."
+//[MEditFileLong]
+"έχει μέγεθος {0},"
+//[MEditFileLong2]
+"που υπερβαίνει το ρυθμισμένο μέγιστο μέγεθος {0}."
+//[MEditROOpen]
+"Θέλετε να το επεξεργαστείτε;"
+//[MEditCanNotEditDirectory]
+"Δεν είναι δυνατή η επεξεργασία του φακέλου"
+//[MEditSearchingFor]
+"Αναζήτηση για {0}"
+//[MEditSearchStatistics]
+"Εμφανίσεις: {0}, γραμμές: {1}"
+//[MEditSearchAllFileNameFormat]
+"{0}{1}.Filtered.txt"
+//[MEditSearchAllFileNameFormatAlt]
+"{0}.Filtered{1}"
+//[MEditNotFound]
+"Η συμβολοσειρά δεν βρέθηκε"
+//[MEditAskReplace]
+"Αντικατάσταση"
+//[MEditAskReplaceWith]
+"με"
+//[MEditReplace]
+"&Αντικατάσταση"
+//[MEditReplaceAll]
+"Ό&λα"
+//[MEditSkip]
+"&Παράλειψη"
+//[MEditCancel]
+"Ά&κυρο"
+//[MEditOpenCreateLabel]
+"&Άνοιγμα/δημιουργία αρχείου:"
+//[MEditOpenAutoDetect]
+"Αυτόματος εντοπισμός"
+//[MDefaultCP]
+"Προεπιλογή"
+//[MGoTo]
+"Μετάβαση"
+//[MGoToHex]
+"&Δεκαεξαδική τιμή"
+//[MFolderShortcutsTitle]
+"Συντομεύσεις φακέλων"
+//[MShortcutNone]
+"<καμία>"
+//[MShortcutPlugin]
+"<πρόσθετο>"
+//[MFSShortcutName]
+"Τίτλος:"
+//[MFSShortcutPath]
+"Διαδρομή:"
+//[MFSShortcutPluginFile]
+"Αρχείο:"
+//[MFSShortcutPluginData]
+"Δεδομένα:"
+//[MNeedNearPath]
+"Μετάβαση στον πλησιέστερο υπάρχοντα φάκελο;"
+//[MSaveThisShortcut]
+"Αποθήκευση αυτής της συντόμευσης;"
+//[MEditF1]
+"Βοήθ"
+//[MEditF2]
+"Αποθ"
+//[MEditF3]
+""
+//[MEditF4]
+"Έξοδος"
+//[MEditF5]
+""
+//[MEditF6]
+"Προβ"
+//[MEditF7]
+"Αναζ"
+//[MEditF8]
+"ANSI"
+//[MEditF9]
+""
+//[MEditF10]
+"Έξοδος"
+//[MEditF11]
+"Πρόσθ"
+//[MEditF12]
+"Οθόνη"
+//[MEditShiftF1]
+""
+//[MEditShiftF2]
+"ΑποθΩς"
+//[MEditShiftF3]
+""
+//[MEditShiftF4]
+"Επεξ…"
+//[MEditShiftF5]
+""
+//[MEditShiftF6]
+""
+//[MEditShiftF7]
+"Επόμ"
+//[MEditShiftF8]
+"ΚωδΣελ"
+//[MEditShiftF9]
+""
+//[MEditShiftF10]
+"ΑποθΕξ"
+//[MEditShiftF11]
+""
+//[MEditShiftF12]
+""
+//[MEditAltF1]
+""
+//[MEditAltF2]
+""
+//[MEditAltF3]
+""
+//[MEditAltF4]
+""
+//[MEditAltF5]
+""
+//[MEditAltF6]
+""
+//[MEditAltF7]
+"Προηγ"
+//[MEditAltF8]
+"Μετάβ"
+//[MEditAltF9]
+"Βίντεο"
+//[MEditAltF10]
+""
+//[MEditAltF11]
+"ΙστΠρ"
+//[MEditAltF12]
+""
+//[MEditCtrlF1]
+""
+//[MEditCtrlF2]
+""
+//[MEditCtrlF3]
+"ΑριθΓρ"
+//[MEditCtrlF4]
+""
+//[MEditCtrlF5]
+""
+//[MEditCtrlF6]
+""
+//[MEditCtrlF7]
+"Αντικ"
+//[MEditCtrlF8]
+"ΤέλΓρ"
+//[MEditCtrlF9]
+""
+//[MEditCtrlF10]
+"ΣτοΑρχ"
+//[MEditCtrlF11]
+""
+//[MEditCtrlF12]
+""
+//[MEditAltShiftF1]
+""
+//[MEditAltShiftF2]
+""
+//[MEditAltShiftF3]
+""
+//[MEditAltShiftF4]
+""
+//[MEditAltShiftF5]
+""
+//[MEditAltShiftF6]
+""
+//[MEditAltShiftF7]
+""
+//[MEditAltShiftF8]
+""
+//[MEditAltShiftF9]
+"Ρυθμ"
+//[MEditAltShiftF10]
+""
+//[MEditAltShiftF11]
+""
+//[MEditAltShiftF12]
+""
+//[MEditCtrlShiftF1]
+""
+//[MEditCtrlShiftF2]
+""
+//[MEditCtrlShiftF3]
+""
+//[MEditCtrlShiftF4]
+""
+//[MEditCtrlShiftF5]
+""
+//[MEditCtrlShiftF6]
+""
+//[MEditCtrlShiftF7]
+""
+//[MEditCtrlShiftF8]
+""
+//[MEditCtrlShiftF9]
+""
+//[MEditCtrlShiftF10]
+""
+//[MEditCtrlShiftF11]
+""
+//[MEditCtrlShiftF12]
+""
+//[MEditCtrlAltF1]
+""
+//[MEditCtrlAltF2]
+""
+//[MEditCtrlAltF3]
+""
+//[MEditCtrlAltF4]
+""
+//[MEditCtrlAltF5]
+""
+//[MEditCtrlAltF6]
+""
+//[MEditCtrlAltF7]
+""
+//[MEditCtrlAltF8]
+""
+//[MEditCtrlAltF9]
+""
+//[MEditCtrlAltF10]
+""
+//[MEditCtrlAltF11]
+""
+//[MEditCtrlAltF12]
+""
+//[MEditCtrlAltShiftF1]
+""
+//[MEditCtrlAltShiftF2]
+""
+//[MEditCtrlAltShiftF3]
+""
+//[MEditCtrlAltShiftF4]
+""
+//[MEditCtrlAltShiftF5]
+""
+//[MEditCtrlAltShiftF6]
+""
+//[MEditCtrlAltShiftF7]
+""
+//[MEditCtrlAltShiftF8]
+""
+//[MEditCtrlAltShiftF9]
+""
+//[MEditCtrlAltShiftF10]
+""
+//[MEditCtrlAltShiftF11]
+""
+//[MEditCtrlAltShiftF12]
+""
+//[MEditF8DOS]
+"OEM"
+//[MEditCtrlF3Hide]
+"ΚρυφΑρ"
+//[MEditSaveAs]
+"Αποθήκευση αρχείου &ως"
+//[MEditCodePage]
+"&Κωδικοσελίδα:"
+//[MEditAddSignature]
+"Προσθήκη &υπογραφής (BOM)"
+//[MEditSaveAsFormatTitle]
+"Μετατροπή αλλαγών γραμμής σε:"
+//[MEditSaveOriginal]
+"&Χωρίς αλλαγή"
+//[MEditSaveDOS]
+"Μορφή &Dos/Windows (CR LF)"
+//[MEditSaveUnix]
+"Μορφή &Unix (LF)"
+//[MEditSaveMac]
+"Μορφή &Mac (CR)"
+//[MEditCannotSave]
+"Δεν είναι δυνατή η αποθήκευση του αρχείου"
+//[MEditSavedChangedNonFile]
+"Το αρχείο άλλαξε, αλλά το αρχείο ή ο φάκελος που περιέχει"
+//[MEditSavedChangedNonFile1]
+"Το αρχείο ή ο φάκελος που περιέχει"
+//[MEditSavedChangedNonFile2]
+"αυτό το αρχείο μετακινήθηκε ή διαγράφηκε. Αποθήκευση;"
+//[MEditNewPath1]
+"Η διαδρομή προς το επεξεργαζόμενο αρχείο δεν υπάρχει,"
+//[MEditNewPath2]
+"αλλά θα δημιουργηθεί κατά την αποθήκευση του αρχείου."
+//[MEditNewPath3]
+"Συνέχεια;"
+//[MEditNewPlugin1]
+"Το όνομα του αρχείου προς επεξεργασία δεν μπορεί να είναι κενό"
+//[MEditorReloadCPWarnLost1]
+"Το αρχείο πρέπει να επαναφορτωθεί για να αλλάξει η κωδικοσελίδα."
+//[MEditorReloadCPWarnLost2]
+"Όλες οι μη αποθηκευμένες αλλαγές θα χαθούν."
+//[MEditorSwitchCPConfirm]
+"Συνέχεια;"
+//[MEditDataLostWarn]
+"Κατά την επεξεργασία του αρχείου χάθηκαν ορισμένα δεδομένα."
+//[MEditorSaveNotRecommended]
+"Δεν συνιστάται η αποθήκευση αυτού του αρχείου."
+//[MEditorSave]
+"Αποθήκευση"
+//[MEditorSaveCPWarnShow]
+"Εμφάνιση"
+//[MEditorCPNotSupported]
+"Η κωδικοσελίδα {0} δεν υποστηρίζεται στο σύστημά σας"
+//[MColumnName]
+"Όνομα"
+//[MColumnExtension]
+"Επέκταση"
+//[MColumnSize]
+"Μέγεθος"
+//[MColumnAlocatedSize]
+"Δεσμευμ."
+//[MColumnDate]
+"Ημερομηνία"
+//[MColumnTime]
+"Ώρα"
+//[MColumnWrited]
+"Εγγραφή"
+//[MColumnCreated]
+"Δημιουργία"
+//[MColumnAccessed]
+"Πρόσβαση"
+//[MColumnChanged]
+"Αλλαγή"
+//[MColumnAttr]
+"Ιδιότ"
+//[MColumnDescription]
+"Περιγραφή"
+//[MColumnOwner]
+"Κάτοχος"
+//[MColumnMumLinks]
+"ΑρΣ"
+//[MColumnNumStreams]
+"ΑρΡ"
+//[MColumnStreamsSize]
+"ΜγΡοών"
+//[MColumnUnknown]
+"???"
+//[MListUp]
+"Πάνω"
+//[MListFolder]
+"Φάκελος"
+//[MListSymlink]
+"ΣυμβΣ"
+//[MListJunction]
+"ΣημΣύνδ"
+//[MListVolMount]
+"Τόμος"
+//[MListUnknownReparsePoint]
+"?ΣυμβΣ?"
+//[MListBrackets]
+"<>"
+//[MListBytes]
+"B"
+//[MListKb]
+"K"
+//[MListMb]
+"M"
+//[MListGb]
+"G"
+//[MListTb]
+"T"
+//[MListPb]
+"P"
+//[MListEb]
+"E"
+//[MListFileSize]
+"Byte: {0}, αρχεία: {1}, φάκελοι: {2}"
+//[MListFileSizeStatus]
+"{0} ({1}/{2}) {3} {4}"
+//[MListFreeSize]
+"{0} ελεύθερα byte"
+//[MDirInfoViewTitle]
+"Προβολή"
+//[MFileToEdit]
+"Αρχείο προς επεξεργασία:"
+//[MUnselectTitle]
+"Αποεπιλογή"
+//[MSelectTitle]
+"Επιλογή"
+//[MSelectFilter]
+"&Φίλτρο"
+//[MCompareTitle]
+"Σύγκριση"
+//[MCompareFilePanelsRequired1]
+"Απαιτούνται δύο πλαίσια αρχείων για την εκτέλεση"
+//[MCompareFilePanelsRequired2]
+"της εντολής Σύγκριση φακέλων"
+//[MCompareSameFolders1]
+"Τα περιεχόμενα των φακέλων φαίνονται"
+//[MCompareSameFolders2]
+"πανομοιότυπα"
+//[MSelectAssocTitle]
+"Επιλογή συσχέτισης"
+//[MAssocTitle]
+"Συσχετίσεις αρχείων"
+//[MAskDelAssoc]
+"Θέλετε να διαγράψετε τη συσχέτιση για"
+//[MFileAssocTitle]
+"Επεξεργασία συσχετίσεων αρχείων"
+//[MFileAssocMasks]
+"Μια &μάσκα ή πολλές μάσκες αρχείων:"
+//[MFileAssocDescr]
+"&Περιγραφή της συσχέτισης:"
+//[MFileAssocExec]
+"Εντολή &εκτέλεσης (για Enter):"
+//[MFileAssocAltExec]
+"Εντολή ε&κτέλεσης (για Ctrl+PgDn):"
+//[MFileAssocView]
+"Εντολή &προβολής (για F3):"
+//[MFileAssocAltView]
+"Εντολή π&ροβολής (για Alt+F3):"
+//[MFileAssocEdit]
+"Εντολή επε&ξεργασίας (για F4):"
+//[MFileAssocAltEdit]
+"Εντολή επεξερ&γασίας (για Alt+F4):"
+//[MViewF1]
+"Βοήθ"
+//[MViewF2]
+"Αναδίπ"
+//[MViewF3]
+"Έξοδος"
+//[MViewF4]
+"Δεκαεξ"
+//[MViewF5]
+""
+//[MViewF6]
+"Επεξ"
+//[MViewF7]
+"Αναζ"
+//[MViewF8]
+"ANSI"
+//[MViewF9]
+""
+//[MViewF10]
+"Έξοδος"
+//[MViewF11]
+"Πρόσθ"
+//[MViewF12]
+"Οθόνη"
+//[MViewShiftF1]
+""
+//[MViewShiftF2]
+"ΑναδΛξ"
+//[MViewShiftF3]
+""
+//[MViewShiftF4]
+"Τρόπος"
+//[MViewShiftF5]
+""
+//[MViewShiftF6]
+""
+//[MViewShiftF7]
+"Επόμ"
+//[MViewShiftF8]
+"ΚωδΣελ"
+//[MViewShiftF9]
+""
+//[MViewShiftF10]
+""
+//[MViewShiftF11]
+""
+//[MViewShiftF12]
+""
+//[MViewAltF1]
+""
+//[MViewAltF2]
+""
+//[MViewAltF3]
+""
+//[MViewAltF4]
+""
+//[MViewAltF5]
+""
+//[MViewAltF6]
+""
+//[MViewAltF7]
+"Προηγ"
+//[MViewAltF8]
+"Μετάβ"
+//[MViewAltF9]
+"Βίντεο"
+//[MViewAltF10]
+""
+//[MViewAltF11]
+"ΙστΠρ"
+//[MViewAltF12]
+""
+//[MViewCtrlF1]
+""
+//[MViewCtrlF2]
+""
+//[MViewCtrlF3]
+""
+//[MViewCtrlF4]
+""
+//[MViewCtrlF5]
+""
+//[MViewCtrlF6]
+""
+//[MViewCtrlF7]
+""
+//[MViewCtrlF8]
+""
+//[MViewCtrlF9]
+""
+//[MViewCtrlF10]
+"ΣτοΑρχ"
+//[MViewCtrlF11]
+""
+//[MViewCtrlF12]
+""
+//[MViewAltShiftF1]
+""
+//[MViewAltShiftF2]
+""
+//[MViewAltShiftF3]
+""
+//[MViewAltShiftF4]
+""
+//[MViewAltShiftF5]
+""
+//[MViewAltShiftF6]
+""
+//[MViewAltShiftF7]
+""
+//[MViewAltShiftF8]
+""
+//[MViewAltShiftF9]
+"Ρυθμ"
+//[MViewAltShiftF10]
+""
+//[MViewAltShiftF11]
+""
+//[MViewAltShiftF12]
+""
+//[MViewCtrlShiftF1]
+""
+//[MViewCtrlShiftF2]
+""
+//[MViewCtrlShiftF3]
+""
+//[MViewCtrlShiftF4]
+""
+//[MViewCtrlShiftF5]
+""
+//[MViewCtrlShiftF6]
+""
+//[MViewCtrlShiftF7]
+""
+//[MViewCtrlShiftF8]
+""
+//[MViewCtrlShiftF9]
+""
+//[MViewCtrlShiftF10]
+""
+//[MViewCtrlShiftF11]
+""
+//[MViewCtrlShiftF12]
+""
+//[MViewCtrlAltF1]
+""
+//[MViewCtrlAltF2]
+""
+//[MViewCtrlAltF3]
+""
+//[MViewCtrlAltF4]
+""
+//[MViewCtrlAltF5]
+""
+//[MViewCtrlAltF6]
+""
+//[MViewCtrlAltF7]
+""
+//[MViewCtrlAltF8]
+""
+//[MViewCtrlAltF9]
+""
+//[MViewCtrlAltF10]
+""
+//[MViewCtrlAltF11]
+""
+//[MViewCtrlAltF12]
+""
+//[MViewCtrlAltShiftF1]
+""
+//[MViewCtrlAltShiftF2]
+""
+//[MViewCtrlAltShiftF3]
+""
+//[MViewCtrlAltShiftF4]
+""
+//[MViewCtrlAltShiftF5]
+""
+//[MViewCtrlAltShiftF6]
+""
+//[MViewCtrlAltShiftF7]
+""
+//[MViewCtrlAltShiftF8]
+""
+//[MViewCtrlAltShiftF9]
+""
+//[MViewCtrlAltShiftF10]
+""
+//[MViewCtrlAltShiftF11]
+""
+//[MViewCtrlAltShiftF12]
+""
+//[MViewF2Unwrap]
+"ΧωρΑνδ"
+//[MViewF4Text]
+"Κείμενο"
+//[MViewF4Dump]
+"Αποτύπ"
+//[MViewF8DOS]
+"OEM"
+//[MViewMode]
+"Τρόπος προβολής"
+//[MInViewer]
+"προβολή"
+//[MInEditor]
+"επεξεργασία"
+//[MFilterTitle]
+"Μενού φίλτρων"
+//[MPanelFileType]
+"Τύπος αρχείων πλαισίου"
+//[MFolderFileType]
+"Φάκελοι"
+//[MCanEditCustomFilterOnly]
+"Μόνο προσαρμοσμένο φίλτρο μπορεί να επεξεργαστεί"
+//[MAskDeleteFilter]
+"Θέλετε να διαγράψετε το φίλτρο"
+//[MCanDeleteCustomFilterOnly]
+"Μόνο προσαρμοσμένο φίλτρο μπορεί να διαγραφεί"
+//[MFindFileTitle]
+"Εύρεση αρχείου"
+//[MFindFileMasks]
+"Μια &μάσκα ή πολλές μάσκες αρχείων:"
+//[MFindFileContaining]
+"Που περιέχει"
+//[MFindFileText]
+"&Κείμενο"
+//[MFindFileHex]
+"&Δεκαεξ."
+//[MFindFileCodePage]
+"Με κωδικοσε&λίδα:"
+//[MFindFileAllCodePages]
+"Όλες οι τυπικές κωδικοσελίδες"
+//[MFindFileSelectedCodePages]
+"Επιλεγμένες κωδικοσελίδες"
+//[MFindFileCase]
+"&Διάκριση πεζών-κεφαλαίων"
+//[MFindFileWholeWords]
+"&Ολόκληρες λέξεις"
+//[MFindFileFuzzy]
+"&Ασαφής αναζήτηση"
+//[MFindFileNotContaining]
+"&Που δεν περιέχει"
+//[MFindFileArchives]
+"Αναζήτηση σε αρχ&ειοθήκες"
+//[MFindFileFolders]
+"Αναζήτηση &φακέλων"
+//[MFindFileSymLinks]
+"Αναζήτηση σε συμβολικούς &συνδέσμους"
+//[MFindFileAlternateStreams]
+"Αναζήτηση σε ε&ναλλακτικές ροές"
+//[MFindFileSearchArea]
+"Επιλογή &περιοχής αναζήτησης:"
+//[MFindFileSearchAllDisks]
+"Σε &όλες τις μη αφαιρούμενες μονάδες"
+//[MFindFileSearchAllButNetwork]
+"Σε όλες τις &τοπικές μονάδες"
+//[MFindFileSearchInPATH]
+"Στους φακέλους του &PATH"
+//[MFindFileSearchFromRootOfDrive]
+"Από τη &ρίζα του"
+//[MFindFileSearchFromRootFolder]
+"Από τον &ριζικό φάκελο"
+//[MFindFileSearchFromCurrent]
+"Από τον τρέχοντα φά&κελο"
+//[MFindFileSearchInCurrent]
+"Μόνο ο τρέχων φάκε&λος"
+//[MFindFileSearchInSelected]
+"&Επιλεγμένοι φάκελοι"
+//[MFindFileUseFilter]
+"&Χρήση φίλτρου"
+//[MFindFileUsingFilter]
+"με φίλτρο"
+//[MFindFileFind]
+"Εύρεση"
+//[MFindFileDrive]
+"&Μονάδα"
+//[MFindFileSetFilter]
+"&Φίλτρο"
+//[MFindFileAdvanced]
+"&Για προχωρημένους"
+//[MFindFileSearchingIn]
+"Αναζήτηση {0} σε"
+//[MFindFileNewSearch]
+"&Νέα αναζήτηση"
+//[MFindFileGoTo]
+"&Μετάβαση"
+//[MFindFileView]
+"&Προβολή"
+//[MFindFilePanel]
+"Π&λαίσιο"
+//[MFindFileStop]
+"&Διακοπή"
+//[MFindFileDone]
+"Η αναζήτηση ολοκληρώθηκε. Αρχεία: {0}, φάκελοι: {1}"
+//[MFindFileCancel]
+"Ά&κυρο"
+//[MFindFileFound]
+"Αρχεία: {0}, φάκελοι: {1}"
+//[MFindFileAdvancedTitle]
+"Επιλογές αναζήτησης για προχωρημένους"
+//[MFindFileSearchFirst]
+"Αναζήτηση μόνο στα &πρώτα:"
+//[MFindFileSearchOutputFormat]
+"Μορφή &εξόδου:"
+//[MFindAlternateModeTypes]
+"&Τύποι στηλών"
+//[MFindAlternateModeWidths]
+"&Πλάτη στηλών"
+//[MFoldTreeSearch]
+"Αναζήτηση:"
+//[MGetCodePageTitle]
+"Κωδικοσελίδες"
+//[MGetCodePageSystem]
+"Συστήματος"
+//[MGetCodePageUnicode]
+"Unicode"
+//[MGetCodePageFavorites]
+"Αγαπημένες"
+//[MGetCodePageOther]
+"Άλλες"
+//[MGetCodePageEditCodePageName]
+"Μετονομασία κωδικοσελίδας"
+//[MGetCodePageResetCodePageName]
+"&Επαναφορά"
+//[MHighlightTitle]
+"Χρωματισμός αρχείων"
+//[MHighlightUpperSortGroup]
+"Ανώτερη ομάδα ταξινόμησης"
+//[MHighlightLowerSortGroup]
+"Κατώτερη ομάδα ταξινόμησης"
+//[MHighlightLastGroup]
+"Ομάδα χρωματισμού χαμηλότερης προτεραιότητας"
+//[MHighlightAskDel]
+"Θέλετε να διαγράψετε τον χρωματισμό για"
+//[MHighlightWarning]
+"Θα χάσετε όλες τις αλλαγές"
+//[MHighlightAskRestore]
+"Θέλετε να επαναφέρετε τον προεπιλεγμένο χρωματισμό;"
+//[MHighlightEditTitle]
+"Επεξεργασία χρωματισμού αρχείων"
+//[MHighlightMark]
+"Σή&μανση,"
+//[MHighlightInheritMark]
+"&Κληρονόμηση"
+//[MHighlightColors]
+"Χρώματα ονομάτων αρχείων (\"μαύρο σε μαύρο\" - προεπιλεγμένο χρώμα)"
+//[MHighlightFileName1]
+"&1. Κανονικό όνομα αρχείου"
+//[MHighlightFileName2]
+"&3. Επιλεγμένο όνομα αρχείου"
+//[MHighlightFileName3]
+"&5. Όνομα αρχείου κάτω από τον δρομέα"
+//[MHighlightFileName4]
+"&7. Επιλεγμένο όνομα κάτω από τον δρομέα"
+//[MHighlightMarking1]
+"&2. Σήμανση"
+//[MHighlightMarking2]
+"&4. Σήμανση"
+//[MHighlightMarking3]
+"&6. Σήμανση"
+//[MHighlightMarking4]
+"&8. Σήμανση"
+//[MHighlightExample]
+"αρχείο.ext"
+//[MHighlightContinueProcessing]
+"Συ&νέχιση επεξεργασίας"
+//[MInfoTitle]
+"Πληροφορίες"
+//[MInfoCompName]
+"Όνομα υπολογιστή"
+//[MInfoCompDescription]
+"Περιγραφή υπολογιστή"
+//[MInfoUserName]
+"Όνομα χρήστη"
+//[MInfoUserDescription]
+"Περιγραφή χρήστη"
+//[MInfoUserAccessLevel]
+"Επίπεδο πρόσβασης"
+//[MInfoUserAccessLevelGuest]
+"Επισκέπτης"
+//[MInfoUserAccessLevelUser]
+"Χρήστης"
+//[MInfoUserAccessLevelAdministrator]
+"Διαχειριστής"
+//[MInfoUserAccessLevelUnknown]
+"Άγνωστο"
+//[MInfoUserAccessElevated]
+"Αυξημένα"
+//[MInfoUserAccessElevationTypeFull]
+"Πλήρη"
+//[MInfoUserAccessElevationTypeLimited]
+"Περιορισμένα"
+//[MInfoDiskTitle]
+"Δίσκος"
+//[MInfoRemovable]
+"Αφαιρούμενος"
+//[MInfoFixed]
+"Σταθερός"
+//[MInfoNetwork]
+"Δικτύου"
+//[MInfoCDROM]
+"CD-ROM"
+//[MInfoCDR]
+"CD-R"
+//[MInfoCDRW]
+"CD-RW"
+//[MInfoCDRWDVD]
+"CD-RW/DVD"
+//[MInfoDVDROM]
+"DVD-ROM"
+//[MInfoDVDR]
+"DVD-R"
+//[MInfoDVDRW]
+"DVD-RW"
+//[MInfoDVDRAM]
+"DVD-RAM"
+//[MInfoBDROM]
+"BD-ROM"
+//[MInfoBDR]
+"BD-R"
+//[MInfoBDRE]
+"BD-RE"
+//[MInfoHDDVDROM]
+"HDDVD-ROM"
+//[MInfoHDDVDR]
+"HDDVD-R"
+//[MInfoHDDVDRW]
+"HDDVD-RW"
+//[MInfoHDDVDRAM]
+"HDDVD-RAM"
+//[MInfoRAM]
+"RAM"
+//[MInfoSUBST]
+"Subst"
+//[MInfoVirtual]
+"Εικονικός"
+//[MInfoUnknown]
+"Άγνωστος"
+//[MInfoMetricTotal]
+"σύνολο"
+//[MInfoMetricAvailable]
+"διαθέσιμο"
+//[MInfoMetricUsed]
+"σε χρήση"
+//[MInfoDisk]
+"δίσκος"
+//[MInfoDiskSpace]
+"Χώρος"
+//[MInfoDiskLabel]
+"Ετικέτα τόμου"
+//[MInfoDiskNumber]
+"Σειριακός αριθμός"
+//[MInfoMemory]
+"Μνήμη"
+//[MInfoMemoryCommittable]
+"Δεσμεύσιμη"
+//[MInfoMemoryAddressable]
+"Διευθυνσιοδοτήσιμη"
+//[MInfoMemoryPhysical]
+"Φυσική"
+//[MInfoMetricMemoryInstalled]
+"εγκατεστημένη"
+//[MInfoDescription]
+"Περιγραφή"
+//[MInfoDizAbsent]
+"Λείπει το αρχείο περιγραφής φακέλου"
+//[MInfoPlugin]
+"Πρόσθετο"
+//[MInfoPowerStatus]
+"Κατάσταση τροφοδοσίας"
+//[MInfoPowerStatusAC]
+"Τροφοδοσία ρεύματος"
+//[MInfoPowerStatusACOffline]
+"Αποσυνδεδεμένη"
+//[MInfoPowerStatusACOnline]
+"Συνδεδεμένη"
+//[MInfoPowerStatusACBackUp]
+"Εφεδρική τροφοδοσία"
+//[MInfoPowerStatusACUnknown]
+"Άγνωστη"
+//[MInfoPowerStatusBCLifePercentUnknown]
+"άγνωστο"
+//[MInfoPowerStatusBC]
+"Φόρτιση μπαταρίας"
+//[MInfoPowerStatusBCHigh]
+"Υψηλή"
+//[MInfoPowerStatusBCMedium]
+"Μεσαία"
+//[MInfoPowerStatusBCLow]
+"Χαμηλή"
+//[MInfoPowerStatusBCCritical]
+"Κρίσιμη"
+//[MInfoPowerStatusBCCharging]
+"φορτίζει"
+//[MInfoPowerStatusBCNoSysBat]
+"Χωρίς μπαταρία συστήματος"
+//[MInfoPowerStatusBCUnknown]
+"Άγνωστη"
+//[MInfoPowerStatusBCTimeRem]
+"Υπολειπόμενος χρόνος μπαταρίας"
+//[MInfoPowerStatusBCFullTimeRem]
+"Πλήρης χρόνος μπαταρίας"
+//[MInfoPowerStatusUnknown]
+"Άγνωστη"
+//[MAccessDenied]
+"Άρνηση πρόσβασης"
+//[MCannotExecute]
+"Δεν είναι δυνατή η εκτέλεση"
+//[MCannotInvokeComspec]
+"Δεν είναι δυνατή η κλήση του διερμηνέα εντολών"
+//[MCheckComspecVar]
+"Ελέγξτε τη μεταβλητή περιβάλλοντος COMSPEC"
+//[MScanningFolder]
+"Σάρωση του φακέλου"
+//[MMakeFolderTitle]
+"Δημιουργία φακέλου"
+//[MCreateFolder]
+"Δημιουργία του &φακέλου:"
+//[MMakeFolderLinkType]
+"&Τύπος συνδέσμου:"
+//[MMakeFolderLinkNone]
+"&κανένας"
+//[MMakeFolderLinkJunction]
+"σημείο &σύνδεσης καταλόγου"
+//[MMakeFolderLinkSymlink]
+"συμβολικός σύν&δεσμος"
+//[MMakeFolderLinkTarget]
+"&Στόχος:"
+//[MMultiMakeDir]
+"Επεξεργασία &πολλαπλών ονομάτων"
+//[MIncorrectDirList]
+"Λανθασμένη λίστα φακέλων"
+//[MCannotCreateFolder]
+"Δεν είναι δυνατή η δημιουργία του φακέλου"
+//[MMenuBriefView]
+"&Σύντομη"
+//[MMenuMediumView]
+"&Μεσαία"
+//[MMenuFullView]
+"&Πλήρης"
+//[MMenuWideView]
+"&Ευρεία"
+//[MMenuDetailedView]
+"&Λεπτομερής"
+//[MMenuDizView]
+"Πε&ριγραφές"
+//[MMenuLongDizView]
+"Με&γάλες περιγραφές"
+//[MMenuOwnersView]
+"&Κάτοχοι αρχείων"
+//[MMenuLinksView]
+"Σύν&δεσμοι αρχείων"
+//[MMenuAlternativeView]
+"&Εναλλακτική πλήρης"
+//[MMenuInfoPanel]
+"Πλαίσιο &πληροφοριών"
+//[MMenuTreePanel]
+"Πλαίσιο &δέντρου"
+//[MMenuQuickView]
+"&Γρήγορη προβολή"
+//[MMenuSortModes]
+"Τρόποι &ταξινόμησης"
+//[MMenuLongNames]
+"Εμφάνιση μεγάλων &ονομάτων"
+//[MMenuTogglePanel]
+"Πλαίσιο &ναι/όχι"
+//[MMenuReread]
+"&Επανανάγνωση"
+//[MMenuChangeDrive]
+"Αλλαγή &μονάδας"
+//[MMenuView]
+"&Προβολή"
+//[MMenuEdit]
+"&Επεξεργασία"
+//[MMenuCopy]
+"&Αντιγραφή"
+//[MMenuMove]
+"&Μετονομασία ή μετακίνηση"
+//[MMenuLink]
+"&Σύνδεσμος"
+//[MMenuCreateFolder]
+"&Δημιουργία φακέλου"
+//[MMenuDelete]
+"Δια&γραφή"
+//[MMenuWipe]
+"&Οριστική διαγραφή"
+//[MMenuAdd]
+"Προσθήκη σε &αρχειοθήκη"
+//[MMenuExtract]
+"Ε&ξαγωγή αρχείων"
+//[MMenuArchiveCommands]
+"Εντολές αρ&χειοθήκης"
+//[MMenuAttributes]
+"&Ιδιότητες αρχείου"
+//[MMenuApplyCommand]
+"Ε&φαρμογή εντολής"
+//[MMenuDescribe]
+"Περιγρα&φή αρχείων"
+//[MMenuSelectGroup]
+"Επιλογή &ομάδας"
+//[MMenuUnselectGroup]
+"Αποεπιλογή ομά&δας"
+//[MMenuInvertSelection]
+"Α&ντιστροφή επιλογής"
+//[MMenuRestoreSelection]
+"Επανα&φορά επιλογής"
+//[MMenuFindFile]
+"&Εύρεση αρχείου"
+//[MMenuHistory]
+"&Ιστορικό"
+//[MMenuVideoMode]
+"Λειτουργία &βίντεο"
+//[MMenuFindFolder]
+"Εύρεση φα&κέλου"
+//[MMenuViewHistory]
+"Ιστορικό &προβολής"
+//[MMenuFoldersHistory]
+"Ιστορικό φακέ&λων"
+//[MMenuSwapPanels]
+"Εναλλα&γή πλαισίων"
+//[MMenuTogglePanels]
+"&Πλαίσια ναι/όχι"
+//[MMenuCompareFolders]
+"&Σύγκριση φακέλων"
+//[MMenuUserMenu]
+"Επεξεργασία &μενού χρήστη"
+//[MMenuFileAssociations]
+"Συσχετίσεις &αρχείων"
+//[MMenuFolderShortcuts]
+"Συντομεύσεις &φακέλων"
+//[MMenuFilter]
+"Φί&λτρο πλαισίου αρχείων"
+//[MMenuPluginCommands]
+"Εντολές π&ρόσθετων"
+//[MMenuWindowsList]
+"Λίστα ο&θονών"
+//[MMenuProcessList]
+"Λίστα &εργασιών"
+//[MMenuHotPlugList]
+"Λίστα αφαι&ρούμενων συσκευών"
+//[MMenuSystemSettings]
+"Ρυθμίσεις &συστήματος"
+//[MMenuPanelSettings]
+"Ρυθμίσεις &πλαισίων"
+//[MMenuTreeSettings]
+"Ρυθμίσεις &δέντρου"
+//[MMenuInterface]
+"Ρυθμίσεις &διεπαφής"
+//[MMenuLanguages]
+"&Γλώσσες"
+//[MMenuPluginsConfig]
+"Ρύθμιση π&ρόσθετων"
+//[MMenuPluginsManagerSettings]
+"Ρυθμίσεις &διαχείρισης πρόσθετων"
+//[MMenuDialogSettings]
+"Ρυθμίσεις δια&λόγων"
+//[MMenuVMenuSettings]
+"Ρυθμίσεις μενού"
+//[MMenuCmdlineSettings]
+"Ρυθμίσεις γραμμής &εντολών"
+//[MMenuAutoCompleteSettings]
+"Ρυθμίσεις αυτόματης συ&μπλήρωσης"
+//[MMenuInfoPanelSettings]
+"Ρυθμίσεις πλαισίου πλη&ροφοριών"
+//[MMenuMaskGroups]
+"Ομάδες μασ&κών αρχείων"
+//[MMenuConfirmation]
+"Επι&βεβαιώσεις"
+//[MMenuFilePanelModes]
+"Τρόποι πλαισίου &αρχείων"
+//[MMenuFileDescriptions]
+"Περιγραφές α&ρχείων"
+//[MMenuFolderInfoFiles]
+"Αρχεία περιγραφής &φακέλων"
+//[MMenuViewer]
+"Ρυθμίσεις &προβολής"
+//[MMenuEditor]
+"Ρυθμίσεις &επεξεργαστή"
+//[MMenuCodePages]
+"Κωδικοσελίδες"
+//[MMenuColors]
+"&Χρώματα"
+//[MMenuFilesHighlighting]
+"Χρωματισμός αρχείων και ομάδες &ταξινόμησης"
+//[MMenuSaveSetup]
+"Απο&θήκευση ρυθμίσεων"
+//[MMenuTogglePanelRight]
+"Πλαίσιο &ναι/όχι"
+//[MMenuChangeDriveRight]
+"Αλλαγή &μονάδας"
+//[MMenuLeftTitle]
+"&Αριστερά"
+//[MMenuFilesTitle]
+"Α&ρχεία"
+//[MMenuCommandsTitle]
+"&Εντολές"
+//[MMenuOptionsTitle]
+"Ρ&υθμίσεις"
+//[MMenuRightTitle]
+"&Δεξιά"
+//[MMenuSortTitle]
+"Ταξινόμηση κατά"
+//[MMenuSortByName]
+"&Όνομα"
+//[MMenuSortByExt]
+"&Επέκταση"
+//[MMenuSortByWrite]
+"Χρόνο &εγγραφής"
+//[MMenuSortBySize]
+"&Μέγεθος"
+//[MMenuUnsorted]
+"&Χωρίς ταξινόμηση"
+//[MMenuSortByCreation]
+"Χρόνο &δημιουργίας"
+//[MMenuSortByAccess]
+"Χρόνο &πρόσβασης"
+//[MMenuSortByChange]
+"Χρόνο &αλλαγής"
+//[MMenuSortByDiz]
+"Πε&ριγραφές"
+//[MMenuSortByOwner]
+"&Κάτοχο"
+//[MMenuSortByAllocatedSize]
+"Δεσμευμένο μέγεθος"
+//[MMenuSortByNumLinks]
+"Αριθμό &σκληρών συνδέσμων"
+//[MMenuSortByNumStreams]
+"Αριθμό ρο&ών"
+//[MMenuSortByStreamsSize]
+"Μέγεθος ρ&οών"
+//[MMenuSortByNameOnly]
+"Μόνο όνομα"
+//[MMenuSortUseGroups]
+"Χρήση ομάδων ταξινόμησης"
+//[MMenuSortSelectedFirst]
+"Επιλεγμένα &πρώτα"
+//[MMenuSortDirectoriesFirst]
+"Φάκελοι πρώ&τα"
+//[MMaskGroupTitle]
+"Ομάδες μασκών αρχείων"
+//[MMaskGroupName]
+"&Όνομα:"
+//[MMaskGroupMasks]
+"Μια &μάσκα ή πολλές μάσκες αρχείων:"
+//[MMaskGroupAskDelete]
+"Θέλετε να διαγράψετε"
+//[MMaskGroupRestore]
+"Θέλετε να επαναφέρετε τα προεπιλεγμένα σύνολα μασκών;"
+//[MMaskGroupFindMask]
+"&Μάσκα:"
+//[MMaskGroupTotal]
+"Σύνολο: {0}"
+//[MChangeDriveTitle]
+"Αλλαγή μονάδας"
+//[MChangeDriveRemovable]
+"αφαιρούμενη"
+//[MChangeDriveFixed]
+"σταθερή"
+//[MChangeDriveNetwork]
+"δικτύου"
+//[MChangeDriveDisconnectedNetwork]
+"αποσυνδεδεμένη"
+//[MChangeDriveCDROM]
+"CD-ROM"
+//[MChangeDriveCDR]
+"CD-R"
+//[MChangeDriveCDRW]
+"CD-RW"
+//[MChangeDriveCDRWDVD]
+"CD-RW/DVD"
+//[MChangeDriveDVDROM]
+"DVD-ROM"
+//[MChangeDriveDVDR]
+"DVD-R"
+//[MChangeDriveDVDRW]
+"DVD-RW"
+//[MChangeDriveDVDRAM]
+"DVD-RAM"
+//[MChangeDriveBDROM]
+"BD-ROM"
+//[MChangeDriveBDR]
+"BD-R"
+//[MChangeDriveBDRE]
+"BD-RE"
+//[MChangeDriveHDDVDROM]
+"HDDVD-ROM"
+//[MChangeDriveHDDVDR]
+"HDDVD-R"
+//[MChangeDriveHDDVDRW]
+"HDDVD-RW"
+//[MChangeDriveHDDVDRAM]
+"HDDVD-RAM"
+//[MChangeDriveRAM]
+"δίσκος RAM"
+//[MChangeDriveSUBST]
+"subst"
+//[MChangeDriveVirtual]
+"εικονική"
+//[MChangeDriveLabelAbsent]
+"μη διαθέσιμο"
+//[MChangeDriveCannotReadDisk]
+"Δεν είναι δυνατή η ανάγνωση του δίσκου στη μονάδα"
+//[MChangeDriveCannotDisconnect]
+"Δεν είναι δυνατή η αποσύνδεση"
+//[MChangeDriveCannotDelSubst]
+"Δεν είναι δυνατή η διαγραφή υποκατεστημένου δίσκου"
+//[MChangeDriveCannotDetach]
+"Δεν είναι δυνατή η αποσύνδεση εικονικού δίσκου"
+//[MChangeSUBSTDisconnectDriveTitle]
+"Διαγραφή υποκατεστημένου δίσκου"
+//[MChangeSUBSTDisconnectDriveQuestion]
+"Διαγραφή του δίσκου SUBST {0};"
+//[MChangeVHDDisconnectDriveTitle]
+"Αποσύνδεση εικονικού δίσκου"
+//[MChangeVHDDisconnectDriveQuestion]
+"Αποσύνδεση του εικονικού δίσκου {0};"
+//[MChangeHotPlugDisconnectDriveTitle]
+"Αφαίρεση συσκευής"
+//[MChangeHotPlugDisconnectDriveQuestion]
+"Θέλετε να αφαιρέσετε τη συσκευή"
+//[MHotPlugDisks]
+"(δίσκοι: {0})"
+//[MChangeCouldNotEjectHotPlugMedia]
+"Δεν είναι δυνατή η αφαίρεση της συσκευής για τη μονάδα"
+//[MChangeCouldNotEjectHotPlugMedia2]
+"Δεν είναι δυνατή η αφαίρεση της συσκευής:"
+//[MChangeHotPlugNotify1]
+"Η συσκευή"
+//[MChangeHotPlugNotify2]
+"μπορεί πλέον να αφαιρεθεί με ασφάλεια"
+//[MHotPlugListTitle]
+"Λίστα αφαιρούμενων συσκευών"
+//[MChangeDriveDisconnectTitle]
+"Αποσύνδεση μονάδας δικτύου"
+//[MChangeDriveDisconnectQuestion]
+"Αποσύνδεση από τη μονάδα {0};"
+//[MChangeDriveDisconnectMapped]
+"Η μονάδα αντιστοιχεί σε:"
+//[MChangeDriveDisconnectReconnect]
+"&Επανασύνδεση κατά τη σύνδεση χρήστη"
+//[MChangeWaitingLoadDisk]
+"Αναμονή για προσάρτηση του δίσκου…"
+//[MChangeCouldNotEjectMedia]
+"Δεν ήταν δυνατή η εξαγωγή του μέσου από τη μονάδα"
+//[MChangeDriveConfigure]
+"Επιλογές μενού Αλλαγή μονάδας"
+//[MChangeDriveShowDiskType]
+"Εμφάνιση &τύπου δίσκου"
+//[MChangeDriveShowPath]
+"Εμφάνιση &ονόματος δικτύου / διαδρομής SUBST / ονόματος VHD"
+//[MChangeDriveShowLabel]
+"Εμφάνιση &ετικέτας δίσκου"
+//[MChangeDriveShowLabelUseShell]
+"Χρήση ονόματος &κελύφους"
+//[MChangeDriveShowFileSystem]
+"Εμφάνιση &συστήματος αρχείων"
+//[MChangeDriveShowSize]
+"Εμφάνιση &μεγέθους"
+//[MChangeDriveShowSizeFloat]
+"Εμφάνιση μεγέθους ως &δεκαδικού κλάσματος"
+//[MChangeDriveShowRemovableDrive]
+"Εμφάνιση παραμέτρων &αφαιρούμενων μονάδων"
+//[MChangeDriveShowPlugins]
+"Εμφάνιση &πρόσθετων"
+//[MChangeDriveSortPluginsByHotkey]
+"Ταξινόμηση πρόσθετων κατά &πλήκτρο συντόμευσης"
+//[MChangeDriveShowCD]
+"Εμφάνιση παραμέτρων μονάδων &CD"
+//[MChangeDriveShowNetworkDrive]
+"Εμφάνιση παραμέτρων μονάδων &δικτύου"
+//[MChangeDriveShowVirtualDisk]
+"Εντοπισμός εικονικών δίσκων"
+//[MChangeDriveVolumeLabel]
+"Ετικέτα τόμου"
+//[MSearchFileTitle]
+"Αναζήτηση"
+//[MCannotCreateListTemp]
+"Δεν είναι δυνατή η δημιουργία προσωρινού αρχείου για τη λίστα αρχείων"
+//[MDragFiles]
+"{0} αρχεία"
+//[MDragMove]
+"Μετακίνηση {0}"
+//[MDragCopy]
+"Αντιγραφή {0}"
+//[MProcessListTitle]
+"Λίστα εργασιών"
+//[MKillProcessTitle]
+"Τερματισμός εργασίας"
+//[MAskKillProcess]
+"Θέλετε να τερματίσετε την επιλεγμένη εργασία;"
+//[MKillProcessWarning]
+"Θα χάσετε όλες τις μη αποθηκευμένες πληροφορίες σε αυτό το πρόγραμμα"
+//[MKillProcessKill]
+"Τερματισμός"
+//[MCannotKillProcess]
+"Δεν είναι δυνατός ο τερματισμός της εργασίας"
+//[MCannotKillProcessPerm]
+"Δεν έχετε δικαίωμα να τερματίσετε αυτή τη διεργασία."
+//[MQuickViewTitle]
+"Γρήγορη προβολή"
+//[MQuickViewReparsePoint]
+"Σημείο &επανάληψης ανάλυσης"
+//[MQuickViewUnknownReparsePoint]
+"Άγνωστο σημείο επανάληψης ανάλυσης"
+//[MQuickViewFolders]
+"Φάκελοι:"
+//[MQuickViewFiles]
+"Αρχεία:"
+//[MQuickViewBytes]
+"Μέγεθος αρχείων:"
+//[MQuickViewAllocated]
+"Δεσμευμένο μέγεθος:"
+//[MQuickViewCluster]
+"Μέγεθος συμπλέγματος:"
+//[MQuickViewSlack]
+"Αχρησιμοποίητος χώρος:"
+//[MQuickViewMFTOverhead]
+"Επιβάρυνση MFT:"
+//[MSetAttrTitle]
+"Ιδιότητες"
+//[MSetAttrFor]
+"Αλλαγή ιδιοτήτων αρχείου για"
+//[MSetAttrSelectedObjects]
+"επιλεγμένα αντικείμενα"
+//[MSetAttrHardLinks]
+"σκληροί σύνδεσμοι"
+//[MSetAttrJunction]
+"&Σημείο σύνδεσης:"
+//[MSetAttrSymlink]
+"Συ&μβολικός σύνδεσμος{}:"
+//[MSetAttrVolMount]
+"&Τόμος:"
+//[MSetAttrDfsTargets]
+"Στόχοι DFS:"
+//[MSetAttrAppExecLink]
+"Ψευδώνυμο εφαρμογής:"
+//[MSetAttrUnknownReparsePoint]
+"Άγνωστο σημείο επανάληψης ανάλυσης"
+//[MSetAttrDiskDevice]
+"Συσκευή:"
+//[MSetAttrReadOnly]
+"&Μόνο για ανάγνωση"
+//[MSetAttrArchive]
+"&Αρχειοθέτηση"
+//[MSetAttrHidden]
+"&Κρυφό"
+//[MSetAttrSystem]
+"&Συστήματος"
+//[MSetAttrCompressed]
+"Σ&υμπιεσμένο"
+//[MSetAttrEncrypted]
+"Κρυ&πτογραφημένο"
+//[MSetAttrNotIndexed]
+"Χωρίς &ευρετηρίαση"
+//[MSetAttrSparse]
+"&Αραιό"
+//[MSetAttrTemporary]
+"&Προσωρινό"
+//[MSetAttrOffline]
+"&Εκτός σύνδεσης"
+//[MSetAttrReparsePoint]
+"Σημείο επανάληψης ανά&λυσης"
+//[MSetAttrVirtual]
+"&Εικονικό"
+//[MSetAttrIntegrityStream]
+"Ροή α&κεραιότητας"
+//[MSetAttrNoScrubData]
+"Χωρίς έλεγχο &δεδομένων"
+//[MSetAttrPinned]
+"&Καρφιτσωμένο"
+//[MSetAttrUnpinned]
+"&Ξεκαρφιτσωμένο"
+//[MSetAttrRecallOnOpen]
+"Ανάκληση κατά το ά&νοιγμα"
+//[MSetAttrRecallOnDataAccess]
+"Ανάκληση κατά την πρόσβαση στα &δεδομένα"
+//[MSetAttrStrictlySequential]
+"Αυστηρά δια&δοχικό"
+//[MSetAttrDevice]
+"Συσκευή"
+//[MSetAttrMore]
+"&Περισσότερα"
+//[MSetAttrSubfolders]
+"Επεξεργασία &υποφακέλων"
+//[MSetAttrOwner]
+"Κάτοχος&:"
+//[MSetAttrDate]
+"Ημερομηνία/Ώρα:"
+//[MSetAttrWrite]
+"&εγγραφή:"
+//[MSetAttrCreation]
+"&δημιουργία:"
+//[MSetAttrAccess]
+"&πρόσβαση:"
+//[MSetAttrChange]
+"&αλλαγή:"
+//[MSetAttrOriginal]
+"&Αρχικά"
+//[MSetAttrCurrent]
+"&Τρέχοντα"
+//[MSetAttrBlank]
+"&Κενά"
+//[MSetAttrSet]
+"Ορισμός"
+//[MSetAttrDateTitleMDY]
+"ΜΜ{0}ΗΗ{0}ΕΕΕΕΕ"
+//[MSetAttrDateTitleDMY]
+"ΗΗ{0}ΜΜ{0}ΕΕΕΕΕ"
+//[MSetAttrDateTitleYMD]
+"ΕΕΕΕΕ{0}ΜΜ{0}ΗΗ"
+//[MSetAttrTimeTitle]
+"ωω{0}λλ{0}δδ"
+//[MSetAttrSystemDialog]
+"Ιδιότητες &συστήματος"
+//[MSetAttrSetting]
+"Ορισμός ιδιοτήτων αρχείου για"
+//[MSetAttrCannotFor]
+"Δεν είναι δυνατός ο ορισμός ιδιοτήτων για"
+//[MSetAttrCompressedCannotFor]
+"Δεν είναι δυνατός ο ορισμός της ιδιότητας ΣΥΜΠΙΕΣΜΕΝΟ για"
+//[MSetAttrEncryptedCannotFor]
+"Δεν είναι δυνατός ο ορισμός της ιδιότητας ΚΡΥΠΤΟΓΡΑΦΗΜΕΝΟ για"
+//[MSetAttrSparseCannotFor]
+"Δεν είναι δυνατός ο ορισμός της ιδιότητας ΑΡΑΙΟ για"
+//[MSetAttrTimeCannotFor]
+"Δεν είναι δυνατός ο ορισμός χρόνου αρχείου για"
+//[MSetAttrOwnerCannotFor]
+"Δεν είναι δυνατός ο ορισμός κατόχου για"
+//[MSetAttrReparsePointCannotFor]
+"Δεν είναι δυνατή η αφαίρεση του σημείου επανάληψης ανάλυσης για"
+//[MSetColorPanel]
+"&Πλαίσιο"
+//[MSetColorDialog]
+"&Διάλογος"
+//[MSetColorWarning]
+"Μήνυμα &προειδοποίησης"
+//[MSetColorMenu]
+"&Μενού"
+//[MSetColorHMenu]
+"&Οριζόντιο μενού"
+//[MSetColorKeyBar]
+"Γραμμή &πλήκτρων"
+//[MSetColorCommandLine]
+"Γραμμή &εντολών"
+//[MSetColorClock]
+"&Ρολόι"
+//[MSetColorViewer]
+"Π&ροβολή"
+//[MSetColorEditor]
+"&Επεξεργαστής"
+//[MSetColorHelp]
+"&Βοήθεια"
+//[MColorThemes]
+"Θέματα"
+//[MDefaultTheme]
+"Προεπιλογή"
+//[MDefaultThemeRGB]
+"Προεπιλογή (RGB)"
+//[MSetColorPanelNormal]
+"Κανονικό κείμενο"
+//[MSetColorPanelSelected]
+"Επιλεγμένο κείμενο"
+//[MSetColorPanelHighlightedText]
+"Τονισμένο κείμενο"
+//[MSetColorPanelHighlightedInfo]
+"Τονισμένες πληροφορίες"
+//[MSetColorPanelDragging]
+"Κείμενο σε μεταφορά"
+//[MSetColorPanelBox]
+"Περίγραμμα"
+//[MSetColorPanelNormalCursor]
+"Κανονικός δρομέας"
+//[MSetColorPanelSelectedCursor]
+"Επιλεγμένος δρομέας"
+//[MSetColorPanelNormalTitle]
+"Κανονικός τίτλος"
+//[MSetColorPanelSelectedTitle]
+"Επιλεγμένος τίτλος"
+//[MSetColorPanelColumnTitle]
+"Τίτλος στήλης"
+//[MSetColorPanelTotalInfo]
+"Συνολικές πληροφορίες"
+//[MSetColorPanelSelectedInfo]
+"Πληροφορίες επιλογής"
+//[MSetColorPanelScrollbar]
+"Γραμμή κύλισης"
+//[MSetColorPanelScreensNumber]
+"Αριθμός οθονών παρασκηνίου"
+//[MSetColorDialogNormal]
+"Κανονικό κείμενο"
+//[MSetColorDialogHighlighted]
+"Τονισμένο κείμενο"
+//[MSetColorDialogDisabled]
+"Ανενεργό κείμενο"
+//[MSetColorDialogBox]
+"Περίγραμμα"
+//[MSetColorDialogBoxTitle]
+"Τίτλος"
+//[MSetColorDialogHighlightedBoxTitle]
+"Τονισμένος τίτλος"
+//[MSetColorDialogTextInput]
+"Εισαγωγή κειμένου"
+//[MSetColorDialogUnchangedTextInput]
+"Αμετάβλητη εισαγωγή κειμένου"
+//[MSetColorDialogSelectedTextInput]
+"Επιλεγμένη εισαγωγή κειμένου"
+//[MSetColorDialogEditDisabled]
+"Ανενεργή γραμμή εισαγωγής"
+//[MSetColorDialogButtons]
+"Κουμπιά"
+//[MSetColorDialogSelectedButtons]
+"Επιλεγμένα κουμπιά"
+//[MSetColorDialogHighlightedButtons]
+"Τονισμένα κουμπιά"
+//[MSetColorDialogSelectedHighlightedButtons]
+"Επιλεγμένα τονισμένα κουμπιά"
+//[MSetColorDialogDefaultButton]
+"Προεπιλεγμένο κουμπί"
+//[MSetColorDialogSelectedDefaultButton]
+"Επιλεγμένο προεπιλεγμένο κουμπί"
+//[MSetColorDialogHighlightedDefaultButton]
+"Τονισμένο προεπιλεγμένο κουμπί"
+//[MSetColorDialogSelectedHighlightedDefaultButton]
+"Επιλεγμένο τονισμένο προεπιλεγμένο κουμπί"
+//[MSetColorDialogListBoxControl]
+"Πλαίσιο λίστας"
+//[MSetColorDialogComboBoxControl]
+"Σύνθετο πλαίσιο"
+//[MSetColorDialogListText]
+"Κανονικό κείμενο"
+//[MSetColorDialogListSelectedText]
+"Επιλεγμένο κείμενο"
+//[MSetColorDialogListHighLight]
+"Τονισμένο κείμενο"
+//[MSetColorDialogListSelectedHighLight]
+"Επιλεγμένο τονισμένο κείμενο"
+//[MSetColorDialogListDisabled]
+"Ανενεργό στοιχείο"
+//[MSetColorDialogListBox]
+"Περίγραμμα"
+//[MSetColorDialogListTitle]
+"Τίτλος"
+//[MSetColorDialogListGrayed]
+"Γκριζαρισμένο κείμενο λίστας"
+//[MSetColorDialogSelectedListGrayed]
+"Επιλεγμένο γκριζαρισμένο κείμενο λίστας"
+//[MSetColorDialogListScrollBar]
+"Γραμμή κύλισης"
+//[MSetColorDialogListArrows]
+"Δείκτες μεγάλης συμβολοσειράς"
+//[MSetColorDialogListArrowsSelected]
+"Επιλεγμένοι δείκτες μεγάλης συμβολοσειράς"
+//[MSetColorDialogListArrowsDisabled]
+"Ανενεργοί δείκτες μεγάλης συμβολοσειράς"
+//[MSetColorMenuNormal]
+"Κανονικό κείμενο"
+//[MSetColorMenuSelected]
+"Επιλεγμένο κείμενο"
+//[MSetColorMenuHighlighted]
+"Τονισμένο κείμενο"
+//[MSetColorMenuSelectedHighlighted]
+"Επιλεγμένο τονισμένο κείμενο"
+//[MSetColorMenuDisabled]
+"Ανενεργό κείμενο"
+//[MSetColorMenuGrayed]
+"Γκριζαρισμένο κείμενο"
+//[MSetColorMenuSelectedGrayed]
+"Επιλεγμένο γκριζαρισμένο κείμενο"
+//[MSetColorMenuBox]
+"Περίγραμμα"
+//[MSetColorMenuTitle]
+"Τίτλος"
+//[MSetColorMenuScrollBar]
+"Γραμμή κύλισης"
+//[MSetColorMenuArrows]
+"Δείκτες μεγάλης συμβολοσειράς"
+//[MSetColorMenuArrowsSelected]
+"Επιλεγμένοι δείκτες μεγάλης συμβολοσειράς"
+//[MSetColorMenuArrowsDisabled]
+"Ανενεργοί δείκτες μεγάλης συμβολοσειράς"
+//[MSetColorHMenuNormal]
+"Κανονικό κείμενο"
+//[MSetColorHMenuSelected]
+"Επιλεγμένο κείμενο"
+//[MSetColorHMenuHighlighted]
+"Τονισμένο κείμενο"
+//[MSetColorHMenuSelectedHighlighted]
+"Επιλεγμένο τονισμένο κείμενο"
+//[MSetColorKeyBarNumbers]
+"Αριθμοί πλήκτρων"
+//[MSetColorKeyBarNames]
+"Ονόματα πλήκτρων"
+//[MSetColorKeyBarBackground]
+"Φόντο"
+//[MSetColorCommandLineNormal]
+"Κανονικό κείμενο"
+//[MSetColorCommandLineSelected]
+"Επιλεγμένη εισαγωγή κειμένου"
+//[MSetColorCommandLinePrefix]
+"Κείμενο προθέματος"
+//[MSetColorCommandLineUserScreen]
+"Οθόνη χρήστη"
+//[MSetColorClockNormal]
+"Κανονικό κείμενο (πλαίσιο)"
+//[MSetColorClockNormalEditor]
+"Κανονικό κείμενο (επεξεργαστής)"
+//[MSetColorClockNormalViewer]
+"Κανονικό κείμενο (προβολή)"
+//[MSetColorViewerNormal]
+"Κανονικό κείμενο"
+//[MSetColorViewerSelected]
+"Επιλεγμένο κείμενο"
+//[MSetColorViewerStatus]
+"Γραμμή κατάστασης"
+//[MSetColorViewerArrows]
+"Βέλη κύλισης οθόνης"
+//[MSetColorViewerScrollbar]
+"Γραμμή κύλισης"
+//[MSetColorEditorNormal]
+"Κανονικό κείμενο"
+//[MSetColorEditorSelected]
+"Επιλεγμένο κείμενο"
+//[MSetColorEditorStatus]
+"Γραμμή κατάστασης"
+//[MSetColorEditorScrollbar]
+"Γραμμή κύλισης"
+//[MSetColorEditorLineNumbers]
+"Αριθμοί γραμμών"
+//[MSetColorHelpNormal]
+"Κανονικό κείμενο"
+//[MSetColorHelpHighlighted]
+"Τονισμένο κείμενο"
+//[MSetColorHelpReference]
+"Παραπομπή"
+//[MSetColorHelpSelectedReference]
+"Επιλεγμένη παραπομπή"
+//[MSetColorHelpBox]
+"Περίγραμμα"
+//[MSetColorHelpBoxTitle]
+"Τίτλος"
+//[MSetColorHelpScrollbar]
+"Γραμμή κύλισης"
+//[MSetColorGroupsTitle]
+"Ομάδες χρωμάτων"
+//[MSetColorItemsTitle]
+"Στοιχεία ομάδας"
+//[MSetColorTitle]
+"Χρώμα"
+//[MSetColorForeground]
+"&Προσκήνιο:"
+//[MSetColorBackground]
+"&Φόντο:"
+//[MSetColorForegroundDefault]
+"Προεπιλογή"
+//[MSetColorBackgroundDefault]
+"Προεπιλογή"
+//[MSetColorForeIndex]
+"AA    ##"
+//[MSetColorForeAARRGGBB]
+"AARRGGBB"
+//[MSetColorForeDefault]
+"AA"
+//[MSetColorFore256]
+"&256…"
+//[MSetColorForeRGB]
+"&RGB…"
+//[MSetColorBackIndex]
+"AA    ##"
+//[MSetColorBackAARRGGBB]
+"AARRGGBB"
+//[MSetColorBackDefault]
+"AA"
+//[MSetColorBack256]
+"2&56…"
+//[MSetColorBackRGB]
+"R&GB…"
+//[MSetColorStyle]
+"Στυλ:"
+//[MSetColorStyleInherit]
+"&Κληρονόμηση"
+//[MSetColorStyleBold]
+"&Έντονα"
+//[MSetColorStyleItalic]
+"&Πλάγια"
+//[MSetColorStyleOverline]
+"&Επιγράμμιση"
+//[MSetColorStyleStrikeout]
+"&Διακριτή διαγραφή"
+//[MSetColorStyleFaint]
+"&Αχνά"
+//[MSetColorStyleBlink]
+"&Αναβοσβήνει"
+//[MSetColorStyleInverse]
+"Αντεστραμμένα"
+//[MSetColorStyleInvisible]
+"Αόρατα"
+//[MSetColorStyleUnderline]
+"&Υπογράμμιση:"
+//[MSetColorStyleUnderlineNone]
+"Όχι"
+//[MSetColorStyleUnderlineSingle]
+"Απλή"
+//[MSetColorStyleUnderlineDouble]
+"Διπλή"
+//[MSetColorStyleUnderlineCurly]
+"Κυματιστή"
+//[MSetColorStyleUnderlineDotted]
+"Με τελείες"
+//[MSetColorStyleUnderlineDashed]
+"Διακεκομμένη"
+//[MSetColorSample]
+"Κείμενο Κείμενο Κείμενο Κείμενο Κείμενο"
+//[MSetColorVTHintInfo]
+"Τα εκτεταμένα χρώματα και στυλ απαιτούν απόδοση VT."
+//[MSetColorVTHintSupported]
+"Πατήστε \"Ενεργοποίηση VT\" παρακάτω για να την ενεργοποιήσετε."
+//[MSetColorVTHintNotSupported]
+"Το σύστημά σας δεν την υποστηρίζει."
+//[MSetColorSystemDialog]
+"Συστήματος"
+//[MSetColorSet]
+"Ορισμός"
+//[MSetColorEnableVT]
+"Ενεργοποίηση VT"
+//[MSetColorCancel]
+"Άκυρο"
+//[MColorsPalette]
+"Παλέτα"
+//[MColorsClassicPalette]
+"Κλασική παλέτα"
+//[MSetConfirmTitle]
+"Επιβεβαιώσεις"
+//[MSetConfirmCopy]
+"&Αντιγραφή"
+//[MSetConfirmMove]
+"&Μετακίνηση"
+//[MSetConfirmRO]
+"Αντικατάσταση και διαγραφή αρχείων μόνο για &ανάγνωση"
+//[MSetConfirmDrag]
+"&Μεταφορά και απόθεση"
+//[MSetConfirmDelete]
+"&Διαγραφή"
+//[MSetConfirmDeleteFolders]
+"Διαγραφή μη κενών &φακέλων"
+//[MSetConfirmEsc]
+"&Διακοπή λειτουργίας"
+//[MSetConfirmRemoveConnection]
+"Αποσύνδεση μονάδας &δικτύου"
+//[MSetConfirmRemoveSUBST]
+"Διαγραφή δίσκου &SUBST"
+//[MSetConfirmDetachVHD]
+"Αποσύνδεση &εικονικού δίσκου"
+//[MSetConfirmRemoveHotPlug]
+"Αφαίρεση α&φαιρούμενης συσκευής"
+//[MSetConfirmAllowReedit]
+"&Επαναφόρτωση επεξεργαζόμενου αρχείου"
+//[MSetConfirmHistoryClear]
+"Εκκαθάριση λίστας &ιστορικού"
+//[MSetConfirmExit]
+"Έ&ξοδος"
+//[MPluginsManagerSettingsTitle]
+"Ρυθμίσεις διαχείρισης πρόσθετων"
+//[MPluginsManagerOEMPluginsSupport]
+"Υποστήριξη πρόσθετων &OEM"
+//[MPluginsManagerScanSymlinks]
+"Σάρωση &συμβολικών συνδέσμων"
+//[MPluginsManagerOFP]
+"Επεξεργασία &αρχείων"
+//[MPluginsManagerStdAssoc]
+"Εμφάνιση τυπικής &συσχέτισης"
+//[MPluginsManagerEvenOne]
+"Ακόμη και αν &βρεθεί μόνο ένα πρόσθετο"
+//[MPluginsManagerSFL]
+"&Αποτελέσματα αναζήτησης (SetFindList)"
+//[MPluginsManagerPF]
+"Επεξεργασία &προθεμάτων"
+//[MPluginConfirmationTitle]
+"Επιλογή πρόσθετου"
+//[MMenuPluginStdAssociation]
+"Τυπική συσχέτιση"
+//[MFindFolderTitle]
+"Εύρεση φακέλου"
+//[MFolderTreeF1]
+"Βοήθ"
+//[MFolderTreeF2]
+"Επανσ"
+//[MFolderTreeF3]
+""
+//[MFolderTreeF4]
+""
+//[MFolderTreeF5]
+"Μεγέθ"
+//[MFolderTreeF6]
+""
+//[MFolderTreeF7]
+""
+//[MFolderTreeF8]
+""
+//[MFolderTreeF9]
+""
+//[MFolderTreeF10]
+"Έξοδος"
+//[MFolderTreeF11]
+""
+//[MFolderTreeF12]
+""
+//[MFolderTreeShiftF1]
+""
+//[MFolderTreeShiftF2]
+""
+//[MFolderTreeShiftF3]
+""
+//[MFolderTreeShiftF4]
+""
+//[MFolderTreeShiftF5]
+""
+//[MFolderTreeShiftF6]
+""
+//[MFolderTreeShiftF7]
+""
+//[MFolderTreeShiftF8]
+""
+//[MFolderTreeShiftF9]
+""
+//[MFolderTreeShiftF10]
+""
+//[MFolderTreeShiftF11]
+""
+//[MFolderTreeShiftF12]
+""
+//[MFolderTreeAltF1]
+""
+//[MFolderTreeAltF2]
+""
+//[MFolderTreeAltF3]
+""
+//[MFolderTreeAltF4]
+""
+//[MFolderTreeAltF5]
+""
+//[MFolderTreeAltF6]
+""
+//[MFolderTreeAltF7]
+""
+//[MFolderTreeAltF8]
+""
+//[MFolderTreeAltF9]
+"Βίντεο"
+//[MFolderTreeAltF10]
+""
+//[MFolderTreeAltF11]
+""
+//[MFolderTreeAltF12]
+""
+//[MFolderTreeCtrlF1]
+""
+//[MFolderTreeCtrlF2]
+""
+//[MFolderTreeCtrlF3]
+""
+//[MFolderTreeCtrlF4]
+""
+//[MFolderTreeCtrlF5]
+""
+//[MFolderTreeCtrlF6]
+""
+//[MFolderTreeCtrlF7]
+""
+//[MFolderTreeCtrlF8]
+""
+//[MFolderTreeCtrlF9]
+""
+//[MFolderTreeCtrlF10]
+""
+//[MFolderTreeCtrlF11]
+""
+//[MFolderTreeCtrlF12]
+""
+//[MFolderTreeCtrlShiftF1]
+""
+//[MFolderTreeCtrlShiftF2]
+""
+//[MFolderTreeCtrlShiftF3]
+""
+//[MFolderTreeCtrlShiftF4]
+""
+//[MFolderTreeCtrlShiftF5]
+""
+//[MFolderTreeCtrlShiftF6]
+""
+//[MFolderTreeCtrlShiftF7]
+""
+//[MFolderTreeCtrlShiftF8]
+""
+//[MFolderTreeCtrlShiftF9]
+""
+//[MFolderTreeCtrlShiftF10]
+""
+//[MFolderTreeCtrlShiftF11]
+""
+//[MFolderTreeCtrlShiftF12]
+""
+//[MFolderTreeCtrlAltF1]
+""
+//[MFolderTreeCtrlAltF2]
+""
+//[MFolderTreeCtrlAltF3]
+""
+//[MFolderTreeCtrlAltF4]
+""
+//[MFolderTreeCtrlAltF5]
+""
+//[MFolderTreeCtrlAltF6]
+""
+//[MFolderTreeCtrlAltF7]
+""
+//[MFolderTreeCtrlAltF8]
+""
+//[MFolderTreeCtrlAltF9]
+""
+//[MFolderTreeCtrlAltF10]
+""
+//[MFolderTreeCtrlAltF11]
+""
+//[MFolderTreeCtrlAltF12]
+""
+//[MFolderTreeAltShiftF1]
+""
+//[MFolderTreeAltShiftF2]
+""
+//[MFolderTreeAltShiftF3]
+""
+//[MFolderTreeAltShiftF4]
+""
+//[MFolderTreeAltShiftF5]
+""
+//[MFolderTreeAltShiftF6]
+""
+//[MFolderTreeAltShiftF7]
+""
+//[MFolderTreeAltShiftF8]
+""
+//[MFolderTreeAltShiftF9]
+""
+//[MFolderTreeAltShiftF10]
+""
+//[MFolderTreeAltShiftF11]
+""
+//[MFolderTreeAltShiftF12]
+""
+//[MFolderTreeCtrlAltShiftF1]
+""
+//[MFolderTreeCtrlAltShiftF2]
+""
+//[MFolderTreeCtrlAltShiftF3]
+""
+//[MFolderTreeCtrlAltShiftF4]
+""
+//[MFolderTreeCtrlAltShiftF5]
+""
+//[MFolderTreeCtrlAltShiftF6]
+""
+//[MFolderTreeCtrlAltShiftF7]
+""
+//[MFolderTreeCtrlAltShiftF8]
+""
+//[MFolderTreeCtrlAltShiftF9]
+""
+//[MFolderTreeCtrlAltShiftF10]
+""
+//[MFolderTreeCtrlAltShiftF11]
+""
+//[MFolderTreeCtrlAltShiftF12]
+""
+//[MTreeTitle]
+"Δέντρο"
+//[MCannotSaveTree]
+"Δεν είναι δυνατή η αποθήκευση του δέντρου φακέλων σε αρχείο"
+//[MReadingTree]
+"Ανάγνωση του δέντρου φακέλων"
+//[MUserMenuTitle]
+"Μενού χρήστη"
+//[MChooseMenuType]
+"Επιλέξτε τον τύπο μενού χρήστη για επεξεργασία"
+//[MChooseMenuMain]
+"&Κύριο"
+//[MChooseMenuLocal]
+"&Τοπικό"
+//[MMainMenuTitle]
+"Κύριο μενού"
+//[MMainMenuUser]
+"Χρήστη"
+//[MMainMenuGlobal]
+"Καθολικό"
+//[MLocalMenuTitle]
+"Τοπικό μενού"
+//[MAskDeleteMenuItem]
+"Θέλετε να διαγράψετε το στοιχείο μενού"
+//[MAskDeleteSubMenuItem]
+"Θέλετε να διαγράψετε το υπομενού"
+//[MUserMenuInvalidInputLabel]
+"Μη έγκυρη μορφή ετικέτας μενού χρήστη"
+//[MUserMenuInvalidInputHotKey]
+"Μη έγκυρη μορφή πλήκτρου συντόμευσης"
+//[MEditMenuTitle]
+"Επεξεργασία μενού χρήστη"
+//[MEditMenuHotKey]
+"&Πλήκτρο συντόμευσης:"
+//[MEditMenuLabel]
+"&Ετικέτα:"
+//[MEditMenuCommands]
+"&Εντολές:"
+//[MAskInsertMenuOrCommand]
+"Θέλετε να εισαγάγετε νέα εντολή ή νέο μενού;"
+//[MMenuInsertCommand]
+"Εισαγωγή εντολής"
+//[MMenuInsertMenu]
+"Εισαγωγή μενού"
+//[MEditSubmenuTitle]
+"Επεξεργασία ετικέτας υπομενού"
+//[MEditSubmenuHotKey]
+"&Πλήκτρο συντόμευσης:"
+//[MEditSubmenuLabel]
+"&Ετικέτα:"
+//[MEditMenuConfirmation]
+"Αποθήκευση αλλαγών;"
+//[MEditMenuError]
+"Δεν είναι δυνατή η ενημέρωση του μενού"
+//[MViewerTitle]
+"Προβολή"
+//[MViewerCannotOpenFile]
+"Δεν είναι δυνατό το άνοιγμα του αρχείου"
+//[MViewerStatusCol]
+"Στ"
+//[MViewSearchingFor]
+"Αναζήτηση για"
+//[MViewSearchingHex]
+"Αναζήτηση byte"
+//[MViewSearchCannotFind]
+"Η συμβολοσειρά δεν βρέθηκε"
+//[MViewSearchCannotFindHex]
+"Τα byte δεν βρέθηκαν"
+//[MViewSearchEod]
+"Φτάσατε στο τέλος του εγγράφου"
+//[MViewSearchFromBegin]
+"Συνέχεια από την αρχή του εγγράφου;"
+//[MViewSearchBod]
+"Φτάσατε στην αρχή του εγγράφου"
+//[MViewSearchFromEnd]
+"Συνέχεια από το τέλος του εγγράφου;"
+//[MViewSearchCycle]
+"Σαρώθηκε ολόκληρο το έγγραφο"
+//[MViewSearchRepeat]
+"Επανάληψη της αναζήτησης στο έγγραφο;"
+//[MPrintTitle]
+"Εκτύπωση"
+//[MPrintTo]
+"Εκτύπωση {0} σε"
+//[MPrintFilesTo]
+"Εκτύπωση {0} αρχείων σε"
+//[MPrintingFile]
+"Εκτύπωση {0}"
+//[MCannotEnumeratePrinters]
+"Δεν είναι δυνατή η απαρίθμηση των διαθέσιμων εκτυπωτών"
+//[MCannotOpenPrinter]
+"Δεν είναι δυνατό το άνοιγμα του εκτυπωτή"
+//[MCannotPrint]
+"Δεν είναι δυνατή η εκτύπωση"
+//[MDescribeFiles]
+"Περιγραφή αρχείου"
+//[MEnterDescription]
+"Εισαγάγετε περιγραφή για"
+//[MReadingDiz]
+"Ανάγνωση περιγραφών αρχείων"
+//[MCannotUpdateDiz]
+"Δεν είναι δυνατή η ενημέρωση των περιγραφών αρχείων"
+//[MCfgDizTitle]
+"Περιγραφές αρχείων"
+//[MCfgDizListNames]
+"Ονόματα &λιστών περιγραφών, χωρισμένα με κόμματα:"
+//[MCfgDizSetHidden]
+"Ορισμός ιδιότητας \"&Κρυφό\" στις νέες λίστες περιγραφών"
+//[MCfgDizROUpdate]
+"Ενημέρωση αρχείου περιγραφών μόνο για &ανάγνωση"
+//[MCfgDizStartPos]
+"&Θέση νέων περιγραφών στη γραμμή"
+//[MCfgDizNotUpdate]
+"&Χωρίς ενημέρωση περιγραφών"
+//[MCfgDizUpdateIfDisplayed]
+"Ενημέρωση αν &εμφανίζονται"
+//[MCfgDizAlwaysUpdate]
+"&Πάντα ενημέρωση"
+//[MCfgDizAnsiByDefault]
+"Χρήση κωδικοσελίδας ANS&I από προεπιλογή"
+//[MCfgDizSaveInUTF]
+"Αποθήκευση σε UTF-&8"
+//[MReadingTitleFiles]
+"Ενημέρωση πλαισίων"
+//[MReadingFiles]
+"Ανάγνωση: {0} αρχεία"
+//[MOperationNotCompleted]
+"Η λειτουργία δεν ολοκληρώθηκε"
+//[MEditPanelModes]
+"Επεξεργασία τρόπων πλαισίου"
+//[MEditPanelModeName]
+"&Όνομα"
+//[MEditPanelModeTypes]
+"&Τύποι στηλών"
+//[MEditPanelModeWidths]
+"&Πλάτη στηλών"
+//[MEditPanelModeStatusTypes]
+"Τύποι στηλών γραμμής κα&τάστασης"
+//[MEditPanelModeStatusWidths]
+"Πλάτη στηλών γραμμής κατά&στασης"
+//[MEditPanelModeFullscreen]
+"Προβολή &πλήρους οθόνης"
+//[MEditPanelModeAlignExtensions]
+"Στοίχιση &επεκτάσεων αρχείων"
+//[MEditPanelModeAlignFolderExtensions]
+"Στοίχιση επεκτάσεων &φακέλων"
+//[MEditPanelModeFoldersUpperCase]
+"Φάκελοι με &κεφαλαία"
+//[MEditPanelModeFilesLowerCase]
+"Αρχεία με &πεζά"
+//[MEditPanelModeUpperToLowerCase]
+"Κεφαλαία ονόματα αρχείων με πε&ζά"
+//[MSetFolderInfoTitle]
+"Αρχεία περιγραφής φακέλων"
+//[MSetFolderInfoNames]
+"Εισαγάγετε ονόματα αρχείων χωρισμένα με κόμματα (επιτρέπονται μπαλαντέρ)"
+//[MScreensTitle]
+"Οθόνες"
+//[MScreensPanels]
+"Πλαίσια"
+//[MScreensView]
+"Προβολή"
+//[MScreensEdit]
+"Επεξεργασία"
+//[MAskApplyCommandTitle]
+"Εφαρμογή εντολής"
+//[MAskApplyCommand]
+"Εισαγάγετε εντολή για επεξεργασία των επιλεγμένων αρχείων"
+//[MPluginConfigTitle]
+"Ρύθμιση πρόσθετων"
+//[MPluginCommandsMenuTitle]
+"Εντολές πρόσθετων"
+//[MPreparingList]
+"Προετοιμασία λίστας αρχείων"
+//[MLangTitle]
+"Κύρια γλώσσα"
+//[MHelpLangTitle]
+"Γλώσσα βοήθειας"
+//[MDefineMacroTitle]
+"Ορισμός μακροεντολής"
+//[MDefineMacro]
+"Πατήστε το επιθυμητό πλήκτρο"
+//[MMacroReDefinedKey]
+"Το πλήκτρο μακροεντολής '{0}' έχει ήδη οριστεί."
+//[MMacroDeleteKey]
+"Το πλήκτρο μακροεντολής '{0}' θα αφαιρεθεί."
+//[MMacroCommonReDefinedKey]
+"Το κοινό πλήκτρο μακροεντολής '{0}' έχει ήδη οριστεί."
+//[MMacroCommonDeleteKey]
+"Το κοινό πλήκτρο μακροεντολής '{0}' θα αφαιρεθεί."
+//[MMacroSequence]
+"Ακολουθία:"
+//[MMacroReDefinedKey2]
+"Επαναορισμός;"
+//[MMacroDeleteKey2]
+"Διαγραφή;"
+//[MMacroEditKey]
+"&Αλλαγή"
+//[MMacroSettingsTitle]
+"Ρυθμίσεις μακροεντολής για '{0}'"
+//[MMacroSettingsSequence]
+"&Ακολουθία:"
+//[MMacroSettingsDescription]
+"&Περιγραφή:"
+//[MMacroSettingsEnableOutput]
+"Να επιτρέπεται η &έξοδος στην οθόνη κατά την εκτέλεση"
+//[MMacroSettingsRunAfterStart]
+"Εκτέλεση μετά την &εκκίνηση του gm"
+//[MMacroSettingsActivePanel]
+"&Ενεργό πλαίσιο"
+//[MMacroSettingsPassivePanel]
+"&Παθητικό πλαίσιο"
+//[MMacroSettingsPluginPanel]
+"Πλαίσιο π&ρόσθετου"
+//[MMacroSettingsFolders]
+"Εκτέλεση για &φακέλους"
+//[MMacroSettingsSelectionPresent]
+"Υπάρχει ε&πιλογή"
+//[MMacroSettingsCommandLine]
+"Κενή γραμμή &εντολών"
+//[MMacroSettingsSelectionBlockPresent]
+"Υπάρχει επιλεγμένο &μπλοκ"
+//[MMacroPluginLuamacroNotLoaded]
+"Το πρόσθετο LuaMacro δεν έχει φορτωθεί"
+//[MMacroRecordingIsDisabled]
+"Η εγγραφή μακροεντολών είναι απενεργοποιημένη"
+//[MCannotSaveFile]
+"Δεν είναι δυνατή η αποθήκευση του αρχείου"
+//[MTextSavedToTemp]
+"Το επεξεργασμένο κείμενο αποθηκεύτηκε στο"
+//[MPluginHotKeyTitle]
+"Ορισμός πλήκτρου συντόμευσης πρόσθετου"
+//[MPluginHotKey]
+"Εισαγάγετε πλήκτρο συντόμευσης (γράμμα ή ψηφίο)"
+//[MPluginInformation]
+"Πληροφορίες πρόσθετου"
+//[MPluginModuleTitle]
+"&Τίτλος:"
+//[MPluginDescription]
+"&Περιγραφή:"
+//[MPluginAuthor]
+"&Συγγραφέας:"
+//[MPluginVersion]
+"Έ&κδοση:"
+//[MPluginModulePath]
+"Διαδρομή &λειτουργικής μονάδας:"
+//[MPluginUUID]
+"&UUID πρόσθετου:"
+//[MPluginItemUUID]
+"UUID &στοιχείου:"
+//[MPluginPrefix]
+"&Πρόθεμα πρόσθετου:"
+//[MExceptionDialogTitle]
+"Ωχ"
+//[MExceptionDialogMessage1]
+"Κάτι πήγε στραβά."
+//[MExceptionDialogMessage2]
+"Στείλτε την αναφορά σφάλματος στους προγραμματιστές:"
+//[MExceptionDialogClipboard]
+"Πρόχειρο"
+//[MExcTerminate]
+"&Τερματισμός gm"
+//[MExcUnload]
+"&Εκφόρτωση πρόσθετου"
+//[MExcContinue]
+"Συνέχεια"
+//[MExcFullDump]
+"Πλήρες dump"
+//[MNetUserName]
+"Όνομα χρήστη"
+//[MNetUserPassword]
+"Κωδικός πρόσβασης"
+//[MReadFolderError]
+"Δεν είναι δυνατή η ανάγνωση του περιεχομένου του φακέλου"
+//[MPlgBadVers]
+"Αυτό το πρόσθετο απαιτεί νεότερη έκδοση του gm"
+//[MPlgRequired]
+"Η απαιτούμενη έκδοση του gm είναι {0},"
+//[MPlgRequired2]
+"η τρέχουσα έκδοση του gm είναι {0}."
+//[MPlgLoadPluginError]
+"Σφάλμα φόρτωσης πρόσθετου"
+//[MHelpTitle]
+"Βοήθεια"
+//[MHelpActivatorURL]
+"Αυτή η παραπομπή εκκινεί εξωτερική εφαρμογή"
+//[MHelpActivatorFormat]
+"με παράμετρο:"
+//[MHelpActivatorQ]
+"Θέλετε να την εκκινήσετε;"
+//[MCannotOpenHelp]
+"Δεν είναι δυνατό το άνοιγμα του αρχείου"
+//[MHelpTopicNotFound]
+"Το ζητούμενο θέμα βοήθειας δεν βρέθηκε:"
+//[MPluginsHelpTitle]
+"Βοήθεια πρόσθετων"
+//[MDocumentsHelpTitle]
+"Βοήθεια εγγράφων"
+//[MHelpSearchCannotFind]
+"Η συμβολοσειρά δεν βρέθηκε"
+//[MHelpF1]
+"Βοήθ"
+//[MHelpF2]
+""
+//[MHelpF3]
+""
+//[MHelpF4]
+""
+//[MHelpF5]
+"Μεγέθ"
+//[MHelpF6]
+""
+//[MHelpF7]
+"Αναζ"
+//[MHelpF8]
+""
+//[MHelpF9]
+""
+//[MHelpF10]
+"Έξοδος"
+//[MHelpF11]
+""
+//[MHelpF12]
+""
+//[MHelpShiftF1]
+"Ευρετ"
+//[MHelpShiftF2]
+"Πρόσθ"
+//[MHelpShiftF3]
+""
+//[MHelpShiftF4]
+""
+//[MHelpShiftF5]
+""
+//[MHelpShiftF6]
+""
+//[MHelpShiftF7]
+""
+//[MHelpShiftF8]
+""
+//[MHelpShiftF9]
+""
+//[MHelpShiftF10]
+""
+//[MHelpShiftF11]
+""
+//[MHelpShiftF12]
+""
+//[MHelpAltF1]
+"Προηγ"
+//[MHelpAltF2]
+""
+//[MHelpAltF3]
+""
+//[MHelpAltF4]
+""
+//[MHelpAltF5]
+""
+//[MHelpAltF6]
+""
+//[MHelpAltF7]
+""
+//[MHelpAltF8]
+""
+//[MHelpAltF9]
+"Βίντεο"
+//[MHelpAltF10]
+""
+//[MHelpAltF11]
+""
+//[MHelpAltF12]
+""
+//[MHelpCtrlF1]
+""
+//[MHelpCtrlF2]
+""
+//[MHelpCtrlF3]
+""
+//[MHelpCtrlF4]
+""
+//[MHelpCtrlF5]
+""
+//[MHelpCtrlF6]
+""
+//[MHelpCtrlF7]
+""
+//[MHelpCtrlF8]
+""
+//[MHelpCtrlF9]
+""
+//[MHelpCtrlF10]
+""
+//[MHelpCtrlF11]
+""
+//[MHelpCtrlF12]
+""
+//[MHelpAltShiftF1]
+""
+//[MHelpAltShiftF2]
+""
+//[MHelpAltShiftF3]
+""
+//[MHelpAltShiftF4]
+""
+//[MHelpAltShiftF5]
+""
+//[MHelpAltShiftF6]
+""
+//[MHelpAltShiftF7]
+""
+//[MHelpAltShiftF8]
+""
+//[MHelpAltShiftF9]
+""
+//[MHelpAltShiftF10]
+""
+//[MHelpAltShiftF11]
+""
+//[MHelpAltShiftF12]
+""
+//[MHelpCtrlShiftF1]
+""
+//[MHelpCtrlShiftF2]
+""
+//[MHelpCtrlShiftF3]
+""
+//[MHelpCtrlShiftF4]
+""
+//[MHelpCtrlShiftF5]
+""
+//[MHelpCtrlShiftF6]
+""
+//[MHelpCtrlShiftF7]
+""
+//[MHelpCtrlShiftF8]
+""
+//[MHelpCtrlShiftF9]
+""
+//[MHelpCtrlShiftF10]
+""
+//[MHelpCtrlShiftF11]
+""
+//[MHelpCtrlShiftF12]
+""
+//[MHelpCtrlAltF1]
+""
+//[MHelpCtrlAltF2]
+""
+//[MHelpCtrlAltF3]
+""
+//[MHelpCtrlAltF4]
+""
+//[MHelpCtrlAltF5]
+""
+//[MHelpCtrlAltF6]
+""
+//[MHelpCtrlAltF7]
+""
+//[MHelpCtrlAltF8]
+""
+//[MHelpCtrlAltF9]
+""
+//[MHelpCtrlAltF10]
+""
+//[MHelpCtrlAltF11]
+""
+//[MHelpCtrlAltF12]
+""
+//[MHelpCtrlAltShiftF1]
+""
+//[MHelpCtrlAltShiftF2]
+""
+//[MHelpCtrlAltShiftF3]
+""
+//[MHelpCtrlAltShiftF4]
+""
+//[MHelpCtrlAltShiftF5]
+""
+//[MHelpCtrlAltShiftF6]
+""
+//[MHelpCtrlAltShiftF7]
+""
+//[MHelpCtrlAltShiftF8]
+""
+//[MHelpCtrlAltShiftF9]
+""
+//[MHelpCtrlAltShiftF10]
+""
+//[MHelpCtrlAltShiftF11]
+""
+//[MHelpCtrlAltShiftF12]
+""
+//[MInfoF1]
+"Βοήθ"
+//[MInfoF2]
+"Αναδίπ"
+//[MInfoF3]
+"ΠρΠερ"
+//[MInfoF4]
+"ΕπΠερ"
+//[MInfoF5]
+""
+//[MInfoF6]
+""
+//[MInfoF7]
+"Αναζ"
+//[MInfoF8]
+"ANSI"
+//[MInfoF9]
+"ΜενΡυθ"
+//[MInfoF10]
+"Έξοδος"
+//[MInfoF11]
+"Πρόσθ"
+//[MInfoF12]
+"Οθόνη"
+//[MInfoShiftF1]
+""
+//[MInfoShiftF2]
+"ΑναδΛξ"
+//[MInfoShiftF3]
+""
+//[MInfoShiftF4]
+""
+//[MInfoShiftF5]
+""
+//[MInfoShiftF6]
+""
+//[MInfoShiftF7]
+"Επόμ"
+//[MInfoShiftF8]
+"ΚωδΣελ"
+//[MInfoShiftF9]
+"Αποθ"
+//[MInfoShiftF10]
+"Τελευτ"
+//[MInfoShiftF11]
+""
+//[MInfoShiftF12]
+""
+//[MInfoAltF1]
+"Αριστ"
+//[MInfoAltF2]
+"Δεξιά"
+//[MInfoAltF3]
+""
+//[MInfoAltF4]
+""
+//[MInfoAltF5]
+""
+//[MInfoAltF6]
+""
+//[MInfoAltF7]
+"Εύρεση"
+//[MInfoAltF8]
+"Μετάβ"
+//[MInfoAltF9]
+"Βίντεο"
+//[MInfoAltF10]
+"Δέντρο"
+//[MInfoAltF11]
+"ΙστΠρ"
+//[MInfoAltF12]
+"ΙστΦακ"
+//[MInfoCtrlF1]
+"Αριστ"
+//[MInfoCtrlF2]
+"Δεξιά"
+//[MInfoCtrlF3]
+""
+//[MInfoCtrlF4]
+""
+//[MInfoCtrlF5]
+""
+//[MInfoCtrlF6]
+""
+//[MInfoCtrlF7]
+""
+//[MInfoCtrlF8]
+""
+//[MInfoCtrlF9]
+""
+//[MInfoCtrlF10]
+""
+//[MInfoCtrlF11]
+""
+//[MInfoCtrlF12]
+"Τρόπος"
+//[MInfoAltShiftF1]
+""
+//[MInfoAltShiftF2]
+""
+//[MInfoAltShiftF3]
+""
+//[MInfoAltShiftF4]
+""
+//[MInfoAltShiftF5]
+""
+//[MInfoAltShiftF6]
+""
+//[MInfoAltShiftF7]
+""
+//[MInfoAltShiftF8]
+""
+//[MInfoAltShiftF9]
+""
+//[MInfoAltShiftF10]
+""
+//[MInfoAltShiftF11]
+""
+//[MInfoAltShiftF12]
+""
+//[MInfoCtrlShiftF1]
+""
+//[MInfoCtrlShiftF2]
+""
+//[MInfoCtrlShiftF3]
+""
+//[MInfoCtrlShiftF4]
+""
+//[MInfoCtrlShiftF5]
+""
+//[MInfoCtrlShiftF6]
+""
+//[MInfoCtrlShiftF7]
+""
+//[MInfoCtrlShiftF8]
+""
+//[MInfoCtrlShiftF9]
+""
+//[MInfoCtrlShiftF10]
+""
+//[MInfoCtrlShiftF11]
+""
+//[MInfoCtrlShiftF12]
+""
+//[MInfoCtrlAltF1]
+""
+//[MInfoCtrlAltF2]
+""
+//[MInfoCtrlAltF3]
+""
+//[MInfoCtrlAltF4]
+""
+//[MInfoCtrlAltF5]
+""
+//[MInfoCtrlAltF6]
+""
+//[MInfoCtrlAltF7]
+""
+//[MInfoCtrlAltF8]
+""
+//[MInfoCtrlAltF9]
+""
+//[MInfoCtrlAltF10]
+""
+//[MInfoCtrlAltF11]
+""
+//[MInfoCtrlAltF12]
+""
+//[MInfoCtrlAltShiftF1]
+""
+//[MInfoCtrlAltShiftF2]
+""
+//[MInfoCtrlAltShiftF3]
+""
+//[MInfoCtrlAltShiftF4]
+""
+//[MInfoCtrlAltShiftF5]
+""
+//[MInfoCtrlAltShiftF6]
+""
+//[MInfoCtrlAltShiftF7]
+""
+//[MInfoCtrlAltShiftF8]
+""
+//[MInfoCtrlAltShiftF9]
+""
+//[MInfoCtrlAltShiftF10]
+""
+//[MInfoCtrlAltShiftF11]
+""
+//[MInfoCtrlAltShiftF12]
+""
+//[MQViewF1]
+"Βοήθ"
+//[MQViewF2]
+"Αναδίπ"
+//[MQViewF3]
+"Προβ"
+//[MQViewF4]
+"Δεκαεξ"
+//[MQViewF5]
+""
+//[MQViewF6]
+""
+//[MQViewF7]
+"Αναζ"
+//[MQViewF8]
+"ANSI"
+//[MQViewF9]
+"ΜενΡυθ"
+//[MQViewF10]
+"Έξοδος"
+//[MQViewF11]
+"Πρόσθ"
+//[MQViewF12]
+"Οθόνη"
+//[MQViewShiftF1]
+""
+//[MQViewShiftF2]
+"ΑναδΛξ"
+//[MQViewShiftF3]
+""
+//[MQViewShiftF4]
+""
+//[MQViewShiftF5]
+""
+//[MQViewShiftF6]
+""
+//[MQViewShiftF7]
+"Επόμ"
+//[MQViewShiftF8]
+"ΚωδΣελ"
+//[MQViewShiftF9]
+"Αποθ"
+//[MQViewShiftF10]
+"Τελευτ"
+//[MQViewShiftF11]
+""
+//[MQViewShiftF12]
+""
+//[MQViewAltF1]
+"Αριστ"
+//[MQViewAltF2]
+"Δεξιά"
+//[MQViewAltF3]
+""
+//[MQViewAltF4]
+""
+//[MQViewAltF5]
+""
+//[MQViewAltF6]
+""
+//[MQViewAltF7]
+"Εύρεση"
+//[MQViewAltF8]
+"Μετάβ"
+//[MQViewAltF9]
+"Βίντεο"
+//[MQViewAltF10]
+"Δέντρο"
+//[MQViewAltF11]
+"ΙστΠρ"
+//[MQViewAltF12]
+"ΙστΦακ"
+//[MQViewCtrlF1]
+"Αριστ"
+//[MQViewCtrlF2]
+"Δεξιά"
+//[MQViewCtrlF3]
+""
+//[MQViewCtrlF4]
+""
+//[MQViewCtrlF5]
+""
+//[MQViewCtrlF6]
+""
+//[MQViewCtrlF7]
+""
+//[MQViewCtrlF8]
+""
+//[MQViewCtrlF9]
+""
+//[MQViewCtrlF10]
+""
+//[MQViewCtrlF11]
+""
+//[MQViewCtrlF12]
+""
+//[MQViewAltShiftF1]
+""
+//[MQViewAltShiftF2]
+""
+//[MQViewAltShiftF3]
+""
+//[MQViewAltShiftF4]
+""
+//[MQViewAltShiftF5]
+""
+//[MQViewAltShiftF6]
+""
+//[MQViewAltShiftF7]
+""
+//[MQViewAltShiftF8]
+""
+//[MQViewAltShiftF9]
+""
+//[MQViewAltShiftF10]
+""
+//[MQViewAltShiftF11]
+""
+//[MQViewAltShiftF12]
+""
+//[MQViewCtrlShiftF1]
+""
+//[MQViewCtrlShiftF2]
+""
+//[MQViewCtrlShiftF3]
+""
+//[MQViewCtrlShiftF4]
+""
+//[MQViewCtrlShiftF5]
+""
+//[MQViewCtrlShiftF6]
+""
+//[MQViewCtrlShiftF7]
+""
+//[MQViewCtrlShiftF8]
+""
+//[MQViewCtrlShiftF9]
+""
+//[MQViewCtrlShiftF10]
+""
+//[MQViewCtrlShiftF11]
+""
+//[MQViewCtrlShiftF12]
+""
+//[MQViewCtrlAltF1]
+""
+//[MQViewCtrlAltF2]
+""
+//[MQViewCtrlAltF3]
+""
+//[MQViewCtrlAltF4]
+""
+//[MQViewCtrlAltF5]
+""
+//[MQViewCtrlAltF6]
+""
+//[MQViewCtrlAltF7]
+""
+//[MQViewCtrlAltF8]
+""
+//[MQViewCtrlAltF9]
+""
+//[MQViewCtrlAltF10]
+""
+//[MQViewCtrlAltF11]
+""
+//[MQViewCtrlAltF12]
+""
+//[MQViewCtrlAltShiftF1]
+""
+//[MQViewCtrlAltShiftF2]
+""
+//[MQViewCtrlAltShiftF3]
+""
+//[MQViewCtrlAltShiftF4]
+""
+//[MQViewCtrlAltShiftF5]
+""
+//[MQViewCtrlAltShiftF6]
+""
+//[MQViewCtrlAltShiftF7]
+""
+//[MQViewCtrlAltShiftF8]
+""
+//[MQViewCtrlAltShiftF9]
+""
+//[MQViewCtrlAltShiftF10]
+""
+//[MQViewCtrlAltShiftF11]
+""
+//[MQViewCtrlAltShiftF12]
+""
+//[MKBTreeF1]
+"Βοήθ"
+//[MKBTreeF2]
+"ΜενΧρ"
+//[MKBTreeF3]
+""
+//[MKBTreeF4]
+"Ιδιότ"
+//[MKBTreeF5]
+"Αντιγ"
+//[MKBTreeF6]
+"ΜετΜετ"
+//[MKBTreeF7]
+"ΝέοςΦ"
+//[MKBTreeF8]
+"Διαγρ"
+//[MKBTreeF9]
+"ΜενΡυθ"
+//[MKBTreeF10]
+"Έξοδος"
+//[MKBTreeF11]
+"Πρόσθ"
+//[MKBTreeF12]
+"Οθόνη"
+//[MKBTreeShiftF1]
+""
+//[MKBTreeShiftF2]
+""
+//[MKBTreeShiftF3]
+""
+//[MKBTreeShiftF4]
+""
+//[MKBTreeShiftF5]
+"Αντιγ"
+//[MKBTreeShiftF6]
+"Μετον"
+//[MKBTreeShiftF7]
+""
+//[MKBTreeShiftF8]
+""
+//[MKBTreeShiftF9]
+"Αποθ"
+//[MKBTreeShiftF10]
+"Τελευτ"
+//[MKBTreeShiftF11]
+"Ομάδα"
+//[MKBTreeShiftF12]
+"ΕπιλΠ"
+//[MKBTreeAltF1]
+"Αριστ"
+//[MKBTreeAltF2]
+"Δεξιά"
+//[MKBTreeAltF3]
+""
+//[MKBTreeAltF4]
+""
+//[MKBTreeAltF5]
+""
+//[MKBTreeAltF6]
+""
+//[MKBTreeAltF7]
+"Εύρεση"
+//[MKBTreeAltF8]
+"Ιστορ"
+//[MKBTreeAltF9]
+"Βίντεο"
+//[MKBTreeAltF10]
+"Δέντρο"
+//[MKBTreeAltF11]
+"ΙστΠρ"
+//[MKBTreeAltF12]
+"ΙστΦακ"
+//[MKBTreeCtrlF1]
+"Αριστ"
+//[MKBTreeCtrlF2]
+"Δεξιά"
+//[MKBTreeCtrlF3]
+""
+//[MKBTreeCtrlF4]
+""
+//[MKBTreeCtrlF5]
+""
+//[MKBTreeCtrlF6]
+""
+//[MKBTreeCtrlF7]
+""
+//[MKBTreeCtrlF8]
+""
+//[MKBTreeCtrlF9]
+""
+//[MKBTreeCtrlF10]
+""
+//[MKBTreeCtrlF11]
+""
+//[MKBTreeCtrlF12]
+""
+//[MKBTreeAltShiftF1]
+""
+//[MKBTreeAltShiftF2]
+""
+//[MKBTreeAltShiftF3]
+""
+//[MKBTreeAltShiftF4]
+""
+//[MKBTreeAltShiftF5]
+""
+//[MKBTreeAltShiftF6]
+""
+//[MKBTreeAltShiftF7]
+""
+//[MKBTreeAltShiftF8]
+""
+//[MKBTreeAltShiftF9]
+""
+//[MKBTreeAltShiftF10]
+""
+//[MKBTreeAltShiftF11]
+""
+//[MKBTreeAltShiftF12]
+""
+//[MKBTreeCtrlShiftF1]
+""
+//[MKBTreeCtrlShiftF2]
+""
+//[MKBTreeCtrlShiftF3]
+""
+//[MKBTreeCtrlShiftF4]
+""
+//[MKBTreeCtrlShiftF5]
+""
+//[MKBTreeCtrlShiftF6]
+""
+//[MKBTreeCtrlShiftF7]
+""
+//[MKBTreeCtrlShiftF8]
+""
+//[MKBTreeCtrlShiftF9]
+""
+//[MKBTreeCtrlShiftF10]
+""
+//[MKBTreeCtrlShiftF11]
+""
+//[MKBTreeCtrlShiftF12]
+""
+//[MKBTreeCtrlAltF1]
+""
+//[MKBTreeCtrlAltF2]
+""
+//[MKBTreeCtrlAltF3]
+""
+//[MKBTreeCtrlAltF4]
+""
+//[MKBTreeCtrlAltF5]
+""
+//[MKBTreeCtrlAltF6]
+""
+//[MKBTreeCtrlAltF7]
+""
+//[MKBTreeCtrlAltF8]
+""
+//[MKBTreeCtrlAltF9]
+""
+//[MKBTreeCtrlAltF10]
+""
+//[MKBTreeCtrlAltF11]
+""
+//[MKBTreeCtrlAltF12]
+""
+//[MKBTreeCtrlAltShiftF1]
+""
+//[MKBTreeCtrlAltShiftF2]
+""
+//[MKBTreeCtrlAltShiftF3]
+""
+//[MKBTreeCtrlAltShiftF4]
+""
+//[MKBTreeCtrlAltShiftF5]
+""
+//[MKBTreeCtrlAltShiftF6]
+""
+//[MKBTreeCtrlAltShiftF7]
+""
+//[MKBTreeCtrlAltShiftF8]
+""
+//[MKBTreeCtrlAltShiftF9]
+""
+//[MKBTreeCtrlAltShiftF10]
+""
+//[MKBTreeCtrlAltShiftF11]
+""
+//[MKBTreeCtrlAltShiftF12]
+""
+//[MCopyTimeInfoElapsed]
+"Χρόνος:"
+//[MCopyTimeInfoRemaining]
+"Απομένει:"
+//[MCopyTimeInfoSpeed]
+"B/s"
+//[MKeyESCWasPressed]
+"Η λειτουργία διακόπηκε"
+//[MDoYouWantToCancel]
+"Θέλετε πραγματικά να την ακυρώσετε;"
+//[MDoYouWantToContinue]
+"Συνέχεια εργασίας;"
+//[MCheckingFileInPlugin]
+"Το αρχείο ελέγχεται από το πρόσθετο"
+//[MDialogType]
+"Διάλογος"
+//[MHelpType]
+"Βοήθεια"
+//[MFolderTreeType]
+"ΔέντροΦακέλων"
+//[MVMenuType]
+"Μενού"
+//[MIncorrectMask]
+"Η μάσκα αρχείων περιέχει σφάλματα"
+//[MPanelBracketsForLongName]
+"{}"
+//[MComspecNotFound]
+"Η μεταβλητή περιβάλλοντος %COMSPEC% δεν έχει οριστεί"
+//[MFileFilterTitle]
+"Φίλτρο"
+//[MFileHilightTitle]
+"Χρωματισμός αρχείων"
+//[MFileFilterName]
+"&Όνομα:"
+//[MFileFilterMatchMask]
+"&Μάσκα:"
+//[MFileFilterSize]
+"Μέγ&εθος:"
+//[MFileFilterSizeFromSign]
+">&="
+//[MFileFilterSizeToSign]
+"&<="
+//[MFileHardLinksCount]
+"Έχει περισσότερους από έναν σκληρούς &συνδέσμους"
+//[MFileFilterDate]
+"Ημερομηνία&/Ώρα:"
+//[MFileFilterWrite]
+"&εγγραφή"
+//[MFileFilterCreation]
+"&δημιουργία"
+//[MFileFilterAccess]
+"&πρόσβαση"
+//[MFileFilterChange]
+"&αλλαγή"
+//[MFileFilterDateRelative]
+"Σχε&τικά"
+//[MFileFilterDateAfterSign]
+">="
+//[MFileFilterDateBeforeSign]
+"<="
+//[MFileFilterCurrent]
+"Τ&ρέχοντα"
+//[MFileFilterBlank]
+"&Κενά"
+//[MFileFilterAttr]
+"&Ιδιότητες"
+//[MFileFilterAttrChoose]
+"&..."
+//[MFileFilterAttrReadOnly]
+"&Μόνο για ανάγνωση"
+//[MFileFilterAttrArcive]
+"&Αρχειοθέτηση"
+//[MFileFilterAttrHidden]
+"&Κρυφό"
+//[MFileFilterAttrSystem]
+"&Συστήματος"
+//[MFileFilterAttrCompressed]
+"Σ&υμπιεσμένο"
+//[MFileFilterAttrEncrypted]
+"Κρυ&πτογραφημένο"
+//[MFileFilterAttrDirectory]
+"&Φάκελος"
+//[MFileFilterAttrNotIndexed]
+"Χωρίς &ευρετηρίαση"
+//[MFileFilterAttrSparse]
+"Αρ&αιό"
+//[MFileFilterAttrTemporary]
+"Π&ροσωρινό"
+//[MFileFilterAttrReparse]
+"Σημείο επανάληψης ανά&λυσης"
+//[MFileFilterAttrOffline]
+"Εκτός σύ&νδεσης"
+//[MFileFilterAttrVirtual]
+"Ει&κονικό"
+//[MFileFilterAttrIntegrityStream]
+"Ροή ακεραιό&τητας"
+//[MFileFilterAttrNoScrubData]
+"Χωρίς έλεγχο &δεδομένων"
+//[MFileFilterAttrPinned]
+"Καρφιτσ&ωμένο"
+//[MFileFilterAttrUnpinned]
+"&Ξεκαρφιτσωμένο"
+//[MFileFilterAttrRecallOnOpen]
+"Ανάκληση κατά το ά&νοιγμα"
+//[MFileFilterAttrRecallOnDataAccess]
+"Ανάκληση κατά την πρόσβαση στα δεδο&μένα"
+//[MFileFilterAttrStrictlySequential]
+"Αυστηρά δια&δοχικό"
+//[MFileFilterAttrDevice]
+"Συσκευή"
+//[MFileFilterReset]
+"&Επαναφορά"
+//[MFileFilterMakeTransparent]
+"&Διαφανές"
+//[MFileFilterCancel]
+"Άκυρο"
+//[MBadFileSizeFormat]
+"Το πεδίο μεγέθους αρχείου είναι λανθασμένο"
+//[MFarTitleAddonsAdmin]
+"Διαχειριστής"
+//[MElevationRequired]
+"Πρέπει να δώσετε άδεια διαχειριστή"
+//[MElevationRequiredPrivileges]
+"Απαιτούνται πρόσθετα προνόμια"
+//[MElevationRequiredProcess]
+"για την επεξεργασία αυτού του αντικειμένου:"
+//[MElevationRequiredDelete]
+"για τη διαγραφή αυτού του αντικειμένου:"
+//[MElevationRequiredCopy]
+"για την αντιγραφή αυτού του αντικειμένου:"
+//[MElevationRequiredMove]
+"για τη μετακίνηση αυτού του αντικειμένου:"
+//[MElevationRequiredReplace]
+"για την αντικατάσταση αυτού του αντικειμένου:"
+//[MElevationRequiredGetAttributes]
+"για τη λήψη των ιδιοτήτων αυτού του αντικειμένου:"
+//[MElevationRequiredSetAttributes]
+"για τον ορισμό των ιδιοτήτων αυτού του αντικειμένου:"
+//[MElevationRequiredHardLink]
+"για τη δημιουργία αυτού του σκληρού συνδέσμου:"
+//[MElevationRequiredSymLink]
+"για τη δημιουργία αυτού του συμβολικού συνδέσμου:"
+//[MElevationRequiredRecycle]
+"για τη μετακίνηση αυτού του αντικειμένου στον Κάδο Ανακύκλωσης:"
+//[MElevationRequiredList]
+"για την εμφάνιση του περιεχομένου αυτού του αντικειμένου:"
+//[MElevationRequiredSetOwner]
+"για τον ορισμό κατόχου αυτού του αντικειμένου:"
+//[MElevationRequiredOpen]
+"για το άνοιγμα αυτού του αντικειμένου:"
+//[MElevationRequiredEncryptFile]
+"για την κρυπτογράφηση αυτού του αντικειμένου:"
+//[MElevationRequiredDecryptFile]
+"για την αποκρυπτογράφηση αυτού του αντικειμένου:"
+//[MElevationRequiredSetVolumeLabel]
+"για τον ορισμό ετικέτας τόμου:"
+//[MElevationDoForAll]
+"Το ίδιο για ό&λα τα τρέχοντα αντικείμενα"
+//[MElevationDoNotAskAgainInTheCurrentSession]
+"Να μην ερωτηθώ ξανά στην τρέχουσα συνεδρία"
+//[MCompletionHistoryTitle]
+"Ιστορικό"
+//[MCompletionEnvironmentTitle]
+"Περιβάλλον"
+//[MCompletionFilesTitle]
+"Αρχεία"
+//[MObjectLockedReason]
+"Το αντικείμενο είναι {0} σε:"
+//[MObjectLockedReasonPlayed]
+"σε αναπαραγωγή"
+//[MObjectLockedReasonEdited]
+"σε επεξεργασία"
+//[MObjectLockedReasonOpened]
+"ανοιχτό"
+//[MObjectLockedAndMore]
+"και {0} ακόμη διεργασίες."
+//[MObjectLockedSwitchTo]
+"Μετάβαση σε"
+//[MObjectLockedClose]
+"Κλείσιμο αρχείου"
+//[MObjectLockedReasonSessionMismatch]
+"Μία ή περισσότερες διεργασίες εκτελούνται σε άλλη συνεδρία Terminal Services."
+//[MObjectLockedReasonCriticalProcess]
+"Μία ή περισσότερες διεργασίες είναι κρίσιμες διεργασίες."
+//[MObjectLockedReasonCriticalService]
+"Μία ή περισσότερες υπηρεσίες είναι κρίσιμες υπηρεσίες."
+//[MObjectLockedReasonDetectedSelf]
+"Το αρχείο είναι ανοιχτό από την τρέχουσα διεργασία."
+//[MProblemDb]
+"Πρόβλημα με τη βάση δεδομένων ρυθμίσεων"
+//[MShowConfigFolders]
+"Εμφάνιση φακέλων ρυθμίσεων"
+//[MBadLanguageFile]
+"Λανθασμένο αρχείο γλώσσας"
+//[MLanguageStringNotFound]
+"Η συμβολοσειρά {0} δεν βρέθηκε"
+//[MUnsupportedCodePageSelectedCodepage]
+"Η επιλεγμένη κωδικοσελίδα"
+//[MUnsupportedCodePageDoesNotSupport]
+"δεν υποστηρίζει {0}"
+//[MUnsupportedCodePageCharacter]
+"τον χαρακτήρα"
+//[MUnsupportedCodePageByteSequence]
+"την ακολουθία byte"
+//[MKeyLaunchMediaSelect]
+""
+//[MKeyBrowserFavorites]
+""
+//[MKeyMediaPrevTrack]
+""
+//[MKeyMediaPlayPause]
+""
+//[MKeyMediaNextTrack]
+""
+//[MKeyBrowserRefresh]
+""
+//[MKeyBrowserForward]
+""
+//[MKeyBrowserSearch]
+""
+//[MKeyMswheelRight]
+""
+//[MKeyMswheelDown]
+""
+//[MKeyMswheelLeft]
+""
+//[MKeyBrowserStop]
+""
+//[MKeyBrowserHome]
+""
+//[MKeyBrowserBack]
+""
+//[MKeyVolumeMute]
+""
+//[MKeyVolumeDown]
+""
+//[MKeyScrolllock]
+""
+//[MKeyLaunchMail]
+""
+//[MKeyLaunchApp2]
+""
+//[MKeyLaunchApp1]
+""
+//[MKeyMswheelUp]
+""
+//[MKeyMediaStop]
+""
+//[MKeyBackslash]
+""
+//[MKeyMsm1click]
+""
+//[MKeyMsm2click]
+""
+//[MKeyMsm3click]
+""
+//[MKeyMslclick]
+""
+//[MKeyMsrclick]
+""
+//[MKeyVolumeUp]
+""
+//[MKeySubtract]
+"Γκρι -"
+//[MKeyNumenter]
+""
+//[MKeyMultiply]
+"Γκρι *"
+//[MKeyCapslock]
+""
+//[MKeyPrntscrn]
+""
+//[MKeyNumlock]
+""
+//[MKeyDecimal]
+""
+//[MKeyStandby]
+""
+//[MKeyDivide]
+""
+//[MKeyNumdel]
+""
+//[MKeySpace]
+""
+//[MKeyRight]
+""
+//[MKeyPause]
+""
+//[MKeyEnter]
+""
+//[MKeyClear]
+""
+//[MKeyBreak]
+""
+//[MKeyPgup]
+""
+//[MKeyPgdn]
+""
+//[MKeyLeft]
+""
+//[MKeyHome]
+""
+//[MKeyDown]
+""
+//[MKeyApps]
+""
+//[MKeyRwin]
+""
+//[MKeyNumpad9]
+""
+//[MKeyNumpad8]
+""
+//[MKeyNumpad7]
+""
+//[MKeyNumpad6]
+""
+//[MKeyNumpad5]
+""
+//[MKeyNumpad4]
+""
+//[MKeyNumpad3]
+""
+//[MKeyNumpad2]
+""
+//[MKeyNumpad1]
+""
+//[MKeyNumpad0]
+""
+//[MKeyLwin]
+""
+//[MKeyTab]
+""
+//[MKeyIns]
+""
+//[MKeyF10]
+""
+//[MKeyF11]
+""
+//[MKeyF12]
+""
+//[MKeyF13]
+""
+//[MKeyF14]
+""
+//[MKeyF15]
+""
+//[MKeyF16]
+""
+//[MKeyF17]
+""
+//[MKeyF18]
+""
+//[MKeyF19]
+""
+//[MKeyF20]
+""
+//[MKeyF21]
+""
+//[MKeyF22]
+""
+//[MKeyF23]
+""
+//[MKeyF24]
+""
+//[MKeyEsc]
+""
+//[MKeyEnd]
+""
+//[MKeyDel]
+""
+//[MKeyAdd]
+"Γκρι +"
+//[MKeyUp]
+""
+//[MKeyF9]
+""
+//[MKeyF8]
+""
+//[MKeyF7]
+""
+//[MKeyF6]
+""
+//[MKeyF5]
+""
+//[MKeyF4]
+""
+//[MKeyF3]
+""
+//[MKeyF2]
+""
+//[MKeyF1]
+""
+//[MKeyBs]
+""
+//[MKeyBackbracket]
+""
+//[MKeyQuote]
+""
+//[MKeyBracket]
+""
+//[MKeyColon]
+""
+//[MKeySemicolon]
+""
+//[MKeySlash]
+""
+//[MKeyDot]
+""
+//[MKeyComma]
+""
+//[MKeyRCtrl]
+""
+//[MKeyShift]
+""
+//[MKeyCtrl]
+""
+//[MKeyRAlt]
+""
+//[MKeyAlt]
+""
+//[MNewFileName]
+"Νέο_αρχείο_{0:04}-{1:02}-{2:02}_{3:02}.{4:02}.{5:02}.{6:03}.txt"
+//[MMenuTerminalPosition]
+"Θέση &τερματικού"
+//[MMenuModuleCommands]
+"Εντολές λειτουργικών &μονάδων"
+//[MTermPosFull]
+"&Πλήρης οθόνη"
+//[MTermPosLeft]
+"&Αριστερό μισό"
+//[MTermPosRight]
+"&Δεξί μισό"
+//[MTermPosTop]
+"Ά&νω μισό"
+//[MTermPosBottom]
+"&Κάτω μισό"
+//[MTermPosLeftTop]
+"Πάνω α&ριστερά"
+//[MTermPosLeftBottom]
+"Κάτω αρ&ιστερά"
+//[MTermPosRightTop]
+"Πάνω δε&ξιά"
+//[MTermPosRightBottom]
+"Κάτω δεξ&ιά"
+//[MMenuMultipleTerminals]
+"Πολλαπλά τ&ερματικά"
+//[MMultiTermLeftRight]
+"&Αριστερό και δεξί τερματικό"
+//[MMultiTermTopBottom]
+"Ά&νω και κάτω τερματικό"
+//[MMultiTermFour]
+"&4 τερματικά"
+//[MMultiTermError]
+"Δεν είναι δυνατό το άνοιγμα νέου παραθύρου τερματικού"
+//[MMenuExecOtherTerminal]
+"Ε&κτέλεση σε άλλο τερματικό"
+//[MExecTermLeft]
+"Τερματικό &αριστερά"
+//[MExecTermRight]
+"Τερματικό &δεξιά"
+//[MExecTermBottom]
+"Τερματικό &κάτω"
+//[MExecTermTop]
+"Τερματικό ά&νω"
+//[MExecTermDisconnect]
+"&Αποσύνδεση άλλου τερματικού"
+//[MMenuEncodedArchives]
+"Κωδικοποιημένες αρ&χειοθήκες"
+//[MEncArcTitle]
+"Κωδικοποιημένες αρχειοθήκες"
+//[MEncArcAddNew]
+"&Προσθήκη νέας ρύθμισης…"
+//[MEncArcNewExt]
+"&Νέα επέκταση (έως 7 χαρακτήρες):"
+//[MEncArcOrigExt]
+"&Αρχική επέκταση (έως 7 χαρακτήρες):"
+//[MEncArcKeyFile]
+"Αρχείο &κλειδιού:"
+//[MEncArcPasswordProtected]
+"Προστασία με &κωδικό"
+//[MEncArcBadExtension]
+"Η νέα επέκταση πρέπει να έχει 1 έως 7 χαρακτήρες και η αρχική έως 7 χαρακτήρες, χωρίς \"/\" και \"\\\""
+//[MEncArcDuplicate]
+"Αυτή η νέα επέκταση έχει ήδη ρυθμιστεί"
+//[MEncArcNoKeyFile]
+"Το αρχείο κλειδιού δεν βρέθηκε"
+//[MEncArcPasswordFor]
+"Κωδικός για"
+//[MEncArcCannotDecode]
+"Δεν είναι δυνατή η αποκωδικοποίηση του αρχείου"
+//[MEncArcCannotEncode]
+"Δεν είναι δυνατή η επανακωδικοποίηση του αρχείου"
+//[MLogKey]
+"Log"
+//[MLogQuietKey]
+"LogSil"
+//[MLogStarted]
+"Η έξοδος καταγράφεται στο"
