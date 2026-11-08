@@ -4566,3 +4566,5 @@
 "LogSil"
 //[MLogStarted]
 "Výstup se zaznamenává do"
+//[MEditLargePaste]
+"Vkládaný text je větší než {0} kB.\nPřesto jej vložit?"

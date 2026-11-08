@@ -4566,3 +4566,5 @@
 "LogSil"
 //[MLogStarted]
 "Die Ausgabe wird protokolliert in"
+//[MEditLargePaste]
+"Der einzufügende Text ist größer als {0} kB.\nTrotzdem einfügen?"

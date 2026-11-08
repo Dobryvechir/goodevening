@@ -184,4 +184,15 @@ mod tests {
             assert_eq!(table(i).len(), MSG_COUNT, "{}", LANGS[i].0);
         }
     }
+
+    #[test]
+    fn large_paste_warning_is_translated_everywhere() {
+        let i = MsgId::MEditLargePaste as usize;
+        let english = table(english_index())[i];
+        for (l, lang) in LANGS.iter().enumerate() {
+            let s = table(l)[i];
+            assert!(s.contains("{0}") && s.lines().count() == 2, "{}: {s}", lang.0);
+            assert!(lang.0 == "English" || s != english, "{} is not translated", lang.0);
+        }
+    }
 }

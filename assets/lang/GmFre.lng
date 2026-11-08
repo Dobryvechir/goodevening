@@ -4566,3 +4566,5 @@
 "LogSil"
 //[MLogStarted]
 "La sortie est journalisée dans"
+//[MEditLargePaste]
+"Le texte à insérer dépasse {0} ko.\nL'insérer quand même ?"

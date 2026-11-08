@@ -4566,3 +4566,5 @@
 "LogSil"
 //[MLogStarted]
 "Išvestis įrašoma į"
+//[MEditLargePaste]
+"Įterpiamas tekstas didesnis nei {0} kB.\nVis tiek įterpti?"

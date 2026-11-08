@@ -4566,3 +4566,5 @@
 "LogSil"
 //[MLogStarted]
 "A kimenet naplózásának helye:"
+//[MEditLargePaste]
+"A beillesztendő szöveg nagyobb, mint {0} kB.\nMégis beilleszti?"

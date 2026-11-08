@@ -4566,3 +4566,5 @@
 "LogSil"
 //[MLogStarted]
 "La salida se registra en"
+//[MEditLargePaste]
+"El texto que se va a insertar supera los {0} kB.\n¿Insertarlo de todos modos?"

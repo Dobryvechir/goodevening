@@ -521,12 +521,12 @@ impl Editor {
         }
     }
 
-    fn paste(&mut self) {
+    fn paste(&mut self, ui: &mut Ui) {
         if self.readonly {
             return;
         }
         let t = clipboard::get();
-        if t.is_empty() {
+        if t.is_empty() || !confirm_large_paste(ui, &t) {
             return;
         }
         self.buf.new_group();
@@ -1024,7 +1024,7 @@ impl Window for Editor {
         let k = match ev {
             Event::Key(k) => *k,
             Event::Paste(s) => {
-                if !self.readonly {
+                if !self.readonly && confirm_large_paste(ui, s) {
                     self.buf.new_group();
                     self.delete_selection();
                     let s = s.replace("\r\n", "\n").replace('\n', self.buf.eol.as_str());
@@ -1283,7 +1283,7 @@ impl Window for Editor {
                 self.buf.new_group();
                 self.delete_selection();
             }
-            (KeyCode::Insert, Mods::SHIFT) | (KeyCode::Char('v'), Mods::CTRL) => self.paste(),
+            (KeyCode::Insert, Mods::SHIFT) | (KeyCode::Char('v'), Mods::CTRL) => self.paste(ui),
             (KeyCode::Insert, Mods::NONE) => {
                 self.overtype = !self.overtype;
                 ui.term.block_cursor = self.overtype;
@@ -1366,10 +1366,51 @@ impl Window for Editor {
     }
 }
 
+/// Pastes up to this many kB are inserted without asking.
+const LARGE_PASTE_KB: usize = 50;
+
+/// Asks before inserting more than `LARGE_PASTE_KB`; true means go ahead.
+fn confirm_large_paste(ui: &mut Ui, text: &str) -> bool {
+    text.len() <= LARGE_PASTE_KB * 1024
+        || gm_ui::message::message_warn(
+            ui,
+            msg(MsgId::MWarning),
+            &gm_i18n::fmt(MsgId::MEditLargePaste, &[&LARGE_PASTE_KB]),
+            &[msg(MsgId::MHYes), msg(MsgId::MHNo)],
+        ) == Some(0)
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
-    use gm_term::KeyChord;
+    use gm_term::{KeyChord, Term};
+    use gm_ui::NoHistory;
+
+    /// Pastes `len` bytes into an empty editor; `answer` is queued for a dialog.
+    /// Returns the inserted length and whether the answer was left unconsumed
+    /// (i.e. no dialog was shown).
+    fn paste_bytes(len: usize, answer: KeyCode) -> (usize, bool) {
+        let p = std::env::temp_dir().join(format!("gm-ed-paste-{}-{len}-{answer:?}.txt", std::process::id()));
+        std::fs::write(&p, "").unwrap();
+        let mut e = Editor::open(&p, EditorOptions::default(), Rc::new(Vec::new())).unwrap();
+        let mut ui = Ui::new(Term::headless(110, 32), Box::new(NoHistory));
+        ui.term.push_event(Event::Key(KeyChord::plain(answer)));
+        e.handle(&Event::Paste("x".repeat(len)), &mut ui);
+        let unused = ui.term.next_event(std::time::Duration::ZERO).unwrap().is_some_and(|ev| matches!(ev, Event::Key(_)));
+        let _ = std::fs::remove_file(&p);
+        (e.line_text(0).len(), unused)
+    }
+
+    #[test]
+    fn paste_up_to_limit_does_not_ask() {
+        assert_eq!(paste_bytes(50 * 1024, KeyCode::Esc), (50 * 1024, true));
+    }
+
+    #[test]
+    fn paste_over_limit_asks() {
+        assert_eq!(paste_bytes(50 * 1024 + 1, KeyCode::Esc), (0, false));
+        assert_eq!(paste_bytes(50 * 1024 + 1, KeyCode::Enter), (50 * 1024 + 1, false));
+    }
 
     fn ed(text: &str) -> Editor {
         let p = std::env::temp_dir().join(format!("gm-ed-{}-{}.txt", std::process::id(), text.len()));

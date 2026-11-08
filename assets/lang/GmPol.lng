@@ -4566,3 +4566,5 @@
 "LogSil"
 //[MLogStarted]
 "Wyjście jest zapisywane do"
+//[MEditLargePaste]
+"Wstawiany tekst jest większy niż {0} kB.\nWstawić mimo to?"

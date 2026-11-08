@@ -4566,3 +4566,5 @@
 "LogSil"
 //[MLogStarted]
 "הפלט נרשם אל"
+//[MEditLargePaste]
+"הטקסט להוספה גדול מ-{0} KB.\nלהוסיף בכל זאת?"

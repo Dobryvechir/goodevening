@@ -4566,3 +4566,5 @@
 "LogSil"
 //[MLogStarted]
 "The output is logged to"
+//[MEditLargePaste]
+"The text to insert is larger than {0} kB.\nInsert it anyway?"
